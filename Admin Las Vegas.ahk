@@ -17,8 +17,8 @@ DayANS = 0
 WeekANS = 0
 FormatTime, CurrentDate,, ddMM
 
-Usefull = Полезное
-Cheatsheet = Меню памятки
+Usefull = ГЏГ®Г«ГҐГ§Г­Г®ГҐ
+Cheatsheet = ГЊГҐГ­Гѕ ГЇГ Г¬ГїГІГЄГЁ
 
 IfnotExist, %A_ScriptDir%\res
 {
@@ -48,11 +48,11 @@ FileCreateDir, %A_ScriptDir%\res
 
 FileSetAttrib, +H, %A_ScriptDir%\res
 
-Menu, Tray, add, Показать, Show,
-Menu, Tray, Default, Показать,
-Menu, Tray, add, Перезагрузить, Reload,
-Menu, Tray, add, Скрыть, Hide,
-Menu, Tray, add, Закрыть, Close,
+Menu, Tray, add, ГЏГ®ГЄГ Г§Г ГІГј, Show,
+Menu, Tray, Default, ГЏГ®ГЄГ Г§Г ГІГј,
+Menu, Tray, add, ГЏГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГј, Reload,
+Menu, Tray, add, Г‘ГЄГ°Г»ГІГј, Hide,
+Menu, Tray, add, Г‡Г ГЄГ°Г»ГІГј, Close,
 Menu, Tray, NoStandard
 
 IniRead, Week, %A_ScriptDir%\res\Settings.ini, ANS, Week
@@ -88,7 +88,7 @@ IniRead, Radio3, %A_ScriptDir%\res\Settings.ini, Resolution, 1680x1050
 IniRead, Radio4, %A_ScriptDir%\res\Settings.ini, Resolution, 1366x768
 IniRead, Radio5, %A_ScriptDir%\res\Settings.ini, Resolution, 1280x960
 IniRead, Radio6, %A_ScriptDir%\res\Settings.ini, Resolution, 1920x10802
-IniRead, Radio7, %A_ScriptDir%\res\Settings.ini, Resolution, 1280х1024
+IniRead, Radio7, %A_ScriptDir%\res\Settings.ini, Resolution, 1280Гµ1024
 
 IniRead, Radio8, %A_ScriptDir%\res\Settings.ini, Login Commands, /hidecheatinfo
 IniRead, Radio9, %A_ScriptDir%\res\Settings.ini, Login Commands, /showcheats
@@ -156,7 +156,7 @@ IniWrite, 7, %A_ScriptDir%\res\Settings.ini, Fraction, Fraction
 reload
 }
 
-;гуи счетчика
+;ГЈГіГЁ Г±Г·ГҐГІГ·ГЁГЄГ 
 WinSet_Click_Through(I, T="254") {
 IfWinExist, % "ahk_id " I
 {
@@ -242,12 +242,12 @@ Hotkey, %KEY19%, killplayer, On, UseErrorLevel
 Hotkey, %KEY20%, Off, UseErrorLevel
 Hotkey, %KEY20%, f5, On, UseErrorLevel
 
-;Общая инфа
-Gui, Main: Add, Tab, x0 y0 w732 h400 , Хоткеи|Настройки
+;ГЋГЎГ№Г Гї ГЁГ­ГґГ 
+Gui, Main: Add, Tab, x0 y0 w732 h400 , Г•Г®ГІГЄГҐГЁ|ГЌГ Г±ГІГ°Г®Г©ГЄГЁ
 Gui, Main: -MaximizeBox
 Gui, Main: -SysMenu
 Gui, Main: Show, w732 h400, Admin | Las Vegas by Richard Bonanno
-Gui, Main: Add, Button, x675 y2 w25 h16 ghide, —
+Gui, Main: Add, Button, x675 y2 w25 h16 ghide, В—
 Gui, Main: Add, Button, x705 y2 w25 h16 gClose, X
 Gui, Main: Color, 1e2124
 Gui, Main: Font,cwhite, Proxima Nova
@@ -256,80 +256,80 @@ Gui, Main: Add, Picture, x474 y298, %A_ScriptDir%\res\yerka.png
 Gui, Main: Add, Picture, x12 y338, %A_ScriptDir%\res\bebra.png
 
 
-;Левый блок кнопок
-Gui, Main: Add, Button, x10 y24 w64 h21 gInfo , Ифно
-Gui, Main: Add, Button, x10 y50 w64 h21 gSkillInfo, Навыки
-Gui, Main: Add, Button, x10 y76 w64 h21 gCommandlist, Команды
-Gui, Main: Add, Button, x10 y102 w64 h21 gAnswers, Ответы
-Gui, Main: Add, Button, x10 y128 w64 h21 gPunish, Наказания
-Gui, Main: Add, Button, x10 y154 w64 h21 gUsefull, Полезное
-Gui, Main: Add, Button, x10 y180 w64 h21 gTeleports, Телепорты
-;Gui, Main: Add, Button, x10 y206 w64 h21 g, Ответы 
-Gui, Main: Add, Button, x10 y310 w64 h21 gSaveData, Сохранить
+;Г‹ГҐГўГ»Г© ГЎГ«Г®ГЄ ГЄГ­Г®ГЇГ®ГЄ
+Gui, Main: Add, Button, x10 y24 w64 h21 gInfo , Г€ГґГ­Г®
+Gui, Main: Add, Button, x10 y50 w64 h21 gSkillInfo, ГЌГ ГўГ»ГЄГЁ
+Gui, Main: Add, Button, x10 y76 w64 h21 gCommandlist, ГЉГ®Г¬Г Г­Г¤Г»
+Gui, Main: Add, Button, x10 y102 w64 h21 gAnswers, ГЋГІГўГҐГІГ»
+Gui, Main: Add, Button, x10 y128 w64 h21 gPunish, ГЌГ ГЄГ Г§Г Г­ГЁГї
+Gui, Main: Add, Button, x10 y154 w64 h21 gUsefull, ГЏГ®Г«ГҐГ§Г­Г®ГҐ
+Gui, Main: Add, Button, x10 y180 w64 h21 gTeleports, Г’ГҐГ«ГҐГЇГ®Г°ГІГ»
+;Gui, Main: Add, Button, x10 y206 w64 h21 g, ГЋГІГўГҐГІГ» 
+Gui, Main: Add, Button, x10 y310 w64 h21 gSaveData, Г‘Г®ГµГ°Г Г­ГЁГІГј
 
 
 
-;Праый блок кнопок
-;Gui, Main: Add, Button, x658 y50 w64 h21 gUsefull, Фракции
-;Gui, Main: Add, Button, x658 y76 w64 h21 gUsefull, Амфитеатр
-;Gui, Main: Add, Button, x658 y128 w64 h21 gUsefull, Лицензии
+;ГЏГ°Г Г»Г© ГЎГ«Г®ГЄ ГЄГ­Г®ГЇГ®ГЄ
+;Gui, Main: Add, Button, x658 y50 w64 h21 gUsefull, Г”Г°Г ГЄГ¶ГЁГЁ
+;Gui, Main: Add, Button, x658 y76 w64 h21 gUsefull, ГЂГ¬ГґГЁГІГҐГ ГІГ°
+;Gui, Main: Add, Button, x658 y128 w64 h21 gUsefull, Г‹ГЁГ¶ГҐГ­Г§ГЁГЁ
 
-;Верхние боксы
+;Г‚ГҐГ°ГµГ­ГЁГҐ ГЎГ®ГЄГ±Г»
 Gui, Main: Add, GroupBox, x90 y18 w368 h27 cA52A2A,
 Gui, Main: Add, GroupBox, x474 y18 w168 h27 cA52A2A,
 Gui, Main: Add, GroupBox, x658 y18 w66 h27 cA52A2A,
-Gui, Main: Add, Text, x246 y28 w50 h14 +0x200, Бинды
-Gui, Main: Add, Text, x504 y28 w100 h14 +0x200 , Команды при входе
-Gui, Main: Add, Text, x668 y28 w50 h14 +0x200 , Динамик
+Gui, Main: Add, Text, x246 y28 w50 h14 +0x200, ГЃГЁГ­Г¤Г»
+Gui, Main: Add, Text, x504 y28 w100 h14 +0x200 , ГЉГ®Г¬Г Г­Г¤Г» ГЇГ°ГЁ ГўГµГ®Г¤ГҐ
+Gui, Main: Add, Text, x668 y28 w50 h14 +0x200 , Г„ГЁГ­Г Г¬ГЁГЄ
 
-;динамик
+;Г¤ГЁГ­Г Г¬ГЁГЄ
 Gui, Main: Add, Edit, x658 y50 w33 h21 +Number vDinamic cblack, %Dinamic%
 Gui, Main: Add, Button, x696 y53 w21 h15 gsavedata1, ?
 
 Gui, Main: Add, Hotkey, x90 y50 w48 h21 vHot1, %KEY1% ;F8
-Gui, Main: Add, Hotkey, x90 y76 w48 h21 vHot2, %KEY2% ;Удалить машину
+Gui, Main: Add, Hotkey, x90 y76 w48 h21 vHot2, %KEY2% ;Г“Г¤Г Г«ГЁГІГј Г¬Г ГёГЁГ­Гі
 Gui, Main: Add, Hotkey, x90 y102 w48 h21 vHot3, %KEY3% ; gm 
-Gui, Main: Add, Hotkey, x90 y128 w48 h21 vHot4, %KEY4% ; вакцина
-Gui, Main: Add, Hotkey, x90 y154 w48 h21 vHot5, %KEY5% ; первое сообщение
-Gui, Main: Add, Hotkey, x280 y258 w48 h21 vHot6, %KEY6% ; машина после воды
+Gui, Main: Add, Hotkey, x90 y128 w48 h21 vHot4, %KEY4% ; ГўГ ГЄГ¶ГЁГ­Г 
+Gui, Main: Add, Hotkey, x90 y154 w48 h21 vHot5, %KEY5% ; ГЇГҐГ°ГўГ®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ
+Gui, Main: Add, Hotkey, x280 y258 w48 h21 vHot6, %KEY6% ; Г¬Г ГёГЁГ­Г  ГЇГ®Г±Г«ГҐ ГўГ®Г¤Г»
 Gui, Main: Add, Hotkey, x90 y180 w48 h21 vHot7, %KEY7% ; getcar
-Gui, Main: Add, Hotkey, x90 y206 w48 h21 vHot8, %KEY8% ; тп на метку
-Gui, Main: Add, Hotkey, x90 y232 w48 h21 vHot9, %KEY9% ; -реп
-Gui, Main: Add, Hotkey, x90 y258 w48 h21 vHot10, %KEY10% ; +1 репорт
-Gui, Main: Add, Hotkey, x280 y206 w48 h21 vHot11, %KEY11% ; Команды при входе
+Gui, Main: Add, Hotkey, x90 y206 w48 h21 vHot8, %KEY8% ; ГІГЇ Г­Г  Г¬ГҐГІГЄГі
+Gui, Main: Add, Hotkey, x90 y232 w48 h21 vHot9, %KEY9% ; -Г°ГҐГЇ
+Gui, Main: Add, Hotkey, x90 y258 w48 h21 vHot10, %KEY10% ; +1 Г°ГҐГЇГ®Г°ГІ
+Gui, Main: Add, Hotkey, x280 y206 w48 h21 vHot11, %KEY11% ; ГЉГ®Г¬Г Г­Г¤Г» ГЇГ°ГЁ ГўГµГ®Г¤ГҐ
 Gui, Main: Add, Hotkey, x90 y284 w48 h21 vHot12, %KEY12% ;   rescue
-Gui, Main: Add, Hotkey, x280 y76 w48 h21 vHot13, %KEY13% ; выдача 
-Gui, Main: Add, Hotkey, x280 y284 w48 h21 vHot14, %KEY14% ; памятка
-Gui, Main: Add, Hotkey, x280 y180 w48 h21 vHot15, %KEY15% ;  вкл выкл gh
-Gui, Main: Add, Hotkey, x280 y102 w48 h21 vHot16, %KEY16% ; вкл выкл chide 
-Gui, Main: Add, Hotkey, x280 y128 w48 h21 vHot17, %KEY17% ;  вкл выкл zzdebug
-Gui, Main: Add, Hotkey, x280 y154 w48 h21 vHot18, %KEY18% ;  кил рес
-Gui, Main: Add, Hotkey, x280 y50 w48 h21 vHot19, %KEY19% ; погода  
-Gui, Main: Add, Hotkey, x280 y232 w48 h21 vHot20, %KEY20% ; фриткам
+Gui, Main: Add, Hotkey, x280 y76 w48 h21 vHot13, %KEY13% ; ГўГ»Г¤Г Г·Г  
+Gui, Main: Add, Hotkey, x280 y284 w48 h21 vHot14, %KEY14% ; ГЇГ Г¬ГїГІГЄГ 
+Gui, Main: Add, Hotkey, x280 y180 w48 h21 vHot15, %KEY15% ;  ГўГЄГ« ГўГ»ГЄГ« gh
+Gui, Main: Add, Hotkey, x280 y102 w48 h21 vHot16, %KEY16% ; ГўГЄГ« ГўГ»ГЄГ« chide 
+Gui, Main: Add, Hotkey, x280 y128 w48 h21 vHot17, %KEY17% ;  ГўГЄГ« ГўГ»ГЄГ« zzdebug
+Gui, Main: Add, Hotkey, x280 y154 w48 h21 vHot18, %KEY18% ;  ГЄГЁГ« Г°ГҐГ±
+Gui, Main: Add, Hotkey, x280 y50 w48 h21 vHot19, %KEY19% ; ГЇГ®ГЈГ®Г¤Г   
+Gui, Main: Add, Hotkey, x280 y232 w48 h21 vHot20, %KEY20% ; ГґГ°ГЁГІГЄГ Г¬
 
-Gui, Main: Add, Text, x143 y53 w120 h14 +0x200, Амнистия25
-Gui, Main: Add, Text, x143 y79 w120 h14 +0x600, Удалить транспорт
-Gui, Main: Add, Text, x143 y105 w120 h14 +0x200, Вкл/Выкл /gm
-Gui, Main: Add, Text, x143 y131 w120 h14 +0x200, Вакцина
-Gui, Main: Add, Text, x143 y157 w120 h14 +0x200, Первое сообщение
-Gui, Main: Add, Text, x143 y183 w120 h14 +0x200, ТП авто к себе
-Gui, Main: Add, Text, x143 y209 w120 h14 +0x200, ТП на метку
-Gui, Main: Add, Text, x143 y235 w120 h14 +0x200, Убрать -1 репорт
-Gui, Main: Add, Text, x143 y261 w120 h14 +0x200, Добавить +1 репорт
-Gui, Main: Add, Text, x143 y287 w120 h14 +0x200, Воскресить игрока
-Gui, Main: Add, Text, x333 y287 w120 h14 +0x200, Памятка
+Gui, Main: Add, Text, x143 y53 w120 h14 +0x200, ГЂГ¬Г­ГЁГ±ГІГЁГї25
+Gui, Main: Add, Text, x143 y79 w120 h14 +0x600, Г“Г¤Г Г«ГЁГІГј ГІГ°Г Г­Г±ГЇГ®Г°ГІ
+Gui, Main: Add, Text, x143 y105 w120 h14 +0x200, Г‚ГЄГ«/Г‚Г»ГЄГ« /gm
+Gui, Main: Add, Text, x143 y131 w120 h14 +0x200, Г‚Г ГЄГ¶ГЁГ­Г 
+Gui, Main: Add, Text, x143 y157 w120 h14 +0x200, ГЏГҐГ°ГўГ®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ
+Gui, Main: Add, Text, x143 y183 w120 h14 +0x200, Г’ГЏ Г ГўГІГ® ГЄ Г±ГҐГЎГҐ
+Gui, Main: Add, Text, x143 y209 w120 h14 +0x200, Г’ГЏ Г­Г  Г¬ГҐГІГЄГі
+Gui, Main: Add, Text, x143 y235 w120 h14 +0x200, Г“ГЎГ°Г ГІГј -1 Г°ГҐГЇГ®Г°ГІ
+Gui, Main: Add, Text, x143 y261 w120 h14 +0x200, Г„Г®ГЎГ ГўГЁГІГј +1 Г°ГҐГЇГ®Г°ГІ
+Gui, Main: Add, Text, x143 y287 w120 h14 +0x200, Г‚Г®Г±ГЄГ°ГҐГ±ГЁГІГј ГЁГЈГ°Г®ГЄГ 
+Gui, Main: Add, Text, x333 y287 w120 h14 +0x200, ГЏГ Г¬ГїГІГЄГ 
 
-Gui, Main: Add, Text, x333 y53 w120 h14 +0x200, Погода
-Gui, Main: Add, Text, x333 y79 w120 h14 +0x200, Выдача наказаний
-Gui, Main: Add, Text, x333 y105 w120 h14 +0x200, Вкл/Выкл /chide
-Gui, Main: Add, Text, x333 y131 w120 h14 +0x200, Тп к игроку
+Gui, Main: Add, Text, x333 y53 w120 h14 +0x200, ГЏГ®ГЈГ®Г¤Г 
+Gui, Main: Add, Text, x333 y79 w120 h14 +0x200, Г‚Г»Г¤Г Г·Г  Г­Г ГЄГ Г§Г Г­ГЁГ©
+Gui, Main: Add, Text, x333 y105 w120 h14 +0x200, Г‚ГЄГ«/Г‚Г»ГЄГ« /chide
+Gui, Main: Add, Text, x333 y131 w120 h14 +0x200, Г’ГЇ ГЄ ГЁГЈГ°Г®ГЄГі
 Gui, Main: Add, Text, x333 y160 w220 h14 +0x200, HP 0 + rescue
-Gui, Main: Add, Text, x333 y183 w122 h14 +0x200, Телепорт игрока к себе
-Gui, Main: Add, Text, x333 y209 w100 h14 +0x200 , Команды при входе
-Gui, Main: Add, Text, x333 y235 w100 h14 +0x200 , Уйти в F5
-Gui, Main: Add, Text, x333 y261 w104 h14 +0x200 , Машина после воды 
+Gui, Main: Add, Text, x333 y183 w122 h14 +0x200, Г’ГҐГ«ГҐГЇГ®Г°ГІ ГЁГЈГ°Г®ГЄГ  ГЄ Г±ГҐГЎГҐ
+Gui, Main: Add, Text, x333 y209 w100 h14 +0x200 , ГЉГ®Г¬Г Г­Г¤Г» ГЇГ°ГЁ ГўГµГ®Г¤ГҐ
+Gui, Main: Add, Text, x333 y235 w100 h14 +0x200 , Г“Г©ГІГЁ Гў F5
+Gui, Main: Add, Text, x333 y261 w104 h14 +0x200 , ГЊГ ГёГЁГ­Г  ГЇГ®Г±Г«ГҐ ГўГ®Г¤Г» 
 
-;при входе
+;ГЇГ°ГЁ ГўГµГ®Г¤ГҐ
 Gui, Main: Add, CheckBox, x474 y50 w120 h23 vRadio8 Checked%Radio8%, /hidecheatinfo
 Gui, Main: Add, CheckBox, x474 y76 w120 h23 vRadio9 Checked%Radio9%, /showcheats
 Gui, Main: Add, CheckBox, x474 y102 w120 h23 vRadio10 Checked%Radio10%, /dl
@@ -340,14 +340,14 @@ Gui, Main: Add, CheckBox, x474 y206 w120 h23 vRadio14 Checked%Radio14%, /zzdebug
 Gui, Main: Add, CheckBox, x474 y232 w120 h23 vRadio15 Checked%Radio15%, /objdl
 Gui, Main: Add, CheckBox, x474 y258 w120 h23 vRadio16 Checked%Radio16%, /netstat
 
-;настройки 
+;Г­Г Г±ГІГ°Г®Г©ГЄГЁ 
 Gui, Main: Tab, 2
-Gui, Main: Add, Button, x675 y2 w25 h16 ghide, —
+Gui, Main: Add, Button, x675 y2 w25 h16 ghide, В—
 Gui, Main: Add, Button, x705 y2 w25 h16 gClose, X
 Gui, Main: Add, Picture, x149 y240, %A_ScriptDir%\res\maj.png
 Gui, Main: Add, GroupBox, x10 y18 w710 h27 cA52A2A,
 Gui, Main: Add, GroupBox, x10 y150 w168 h27 cA52A2A,
-Gui, Main: Add, Text, x44 y28 w120 h14 +0x200 , Разрешение экрана
+Gui, Main: Add, Text, x44 y28 w120 h14 +0x200 , ГђГ Г§Г°ГҐГёГҐГ­ГЁГҐ ГЅГЄГ°Г Г­Г 
 Gui, Main: Add, Radio, x12 y50 w80 h23 Group vRadio1 Checked%Radio1%, 1920x1080
 Gui, Main: Add, Radio, x12 y128 w80 h23 vRadio2 Checked%Radio2%, 1600x900
 Gui, Main: Add, Radio, x12 y102 w80 h23 vRadio3 Checked%Radio3%, 1680x1050
@@ -359,29 +359,29 @@ Gui, Main: Add, Radio, x114 y50 w80 h23 vRadio7 Checked%Radio7%, 1280x1024
 
 
 
-Gui, Main: Add, Text, x526 y28 w190 h14 +0x200 , Расположение счетчика/памятки
-Gui, Main: Add, Text, x573 y53 w80 h14 +0x200, Координата X
-Gui, Main: Add, Text, x573 y79 w80 h14 +0x200, Координата Y
+Gui, Main: Add, Text, x526 y28 w190 h14 +0x200 , ГђГ Г±ГЇГ®Г«Г®Г¦ГҐГ­ГЁГҐ Г±Г·ГҐГІГ·ГЁГЄГ /ГЇГ Г¬ГїГІГЄГЁ
+Gui, Main: Add, Text, x573 y53 w80 h14 +0x200, ГЉГ®Г®Г°Г¤ГЁГ­Г ГІГ  X
+Gui, Main: Add, Text, x573 y79 w80 h14 +0x200, ГЉГ®Г®Г°Г¤ГЁГ­Г ГІГ  Y
 Gui, Main: Add, Edit, x520 y50 w48 h21 vX +number cblack, %X%
 Gui, Main: Add, Edit, x520 y76 w48 h21 vY +number cblack, %Y%
 
-Gui, Main: Add, Text, x573 y105 w130 h14 +0x200, Координата X (Памятка)
-Gui, Main: Add, Text, x573 y131 w140 h14 +0x200, Координата Y (Памятка)
+Gui, Main: Add, Text, x573 y105 w130 h14 +0x200, ГЉГ®Г®Г°Г¤ГЁГ­Г ГІГ  X (ГЏГ Г¬ГїГІГЄГ )
+Gui, Main: Add, Text, x573 y131 w140 h14 +0x200, ГЉГ®Г®Г°Г¤ГЁГ­Г ГІГ  Y (ГЏГ Г¬ГїГІГЄГ )
 
 Gui, Main: Add, Edit, x520 y102 w48 h21 vX2 +number cblack, %X2%
 Gui, Main: Add, Edit, x520 y128 w48 h21 vY2 +number cblack, %Y2%
 
 
-Gui, Main: Add, Button, x10 y310 w64 h21 gSaveData, Сохранить
+Gui, Main: Add, Button, x10 y310 w64 h21 gSaveData, Г‘Г®ГµГ°Г Г­ГЁГІГј
 
-;динамик
+;Г¤ГЁГ­Г Г¬ГЁГЄ
 SaveData1: 
 Gui, Main: Submit, NoHide
 IniWrite, %Dinamic%, %A_ScriptDir%\res\Settings.ini, ID, Dinamic
 sleep 200
 return
 
-;настройки
+;Г­Г Г±ГІГ°Г®Г©ГЄГЁ
 SaveData:
 Gui, Submit, NoHide
 IniWrite, %Radio1%, %A_ScriptDir%\res\Settings.ini, Resolution, 1920x1080
@@ -390,7 +390,7 @@ IniWrite, %Radio2%, %A_ScriptDir%\res\Settings.ini, Resolution, 1600x900
 IniWrite, %Radio4%, %A_ScriptDir%\res\Settings.ini, Resolution, 1366x768
 IniWrite, %Radio5%, %A_ScriptDir%\res\Settings.ini, Resolution, 1280x960
 IniWrite, %Radio6%, %A_ScriptDir%\res\Settings.ini, Resolution, 1920x10802
-IniWrite, %Radio7%, %A_ScriptDir%\res\Settings.ini, Resolution, 1280х1024
+IniWrite, %Radio7%, %A_ScriptDir%\res\Settings.ini, Resolution, 1280Гµ1024
 
 IniWrite, %Radio8%, %A_ScriptDir%\res\Settings.ini, Login Commands, /hidecheatinfo
 IniWrite, %Radio9%, %A_ScriptDir%\res\Settings.ini, Login Commands, /showcheats
@@ -446,8 +446,8 @@ IniWrite, %DayANS%, %A_ScriptDir%\res\Settings.ini, ANS, DayANS
 IniRead, DayANS, %A_ScriptDir%\res\Settings.ini, ANS, DayANS
 IniWrite, %WeekANS%, %A_ScriptDir%\res\Settings.ini, ANS, WeekANS
 IniRead, WeekANS, %A_ScriptDir%\res\Settings.ini, ANS, WeekANS
-GuiControl,, MyText, День: %DayANS%
-GuiControl,, MyTotalR, Неделя: %WeekANS%
+GuiControl,, MyText, Г„ГҐГ­Гј: %DayANS%
+GuiControl,, MyTotalR, ГЌГҐГ¤ГҐГ«Гї: %WeekANS%
 return
 
 UpdateCounter2:
@@ -457,8 +457,8 @@ IniWrite, %DayANS%, %A_ScriptDir%\res\Settings.ini, ANS, DayANS
 IniRead, DayANS, %A_ScriptDir%\res\Settings.ini, ANS, DayANS
 IniWrite, %WeekANS%, %A_ScriptDir%\res\Settings.ini, ANS, WeekANS
 IniRead, WeekANS, %A_ScriptDir%\res\Settings.ini, ANS, WeekANS
-GuiControl,, MyText, День: %DayANS%
-GuiControl,, MyTotalR, Неделя: %WeekANS%
+GuiControl,, MyText, Г„ГҐГ­Гј: %DayANS%
+GuiControl,, MyTotalR, ГЌГҐГ¤ГҐГ«Гї: %WeekANS%
 return
 
 UpdateCounter:
@@ -468,8 +468,8 @@ IniWrite, %DayANS%, %A_ScriptDir%\res\Settings.ini, ANS, DayANS
 IniRead, DayANS, %A_ScriptDir%\res\Settings.ini, ANS, DayANS
 IniWrite, %WeekANS%, %A_ScriptDir%\res\Settings.ini, ANS, WeekANS
 IniRead, WeekANS, %A_ScriptDir%\res\Settings.ini, ANS, WeekANS
-GuiControl,, MyText, День: %DayANS%
-GuiControl,, MyTotalR, Неделя: %WeekANS%
+GuiControl,, MyText, Г„ГҐГ­Гј: %DayANS%
+GuiControl,, MyTotalR, ГЌГҐГ¤ГҐГ«Гї: %WeekANS%
 return
 
 Reports:
@@ -478,20 +478,20 @@ Input, hId, V, {ctrl} {Enter}
 Sleep 300
 SendInput, {T}
 Sleep 500
-SendInput,/unjail %hId% Амнистия{Enter}
+SendInput,/unjail %hId% ГЂГ¬Г­ГЁГ±ГІГЁГї{Enter}
 Sleep 500
 SendInput, {T}
 Sleep 500
-SendInput,/ajail %hId% 25 Амнистия{Enter}
+SendInput,/ajail %hId% 25 ГЂГ¬Г­ГЁГ±ГІГЁГї{Enter}
 Return
 
-;счетчик
+;Г±Г·ГҐГІГ·ГЁГЄ
 mess: 
 labelgo:
 
 {
 sleep 50
-SendInput, Здравствуйте, сейчас займусь вашим обращением, ожидайте.
+SendInput, Г‡Г¤Г°Г ГўГ±ГІГўГіГ©ГІГҐ, Г±ГҐГ©Г·Г Г± Г§Г Г©Г¬ГіГ±Гј ГўГ ГёГЁГ¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐГ¬, Г®Г¦ГЁГ¤Г Г©ГІГҐ.
 
 Sleep 50
 SendInput, {Enter}
@@ -510,23 +510,23 @@ return
     Gui, Info: Color, 1e2124
     Gui, Info: Font, s12, Segoe UI
     Gui, Info: Font, cwhite
-	Gui, Info: Add, Text, x8 y8  h23 +0x200,АХК создан для облегчения работы администрации проекта Majestic.
+	Gui, Info: Add, Text, x8 y8  h23 +0x200,ГЂГ•ГЉ Г±Г®Г§Г¤Г Г­ Г¤Г«Гї Г®ГЎГ«ГҐГЈГ·ГҐГ­ГЁГї Г°Г ГЎГ®ГІГ» Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ ГЇГ°Г®ГҐГЄГІГ  Majestic.
     Gui, Info: Add, Text, x8 y32  h23 +0x200, 
-    Gui, Info: Add, Text, x8 y56  h23 +0x200,АХК автоматически считает кол-во отвеченных репортов в день и в неделю, во 
-    Gui, Info: Add, Text, x8 y80  h23 +0x200, время ответа на репорт при первом сообщении в ответе жмите на клавишу, 
-    Gui, Info: Add, Text, x8 y104  h23 +0x200, которую вы забиндили в "Первое сообщение".
+    Gui, Info: Add, Text, x8 y56  h23 +0x200,ГЂГ•ГЉ Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ Г±Г·ГЁГІГ ГҐГІ ГЄГ®Г«-ГўГ® Г®ГІГўГҐГ·ГҐГ­Г­Г»Гµ Г°ГҐГЇГ®Г°ГІГ®Гў Гў Г¤ГҐГ­Гј ГЁ Гў Г­ГҐГ¤ГҐГ«Гѕ, ГўГ® 
+    Gui, Info: Add, Text, x8 y80  h23 +0x200, ГўГ°ГҐГ¬Гї Г®ГІГўГҐГІГ  Г­Г  Г°ГҐГЇГ®Г°ГІ ГЇГ°ГЁ ГЇГҐГ°ГўГ®Г¬ Г±Г®Г®ГЎГ№ГҐГ­ГЁГЁ Гў Г®ГІГўГҐГІГҐ Г¦Г¬ГЁГІГҐ Г­Г  ГЄГ«Г ГўГЁГёГі, 
+    Gui, Info: Add, Text, x8 y104  h23 +0x200, ГЄГ®ГІГ®Г°ГіГѕ ГўГ» Г§Г ГЎГЁГ­Г¤ГЁГ«ГЁ Гў "ГЏГҐГ°ГўГ®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ".
     Gui, Info: Add, Text, x8 y128  h23 +0x200,
-    Gui, Info: Add, Text, x8 y152  h23 +0x200, Все команды, телепорты, наказания можно вводить транслитом. Пр.: .ез -> /tp
+    Gui, Info: Add, Text, x8 y152  h23 +0x200, Г‚Г±ГҐ ГЄГ®Г¬Г Г­Г¤Г», ГІГҐГ«ГҐГЇГ®Г°ГІГ», Г­Г ГЄГ Г§Г Г­ГЁГї Г¬Г®Г¦Г­Г® ГўГўГ®Г¤ГЁГІГј ГІГ°Г Г­Г±Г«ГЁГІГ®Г¬. ГЏГ°.: .ГҐГ§ -> /tp
     Gui, Info: Add, Text, x8 y176  h23 +0x200, 
-    Gui, Info: Add, Text, x8 y200  h23 +0x200, Для корректной работы софта необходимо выбрать разрешение экрана, ваш 
-    Gui, Info: Add, Text, x8 y224  h23 +0x200, дискорд, сервер и ваш пол в настройках.
+    Gui, Info: Add, Text, x8 y200  h23 +0x200, Г„Г«Гї ГЄГ®Г°Г°ГҐГЄГІГ­Г®Г© Г°Г ГЎГ®ГІГ» Г±Г®ГґГІГ  Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ»ГЎГ°Г ГІГј Г°Г Г§Г°ГҐГёГҐГ­ГЁГҐ ГЅГЄГ°Г Г­Г , ГўГ Гё 
+    Gui, Info: Add, Text, x8 y224  h23 +0x200, Г¤ГЁГ±ГЄГ®Г°Г¤, Г±ГҐГ°ГўГҐГ° ГЁ ГўГ Гё ГЇГ®Г« Гў Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ.
     Gui, Info: Add, Text, x8 y248  h23 +0x200, 
-    Gui, Info: Add, Text, cred x8 y272  h23 +0x200, Хоткеи:
-	Gui, Info: Add, Text, x8 y320  h23 +0x200,Ctrl + F9 - Перезапустить.
-    Gui, Info: Add, Text, x8 y296  h23 +0x200,Ctrl + F10 - Закрыть.
+    Gui, Info: Add, Text, cred x8 y272  h23 +0x200, Г•Г®ГІГЄГҐГЁ:
+	Gui, Info: Add, Text, x8 y320  h23 +0x200,Ctrl + F9 - ГЏГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГј.
+    Gui, Info: Add, Text, x8 y296  h23 +0x200,Ctrl + F10 - Г‡Г ГЄГ°Г»ГІГј.
     Gui, Info: Add, Text, x8 y344  h23 +0x200,
-    Gui, Info: Add, Text, x8 y368  h23 +0x200, Если что-то сломалось/не работает/есть идеи и т.п. писать - .jeazz#5533
-    Gui, Info: Show, h390 w600, Информация
+    Gui, Info: Add, Text, x8 y368  h23 +0x200, Г…Г±Г«ГЁ Г·ГІГ®-ГІГ® Г±Г«Г®Г¬Г Г«Г®Г±Гј/Г­ГҐ Г°Г ГЎГ®ГІГ ГҐГІ/ГҐГ±ГІГј ГЁГ¤ГҐГЁ ГЁ ГІ.ГЇ. ГЇГЁГ±Г ГІГј - .jeazz#5533
+    Gui, Info: Show, h390 w600, Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї
 	Return
 	
 	Usefull:
@@ -537,33 +537,33 @@ return
     Gui, Usefull: Font,s9, Segoe UI
     Gui, Usefull: Font, cwhite
 	
-	Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Список скилов
-    Gui, Usefull: Add, Text, x8 y40  h20 +0x200, stamina - Выносливость
-    Gui, Usefull: Add, Text, x8 y72  h20 +0x200, lung_capacity - Дыхание
-    Gui, Usefull: Add, Text, x8 y88  h20 +0x200, wheelie_ability - Вождение
-    Gui, Usefull: Add, Text, x8 y104  h20 +0x200, flying_ability - Полёт
-    Gui, Usefull: Add, Text, x8 y120  h20 +0x200, shooting_ability - Стрельба
-    Gui, Usefull: Add, Text, x8 y136  h20 +0x200, stealth_ability - Скрытность
-    Gui, Usefull: Add, Text, x8 y152  h20 +0x200, builder - Строитель
-    Gui, Usefull: Add, Text, x8 y168  h20 +0x200, butcher - Мясник
-    Gui, Usefull: Add, Text, x8 y184  h20 +0x200, trucker - Дальнобойщик
-    Gui, Usefull: Add, Text, x8 y200  h20 +0x200, fishing - Рыбалов
-    Gui, Usefull: Add, Text, x8 y216  h20 +0x200, busdriver - Водитель автобуса
-    Gui, Usefull: Add, Text, x8 y232  h20 +0x200, moneycollector - Инкассатор
-    Gui, Usefull: Add, Text, x8 y248  h20 +0x200, vineyard - Виноградник
-    Gui, Usefull: Add, Text, x8 y264  h20 +0x200, lumberjack - Лесоруб
-    Gui, Usefull: Add, Text, x8 y280  h20 +0x200, garbagecollector - Мусорщик
-    Gui, Usefull: Add, Text, x8 y296  h20 +0x200, farmer - Фермер 
-    Gui, Usefull: Add, Text, x8 y312  h20 +0x200, mushroomer - Грибник 
-    Gui, Usefull: Add, Text, x8 y328  h20 +0x200, gopostal - Почтальон
-    Gui, Usefull: Add, Text, x8 y344  h20 +0x200, gangjob - Закладчик бандит
-    Gui, Usefull: Add, Text, x8 y360  h20 +0x200, mafiajob - Закдажчик мафиози
-    Gui, Usefull: Add, Text, x8 y376  h20 +0x200, bikerjob - Закладчик байкер
-    Gui, Usefull: Add, Text, x8 y392  h20 +0x200, hijacker - Угонщик
-    Gui, Usefull: Add, Text, x8 y56  h20 +0x200, strength - Сила
+	Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Г‘ГЇГЁГ±Г®ГЄ Г±ГЄГЁГ«Г®Гў
+    Gui, Usefull: Add, Text, x8 y40  h20 +0x200, stamina - Г‚Г»Г­Г®Г±Г«ГЁГўГ®Г±ГІГј
+    Gui, Usefull: Add, Text, x8 y72  h20 +0x200, lung_capacity - Г„Г»ГµГ Г­ГЁГҐ
+    Gui, Usefull: Add, Text, x8 y88  h20 +0x200, wheelie_ability - Г‚Г®Г¦Г¤ГҐГ­ГЁГҐ
+    Gui, Usefull: Add, Text, x8 y104  h20 +0x200, flying_ability - ГЏГ®Г«ВёГІ
+    Gui, Usefull: Add, Text, x8 y120  h20 +0x200, shooting_ability - Г‘ГІГ°ГҐГ«ГјГЎГ 
+    Gui, Usefull: Add, Text, x8 y136  h20 +0x200, stealth_ability - Г‘ГЄГ°Г»ГІГ­Г®Г±ГІГј
+    Gui, Usefull: Add, Text, x8 y152  h20 +0x200, builder - Г‘ГІГ°Г®ГЁГІГҐГ«Гј
+    Gui, Usefull: Add, Text, x8 y168  h20 +0x200, butcher - ГЊГїГ±Г­ГЁГЄ
+    Gui, Usefull: Add, Text, x8 y184  h20 +0x200, trucker - Г„Г Г«ГјГ­Г®ГЎГ®Г©Г№ГЁГЄ
+    Gui, Usefull: Add, Text, x8 y200  h20 +0x200, fishing - ГђГ»ГЎГ Г«Г®Гў
+    Gui, Usefull: Add, Text, x8 y216  h20 +0x200, busdriver - Г‚Г®Г¤ГЁГІГҐГ«Гј Г ГўГІГ®ГЎГіГ±Г 
+    Gui, Usefull: Add, Text, x8 y232  h20 +0x200, moneycollector - Г€Г­ГЄГ Г±Г±Г ГІГ®Г°
+    Gui, Usefull: Add, Text, x8 y248  h20 +0x200, vineyard - Г‚ГЁГ­Г®ГЈГ°Г Г¤Г­ГЁГЄ
+    Gui, Usefull: Add, Text, x8 y264  h20 +0x200, lumberjack - Г‹ГҐГ±Г®Г°ГіГЎ
+    Gui, Usefull: Add, Text, x8 y280  h20 +0x200, garbagecollector - ГЊГіГ±Г®Г°Г№ГЁГЄ
+    Gui, Usefull: Add, Text, x8 y296  h20 +0x200, farmer - Г”ГҐГ°Г¬ГҐГ° 
+    Gui, Usefull: Add, Text, x8 y312  h20 +0x200, mushroomer - ГѓГ°ГЁГЎГ­ГЁГЄ 
+    Gui, Usefull: Add, Text, x8 y328  h20 +0x200, gopostal - ГЏГ®Г·ГІГ Г«ГјГ®Г­
+    Gui, Usefull: Add, Text, x8 y344  h20 +0x200, gangjob - Г‡Г ГЄГ«Г Г¤Г·ГЁГЄ ГЎГ Г­Г¤ГЁГІ
+    Gui, Usefull: Add, Text, x8 y360  h20 +0x200, mafiajob - Г‡Г ГЄГ¤Г Г¦Г·ГЁГЄ Г¬Г ГґГЁГ®Г§ГЁ
+    Gui, Usefull: Add, Text, x8 y376  h20 +0x200, bikerjob - Г‡Г ГЄГ«Г Г¤Г·ГЁГЄ ГЎГ Г©ГЄГҐГ°
+    Gui, Usefull: Add, Text, x8 y392  h20 +0x200, hijacker - Г“ГЈГ®Г­Г№ГЁГЄ
+    Gui, Usefull: Add, Text, x8 y56  h20 +0x200, strength - Г‘ГЁГ«Г 
 
 	Gui, Usefull: Tab, 2
-	Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Список фракций
+	Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Г‘ГЇГЁГ±Г®ГЄ ГґГ°Г ГЄГ¶ГЁГ©
     Gui, Usefull: Add, Text, x8 y40  h20 +0x200, 1 - LSPD
     Gui, Usefull: Add, Text, x8 y56  h20 +0x200, 2 - EMS
     Gui, Usefull: Add, Text, x8 y72  h20 +0x200, 3 - Sheriff
@@ -585,24 +585,24 @@ return
     Gui, Usefull: Add, Text, x8 y328  h20 +0x200, 19 - Irish Mafia
 
 	Gui, Usefull: Tab, 3
-	Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Список NPL 
-    Gui, Usefull: Add, Text, x8 y40  h20 +0x200, ID 0 - Одна стойка для выступлений
-    Gui, Usefull: Add, Text, x8 y56  h20 +0x200, ID 1 - Две стойки для дебатов
-    Gui, Usefull: Add, Text, x8 y72  h20 +0x200, ID 2 - Три стойки для дебатов
-    Gui, Usefull: Add, Text, x8 y88  h20 +0x200, ID 3 - Четыре стойки для дебатов
-    Gui, Usefull: Add, Text, x8 y104  h20 +0x200, ID 4 - Американские флаги вдоль и на сцене
-    Gui, Usefull: Add, Text, x8 y120  h20 +0x200, ID 5 - Камеры на сцене
-	Gui, Usefull: Add, Text, x8 y136  h20 +0x200, ID 6 - Стол с креслами и баннерами на сцене 
+	Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Г‘ГЇГЁГ±Г®ГЄ NPL 
+    Gui, Usefull: Add, Text, x8 y40  h20 +0x200, ID 0 - ГЋГ¤Г­Г  Г±ГІГ®Г©ГЄГ  Г¤Г«Гї ГўГ»Г±ГІГіГЇГ«ГҐГ­ГЁГ©
+    Gui, Usefull: Add, Text, x8 y56  h20 +0x200, ID 1 - Г„ГўГҐ Г±ГІГ®Г©ГЄГЁ Г¤Г«Гї Г¤ГҐГЎГ ГІГ®Гў
+    Gui, Usefull: Add, Text, x8 y72  h20 +0x200, ID 2 - Г’Г°ГЁ Г±ГІГ®Г©ГЄГЁ Г¤Г«Гї Г¤ГҐГЎГ ГІГ®Гў
+    Gui, Usefull: Add, Text, x8 y88  h20 +0x200, ID 3 - Г—ГҐГІГ»Г°ГҐ Г±ГІГ®Г©ГЄГЁ Г¤Г«Гї Г¤ГҐГЎГ ГІГ®Гў
+    Gui, Usefull: Add, Text, x8 y104  h20 +0x200, ID 4 - ГЂГ¬ГҐГ°ГЁГЄГ Г­Г±ГЄГЁГҐ ГґГ«Г ГЈГЁ ГўГ¤Г®Г«Гј ГЁ Г­Г  Г±Г¶ГҐГ­ГҐ
+    Gui, Usefull: Add, Text, x8 y120  h20 +0x200, ID 5 - ГЉГ Г¬ГҐГ°Г» Г­Г  Г±Г¶ГҐГ­ГҐ
+	Gui, Usefull: Add, Text, x8 y136  h20 +0x200, ID 6 - Г‘ГІГ®Г« Г± ГЄГ°ГҐГ±Г«Г Г¬ГЁ ГЁ ГЎГ Г­Г­ГҐГ°Г Г¬ГЁ Г­Г  Г±Г¶ГҐГ­ГҐ 
 
 	Gui, Usefull: Tab, 4
-    Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Список лицензий
-    Gui, Usefull: Add, Text, x8 y40  h20 +0x200, DriveD - Легковой транспорт
-    Gui, Usefull: Add, Text, x8 y56  h20 +0x200, DriveM - Мотоциклы
-    Gui, Usefull: Add, Text, x8 y72  h20 +0x200, CDLA - Тягачи и моногрузовики
-    Gui, Usefull: Add, Text, x8 y88  h20 +0x200, CDLB - Пикапы и грузовики
-    Gui, Usefull: Add, Text, x8 y104  h20 +0x200, CDWL - Оружие
-    Gui, Usefull: Add, Text, x8 y120  h20 +0x200, FH - Охота и рыбалка
-	Gui, Usefull: Add, Text, x8 y136  h20 +0x200, Business - Бизнесы
+    Gui, Usefull: Add, Text, x106 y24  h20 +0x200 cred, Г‘ГЇГЁГ±Г®ГЄ Г«ГЁГ¶ГҐГ­Г§ГЁГ©
+    Gui, Usefull: Add, Text, x8 y40  h20 +0x200, DriveD - Г‹ГҐГЈГЄГ®ГўГ®Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ
+    Gui, Usefull: Add, Text, x8 y56  h20 +0x200, DriveM - ГЊГ®ГІГ®Г¶ГЁГЄГ«Г»
+    Gui, Usefull: Add, Text, x8 y72  h20 +0x200, CDLA - Г’ГїГЈГ Г·ГЁ ГЁ Г¬Г®Г­Г®ГЈГ°ГіГ§Г®ГўГЁГЄГЁ
+    Gui, Usefull: Add, Text, x8 y88  h20 +0x200, CDLB - ГЏГЁГЄГ ГЇГ» ГЁ ГЈГ°ГіГ§Г®ГўГЁГЄГЁ
+    Gui, Usefull: Add, Text, x8 y104  h20 +0x200, CDWL - ГЋГ°ГіГ¦ГЁГҐ
+    Gui, Usefull: Add, Text, x8 y120  h20 +0x200, FH - ГЋГµГ®ГІГ  ГЁ Г°Г»ГЎГ Г«ГЄГ 
+	Gui, Usefull: Add, Text, x8 y136  h20 +0x200, Business - ГЃГЁГ§Г­ГҐГ±Г»
     Gui, Usefull: Show, h414 w300, %Usefull%
 	Return
 
@@ -611,72 +611,72 @@ return
     Gui, Teleports: Color, 1e2124
     Gui, Teleports: Font, s9, Segoe UI
     Gui, Teleports: Font, cwhite
-    Gui, Teleports: Add, Text, cred x8 y8  h20 +0x200, Респавны фракций
-    Gui, Teleports: Add, Text, x8 y24  h20 +0x200, .лспд - /ctp 429 -980 30.50
-    Gui, Teleports: Add, Text, x8 y40  h20 +0x200, .бол - /ctp 287.70 -578.35 50
-    Gui, Teleports: Add, Text, x8 y56  h20 +0x200, .шд - /ctp -434.87 6024.54 31.50
-    Gui, Teleports: Add, Text, x8 y72  h20 +0x200, .шд2 - /ctp 1843.770 3666.384 33.760
-    Gui, Teleports: Add, Text, x8 y88  h20 +0x200, .фз - ц
-    Gui, Teleports: Add, Text, x8 y104  h20 +0x200, .мэр - /ctp -534.70 -222.07 37.60
-    Gui, Teleports: Add, Text, x8 y120  h20 +0x200, .визл - /ctp -593 -929 24
-    Gui, Teleports: Add, Text, x8 y136  h20 +0x200, .фиб - /ctp 2527 -377 93
-    Gui, Teleports: Add, Text, x8 y152  h20 +0x200, .бал - /ctp -70.06 -1824.64 26.94
-    Gui, Teleports: Add, Text, x8 y168  h20 +0x200, .ваг - /ctp 967 -1817 31
-    Gui, Teleports: Add, Text, x8 y184  h20 +0x200, .фэм - /ctp -204.29 -1513.69 31.60
-    Gui, Teleports: Add, Text, x8 y200  h20 +0x200, .бладс - /ctp 496 -1330 29.40
-    Gui, Teleports: Add, Text, x8 y216  h20 +0x200, .мара - /ctp 1437.61 -1509.64 62.40
-    Gui, Teleports: Add, Text, x8 y232  h20 +0x200, .лкн - /ctp 1385 1154 114.40
-    Gui, Teleports: Add, Text, x8 y248  h20 +0x200, .рм - /ctp -1526 858 181
-    Gui, Teleports: Add, Text, x8 y264  h20 +0x200, .як - /ctp -1556.36 113.07 57
-    Gui, Teleports: Add, Text, x8 y280  h20 +0x200, .мекс - /ctp 381.03 23.12 91.40
-    Gui, Teleports: Add, Text, x8 y296  h20 +0x200, .ир - /ctp -3028.926 100.118 11.614
-    Gui, Teleports: Add, Text, x8 y312  h20 +0x200, .лост - /ctp 969.84 -128.40 74.40
-    Gui, Teleports: Add, Text, x8 y328  h20 +0x200, .аод - /ctp 1995.99 3062.44 47.06
-    Gui, Teleports: Add, Text, x8 y344  h20 +0x200, .ам - /ctp -1895.23 2027.19 141
-    Gui, Teleports: Add, Text, x8 y360  h20 +0x200, .груб - /ctp -3022 105 11.30
-	Gui, Teleports: Add, Text, x8 y376  h20 +0x200, .клаб - /ctp 1588.65 6445.38 25
-    Gui, Teleports: Add, Text, x8 y392  h20 +0x200, .рич - /ctp -1302.49 294.52 64.50
-    Gui, Teleports: Add, Text, x8 y408  h20 +0x200, .манор - /ctp -58.20 343.73 111.80
-    Gui, Teleports: Add, Text, x8 y424  h20 +0x200, .конт - /ctp -1865.51 -355.96 57
-    Gui, Teleports: Add, Text, cred x8 y440  h20 +0x200, Ключи
-	Gui, Teleports: Add, Text, x8 y456  h20 +0x200, .клм - /ctp -361.424 -129.636 38.696
-    Gui, Teleports: Add, Text, x8 y472  h20 +0x200, .клг - /ctp -40.529 -1077.648 26.653 
-    Gui, Teleports: Add, Text, x8 y488  h20 +0x200, .клс - /ctp 1728.313 3717.568 34.109
-    Gui, Teleports: Add, Text, x8 y504  h20 +0x200, .клп - /ctp -196.836 6218.708 31.491 
+    Gui, Teleports: Add, Text, cred x8 y8  h20 +0x200, ГђГҐГ±ГЇГ ГўГ­Г» ГґГ°Г ГЄГ¶ГЁГ©
+    Gui, Teleports: Add, Text, x8 y24  h20 +0x200, .Г«Г±ГЇГ¤ - /ctp 429 -980 30.50
+    Gui, Teleports: Add, Text, x8 y40  h20 +0x200, .ГЎГ®Г« - /ctp 287.70 -578.35 50
+    Gui, Teleports: Add, Text, x8 y56  h20 +0x200, .ГёГ¤ - /ctp -434.87 6024.54 31.50
+    Gui, Teleports: Add, Text, x8 y72  h20 +0x200, .ГёГ¤2 - /ctp 1843.770 3666.384 33.760
+    Gui, Teleports: Add, Text, x8 y88  h20 +0x200, .ГґГ§ - Г¶
+    Gui, Teleports: Add, Text, x8 y104  h20 +0x200, .Г¬ГЅГ° - /ctp -534.70 -222.07 37.60
+    Gui, Teleports: Add, Text, x8 y120  h20 +0x200, .ГўГЁГ§Г« - /ctp -593 -929 24
+    Gui, Teleports: Add, Text, x8 y136  h20 +0x200, .ГґГЁГЎ - /ctp 2527 -377 93
+    Gui, Teleports: Add, Text, x8 y152  h20 +0x200, .ГЎГ Г« - /ctp -70.06 -1824.64 26.94
+    Gui, Teleports: Add, Text, x8 y168  h20 +0x200, .ГўГ ГЈ - /ctp 967 -1817 31
+    Gui, Teleports: Add, Text, x8 y184  h20 +0x200, .ГґГЅГ¬ - /ctp -204.29 -1513.69 31.60
+    Gui, Teleports: Add, Text, x8 y200  h20 +0x200, .ГЎГ«Г Г¤Г± - /ctp 496 -1330 29.40
+    Gui, Teleports: Add, Text, x8 y216  h20 +0x200, .Г¬Г Г°Г  - /ctp 1437.61 -1509.64 62.40
+    Gui, Teleports: Add, Text, x8 y232  h20 +0x200, .Г«ГЄГ­ - /ctp 1385 1154 114.40
+    Gui, Teleports: Add, Text, x8 y248  h20 +0x200, .Г°Г¬ - /ctp -1526 858 181
+    Gui, Teleports: Add, Text, x8 y264  h20 +0x200, .ГїГЄ - /ctp -1556.36 113.07 57
+    Gui, Teleports: Add, Text, x8 y280  h20 +0x200, .Г¬ГҐГЄГ± - /ctp 381.03 23.12 91.40
+    Gui, Teleports: Add, Text, x8 y296  h20 +0x200, .ГЁГ° - /ctp -3028.926 100.118 11.614
+    Gui, Teleports: Add, Text, x8 y312  h20 +0x200, .Г«Г®Г±ГІ - /ctp 969.84 -128.40 74.40
+    Gui, Teleports: Add, Text, x8 y328  h20 +0x200, .Г Г®Г¤ - /ctp 1995.99 3062.44 47.06
+    Gui, Teleports: Add, Text, x8 y344  h20 +0x200, .Г Г¬ - /ctp -1895.23 2027.19 141
+    Gui, Teleports: Add, Text, x8 y360  h20 +0x200, .ГЈГ°ГіГЎ - /ctp -3022 105 11.30
+	Gui, Teleports: Add, Text, x8 y376  h20 +0x200, .ГЄГ«Г ГЎ - /ctp 1588.65 6445.38 25
+    Gui, Teleports: Add, Text, x8 y392  h20 +0x200, .Г°ГЁГ· - /ctp -1302.49 294.52 64.50
+    Gui, Teleports: Add, Text, x8 y408  h20 +0x200, .Г¬Г Г­Г®Г° - /ctp -58.20 343.73 111.80
+    Gui, Teleports: Add, Text, x8 y424  h20 +0x200, .ГЄГ®Г­ГІ - /ctp -1865.51 -355.96 57
+    Gui, Teleports: Add, Text, cred x8 y440  h20 +0x200, ГЉГ«ГѕГ·ГЁ
+	Gui, Teleports: Add, Text, x8 y456  h20 +0x200, .ГЄГ«Г¬ - /ctp -361.424 -129.636 38.696
+    Gui, Teleports: Add, Text, x8 y472  h20 +0x200, .ГЄГ«ГЈ - /ctp -40.529 -1077.648 26.653 
+    Gui, Teleports: Add, Text, x8 y488  h20 +0x200, .ГЄГ«Г± - /ctp 1728.313 3717.568 34.109
+    Gui, Teleports: Add, Text, x8 y504  h20 +0x200, .ГЄГ«ГЇ - /ctp -196.836 6218.708 31.491 
 	
-	Gui, Teleports: Add, Text, cred x220 y8  h20 +0x200, Места
-	Gui, Teleports: Add, Text, x220 y24  h20 +0x200, .хум - /ctp 3569.54 3789.48 30
-    Gui, Teleports: Add, Text, x220 y40  h20 +0x200, .мейз - /ctp -75 -818 326
-    Gui, Teleports: Add, Text, x220 y56  h20 +0x200, .каз - /ctp 916 50 81
-    Gui, Teleports: Add, Text, x220 y72  h20 +0x200, .аш - /ctp -620 -2264 6
-    Gui, Teleports: Add, Text, x220 y88  h20 +0x200, .гг - /ctp -257 -2023 30
-    Gui, Teleports: Add, Text, x220 y104  h20 +0x200, .бургер - /ctp -1171.31 -890.20 13.90
-    Gui, Teleports: Add, Text, x220 y120  h20 +0x200, .багама - /ctp -1391.30 -585.35 30
-    Gui, Teleports: Add, Text, x220 y136  h20 +0x200, .кайо - /ctp 4488.58 -4493.52 4
-    Gui, Teleports: Add, Text, x220 y152  h20 +0x200, .авиа - /ctp 3035.21 -4688.55 15
-    Gui, Teleports: Add, Text, x220 y168  h20 +0x200, .мол - /ctp 61.67 -1751.80 47
-    Gui, Teleports: Add, Text, x220 y184  h20 +0x200, .трас - /ctp 7400 3946 1124
-    Gui, Teleports: Add, Text, x220 y200  h20 +0x200, .трасс - /ctp 7400 -656 1124
-    Gui, Teleports: Add, Text, x220 y216  h20 +0x200, .аук - /ctp -833 -699.50 27
-    Gui, Teleports: Add, Text, x220 y232  h20 +0x200, .бокс - /ctp 8.56 -1658.55 28.71
-    Gui, Teleports: Add, Text, x220 y248  h20 +0x200, .бар - /ctp -305.09 6259.59 30.92
-    Gui, Teleports: Add, Text, x220 y264  h20 +0x200, .бк - /ctp 500.44 109.79 96.49
-    Gui, Teleports: Add, Text, x220 y280  h20 +0x200, .ванила - /ctp 131.33 -1302.93 29.23
-    Gui, Teleports: Add, Text, x220 y296  h20 +0x200, .починка - /ctp -1430.45 -450.5 35.91
-    Gui, Teleports: Add, Text, x220 y312  h20 +0x200, .сэнди - /ctp 1843.770 3666.384 33.760
-    Gui, Teleports: Add, Text, x220 y328  h20 +0x200, .порт - /ctp 417 -2501 13.46
-    Gui, Teleports: Add, Text, x220 y344  h20 +0x200, .стр - /ctp 1304 1453 98.87
-    Gui, Teleports: Add, Text, x220 y360  h20 +0x200, .лес - /ctp -321 6093 31.14
-	Gui, Teleports: Add, Text, x220 y376  h20 +0x200, .бмара - /ctp 1302 -1646 51.04
-    Gui, Teleports: Add, Text, x220 y392  h20 +0x200, .самол - /ctp 1473 2730 37.38
-    Gui, Teleports: Add, Text, x220 y408  h20 +0x200, .чил - /ctp 498 5592 795
-    Gui, Teleports: Add, Text, x220 y424  h20 +0x200, .палето - /ctp -434.87 6024.54 31.50
-    Gui, Teleports: Add, Text, cred x220 y440  h20 +0x200, Бизвары
-    Gui, Teleports: Add, Text, x220 y456  h20 +0x200, .свалка1/2 - Локация бизвара + 222 дименшен
-    Gui, Teleports: Add, Text, x220 y472  h20 +0x200, .порт1/2 - Локация бизвара + 222 дименшен
-    Gui, Teleports: Add, Text, x220 y488  h20 +0x200, .мара1/2 - Локация бизвара + 222 дименшен
-    Gui, Teleports: Add, Text, x220 y504  h20 +0x200, .стройка1/2 - Локация бизвара + 222 дименшен
-    Gui, Teleports: Show, h526 w500, Телепорты
+	Gui, Teleports: Add, Text, cred x220 y8  h20 +0x200, ГЊГҐГ±ГІГ 
+	Gui, Teleports: Add, Text, x220 y24  h20 +0x200, .ГµГіГ¬ - /ctp 3569.54 3789.48 30
+    Gui, Teleports: Add, Text, x220 y40  h20 +0x200, .Г¬ГҐГ©Г§ - /ctp -75 -818 326
+    Gui, Teleports: Add, Text, x220 y56  h20 +0x200, .ГЄГ Г§ - /ctp 916 50 81
+    Gui, Teleports: Add, Text, x220 y72  h20 +0x200, .Г Гё - /ctp -620 -2264 6
+    Gui, Teleports: Add, Text, x220 y88  h20 +0x200, .ГЈГЈ - /ctp -257 -2023 30
+    Gui, Teleports: Add, Text, x220 y104  h20 +0x200, .ГЎГіГ°ГЈГҐГ° - /ctp -1171.31 -890.20 13.90
+    Gui, Teleports: Add, Text, x220 y120  h20 +0x200, .ГЎГ ГЈГ Г¬Г  - /ctp -1391.30 -585.35 30
+    Gui, Teleports: Add, Text, x220 y136  h20 +0x200, .ГЄГ Г©Г® - /ctp 4488.58 -4493.52 4
+    Gui, Teleports: Add, Text, x220 y152  h20 +0x200, .Г ГўГЁГ  - /ctp 3035.21 -4688.55 15
+    Gui, Teleports: Add, Text, x220 y168  h20 +0x200, .Г¬Г®Г« - /ctp 61.67 -1751.80 47
+    Gui, Teleports: Add, Text, x220 y184  h20 +0x200, .ГІГ°Г Г± - /ctp 7400 3946 1124
+    Gui, Teleports: Add, Text, x220 y200  h20 +0x200, .ГІГ°Г Г±Г± - /ctp 7400 -656 1124
+    Gui, Teleports: Add, Text, x220 y216  h20 +0x200, .Г ГіГЄ - /ctp -833 -699.50 27
+    Gui, Teleports: Add, Text, x220 y232  h20 +0x200, .ГЎГ®ГЄГ± - /ctp 8.56 -1658.55 28.71
+    Gui, Teleports: Add, Text, x220 y248  h20 +0x200, .ГЎГ Г° - /ctp -305.09 6259.59 30.92
+    Gui, Teleports: Add, Text, x220 y264  h20 +0x200, .ГЎГЄ - /ctp 500.44 109.79 96.49
+    Gui, Teleports: Add, Text, x220 y280  h20 +0x200, .ГўГ Г­ГЁГ«Г  - /ctp 131.33 -1302.93 29.23
+    Gui, Teleports: Add, Text, x220 y296  h20 +0x200, .ГЇГ®Г·ГЁГ­ГЄГ  - /ctp -1430.45 -450.5 35.91
+    Gui, Teleports: Add, Text, x220 y312  h20 +0x200, .Г±ГЅГ­Г¤ГЁ - /ctp 1843.770 3666.384 33.760
+    Gui, Teleports: Add, Text, x220 y328  h20 +0x200, .ГЇГ®Г°ГІ - /ctp 417 -2501 13.46
+    Gui, Teleports: Add, Text, x220 y344  h20 +0x200, .Г±ГІГ° - /ctp 1304 1453 98.87
+    Gui, Teleports: Add, Text, x220 y360  h20 +0x200, .Г«ГҐГ± - /ctp -321 6093 31.14
+	Gui, Teleports: Add, Text, x220 y376  h20 +0x200, .ГЎГ¬Г Г°Г  - /ctp 1302 -1646 51.04
+    Gui, Teleports: Add, Text, x220 y392  h20 +0x200, .Г±Г Г¬Г®Г« - /ctp 1473 2730 37.38
+    Gui, Teleports: Add, Text, x220 y408  h20 +0x200, .Г·ГЁГ« - /ctp 498 5592 795
+    Gui, Teleports: Add, Text, x220 y424  h20 +0x200, .ГЇГ Г«ГҐГІГ® - /ctp -434.87 6024.54 31.50
+    Gui, Teleports: Add, Text, cred x220 y440  h20 +0x200, ГЃГЁГ§ГўГ Г°Г»
+    Gui, Teleports: Add, Text, x220 y456  h20 +0x200, .Г±ГўГ Г«ГЄГ 1/2 - Г‹Г®ГЄГ Г¶ГЁГї ГЎГЁГ§ГўГ Г°Г  + 222 Г¤ГЁГ¬ГҐГ­ГёГҐГ­
+    Gui, Teleports: Add, Text, x220 y472  h20 +0x200, .ГЇГ®Г°ГІ1/2 - Г‹Г®ГЄГ Г¶ГЁГї ГЎГЁГ§ГўГ Г°Г  + 222 Г¤ГЁГ¬ГҐГ­ГёГҐГ­
+    Gui, Teleports: Add, Text, x220 y488  h20 +0x200, .Г¬Г Г°Г 1/2 - Г‹Г®ГЄГ Г¶ГЁГї ГЎГЁГ§ГўГ Г°Г  + 222 Г¤ГЁГ¬ГҐГ­ГёГҐГ­
+    Gui, Teleports: Add, Text, x220 y504  h20 +0x200, .Г±ГІГ°Г®Г©ГЄГ 1/2 - Г‹Г®ГЄГ Г¶ГЁГї ГЎГЁГ§ГўГ Г°Г  + 222 Г¤ГЁГ¬ГҐГ­ГёГҐГ­
+    Gui, Teleports: Show, h526 w500, Г’ГҐГ«ГҐГЇГ®Г°ГІГ»
 	Return
 
 	Commandlist:
@@ -686,174 +686,174 @@ return
     Gui, Commandlist: Color, 1e2124
     Gui, Commandlist: Font, s8, Segoe UI
     Gui, Commandlist: Font, cwhite
-    Gui, Commandlist: Add, Text, x8 y24  h20 +0x200, .иср - /bancheck
+    Gui, Commandlist: Add, Text, x8 y24  h20 +0x200, .ГЁГ±Г° - /bancheck
     Gui, Commandlist: Add, Text, x8 y40  h20 +0x200, /jch - /ajailcheck 
-    Gui, Commandlist: Add, Text, x8 y56  h20 +0x200, .оср - /ajailcheck 
-    Gui, Commandlist: Add, Text, x8 y72  h20 +0x200, .ифтсрусл - /bancheck
-    Gui, Commandlist: Add, Text, x8 y88  h20 +0x200, .фофшдсрусл - /ajailcheck 
+    Gui, Commandlist: Add, Text, x8 y56  h20 +0x200, .Г®Г±Г° - /ajailcheck 
+    Gui, Commandlist: Add, Text, x8 y72  h20 +0x200, .ГЁГґГІГ±Г°ГіГ±Г« - /bancheck
+    Gui, Commandlist: Add, Text, x8 y88  h20 +0x200, .ГґГ®ГґГёГ¤Г±Г°ГіГ±Г« - /ajailcheck 
     Gui, Commandlist: Add, Text, x8 y104  h20 +0x200, /tf - /tempfamily 
-    Gui, Commandlist: Add, Text, x8 y120  h20 +0x200, .еа - /tempfamily 
+    Gui, Commandlist: Add, Text, x8 y120  h20 +0x200, .ГҐГ  - /tempfamily 
     Gui, Commandlist: Add, Text, x8 y136  h20 +0x200, /sm - /setmaterials 
-    Gui, Commandlist: Add, Text, x8 y152  h20 +0x200, .ыь - /setmaterials 
+    Gui, Commandlist: Add, Text, x8 y152  h20 +0x200, .Г»Гј - /setmaterials 
     Gui, Commandlist: Add, Text, x8 y168  h20 +0x200, /tn - /tempname 
-    Gui, Commandlist: Add, Text, x8 y184  h20 +0x200, .ет - /tempname 
-    Gui, Commandlist: Add, Text, x8 y200  h20 +0x200, .яяв - /zzdebug 
+    Gui, Commandlist: Add, Text, x8 y184  h20 +0x200, .ГҐГІ - /tempname 
+    Gui, Commandlist: Add, Text, x8 y200  h20 +0x200, .ГїГїГў - /zzdebug 
     Gui, Commandlist: Add, Text, x8 y216  h20 +0x200, /zzd - /zzdebug 
     Gui, Commandlist: Add, Text, x8 y232  h20 +0x200, /Usefull - /addUsefullitheater 
-    Gui, Commandlist: Add, Text, x8 y248  h20 +0x200, .фьзр - /addUsefullitheater 
+    Gui, Commandlist: Add, Text, x8 y248  h20 +0x200, .ГґГјГ§Г° - /addUsefullitheater 
     Gui, Commandlist: Add, Text, x8 y264  h20 +0x200, /rUsefull - /removeUsefullitheater 
-    Gui, Commandlist: Add, Text, x8 y280  h20 +0x200, .кфьзр - /removeUsefullitheater 
+    Gui, Commandlist: Add, Text, x8 y280  h20 +0x200, .ГЄГґГјГ§Г° - /removeUsefullitheater 
     Gui, Commandlist: Add, Text, x8 y296  h20 +0x200, /gzone - /togglegreenzone 
-    Gui, Commandlist: Add, Text, x8 y312  h20 +0x200, .пящту - /togglegreenzone 
+    Gui, Commandlist: Add, Text, x8 y312  h20 +0x200, .ГЇГїГ№ГІГі - /togglegreenzone 
     Gui, Commandlist: Add, Text, x8 y328  h20 +0x200, /mcheck - /mutecheck 
-    Gui, Commandlist: Add, Text, x8 y344  h20 +0x200, .ьсрусл - /mutecheck 
-    Gui, Commandlist: Add, Text, x8 y360  h20 +0x200, .ьгеусрусл - /mutecheck 
-	Gui, Commandlist: Add, Text, x8 y376  h20 +0x200, .гтофшд - /unjail 
-    Gui, Commandlist: Add, Text, x8 y392  h20 +0x200, .цфкт - /warn 
-    Gui, Commandlist: Add, Text, x8 y408  h20 +0x200, .дв - /lastdriver 
+    Gui, Commandlist: Add, Text, x8 y344  h20 +0x200, .ГјГ±Г°ГіГ±Г« - /mutecheck 
+    Gui, Commandlist: Add, Text, x8 y360  h20 +0x200, .ГјГЈГҐГіГ±Г°ГіГ±Г« - /mutecheck 
+	Gui, Commandlist: Add, Text, x8 y376  h20 +0x200, .ГЈГІГ®ГґГёГ¤ - /unjail 
+    Gui, Commandlist: Add, Text, x8 y392  h20 +0x200, .Г¶ГґГЄГІ - /warn 
+    Gui, Commandlist: Add, Text, x8 y408  h20 +0x200, .Г¤Гў - /lastdriver 
     Gui, Commandlist: Add, Text, x8 y424  h20 +0x200, /ld - /lastdriver 
     Gui, Commandlist: Add, Text, x8 y440  h20 +0x200, /af - /ainfect 
-    Gui, Commandlist: Add, Text, x8 y456  h20 +0x200, .фа - /ainfect 
+    Gui, Commandlist: Add, Text, x8 y456  h20 +0x200, .ГґГ  - /ainfect 
     Gui, Commandlist: Add, Text, x8 y472  h20 +0x200, /sk - /skick 
-    Gui, Commandlist: Add, Text, x8 y488  h20 +0x200, .ыл - /skick 
+    Gui, Commandlist: Add, Text, x8 y488  h20 +0x200, .Г»Г« - /skick 
     Gui, Commandlist: Add, Text, x8 y504  h20 +0x200, /k - /kick 
-    Gui, Commandlist: Add, Text, x8 y520  h20 +0x200, .л - /kick 
+    Gui, Commandlist: Add, Text, x8 y520  h20 +0x200, .Г« - /kick 
 	Gui, Commandlist: Add, Text, x8 y536  h20 +0x200, /ai - /auninvite 
-    Gui, Commandlist: Add, Text, x8 y552  h20 +0x200, .фш - /auninvite 
-    Gui, Commandlist: Add, Text, x8 y568  h20 +0x200, .аи - /fb 
+    Gui, Commandlist: Add, Text, x8 y552  h20 +0x200, .ГґГё - /auninvite 
+    Gui, Commandlist: Add, Text, x8 y568  h20 +0x200, .Г ГЁ - /fb 
     Gui, Commandlist: Add, Text, x8 y584  h20 +0x200, /aif - /ainfect  
-	Gui, Commandlist: Add, Text, x8 y600  h20 +0x200, .фша - /ainfect 
-    Gui, Commandlist: Add, Text, x8 y616  h20 +0x200, .с - /c  
-    Gui, Commandlist: Add, Text, x8 y632  h20 +0x200, .си - /cb 
-    Gui, Commandlist: Add, Text, x8 y648  h20 +0x200, .гтьгеу - /unmute 
-    Gui, Commandlist: Add, Text, x8 y664  h20 +0x200, .пшв - /gid 
-    Gui, Commandlist: Add, Text, x8 y680  h20 +0x200, .фвьшты - /admins 
-    Gui, Commandlist: Add, Text, x8 y696  h20 +0x200, .фштаусе - /ainfect 
-    Gui, Commandlist: Add, Text, x8 y712  h20 +0x200, .умутещт - /eventon 
-    Gui, Commandlist: Add, Text, x8 y728  h20 +0x200, .умутещаа - /eventoff 
-    Gui, Commandlist: Add, Text, x8 y744  h20 +0x200, .пц - /gw 
+	Gui, Commandlist: Add, Text, x8 y600  h20 +0x200, .ГґГёГ  - /ainfect 
+    Gui, Commandlist: Add, Text, x8 y616  h20 +0x200, .Г± - /c  
+    Gui, Commandlist: Add, Text, x8 y632  h20 +0x200, .Г±ГЁ - /cb 
+    Gui, Commandlist: Add, Text, x8 y648  h20 +0x200, .ГЈГІГјГЈГҐГі - /unmute 
+    Gui, Commandlist: Add, Text, x8 y664  h20 +0x200, .ГЇГёГў - /gid 
+    Gui, Commandlist: Add, Text, x8 y680  h20 +0x200, .ГґГўГјГёГІГ» - /admins 
+    Gui, Commandlist: Add, Text, x8 y696  h20 +0x200, .ГґГёГІГ ГіГ±ГҐ - /ainfect 
+    Gui, Commandlist: Add, Text, x8 y712  h20 +0x200, .ГіГ¬ГіГІГҐГ№ГІ - /eventon 
+    Gui, Commandlist: Add, Text, x8 y728  h20 +0x200, .ГіГ¬ГіГІГҐГ№Г Г  - /eventoff 
+    Gui, Commandlist: Add, Text, x8 y744  h20 +0x200, .ГЇГ¶ - /gw 
 	Gui, Commandlist: Add, Text, x8 y760  h20 +0x200, /bch - /bancheck
 	
-    Gui, Commandlist: Add, Text, x170 y24  h20 +0x200, .ашчсфк - /fixcar 
-    Gui, Commandlist: Add, Text, x170 y40  h20 +0x200, .уьздуфвук - /templeader 
+    Gui, Commandlist: Add, Text, x170 y24  h20 +0x200, .Г ГёГ·Г±ГґГЄ - /fixcar 
+    Gui, Commandlist: Add, Text, x170 y40  h20 +0x200, .ГіГјГ§Г¤ГіГґГўГіГЄ - /templeader 
     Gui, Commandlist: Add, Text, x170 y56  h20 +0x200, /tl - /templeader 
-    Gui, Commandlist: Add, Text, x170 y72  h20 +0x200, .ед - /templeader 
-    Gui, Commandlist: Add, Text, x170 y88  h20 +0x200, .ылшсл - /skick 
-    Gui, Commandlist: Add, Text, x170 y104  h20 +0x200, .кузфшк - /repair 
-    Gui, Commandlist: Add, Text, x170 y120  h20 +0x200, .фгтшмшеу - /auninvite 
-    Gui, Commandlist: Add, Text, x170 y136  h20 +0x200, .учсфк - /excar 
-    Gui, Commandlist: Add, Text, x170 y152  h20 +0x200, .агуд - /fuel 
-    Gui, Commandlist: Add, Text, x170 y168  h20 +0x200, .акууяу - /freeze
-    Gui, Commandlist: Add, Text, x170 y200  h20 +0x200, .згддекгтл - /pulltrunk 
-    Gui, Commandlist: Add, Text, x170 y216  h20 +0x200, .езсфк - /tpcar 
-    Gui, Commandlist: Add, Text, x170 y232  h20 +0x200, .дфыевкшмук - /lastdriver 
-    Gui, Commandlist: Add, Text, x170 y248  h20 +0x200, .вудшеуь - /delitem 
+    Gui, Commandlist: Add, Text, x170 y72  h20 +0x200, .ГҐГ¤ - /templeader 
+    Gui, Commandlist: Add, Text, x170 y88  h20 +0x200, .Г»Г«ГёГ±Г« - /skick 
+    Gui, Commandlist: Add, Text, x170 y104  h20 +0x200, .ГЄГіГ§ГґГёГЄ - /repair 
+    Gui, Commandlist: Add, Text, x170 y120  h20 +0x200, .ГґГЈГІГёГ¬ГёГҐГі - /auninvite 
+    Gui, Commandlist: Add, Text, x170 y136  h20 +0x200, .ГіГ·Г±ГґГЄ - /excar 
+    Gui, Commandlist: Add, Text, x170 y152  h20 +0x200, .Г ГЈГіГ¤ - /fuel 
+    Gui, Commandlist: Add, Text, x170 y168  h20 +0x200, .Г ГЄГіГіГїГі - /freeze
+    Gui, Commandlist: Add, Text, x170 y200  h20 +0x200, .Г§ГЈГ¤Г¤ГҐГЄГЈГІГ« - /pulltrunk 
+    Gui, Commandlist: Add, Text, x170 y216  h20 +0x200, .ГҐГ§Г±ГґГЄ - /tpcar 
+    Gui, Commandlist: Add, Text, x170 y232  h20 +0x200, .Г¤ГґГ»ГҐГўГЄГёГ¬ГіГЄ - /lastdriver 
+    Gui, Commandlist: Add, Text, x170 y248  h20 +0x200, .ГўГіГ¤ГёГҐГіГј - /delitem 
     Gui, Commandlist: Add, Text, x170 y264  h20 +0x200, /gc - /getcar 
-	Gui, Commandlist: Add, Text, x170 y184  h20 +0x200, .пиздец - Мольба о помощи
-    Gui, Commandlist: Add, Text, x170 y280  h20 +0x200, .пс - /getcar 
-    Gui, Commandlist: Add, Text, x170 y296  h20 +0x200, .фв - /admins 
+	Gui, Commandlist: Add, Text, x170 y184  h20 +0x200, .ГЇГЁГ§Г¤ГҐГ¶ - ГЊГ®Г«ГјГЎГ  Г® ГЇГ®Г¬Г®Г№ГЁ
+    Gui, Commandlist: Add, Text, x170 y280  h20 +0x200, .ГЇГ± - /getcar 
+    Gui, Commandlist: Add, Text, x170 y296  h20 +0x200, .ГґГў - /admins 
     Gui, Commandlist: Add, Text, x170 y312  h20 +0x200, /ad - /admins 
-    Gui, Commandlist: Add, Text, x170 y328  h20 +0x200, .з - /players 
+    Gui, Commandlist: Add, Text, x170 y328  h20 +0x200, .Г§ - /players 
     Gui, Commandlist: Add, Text, x170 y344  h20 +0x200, /p - /players 
-    Gui, Commandlist: Add, Text, x170 y360  h20 +0x200, .здфнукы - /players 
-	Gui, Commandlist: Add, Text, x170 y376  h20 +0x200, .рес - /rescue 
+    Gui, Commandlist: Add, Text, x170 y360  h20 +0x200, .Г§Г¤ГґГ­ГіГЄГ» - /players 
+	Gui, Commandlist: Add, Text, x170 y376  h20 +0x200, .Г°ГҐГ± - /rescue 
     Gui, Commandlist: Add, Text, x170 y392  h20 +0x200, /htc - /rescue 
-    Gui, Commandlist: Add, Text, x170 y408  h20 +0x200, .ез - /tp 
-    Gui, Commandlist: Add, Text, x170 y424  h20 +0x200, .ызус - /spec 
-    Gui, Commandlist: Add, Text, x170 y440  h20 +0x200, .ызусщаа - /specoff
-    Gui, Commandlist: Add, Text, x170 y456  h20 +0x200, .ф - /a 
-    Gui, Commandlist: Add, Text, x170 y472  h20 +0x200, .фыьы - /asms 
+    Gui, Commandlist: Add, Text, x170 y408  h20 +0x200, .ГҐГ§ - /tp 
+    Gui, Commandlist: Add, Text, x170 y424  h20 +0x200, .Г»Г§ГіГ± - /spec 
+    Gui, Commandlist: Add, Text, x170 y440  h20 +0x200, .Г»Г§ГіГ±Г№Г Г  - /specoff
+    Gui, Commandlist: Add, Text, x170 y456  h20 +0x200, .Гґ - /a 
+    Gui, Commandlist: Add, Text, x170 y472  h20 +0x200, .ГґГ»ГјГ» - /asms 
     Gui, Commandlist: Add, Text, x170 y488  h20 +0x200, /sp - /spec 
-    Gui, Commandlist: Add, Text, x170 y504  h20 +0x200, .ыз - /spec 
+    Gui, Commandlist: Add, Text, x170 y504  h20 +0x200, .Г»Г§ - /spec 
     Gui, Commandlist: Add, Text, x170 y520  h20 +0x200, /so - /specoff 
-	Gui, Commandlist: Add, Text, x170 y536  h20 +0x200, .ыщ - /specoff
+	Gui, Commandlist: Add, Text, x170 y536  h20 +0x200, .Г»Г№ - /specoff
     Gui, Commandlist: Add, Text, x170 y552  h20 +0x200, /kill - /hp 0
-    Gui, Commandlist: Add, Text, x170 y568  h20 +0x200, .лшдд - /hp 0
-    Gui, Commandlist: Add, Text, x170 y584  h20 +0x200, .пр - /gh 
-	Gui, Commandlist: Add, Text, x170 y600  h20 +0x200, .штсфк - /incar 
-    Gui, Commandlist: Add, Text, x170 y616  h20 +0x200, .штм - /inv 
-    Gui, Commandlist: Add, Text, x170 y632  h20 +0x200, .рз - /hp 
-    Gui, Commandlist: Add, Text, x170 y648  h20 +0x200, .шв - /id 
-    Gui, Commandlist: Add, Text, x170 y664  h20 +0x200, .од - /ajail 
-    Gui, Commandlist: Add, Text, x170 y680  h20 +0x200, .фофшд - /ajail 
-    Gui, Commandlist: Add, Text, x170 y696  h20 +0x200, .лшсл - /kick 
-    Gui, Commandlist: Add, Text, x170 y712  h20 +0x200, .вд - /dl 
-    Gui, Commandlist: Add, Text, x170 y728  h20 +0x200, .уыз - /esp 
-    Gui, Commandlist: Add, Text, x170 y744  h20 +0x200, .уыз2 - /esp2 
-	Gui, Commandlist: Add, Text, x170 y760  h20 +0x200, .мур - /veh 
+    Gui, Commandlist: Add, Text, x170 y568  h20 +0x200, .Г«ГёГ¤Г¤ - /hp 0
+    Gui, Commandlist: Add, Text, x170 y584  h20 +0x200, .ГЇГ° - /gh 
+	Gui, Commandlist: Add, Text, x170 y600  h20 +0x200, .ГёГІГ±ГґГЄ - /incar 
+    Gui, Commandlist: Add, Text, x170 y616  h20 +0x200, .ГёГІГ¬ - /inv 
+    Gui, Commandlist: Add, Text, x170 y632  h20 +0x200, .Г°Г§ - /hp 
+    Gui, Commandlist: Add, Text, x170 y648  h20 +0x200, .ГёГў - /id 
+    Gui, Commandlist: Add, Text, x170 y664  h20 +0x200, .Г®Г¤ - /ajail 
+    Gui, Commandlist: Add, Text, x170 y680  h20 +0x200, .ГґГ®ГґГёГ¤ - /ajail 
+    Gui, Commandlist: Add, Text, x170 y696  h20 +0x200, .Г«ГёГ±Г« - /kick 
+    Gui, Commandlist: Add, Text, x170 y712  h20 +0x200, .ГўГ¤ - /dl 
+    Gui, Commandlist: Add, Text, x170 y728  h20 +0x200, .ГіГ»Г§ - /esp 
+    Gui, Commandlist: Add, Text, x170 y744  h20 +0x200, .ГіГ»Г§2 - /esp2 
+	Gui, Commandlist: Add, Text, x170 y760  h20 +0x200, .Г¬ГіГ° - /veh 
 
-    Gui, Commandlist: Add, Text, x332 y24  h20 +0x200, .ифт - /ban 
-    Gui, Commandlist: Add, Text, x332 y40  h20 +0x200, .вудмур - /delveh 
-    Gui, Commandlist: Add, Text, x332 y56  h20 +0x200, .ьез - /mtp 
-    Gui, Commandlist: Add, Text, x332 y72  h20 +0x200, .мур - /veh 
-    Gui, Commandlist: Add, Text, x332 y88  h20 +0x200, .фмур - /aveh 
-    Gui, Commandlist: Add, Text, x332 y104  h20 +0x200, .рфквифт - /hardban 
-    Gui, Commandlist: Add, Text, x332 y120  h20 +0x200, .ьгеу - /mute 
-    Gui, Commandlist: Add, Text, x332 y136  h20 +0x200, .пшв - /gid 
-    Gui, Commandlist: Add, Text, x332 y152  h20 +0x200, .ср - /chide 
+    Gui, Commandlist: Add, Text, x332 y24  h20 +0x200, .ГЁГґГІ - /ban 
+    Gui, Commandlist: Add, Text, x332 y40  h20 +0x200, .ГўГіГ¤Г¬ГіГ° - /delveh 
+    Gui, Commandlist: Add, Text, x332 y56  h20 +0x200, .ГјГҐГ§ - /mtp 
+    Gui, Commandlist: Add, Text, x332 y72  h20 +0x200, .Г¬ГіГ° - /veh 
+    Gui, Commandlist: Add, Text, x332 y88  h20 +0x200, .ГґГ¬ГіГ° - /aveh 
+    Gui, Commandlist: Add, Text, x332 y104  h20 +0x200, .Г°ГґГЄГўГЁГґГІ - /hardban 
+    Gui, Commandlist: Add, Text, x332 y120  h20 +0x200, .ГјГЈГҐГі - /mute 
+    Gui, Commandlist: Add, Text, x332 y136  h20 +0x200, .ГЇГёГў - /gid 
+    Gui, Commandlist: Add, Text, x332 y152  h20 +0x200, .Г±Г° - /chide 
     Gui, Commandlist: Add, Text, x332 y168  h20 +0x200, /ch - /chide 
-    Gui, Commandlist: Add, Text, x332 y184  h20 +0x200, .куысгу - /rescue 
-    Gui, Commandlist: Add, Text, x332 y200  h20 +0x200, .ыуевшь - /setdim 
+    Gui, Commandlist: Add, Text, x332 y184  h20 +0x200, .ГЄГіГ»Г±ГЈГі - /rescue 
+    Gui, Commandlist: Add, Text, x332 y200  h20 +0x200, .Г»ГіГҐГўГёГј - /setdim 
     Gui, Commandlist: Add, Text, x332 y216  h20 +0x200, /sd - /setdim 
-    Gui, Commandlist: Add, Text, x332 y232  h20 +0x200, .и - /b 
-    Gui, Commandlist: Add, Text, x332 y248  h20 +0x200, .ц - /w 
-    Gui, Commandlist: Add, Text, x332 y264  h20 +0x200, .ыв - /setdim 
-    Gui, Commandlist: Add, Text, x332 y280  h20 +0x200, .сршву - /chide 
-    Gui, Commandlist: Add, Text, x332 y296  h20 +0x200, .афк - /a афк мин
-    Gui, Commandlist: Add, Text, x332 y312  h20 +0x200, .фгтсгаа - /auncuff 
-    Gui, Commandlist: Add, Text, x332 y328  h20 +0x200, .фсгаа - /acuff 
-    Gui, Commandlist: Add, Text, x332 y344  h20 +0x200, .акууямур - /freezveh
+    Gui, Commandlist: Add, Text, x332 y232  h20 +0x200, .ГЁ - /b 
+    Gui, Commandlist: Add, Text, x332 y248  h20 +0x200, .Г¶ - /w 
+    Gui, Commandlist: Add, Text, x332 y264  h20 +0x200, .Г»Гў - /setdim 
+    Gui, Commandlist: Add, Text, x332 y280  h20 +0x200, .Г±Г°ГёГўГі - /chide 
+    Gui, Commandlist: Add, Text, x332 y296  h20 +0x200, .Г ГґГЄ - /a Г ГґГЄ Г¬ГЁГ­
+    Gui, Commandlist: Add, Text, x332 y312  h20 +0x200, .ГґГЈГІГ±ГЈГ Г  - /auncuff 
+    Gui, Commandlist: Add, Text, x332 y328  h20 +0x200, .ГґГ±ГЈГ Г  - /acuff 
+    Gui, Commandlist: Add, Text, x332 y344  h20 +0x200, .Г ГЄГіГіГїГ¬ГіГ° - /freezveh
     Gui, Commandlist: Add, Text, x332 y360  h20 +0x200, /scd - /setcardim 
-	Gui, Commandlist: Add, Text, x332 y376  h20 +0x200, .ыуесфквшь - /setcardim 
-    Gui, Commandlist: Add, Text, x332 y392  h20 +0x200, .ысв - /setcardim 
+	Gui, Commandlist: Add, Text, x332 y376  h20 +0x200, .Г»ГіГҐГ±ГґГЄГўГёГј - /setcardim 
+    Gui, Commandlist: Add, Text, x332 y392  h20 +0x200, .Г»Г±Гў - /setcardim 
     Gui, Commandlist: Add, Text, x332 y408  h20 +0x200, /rst - /resettempname 
-    Gui, Commandlist: Add, Text, x332 y424  h20 +0x200, .кые - /resettempname 
-    Gui, Commandlist: Add, Text, x332 y440  h20 +0x200, .куыуееуьзтфьу - /resettempname 
-    Gui, Commandlist: Add, Text, x332 y456  h20 +0x200, .ты - /netstat 
+    Gui, Commandlist: Add, Text, x332 y424  h20 +0x200, .ГЄГ»ГҐ - /resettempname 
+    Gui, Commandlist: Add, Text, x332 y440  h20 +0x200, .ГЄГіГ»ГіГҐГҐГіГјГ§ГІГґГјГі - /resettempname 
+    Gui, Commandlist: Add, Text, x332 y456  h20 +0x200, .ГІГ» - /netstat 
     Gui, Commandlist: Add, Text, x332 y472  h20 +0x200, /ns - /netstat 
     Gui, Commandlist: Add, Text, x332 y488  h20 +0x200, /dv - /delveh 
-    Gui, Commandlist: Add, Text, x332 y504  h20 +0x200, .вм - /delveh 
-    Gui, Commandlist: Add, Text, x332 y520  h20 +0x200, .рфкв - /hardban 
+    Gui, Commandlist: Add, Text, x332 y504  h20 +0x200, .ГўГ¬ - /delveh 
+    Gui, Commandlist: Add, Text, x332 y520  h20 +0x200, .Г°ГґГЄГў - /hardban 
 	Gui, Commandlist: Add, Text, x332 y536  h20 +0x200, /hard - /hardban 
     Gui, Commandlist: Add, Text, x332 y552  h20 +0x200, /as - /asms 
-    Gui, Commandlist: Add, Text, x332 y568  h20 +0x200, .фы - /asms 
-    Gui, Commandlist: Add, Text, x332 y584  h20 +0x200, .пез - /gtp
-	Gui, Commandlist: Add, Text, x332 y600  h20 +0x200, .пь - /gm
-    Gui, Commandlist: Add, Text, x332 y616  h20 +0x200, .тс - /noclip 
+    Gui, Commandlist: Add, Text, x332 y568  h20 +0x200, .ГґГ» - /asms 
+    Gui, Commandlist: Add, Text, x332 y584  h20 +0x200, .ГЇГҐГ§ - /gtp
+	Gui, Commandlist: Add, Text, x332 y600  h20 +0x200, .ГЇГј - /gm
+    Gui, Commandlist: Add, Text, x332 y616  h20 +0x200, .ГІГ± - /noclip 
     Gui, Commandlist: Add, Text, x332 y632  h20 +0x200, /nc - /noclip 
     Gui, Commandlist: Add, Text, x332 y648  h20 +0x200, /acf - /acuff 
-    Gui, Commandlist: Add, Text, x332 y664  h20 +0x200, .фса - /acuff 
+    Gui, Commandlist: Add, Text, x332 y664  h20 +0x200, .ГґГ±Г  - /acuff 
     Gui, Commandlist: Add, Text, x332 y680  h20 +0x200, /auf - /auncuff 
-    Gui, Commandlist: Add, Text, x332 y696  h20 +0x200, .езр - /tph
-    Gui, Commandlist: Add, Text, x332 y712  h20 +0x200, .фга - /auncuff 
-    Gui, Commandlist: Add, Text, x332 y728  h20 +0x200, .фмур - /aveh
-    Gui, Commandlist: Add, Text, x332 y744  h20 +0x200, .фдщсл - /alock
-	Gui, Commandlist: Add, Text, x332 y760  h20 +0x200, .пуесфк - /getcar 
+    Gui, Commandlist: Add, Text, x332 y696  h20 +0x200, .ГҐГ§Г° - /tph
+    Gui, Commandlist: Add, Text, x332 y712  h20 +0x200, .ГґГЈГ  - /auncuff 
+    Gui, Commandlist: Add, Text, x332 y728  h20 +0x200, .ГґГ¬ГіГ° - /aveh
+    Gui, Commandlist: Add, Text, x332 y744  h20 +0x200, .ГґГ¤Г№Г±Г« - /alock
+	Gui, Commandlist: Add, Text, x332 y760  h20 +0x200, .ГЇГіГҐГ±ГґГЄ - /getcar 
 
 	Gui, Commandlist: Tab, 2
-	Gui, Commandlist: Add, Text, cred x122 y24  h20 +0x200, Данные команды работают совместно с "динамик"
-    Gui, Commandlist: Add, Text, cyellow x8 y40  h20 +0x200, Дименшены
-    Gui, Commandlist: Add, Text, x8 y56  h20 +0x200, .обыч - /setdim id 0
-    Gui, Commandlist: Add, Text, x8 y72  h20 +0x200, .каптд - /setdim id 9871 
-    Gui, Commandlist: Add, Text, x8 y88  h20 +0x200, .бизд - /setdim id 222
-    Gui, Commandlist: Add, Text, cyellow x8 y104  h20 +0x200, Оружие
-    Gui, Commandlist: Add, Text, x8 y120  h20 +0x200, .миниг - /gw id weapon_minigun 9999
-    Gui, Commandlist: Add, Text, x8 y136  h20 +0x200, .ревик - /gw id weapon_revolver 9999
-    Gui, Commandlist: Add, Text, x8 y152  h20 +0x200, .ракет - /gw id weapon_firework 9999
-    Gui, Commandlist: Add, Text, x8 y168  h20 +0x200, .хевик - /gw id weapon_heavysniper_mk2 9999
-    Gui, Commandlist: Add, Text, x8 y184  h20 +0x200, .топор - /gw id weapon_hatchet  9999
-	Gui, Commandlist: Add, Text, cyellow x8 y200  h20 +0x200, Бизвары
-	Gui, Commandlist: Add, Text, x8 y216  h20 +0x200, .лес1 - Телепорт на локацию лес (деф) + смена дименшена
-    Gui, Commandlist: Add, Text, x8 y232  h20 +0x200, .лес2 - Телепорт на локацию лес (атака) + смена дименшена
-    Gui, Commandlist: Add, Text, x8 y248  h20 +0x200, .порт1 - Телепорт на локацию порт (деф) + смена дименшена
-    Gui, Commandlist: Add, Text, x8 y264  h20 +0x200, .порт2 - Телепорт на локацию порт (атака) + смена дименшена
-    Gui, Commandlist: Add, Text, x8 y280  h20 +0x200, .свалка1 - Телепорт на локацию свалка (деф) + смена дименшена
-	Gui, Commandlist: Add, Text, x8 y296  h20 +0x200, .свалка2 - Телепорт на локацию свалка (атака) + смена дименшена
-    Gui, Commandlist: Add, Text, x8 y312  h20 +0x200, .стройка1 - Телепорт на локацию стройка (деф) + смена дименшена
-    Gui, Commandlist: Add, Text, x8 y328  h20 +0x200, .стройка2 - Телепорт на локацию стройка (атака) + смена дименшена
+	Gui, Commandlist: Add, Text, cred x122 y24  h20 +0x200, Г„Г Г­Г­Г»ГҐ ГЄГ®Г¬Г Г­Г¤Г» Г°Г ГЎГ®ГІГ ГѕГІ Г±Г®ГўГ¬ГҐГ±ГІГ­Г® Г± "Г¤ГЁГ­Г Г¬ГЁГЄ"
+    Gui, Commandlist: Add, Text, cyellow x8 y40  h20 +0x200, Г„ГЁГ¬ГҐГ­ГёГҐГ­Г»
+    Gui, Commandlist: Add, Text, x8 y56  h20 +0x200, .Г®ГЎГ»Г· - /setdim id 0
+    Gui, Commandlist: Add, Text, x8 y72  h20 +0x200, .ГЄГ ГЇГІГ¤ - /setdim id 9871 
+    Gui, Commandlist: Add, Text, x8 y88  h20 +0x200, .ГЎГЁГ§Г¤ - /setdim id 222
+    Gui, Commandlist: Add, Text, cyellow x8 y104  h20 +0x200, ГЋГ°ГіГ¦ГЁГҐ
+    Gui, Commandlist: Add, Text, x8 y120  h20 +0x200, .Г¬ГЁГ­ГЁГЈ - /gw id weapon_minigun 9999
+    Gui, Commandlist: Add, Text, x8 y136  h20 +0x200, .Г°ГҐГўГЁГЄ - /gw id weapon_revolver 9999
+    Gui, Commandlist: Add, Text, x8 y152  h20 +0x200, .Г°Г ГЄГҐГІ - /gw id weapon_firework 9999
+    Gui, Commandlist: Add, Text, x8 y168  h20 +0x200, .ГµГҐГўГЁГЄ - /gw id weapon_heavysniper_mk2 9999
+    Gui, Commandlist: Add, Text, x8 y184  h20 +0x200, .ГІГ®ГЇГ®Г° - /gw id weapon_hatchet  9999
+	Gui, Commandlist: Add, Text, cyellow x8 y200  h20 +0x200, ГЃГЁГ§ГўГ Г°Г»
+	Gui, Commandlist: Add, Text, x8 y216  h20 +0x200, .Г«ГҐГ±1 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ Г«ГҐГ± (Г¤ГҐГґ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+    Gui, Commandlist: Add, Text, x8 y232  h20 +0x200, .Г«ГҐГ±2 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ Г«ГҐГ± (Г ГІГ ГЄГ ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+    Gui, Commandlist: Add, Text, x8 y248  h20 +0x200, .ГЇГ®Г°ГІ1 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ ГЇГ®Г°ГІ (Г¤ГҐГґ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+    Gui, Commandlist: Add, Text, x8 y264  h20 +0x200, .ГЇГ®Г°ГІ2 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ ГЇГ®Г°ГІ (Г ГІГ ГЄГ ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+    Gui, Commandlist: Add, Text, x8 y280  h20 +0x200, .Г±ГўГ Г«ГЄГ 1 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ Г±ГўГ Г«ГЄГ  (Г¤ГҐГґ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+	Gui, Commandlist: Add, Text, x8 y296  h20 +0x200, .Г±ГўГ Г«ГЄГ 2 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ Г±ГўГ Г«ГЄГ  (Г ГІГ ГЄГ ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+    Gui, Commandlist: Add, Text, x8 y312  h20 +0x200, .Г±ГІГ°Г®Г©ГЄГ 1 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ Г±ГІГ°Г®Г©ГЄГ  (Г¤ГҐГґ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
+    Gui, Commandlist: Add, Text, x8 y328  h20 +0x200, .Г±ГІГ°Г®Г©ГЄГ 2 - Г’ГҐГ«ГҐГЇГ®Г°ГІ Г­Г  Г«Г®ГЄГ Г¶ГЁГѕ Г±ГІГ°Г®Г©ГЄГ  (Г ГІГ ГЄГ ) + Г±Г¬ГҐГ­Г  Г¤ГЁГ¬ГҐГ­ГёГҐГ­Г 
     Gui, Commandlist: Add, Text, x8 y344  h20 +0x200, 
     Gui, Commandlist: Add, Text, x8 y360  h20 +0x200, 
-    Gui, Commandlist: Show, h782 w512, Команды
+    Gui, Commandlist: Show, h782 w512, ГЉГ®Г¬Г Г­Г¤Г»
 	Return
 
 	Answers:
@@ -863,256 +863,256 @@ return
     Gui, Answers: Color, 1e2124
     Gui, Answers: Font, s8, Segoe UI
     Gui, Answers: Font, cwhite
-    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .виз - Визуальный баг, перезайдите на сервер.
-    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .суд - Приветствую, администрация следит исключительно за соблюдение правил сервера. Вам необходимо найти ответ на ваш вопрос самостоятельно, опираясь на законодательную базу сервера Las Vegas - https://forum.majestic-rp.ru/forums/zakonodatelnaja-baza.820/
+    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .ГўГЁГ§ - Г‚ГЁГ§ГіГ Г«ГјГ­Г»Г© ГЎГ ГЈ, ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Г­Г  Г±ГҐГ°ГўГҐГ°.
+    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .Г±ГіГ¤ - ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г±Г«ГҐГ¤ГЁГІ ГЁГ±ГЄГ«ГѕГ·ГЁГІГҐГ«ГјГ­Г® Г§Г  Г±Г®ГЎГ«ГѕГ¤ГҐГ­ГЁГҐ ГЇГ°Г ГўГЁГ« Г±ГҐГ°ГўГҐГ°Г . Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г­Г Г©ГІГЁ Г®ГІГўГҐГІ Г­Г  ГўГ Гё ГўГ®ГЇГ°Г®Г± Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г®, Г®ГЇГЁГ°Г ГїГ±Гј Г­Г  Г§Г ГЄГ®Г­Г®Г¤Г ГІГҐГ«ГјГ­ГіГѕ ГЎГ Г§Гі Г±ГҐГ°ГўГҐГ°Г  Las Vegas - https://forum.majestic-rp.ru/forums/zakonodatelnaja-baza.820/
 
-    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .багвойс - Нажмите F2 - Настройки - блокировка войса - заблокируйте для всех и снова разблокируйте. В случае, если проблема осталась, то перезайдите в игру.
-    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .метал - Металлоискатель становится активным как только Вы берете его в руки. Когда он найдет сокровища, то будут происходить визуальные и звуковые оповещения. От зеленого цвета, до красного. 
-    Gui, Answers: Add, Text, x8 y72  h20 +0x200, Места расположения сокровищ: пляжи и архипелаги.
-    Gui, Answers: Add, Text, x8 y88  h20 +0x200, .рыбалка - Для того чтобы рыбачить, Вам  нужна удочка и наживка - покупается в любом магизине 24/7. Подходите к зоне рыбалки своего уровня и нажимаете клавишу Е. Ждёте клёва, как появится
-    Gui, Answers: Add, Text, x8 y104  h20 +0x200, рыба, она будет вилять в стороны влево-вправо. Вам нужно зажимать клавиши A/D противоположной стороны рыбы. После того как рыба утомилась, Вы её подсекаете левой кнопкой мыши.
-    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .рыб - Вам надо ловить рыбу в зоне, которая соответствует вашему уровню. 1 уровень - Зоны: 1, 2, 3, 4. Рыба: Форель. Количество опыта для повышения: 196. .
-    Gui, Answers: Add, Text, x8 y136  h20 +0x200, 2 уровень - Зоны: 5,6. Рыба: Камбала. Количество опыта для повышения: 588. 3 уровень - Зона 7,8. Рыба: Тунец.  Количество опыта для повышения: 1 225. 4 уровень - Зона 9,10. Рыба: Красный солдат. 
-    Gui, Answers: Add, Text, x8 y152  h20 +0x200, Количество опыта для повышения: 2 205. 5 уровень - Зона 11. Рыба: Карась. Количество опыта для повышения: 3 920. 6 уровень - Зона 12. Рыба: Оранжевый карп. Количество опыта для повышения: 
-    Gui, Answers: Add, Text, x8 y168  h20 +0x200, 6 125. 7 уровень - Зона 13. Рыба: Аквамарин.  Количество опыта для повышения: 8 820. 8 уровень - Зона 14. Рыба: Золотая рыбка
-    Gui, Answers: Add, Text, x8 y184  h20 +0x200, .ставка - Расчёт ставки обычно происходит в течение 6-ти часов. Администрация не управляет рассчетом.
-    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .клвл - При достижении 5-го уровня: 500 MC При достижении 10-го уровня: 1000 MC При достижении 15-го уровня: 2000 MC При достижении 20-го уровня: 3000 MC При достижении 25-го уровня: 
-    Gui, Answers: Add, Text, x8 y216  h20 +0x200, 4000 MC При достижении 30-го уровня: 5000 MC. Каждый следующий уровень после 30-го Вы будете получат 1500 MC. 
-    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .квест - На сервере доступны Мировые и Личные квесты. Ознакомиться с ними можно на рынке (На карте обозначен как "Красный вопрос"). Квесты доступны всем.
-    Gui, Answers: Add, Text, x8 y248  h20 +0x200,  Только 5 лучших игроков смогут попасть в топ 3 и залутать дополнительные бонусы. - Каждую неделю доступно по 3 личных и мировых квеста. - Некоторые квесты по типу инкасатора/мусорщика/
-    Gui, Answers: Add, Text, x8 y264  h20 +0x200, почтальона можно выполнять в 2-ем и более, засчитывать будем всем.
-    Gui, Answers: Add, Text, x8 y280  h20 +0x200, .фед - На первом этаже стоит NPC у которого можно взять задание. Чтобы отбыть срок в федеральной тюрьме, нужно выполнять задачи. Например помыть туалет - В определенное время тюрьма 
-    Gui, Answers: Add, Text, x8 y296  h20 +0x200, закрывает клетки на 5 минут, соответственно, в это время отбыть срок нельзя: -- Открываются клетки в 00 минут -- Закрываются клетки в 20 минут на 5 минут -- Открываются клетки в 25 
-    Gui, Answers: Add, Text, x8 y312  h20 +0x200, минут - Закрываются клетки в 55 минут на 5 минут.
-    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .сейф - Закрывать интерфейс сейфа можно только на ESC. В сейф можно класть до 5 миллионов. Деньги идут из налички. Нельзя продать дома в гос, продать игроку, предложить обмен, выставить 
-    Gui, Answers: Add, Text, x8 y344  h20 +0x200, на аукцион, если в сейфе есть деньги. Сначала требуется их забрать. Если дом слетает по налогам - деньги из сейфа игрок получает в наличку. 
-    Gui, Answers: Add, Text, x8 y360  h20 +0x200, .рация - За всеми фракциями закреплен диапазон частот, который не могут занять. В F2 -> Настройки можно изменить Громкости рации.
-	Gui, Answers: Add, Text, x8 y376  h20 +0x200, .лесоруб - Устраиваться необходимо все у того же NPC около Палето-Бей. Для начала работы Вам понадобиться “Топор”, купить его можно у NPC на Рынке. Принцип работы схожий с Грибниками, 
-    Gui, Answers: Add, Text, x8 y392  h20 +0x200, точки для сруба деревьев разбросаны по всей карте, каждый уровень привязан к свой точке сбора. Древесину можно продать на рынке. 
-    Gui, Answers: Add, Text, x8 y408  h20 +0x200, .рац - Для использвания: Возьмите рацию > Введите чистоту >Нажмите ентер >Зажмите "M" и будет слышно.
-    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .тайм - Это визуальный баг таймера, часы идут и коины вам начислят по истечению времени. 
-    Gui, Answers: Add, Text, x8 y440  h20 +0x200, .сид - Укажите static ID нарушителя.
-    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .пут - Всю информацию (команды/о фракциях, работах и так далее) можно узнать на форуме majestic-rp.ru - раздел "Путеводитель для новичков".
-    Gui, Answers: Add, Text, x8 y472  h20 +0x200, .увал - К сожалению, ничем не можем помочь. Дождитесь своего лидера/заместителей или свяжитесь с куратором своей фракции в личные сообщения Discord.
-    Gui, Answers: Add, Text, x8 y488  h20 +0x200, .майки - Для того, чтобы купить майку под верхнюю одежду, вам нужно сначала купить элемент верхней одежды (например, пиджак). После этого вам буду доступны все майки, которые 
-    Gui, Answers: Add, Text, x8 y504  h20 +0x200, подходят под нее в разделе "Майки".
-    Gui, Answers: Add, Text, x8 y520  h20 +0x200, .слух - Функция "Я не слышу" предназначена для людей с плохим слухом или его отсутствием. Злоупотребление этой функцией карается баном. Отключить ее можно в меню F2 - Настройки.
-	Gui, Answers: Add, Text, x8 y536  h20 +0x200, .баг - Знаем о данной проблеме, она уже передана разработчикам. Приносим свои извинения за предоставленные неудобства. 
-    Gui, Answers: Add, Text, x8 y552  h20 +0x200, .чат - Все настройки чата вы можете найти в F2 - Настройки - Настройки чата.
-    Gui, Answers: Add, Text, x8 y568  h20 +0x200, .рел - Полностю перезайдите на сервер через F1 - Крестик в правом верхнем углу экрана.
-    Gui, Answers: Add, Text, x8 y584  h20 +0x200, .необл - Не обладаем данной информацией.
-	Gui, Answers: Add, Text, x8 y600  h20 +0x200, .рп - Извините, но это РП процесс, мы не вправе вмешиваться в него.
-    Gui, Answers: Add, Text, x8 y616  h20 +0x200, .урп - Данную информацию вы можете получить при взаимодействии с другими игроками/самостоятельным поиском непосредственно во время игрового процесса, либо другим доступным IC путем. 
-    Gui, Answers: Add, Text, x8 y632  h20 +0x200, .войс - Чтобы перезагрузить войс, попробуйте нажать F7. Если ничего не помогает - перезайдите в игру.
-    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .тех - Напишите в технический раздел на форуме.
-    Gui, Answers: Add, Text, x8 y664  h20 +0x200, .техдс - Напишите в технический раздел официального дискорд сервера "Помощь по игре" - "тех-поддержка".
-    Gui, Answers: Add, Text, x8 y680  h20 +0x200, .функ - Данный функционал временно недоступен, приносим свои извинения.
-    Gui, Answers: Add, Text, x8 y696  h20 +0x200, .фун - Данный функционал отсутствует на нашем проекте. Оставьте свое предложение на форуме в специальном разделе: Предложение по улучшению сервера - "Напишите ваше предложение тут".
-    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .изв - Приносим свои извинения за предоставленные неудобства.
-    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .тест::зайдите в интерьер маркетплейса -> нажмите Е -> выберите категорию транспорт ->  выберите любой транспорт ->  тест драйв.
-    Gui, Answers: Add, Text, x8 y728  h20 +0x200, .ехп - Каждый час (у каждого игрока своё время) Вам дается EХP. Чтобы узнать, сколько Вам осталось до следующего PayDay, нажмите клавишу F2-Персонаж.
-    Gui, Answers: Add, Text, x8 y744  h20 +0x200, .авто - Чтобы эвакуировать Ваше авто воспользуйтесь маркером Сервиса (Гаечный ключ на карте).  
+    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .ГЎГ ГЈГўГ®Г©Г± - ГЌГ Г¦Г¬ГЁГІГҐ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГ  ГўГ®Г©Г±Г  - Г§Г ГЎГ«Г®ГЄГЁГ°ГіГ©ГІГҐ Г¤Г«Гї ГўГ±ГҐГµ ГЁ Г±Г­Г®ГўГ  Г°Г Г§ГЎГ«Г®ГЄГЁГ°ГіГ©ГІГҐ. Г‚ Г±Г«ГіГ·Г ГҐ, ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г®Г±ГІГ Г«Г Г±Гј, ГІГ® ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі.
+    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .Г¬ГҐГІГ Г« - ГЊГҐГІГ Г«Г«Г®ГЁГ±ГЄГ ГІГҐГ«Гј Г±ГІГ Г­Г®ГўГЁГІГ±Гї Г ГЄГІГЁГўГ­Г»Г¬ ГЄГ ГЄ ГІГ®Г«ГјГЄГ® Г‚Г» ГЎГҐГ°ГҐГІГҐ ГҐГЈГ® Гў Г°ГіГЄГЁ. ГЉГ®ГЈГ¤Г  Г®Г­ Г­Г Г©Г¤ГҐГІ Г±Г®ГЄГ°Г®ГўГЁГ№Г , ГІГ® ГЎГіГ¤ГіГІ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІГј ГўГЁГ§ГіГ Г«ГјГ­Г»ГҐ ГЁ Г§ГўГіГЄГ®ГўГ»ГҐ Г®ГЇГ®ГўГҐГ№ГҐГ­ГЁГї. ГЋГІ Г§ГҐГ«ГҐГ­Г®ГЈГ® Г¶ГўГҐГІГ , Г¤Г® ГЄГ°Г Г±Г­Г®ГЈГ®. 
+    Gui, Answers: Add, Text, x8 y72  h20 +0x200, ГЊГҐГ±ГІГ  Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї Г±Г®ГЄГ°Г®ГўГЁГ№: ГЇГ«ГїГ¦ГЁ ГЁ Г Г°ГµГЁГЇГҐГ«Г ГЈГЁ.
+    Gui, Answers: Add, Text, x8 y88  h20 +0x200, .Г°Г»ГЎГ Г«ГЄГ  - Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ®ГЎГ» Г°Г»ГЎГ Г·ГЁГІГј, Г‚Г Г¬  Г­ГіГ¦Г­Г  ГіГ¤Г®Г·ГЄГ  ГЁ Г­Г Г¦ГЁГўГЄГ  - ГЇГ®ГЄГіГЇГ ГҐГІГ±Гї Гў Г«ГѕГЎГ®Г¬ Г¬Г ГЈГЁГ§ГЁГ­ГҐ 24/7. ГЏГ®Г¤ГµГ®Г¤ГЁГІГҐ ГЄ Г§Г®Г­ГҐ Г°Г»ГЎГ Г«ГЄГЁ Г±ГўГ®ГҐГЈГ® ГіГ°Г®ГўГ­Гї ГЁ Г­Г Г¦ГЁГ¬Г ГҐГІГҐ ГЄГ«Г ГўГЁГёГі Г…. Г†Г¤ВёГІГҐ ГЄГ«ВёГўГ , ГЄГ ГЄ ГЇГ®ГїГўГЁГІГ±Гї
+    Gui, Answers: Add, Text, x8 y104  h20 +0x200, Г°Г»ГЎГ , Г®Г­Г  ГЎГіГ¤ГҐГІ ГўГЁГ«ГїГІГј Гў Г±ГІГ®Г°Г®Г­Г» ГўГ«ГҐГўГ®-ГўГЇГ°Г ГўГ®. Г‚Г Г¬ Г­ГіГ¦Г­Г® Г§Г Г¦ГЁГ¬Г ГІГј ГЄГ«Г ГўГЁГёГЁ A/D ГЇГ°Г®ГІГЁГўГ®ГЇГ®Г«Г®Г¦Г­Г®Г© Г±ГІГ®Г°Г®Г­Г» Г°Г»ГЎГ». ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ Г°Г»ГЎГ  ГіГІГ®Г¬ГЁГ«Г Г±Гј, Г‚Г» ГҐВё ГЇГ®Г¤Г±ГҐГЄГ ГҐГІГҐ Г«ГҐГўГ®Г© ГЄГ­Г®ГЇГЄГ®Г© Г¬Г»ГёГЁ.
+    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .Г°Г»ГЎ - Г‚Г Г¬ Г­Г Г¤Г® Г«Г®ГўГЁГІГј Г°Г»ГЎГі Гў Г§Г®Г­ГҐ, ГЄГ®ГІГ®Г°Г Гї Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГҐГІ ГўГ ГёГҐГ¬Гі ГіГ°Г®ГўГ­Гѕ. 1 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г»: 1, 2, 3, 4. ГђГ»ГЎГ : Г”Г®Г°ГҐГ«Гј. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 196. .
+    Gui, Answers: Add, Text, x8 y136  h20 +0x200, 2 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г»: 5,6. ГђГ»ГЎГ : ГЉГ Г¬ГЎГ Г«Г . ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 588. 3 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  7,8. ГђГ»ГЎГ : Г’ГіГ­ГҐГ¶.  ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 1 225. 4 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  9,10. ГђГ»ГЎГ : ГЉГ°Г Г±Г­Г»Г© Г±Г®Г«Г¤Г ГІ. 
+    Gui, Answers: Add, Text, x8 y152  h20 +0x200, ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 2 205. 5 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  11. ГђГ»ГЎГ : ГЉГ Г°Г Г±Гј. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 3 920. 6 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  12. ГђГ»ГЎГ : ГЋГ°Г Г­Г¦ГҐГўГ»Г© ГЄГ Г°ГЇ. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 
+    Gui, Answers: Add, Text, x8 y168  h20 +0x200, 6 125. 7 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  13. ГђГ»ГЎГ : ГЂГЄГўГ Г¬Г Г°ГЁГ­.  ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 8 820. 8 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  14. ГђГ»ГЎГ : Г‡Г®Г«Г®ГІГ Гї Г°Г»ГЎГЄГ 
+    Gui, Answers: Add, Text, x8 y184  h20 +0x200, .Г±ГІГ ГўГЄГ  - ГђГ Г±Г·ВёГІ Г±ГІГ ГўГЄГЁ Г®ГЎГ»Г·Г­Г® ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІ Гў ГІГҐГ·ГҐГ­ГЁГҐ 6-ГІГЁ Г·Г Г±Г®Гў. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГіГЇГ°Г ГўГ«ГїГҐГІ Г°Г Г±Г±Г·ГҐГІГ®Г¬.
+    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .ГЄГ«ГўГ« - ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 5-ГЈГ® ГіГ°Г®ГўГ­Гї: 500 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 10-ГЈГ® ГіГ°Г®ГўГ­Гї: 1000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 15-ГЈГ® ГіГ°Г®ГўГ­Гї: 2000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 20-ГЈГ® ГіГ°Г®ГўГ­Гї: 3000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 25-ГЈГ® ГіГ°Г®ГўГ­Гї: 
+    Gui, Answers: Add, Text, x8 y216  h20 +0x200, 4000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 30-ГЈГ® ГіГ°Г®ГўГ­Гї: 5000 MC. ГЉГ Г¦Г¤Г»Г© Г±Г«ГҐГ¤ГіГѕГ№ГЁГ© ГіГ°Г®ГўГҐГ­Гј ГЇГ®Г±Г«ГҐ 30-ГЈГ® Г‚Г» ГЎГіГ¤ГҐГІГҐ ГЇГ®Г«ГіГ·Г ГІ 1500 MC. 
+    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .ГЄГўГҐГ±ГІ - ГЌГ  Г±ГҐГ°ГўГҐГ°ГҐ Г¤Г®Г±ГІГіГЇГ­Г» ГЊГЁГ°Г®ГўГ»ГҐ ГЁ Г‹ГЁГ·Г­Г»ГҐ ГЄГўГҐГ±ГІГ». ГЋГ§Г­Г ГЄГ®Г¬ГЁГІГјГ±Гї Г± Г­ГЁГ¬ГЁ Г¬Г®Г¦Г­Г® Г­Г  Г°Г»Г­ГЄГҐ (ГЌГ  ГЄГ Г°ГІГҐ Г®ГЎГ®Г§Г­Г Г·ГҐГ­ ГЄГ ГЄ "ГЉГ°Г Г±Г­Г»Г© ГўГ®ГЇГ°Г®Г±"). ГЉГўГҐГ±ГІГ» Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐГ¬.
+    Gui, Answers: Add, Text, x8 y248  h20 +0x200,  Г’Г®Г«ГјГЄГ® 5 Г«ГіГ·ГёГЁГµ ГЁГЈГ°Г®ГЄГ®Гў Г±Г¬Г®ГЈГіГІ ГЇГ®ГЇГ Г±ГІГј Гў ГІГ®ГЇ 3 ГЁ Г§Г Г«ГіГІГ ГІГј Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ ГЎГ®Г­ГіГ±Г». - ГЉГ Г¦Г¤ГіГѕ Г­ГҐГ¤ГҐГ«Гѕ Г¤Г®Г±ГІГіГЇГ­Г® ГЇГ® 3 Г«ГЁГ·Г­Г»Гµ ГЁ Г¬ГЁГ°Г®ГўГ»Гµ ГЄГўГҐГ±ГІГ . - ГЌГҐГЄГ®ГІГ®Г°Г»ГҐ ГЄГўГҐГ±ГІГ» ГЇГ® ГІГЁГЇГі ГЁГ­ГЄГ Г±Г ГІГ®Г°Г /Г¬ГіГ±Г®Г°Г№ГЁГЄГ /
+    Gui, Answers: Add, Text, x8 y264  h20 +0x200, ГЇГ®Г·ГІГ Г«ГјГ®Г­Г  Г¬Г®Г¦Г­Г® ГўГ»ГЇГ®Г«Г­ГїГІГј Гў 2-ГҐГ¬ ГЁ ГЎГ®Г«ГҐГҐ, Г§Г Г±Г·ГЁГІГ»ГўГ ГІГј ГЎГіГ¤ГҐГ¬ ГўГ±ГҐГ¬.
+    Gui, Answers: Add, Text, x8 y280  h20 +0x200, .ГґГҐГ¤ - ГЌГ  ГЇГҐГ°ГўГ®Г¬ ГЅГІГ Г¦ГҐ Г±ГІГ®ГЁГІ NPC Гі ГЄГ®ГІГ®Г°Г®ГЈГ® Г¬Г®Г¦Г­Г® ГўГ§ГїГІГј Г§Г Г¤Г Г­ГЁГҐ. Г—ГІГ®ГЎГ» Г®ГІГЎГ»ГІГј Г±Г°Г®ГЄ Гў ГґГҐГ¤ГҐГ°Г Г«ГјГ­Г®Г© ГІГѕГ°ГјГ¬ГҐ, Г­ГіГ¦Г­Г® ГўГ»ГЇГ®Г«Г­ГїГІГј Г§Г Г¤Г Г·ГЁ. ГЌГ ГЇГ°ГЁГ¬ГҐГ° ГЇГ®Г¬Г»ГІГј ГІГіГ Г«ГҐГІ - Г‚ Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®ГҐ ГўГ°ГҐГ¬Гї ГІГѕГ°ГјГ¬Г  
+    Gui, Answers: Add, Text, x8 y296  h20 +0x200, Г§Г ГЄГ°Г»ГўГ ГҐГІ ГЄГ«ГҐГІГЄГЁ Г­Г  5 Г¬ГЁГ­ГіГІ, Г±Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®, Гў ГЅГІГ® ГўГ°ГҐГ¬Гї Г®ГІГЎГ»ГІГј Г±Г°Г®ГЄ Г­ГҐГ«ГјГ§Гї: -- ГЋГІГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 00 Г¬ГЁГ­ГіГІ -- Г‡Г ГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 20 Г¬ГЁГ­ГіГІ Г­Г  5 Г¬ГЁГ­ГіГІ -- ГЋГІГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 25 
+    Gui, Answers: Add, Text, x8 y312  h20 +0x200, Г¬ГЁГ­ГіГІ - Г‡Г ГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 55 Г¬ГЁГ­ГіГІ Г­Г  5 Г¬ГЁГ­ГіГІ.
+    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .Г±ГҐГ©Гґ - Г‡Г ГЄГ°Г»ГўГ ГІГј ГЁГ­ГІГҐГ°ГґГҐГ©Г± Г±ГҐГ©ГґГ  Г¬Г®Г¦Г­Г® ГІГ®Г«ГјГЄГ® Г­Г  ESC. Г‚ Г±ГҐГ©Гґ Г¬Г®Г¦Г­Г® ГЄГ«Г Г±ГІГј Г¤Г® 5 Г¬ГЁГ«Г«ГЁГ®Г­Г®Гў. Г„ГҐГ­ГјГЈГЁ ГЁГ¤ГіГІ ГЁГ§ Г­Г Г«ГЁГ·ГЄГЁ. ГЌГҐГ«ГјГ§Гї ГЇГ°Г®Г¤Г ГІГј Г¤Г®Г¬Г  Гў ГЈГ®Г±, ГЇГ°Г®Г¤Г ГІГј ГЁГЈГ°Г®ГЄГі, ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГј Г®ГЎГ¬ГҐГ­, ГўГ»Г±ГІГ ГўГЁГІГј 
+    Gui, Answers: Add, Text, x8 y344  h20 +0x200, Г­Г  Г ГіГЄГ¶ГЁГ®Г­, ГҐГ±Г«ГЁ Гў Г±ГҐГ©ГґГҐ ГҐГ±ГІГј Г¤ГҐГ­ГјГЈГЁ. Г‘Г­Г Г·Г Г«Г  ГІГ°ГҐГЎГіГҐГІГ±Гї ГЁГµ Г§Г ГЎГ°Г ГІГј. Г…Г±Г«ГЁ Г¤Г®Г¬ Г±Г«ГҐГІГ ГҐГІ ГЇГ® Г­Г Г«Г®ГЈГ Г¬ - Г¤ГҐГ­ГјГЈГЁ ГЁГ§ Г±ГҐГ©ГґГ  ГЁГЈГ°Г®ГЄ ГЇГ®Г«ГіГ·Г ГҐГІ Гў Г­Г Г«ГЁГ·ГЄГі. 
+    Gui, Answers: Add, Text, x8 y360  h20 +0x200, .Г°Г Г¶ГЁГї - Г‡Г  ГўГ±ГҐГ¬ГЁ ГґГ°Г ГЄГ¶ГЁГїГ¬ГЁ Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г¤ГЁГ ГЇГ Г§Г®Г­ Г·Г Г±ГІГ®ГІ, ГЄГ®ГІГ®Г°Г»Г© Г­ГҐ Г¬Г®ГЈГіГІ Г§Г Г­ГїГІГј. Г‚ F2 -> ГЌГ Г±ГІГ°Г®Г©ГЄГЁ Г¬Г®Г¦Г­Г® ГЁГ§Г¬ГҐГ­ГЁГІГј ГѓГ°Г®Г¬ГЄГ®Г±ГІГЁ Г°Г Г¶ГЁГЁ.
+	Gui, Answers: Add, Text, x8 y376  h20 +0x200, .Г«ГҐГ±Г®Г°ГіГЎ - Г“Г±ГІГ°Г ГЁГўГ ГІГјГ±Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ±ГҐ Гі ГІГ®ГЈГ® Г¦ГҐ NPC Г®ГЄГ®Г«Г® ГЏГ Г«ГҐГІГ®-ГЃГҐГ©. Г„Г«Гї Г­Г Г·Г Г«Г  Г°Г ГЎГ®ГІГ» Г‚Г Г¬ ГЇГ®Г­Г Г¤Г®ГЎГЁГІГјГ±Гї В“Г’Г®ГЇГ®Г°В”, ГЄГіГЇГЁГІГј ГҐГЈГ® Г¬Г®Г¦Г­Г® Гі NPC Г­Г  ГђГ»Г­ГЄГҐ. ГЏГ°ГЁГ­Г¶ГЁГЇ Г°Г ГЎГ®ГІГ» Г±ГµГ®Г¦ГЁГ© Г± ГѓГ°ГЁГЎГ­ГЁГЄГ Г¬ГЁ, 
+    Gui, Answers: Add, Text, x8 y392  h20 +0x200, ГІГ®Г·ГЄГЁ Г¤Г«Гї Г±Г°ГіГЎГ  Г¤ГҐГ°ГҐГўГјГҐГў Г°Г Г§ГЎГ°Г®Г±Г Г­Г» ГЇГ® ГўГ±ГҐГ© ГЄГ Г°ГІГҐ, ГЄГ Г¦Г¤Г»Г© ГіГ°Г®ГўГҐГ­Гј ГЇГ°ГЁГўГїГ§Г Г­ ГЄ Г±ГўГ®Г© ГІГ®Г·ГЄГҐ Г±ГЎГ®Г°Г . Г„Г°ГҐГўГҐГ±ГЁГ­Гі Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г ГІГј Г­Г  Г°Г»Г­ГЄГҐ. 
+    Gui, Answers: Add, Text, x8 y408  h20 +0x200, .Г°Г Г¶ - Г„Г«Гї ГЁГ±ГЇГ®Г«ГјГ§ГўГ Г­ГЁГї: Г‚Г®Г§ГјГ¬ГЁГІГҐ Г°Г Г¶ГЁГѕ > Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±ГІГ®ГІГі >ГЌГ Г¦Г¬ГЁГІГҐ ГҐГ­ГІГҐГ° >Г‡Г Г¦Г¬ГЁГІГҐ "M" ГЁ ГЎГіГ¤ГҐГІ Г±Г«Г»ГёГ­Г®.
+    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .ГІГ Г©Г¬ - ГќГІГ® ГўГЁГ§ГіГ Г«ГјГ­Г»Г© ГЎГ ГЈ ГІГ Г©Г¬ГҐГ°Г , Г·Г Г±Г» ГЁГ¤ГіГІ ГЁ ГЄГ®ГЁГ­Г» ГўГ Г¬ Г­Г Г·ГЁГ±Г«ГїГІ ГЇГ® ГЁГ±ГІГҐГ·ГҐГ­ГЁГѕ ГўГ°ГҐГ¬ГҐГ­ГЁ. 
+    Gui, Answers: Add, Text, x8 y440  h20 +0x200, .Г±ГЁГ¤ - Г“ГЄГ Г¦ГЁГІГҐ static ID Г­Г Г°ГіГёГЁГІГҐГ«Гї.
+    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .ГЇГіГІ - Г‚Г±Гѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ (ГЄГ®Г¬Г Г­Г¤Г»/Г® ГґГ°Г ГЄГ¶ГЁГїГµ, Г°Г ГЎГ®ГІГ Гµ ГЁ ГІГ ГЄ Г¤Г Г«ГҐГҐ) Г¬Г®Г¦Г­Г® ГіГ§Г­Г ГІГј Г­Г  ГґГ®Г°ГіГ¬ГҐ majestic-rp.ru - Г°Г Г§Г¤ГҐГ« "ГЏГіГІГҐГўГ®Г¤ГЁГІГҐГ«Гј Г¤Г«Гї Г­Г®ГўГЁГ·ГЄГ®Гў".
+    Gui, Answers: Add, Text, x8 y472  h20 +0x200, .ГіГўГ Г« - ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г­ГЁГ·ГҐГ¬ Г­ГҐ Г¬Г®Г¦ГҐГ¬ ГЇГ®Г¬Г®Г·Гј. Г„Г®Г¦Г¤ГЁГІГҐГ±Гј Г±ГўГ®ГҐГЈГ® Г«ГЁГ¤ГҐГ°Г /Г§Г Г¬ГҐГ±ГІГЁГІГҐГ«ГҐГ© ГЁГ«ГЁ Г±ГўГїГ¦ГЁГІГҐГ±Гј Г± ГЄГіГ°Г ГІГ®Г°Г®Г¬ Г±ГўГ®ГҐГ© ГґГ°Г ГЄГ¶ГЁГЁ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Discord.
+    Gui, Answers: Add, Text, x8 y488  h20 +0x200, .Г¬Г Г©ГЄГЁ - Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГіГЇГЁГІГј Г¬Г Г©ГЄГі ГЇГ®Г¤ ГўГҐГ°ГµГ­ГѕГѕ Г®Г¤ГҐГ¦Г¤Гі, ГўГ Г¬ Г­ГіГ¦Г­Г® Г±Г­Г Г·Г Г«Г  ГЄГіГЇГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ ГўГҐГ°ГµГ­ГҐГ© Г®Г¤ГҐГ¦Г¤Г» (Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГЇГЁГ¤Г¦Г ГЄ). ГЏГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® ГўГ Г¬ ГЎГіГ¤Гі Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐ Г¬Г Г©ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ 
+    Gui, Answers: Add, Text, x8 y504  h20 +0x200, ГЇГ®Г¤ГµГ®Г¤ГїГІ ГЇГ®Г¤ Г­ГҐГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ "ГЊГ Г©ГЄГЁ".
+    Gui, Answers: Add, Text, x8 y520  h20 +0x200, .Г±Г«ГіГµ - Г”ГіГ­ГЄГ¶ГЁГї "Гџ Г­ГҐ Г±Г«Г»ГёГі" ГЇГ°ГҐГ¤Г­Г Г§Г­Г Г·ГҐГ­Г  Г¤Г«Гї Г«ГѕГ¤ГҐГ© Г± ГЇГ«Г®ГµГЁГ¬ Г±Г«ГіГµГ®Г¬ ГЁГ«ГЁ ГҐГЈГ® Г®ГІГ±ГіГІГ±ГІГўГЁГҐГ¬. Г‡Г«Г®ГіГЇГ®ГІГ°ГҐГЎГ«ГҐГ­ГЁГҐ ГЅГІГ®Г© ГґГіГ­ГЄГ¶ГЁГҐГ© ГЄГ Г°Г ГҐГІГ±Гї ГЎГ Г­Г®Г¬. ГЋГІГЄГ«ГѕГ·ГЁГІГј ГҐГҐ Г¬Г®Г¦Г­Г® Гў Г¬ГҐГ­Гѕ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+	Gui, Answers: Add, Text, x8 y536  h20 +0x200, .ГЎГ ГЈ - Г‡Г­Г ГҐГ¬ Г® Г¤Г Г­Г­Г®Г© ГЇГ°Г®ГЎГ«ГҐГ¬ГҐ, Г®Г­Г  ГіГ¦ГҐ ГЇГҐГ°ГҐГ¤Г Г­Г  Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГ Г¬. ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ . 
+    Gui, Answers: Add, Text, x8 y552  h20 +0x200, .Г·Г ГІ - Г‚Г±ГҐ Г­Г Г±ГІГ°Г®Г©ГЄГЁ Г·Г ГІГ  ГўГ» Г¬Г®Г¦ГҐГІГҐ Г­Г Г©ГІГЁ Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ Г·Г ГІГ .
+    Gui, Answers: Add, Text, x8 y568  h20 +0x200, .Г°ГҐГ« - ГЏГ®Г«Г­Г®Г±ГІГѕ ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Г­Г  Г±ГҐГ°ГўГҐГ° Г·ГҐГ°ГҐГ§ F1 - ГЉГ°ГҐГ±ГІГЁГЄ Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі ГЅГЄГ°Г Г­Г .
+    Gui, Answers: Add, Text, x8 y584  h20 +0x200, .Г­ГҐГ®ГЎГ« - ГЌГҐ Г®ГЎГ«Г Г¤Г ГҐГ¬ Г¤Г Г­Г­Г®Г© ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГҐГ©.
+	Gui, Answers: Add, Text, x8 y600  h20 +0x200, .Г°ГЇ - Г€Г§ГўГЁГ­ГЁГІГҐ, Г­Г® ГЅГІГ® ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±, Г¬Г» Г­ГҐ ГўГЇГ°Г ГўГҐ ГўГ¬ГҐГёГЁГўГ ГІГјГ±Гї Гў Г­ГҐГЈГ®.
+    Gui, Answers: Add, Text, x8 y616  h20 +0x200, .ГіГ°ГЇ - Г„Г Г­Г­ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ°ГЁ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГЁГЁ Г± Г¤Г°ГіГЈГЁГ¬ГЁ ГЁГЈГ°Г®ГЄГ Г¬ГЁ/Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г»Г¬ ГЇГ®ГЁГ±ГЄГ®Г¬ Г­ГҐГЇГ®Г±Г°ГҐГ¤Г±ГІГўГҐГ­Г­Г® ГўГ® ГўГ°ГҐГ¬Гї ГЁГЈГ°Г®ГўГ®ГЈГ® ГЇГ°Г®Г¶ГҐГ±Г±Г , Г«ГЁГЎГ® Г¤Г°ГіГЈГЁГ¬ Г¤Г®Г±ГІГіГЇГ­Г»Г¬ IC ГЇГіГІГҐГ¬. 
+    Gui, Answers: Add, Text, x8 y632  h20 +0x200, .ГўГ®Г©Г± - Г—ГІГ®ГЎГ» ГЇГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГј ГўГ®Г©Г±, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ Г­Г Г¦Г ГІГј F7. Г…Г±Г«ГЁ Г­ГЁГ·ГҐГЈГ® Г­ГҐ ГЇГ®Г¬Г®ГЈГ ГҐГІ - ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі.
+    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .ГІГҐГµ - ГЌГ ГЇГЁГёГЁГІГҐ Гў ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© Г°Г Г§Г¤ГҐГ« Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+    Gui, Answers: Add, Text, x8 y664  h20 +0x200, .ГІГҐГµГ¤Г± - ГЌГ ГЇГЁГёГЁГІГҐ Гў ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© Г°Г Г§Г¤ГҐГ« Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®ГЈГ® Г¤ГЁГ±ГЄГ®Г°Г¤ Г±ГҐГ°ГўГҐГ°Г  "ГЏГ®Г¬Г®Г№Гј ГЇГ® ГЁГЈГ°ГҐ" - "ГІГҐГµ-ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГ ".
+    Gui, Answers: Add, Text, x8 y680  h20 +0x200, .ГґГіГ­ГЄ - Г„Г Г­Г­Г»Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГўГ°ГҐГ¬ГҐГ­Г­Г® Г­ГҐГ¤Г®Г±ГІГіГЇГҐГ­, ГЇГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї.
+    Gui, Answers: Add, Text, x8 y696  h20 +0x200, .ГґГіГ­ - Г„Г Г­Г­Г»Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г­Г ГёГҐГ¬ ГЇГ°Г®ГҐГЄГІГҐ. ГЋГ±ГІГ ГўГјГІГҐ Г±ГўГ®ГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ Г­Г  ГґГ®Г°ГіГ¬ГҐ Гў Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г®Г¬ Г°Г Г§Г¤ГҐГ«ГҐ: ГЏГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГЇГ® ГіГ«ГіГ·ГёГҐГ­ГЁГѕ Г±ГҐГ°ГўГҐГ°Г  - "ГЌГ ГЇГЁГёГЁГІГҐ ГўГ ГёГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГІГіГІ".
+    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .ГЁГ§Гў - ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ .
+    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .ГІГҐГ±ГІ::Г§Г Г©Г¤ГЁГІГҐ Гў ГЁГ­ГІГҐГ°ГјГҐГ° Г¬Г Г°ГЄГҐГІГЇГ«ГҐГ©Г±Г  -> Г­Г Г¦Г¬ГЁГІГҐ Г… -> ГўГ»ГЎГҐГ°ГЁГІГҐ ГЄГ ГІГҐГЈГ®Г°ГЁГѕ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ->  ГўГ»ГЎГҐГ°ГЁГІГҐ Г«ГѕГЎГ®Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ ->  ГІГҐГ±ГІ Г¤Г°Г Г©Гў.
+    Gui, Answers: Add, Text, x8 y728  h20 +0x200, .ГҐГµГЇ - ГЉГ Г¦Г¤Г»Г© Г·Г Г± (Гі ГЄГ Г¦Г¤Г®ГЈГ® ГЁГЈГ°Г®ГЄГ  Г±ГўГ®Вё ГўГ°ГҐГ¬Гї) Г‚Г Г¬ Г¤Г ГҐГІГ±Гї EГ•P. Г—ГІГ®ГЎГ» ГіГ§Г­Г ГІГј, Г±ГЄГ®Г«ГјГЄГ® Г‚Г Г¬ Г®Г±ГІГ Г«Г®Г±Гј Г¤Г® Г±Г«ГҐГ¤ГіГѕГ№ГҐГЈГ® PayDay, Г­Г Г¦Г¬ГЁГІГҐ ГЄГ«Г ГўГЁГёГі F2-ГЏГҐГ°Г±Г®Г­Г Г¦.
+    Gui, Answers: Add, Text, x8 y744  h20 +0x200, .Г ГўГІГ® - Г—ГІГ®ГЎГ» ГЅГўГ ГЄГіГЁГ°Г®ГўГ ГІГј Г‚Г ГёГҐ Г ГўГІГ® ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј Г¬Г Г°ГЄГҐГ°Г®Г¬ Г‘ГҐГ°ГўГЁГ±Г  (ГѓГ ГҐГ·Г­Г»Г© ГЄГ«ГѕГ· Г­Г  ГЄГ Г°ГІГҐ).  
 
 	Gui, Answers: Tab, 2
-    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .бизограб - Чтобы ограбить бизнес, вам нужно: одеть маску, приобрести оружие и, придя в магазин в составе от 2 до 35 человек, навестись на NPC (продавца) огнестрелом.
-    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .ганлиц - Получить лицензию на оружие можно в LSPD или LSCSD. 
-    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .канистра - Чтобы использовать канистру, возьмите её в руки, нажмите G на авто и заправить. 
-    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .тип::Приветствую, Вам нужно зайти в F2 - Настройки и поменять тип посадки на приоритет водительское.
-    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .емс - К сожалению, администрация не поднимает и не лечит игроков, воспользуйтесь услугами ЕМС.
-    Gui, Answers: Add, Text, x8 y88  h20 +0x200, .подним - К сожалению, не видя всей ситуации мы не в праве лечить,поднимать или добивать игроков. Дождитесь сотрудников EMS либо же окончания таймера смерти. 
-    Gui, Answers: Add, Text, x8 y104  h20 +0x200, .жб - Не могу выдавать наказания и выносить какие-либо вердикты не видя ситуации с самого начала. Если у Вас есть видеофиксация данного нарушения - оформите жалобу на форуме.
-    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .анак - Обратитесь, пожалуйста, в дискорд к администратору, который выдал вам наказание или рассмотрел жалобу.
-    Gui, Answers: Add, Text, x8 y136  h20 +0x200, .адз - Данный администратор сейчас занят другим делом или отошел от компьютера на короткое время, напишите ему в личные сообщения в дискорде.
-    Gui, Answers: Add, Text, x8 y152  h20 +0x200, .адс - Данный администратор сейчас отсутствует на сервере, напишите ему в личные сообщения в дискорде.
-    Gui, Answers: Add, Text, x8 y168  h20 +0x200, .погода - К сожалению, администрация не контролирует данный процесс. Погода меняется автоматически.
-    Gui, Answers: Add, Text, x8 y184  h20 +0x200, .неп - Не понял суть вашего обращения, опишите Вашу проблему/вопрос подробнее для максимально точного ответа, пожалуйста.
-    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .донат - Обратитесь по почте - help@majestic-rp.ru.
-    Gui, Answers: Add, Text, x8 y216  h20 +0x200, .ремонт - Для начала, Вам нужно купить запчасть для машины на любо АЗС, после чего открыть капот , нажать G > Починить замок/аккумулятор/залить масло. 
-    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .ферм - На ферме для посадки каждого из растений нужны следующие навыки: Пшеница - 225 опыта. Картофель - 950 опыта. Капуста - 2000 опыта. Кукуруза - 3000 опыта. Тыква - 6200 опыта. Бананы -
-    Gui, Answers: Add, Text, x8 y248  h20 +0x200,  10500 опыта.
-    Gui, Answers: Add, Text, x8 y264  h20 +0x200, .гос - Вы можете сдать авто на свалку. После сдачи вы получите 75 проц. от гос. стоимости авто. Свалка отмечена на карте как перечеркнутый, красный круг.
-    Gui, Answers: Add, Text, x8 y280  h20 +0x200, .аним - Остановите анимацию. Нажмите X > Остановить анимацию или Backspace.
-    Gui, Answers: Add, Text, x8 y296  h20 +0x200, .ид - Укажите, пожалуйста, ID нарушителя.
-    Gui, Answers: Add, Text, x8 y312  h20 +0x200, .сто - Степень износа определенных деталей автомобиля можно узнать на автомастерской (иконка гаечного ключа с отверткой на карте).
-    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .жба - Вы можете написать жалобу на форум, если не согласны с решением администратора.
-    Gui, Answers: Add, Text, x8 y344  h20 +0x200, .дон - Задонатить можно на нашем официальном сайте - majestic-rp.ru/donate
-    Gui, Answers: Add, Text, x8 y360  h20 +0x200, .группа - Чтобы вместе работать на кооперативной работе вам необходимо пригались игроков через приложение "Группа" в телефоне.
-	Gui, Answers: Add, Text, x8 y376  h20 +0x200, .грибы - Чтобы собирать грибы вам надо приехать на точку "Грибы" 1/6 и взять в руки нож.
-    Gui, Answers: Add, Text, x8 y392  h20 +0x200, .гриб - Продать грибы можно на рынке.
-    Gui, Answers: Add, Text, x8 y408  h20 +0x200, .рын - Рынок находится в Лос-Сантосе на пляже рядом с качалкой и в Палето-Бэй.
-    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .оружрын - Боту на рынке можно сдать оружие только со 100 процентным износом.
-    Gui, Answers: Add, Text, x8 y440  h20 +0x200, .новость - Придите лично в Weazel News. 
-    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .п - Всего доброго.
-    Gui, Answers: Add, Text, x8 y472  h20 +0x200, .нов - Следите за новостями сервера в официальном дискорде проекта. 
-    Gui, Answers: Add, Text, x8 y488  h20 +0x200, .ново - Следите за новостями в официальном дискорде проекта. 
-    Gui, Answers: Add, Text, x8 y504  h20 +0x200, .ник - Сменить ник Вы можете нажав - F2 > Донат > Настройки персонажа.
-    Gui, Answers: Add, Text, x8 y520  h20 +0x200, .банк - У нас на сервере есть 3 вида банковских карт: Standart, Premium, VIP. Standart карта стоит в обслуживании 500$ в месяц, снятия и переводы без комиссии до 500.000$ после превышения 
-	Gui, Answers: Add, Text, x8 y536  h20 +0x200, месечного лимита комиссия на вывод 5ц проц (Максимум 20.000$), на перевод 4 проц (Максимум 20.000$), кэшбек в магазинах отсутствует. Premium карта стоит в обслуживании 25.000$ в месяц, снятия 
-    Gui, Answers: Add, Text, x8 y552  h20 +0x200, и переводы без комиссии до 2.500.000$ после превышения месечного лимита комиссия на вывод 4 проц (Максимум 15.000$), на перевод 3 проц (Максимум 15.000$), кэшбек в магазинах 1 проц, лимит 
-    Gui, Answers: Add, Text, x8 y568  h20 +0x200, кэшбека на одну операцию до 2.500$, месечный лимит кэшбека 50.000$. VIP карта стоит в обслуживании 75.000$ в месяц, снятия и переводы без комиссии до 20.000.000$ после превышения месечного 
-    Gui, Answers: Add, Text, x8 y584  h20 +0x200, лимита комиссия на вывод 3 проц (Максимум 20.000$), на перевод 2.5 проц (Максимум 20.000$), кэшбек в магазинах 3 проц, лимит кэшбека на одну операцию до 10.000$, месечный лимит кэшбека 
-	Gui, Answers: Add, Text, x8 y600  h20 +0x200, 150.000$. Деньги за обслуживание и лимиты снимаются каждое 1 число нового месяца.
-    Gui, Answers: Add, Text, x8 y616  h20 +0x200, .дублик - Чтобы сделать дубликат ключей от авто необходимо купить заготовку в магазине 24/7, затем нажать G на авто и сделать дубликат.
-    Gui, Answers: Add, Text, x8 y632  h20 +0x200, .клад - Чтобы сделать дубликат от кладовки, необходимо купить заготовку в магазине 24/7, затем через G передать дубликат нужному человеку.
-    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .тел - Попробуйте купить телефон еще раз в магазине 24/7, деньги с вас не спишутся.
-    Gui, Answers: Add, Text, x8 y664  h20 +0x200, .подсел - Чтобы подселить игрока к себе в дом или же квартиру, стоя около дома, наведитесь на игрока и нажмите G, далее нажмите Подселить.
-    Gui, Answers: Add, Text, x8 y680  h20 +0x200, .краш2 - Если у Вас есть доказательства краша - предоставьте его любому администратору в личные сообщения дискорда. Вас выпустят.
-    Gui, Answers: Add, Text, x8 y696  h20 +0x200, .замок - Вам необходимо купить "Дверной замок" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Починить дверной замок.
-    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .акум - Вам необходимо купить "Аккумулятор" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Заменить аккумулятор.
-    Gui, Answers: Add, Text, x8 y728  h20 +0x200, .масло - Вам необходимо купить "Моторное масло" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Заменить масло.
-    Gui, Answers: Add, Text, x8 y744  h20 +0x200, .модел - Пункт "Прогрузка моделей" отвечает за быстроту прогрузки текстур при приближении к ним.
+    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .ГЎГЁГ§Г®ГЈГ°Г ГЎ - Г—ГІГ®ГЎГ» Г®ГЈГ°Г ГЎГЁГІГј ГЎГЁГ§Г­ГҐГ±, ГўГ Г¬ Г­ГіГ¦Г­Г®: Г®Г¤ГҐГІГј Г¬Г Г±ГЄГі, ГЇГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ Г®Г°ГіГ¦ГЁГҐ ГЁ, ГЇГ°ГЁГ¤Гї Гў Г¬Г ГЈГ Г§ГЁГ­ Гў Г±Г®Г±ГІГ ГўГҐ Г®ГІ 2 Г¤Г® 35 Г·ГҐГ«Г®ГўГҐГЄ, Г­Г ГўГҐГ±ГІГЁГ±Гј Г­Г  NPC (ГЇГ°Г®Г¤Г ГўГ¶Г ) Г®ГЈГ­ГҐГ±ГІГ°ГҐГ«Г®Г¬.
+    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .ГЈГ Г­Г«ГЁГ¶ - ГЏГ®Г«ГіГ·ГЁГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГѕ Г­Г  Г®Г°ГіГ¦ГЁГҐ Г¬Г®Г¦Г­Г® Гў LSPD ГЁГ«ГЁ LSCSD. 
+    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .ГЄГ Г­ГЁГ±ГІГ°Г  - Г—ГІГ®ГЎГ» ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј ГЄГ Г­ГЁГ±ГІГ°Гі, ГўГ®Г§ГјГ¬ГЁГІГҐ ГҐВё Гў Г°ГіГЄГЁ, Г­Г Г¦Г¬ГЁГІГҐ G Г­Г  Г ГўГІГ® ГЁ Г§Г ГЇГ°Г ГўГЁГІГј. 
+    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .ГІГЁГЇ::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ, Г‚Г Г¬ Г­ГіГ¦Г­Г® Г§Г Г©ГІГЁ Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГЁ ГЇГ®Г¬ГҐГ­ГїГІГј ГІГЁГЇ ГЇГ®Г±Г Г¤ГЄГЁ Г­Г  ГЇГ°ГЁГ®Г°ГЁГІГҐГІ ГўГ®Г¤ГЁГІГҐГ«ГјГ±ГЄГ®ГҐ.
+    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .ГҐГ¬Г± - ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЇГ®Г¤Г­ГЁГ¬Г ГҐГІ ГЁ Г­ГҐ Г«ГҐГ·ГЁГІ ГЁГЈГ°Г®ГЄГ®Гў, ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј ГіГ±Г«ГіГЈГ Г¬ГЁ Г…ГЊГ‘.
+    Gui, Answers: Add, Text, x8 y88  h20 +0x200, .ГЇГ®Г¤Г­ГЁГ¬ - ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г­ГҐ ГўГЁГ¤Гї ГўГ±ГҐГ© Г±ГЁГІГіГ Г¶ГЁГЁ Г¬Г» Г­ГҐ Гў ГЇГ°Г ГўГҐ Г«ГҐГ·ГЁГІГј,ГЇГ®Г¤Г­ГЁГ¬Г ГІГј ГЁГ«ГЁ Г¤Г®ГЎГЁГўГ ГІГј ГЁГЈГ°Г®ГЄГ®Гў. Г„Г®Г¦Г¤ГЁГІГҐГ±Гј Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў EMS Г«ГЁГЎГ® Г¦ГҐ Г®ГЄГ®Г­Г·Г Г­ГЁГї ГІГ Г©Г¬ГҐГ°Г  Г±Г¬ГҐГ°ГІГЁ. 
+    Gui, Answers: Add, Text, x8 y104  h20 +0x200, .Г¦ГЎ - ГЌГҐ Г¬Г®ГЈГі ГўГ»Г¤Г ГўГ ГІГј Г­Г ГЄГ Г§Г Г­ГЁГї ГЁ ГўГ»Г­Г®Г±ГЁГІГј ГЄГ ГЄГЁГҐ-Г«ГЁГЎГ® ГўГҐГ°Г¤ГЁГЄГІГ» Г­ГҐ ГўГЁГ¤Гї Г±ГЁГІГіГ Г¶ГЁГЁ Г± Г±Г Г¬Г®ГЈГ® Г­Г Г·Г Г«Г . Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®ГґГЁГЄГ±Г Г¶ГЁГї Г¤Г Г­Г­Г®ГЈГ® Г­Г Г°ГіГёГҐГ­ГЁГї - Г®ГґГ®Г°Г¬ГЁГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .Г Г­Г ГЄ - ГЋГЎГ°Г ГІГЁГІГҐГ±Гј, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , Гў Г¤ГЁГ±ГЄГ®Г°Г¤ ГЄ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі, ГЄГ®ГІГ®Г°Г»Г© ГўГ»Г¤Г Г« ГўГ Г¬ Г­Г ГЄГ Г§Г Г­ГЁГҐ ГЁГ«ГЁ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ« Г¦Г Г«Г®ГЎГі.
+    Gui, Answers: Add, Text, x8 y136  h20 +0x200, .Г Г¤Г§ - Г„Г Г­Г­Г»Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г±ГҐГ©Г·Г Г± Г§Г Г­ГїГІ Г¤Г°ГіГЈГЁГ¬ Г¤ГҐГ«Г®Г¬ ГЁГ«ГЁ Г®ГІГ®ГёГҐГ« Г®ГІ ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г  Г­Г  ГЄГ®Г°Г®ГІГЄГ®ГҐ ГўГ°ГҐГ¬Гї, Г­Г ГЇГЁГёГЁГІГҐ ГҐГ¬Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ.
+    Gui, Answers: Add, Text, x8 y152  h20 +0x200, .Г Г¤Г± - Г„Г Г­Г­Г»Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г±ГҐГ©Г·Г Г± Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ, Г­Г ГЇГЁГёГЁГІГҐ ГҐГ¬Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ.
+    Gui, Answers: Add, Text, x8 y168  h20 +0x200, .ГЇГ®ГЈГ®Г¤Г  - ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЄГ®Г­ГІГ°Г®Г«ГЁГ°ГіГҐГІ Г¤Г Г­Г­Г»Г© ГЇГ°Г®Г¶ГҐГ±Г±. ГЏГ®ГЈГ®Г¤Г  Г¬ГҐГ­ГїГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ.
+    Gui, Answers: Add, Text, x8 y184  h20 +0x200, .Г­ГҐГЇ - ГЌГҐ ГЇГ®Г­ГїГ« Г±ГіГІГј ГўГ ГёГҐГЈГ® Г®ГЎГ°Г Г№ГҐГ­ГЁГї, Г®ГЇГЁГёГЁГІГҐ Г‚Г ГёГі ГЇГ°Г®ГЎГ«ГҐГ¬Гі/ГўГ®ГЇГ°Г®Г± ГЇГ®Г¤Г°Г®ГЎГ­ГҐГҐ Г¤Г«Гї Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г® ГІГ®Г·Г­Г®ГЈГ® Г®ГІГўГҐГІГ , ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ .
+    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .Г¤Г®Г­Г ГІ - ГЋГЎГ°Г ГІГЁГІГҐГ±Гј ГЇГ® ГЇГ®Г·ГІГҐ - help@majestic-rp.ru.
+    Gui, Answers: Add, Text, x8 y216  h20 +0x200, .Г°ГҐГ¬Г®Г­ГІ - Г„Г«Гї Г­Г Г·Г Г«Г , Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЄГіГЇГЁГІГј Г§Г ГЇГ·Г Г±ГІГј Г¤Г«Гї Г¬Г ГёГЁГ­Г» Г­Г  Г«ГѕГЎГ® ГЂГ‡Г‘, ГЇГ®Г±Г«ГҐ Г·ГҐГЈГ® Г®ГІГЄГ°Г»ГІГј ГЄГ ГЇГ®ГІ , Г­Г Г¦Г ГІГј G > ГЏГ®Г·ГЁГ­ГЁГІГј Г§Г Г¬Г®ГЄ/Г ГЄГЄГіГ¬ГіГ«ГїГІГ®Г°/Г§Г Г«ГЁГІГј Г¬Г Г±Г«Г®. 
+    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .ГґГҐГ°Г¬ - ГЌГ  ГґГҐГ°Г¬ГҐ Г¤Г«Гї ГЇГ®Г±Г Г¤ГЄГЁ ГЄГ Г¦Г¤Г®ГЈГ® ГЁГ§ Г°Г Г±ГІГҐГ­ГЁГ© Г­ГіГ¦Г­Г» Г±Г«ГҐГ¤ГіГѕГ№ГЁГҐ Г­Г ГўГ»ГЄГЁ: ГЏГёГҐГ­ГЁГ¶Г  - 225 Г®ГЇГ»ГІГ . ГЉГ Г°ГІГ®ГґГҐГ«Гј - 950 Г®ГЇГ»ГІГ . ГЉГ ГЇГіГ±ГІГ  - 2000 Г®ГЇГ»ГІГ . ГЉГіГЄГіГ°ГіГ§Г  - 3000 Г®ГЇГ»ГІГ . Г’Г»ГЄГўГ  - 6200 Г®ГЇГ»ГІГ . ГЃГ Г­Г Г­Г» -
+    Gui, Answers: Add, Text, x8 y248  h20 +0x200,  10500 Г®ГЇГ»ГІГ .
+    Gui, Answers: Add, Text, x8 y264  h20 +0x200, .ГЈГ®Г± - Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г±Г¤Г ГІГј Г ГўГІГ® Г­Г  Г±ГўГ Г«ГЄГі. ГЏГ®Г±Г«ГҐ Г±Г¤Г Г·ГЁ ГўГ» ГЇГ®Г«ГіГ·ГЁГІГҐ 75 ГЇГ°Г®Г¶. Г®ГІ ГЈГ®Г±. Г±ГІГ®ГЁГ¬Г®Г±ГІГЁ Г ГўГІГ®. Г‘ГўГ Г«ГЄГ  Г®ГІГ¬ГҐГ·ГҐГ­Г  Г­Г  ГЄГ Г°ГІГҐ ГЄГ ГЄ ГЇГҐГ°ГҐГ·ГҐГ°ГЄГ­ГіГІГ»Г©, ГЄГ°Г Г±Г­Г»Г© ГЄГ°ГіГЈ.
+    Gui, Answers: Add, Text, x8 y280  h20 +0x200, .Г Г­ГЁГ¬ - ГЋГ±ГІГ Г­Г®ГўГЁГІГҐ Г Г­ГЁГ¬Г Г¶ГЁГѕ. ГЌГ Г¦Г¬ГЁГІГҐ X > ГЋГ±ГІГ Г­Г®ГўГЁГІГј Г Г­ГЁГ¬Г Г¶ГЁГѕ ГЁГ«ГЁ Backspace.
+    Gui, Answers: Add, Text, x8 y296  h20 +0x200, .ГЁГ¤ - Г“ГЄГ Г¦ГЁГІГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , ID Г­Г Г°ГіГёГЁГІГҐГ«Гї.
+    Gui, Answers: Add, Text, x8 y312  h20 +0x200, .Г±ГІГ® - Г‘ГІГҐГЇГҐГ­Гј ГЁГ§Г­Г®Г±Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г»Гµ Г¤ГҐГІГ Г«ГҐГ© Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї Г¬Г®Г¦Г­Г® ГіГ§Г­Г ГІГј Г­Г  Г ГўГІГ®Г¬Г Г±ГІГҐГ°Г±ГЄГ®Г© (ГЁГЄГ®Г­ГЄГ  ГЈГ ГҐГ·Г­Г®ГЈГ® ГЄГ«ГѕГ·Г  Г± Г®ГІГўГҐГ°ГІГЄГ®Г© Г­Г  ГЄГ Г°ГІГҐ).
+    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .Г¦ГЎГ  - Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г ГЇГЁГ±Г ГІГј Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬, ГҐГ±Г«ГЁ Г­ГҐ Г±Г®ГЈГ«Г Г±Г­Г» Г± Г°ГҐГёГҐГ­ГЁГҐГ¬ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Г .
+    Gui, Answers: Add, Text, x8 y344  h20 +0x200, .Г¤Г®Г­ - Г‡Г Г¤Г®Г­Г ГІГЁГІГј Г¬Г®Г¦Г­Г® Г­Г  Г­Г ГёГҐГ¬ Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г±Г Г©ГІГҐ - majestic-rp.ru/donate
+    Gui, Answers: Add, Text, x8 y360  h20 +0x200, .ГЈГ°ГіГЇГЇГ  - Г—ГІГ®ГЎГ» ГўГ¬ГҐГ±ГІГҐ Г°Г ГЎГ®ГІГ ГІГј Г­Г  ГЄГ®Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© Г°Г ГЎГ®ГІГҐ ГўГ Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ°ГЁГЈГ Г«ГЁГ±Гј ГЁГЈГ°Г®ГЄГ®Гў Г·ГҐГ°ГҐГ§ ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ "ГѓГ°ГіГЇГЇГ " Гў ГІГҐГ«ГҐГґГ®Г­ГҐ.
+	Gui, Answers: Add, Text, x8 y376  h20 +0x200, .ГЈГ°ГЁГЎГ» - Г—ГІГ®ГЎГ» Г±Г®ГЎГЁГ°Г ГІГј ГЈГ°ГЁГЎГ» ГўГ Г¬ Г­Г Г¤Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  ГІГ®Г·ГЄГі "ГѓГ°ГЁГЎГ»" 1/6 ГЁ ГўГ§ГїГІГј Гў Г°ГіГЄГЁ Г­Г®Г¦.
+    Gui, Answers: Add, Text, x8 y392  h20 +0x200, .ГЈГ°ГЁГЎ - ГЏГ°Г®Г¤Г ГІГј ГЈГ°ГЁГЎГ» Г¬Г®Г¦Г­Г® Г­Г  Г°Г»Г­ГЄГҐ.
+    Gui, Answers: Add, Text, x8 y408  h20 +0x200, .Г°Г»Г­ - ГђГ»Г­Г®ГЄ Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў Г‹Г®Г±-Г‘Г Г­ГІГ®Г±ГҐ Г­Г  ГЇГ«ГїГ¦ГҐ Г°ГїГ¤Г®Г¬ Г± ГЄГ Г·Г Г«ГЄГ®Г© ГЁ Гў ГЏГ Г«ГҐГІГ®-ГЃГЅГ©.
+    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .Г®Г°ГіГ¦Г°Г»Г­ - ГЃГ®ГІГі Г­Г  Г°Г»Г­ГЄГҐ Г¬Г®Г¦Г­Г® Г±Г¤Г ГІГј Г®Г°ГіГ¦ГЁГҐ ГІГ®Г«ГјГЄГ® Г±Г® 100 ГЇГ°Г®Г¶ГҐГ­ГІГ­Г»Г¬ ГЁГ§Г­Г®Г±Г®Г¬.
+    Gui, Answers: Add, Text, x8 y440  h20 +0x200, .Г­Г®ГўГ®Г±ГІГј - ГЏГ°ГЁГ¤ГЁГІГҐ Г«ГЁГ·Г­Г® Гў Weazel News. 
+    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .ГЇ - Г‚Г±ГҐГЈГ® Г¤Г®ГЎГ°Г®ГЈГ®.
+    Gui, Answers: Add, Text, x8 y472  h20 +0x200, .Г­Г®Гў - Г‘Г«ГҐГ¤ГЁГІГҐ Г§Г  Г­Г®ГўГ®Г±ГІГїГ¬ГЁ Г±ГҐГ°ГўГҐГ°Г  Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ . 
+    Gui, Answers: Add, Text, x8 y488  h20 +0x200, .Г­Г®ГўГ® - Г‘Г«ГҐГ¤ГЁГІГҐ Г§Г  Г­Г®ГўГ®Г±ГІГїГ¬ГЁ Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ . 
+    Gui, Answers: Add, Text, x8 y504  h20 +0x200, .Г­ГЁГЄ - Г‘Г¬ГҐГ­ГЁГІГј Г­ГЁГЄ Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г Г¦Г Гў - F2 > Г„Г®Г­Г ГІ > ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГЇГҐГ°Г±Г®Г­Г Г¦Г .
+    Gui, Answers: Add, Text, x8 y520  h20 +0x200, .ГЎГ Г­ГЄ - Г“ Г­Г Г± Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ ГҐГ±ГІГј 3 ГўГЁГ¤Г  ГЎГ Г­ГЄГ®ГўГ±ГЄГЁГµ ГЄГ Г°ГІ: Standart, Premium, VIP. Standart ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 500$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 500.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї 
+	Gui, Answers: Add, Text, x8 y536  h20 +0x200, Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 5Г¶ ГЇГ°Г®Г¶ (ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 4 ГЇГ°Г®Г¶ (ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ. Premium ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 25.000$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї 
+    Gui, Answers: Add, Text, x8 y552  h20 +0x200, ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 2.500.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 4 ГЇГ°Г®Г¶ (ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 15.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 3 ГЇГ°Г®Г¶ (ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 15.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ 1 ГЇГ°Г®Г¶, Г«ГЁГ¬ГЁГІ 
+    Gui, Answers: Add, Text, x8 y568  h20 +0x200, ГЄГЅГёГЎГҐГЄГ  Г­Г  Г®Г¤Г­Гі Г®ГЇГҐГ°Г Г¶ГЁГѕ Г¤Г® 2.500$, Г¬ГҐГ±ГҐГ·Г­Г»Г© Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  50.000$. VIP ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 75.000$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 20.000.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® 
+    Gui, Answers: Add, Text, x8 y584  h20 +0x200, Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 3 ГЇГ°Г®Г¶ (ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 2.5 ГЇГ°Г®Г¶ (ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ 3 ГЇГ°Г®Г¶, Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  Г­Г  Г®Г¤Г­Гі Г®ГЇГҐГ°Г Г¶ГЁГѕ Г¤Г® 10.000$, Г¬ГҐГ±ГҐГ·Г­Г»Г© Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  
+	Gui, Answers: Add, Text, x8 y600  h20 +0x200, 150.000$. Г„ГҐГ­ГјГЈГЁ Г§Г  Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГҐ ГЁ Г«ГЁГ¬ГЁГІГ» Г±Г­ГЁГ¬Г ГѕГІГ±Гї ГЄГ Г¦Г¤Г®ГҐ 1 Г·ГЁГ±Г«Г® Г­Г®ГўГ®ГЈГ® Г¬ГҐГ±ГїГ¶Г .
+    Gui, Answers: Add, Text, x8 y616  h20 +0x200, .Г¤ГіГЎГ«ГЁГЄ - Г—ГІГ®ГЎГ» Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ ГЄГ«ГѕГ·ГҐГ© Г®ГІ Г ГўГІГ® Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј Г§Г ГЈГ®ГІГ®ГўГЄГі Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г§Г ГІГҐГ¬ Г­Г Г¦Г ГІГј G Г­Г  Г ГўГІГ® ГЁ Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ.
+    Gui, Answers: Add, Text, x8 y632  h20 +0x200, .ГЄГ«Г Г¤ - Г—ГІГ®ГЎГ» Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ Г®ГІ ГЄГ«Г Г¤Г®ГўГЄГЁ, Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј Г§Г ГЈГ®ГІГ®ГўГЄГі Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г§Г ГІГҐГ¬ Г·ГҐГ°ГҐГ§ G ГЇГҐГ°ГҐГ¤Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ Г­ГіГ¦Г­Г®Г¬Гі Г·ГҐГ«Г®ГўГҐГЄГі.
+    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .ГІГҐГ« - ГЏГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГЄГіГЇГЁГІГј ГІГҐГ«ГҐГґГ®Г­ ГҐГ№ГҐ Г°Г Г§ Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г¤ГҐГ­ГјГЈГЁ Г± ГўГ Г± Г­ГҐ Г±ГЇГЁГёГіГІГ±Гї.
+    Gui, Answers: Add, Text, x8 y664  h20 +0x200, .ГЇГ®Г¤Г±ГҐГ« - Г—ГІГ®ГЎГ» ГЇГ®Г¤Г±ГҐГ«ГЁГІГј ГЁГЈГ°Г®ГЄГ  ГЄ Г±ГҐГЎГҐ Гў Г¤Г®Г¬ ГЁГ«ГЁ Г¦ГҐ ГЄГўГ Г°ГІГЁГ°Гі, Г±ГІГ®Гї Г®ГЄГ®Г«Г® Г¤Г®Г¬Г , Г­Г ГўГҐГ¤ГЁГІГҐГ±Гј Г­Г  ГЁГЈГ°Г®ГЄГ  ГЁ Г­Г Г¦Г¬ГЁГІГҐ G, Г¤Г Г«ГҐГҐ Г­Г Г¦Г¬ГЁГІГҐ ГЏГ®Г¤Г±ГҐГ«ГЁГІГј.
+    Gui, Answers: Add, Text, x8 y680  h20 +0x200, .ГЄГ°Г Гё2 - Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  ГЄГ°Г ГёГ  - ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГҐГЈГ® Г«ГѕГЎГ®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г . Г‚Г Г± ГўГ»ГЇГіГ±ГІГїГІ.
+    Gui, Answers: Add, Text, x8 y696  h20 +0x200, .Г§Г Г¬Г®ГЄ - Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "Г„ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> ГЏГ®Г·ГЁГ­ГЁГІГј Г¤ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ.
+    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .Г ГЄГіГ¬ - Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "ГЂГЄГЄГіГ¬ГіГ«ГїГІГ®Г°" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> Г‡Г Г¬ГҐГ­ГЁГІГј Г ГЄГЄГіГ¬ГіГ«ГїГІГ®Г°.
+    Gui, Answers: Add, Text, x8 y728  h20 +0x200, .Г¬Г Г±Г«Г® - Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "ГЊГ®ГІГ®Г°Г­Г®ГҐ Г¬Г Г±Г«Г®" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> Г‡Г Г¬ГҐГ­ГЁГІГј Г¬Г Г±Г«Г®.
+    Gui, Answers: Add, Text, x8 y744  h20 +0x200, .Г¬Г®Г¤ГҐГ« - ГЏГіГ­ГЄГІ "ГЏГ°Г®ГЈГ°ГіГ§ГЄГ  Г¬Г®Г¤ГҐГ«ГҐГ©" Г®ГІГўГҐГ·Г ГҐГІ Г§Г  ГЎГ»Г±ГІГ°Г®ГІГі ГЇГ°Г®ГЈГ°ГіГ§ГЄГЁ ГІГҐГЄГ±ГІГіГ° ГЇГ°ГЁ ГЇГ°ГЁГЎГ«ГЁГ¦ГҐГ­ГЁГЁ ГЄ Г­ГЁГ¬.
 
 	Gui, Answers: Tab, 3
-	Gui, Answers: Add, Text, x8 y24  h20 +0x200, .нин - Новая система инвентаря, был изменен дизайн, предметы можно вращать нажатием на пробел, если дважды нажать по предметы он используется (берется в активный слот  или надевается).
-    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .спавн - Спавн новичков находится в Палето-Бей, Чумашах, Аэропорту и на Автовокзале. 
-    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .рем - Чтобы починить своё авто купите рем.комплект на любой АЗС. Через меню G почините Ваш автомобиль.
-    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .сделка - Администрация не следит за сделками игроков.
-    Gui, Answers: Add, Text, x8 y88  h20 +0x200, .имя - Ваше Имя Фамилия не подходит по правилам нашего сервера. Вам нужно сменить ник и написать в репорт повторно, если Ваш ник будет соблюдать правила сервера, то Вас выпустят.
-    Gui, Answers: Add, Text, x8 y104  h20 +0x200, .акт - Приносим извинения за столь долгое ожидание. Пожалуйста, если проблема еще актуальна, продублируйте её в своем обращении. Спасибо за понимание.
-    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .лечу - Уже лечу к Вам на помощь.
-    Gui, Answers: Add, Text, x8 y136  h20 +0x200, .пом - Приветствую,сейчас помогу Вам, ожидайте.
-    Gui, Answers: Add, Text, x8 y152  h20 +0x200, .багзз - Чтобы восстановить прежнюю скорость, заедьте в зеленую зону и выедьте с нее.
-    Gui, Answers: Add, Text, x8 y168  h20 +0x200, .госдом - Чтобы продать дом в гос. стоимость, нужно подойти к двери и нажать Е. Вы получите 75 проц. от его гос. цены. Если Вы не оплатите налоги дом слетит автоматически.
-    Gui, Answers: Add, Text, x8 y184  h20 +0x200, .рыблиц - Получить лицензию на рыбалку вы можете в Мэрии. 
-    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .реп - Пожалуйста, уточните свой вопрос подробнее. Администрация не летает на репорты по типу "админ тп", "админ можно поговорить", "помогите", "админ есть вопрос".
-    Gui, Answers: Add, Text, x8 y216  h20 +0x200,  Количество символов неограничено, вы можете полностью расписать Вашу проблему/вопрос.
-    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .неувид - К сожалению администрация не может увидеть это нарушение. Пожалуйста, если у Вас есть видеофиксация данного нарушения - оформите жалобу на форуме, спасибо за понимание.
-    Gui, Answers: Add, Text, x8 y248  h20 +0x200, .кости - Чтобы играть в кости вам нужно купить их в любом 24/7. После того как вы купили кости, вы можете подойти к игроку.
-    Gui, Answers: Add, Text, x8 y264  h20 +0x200, .парк - Чтобы припарковать ТС, за рулем нажмите G - Припарковать.
-    Gui, Answers: Add, Text, x8 y280  h20 +0x200, .новичок - Путеводитель находится на спавнах новичков. Они обозначены на карте значком машущего человечка.
-    Gui, Answers: Add, Text, x8 y296  h20 +0x200, .да/нет - Да./Нет.
-    Gui, Answers: Add, Text, x8 y312  h20 +0x200, .нетп - Администрация не телепортирует игроков, Вам нужно добраться до места самостоятельно.
-    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .инв - Это баг инвентаря, предложите обменяться любому игроку и ваша проблема будет решена. Если по близости никого нет, обратитесь ещё раз в репорт и администрация Вам поможет. 
-    Gui, Answers: Add, Text, x8 y344  h20 +0x200, .арынок - Для того, чтобы выставить свое авто на продажу, Вам необходимо приехать на территорию авторынка, выбрать место и нажать на клавишу "G" - Авторынок - Выставить на продажу.
-    Gui, Answers: Add, Text, x8 y360  h20 +0x200, .толкать - Транспорт можно толкать, нажав G-толкать. Если такой функции нет, при наведении на авто, то этот транспорт толкать нельзя.
-	Gui, Answers: Add, Text, x8 y376  h20 +0x200, .несл - Администрация не может следить полностью за всем РП процессом, в случае нарушений от игроков - напишите репорт.
-    Gui, Answers: Add, Text, x8 y392  h20 +0x200, .счет - Чтобы узнать номер счета откройте инвентарь и наведитесь мышкой на банковскую карту. 
-    Gui, Answers: Add, Text, x8 y408  h20 +0x200, .пин - Чтобы восстановить пин-код отправляйтесь в банковское отделение.
-    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .аут - Для подключения Google authenticator вам нужно в меню выбора персонажа открыть раздел настроек.
-    Gui, Answers: Add, Text, x8 y440  h20 +0x200, .х2 - Теперь коины выдаются по выходным, по будням прокрутка рулетки за 5 часов игры.
-    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .дрон - Дрон крафтится у силовых гос.структур и Weasel News. Пользоваться им могут эти же гос.структуры. Чтобы подняться-пробел, чтобы опуститься-shift. На E-тепловизор включить/выключить.
-    Gui, Answers: Add, Text, x8 y472  h20 +0x200, .неув - Не увидел нарушений, если у вас есть видеодоказательства - оставьте жалобу на форуме. 
-    Gui, Answers: Add, Text, x8 y488  h20 +0x200, .фор - Данное нарушение не подлежит рассмотрению через обращение, оставьте жалобу на форуме.
-    Gui, Answers: Add, Text, x8 y504  h20 +0x200, .исч - Все транспортные средства исчезают через 30 минут, если с ними никак не взаимодействовать.
-    Gui, Answers: Add, Text, x8 y520  h20 +0x200, .форум - В связи с нагрузкой на сервер мы не можем рассмотреть вашу жалобу на игрока посредством обращения, пожалуйста, оставьте жалобу на форуме. Спасибо за понимание.
-	Gui, Answers: Add, Text, x8 y536  h20 +0x200, .фрак - /f - IC чат, /fb - OOC чат. 
-    Gui, Answers: Add, Text, x8 y552  h20 +0x200, .фам - /c - IC чат, /cb - OOC чат. 
-    Gui, Answers: Add, Text, x8 y568  h20 +0x200, .спб - Если одно отделение ЕМС сильно загружено, чтобы избежать краши вас спавнит в другом, менее загруженном отделении.
-    Gui, Answers: Add, Text, x8 y584  h20 +0x200, .перед - Все имущество вы передаете на свой страх и риск.
-	Gui, Answers: Add, Text, x8 y600  h20 +0x200, .руда - Руда с шахты требуется только в семейных контрактах, продать ее нельзя.
-    Gui, Answers: Add, Text, x8 y616  h20 +0x200, .багреп - В случае нахождения бага оставьте свой баг-репорт в официальном дискорде проекта: Текстовые каналы - сообщить о баге.
-    Gui, Answers: Add, Text, x8 y632  h20 +0x200, .низк - У вас включен режим низкого качества в F2 - Настройки.
-    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .маяк - Маячки могут выпасть с "AirDrop" или же при ограблении 24/7. Шансы выпадения у всех маячков разный.
-    Gui, Answers: Add, Text, x8 y664  h20 +0x200, .хол - "Холодный старт" - при запуске ТС издаёт характерный звук, другим функционалом не обладает.
-    Gui, Answers: Add, Text, x8 y680  h20 +0x200, .бинд - Вы можете настроить бинд клавиш под себя в F2 - Настройки - Бинд клавиш.
-    Gui, Answers: Add, Text, x8 y696  h20 +0x200, .стрим - Режим стримера заменяет символы на звездочки, для обычных игроков он бесполезен. Выключается в F2 - Настройки.
-    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .заж - Чтобы взломать зажигание сядьте за руль т.с., нажмите G - Взломать зажигание. КД на взлом - 1 час.
-    Gui, Answers: Add, Text, x8 y728  h20 +0x200, .дрзона - Дрифт зона отмечена на карте как иконка падающей кометы, пример - одна из зон около LS Vagos.
-    Gui, Answers: Add, Text, x8 y744  h20 +0x200, .кур - Передам кураторам.
+	Gui, Answers: Add, Text, x8 y24  h20 +0x200, .Г­ГЁГ­ - ГЌГ®ГўГ Гї Г±ГЁГ±ГІГҐГ¬Г  ГЁГ­ГўГҐГ­ГІГ Г°Гї, ГЎГ»Г« ГЁГ§Г¬ГҐГ­ГҐГ­ Г¤ГЁГ§Г Г©Г­, ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®Г¦Г­Г® ГўГ°Г Г№Г ГІГј Г­Г Г¦Г ГІГЁГҐГ¬ Г­Г  ГЇГ°Г®ГЎГҐГ«, ГҐГ±Г«ГЁ Г¤ГўГ Г¦Г¤Г» Г­Г Г¦Г ГІГј ГЇГ® ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г®Г­ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї (ГЎГҐГ°ГҐГІГ±Гї Гў Г ГЄГІГЁГўГ­Г»Г© Г±Г«Г®ГІ  ГЁГ«ГЁ Г­Г Г¤ГҐГўГ ГҐГІГ±Гї).
+    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .Г±ГЇГ ГўГ­ - Г‘ГЇГ ГўГ­ Г­Г®ГўГЁГ·ГЄГ®Гў Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў ГЏГ Г«ГҐГІГ®-ГЃГҐГ©, Г—ГіГ¬Г ГёГ Гµ, ГЂГЅГ°Г®ГЇГ®Г°ГІГі ГЁ Г­Г  ГЂГўГІГ®ГўГ®ГЄГ§Г Г«ГҐ. 
+    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .Г°ГҐГ¬ - Г—ГІГ®ГЎГ» ГЇГ®Г·ГЁГ­ГЁГІГј Г±ГўГ®Вё Г ГўГІГ® ГЄГіГЇГЁГІГҐ Г°ГҐГ¬.ГЄГ®Г¬ГЇГ«ГҐГЄГІ Г­Г  Г«ГѕГЎГ®Г© ГЂГ‡Г‘. Г—ГҐГ°ГҐГ§ Г¬ГҐГ­Гѕ G ГЇГ®Г·ГЁГ­ГЁГІГҐ Г‚Г Гё Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј.
+    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .Г±Г¤ГҐГ«ГЄГ  - ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г±Г«ГҐГ¤ГЁГІ Г§Г  Г±Г¤ГҐГ«ГЄГ Г¬ГЁ ГЁГЈГ°Г®ГЄГ®Гў.
+    Gui, Answers: Add, Text, x8 y88  h20 +0x200, .ГЁГ¬Гї - Г‚Г ГёГҐ Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї Г­ГҐ ГЇГ®Г¤ГµГ®Г¤ГЁГІ ГЇГ® ГЇГ°Г ГўГЁГ«Г Г¬ Г­Г ГёГҐГЈГ® Г±ГҐГ°ГўГҐГ°Г . Г‚Г Г¬ Г­ГіГ¦Г­Г® Г±Г¬ГҐГ­ГЁГІГј Г­ГЁГЄ ГЁ Г­Г ГЇГЁГ±Г ГІГј Гў Г°ГҐГЇГ®Г°ГІ ГЇГ®ГўГІГ®Г°Г­Г®, ГҐГ±Г«ГЁ Г‚Г Гё Г­ГЁГЄ ГЎГіГ¤ГҐГІ Г±Г®ГЎГ«ГѕГ¤Г ГІГј ГЇГ°Г ГўГЁГ«Г  Г±ГҐГ°ГўГҐГ°Г , ГІГ® Г‚Г Г± ГўГ»ГЇГіГ±ГІГїГІ.
+    Gui, Answers: Add, Text, x8 y104  h20 +0x200, .Г ГЄГІ - ГЏГ°ГЁГ­Г®Г±ГЁГ¬ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  Г±ГІГ®Г«Гј Г¤Г®Г«ГЈГ®ГҐ Г®Г¦ГЁГ¤Г Г­ГЁГҐ. ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГҐГ№ГҐ Г ГЄГІГіГ Г«ГјГ­Г , ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ ГҐВё Гў Г±ГўГ®ГҐГ¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГЁ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .Г«ГҐГ·Гі - Г“Г¦ГҐ Г«ГҐГ·Гі ГЄ Г‚Г Г¬ Г­Г  ГЇГ®Г¬Г®Г№Гј.
+    Gui, Answers: Add, Text, x8 y136  h20 +0x200, .ГЇГ®Г¬ - ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ,Г±ГҐГ©Г·Г Г± ГЇГ®Г¬Г®ГЈГі Г‚Г Г¬, Г®Г¦ГЁГ¤Г Г©ГІГҐ.
+    Gui, Answers: Add, Text, x8 y152  h20 +0x200, .ГЎГ ГЈГ§Г§ - Г—ГІГ®ГЎГ» ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј ГЇГ°ГҐГ¦Г­ГѕГѕ Г±ГЄГ®Г°Г®Г±ГІГј, Г§Г ГҐГ¤ГјГІГҐ Гў Г§ГҐГ«ГҐГ­ГіГѕ Г§Г®Г­Гі ГЁ ГўГ»ГҐГ¤ГјГІГҐ Г± Г­ГҐГҐ.
+    Gui, Answers: Add, Text, x8 y168  h20 +0x200, .ГЈГ®Г±Г¤Г®Г¬ - Г—ГІГ®ГЎГ» ГЇГ°Г®Г¤Г ГІГј Г¤Г®Г¬ Гў ГЈГ®Г±. Г±ГІГ®ГЁГ¬Г®Г±ГІГј, Г­ГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г¤ГўГҐГ°ГЁ ГЁ Г­Г Г¦Г ГІГј Г…. Г‚Г» ГЇГ®Г«ГіГ·ГЁГІГҐ 75 ГЇГ°Г®Г¶. Г®ГІ ГҐГЈГ® ГЈГ®Г±. Г¶ГҐГ­Г». Г…Г±Г«ГЁ Г‚Г» Г­ГҐ Г®ГЇГ«Г ГІГЁГІГҐ Г­Г Г«Г®ГЈГЁ Г¤Г®Г¬ Г±Г«ГҐГІГЁГІ Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ.
+    Gui, Answers: Add, Text, x8 y184  h20 +0x200, .Г°Г»ГЎГ«ГЁГ¶ - ГЏГ®Г«ГіГ·ГЁГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГѕ Г­Г  Г°Г»ГЎГ Г«ГЄГі ГўГ» Г¬Г®Г¦ГҐГІГҐ Гў ГЊГЅГ°ГЁГЁ. 
+    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .Г°ГҐГЇ - ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГіГІГ®Г·Г­ГЁГІГҐ Г±ГўГ®Г© ГўГ®ГЇГ°Г®Г± ГЇГ®Г¤Г°Г®ГЎГ­ГҐГҐ. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г«ГҐГІГ ГҐГІ Г­Г  Г°ГҐГЇГ®Г°ГІГ» ГЇГ® ГІГЁГЇГі "Г Г¤Г¬ГЁГ­ ГІГЇ", "Г Г¤Г¬ГЁГ­ Г¬Г®Г¦Г­Г® ГЇГ®ГЈГ®ГўГ®Г°ГЁГІГј", "ГЇГ®Г¬Г®ГЈГЁГІГҐ", "Г Г¤Г¬ГЁГ­ ГҐГ±ГІГј ГўГ®ГЇГ°Г®Г±".
+    Gui, Answers: Add, Text, x8 y216  h20 +0x200,  ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГЁГ¬ГўГ®Г«Г®Гў Г­ГҐГ®ГЈГ°Г Г­ГЁГ·ГҐГ­Г®, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г°Г Г±ГЇГЁГ±Г ГІГј Г‚Г ГёГі ГЇГ°Г®ГЎГ«ГҐГ¬Гі/ГўГ®ГЇГ°Г®Г±.
+    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .Г­ГҐГіГўГЁГ¤ - ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ ГіГўГЁГ¤ГҐГІГј ГЅГІГ® Г­Г Г°ГіГёГҐГ­ГЁГҐ. ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®ГґГЁГЄГ±Г Г¶ГЁГї Г¤Г Г­Г­Г®ГЈГ® Г­Г Г°ГіГёГҐГ­ГЁГї - Г®ГґГ®Г°Г¬ГЁГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ, Г±ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+    Gui, Answers: Add, Text, x8 y248  h20 +0x200, .ГЄГ®Г±ГІГЁ - Г—ГІГ®ГЎГ» ГЁГЈГ°Г ГІГј Гў ГЄГ®Г±ГІГЁ ГўГ Г¬ Г­ГіГ¦Г­Г® ГЄГіГЇГЁГІГј ГЁГµ Гў Г«ГѕГЎГ®Г¬ 24/7. ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ ГўГ» ГЄГіГЇГЁГ«ГЁ ГЄГ®Г±ГІГЁ, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ ГЁГЈГ°Г®ГЄГі.
+    Gui, Answers: Add, Text, x8 y264  h20 +0x200, .ГЇГ Г°ГЄ - Г—ГІГ®ГЎГ» ГЇГ°ГЁГЇГ Г°ГЄГ®ГўГ ГІГј Г’Г‘, Г§Г  Г°ГіГ«ГҐГ¬ Г­Г Г¦Г¬ГЁГІГҐ G - ГЏГ°ГЁГЇГ Г°ГЄГ®ГўГ ГІГј.
+    Gui, Answers: Add, Text, x8 y280  h20 +0x200, .Г­Г®ГўГЁГ·Г®ГЄ - ГЏГіГІГҐГўГ®Г¤ГЁГІГҐГ«Гј Г­Г ГµГ®Г¤ГЁГІГ±Гї Г­Г  Г±ГЇГ ГўГ­Г Гµ Г­Г®ГўГЁГ·ГЄГ®Гў. ГЋГ­ГЁ Г®ГЎГ®Г§Г­Г Г·ГҐГ­Г» Г­Г  ГЄГ Г°ГІГҐ Г§Г­Г Г·ГЄГ®Г¬ Г¬Г ГёГіГ№ГҐГЈГ® Г·ГҐГ«Г®ГўГҐГ·ГЄГ .
+    Gui, Answers: Add, Text, x8 y296  h20 +0x200, .Г¤Г /Г­ГҐГІ - Г„Г ./ГЌГҐГІ.
+    Gui, Answers: Add, Text, x8 y312  h20 +0x200, .Г­ГҐГІГЇ - ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІ ГЁГЈГ°Г®ГЄГ®Гў, Г‚Г Г¬ Г­ГіГ¦Г­Г® Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г¬ГҐГ±ГІГ  Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г®.
+    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .ГЁГ­Гў - ГќГІГ® ГЎГ ГЈ ГЁГ­ГўГҐГ­ГІГ Г°Гї, ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГҐ Г®ГЎГ¬ГҐГ­ГїГІГјГ±Гї Г«ГѕГЎГ®Г¬Гі ГЁГЈГ°Г®ГЄГі ГЁ ГўГ ГёГ  ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГЎГіГ¤ГҐГІ Г°ГҐГёГҐГ­Г . Г…Г±Г«ГЁ ГЇГ® ГЎГ«ГЁГ§Г®Г±ГІГЁ Г­ГЁГЄГ®ГЈГ® Г­ГҐГІ, Г®ГЎГ°Г ГІГЁГІГҐГ±Гј ГҐГ№Вё Г°Г Г§ Гў Г°ГҐГЇГ®Г°ГІ ГЁ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г‚Г Г¬ ГЇГ®Г¬Г®Г¦ГҐГІ. 
+    Gui, Answers: Add, Text, x8 y344  h20 +0x200, .Г Г°Г»Г­Г®ГЄ - Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГўГ»Г±ГІГ ГўГЁГІГј Г±ГўГ®ГҐ Г ГўГІГ® Г­Г  ГЇГ°Г®Г¤Г Г¦Гі, Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  ГІГҐГ°Г°ГЁГІГ®Г°ГЁГѕ Г ГўГІГ®Г°Г»Г­ГЄГ , ГўГ»ГЎГ°Г ГІГј Г¬ГҐГ±ГІГ® ГЁ Г­Г Г¦Г ГІГј Г­Г  ГЄГ«Г ГўГЁГёГі "G" - ГЂГўГІГ®Г°Г»Г­Г®ГЄ - Г‚Г»Г±ГІГ ГўГЁГІГј Г­Г  ГЇГ°Г®Г¤Г Г¦Гі.
+    Gui, Answers: Add, Text, x8 y360  h20 +0x200, .ГІГ®Г«ГЄГ ГІГј - Г’Г°Г Г­Г±ГЇГ®Г°ГІ Г¬Г®Г¦Г­Г® ГІГ®Г«ГЄГ ГІГј, Г­Г Г¦Г Гў G-ГІГ®Г«ГЄГ ГІГј. Г…Г±Г«ГЁ ГІГ ГЄГ®Г© ГґГіГ­ГЄГ¶ГЁГЁ Г­ГҐГІ, ГЇГ°ГЁ Г­Г ГўГҐГ¤ГҐГ­ГЁГЁ Г­Г  Г ГўГІГ®, ГІГ® ГЅГІГ®ГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ГІГ®Г«ГЄГ ГІГј Г­ГҐГ«ГјГ§Гї.
+	Gui, Answers: Add, Text, x8 y376  h20 +0x200, .Г­ГҐГ±Г« - ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ Г±Г«ГҐГ¤ГЁГІГј ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г§Г  ГўГ±ГҐГ¬ ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Г®Г¬, Гў Г±Г«ГіГ·Г ГҐ Г­Г Г°ГіГёГҐГ­ГЁГ© Г®ГІ ГЁГЈГ°Г®ГЄГ®Гў - Г­Г ГЇГЁГёГЁГІГҐ Г°ГҐГЇГ®Г°ГІ.
+    Gui, Answers: Add, Text, x8 y392  h20 +0x200, .Г±Г·ГҐГІ - Г—ГІГ®ГЎГ» ГіГ§Г­Г ГІГј Г­Г®Г¬ГҐГ° Г±Г·ГҐГІГ  Г®ГІГЄГ°Г®Г©ГІГҐ ГЁГ­ГўГҐГ­ГІГ Г°Гј ГЁ Г­Г ГўГҐГ¤ГЁГІГҐГ±Гј Г¬Г»ГёГЄГ®Г© Г­Г  ГЎГ Г­ГЄГ®ГўГ±ГЄГіГѕ ГЄГ Г°ГІГі. 
+    Gui, Answers: Add, Text, x8 y408  h20 +0x200, .ГЇГЁГ­ - Г—ГІГ®ГЎГ» ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј ГЇГЁГ­-ГЄГ®Г¤ Г®ГІГЇГ°Г ГўГ«ГїГ©ГІГҐГ±Гј Гў ГЎГ Г­ГЄГ®ГўГ±ГЄГ®ГҐ Г®ГІГ¤ГҐГ«ГҐГ­ГЁГҐ.
+    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .Г ГіГІ - Г„Г«Гї ГЇГ®Г¤ГЄГ«ГѕГ·ГҐГ­ГЁГї Google authenticator ГўГ Г¬ Г­ГіГ¦Г­Г® Гў Г¬ГҐГ­Гѕ ГўГ»ГЎГ®Г°Г  ГЇГҐГ°Г±Г®Г­Г Г¦Г  Г®ГІГЄГ°Г»ГІГј Г°Г Г§Г¤ГҐГ« Г­Г Г±ГІГ°Г®ГҐГЄ.
+    Gui, Answers: Add, Text, x8 y440  h20 +0x200, .Гµ2 - Г’ГҐГЇГҐГ°Гј ГЄГ®ГЁГ­Г» ГўГ»Г¤Г ГѕГІГ±Гї ГЇГ® ГўГ»ГµГ®Г¤Г­Г»Г¬, ГЇГ® ГЎГіГ¤Г­ГїГ¬ ГЇГ°Г®ГЄГ°ГіГІГЄГ  Г°ГіГ«ГҐГІГЄГЁ Г§Г  5 Г·Г Г±Г®Гў ГЁГЈГ°Г».
+    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .Г¤Г°Г®Г­ - Г„Г°Г®Г­ ГЄГ°Г ГґГІГЁГІГ±Гї Гі Г±ГЁГ«Г®ГўГ»Гµ ГЈГ®Г±.Г±ГІГ°ГіГЄГІГіГ° ГЁ Weasel News. ГЏГ®Г«ГјГ§Г®ГўГ ГІГјГ±Гї ГЁГ¬ Г¬Г®ГЈГіГІ ГЅГІГЁ Г¦ГҐ ГЈГ®Г±.Г±ГІГ°ГіГЄГІГіГ°Г». Г—ГІГ®ГЎГ» ГЇГ®Г¤Г­ГїГІГјГ±Гї-ГЇГ°Г®ГЎГҐГ«, Г·ГІГ®ГЎГ» Г®ГЇГіГ±ГІГЁГІГјГ±Гї-shift. ГЌГ  E-ГІГҐГЇГ«Г®ГўГЁГ§Г®Г° ГўГЄГ«ГѕГ·ГЁГІГј/ГўГ»ГЄГ«ГѕГ·ГЁГІГј.
+    Gui, Answers: Add, Text, x8 y472  h20 +0x200, .Г­ГҐГіГў - ГЌГҐ ГіГўГЁГ¤ГҐГ« Г­Г Г°ГіГёГҐГ­ГЁГ©, ГҐГ±Г«ГЁ Гі ГўГ Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  - Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ. 
+    Gui, Answers: Add, Text, x8 y488  h20 +0x200, .ГґГ®Г° - Г„Г Г­Г­Г®ГҐ Г­Г Г°ГіГёГҐГ­ГЁГҐ Г­ГҐ ГЇГ®Г¤Г«ГҐГ¦ГЁГІ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ­ГЁГѕ Г·ГҐГ°ГҐГ§ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ, Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+    Gui, Answers: Add, Text, x8 y504  h20 +0x200, .ГЁГ±Г· - Г‚Г±ГҐ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г»ГҐ Г±Г°ГҐГ¤Г±ГІГўГ  ГЁГ±Г·ГҐГ§Г ГѕГІ Г·ГҐГ°ГҐГ§ 30 Г¬ГЁГ­ГіГІ, ГҐГ±Г«ГЁ Г± Г­ГЁГ¬ГЁ Г­ГЁГЄГ ГЄ Г­ГҐ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј.
+    Gui, Answers: Add, Text, x8 y520  h20 +0x200, .ГґГ®Г°ГіГ¬ - Г‚ Г±ГўГїГ§ГЁ Г± Г­Г ГЈГ°ГіГ§ГЄГ®Г© Г­Г  Г±ГҐГ°ГўГҐГ° Г¬Г» Г­ГҐ Г¬Г®Г¦ГҐГ¬ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГІГј ГўГ ГёГі Г¦Г Г«Г®ГЎГі Г­Г  ГЁГЈГ°Г®ГЄГ  ГЇГ®Г±Г°ГҐГ¤Г±ГІГўГ®Г¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГї, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+	Gui, Answers: Add, Text, x8 y536  h20 +0x200, .ГґГ°Г ГЄ - /f - IC Г·Г ГІ, /fb - OOC Г·Г ГІ. 
+    Gui, Answers: Add, Text, x8 y552  h20 +0x200, .ГґГ Г¬ - /c - IC Г·Г ГІ, /cb - OOC Г·Г ГІ. 
+    Gui, Answers: Add, Text, x8 y568  h20 +0x200, .Г±ГЇГЎ - Г…Г±Г«ГЁ Г®Г¤Г­Г® Г®ГІГ¤ГҐГ«ГҐГ­ГЁГҐ Г…ГЊГ‘ Г±ГЁГ«ГјГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­Г®, Г·ГІГ®ГЎГ» ГЁГ§ГЎГҐГ¦Г ГІГј ГЄГ°Г ГёГЁ ГўГ Г± Г±ГЇГ ГўГ­ГЁГІ Гў Г¤Г°ГіГЈГ®Г¬, Г¬ГҐГ­ГҐГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г­Г®Г¬ Г®ГІГ¤ГҐГ«ГҐГ­ГЁГЁ.
+    Gui, Answers: Add, Text, x8 y584  h20 +0x200, .ГЇГҐГ°ГҐГ¤ - Г‚Г±ГҐ ГЁГ¬ГіГ№ГҐГ±ГІГўГ® ГўГ» ГЇГҐГ°ГҐГ¤Г ГҐГІГҐ Г­Г  Г±ГўГ®Г© Г±ГІГ°Г Гµ ГЁ Г°ГЁГ±ГЄ.
+	Gui, Answers: Add, Text, x8 y600  h20 +0x200, .Г°ГіГ¤Г  - ГђГіГ¤Г  Г± ГёГ ГµГІГ» ГІГ°ГҐГЎГіГҐГІГ±Гї ГІГ®Г«ГјГЄГ® Гў Г±ГҐГ¬ГҐГ©Г­Г»Гµ ГЄГ®Г­ГІГ°Г ГЄГІГ Гµ, ГЇГ°Г®Г¤Г ГІГј ГҐГҐ Г­ГҐГ«ГјГ§Гї.
+    Gui, Answers: Add, Text, x8 y616  h20 +0x200, .ГЎГ ГЈГ°ГҐГЇ - Г‚ Г±Г«ГіГ·Г ГҐ Г­Г ГµГ®Г¦Г¤ГҐГ­ГЁГї ГЎГ ГЈГ  Г®Г±ГІГ ГўГјГІГҐ Г±ГўГ®Г© ГЎГ ГЈ-Г°ГҐГЇГ®Г°ГІ Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ : Г’ГҐГЄГ±ГІГ®ГўГ»ГҐ ГЄГ Г­Г Г«Г» - Г±Г®Г®ГЎГ№ГЁГІГј Г® ГЎГ ГЈГҐ.
+    Gui, Answers: Add, Text, x8 y632  h20 +0x200, .Г­ГЁГ§ГЄ - Г“ ГўГ Г± ГўГЄГ«ГѕГ·ГҐГ­ Г°ГҐГ¦ГЁГ¬ Г­ГЁГ§ГЄГ®ГЈГ® ГЄГ Г·ГҐГ±ГІГўГ  Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .Г¬Г ГїГЄ - ГЊГ ГїГ·ГЄГЁ Г¬Г®ГЈГіГІ ГўГ»ГЇГ Г±ГІГј Г± "AirDrop" ГЁГ«ГЁ Г¦ГҐ ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ 24/7. ГГ Г­Г±Г» ГўГ»ГЇГ Г¤ГҐГ­ГЁГї Гі ГўГ±ГҐГµ Г¬Г ГїГ·ГЄГ®Гў Г°Г Г§Г­Г»Г©.
+    Gui, Answers: Add, Text, x8 y664  h20 +0x200, .ГµГ®Г« - "Г•Г®Г«Г®Г¤Г­Г»Г© Г±ГІГ Г°ГІ" - ГЇГ°ГЁ Г§Г ГЇГіГ±ГЄГҐ Г’Г‘ ГЁГ§Г¤Г ВёГІ ГµГ Г°Г ГЄГІГҐГ°Г­Г»Г© Г§ГўГіГЄ, Г¤Г°ГіГЈГЁГ¬ ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г®Г¬ Г­ГҐ Г®ГЎГ«Г Г¤Г ГҐГІ.
+    Gui, Answers: Add, Text, x8 y680  h20 +0x200, .ГЎГЁГ­Г¤ - Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г Г±ГІГ°Г®ГЁГІГј ГЎГЁГ­Г¤ ГЄГ«Г ГўГЁГё ГЇГ®Г¤ Г±ГҐГЎГї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЃГЁГ­Г¤ ГЄГ«Г ГўГЁГё.
+    Gui, Answers: Add, Text, x8 y696  h20 +0x200, .Г±ГІГ°ГЁГ¬ - ГђГҐГ¦ГЁГ¬ Г±ГІГ°ГЁГ¬ГҐГ°Г  Г§Г Г¬ГҐГ­ГїГҐГІ Г±ГЁГ¬ГўГ®Г«Г» Г­Г  Г§ГўГҐГ§Г¤Г®Г·ГЄГЁ, Г¤Г«Гї Г®ГЎГ»Г·Г­Г»Гµ ГЁГЈГ°Г®ГЄГ®Гў Г®Г­ ГЎГҐГ±ГЇГ®Г«ГҐГ§ГҐГ­. Г‚Г»ГЄГ«ГѕГ·Г ГҐГІГ±Гї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .Г§Г Г¦ - Г—ГІГ®ГЎГ» ГўГ§Г«Г®Г¬Г ГІГј Г§Г Г¦ГЁГЈГ Г­ГЁГҐ Г±ГїГ¤ГјГІГҐ Г§Г  Г°ГіГ«Гј ГІ.Г±., Г­Г Г¦Г¬ГЁГІГҐ G - Г‚Г§Г«Г®Г¬Г ГІГј Г§Г Г¦ГЁГЈГ Г­ГЁГҐ. ГЉГ„ Г­Г  ГўГ§Г«Г®Г¬ - 1 Г·Г Г±.
+    Gui, Answers: Add, Text, x8 y728  h20 +0x200, .Г¤Г°Г§Г®Г­Г  - Г„Г°ГЁГґГІ Г§Г®Г­Г  Г®ГІГ¬ГҐГ·ГҐГ­Г  Г­Г  ГЄГ Г°ГІГҐ ГЄГ ГЄ ГЁГЄГ®Г­ГЄГ  ГЇГ Г¤Г ГѕГ№ГҐГ© ГЄГ®Г¬ГҐГІГ», ГЇГ°ГЁГ¬ГҐГ° - Г®Г¤Г­Г  ГЁГ§ Г§Г®Г­ Г®ГЄГ®Г«Г® LS Vagos.
+    Gui, Answers: Add, Text, x8 y744  h20 +0x200, .ГЄГіГ° - ГЏГҐГ°ГҐГ¤Г Г¬ ГЄГіГ°Г ГІГ®Г°Г Г¬.
 
 	Gui, Answers: Tab, 4
-    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .пер - Передам.
-    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .неоф - Не оффтопьте в обращения.
-    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .одворк -  При устройстве на работу Вы получаете комплект одежды. Он снимется автоматически при прекращении работы. Если же у Вас мед комплект то Вам нужно пройти курс лечения.
-    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .зоо - Система животных. Могут спавниться различные животные, от крыс до оленей по всей карте. Некоторые виды животных можно разделать и получить мясо. Мясо можно жарить и
-    Gui, Answers: Add, Text, x8 y88  h20 +0x200, употреблять в пищу. Домашних животных которые гуляют по карте, можно гладить.
-    Gui, Answers: Add, Text, x8 y104  h20 +0x200, .мед - За данным медиа партнером наблюдает PR ассистент, по этой причине я не могу выдавать наказание, т.к. вся ответственность за происходящее на этой ситуации переносится на PR ассистента.
-    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .зак - Это регламентируется IC законами, изучить их можете в разделе Government на форуме: Majestic RolePlay | Server 3 - Организации - Государственные организации - Government.
-    Gui, Answers: Add, Text, x8 y136  h20 +0x200, .оск - Жалобы на OOC оскорбление принимаем только, если скриншот сделан в ту же минуту, что и оскорбление в чате + на скрине должно быть присутствие нарушившего (видно его или статик).
-    Gui, Answers: Add, Text, x8 y152  h20 +0x200, .аукц - На аукцион можно выставить авто/бизнес/дом/квартиру. Во время вашего активного лот, вы можете лишь ездить на авто. При продаже на акционе дома-кладовка передаётся покупателю.
-    Gui, Answers: Add, Text, x8 y168  h20 +0x200, .болгарка - Для того, чтобы распилить багажник нужно подойти к багажнику G - Нелегальное для авто - Распилить дверной замок. Открывается багажник и вы можете взять с него как коробки 
-    Gui, Answers: Add, Text, x8 y184  h20 +0x200, с материалами, так и коробки со снаряжением. Взломать можно не только гос.матовозки, но и крайм. Болгаркой нельзя взломать личный транспорт.
-    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .промо - Промокод можно ввести до 3 уровня командой /promo "промокод", награда за него будет выдана при достижении 3 уровня. Пригласивший получает 7500$. Приглашенный игрок получает: 
-    Gui, Answers: Add, Text, x8 y216  h20 +0x200, от обычного игрока - 10 000$ + 3 дня Platinum VIP, от медиа - 20 000$ + 7 дней Platinum VIP.
-    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .вот - Выборы активны с 10:00 - 10:00 по московскому времени. Проголосовать может каждый от 3-го уровня игрового персонажа, по принцыпу один голос на один аккаунт. голосование проходит в
-    Gui, Answers: Add, Text, x8 y248  h20 +0x200,  левом крыле Мэрии(На карте флаг USA).
-    Gui, Answers: Add, Text, x8 y264  h20 +0x200, .дрифт - Дрифт счётчик можно включить через F2 > Настройки. Он появляется во время управляемого заноса и показывает, на сколько хорошо вы прошли поворот. На карте вы можете увидеть зоны, 
-    Gui, Answers: Add, Text, x8 y280  h20 +0x200, где можно дрифтить и попасть в список топ-дрифтеров. Для этого Вам обязательно дрифтить по отмеченной зоне. В противном случае очки не засчитаются.
-    Gui, Answers: Add, Text, x8 y296  h20 +0x200, .скин - Оружие появляется в донат инвентаре, его можно будет распылить. Однако при его применении невозможно дальнейшее распыление. Чтобы применить скин на оружие: F2 - Магазин - Cкины.
-    Gui, Answers: Add, Text, x8 y312  h20 +0x200, Выбираете оружие и скин к нему - Применить, скин применяется ко всем оружиям выбранного типа. Скин привязывается к игроку, получить оружие со скином - невозможно.
-    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .огр - Чтобы начать ограбление банка, вам нужно позвонить по номеру: 28121903. Для этого надо быть в крайм организации, и находится рядом с банком (как минимум вас должно быть 4 около 
-    Gui, Answers: Add, Text, x8 y344  h20 +0x200, иначе не сможете). банка. Для начала ограбления требуется "План ограблений", который выбирается в AirDrops или при ограблении бизнесов.Можно грабить 1 раз в день каждой огранизации.
-    Gui, Answers: Add, Text, x8 y360  h20 +0x200,  После того, как ограбление началось и банк получил красную иконку, надо прицелиться в бота и заполнить прогресс бар.Дальше будет большая дверь, что бы ее разбл., нужно пройти мини-
-	Gui, Answers: Add, Text, x8 y376  h20 +0x200, игру со взломом. Для этого используем «Программатор ЭБУ» + «Кабель электронных дверей». Он продается у торговца на рынке. После взлома перед вами будет стоять стойка с деньгами. Далее 
-    Gui, Answers: Add, Text, x8 y392  h20 +0x200, идет 2-я дверь. Для ее взлома нам необходима «Ключ карта Fleeca» либо «Термитная установка».«Ключ карта Fleeca» выпадает с ботов при ограблении бизнесов, или на аир дропах.«Термитная
-    Gui, Answers: Add, Text, x8 y408  h20 +0x200,  установка» продается у пиротехника. С ее помощью дверь открывается за 2 минуты. 
-    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .огр2 - Для этого надо взять в руки один из предметов, чтобы открыть дверь. Но в хранилище есть ячейки, для взлома ячеек необходима «Дрель 1500w». Дрель крафтится у крим. организаций и 
-    Gui, Answers: Add, Text, x8 y440  h20 +0x200, выпадает при смерти. После успешного прохождения мини-игры по взлому ячейки на пол падает награда.
-    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .зкайо - На острове имеется несколько точек захвата медицинских, военных, технических материалов. Для захвата Вам необходимо взять с собой маячки(Подберите цвета), если же у Вас маячки 
-    Gui, Answers: Add, Text, x8 y472  h20 +0x200, зелёного цвета Вы сможете захватить военные материалы, синего Вашей целью станут технически при наличии красных Вам откроется возможность захватить медицинские. Захват можно начать в 
-    Gui, Answers: Add, Text, x8 y488  h20 +0x200, радиусе 50м от точки погрузки, после активации маячка появится обозримая зона захвата, если выйти за зону захвата или все захватчики умрут, маячок уничтожается, точка переходит в спокойное 
-    Gui, Answers: Add, Text, x8 y504  h20 +0x200, состояние как до захвата. Не стоит забывать и про сигнализацию, если Вы её не выключите все госструктуры будут в момент оповещены и Вас будет ждать серьёзное сопротивление (Функционально 
-    Gui, Answers: Add, Text, x8 y520  h20 +0x200, на захват материалов это не повлияет). После захвата блип на карте красится в цвет организации захватчиков. Игроки смогут забирать материалы с точки и грузить их в лодку - в городе перегружать.
-	Gui, Answers: Add, Text, x8 y536  h20 +0x200, .перико - У всех силовых фракций появилась метка для телепортации, фракции EMS/WN/GOV лишены её. Отделение LSCSD в Сэнди-Шорс тоже не имеет метки. Каждая фракции телепортируется в одну 
-    Gui, Answers: Add, Text, x8 y552  h20 +0x200, точку на острове, таким путём и обратно. Однако Вы не сможете телепортироваться с точки другой фракции. Пример: Я из FIB и хочу сделать телепорт на территории LSCSD - У меня не выйдет.
-    Gui, Answers: Add, Text, x8 y568  h20 +0x200,  На острове, вблизи особняка и на его территории, есть машины, вертолёт и квадроциклы с ними может взаимодействовать лишь SANG, возможность заспавнить своё ТС также сохранена, для этого 
-    Gui, Answers: Add, Text, x8 y584  h20 +0x200, воспользуйтесь меткой. Также SANG стал обладателем ещё одного склада на Кайо-Перико, он аналогичен Вашему на форте. Если на форте будет заполнено 20.000 то и на острове тоже.
-	Gui, Answers: Add, Text, x8 y600  h20 +0x200, .сирена - Вышку можно взломать, не будет обновляться статус контроля точек(10 минут). Для взлома нужен "Программатор ЭБУ" и "Кабель радио сигналов". Кабель можно получить при ограблении 
-    Gui, Answers: Add, Text, x8 y616  h20 +0x200, магазина 24/7, выпадает(Шанс редко-средне), он одноразовый и после использования он пропадает. Взлом происходит в мини-игре. После удачного взлома, на мини карте не будет отображаться 
-    Gui, Answers: Add, Text, x8 y632  h20 +0x200, статус захвата точек для SANG(10 минут). После неудачного взлома, сразу срабатывает сирена. SANG могут восстановить работу вышки нажав "Е" на метке вышки.
-    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .лобби - Это Ваша игра созданная Вами для друзей или же обычных игроков, все правила настраиваете именно Вы. Для того что бы начать нужно: Дать название своему лобби, выбрать один из 
-    Gui, Answers: Add, Text, x8 y664  h20 +0x200, доступных режимов(Гонка вооружений/Бой на смерть/Захват флага), выбрать одну из карт. Далее Вы сможете установить пароль, если же не хотите видеть лишних игроков в своей игре. После всех 
-    Gui, Answers: Add, Text, x8 y680  h20 +0x200, первичных настроек Вам откроются дополнительные: Требование для победы, оружие, время суток, одежда(Если выбрать "Нет" игрок временно сменит одежду в матче), погодные условия, авто-
-    Gui, Answers: Add, Text, x8 y696  h20 +0x200, баланс команд(В случае захвата флага) и др. Только помните за создание лобби нужно будет заплатить от 1.250$ до 2.800$.
-    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .флаг - Командный режим боя в котором Вы сможете противостоять своим оппонентам в равных условиях. В этом режиме Вы можете поднимать оружие на "F"(По дефолту), а также купить себе оружие 
-    Gui, Answers: Add, Text, x8 y728  h20 +0x200, на заработанные во время матча деньги, для этого нажмите "B". Матч закончиться как только одна из команд потеряет все очки, скорость их потери/накопления зависит от кол-ва захваченных, 
-    Gui, Answers: Add, Text, x8 y744  h20 +0x200, Вашей командой, точек.
+    Gui, Answers: Add, Text, x8 y24  h20 +0x200, .ГЇГҐГ° - ГЏГҐГ°ГҐГ¤Г Г¬.
+    Gui, Answers: Add, Text, x8 y40  h20 +0x200, .Г­ГҐГ®Гґ - ГЌГҐ Г®ГґГґГІГ®ГЇГјГІГҐ Гў Г®ГЎГ°Г Г№ГҐГ­ГЁГї.
+    Gui, Answers: Add, Text, x8 y56  h20 +0x200, .Г®Г¤ГўГ®Г°ГЄ -  ГЏГ°ГЁ ГіГ±ГІГ°Г®Г©Г±ГІГўГҐ Г­Г  Г°Г ГЎГ®ГІГі Г‚Г» ГЇГ®Г«ГіГ·Г ГҐГІГҐ ГЄГ®Г¬ГЇГ«ГҐГЄГІ Г®Г¤ГҐГ¦Г¤Г». ГЋГ­ Г±Г­ГЁГ¬ГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ ГЇГ°ГЁ ГЇГ°ГҐГЄГ°Г Г№ГҐГ­ГЁГЁ Г°Г ГЎГ®ГІГ». Г…Г±Г«ГЁ Г¦ГҐ Гі Г‚Г Г± Г¬ГҐГ¤ ГЄГ®Г¬ГЇГ«ГҐГЄГІ ГІГ® Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЇГ°Г®Г©ГІГЁ ГЄГіГ°Г± Г«ГҐГ·ГҐГ­ГЁГї.
+    Gui, Answers: Add, Text, x8 y72  h20 +0x200, .Г§Г®Г® - Г‘ГЁГ±ГІГҐГ¬Г  Г¦ГЁГўГ®ГІГ­Г»Гµ. ГЊГ®ГЈГіГІ Г±ГЇГ ГўГ­ГЁГІГјГ±Гї Г°Г Г§Г«ГЁГ·Г­Г»ГҐ Г¦ГЁГўГ®ГІГ­Г»ГҐ, Г®ГІ ГЄГ°Г»Г± Г¤Г® Г®Г«ГҐГ­ГҐГ© ГЇГ® ГўГ±ГҐГ© ГЄГ Г°ГІГҐ. ГЌГҐГЄГ®ГІГ®Г°Г»ГҐ ГўГЁГ¤Г» Г¦ГЁГўГ®ГІГ­Г»Гµ Г¬Г®Г¦Г­Г® Г°Г Г§Г¤ГҐГ«Г ГІГј ГЁ ГЇГ®Г«ГіГ·ГЁГІГј Г¬ГїГ±Г®. ГЊГїГ±Г® Г¬Г®Г¦Г­Г® Г¦Г Г°ГЁГІГј ГЁ
+    Gui, Answers: Add, Text, x8 y88  h20 +0x200, ГіГЇГ®ГІГ°ГҐГЎГ«ГїГІГј Гў ГЇГЁГ№Гі. Г„Г®Г¬Г ГёГ­ГЁГµ Г¦ГЁГўГ®ГІГ­Г»Гµ ГЄГ®ГІГ®Г°Г»ГҐ ГЈГіГ«ГїГѕГІ ГЇГ® ГЄГ Г°ГІГҐ, Г¬Г®Г¦Г­Г® ГЈГ«Г Г¤ГЁГІГј.
+    Gui, Answers: Add, Text, x8 y104  h20 +0x200, .Г¬ГҐГ¤ - Г‡Г  Г¤Г Г­Г­Г»Г¬ Г¬ГҐГ¤ГЁГ  ГЇГ Г°ГІГ­ГҐГ°Г®Г¬ Г­Г ГЎГ«ГѕГ¤Г ГҐГІ PR Г Г±Г±ГЁГ±ГІГҐГ­ГІ, ГЇГ® ГЅГІГ®Г© ГЇГ°ГЁГ·ГЁГ­ГҐ Гї Г­ГҐ Г¬Г®ГЈГі ГўГ»Г¤Г ГўГ ГІГј Г­Г ГЄГ Г§Г Г­ГЁГҐ, ГІ.ГЄ. ГўГ±Гї Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®Г±ГІГј Г§Г  ГЇГ°Г®ГЁГ±ГµГ®Г¤ГїГ№ГҐГҐ Г­Г  ГЅГІГ®Г© Г±ГЁГІГіГ Г¶ГЁГЁ ГЇГҐГ°ГҐГ­Г®Г±ГЁГІГ±Гї Г­Г  PR Г Г±Г±ГЁГ±ГІГҐГ­ГІГ .
+    Gui, Answers: Add, Text, x8 y120  h20 +0x200, .Г§Г ГЄ - ГќГІГ® Г°ГҐГЈГ«Г Г¬ГҐГ­ГІГЁГ°ГіГҐГІГ±Гї IC Г§Г ГЄГ®Г­Г Г¬ГЁ, ГЁГ§ГіГ·ГЁГІГј ГЁГµ Г¬Г®Г¦ГҐГІГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ Government Г­Г  ГґГ®Г°ГіГ¬ГҐ: Majestic RolePlay | Server 3 - ГЋГ°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ - ГѓГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»ГҐ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ - Government.
+    Gui, Answers: Add, Text, x8 y136  h20 +0x200, .Г®Г±ГЄ - Г†Г Г«Г®ГЎГ» Г­Г  OOC Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ ГЇГ°ГЁГ­ГЁГ¬Г ГҐГ¬ ГІГ®Г«ГјГЄГ®, ГҐГ±Г«ГЁ Г±ГЄГ°ГЁГ­ГёГ®ГІ Г±Г¤ГҐГ«Г Г­ Гў ГІГі Г¦ГҐ Г¬ГЁГ­ГіГІГі, Г·ГІГ® ГЁ Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Гў Г·Г ГІГҐ + Г­Г  Г±ГЄГ°ГЁГ­ГҐ Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј ГЇГ°ГЁГ±ГіГІГ±ГІГўГЁГҐ Г­Г Г°ГіГёГЁГўГёГҐГЈГ® (ГўГЁГ¤Г­Г® ГҐГЈГ® ГЁГ«ГЁ Г±ГІГ ГІГЁГЄ).
+    Gui, Answers: Add, Text, x8 y152  h20 +0x200, .Г ГіГЄГ¶ - ГЌГ  Г ГіГЄГ¶ГЁГ®Г­ Г¬Г®Г¦Г­Г® ГўГ»Г±ГІГ ГўГЁГІГј Г ГўГІГ®/ГЎГЁГ§Г­ГҐГ±/Г¤Г®Г¬/ГЄГўГ Г°ГІГЁГ°Гі. Г‚Г® ГўГ°ГҐГ¬Гї ГўГ ГёГҐГЈГ® Г ГЄГІГЁГўГ­Г®ГЈГ® Г«Г®ГІ, ГўГ» Г¬Г®Г¦ГҐГІГҐ Г«ГЁГёГј ГҐГ§Г¤ГЁГІГј Г­Г  Г ГўГІГ®. ГЏГ°ГЁ ГЇГ°Г®Г¤Г Г¦ГҐ Г­Г  Г ГЄГ¶ГЁГ®Г­ГҐ Г¤Г®Г¬Г -ГЄГ«Г Г¤Г®ГўГЄГ  ГЇГҐГ°ГҐГ¤Г ВёГІГ±Гї ГЇГ®ГЄГіГЇГ ГІГҐГ«Гѕ.
+    Gui, Answers: Add, Text, x8 y168  h20 +0x200, .ГЎГ®Г«ГЈГ Г°ГЄГ  - Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» Г°Г Г±ГЇГЁГ«ГЁГІГј ГЎГ ГЈГ Г¦Г­ГЁГЄ Г­ГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ ГЎГ ГЈГ Г¦Г­ГЁГЄГі G - ГЌГҐГ«ГҐГЈГ Г«ГјГ­Г®ГҐ Г¤Г«Гї Г ГўГІГ® - ГђГ Г±ГЇГЁГ«ГЁГІГј Г¤ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ. ГЋГІГЄГ°Г»ГўГ ГҐГІГ±Гї ГЎГ ГЈГ Г¦Г­ГЁГЄ ГЁ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ§ГїГІГј Г± Г­ГҐГЈГ® ГЄГ ГЄ ГЄГ®Г°Г®ГЎГЄГЁ 
+    Gui, Answers: Add, Text, x8 y184  h20 +0x200, Г± Г¬Г ГІГҐГ°ГЁГ Г«Г Г¬ГЁ, ГІГ ГЄ ГЁ ГЄГ®Г°Г®ГЎГЄГЁ Г±Г® Г±Г­Г Г°ГїГ¦ГҐГ­ГЁГҐГ¬. Г‚Г§Г«Г®Г¬Г ГІГј Г¬Г®Г¦Г­Г® Г­ГҐ ГІГ®Г«ГјГЄГ® ГЈГ®Г±.Г¬Г ГІГ®ГўГ®Г§ГЄГЁ, Г­Г® ГЁ ГЄГ°Г Г©Г¬. ГЃГ®Г«ГЈГ Г°ГЄГ®Г© Г­ГҐГ«ГјГ§Гї ГўГ§Г«Г®Г¬Г ГІГј Г«ГЁГ·Г­Г»Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ.
+    Gui, Answers: Add, Text, x8 y200  h20 +0x200, .ГЇГ°Г®Г¬Г® - ГЏГ°Г®Г¬Г®ГЄГ®Г¤ Г¬Г®Г¦Г­Г® ГўГўГҐГ±ГІГЁ Г¤Г® 3 ГіГ°Г®ГўГ­Гї ГЄГ®Г¬Г Г­Г¤Г®Г© /promo "ГЇГ°Г®Г¬Г®ГЄГ®Г¤", Г­Г ГЈГ°Г Г¤Г  Г§Г  Г­ГҐГЈГ® ГЎГіГ¤ГҐГІ ГўГ»Г¤Г Г­Г  ГЇГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 3 ГіГ°Г®ГўГ­Гї. ГЏГ°ГЁГЈГ«Г Г±ГЁГўГёГЁГ© ГЇГ®Г«ГіГ·Г ГҐГІ 7500$. ГЏГ°ГЁГЈГ«Г ГёГҐГ­Г­Г»Г© ГЁГЈГ°Г®ГЄ ГЇГ®Г«ГіГ·Г ГҐГІ: 
+    Gui, Answers: Add, Text, x8 y216  h20 +0x200, Г®ГІ Г®ГЎГ»Г·Г­Г®ГЈГ® ГЁГЈГ°Г®ГЄГ  - 10 000$ + 3 Г¤Г­Гї Platinum VIP, Г®ГІ Г¬ГҐГ¤ГЁГ  - 20 000$ + 7 Г¤Г­ГҐГ© Platinum VIP.
+    Gui, Answers: Add, Text, x8 y232  h20 +0x200, .ГўГ®ГІ - Г‚Г»ГЎГ®Г°Г» Г ГЄГІГЁГўГ­Г» Г± 10:00 - 10:00 ГЇГ® Г¬Г®Г±ГЄГ®ГўГ±ГЄГ®Г¬Гі ГўГ°ГҐГ¬ГҐГ­ГЁ. ГЏГ°Г®ГЈГ®Г«Г®Г±Г®ГўГ ГІГј Г¬Г®Г¦ГҐГІ ГЄГ Г¦Г¤Г»Г© Г®ГІ 3-ГЈГ® ГіГ°Г®ГўГ­Гї ГЁГЈГ°Г®ГўГ®ГЈГ® ГЇГҐГ°Г±Г®Г­Г Г¦Г , ГЇГ® ГЇГ°ГЁГ­Г¶Г»ГЇГі Г®Г¤ГЁГ­ ГЈГ®Г«Г®Г± Г­Г  Г®Г¤ГЁГ­ Г ГЄГЄГ ГіГ­ГІ. ГЈГ®Г«Г®Г±Г®ГўГ Г­ГЁГҐ ГЇГ°Г®ГµГ®Г¤ГЁГІ Гў
+    Gui, Answers: Add, Text, x8 y248  h20 +0x200,  Г«ГҐГўГ®Г¬ ГЄГ°Г»Г«ГҐ ГЊГЅГ°ГЁГЁ(ГЌГ  ГЄГ Г°ГІГҐ ГґГ«Г ГЈ USA).
+    Gui, Answers: Add, Text, x8 y264  h20 +0x200, .Г¤Г°ГЁГґГІ - Г„Г°ГЁГґГІ Г±Г·ВёГІГ·ГЁГЄ Г¬Г®Г¦Г­Г® ГўГЄГ«ГѕГ·ГЁГІГј Г·ГҐГ°ГҐГ§ F2 > ГЌГ Г±ГІГ°Г®Г©ГЄГЁ. ГЋГ­ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї ГўГ® ГўГ°ГҐГ¬Гї ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®ГЈГ® Г§Г Г­Г®Г±Г  ГЁ ГЇГ®ГЄГ Г§Г»ГўГ ГҐГІ, Г­Г  Г±ГЄГ®Г«ГјГЄГ® ГµГ®Г°Г®ГёГ® ГўГ» ГЇГ°Г®ГёГ«ГЁ ГЇГ®ГўГ®Г°Г®ГІ. ГЌГ  ГЄГ Г°ГІГҐ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГіГўГЁГ¤ГҐГІГј Г§Г®Г­Г», 
+    Gui, Answers: Add, Text, x8 y280  h20 +0x200, ГЈГ¤ГҐ Г¬Г®Г¦Г­Г® Г¤Г°ГЁГґГІГЁГІГј ГЁ ГЇГ®ГЇГ Г±ГІГј Гў Г±ГЇГЁГ±Г®ГЄ ГІГ®ГЇ-Г¤Г°ГЁГґГІГҐГ°Г®Гў. Г„Г«Гї ГЅГІГ®ГЈГ® Г‚Г Г¬ Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г°ГЁГґГІГЁГІГј ГЇГ® Г®ГІГ¬ГҐГ·ГҐГ­Г­Г®Г© Г§Г®Г­ГҐ. Г‚ ГЇГ°Г®ГІГЁГўГ­Г®Г¬ Г±Г«ГіГ·Г ГҐ Г®Г·ГЄГЁ Г­ГҐ Г§Г Г±Г·ГЁГІГ ГѕГІГ±Гї.
+    Gui, Answers: Add, Text, x8 y296  h20 +0x200, .Г±ГЄГЁГ­ - ГЋГ°ГіГ¦ГЁГҐ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Гў Г¤Г®Г­Г ГІ ГЁГ­ГўГҐГ­ГІГ Г°ГҐ, ГҐГЈГ® Г¬Г®Г¦Г­Г® ГЎГіГ¤ГҐГІ Г°Г Г±ГЇГ»Г«ГЁГІГј. ГЋГ¤Г­Г ГЄГ® ГЇГ°ГЁ ГҐГЈГ® ГЇГ°ГЁГ¬ГҐГ­ГҐГ­ГЁГЁ Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г® Г¤Г Г«ГјГ­ГҐГ©ГёГҐГҐ Г°Г Г±ГЇГ»Г«ГҐГ­ГЁГҐ. Г—ГІГ®ГЎГ» ГЇГ°ГЁГ¬ГҐГ­ГЁГІГј Г±ГЄГЁГ­ Г­Г  Г®Г°ГіГ¦ГЁГҐ: F2 - ГЊГ ГЈГ Г§ГЁГ­ - CГЄГЁГ­Г».
+    Gui, Answers: Add, Text, x8 y312  h20 +0x200, Г‚Г»ГЎГЁГ°Г ГҐГІГҐ Г®Г°ГіГ¦ГЁГҐ ГЁ Г±ГЄГЁГ­ ГЄ Г­ГҐГ¬Гі - ГЏГ°ГЁГ¬ГҐГ­ГЁГІГј, Г±ГЄГЁГ­ ГЇГ°ГЁГ¬ГҐГ­ГїГҐГІГ±Гї ГЄГ® ГўГ±ГҐГ¬ Г®Г°ГіГ¦ГЁГїГ¬ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГЁГЇГ . Г‘ГЄГЁГ­ ГЇГ°ГЁГўГїГ§Г»ГўГ ГҐГІГ±Гї ГЄ ГЁГЈГ°Г®ГЄГі, ГЇГ®Г«ГіГ·ГЁГІГј Г®Г°ГіГ¦ГЁГҐ Г±Г® Г±ГЄГЁГ­Г®Г¬ - Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г®.
+    Gui, Answers: Add, Text, x8 y328  h20 +0x200, .Г®ГЈГ° - Г—ГІГ®ГЎГ» Г­Г Г·Г ГІГј Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГҐ ГЎГ Г­ГЄГ , ГўГ Г¬ Г­ГіГ¦Г­Г® ГЇГ®Г§ГўГ®Г­ГЁГІГј ГЇГ® Г­Г®Г¬ГҐГ°Гі: 28121903. Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГЎГ»ГІГј Гў ГЄГ°Г Г©Г¬ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ, ГЁ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г°ГїГ¤Г®Г¬ Г± ГЎГ Г­ГЄГ®Г¬ (ГЄГ ГЄ Г¬ГЁГ­ГЁГ¬ГіГ¬ ГўГ Г± Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј 4 Г®ГЄГ®Г«Г® 
+    Gui, Answers: Add, Text, x8 y344  h20 +0x200, ГЁГ­Г Г·ГҐ Г­ГҐ Г±Г¬Г®Г¦ГҐГІГҐ). ГЎГ Г­ГЄГ . Г„Г«Гї Г­Г Г·Г Г«Г  Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГї ГІГ°ГҐГЎГіГҐГІГ±Гї "ГЏГ«Г Г­ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГ©", ГЄГ®ГІГ®Г°Г»Г© ГўГ»ГЎГЁГ°Г ГҐГІГ±Гї Гў AirDrops ГЁГ«ГЁ ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ ГЎГЁГ§Г­ГҐГ±Г®Гў.ГЊГ®Г¦Г­Г® ГЈГ°Г ГЎГЁГІГј 1 Г°Г Г§ Гў Г¤ГҐГ­Гј ГЄГ Г¦Г¤Г®Г© Г®ГЈГ°Г Г­ГЁГ§Г Г¶ГЁГЁ.
+    Gui, Answers: Add, Text, x8 y360  h20 +0x200,  ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ®, ГЄГ ГЄ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГҐ Г­Г Г·Г Г«Г®Г±Гј ГЁ ГЎГ Г­ГЄ ГЇГ®Г«ГіГ·ГЁГ« ГЄГ°Г Г±Г­ГіГѕ ГЁГЄГ®Г­ГЄГі, Г­Г Г¤Г® ГЇГ°ГЁГ¶ГҐГ«ГЁГІГјГ±Гї Гў ГЎГ®ГІГ  ГЁ Г§Г ГЇГ®Г«Г­ГЁГІГј ГЇГ°Г®ГЈГ°ГҐГ±Г± ГЎГ Г°.Г„Г Г«ГјГёГҐ ГЎГіГ¤ГҐГІ ГЎГ®Г«ГјГёГ Гї Г¤ГўГҐГ°Гј, Г·ГІГ® ГЎГ» ГҐГҐ Г°Г Г§ГЎГ«., Г­ГіГ¦Г­Г® ГЇГ°Г®Г©ГІГЁ Г¬ГЁГ­ГЁ-
+	Gui, Answers: Add, Text, x8 y376  h20 +0x200, ГЁГЈГ°Гі Г±Г® ГўГ§Г«Г®Г¬Г®Г¬. Г„Г«Гї ГЅГІГ®ГЈГ® ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬ В«ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“В» + В«ГЉГ ГЎГҐГ«Гј ГЅГ«ГҐГЄГІГ°Г®Г­Г­Г»Гµ Г¤ГўГҐГ°ГҐГ©В». ГЋГ­ ГЇГ°Г®Г¤Г ГҐГІГ±Гї Гі ГІГ®Г°ГЈГ®ГўГ¶Г  Г­Г  Г°Г»Г­ГЄГҐ. ГЏГ®Г±Г«ГҐ ГўГ§Г«Г®Г¬Г  ГЇГҐГ°ГҐГ¤ ГўГ Г¬ГЁ ГЎГіГ¤ГҐГІ Г±ГІГ®ГїГІГј Г±ГІГ®Г©ГЄГ  Г± Г¤ГҐГ­ГјГЈГ Г¬ГЁ. Г„Г Г«ГҐГҐ 
+    Gui, Answers: Add, Text, x8 y392  h20 +0x200, ГЁГ¤ГҐГІ 2-Гї Г¤ГўГҐГ°Гј. Г„Г«Гї ГҐГҐ ГўГ§Г«Г®Г¬Г  Г­Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  В«ГЉГ«ГѕГ· ГЄГ Г°ГІГ  FleecaВ» Г«ГЁГЎГ® В«Г’ГҐГ°Г¬ГЁГІГ­Г Гї ГіГ±ГІГ Г­Г®ГўГЄГ В».В«ГЉГ«ГѕГ· ГЄГ Г°ГІГ  FleecaВ» ГўГ»ГЇГ Г¤Г ГҐГІ Г± ГЎГ®ГІГ®Гў ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ ГЎГЁГ§Г­ГҐГ±Г®Гў, ГЁГ«ГЁ Г­Г  Г ГЁГ° Г¤Г°Г®ГЇГ Гµ.В«Г’ГҐГ°Г¬ГЁГІГ­Г Гї
+    Gui, Answers: Add, Text, x8 y408  h20 +0x200,  ГіГ±ГІГ Г­Г®ГўГЄГ В» ГЇГ°Г®Г¤Г ГҐГІГ±Гї Гі ГЇГЁГ°Г®ГІГҐГµГ­ГЁГЄГ . Г‘ ГҐГҐ ГЇГ®Г¬Г®Г№ГјГѕ Г¤ГўГҐГ°Гј Г®ГІГЄГ°Г»ГўГ ГҐГІГ±Гї Г§Г  2 Г¬ГЁГ­ГіГІГ». 
+    Gui, Answers: Add, Text, x8 y424  h20 +0x200, .Г®ГЈГ°2 - Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГўГ§ГїГІГј Гў Г°ГіГЄГЁ Г®Г¤ГЁГ­ ГЁГ§ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў, Г·ГІГ®ГЎГ» Г®ГІГЄГ°Г»ГІГј Г¤ГўГҐГ°Гј. ГЌГ® Гў ГµГ°Г Г­ГЁГ«ГЁГ№ГҐ ГҐГ±ГІГј ГїГ·ГҐГ©ГЄГЁ, Г¤Г«Гї ГўГ§Г«Г®Г¬Г  ГїГ·ГҐГҐГЄ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  В«Г„Г°ГҐГ«Гј 1500wВ». Г„Г°ГҐГ«Гј ГЄГ°Г ГґГІГЁГІГ±Гї Гі ГЄГ°ГЁГ¬. Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГ© ГЁ 
+    Gui, Answers: Add, Text, x8 y440  h20 +0x200, ГўГ»ГЇГ Г¤Г ГҐГІ ГЇГ°ГЁ Г±Г¬ГҐГ°ГІГЁ. ГЏГ®Г±Г«ГҐ ГіГ±ГЇГҐГёГ­Г®ГЈГ® ГЇГ°Г®ГµГ®Г¦Г¤ГҐГ­ГЁГї Г¬ГЁГ­ГЁ-ГЁГЈГ°Г» ГЇГ® ГўГ§Г«Г®Г¬Гі ГїГ·ГҐГ©ГЄГЁ Г­Г  ГЇГ®Г« ГЇГ Г¤Г ГҐГІ Г­Г ГЈГ°Г Г¤Г .
+    Gui, Answers: Add, Text, x8 y456  h20 +0x200, .Г§ГЄГ Г©Г® - ГЌГ  Г®Г±ГІГ°Г®ГўГҐ ГЁГ¬ГҐГҐГІГ±Гї Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГІГ®Г·ГҐГЄ Г§Г ГµГўГ ГІГ  Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГЁГµ, ГўГ®ГҐГ­Г­Г»Гµ, ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГµ Г¬Г ГІГҐГ°ГЁГ Г«Г®Гў. Г„Г«Гї Г§Г ГµГўГ ГІГ  Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ§ГїГІГј Г± Г±Г®ГЎГ®Г© Г¬Г ГїГ·ГЄГЁ(ГЏГ®Г¤ГЎГҐГ°ГЁГІГҐ Г¶ГўГҐГІГ ), ГҐГ±Г«ГЁ Г¦ГҐ Гі Г‚Г Г± Г¬Г ГїГ·ГЄГЁ 
+    Gui, Answers: Add, Text, x8 y472  h20 +0x200, Г§ГҐГ«ВёГ­Г®ГЈГ® Г¶ГўГҐГІГ  Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ Г§Г ГµГўГ ГІГЁГІГј ГўГ®ГҐГ­Г­Г»ГҐ Г¬Г ГІГҐГ°ГЁГ Г«Г», Г±ГЁГ­ГҐГЈГ® Г‚Г ГёГҐГ© Г¶ГҐГ«ГјГѕ Г±ГІГ Г­ГіГІ ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁ ГЇГ°ГЁ Г­Г Г«ГЁГ·ГЁГЁ ГЄГ°Г Г±Г­Г»Гµ Г‚Г Г¬ Г®ГІГЄГ°Г®ГҐГІГ±Гї ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г§Г ГµГўГ ГІГЁГІГј Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГЁГҐ. Г‡Г ГµГўГ ГІ Г¬Г®Г¦Г­Г® Г­Г Г·Г ГІГј Гў 
+    Gui, Answers: Add, Text, x8 y488  h20 +0x200, Г°Г Г¤ГЁГіГ±ГҐ 50Г¬ Г®ГІ ГІГ®Г·ГЄГЁ ГЇГ®ГЈГ°ГіГ§ГЄГЁ, ГЇГ®Г±Г«ГҐ Г ГЄГІГЁГўГ Г¶ГЁГЁ Г¬Г ГїГ·ГЄГ  ГЇГ®ГїГўГЁГІГ±Гї Г®ГЎГ®Г§Г°ГЁГ¬Г Гї Г§Г®Г­Г  Г§Г ГµГўГ ГІГ , ГҐГ±Г«ГЁ ГўГ»Г©ГІГЁ Г§Г  Г§Г®Г­Гі Г§Г ГµГўГ ГІГ  ГЁГ«ГЁ ГўГ±ГҐ Г§Г ГµГўГ ГІГ·ГЁГЄГЁ ГіГ¬Г°ГіГІ, Г¬Г ГїГ·Г®ГЄ ГіГ­ГЁГ·ГІГ®Г¦Г ГҐГІГ±Гї, ГІГ®Г·ГЄГ  ГЇГҐГ°ГҐГµГ®Г¤ГЁГІ Гў Г±ГЇГ®ГЄГ®Г©Г­Г®ГҐ 
+    Gui, Answers: Add, Text, x8 y504  h20 +0x200, Г±Г®Г±ГІГ®ГїГ­ГЁГҐ ГЄГ ГЄ Г¤Г® Г§Г ГµГўГ ГІГ . ГЌГҐ Г±ГІГ®ГЁГІ Г§Г ГЎГ»ГўГ ГІГј ГЁ ГЇГ°Г® Г±ГЁГЈГ­Г Г«ГЁГ§Г Г¶ГЁГѕ, ГҐГ±Г«ГЁ Г‚Г» ГҐВё Г­ГҐ ГўГ»ГЄГ«ГѕГ·ГЁГІГҐ ГўГ±ГҐ ГЈГ®Г±Г±ГІГ°ГіГЄГІГіГ°Г» ГЎГіГ¤ГіГІ Гў Г¬Г®Г¬ГҐГ­ГІ Г®ГЇГ®ГўГҐГ№ГҐГ­Г» ГЁ Г‚Г Г± ГЎГіГ¤ГҐГІ Г¦Г¤Г ГІГј Г±ГҐГ°ГјВёГ§Г­Г®ГҐ Г±Г®ГЇГ°Г®ГІГЁГўГ«ГҐГ­ГЁГҐ (Г”ГіГ­ГЄГ¶ГЁГ®Г­Г Г«ГјГ­Г® 
+    Gui, Answers: Add, Text, x8 y520  h20 +0x200, Г­Г  Г§Г ГµГўГ ГІ Г¬Г ГІГҐГ°ГЁГ Г«Г®Гў ГЅГІГ® Г­ГҐ ГЇГ®ГўГ«ГЁГїГҐГІ). ГЏГ®Г±Г«ГҐ Г§Г ГµГўГ ГІГ  ГЎГ«ГЁГЇ Г­Г  ГЄГ Г°ГІГҐ ГЄГ°Г Г±ГЁГІГ±Гї Гў Г¶ГўГҐГІ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ Г§Г ГµГўГ ГІГ·ГЁГЄГ®Гў. Г€ГЈГ°Г®ГЄГЁ Г±Г¬Г®ГЈГіГІ Г§Г ГЎГЁГ°Г ГІГј Г¬Г ГІГҐГ°ГЁГ Г«Г» Г± ГІГ®Г·ГЄГЁ ГЁ ГЈГ°ГіГ§ГЁГІГј ГЁГµ Гў Г«Г®Г¤ГЄГі - Гў ГЈГ®Г°Г®Г¤ГҐ ГЇГҐГ°ГҐГЈГ°ГіГ¦Г ГІГј.
+	Gui, Answers: Add, Text, x8 y536  h20 +0x200, .ГЇГҐГ°ГЁГЄГ® - Г“ ГўГ±ГҐГµ Г±ГЁГ«Г®ГўГ»Гµ ГґГ°Г ГЄГ¶ГЁГ© ГЇГ®ГїГўГЁГ«Г Г±Гј Г¬ГҐГІГЄГ  Г¤Г«Гї ГІГҐГ«ГҐГЇГ®Г°ГІГ Г¶ГЁГЁ, ГґГ°Г ГЄГ¶ГЁГЁ EMS/WN/GOV Г«ГЁГёГҐГ­Г» ГҐВё. ГЋГІГ¤ГҐГ«ГҐГ­ГЁГҐ LSCSD Гў Г‘ГЅГ­Г¤ГЁ-ГГ®Г°Г± ГІГ®Г¦ГҐ Г­ГҐ ГЁГ¬ГҐГҐГІ Г¬ГҐГІГЄГЁ. ГЉГ Г¦Г¤Г Гї ГґГ°Г ГЄГ¶ГЁГЁ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІГ±Гї Гў Г®Г¤Г­Гі 
+    Gui, Answers: Add, Text, x8 y552  h20 +0x200, ГІГ®Г·ГЄГі Г­Г  Г®Г±ГІГ°Г®ГўГҐ, ГІГ ГЄГЁГ¬ ГЇГіГІВёГ¬ ГЁ Г®ГЎГ°Г ГІГ­Г®. ГЋГ¤Г­Г ГЄГ® Г‚Г» Г­ГҐ Г±Г¬Г®Г¦ГҐГІГҐ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°Г®ГўГ ГІГјГ±Гї Г± ГІГ®Г·ГЄГЁ Г¤Г°ГіГЈГ®Г© ГґГ°Г ГЄГ¶ГЁГЁ. ГЏГ°ГЁГ¬ГҐГ°: Гџ ГЁГ§ FIB ГЁ ГµГ®Г·Гі Г±Г¤ГҐГ«Г ГІГј ГІГҐГ«ГҐГЇГ®Г°ГІ Г­Г  ГІГҐГ°Г°ГЁГІГ®Г°ГЁГЁ LSCSD - Г“ Г¬ГҐГ­Гї Г­ГҐ ГўГ»Г©Г¤ГҐГІ.
+    Gui, Answers: Add, Text, x8 y568  h20 +0x200,  ГЌГ  Г®Г±ГІГ°Г®ГўГҐ, ГўГЎГ«ГЁГ§ГЁ Г®Г±Г®ГЎГ­ГїГЄГ  ГЁ Г­Г  ГҐГЈГ® ГІГҐГ°Г°ГЁГІГ®Г°ГЁГЁ, ГҐГ±ГІГј Г¬Г ГёГЁГ­Г», ГўГҐГ°ГІГ®Г«ВёГІ ГЁ ГЄГўГ Г¤Г°Г®Г¶ГЁГЄГ«Г» Г± Г­ГЁГ¬ГЁ Г¬Г®Г¦ГҐГІ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј Г«ГЁГёГј SANG, ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г§Г Г±ГЇГ ГўГ­ГЁГІГј Г±ГўГ®Вё Г’Г‘ ГІГ ГЄГ¦ГҐ Г±Г®ГµГ°Г Г­ГҐГ­Г , Г¤Г«Гї ГЅГІГ®ГЈГ® 
+    Gui, Answers: Add, Text, x8 y584  h20 +0x200, ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј Г¬ГҐГІГЄГ®Г©. Г’Г ГЄГ¦ГҐ SANG Г±ГІГ Г« Г®ГЎГ«Г Г¤Г ГІГҐГ«ГҐГ¬ ГҐГ№Вё Г®Г¤Г­Г®ГЈГ® Г±ГЄГ«Г Г¤Г  Г­Г  ГЉГ Г©Г®-ГЏГҐГ°ГЁГЄГ®, Г®Г­ Г Г­Г Г«Г®ГЈГЁГ·ГҐГ­ Г‚Г ГёГҐГ¬Гі Г­Г  ГґГ®Г°ГІГҐ. Г…Г±Г«ГЁ Г­Г  ГґГ®Г°ГІГҐ ГЎГіГ¤ГҐГІ Г§Г ГЇГ®Г«Г­ГҐГ­Г® 20.000 ГІГ® ГЁ Г­Г  Г®Г±ГІГ°Г®ГўГҐ ГІГ®Г¦ГҐ.
+	Gui, Answers: Add, Text, x8 y600  h20 +0x200, .Г±ГЁГ°ГҐГ­Г  - Г‚Г»ГёГЄГі Г¬Г®Г¦Г­Г® ГўГ§Г«Г®Г¬Г ГІГј, Г­ГҐ ГЎГіГ¤ГҐГІ Г®ГЎГ­Г®ГўГ«ГїГІГјГ±Гї Г±ГІГ ГІГіГ± ГЄГ®Г­ГІГ°Г®Г«Гї ГІГ®Г·ГҐГЄ(10 Г¬ГЁГ­ГіГІ). Г„Г«Гї ГўГ§Г«Г®Г¬Г  Г­ГіГ¦ГҐГ­ "ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“" ГЁ "ГЉГ ГЎГҐГ«Гј Г°Г Г¤ГЁГ® Г±ГЁГЈГ­Г Г«Г®Гў". ГЉГ ГЎГҐГ«Гј Г¬Г®Г¦Г­Г® ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ 
+    Gui, Answers: Add, Text, x8 y616  h20 +0x200, Г¬Г ГЈГ Г§ГЁГ­Г  24/7, ГўГ»ГЇГ Г¤Г ГҐГІ(ГГ Г­Г± Г°ГҐГ¤ГЄГ®-Г±Г°ГҐГ¤Г­ГҐ), Г®Г­ Г®Г¤Г­Г®Г°Г Г§Г®ГўГ»Г© ГЁ ГЇГ®Г±Г«ГҐ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї Г®Г­ ГЇГ°Г®ГЇГ Г¤Г ГҐГІ. Г‚Г§Г«Г®Г¬ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІ Гў Г¬ГЁГ­ГЁ-ГЁГЈГ°ГҐ. ГЏГ®Г±Г«ГҐ ГіГ¤Г Г·Г­Г®ГЈГ® ГўГ§Г«Г®Г¬Г , Г­Г  Г¬ГЁГ­ГЁ ГЄГ Г°ГІГҐ Г­ГҐ ГЎГіГ¤ГҐГІ Г®ГІГ®ГЎГ°Г Г¦Г ГІГјГ±Гї 
+    Gui, Answers: Add, Text, x8 y632  h20 +0x200, Г±ГІГ ГІГіГ± Г§Г ГµГўГ ГІГ  ГІГ®Г·ГҐГЄ Г¤Г«Гї SANG(10 Г¬ГЁГ­ГіГІ). ГЏГ®Г±Г«ГҐ Г­ГҐГіГ¤Г Г·Г­Г®ГЈГ® ГўГ§Г«Г®Г¬Г , Г±Г°Г Г§Гі Г±Г°Г ГЎГ ГІГ»ГўГ ГҐГІ Г±ГЁГ°ГҐГ­Г . SANG Г¬Г®ГЈГіГІ ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј Г°Г ГЎГ®ГІГі ГўГ»ГёГЄГЁ Г­Г Г¦Г Гў "Г…" Г­Г  Г¬ГҐГІГЄГҐ ГўГ»ГёГЄГЁ.
+    Gui, Answers: Add, Text, x8 y648  h20 +0x200, .Г«Г®ГЎГЎГЁ - ГќГІГ® Г‚Г ГёГ  ГЁГЈГ°Г  Г±Г®Г§Г¤Г Г­Г­Г Гї Г‚Г Г¬ГЁ Г¤Г«Гї Г¤Г°ГіГ§ГҐГ© ГЁГ«ГЁ Г¦ГҐ Г®ГЎГ»Г·Г­Г»Гµ ГЁГЈГ°Г®ГЄГ®Гў, ГўГ±ГҐ ГЇГ°Г ГўГЁГ«Г  Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІГҐ ГЁГ¬ГҐГ­Г­Г® Г‚Г». Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ® ГЎГ» Г­Г Г·Г ГІГј Г­ГіГ¦Г­Г®: Г„Г ГІГј Г­Г Г§ГўГ Г­ГЁГҐ Г±ГўГ®ГҐГ¬Гі Г«Г®ГЎГЎГЁ, ГўГ»ГЎГ°Г ГІГј Г®Г¤ГЁГ­ ГЁГ§ 
+    Gui, Answers: Add, Text, x8 y664  h20 +0x200, Г¤Г®Г±ГІГіГЇГ­Г»Гµ Г°ГҐГ¦ГЁГ¬Г®Гў(ГѓГ®Г­ГЄГ  ГўГ®Г®Г°ГіГ¦ГҐГ­ГЁГ©/ГЃГ®Г© Г­Г  Г±Г¬ГҐГ°ГІГј/Г‡Г ГµГўГ ГІ ГґГ«Г ГЈГ ), ГўГ»ГЎГ°Г ГІГј Г®Г¤Г­Гі ГЁГ§ ГЄГ Г°ГІ. Г„Г Г«ГҐГҐ Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ ГіГ±ГІГ Г­Г®ГўГЁГІГј ГЇГ Г°Г®Г«Гј, ГҐГ±Г«ГЁ Г¦ГҐ Г­ГҐ ГµГ®ГІГЁГІГҐ ГўГЁГ¤ГҐГІГј Г«ГЁГёГ­ГЁГµ ГЁГЈГ°Г®ГЄГ®Гў Гў Г±ГўГ®ГҐГ© ГЁГЈГ°ГҐ. ГЏГ®Г±Г«ГҐ ГўГ±ГҐГµ 
+    Gui, Answers: Add, Text, x8 y680  h20 +0x200, ГЇГҐГ°ГўГЁГ·Г­Г»Гµ Г­Г Г±ГІГ°Г®ГҐГЄ Г‚Г Г¬ Г®ГІГЄГ°Г®ГѕГІГ±Гї Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ: Г’Г°ГҐГЎГ®ГўГ Г­ГЁГҐ Г¤Г«Гї ГЇГ®ГЎГҐГ¤Г», Г®Г°ГіГ¦ГЁГҐ, ГўГ°ГҐГ¬Гї Г±ГіГІГ®ГЄ, Г®Г¤ГҐГ¦Г¤Г (Г…Г±Г«ГЁ ГўГ»ГЎГ°Г ГІГј "ГЌГҐГІ" ГЁГЈГ°Г®ГЄ ГўГ°ГҐГ¬ГҐГ­Г­Г® Г±Г¬ГҐГ­ГЁГІ Г®Г¤ГҐГ¦Г¤Гі Гў Г¬Г ГІГ·ГҐ), ГЇГ®ГЈГ®Г¤Г­Г»ГҐ ГіГ±Г«Г®ГўГЁГї, Г ГўГІГ®-
+    Gui, Answers: Add, Text, x8 y696  h20 +0x200, ГЎГ Г«Г Г­Г± ГЄГ®Г¬Г Г­Г¤(Г‚ Г±Г«ГіГ·Г ГҐ Г§Г ГµГўГ ГІГ  ГґГ«Г ГЈГ ) ГЁ Г¤Г°. Г’Г®Г«ГјГЄГ® ГЇГ®Г¬Г­ГЁГІГҐ Г§Г  Г±Г®Г§Г¤Г Г­ГЁГҐ Г«Г®ГЎГЎГЁ Г­ГіГ¦Г­Г® ГЎГіГ¤ГҐГІ Г§Г ГЇГ«Г ГІГЁГІГј Г®ГІ 1.250$ Г¤Г® 2.800$.
+    Gui, Answers: Add, Text, x8 y712  h20 +0x200, .ГґГ«Г ГЈ - ГЉГ®Г¬Г Г­Г¤Г­Г»Г© Г°ГҐГ¦ГЁГ¬ ГЎГ®Гї Гў ГЄГ®ГІГ®Г°Г®Г¬ Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ ГЇГ°Г®ГІГЁГўГ®Г±ГІГ®ГїГІГј Г±ГўГ®ГЁГ¬ Г®ГЇГЇГ®Г­ГҐГ­ГІГ Г¬ Гў Г°Г ГўГ­Г»Гµ ГіГ±Г«Г®ГўГЁГїГµ. Г‚ ГЅГІГ®Г¬ Г°ГҐГ¦ГЁГ¬ГҐ Г‚Г» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г¤Г­ГЁГ¬Г ГІГј Г®Г°ГіГ¦ГЁГҐ Г­Г  "F"(ГЏГ® Г¤ГҐГґГ®Г«ГІГі), Г  ГІГ ГЄГ¦ГҐ ГЄГіГЇГЁГІГј Г±ГҐГЎГҐ Г®Г°ГіГ¦ГЁГҐ 
+    Gui, Answers: Add, Text, x8 y728  h20 +0x200, Г­Г  Г§Г Г°Г ГЎГ®ГІГ Г­Г­Г»ГҐ ГўГ® ГўГ°ГҐГ¬Гї Г¬Г ГІГ·Г  Г¤ГҐГ­ГјГЈГЁ, Г¤Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¦Г¬ГЁГІГҐ "B". ГЊГ ГІГ· Г§Г ГЄГ®Г­Г·ГЁГІГјГ±Гї ГЄГ ГЄ ГІГ®Г«ГјГЄГ® Г®Г¤Г­Г  ГЁГ§ ГЄГ®Г¬Г Г­Г¤ ГЇГ®ГІГҐГ°ГїГҐГІ ГўГ±ГҐ Г®Г·ГЄГЁ, Г±ГЄГ®Г°Г®Г±ГІГј ГЁГµ ГЇГ®ГІГҐГ°ГЁ/Г­Г ГЄГ®ГЇГ«ГҐГ­ГЁГї Г§Г ГўГЁГ±ГЁГІ Г®ГІ ГЄГ®Г«-ГўГ  Г§Г ГµГўГ Г·ГҐГ­Г­Г»Гµ, 
+    Gui, Answers: Add, Text, x8 y744  h20 +0x200, Г‚Г ГёГҐГ© ГЄГ®Г¬Г Г­Г¤Г®Г©, ГІГ®Г·ГҐГЄ.
 
 	Gui, Answers: Tab, 5
-    Gui, Answers: Add, Text, x8 y24  h20 0x200, .роз - Добавлена система преследования. Для того чтобы начать преследование нужно выдать розыск -  зайти в Планшет - Фракция - База данных - Начать преследование, на карте появляется метка
-    Gui, Answers: Add, Text, x8 y40  h20 0x200, местоположения игрока, обновляется раз в 30 секунд, если игрок которого преследуют заходит в другой дименшен/интерьер/выйдет из игры - пропадает с радаров. Если гос. игрок приезжает
-    Gui, Answers: Add, Text, x8 y56  h20 0x200, на метку/подходит к игроку - преследование заканчивается.
-    Gui, Answers: Add, Text, x8 y72  h20 0x200, .ар - После окончания срока аренда авто глушится и появляется диалоговое меню, где можно продлить аренду. 
-    Gui, Answers: Add, Text, x8 y88  h20 0x200, .комт - Рабочий транспорт можно спавнить только на специально автосервисе для коммерческого транспорта. 
-    Gui, Answers: Add, Text, x8 y104  h20 0x200, .гр - Лидер группы может давать код, чтобы массово добавить людей в группу, игроки в радиусе 30 метров смогут зайти. Лидер и помощники могут ставить указывающие метки, настраивается в 
-    Gui, Answers: Add, Text, x8 y120  h20 0x200, F2 - Настройки - Бинды. Лидер может передать свой статус другому игроку.
-    Gui, Answers: Add, Text, x8 y136  h20 0x200, .тег - Возможность тегать людей в чате для удобного РП процесса, для использования напишите @Динамик. Если игрока тегнуть у него появится уведомление об этом, тег. только ближ. игроки.
-    Gui, Answers: Add, Text, x8 y152  h20 0x200, .вчат - Система визуализации чата над игроком - над игроком будут дублироваться все сообщения из чата. В настройках - Дополнительно, можно включить.
-    Gui, Answers: Add, Text, x8 y168  h20 0x200, .марк - Маркетплейс используется для размещения различных товаров на продажу, таких как: транспорт, жилая недвижимость, бизнес, банкоматы, билборды. Каждая карточка с объявлением фикс. 
-    Gui, Answers: Add, Text, x8 y184  h20 0x200, количество просмотров карточки и количество лайков (тех кто добавил объявление в избранное). Нажав кнопку «Начать сделку» нам откроется модальное окно, в котором будет дублироваться 
-    Gui, Answers: Add, Text, x8 y200  h20 0x200, еще раз вся необходимая информация, сумма к оплате и кнопка совершить покупку.  График который имеется отображает динамику цен и имеет возможность взаимодействия. После покупки предм. 
-    Gui, Answers: Add, Text, x8 y216  h20 0x200, отправятся в «Склад хранения». За размещение любого объявления взымается плата в 1.000$ за час (от 5к). Возможность покупать лот как за наличку, так и через карту. Администратор может удалить 
-    Gui, Answers: Add, Text, x8 y232  h20 0x200, карточку игрока. Игрок может пожаловаться на объявление, сообщение попадёт в обращение.
-    Gui, Answers: Add, Text, x8 y248  h20 0x200, .схр - Склад хранения это место, в которое попадают предметы, которые были куплены или предметы, которые были занесены сюда игроком, с целью их продажи на маркет плейсе. На склад 
-    Gui, Answers: Add, Text, x8 y264  h20 0x200, можно выгрузить предметы из инвентаря или из багажника. Склад хранения находится сбоку здания аукциона. Склад не ограничен по хранению предметов Предметы могут находится на складе 30 
-    Gui, Answers: Add, Text, x8 y280  h20 0x200, минут, после истечения этого времени они идут на аукцион. Имеется возможность добавить карточку в избранное. После покупки имущество/предметы могут хранится на складе 2 дня. При входе 
-    Gui, Answers: Add, Text, x8 y296  h20 0x200, в зону маркетплейса подсвечивается склад и появляется метка на карте.
-    Gui, Answers: Add, Text, x8 y312  h20 0x200, .пар - Положите парашют в быстрый слот, затем в полете нажмите на 1, 2 или 3 (зависит от слота), после этого ЛКМ, парашют откроется.
-    Gui, Answers: Add, Text, x8 y328  h20 0x200, .дмк - Дефибриллятор МК2 никакого функционала не даёт, он аналогичен обычному дефибриллятору.
-    Gui, Answers: Add, Text, x8 y344  h20 0x200, .адр - Адреналин поднимает игрока в 2 раза быстрее, чем эпинефрин.
-    Gui, Answers: Add, Text, x8 y360  h20 0x200, .нагр - Автомобили из пропуск являются эксклюзивом, их нельзя передавать другим игрокам.
-	Gui, Answers: Add, Text, x8 y376  h20 0x200, .жап - Предмет "Аптечка жёлтая" - восстанавливает 75 хп.
-    Gui, Answers: Add, Text, x8 y392  h20 0x200, .обв - Обвесы имеются в призах. Первая установка бесплатная. Обвесы можно будет снять/поставить отдельно. Обвес закрепляется за машиной. 
-    Gui, Answers: Add, Text, x8 y408  h20 0x200, .куп - Купоны действуют на все авто из Majestic Motors.
-    Gui, Answers: Add, Text, x8 y424  h20 0x200, .случ - В наградах имеются "Случайные наборы". При взятии приза у игрока будет выбор в открытии одной трёх карт с разным содержимым. 
-    Gui, Answers: Add, Text, x8 y440  h20 0x200, .оос - ООС зону вы можете включить на F2-Настройки-Бинд. При нажатии на эту клавишу, если игрок перед вами вышел, у вас будет информация о дате и времени выхода этого игрока из игры.
-    Gui, Answers: Add, Text, x8 y456  h20 0x200, .квр - У бота на работе будет кнопка "Я могу чем-то помочь". Вы на неё жмёте и у вас откроется квест, который выполнить нужно (на Ф6 можно посмотреть). 
-    Gui, Answers: Add, Text, x8 y472  h20 0x200, .вбп - Бронзовый пропуск открывает доступ к премиум наградам до 35 уровня, серебрянный до 75 уровня, золотой до 110 уровня, платиновый до 150 уровня. Опыт дает только королевский старт.
-    Gui, Answers: Add, Text, x8 y488  h20 0x200, .фжб - Не могу рассмотреть из-за нарушений правил подачи. Автору репорт-жалобы необходимо указывать в названии видео: свой static, static нарушителя, время и дату. 
-    Gui, Answers: Add, Text, x8 y504  h20 0x200, .алис - Чтобы выключить GPS ассистента нажмите F2 - Настройки и выключите GPS Ассистент.
-    Gui, Answers: Add, Text, x8 y520  h20 0x200, .закр - Закройте обращение и откройте снова, пожалуйста. 
-	Gui, Answers: Add, Text, x8 y536  h20 0x200, .зп - Чтобы начислялся PayDay Вам нужно иметь свою банковскую карту и быть уволеным со всех работ. Оформить её можно в любом банке.
-    Gui, Answers: Add, Text, x8 y552  h20 0x200, .пар - Положите парашют в быстрый слот, затем в полете нажмите на 1, 2 или 3 (зависит от слота), после этого ЛКМ, парашют откроется.
-    Gui, Answers: Add, Text, x8 y568  h20 0x200, .вод - Администрация не достает автомобили из воды, а лишь удаляет, чтобы вы могли ее заспавнить. Вам необходимо самостоятельно добраться до автосервиса/аренды т.с или до нужного вам места.
-    Gui, Answers: Add, Text, x8 y584  h20 0x200, .бенз - Администрация не заправялет т.с. игроков. Вы можете вызвать такси и добраться до нужного вам места или приобрести канистру, чтобы в дальнейшем доехать до АЗС.
-	Gui, Answers: Add, Text, x8 y600  h20 0x200, .удал - Администрация не удаляет т.с. игроков. Исключение: т.с. утонуло и не исчезло.
-    Gui, Answers: Add, Text, x8 y616  h20 0x200, .стат - В F2 - Персонаж - Статистика.
-    Gui, Answers: Add, Text, x8 y632  h20 0x200, .пред - /asms Выключите музыку, вы в зеленой зоне.
-    Gui, Answers: Add, Text, x8 y648  h20 0x200, .кв - Текущий квест отображается над таймеров Majestic Coins, если его нет - нажмите F6.
-    Gui, Answers: Add, Text, x8 y664  h20 0x200, .кмб - Чтобы устроиться в силовую гос. структуру необходимо получить военный билет. Для этого надо устроиться в SANG и пройти КМБ. Иконка зеленого самолета на карте.
-    Gui, Answers: Add, Text, x8 y680  h20 0x200, .нарк - Пакетики Blue и White никак не получить, функционал как у Green, только разные эффекты.
-    Gui, Answers: Add, Text, x8 y696  h20 0x200, .верт - Веротолеты продаются в салоне недалеко от аэропорта.
-    Gui, Answers: Add, Text, x8 y712  h20 0x200, .поход - Изменить походу и эмоции лица можно в  F2 - Настройки - Главное.
-    Gui, Answers: Add, Text, x8 y728  h20 0x200, .багаж - Чтобы вылезти из багажника нажмите на "E".
-    Gui, Answers: Add, Text, x8 y744  h20 0x200, .нал - Чтобы оплатить налоги на дом необходимо открыть приложение "Мой дом" в планшете.
-	Gui, Answers: Show, h766 w1100, Ответы
+    Gui, Answers: Add, Text, x8 y24  h20 0x200, .Г°Г®Г§ - Г„Г®ГЎГ ГўГ«ГҐГ­Г  Г±ГЁГ±ГІГҐГ¬Г  ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГї. Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ®ГЎГ» Г­Г Г·Г ГІГј ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ Г­ГіГ¦Г­Г® ГўГ»Г¤Г ГІГј Г°Г®Г§Г»Г±ГЄ -  Г§Г Г©ГІГЁ Гў ГЏГ«Г Г­ГёГҐГІ - Г”Г°Г ГЄГ¶ГЁГї - ГЃГ Г§Г  Г¤Г Г­Г­Г»Гµ - ГЌГ Г·Г ГІГј ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ, Г­Г  ГЄГ Г°ГІГҐ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¬ГҐГІГЄГ 
+    Gui, Answers: Add, Text, x8 y40  h20 0x200, Г¬ГҐГ±ГІГ®ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї ГЁГЈГ°Г®ГЄГ , Г®ГЎГ­Г®ГўГ«ГїГҐГІГ±Гї Г°Г Г§ Гў 30 Г±ГҐГЄГіГ­Г¤, ГҐГ±Г«ГЁ ГЁГЈГ°Г®ГЄ ГЄГ®ГІГ®Г°Г®ГЈГ® ГЇГ°ГҐГ±Г«ГҐГ¤ГіГѕГІ Г§Г ГµГ®Г¤ГЁГІ Гў Г¤Г°ГіГЈГ®Г© Г¤ГЁГ¬ГҐГ­ГёГҐГ­/ГЁГ­ГІГҐГ°ГјГҐГ°/ГўГ»Г©Г¤ГҐГІ ГЁГ§ ГЁГЈГ°Г» - ГЇГ°Г®ГЇГ Г¤Г ГҐГІ Г± Г°Г Г¤Г Г°Г®Гў. Г…Г±Г«ГЁ ГЈГ®Г±. ГЁГЈГ°Г®ГЄ ГЇГ°ГЁГҐГ§Г¦Г ГҐГІ
+    Gui, Answers: Add, Text, x8 y56  h20 0x200, Г­Г  Г¬ГҐГІГЄГі/ГЇГ®Г¤ГµГ®Г¤ГЁГІ ГЄ ГЁГЈГ°Г®ГЄГі - ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ Г§Г ГЄГ Г­Г·ГЁГўГ ГҐГІГ±Гї.
+    Gui, Answers: Add, Text, x8 y72  h20 0x200, .Г Г° - ГЏГ®Г±Г«ГҐ Г®ГЄГ®Г­Г·Г Г­ГЁГї Г±Г°Г®ГЄГ  Г Г°ГҐГ­Г¤Г  Г ГўГІГ® ГЈГ«ГіГёГЁГІГ±Гї ГЁ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¤ГЁГ Г«Г®ГЈГ®ГўГ®ГҐ Г¬ГҐГ­Гѕ, ГЈГ¤ГҐ Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г«ГЁГІГј Г Г°ГҐГ­Г¤Гі. 
+    Gui, Answers: Add, Text, x8 y88  h20 0x200, .ГЄГ®Г¬ГІ - ГђГ ГЎГ®Г·ГЁГ© ГІГ°Г Г­Г±ГЇГ®Г°ГІ Г¬Г®Г¦Г­Г® Г±ГЇГ ГўГ­ГЁГІГј ГІГ®Г«ГјГЄГ® Г­Г  Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г ГўГІГ®Г±ГҐГ°ГўГЁГ±ГҐ Г¤Г«Гї ГЄГ®Г¬Г¬ГҐГ°Г·ГҐГ±ГЄГ®ГЈГ® ГІГ°Г Г­Г±ГЇГ®Г°ГІГ . 
+    Gui, Answers: Add, Text, x8 y104  h20 0x200, .ГЈГ° - Г‹ГЁГ¤ГҐГ° ГЈГ°ГіГЇГЇГ» Г¬Г®Г¦ГҐГІ Г¤Г ГўГ ГІГј ГЄГ®Г¤, Г·ГІГ®ГЎГ» Г¬Г Г±Г±Г®ГўГ® Г¤Г®ГЎГ ГўГЁГІГј Г«ГѕГ¤ГҐГ© Гў ГЈГ°ГіГЇГЇГі, ГЁГЈГ°Г®ГЄГЁ Гў Г°Г Г¤ГЁГіГ±ГҐ 30 Г¬ГҐГІГ°Г®Гў Г±Г¬Г®ГЈГіГІ Г§Г Г©ГІГЁ. Г‹ГЁГ¤ГҐГ° ГЁ ГЇГ®Г¬Г®Г№Г­ГЁГЄГЁ Г¬Г®ГЈГіГІ Г±ГІГ ГўГЁГІГј ГіГЄГ Г§Г»ГўГ ГѕГ№ГЁГҐ Г¬ГҐГІГЄГЁ, Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІГ±Гї Гў 
+    Gui, Answers: Add, Text, x8 y120  h20 0x200, F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЃГЁГ­Г¤Г». Г‹ГЁГ¤ГҐГ° Г¬Г®Г¦ГҐГІ ГЇГҐГ°ГҐГ¤Г ГІГј Г±ГўГ®Г© Г±ГІГ ГІГіГ± Г¤Г°ГіГЈГ®Г¬Гі ГЁГЈГ°Г®ГЄГі.
+    Gui, Answers: Add, Text, x8 y136  h20 0x200, .ГІГҐГЈ - Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГІГҐГЈГ ГІГј Г«ГѕГ¤ГҐГ© Гў Г·Г ГІГҐ Г¤Г«Гї ГіГ¤Г®ГЎГ­Г®ГЈГ® ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Г , Г¤Г«Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї Г­Г ГЇГЁГёГЁГІГҐ @Г„ГЁГ­Г Г¬ГЁГЄ. Г…Г±Г«ГЁ ГЁГЈГ°Г®ГЄГ  ГІГҐГЈГ­ГіГІГј Гі Г­ГҐГЈГ® ГЇГ®ГїГўГЁГІГ±Гї ГіГўГҐГ¤Г®Г¬Г«ГҐГ­ГЁГҐ Г®ГЎ ГЅГІГ®Г¬, ГІГҐГЈ. ГІГ®Г«ГјГЄГ® ГЎГ«ГЁГ¦. ГЁГЈГ°Г®ГЄГЁ.
+    Gui, Answers: Add, Text, x8 y152  h20 0x200, .ГўГ·Г ГІ - Г‘ГЁГ±ГІГҐГ¬Г  ГўГЁГ§ГіГ Г«ГЁГ§Г Г¶ГЁГЁ Г·Г ГІГ  Г­Г Г¤ ГЁГЈГ°Г®ГЄГ®Г¬ - Г­Г Г¤ ГЁГЈГ°Г®ГЄГ®Г¬ ГЎГіГ¤ГіГІ Г¤ГіГЎГ«ГЁГ°Г®ГўГ ГІГјГ±Гї ГўГ±ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї ГЁГ§ Г·Г ГІГ . Г‚ Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ - Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г®, Г¬Г®Г¦Г­Г® ГўГЄГ«ГѕГ·ГЁГІГј.
+    Gui, Answers: Add, Text, x8 y168  h20 0x200, .Г¬Г Г°ГЄ - ГЊГ Г°ГЄГҐГІГЇГ«ГҐГ©Г± ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї Г¤Г«Гї Г°Г Г§Г¬ГҐГ№ГҐГ­ГЁГї Г°Г Г§Г«ГЁГ·Г­Г»Гµ ГІГ®ГўГ Г°Г®Гў Г­Г  ГЇГ°Г®Г¤Г Г¦Гі, ГІГ ГЄГЁГµ ГЄГ ГЄ: ГІГ°Г Г­Г±ГЇГ®Г°ГІ, Г¦ГЁГ«Г Гї Г­ГҐГ¤ГўГЁГ¦ГЁГ¬Г®Г±ГІГј, ГЎГЁГ§Г­ГҐГ±, ГЎГ Г­ГЄГ®Г¬Г ГІГ», ГЎГЁГ«ГЎГ®Г°Г¤Г». ГЉГ Г¦Г¤Г Гї ГЄГ Г°ГІГ®Г·ГЄГ  Г± Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐГ¬ ГґГЁГЄГ±. 
+    Gui, Answers: Add, Text, x8 y184  h20 0x200, ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г±Г¬Г®ГІГ°Г®Гў ГЄГ Г°ГІГ®Г·ГЄГЁ ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г«Г Г©ГЄГ®Гў (ГІГҐГµ ГЄГІГ® Г¤Г®ГЎГ ГўГЁГ« Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐ Гў ГЁГ§ГЎГ°Г Г­Г­Г®ГҐ). ГЌГ Г¦Г Гў ГЄГ­Г®ГЇГЄГі В«ГЌГ Г·Г ГІГј Г±Г¤ГҐГ«ГЄГіВ» Г­Г Г¬ Г®ГІГЄГ°Г®ГҐГІГ±Гї Г¬Г®Г¤Г Г«ГјГ­Г®ГҐ Г®ГЄГ­Г®, Гў ГЄГ®ГІГ®Г°Г®Г¬ ГЎГіГ¤ГҐГІ Г¤ГіГЎГ«ГЁГ°Г®ГўГ ГІГјГ±Гї 
+    Gui, Answers: Add, Text, x8 y200  h20 0x200, ГҐГ№ГҐ Г°Г Г§ ГўГ±Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї, Г±ГіГ¬Г¬Г  ГЄ Г®ГЇГ«Г ГІГҐ ГЁ ГЄГ­Г®ГЇГЄГ  Г±Г®ГўГҐГ°ГёГЁГІГј ГЇГ®ГЄГіГЇГЄГі.  ГѓГ°Г ГґГЁГЄ ГЄГ®ГІГ®Г°Г»Г© ГЁГ¬ГҐГҐГІГ±Гї Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІ Г¤ГЁГ­Г Г¬ГЁГЄГі Г¶ГҐГ­ ГЁ ГЁГ¬ГҐГҐГІ ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГЁГї. ГЏГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ ГЇГ°ГҐГ¤Г¬. 
+    Gui, Answers: Add, Text, x8 y216  h20 0x200, Г®ГІГЇГ°Г ГўГїГІГ±Гї Гў В«Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГїВ». Г‡Г  Г°Г Г§Г¬ГҐГ№ГҐГ­ГЁГҐ Г«ГѕГЎГ®ГЈГ® Г®ГЎГєГїГўГ«ГҐГ­ГЁГї ГўГ§Г»Г¬Г ГҐГІГ±Гї ГЇГ«Г ГІГ  Гў 1.000$ Г§Г  Г·Г Г± (Г®ГІ 5ГЄ). Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ®ГЄГіГЇГ ГІГј Г«Г®ГІ ГЄГ ГЄ Г§Г  Г­Г Г«ГЁГ·ГЄГі, ГІГ ГЄ ГЁ Г·ГҐГ°ГҐГ§ ГЄГ Г°ГІГі. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г¬Г®Г¦ГҐГІ ГіГ¤Г Г«ГЁГІГј 
+    Gui, Answers: Add, Text, x8 y232  h20 0x200, ГЄГ Г°ГІГ®Г·ГЄГі ГЁГЈГ°Г®ГЄГ . Г€ГЈГ°Г®ГЄ Г¬Г®Г¦ГҐГІ ГЇГ®Г¦Г Г«Г®ГўГ ГІГјГ±Гї Г­Г  Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐ, Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЇГ®ГЇГ Г¤ВёГІ Гў Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ.
+    Gui, Answers: Add, Text, x8 y248  h20 0x200, .Г±ГµГ° - Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГї ГЅГІГ® Г¬ГҐГ±ГІГ®, Гў ГЄГ®ГІГ®Г°Г®ГҐ ГЇГ®ГЇГ Г¤Г ГѕГІ ГЇГ°ГҐГ¤Г¬ГҐГІГ», ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ ГЄГіГЇГ«ГҐГ­Г» ГЁГ«ГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ», ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ Г§Г Г­ГҐГ±ГҐГ­Г» Г±ГѕГ¤Г  ГЁГЈГ°Г®ГЄГ®Г¬, Г± Г¶ГҐГ«ГјГѕ ГЁГµ ГЇГ°Г®Г¤Г Г¦ГЁ Г­Г  Г¬Г Г°ГЄГҐГІ ГЇГ«ГҐГ©Г±ГҐ. ГЌГ  Г±ГЄГ«Г Г¤ 
+    Gui, Answers: Add, Text, x8 y264  h20 0x200, Г¬Г®Г¦Г­Г® ГўГ»ГЈГ°ГіГ§ГЁГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГЁГ§ ГЁГ­ГўГҐГ­ГІГ Г°Гї ГЁГ«ГЁ ГЁГ§ ГЎГ ГЈГ Г¦Г­ГЁГЄГ . Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГї Г­Г ГµГ®Г¤ГЁГІГ±Гї Г±ГЎГ®ГЄГі Г§Г¤Г Г­ГЁГї Г ГіГЄГ¶ГЁГ®Г­Г . Г‘ГЄГ«Г Г¤ Г­ГҐ Г®ГЈГ°Г Г­ГЁГ·ГҐГ­ ГЇГ® ГµГ°Г Г­ГҐГ­ГЁГѕ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў ГЏГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®ГЈГіГІ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г­Г  Г±ГЄГ«Г Г¤ГҐ 30 
+    Gui, Answers: Add, Text, x8 y280  h20 0x200, Г¬ГЁГ­ГіГІ, ГЇГ®Г±Г«ГҐ ГЁГ±ГІГҐГ·ГҐГ­ГЁГї ГЅГІГ®ГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Г®Г­ГЁ ГЁГ¤ГіГІ Г­Г  Г ГіГЄГ¶ГЁГ®Г­. Г€Г¬ГҐГҐГІГ±Гї ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г¤Г®ГЎГ ГўГЁГІГј ГЄГ Г°ГІГ®Г·ГЄГі Гў ГЁГ§ГЎГ°Г Г­Г­Г®ГҐ. ГЏГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ ГЁГ¬ГіГ№ГҐГ±ГІГўГ®/ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®ГЈГіГІ ГµГ°Г Г­ГЁГІГ±Гї Г­Г  Г±ГЄГ«Г Г¤ГҐ 2 Г¤Г­Гї. ГЏГ°ГЁ ГўГµГ®Г¤ГҐ 
+    Gui, Answers: Add, Text, x8 y296  h20 0x200, Гў Г§Г®Г­Гі Г¬Г Г°ГЄГҐГІГЇГ«ГҐГ©Г±Г  ГЇГ®Г¤Г±ГўГҐГ·ГЁГўГ ГҐГІГ±Гї Г±ГЄГ«Г Г¤ ГЁ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¬ГҐГІГЄГ  Г­Г  ГЄГ Г°ГІГҐ.
+    Gui, Answers: Add, Text, x8 y312  h20 0x200, .ГЇГ Г° - ГЏГ®Г«Г®Г¦ГЁГІГҐ ГЇГ Г°Г ГёГѕГІ Гў ГЎГ»Г±ГІГ°Г»Г© Г±Г«Г®ГІ, Г§Г ГІГҐГ¬ Гў ГЇГ®Г«ГҐГІГҐ Г­Г Г¦Г¬ГЁГІГҐ Г­Г  1, 2 ГЁГ«ГЁ 3 (Г§Г ГўГЁГ±ГЁГІ Г®ГІ Г±Г«Г®ГІГ ), ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® Г‹ГЉГЊ, ГЇГ Г°Г ГёГѕГІ Г®ГІГЄГ°Г®ГҐГІГ±Гї.
+    Gui, Answers: Add, Text, x8 y328  h20 0x200, .Г¤Г¬ГЄ - Г„ГҐГґГЁГЎГ°ГЁГ«Г«ГїГІГ®Г° ГЊГЉ2 Г­ГЁГЄГ ГЄГ®ГЈГ® ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г  Г­ГҐ Г¤Г ВёГІ, Г®Г­ Г Г­Г Г«Г®ГЈГЁГ·ГҐГ­ Г®ГЎГ»Г·Г­Г®Г¬Гі Г¤ГҐГґГЁГЎГ°ГЁГ«Г«ГїГІГ®Г°Гі.
+    Gui, Answers: Add, Text, x8 y344  h20 0x200, .Г Г¤Г° - ГЂГ¤Г°ГҐГ­Г Г«ГЁГ­ ГЇГ®Г¤Г­ГЁГ¬Г ГҐГІ ГЁГЈГ°Г®ГЄГ  Гў 2 Г°Г Г§Г  ГЎГ»Г±ГІГ°ГҐГҐ, Г·ГҐГ¬ ГЅГЇГЁГ­ГҐГґГ°ГЁГ­.
+    Gui, Answers: Add, Text, x8 y360  h20 0x200, .Г­Г ГЈГ° - ГЂГўГІГ®Г¬Г®ГЎГЁГ«ГЁ ГЁГ§ ГЇГ°Г®ГЇГіГ±ГЄ ГїГўГ«ГїГѕГІГ±Гї ГЅГЄГ±ГЄГ«ГѕГ§ГЁГўГ®Г¬, ГЁГµ Г­ГҐГ«ГјГ§Гї ГЇГҐГ°ГҐГ¤Г ГўГ ГІГј Г¤Г°ГіГЈГЁГ¬ ГЁГЈГ°Г®ГЄГ Г¬.
+	Gui, Answers: Add, Text, x8 y376  h20 0x200, .Г¦Г ГЇ - ГЏГ°ГҐГ¤Г¬ГҐГІ "ГЂГЇГІГҐГ·ГЄГ  Г¦ВёГ«ГІГ Гї" - ГўГ®Г±Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ 75 ГµГЇ.
+    Gui, Answers: Add, Text, x8 y392  h20 0x200, .Г®ГЎГў - ГЋГЎГўГҐГ±Г» ГЁГ¬ГҐГѕГІГ±Гї Гў ГЇГ°ГЁГ§Г Гµ. ГЏГҐГ°ГўГ Гї ГіГ±ГІГ Г­Г®ГўГЄГ  ГЎГҐГ±ГЇГ«Г ГІГ­Г Гї. ГЋГЎГўГҐГ±Г» Г¬Г®Г¦Г­Г® ГЎГіГ¤ГҐГІ Г±Г­ГїГІГј/ГЇГ®Г±ГІГ ГўГЁГІГј Г®ГІГ¤ГҐГ«ГјГ­Г®. ГЋГЎГўГҐГ± Г§Г ГЄГ°ГҐГЇГ«ГїГҐГІГ±Гї Г§Г  Г¬Г ГёГЁГ­Г®Г©. 
+    Gui, Answers: Add, Text, x8 y408  h20 0x200, .ГЄГіГЇ - ГЉГіГЇГ®Г­Г» Г¤ГҐГ©Г±ГІГўГіГѕГІ Г­Г  ГўГ±ГҐ Г ГўГІГ® ГЁГ§ Majestic Motors.
+    Gui, Answers: Add, Text, x8 y424  h20 0x200, .Г±Г«ГіГ· - Г‚ Г­Г ГЈГ°Г Г¤Г Гµ ГЁГ¬ГҐГѕГІГ±Гї "Г‘Г«ГіГ·Г Г©Г­Г»ГҐ Г­Г ГЎГ®Г°Г»". ГЏГ°ГЁ ГўГ§ГїГІГЁГЁ ГЇГ°ГЁГ§Г  Гі ГЁГЈГ°Г®ГЄГ  ГЎГіГ¤ГҐГІ ГўГ»ГЎГ®Г° Гў Г®ГІГЄГ°Г»ГІГЁГЁ Г®Г¤Г­Г®Г© ГІГ°ВёГµ ГЄГ Г°ГІ Г± Г°Г Г§Г­Г»Г¬ Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г»Г¬. 
+    Gui, Answers: Add, Text, x8 y440  h20 0x200, .Г®Г®Г± - ГЋГЋГ‘ Г§Г®Г­Гі ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГЄГ«ГѕГ·ГЁГІГј Г­Г  F2-ГЌГ Г±ГІГ°Г®Г©ГЄГЁ-ГЃГЁГ­Г¤. ГЏГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЅГІГі ГЄГ«Г ГўГЁГёГі, ГҐГ±Г«ГЁ ГЁГЈГ°Г®ГЄ ГЇГҐГ°ГҐГ¤ ГўГ Г¬ГЁ ГўГ»ГёГҐГ«, Гі ГўГ Г± ГЎГіГ¤ГҐГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г¤Г ГІГҐ ГЁ ГўГ°ГҐГ¬ГҐГ­ГЁ ГўГ»ГµГ®Г¤Г  ГЅГІГ®ГЈГ® ГЁГЈГ°Г®ГЄГ  ГЁГ§ ГЁГЈГ°Г».
+    Gui, Answers: Add, Text, x8 y456  h20 0x200, .ГЄГўГ° - Г“ ГЎГ®ГІГ  Г­Г  Г°Г ГЎГ®ГІГҐ ГЎГіГ¤ГҐГІ ГЄГ­Г®ГЇГЄГ  "Гџ Г¬Г®ГЈГі Г·ГҐГ¬-ГІГ® ГЇГ®Г¬Г®Г·Гј". Г‚Г» Г­Г  Г­ГҐВё Г¦Г¬ВёГІГҐ ГЁ Гі ГўГ Г± Г®ГІГЄГ°Г®ГҐГІГ±Гї ГЄГўГҐГ±ГІ, ГЄГ®ГІГ®Г°Г»Г© ГўГ»ГЇГ®Г«Г­ГЁГІГј Г­ГіГ¦Г­Г® (Г­Г  Г”6 Г¬Г®Г¦Г­Г® ГЇГ®Г±Г¬Г®ГІГ°ГҐГІГј). 
+    Gui, Answers: Add, Text, x8 y472  h20 0x200, .ГўГЎГЇ - ГЃГ°Г®Г­Г§Г®ГўГ»Г© ГЇГ°Г®ГЇГіГ±ГЄ Г®ГІГЄГ°Г»ГўГ ГҐГІ Г¤Г®Г±ГІГіГЇ ГЄ ГЇГ°ГҐГ¬ГЁГіГ¬ Г­Г ГЈГ°Г Г¤Г Г¬ Г¤Г® 35 ГіГ°Г®ГўГ­Гї, Г±ГҐГ°ГҐГЎГ°ГїГ­Г­Г»Г© Г¤Г® 75 ГіГ°Г®ГўГ­Гї, Г§Г®Г«Г®ГІГ®Г© Г¤Г® 110 ГіГ°Г®ГўГ­Гї, ГЇГ«Г ГІГЁГ­Г®ГўГ»Г© Г¤Г® 150 ГіГ°Г®ГўГ­Гї. ГЋГЇГ»ГІ Г¤Г ГҐГІ ГІГ®Г«ГјГЄГ® ГЄГ®Г°Г®Г«ГҐГўГ±ГЄГЁГ© Г±ГІГ Г°ГІ.
+    Gui, Answers: Add, Text, x8 y488  h20 0x200, .ГґГ¦ГЎ - ГЌГҐ Г¬Г®ГЈГі Г°Г Г±Г±Г¬Г®ГІГ°ГҐГІГј ГЁГ§-Г§Г  Г­Г Г°ГіГёГҐГ­ГЁГ© ГЇГ°Г ГўГЁГ« ГЇГ®Г¤Г Г·ГЁ. ГЂГўГІГ®Г°Гі Г°ГҐГЇГ®Г°ГІ-Г¦Г Г«Г®ГЎГ» Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГіГЄГ Г§Г»ГўГ ГІГј Гў Г­Г Г§ГўГ Г­ГЁГЁ ГўГЁГ¤ГҐГ®: Г±ГўГ®Г© static, static Г­Г Г°ГіГёГЁГІГҐГ«Гї, ГўГ°ГҐГ¬Гї ГЁ Г¤Г ГІГі. 
+    Gui, Answers: Add, Text, x8 y504  h20 0x200, .Г Г«ГЁГ± - Г—ГІГ®ГЎГ» ГўГ»ГЄГ«ГѕГ·ГЁГІГј GPS Г Г±Г±ГЁГ±ГІГҐГ­ГІГ  Г­Г Г¦Г¬ГЁГІГҐ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГЁ ГўГ»ГЄГ«ГѕГ·ГЁГІГҐ GPS ГЂГ±Г±ГЁГ±ГІГҐГ­ГІ.
+    Gui, Answers: Add, Text, x8 y520  h20 0x200, .Г§Г ГЄГ° - Г‡Г ГЄГ°Г®Г©ГІГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ ГЁ Г®ГІГЄГ°Г®Г©ГІГҐ Г±Г­Г®ГўГ , ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ . 
+	Gui, Answers: Add, Text, x8 y536  h20 0x200, .Г§ГЇ - Г—ГІГ®ГЎГ» Г­Г Г·ГЁГ±Г«ГїГ«Г±Гї PayDay Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЁГ¬ГҐГІГј Г±ГўГ®Гѕ ГЎГ Г­ГЄГ®ГўГ±ГЄГіГѕ ГЄГ Г°ГІГі ГЁ ГЎГ»ГІГј ГіГўГ®Г«ГҐГ­Г»Г¬ Г±Г® ГўГ±ГҐГµ Г°Г ГЎГ®ГІ. ГЋГґГ®Г°Г¬ГЁГІГј ГҐВё Г¬Г®Г¦Г­Г® Гў Г«ГѕГЎГ®Г¬ ГЎГ Г­ГЄГҐ.
+    Gui, Answers: Add, Text, x8 y552  h20 0x200, .ГЇГ Г° - ГЏГ®Г«Г®Г¦ГЁГІГҐ ГЇГ Г°Г ГёГѕГІ Гў ГЎГ»Г±ГІГ°Г»Г© Г±Г«Г®ГІ, Г§Г ГІГҐГ¬ Гў ГЇГ®Г«ГҐГІГҐ Г­Г Г¦Г¬ГЁГІГҐ Г­Г  1, 2 ГЁГ«ГЁ 3 (Г§Г ГўГЁГ±ГЁГІ Г®ГІ Г±Г«Г®ГІГ ), ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® Г‹ГЉГЊ, ГЇГ Г°Г ГёГѕГІ Г®ГІГЄГ°Г®ГҐГІГ±Гї.
+    Gui, Answers: Add, Text, x8 y568  h20 0x200, .ГўГ®Г¤ - ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¤Г®Г±ГІГ ГҐГІ Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ ГЁГ§ ГўГ®Г¤Г», Г  Г«ГЁГёГј ГіГ¤Г Г«ГїГҐГІ, Г·ГІГ®ГЎГ» ГўГ» Г¬Г®ГЈГ«ГЁ ГҐГҐ Г§Г Г±ГЇГ ГўГ­ГЁГІГј. Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г ГўГІГ®Г±ГҐГ°ГўГЁГ±Г /Г Г°ГҐГ­Г¤Г» ГІ.Г± ГЁГ«ГЁ Г¤Г® Г­ГіГ¦Г­Г®ГЈГ® ГўГ Г¬ Г¬ГҐГ±ГІГ .
+    Gui, Answers: Add, Text, x8 y584  h20 0x200, .ГЎГҐГ­Г§ - ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г§Г ГЇГ°Г ГўГїГ«ГҐГІ ГІ.Г±. ГЁГЈГ°Г®ГЄГ®Гў. Г‚Г» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г§ГўГ ГІГј ГІГ ГЄГ±ГЁ ГЁ Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г­ГіГ¦Г­Г®ГЈГ® ГўГ Г¬ Г¬ГҐГ±ГІГ  ГЁГ«ГЁ ГЇГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ ГЄГ Г­ГЁГ±ГІГ°Гі, Г·ГІГ®ГЎГ» Гў Г¤Г Г«ГјГ­ГҐГ©ГёГҐГ¬ Г¤Г®ГҐГµГ ГІГј Г¤Г® ГЂГ‡Г‘.
+	Gui, Answers: Add, Text, x8 y600  h20 0x200, .ГіГ¤Г Г« - ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГіГ¤Г Г«ГїГҐГІ ГІ.Г±. ГЁГЈГ°Г®ГЄГ®Гў. Г€Г±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ: ГІ.Г±. ГіГІГ®Г­ГіГ«Г® ГЁ Г­ГҐ ГЁГ±Г·ГҐГ§Г«Г®.
+    Gui, Answers: Add, Text, x8 y616  h20 0x200, .Г±ГІГ ГІ - Г‚ F2 - ГЏГҐГ°Г±Г®Г­Г Г¦ - Г‘ГІГ ГІГЁГ±ГІГЁГЄГ .
+    Gui, Answers: Add, Text, x8 y632  h20 0x200, .ГЇГ°ГҐГ¤ - /asms Г‚Г»ГЄГ«ГѕГ·ГЁГІГҐ Г¬ГіГ§Г»ГЄГі, ГўГ» Гў Г§ГҐГ«ГҐГ­Г®Г© Г§Г®Г­ГҐ.
+    Gui, Answers: Add, Text, x8 y648  h20 0x200, .ГЄГў - Г’ГҐГЄГіГ№ГЁГ© ГЄГўГҐГ±ГІ Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІГ±Гї Г­Г Г¤ ГІГ Г©Г¬ГҐГ°Г®Гў Majestic Coins, ГҐГ±Г«ГЁ ГҐГЈГ® Г­ГҐГІ - Г­Г Г¦Г¬ГЁГІГҐ F6.
+    Gui, Answers: Add, Text, x8 y664  h20 0x200, .ГЄГ¬ГЎ - Г—ГІГ®ГЎГ» ГіГ±ГІГ°Г®ГЁГІГјГ±Гї Гў Г±ГЁГ«Г®ГўГіГѕ ГЈГ®Г±. Г±ГІГ°ГіГЄГІГіГ°Гі Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ®Г«ГіГ·ГЁГІГј ГўГ®ГҐГ­Г­Г»Г© ГЎГЁГ«ГҐГІ. Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГіГ±ГІГ°Г®ГЁГІГјГ±Гї Гў SANG ГЁ ГЇГ°Г®Г©ГІГЁ ГЉГЊГЃ. Г€ГЄГ®Г­ГЄГ  Г§ГҐГ«ГҐГ­Г®ГЈГ® Г±Г Г¬Г®Г«ГҐГІГ  Г­Г  ГЄГ Г°ГІГҐ.
+    Gui, Answers: Add, Text, x8 y680  h20 0x200, .Г­Г Г°ГЄ - ГЏГ ГЄГҐГІГЁГЄГЁ Blue ГЁ White Г­ГЁГЄГ ГЄ Г­ГҐ ГЇГ®Г«ГіГ·ГЁГІГј, ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГЄГ ГЄ Гі Green, ГІГ®Г«ГјГЄГ® Г°Г Г§Г­Г»ГҐ ГЅГґГґГҐГЄГІГ».
+    Gui, Answers: Add, Text, x8 y696  h20 0x200, .ГўГҐГ°ГІ - Г‚ГҐГ°Г®ГІГ®Г«ГҐГІГ» ГЇГ°Г®Г¤Г ГѕГІГ±Гї Гў Г±Г Г«Г®Г­ГҐ Г­ГҐГ¤Г Г«ГҐГЄГ® Г®ГІ Г ГЅГ°Г®ГЇГ®Г°ГІГ .
+    Gui, Answers: Add, Text, x8 y712  h20 0x200, .ГЇГ®ГµГ®Г¤ - Г€Г§Г¬ГҐГ­ГЁГІГј ГЇГ®ГµГ®Г¤Гі ГЁ ГЅГ¬Г®Г¶ГЁГЁ Г«ГЁГ¶Г  Г¬Г®Г¦Г­Г® Гў  F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГѓГ«Г ГўГ­Г®ГҐ.
+    Gui, Answers: Add, Text, x8 y728  h20 0x200, .ГЎГ ГЈГ Г¦ - Г—ГІГ®ГЎГ» ГўГ»Г«ГҐГ§ГІГЁ ГЁГ§ ГЎГ ГЈГ Г¦Г­ГЁГЄГ  Г­Г Г¦Г¬ГЁГІГҐ Г­Г  "E".
+    Gui, Answers: Add, Text, x8 y744  h20 0x200, .Г­Г Г« - Г—ГІГ®ГЎГ» Г®ГЇГ«Г ГІГЁГІГј Г­Г Г«Г®ГЈГЁ Г­Г  Г¤Г®Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г®ГІГЄГ°Г»ГІГј ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ "ГЊГ®Г© Г¤Г®Г¬" Гў ГЇГ«Г Г­ГёГҐГІГҐ.
+	Gui, Answers: Show, h766 w1100, ГЋГІГўГҐГІГ»
 	Return
 
 F5:
 SendInput, {F5}
 return
 
-;Памятка
+;ГЏГ Г¬ГїГІГЄГ 
 	Cheatsheet:
     Cheatsheet1:=!Cheatsheet1
     If Cheatsheet1
@@ -1123,37 +1123,37 @@ return
     Gui Cheatsheet: Font, s7
     Gui Cheatsheet: Font, w3000
     Gui Cheatsheet: Font, cFFFFFF
-    Gui Cheatsheet: Add, Text,,  Фракции: 1 - LSPD   2 - EMS   3 - SD   4 - SANG   5 - GOV   6 - WN   7 - FIB   8 - Ballas   9 - Vagos   10 - Fam   11 - Bloods   12 - Mara   13 - LCN   14 - RM   15 - YAK   16 - MEX   17 -  LOST   18 - AOD   19 - IM		
-    Gui Cheatsheet: Add, Text, x15 y35 cYellow,  DM - Demorgan 100 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Обман в /do - Demorgan 35 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  DB - Demorgan 30 - 90 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Помеха работе администрации - Kick / Mute 10 - 60 минут / Demorgan 10 - 100 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  nonRP поведение - Demorgan 15 - 90 минут / WARN / Ban 3 - 15 дней
-    Gui Cheatsheet: Add, Text, cYellow,  SK - Ban 2-5 дней / Hardban 2 - 7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  nonRP Drive - Demorgan 15 - 90 минут / Ban 3-7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  TK -  Demorgan 90 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  nonRP Fly - Demorgan 10 - 35 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Крайм без маски - Demorgan 15 минут
-    Gui Cheatsheet: Add, Text, cYellow,  PG - Demorgan 35-90 минут / WARN / Ban 2-7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Оогонь с транспортного средства - Ban 3-5 дней / HardBan 7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Криминальные действия по отношению к сотрудникам EMS - Demorgan 90 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  Поднимать предметы во время перестрелки - Demorgan 35 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  Намеренно менять / убирать оружие с целью его сохранения - WARN / Ban 2 дня
-    Gui Cheatsheet: Add, Text, x700 y35 cYellow,  Музыка ЗЗ - Mute 30-60 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Уход от RP - WARN / Ban 4-8 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Перестрелка / стрельба в ЗЗ - Demorgan 35 - 100 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Криминальные действия ЗЗ - Demorgan 10 - 100 минут / WARN / Ban 3 дня
-    Gui Cheatsheet: Add, Text, cYellow,  Брить без причины - Demorgan 60-100 минут / WARN / Ban 2-5 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Не снимать стяжки/мешки - Demorgan 60 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Унизительные действия - WARN всем
-    Gui Cheatsheet: Add, Text, cYellow,  Использование предметов для восстановления здоровья/брони во время перестрелки - Demorgan 35 - 90 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Использование предметов лечения / замены бронежилетов во время езды на транспортном средстве - Demorgan 15 - 35 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Провоцировать игроков на нарушение правил сервера - Demorgan 35 - 90 минут / Ban 3-30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Провоцирующие действия в сторону государственных сотрудников - Ban 2-5 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Завуалированные оскорбление вероисповедания, религии и нации - Ban 15 - 30 дней / Hardban 15-30 дней / Permban
-    Gui Cheatsheet: Add, Text, cYellow,  Прямые оскорбления вероисповедования, религии , нации - HardBan 30 - 60 дней / PermBan
-    Gui Cheatsheet: Add, Text, cYellow,  Помеха РП процессу - Ban 2-5 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Действия, направленные на возбуждение ненависти на почве разногласия о гендерной и т.п - Demorgan 90 минут / Ban 3 - 15 дней / HardBan 3 - 15 дней
+    Gui Cheatsheet: Add, Text,,  Г”Г°Г ГЄГ¶ГЁГЁ: 1 - LSPD   2 - EMS   3 - SD   4 - SANG   5 - GOV   6 - WN   7 - FIB   8 - Ballas   9 - Vagos   10 - Fam   11 - Bloods   12 - Mara   13 - LCN   14 - RM   15 - YAK   16 - MEX   17 -  LOST   18 - AOD   19 - IM		
+    Gui Cheatsheet: Add, Text, x15 y35 cYellow,  DM - Demorgan 100 Г¬ГЁГ­ГіГІ / WARN / Ban 3 - 30 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЋГЎГ¬Г Г­ Гў /do - Demorgan 35 Г¬ГЁГ­ГіГІ / WARN
+    Gui Cheatsheet: Add, Text, cYellow,  DB - Demorgan 30 - 90 Г¬ГЁГ­ГіГІ / WARN / Ban 3 - 30 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГ®Г¬ГҐГµГ  Г°Г ГЎГ®ГІГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ - Kick / Mute 10 - 60 Г¬ГЁГ­ГіГІ / Demorgan 10 - 100 Г¬ГЁГ­ГіГІ / WARN / Ban 3 - 30 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  nonRP ГЇГ®ГўГҐГ¤ГҐГ­ГЁГҐ - Demorgan 15 - 90 Г¬ГЁГ­ГіГІ / WARN / Ban 3 - 15 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  SK - Ban 2-5 Г¤Г­ГҐГ© / Hardban 2 - 7 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  nonRP Drive - Demorgan 15 - 90 Г¬ГЁГ­ГіГІ / Ban 3-7 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  TK -  Demorgan 90 Г¬ГЁГ­ГіГІ / WARN
+    Gui Cheatsheet: Add, Text, cYellow,  nonRP Fly - Demorgan 10 - 35 Г¬ГЁГ­ГіГІ
+    Gui Cheatsheet: Add, Text, cYellow,  ГЉГ°Г Г©Г¬ ГЎГҐГ§ Г¬Г Г±ГЄГЁ - Demorgan 15 Г¬ГЁГ­ГіГІ
+    Gui Cheatsheet: Add, Text, cYellow,  PG - Demorgan 35-90 Г¬ГЁГ­ГіГІ / WARN / Ban 2-7 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЋГ®ГЈГ®Г­Гј Г± ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®ГЈГ® Г±Г°ГҐГ¤Г±ГІГўГ  - Ban 3-5 Г¤Г­ГҐГ© / HardBan 7 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЉГ°ГЁГ¬ГЁГ­Г Г«ГјГ­Г»ГҐ Г¤ГҐГ©Г±ГІГўГЁГї ГЇГ® Г®ГІГ­Г®ГёГҐГ­ГЁГѕ ГЄ Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ Г¬ EMS - Demorgan 90 Г¬ГЁГ­ГіГІ / WARN
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГ®Г¤Г­ГЁГ¬Г ГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГўГ® ГўГ°ГҐГ¬Гї ГЇГҐГ°ГҐГ±ГІГ°ГҐГ«ГЄГЁ - Demorgan 35 Г¬ГЁГ­ГіГІ / WARN
+    Gui Cheatsheet: Add, Text, cYellow,  ГЌГ Г¬ГҐГ°ГҐГ­Г­Г® Г¬ГҐГ­ГїГІГј / ГіГЎГЁГ°Г ГІГј Г®Г°ГіГ¦ГЁГҐ Г± Г¶ГҐГ«ГјГѕ ГҐГЈГ® Г±Г®ГµГ°Г Г­ГҐГ­ГЁГї - WARN / Ban 2 Г¤Г­Гї
+    Gui Cheatsheet: Add, Text, x700 y35 cYellow,  ГЊГіГ§Г»ГЄГ  Г‡Г‡ - Mute 30-60 Г¬ГЁГ­ГіГІ
+    Gui Cheatsheet: Add, Text, cYellow,  Г“ГµГ®Г¤ Г®ГІ RP - WARN / Ban 4-8 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГҐГ°ГҐГ±ГІГ°ГҐГ«ГЄГ  / Г±ГІГ°ГҐГ«ГјГЎГ  Гў Г‡Г‡ - Demorgan 35 - 100 Г¬ГЁГ­ГіГІ / WARN / Ban 3 - 30 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЉГ°ГЁГ¬ГЁГ­Г Г«ГјГ­Г»ГҐ Г¤ГҐГ©Г±ГІГўГЁГї Г‡Г‡ - Demorgan 10 - 100 Г¬ГЁГ­ГіГІ / WARN / Ban 3 Г¤Г­Гї
+    Gui Cheatsheet: Add, Text, cYellow,  ГЃГ°ГЁГІГј ГЎГҐГ§ ГЇГ°ГЁГ·ГЁГ­Г» - Demorgan 60-100 Г¬ГЁГ­ГіГІ / WARN / Ban 2-5 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЌГҐ Г±Г­ГЁГ¬Г ГІГј Г±ГІГїГ¦ГЄГЁ/Г¬ГҐГёГЄГЁ - Demorgan 60 Г¬ГЁГ­ГіГІ
+    Gui Cheatsheet: Add, Text, cYellow,  Г“Г­ГЁГ§ГЁГІГҐГ«ГјГ­Г»ГҐ Г¤ГҐГ©Г±ГІГўГЁГї - WARN ГўГ±ГҐГ¬
+    Gui Cheatsheet: Add, Text, cYellow,  Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГҐ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў Г¤Г«Гї ГўГ®Г±Г±ГІГ Г­Г®ГўГ«ГҐГ­ГЁГї Г§Г¤Г®Г°Г®ГўГјГї/ГЎГ°Г®Г­ГЁ ГўГ® ГўГ°ГҐГ¬Гї ГЇГҐГ°ГҐГ±ГІГ°ГҐГ«ГЄГЁ - Demorgan 35 - 90 Г¬ГЁГ­ГіГІ
+    Gui Cheatsheet: Add, Text, cYellow,  Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГҐ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў Г«ГҐГ·ГҐГ­ГЁГї / Г§Г Г¬ГҐГ­Г» ГЎГ°Г®Г­ГҐГ¦ГЁГ«ГҐГІГ®Гў ГўГ® ГўГ°ГҐГ¬Гї ГҐГ§Г¤Г» Г­Г  ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®Г¬ Г±Г°ГҐГ¤Г±ГІГўГҐ - Demorgan 15 - 35 Г¬ГЁГ­ГіГІ
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГ°Г®ГўГ®Г¶ГЁГ°Г®ГўГ ГІГј ГЁГЈГ°Г®ГЄГ®Гў Г­Г  Г­Г Г°ГіГёГҐГ­ГЁГҐ ГЇГ°Г ГўГЁГ« Г±ГҐГ°ГўГҐГ°Г  - Demorgan 35 - 90 Г¬ГЁГ­ГіГІ / Ban 3-30 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГ°Г®ГўГ®Г¶ГЁГ°ГіГѕГ№ГЁГҐ Г¤ГҐГ©Г±ГІГўГЁГї Гў Г±ГІГ®Г°Г®Г­Гі ГЈГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»Гµ Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў - Ban 2-5 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  Г‡Г ГўГіГ Г«ГЁГ°Г®ГўГ Г­Г­Г»ГҐ Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ ГўГҐГ°Г®ГЁГ±ГЇГ®ГўГҐГ¤Г Г­ГЁГї, Г°ГҐГ«ГЁГЈГЁГЁ ГЁ Г­Г Г¶ГЁГЁ - Ban 15 - 30 Г¤Г­ГҐГ© / Hardban 15-30 Г¤Г­ГҐГ© / Permban
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГ°ГїГ¬Г»ГҐ Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГї ГўГҐГ°Г®ГЁГ±ГЇГ®ГўГҐГ¤Г®ГўГ Г­ГЁГї, Г°ГҐГ«ГЁГЈГЁГЁ , Г­Г Г¶ГЁГЁ - HardBan 30 - 60 Г¤Г­ГҐГ© / PermBan
+    Gui Cheatsheet: Add, Text, cYellow,  ГЏГ®Г¬ГҐГµГ  ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Гі - Ban 2-5 Г¤Г­ГҐГ©
+    Gui Cheatsheet: Add, Text, cYellow,  Г„ГҐГ©Г±ГІГўГЁГї, Г­Г ГЇГ°Г ГўГ«ГҐГ­Г­Г»ГҐ Г­Г  ГўГ®Г§ГЎГіГ¦Г¤ГҐГ­ГЁГҐ Г­ГҐГ­Г ГўГЁГ±ГІГЁ Г­Г  ГЇГ®Г·ГўГҐ Г°Г Г§Г­Г®ГЈГ«Г Г±ГЁГї Г® ГЈГҐГ­Г¤ГҐГ°Г­Г®Г© ГЁ ГІ.ГЇ - Demorgan 90 Г¬ГЁГ­ГіГІ / Ban 3 - 15 Г¤Г­ГҐГ© / HardBan 3 - 15 Г¤Г­ГҐГ©
     WinSet, TransColor, %CustomColor2% 200
     Gui Cheatsheet: Show, x%X2% y%Y2% NoActivate, window.
     }
@@ -1165,55 +1165,55 @@ return
     Gui, Punish: Color, 1e2124
     Gui, Punish: Font, s8, Segoe UI
     Gui, Punish: Font, cwhite
-	Gui, Punish: Add, Text, x8 y8  h20 +0x200, .хардо - /hardban 9999 Обход блокировки
-    Gui, Punish: Add, Text, x8 y24  h20 +0x200, .хард - /hardban 8888 Cheats
-    Gui, Punish: Add, Text, x8 y40  h20 +0x200, .хард9 - /hardban 9999 Cheats
-    Gui, Punish: Add, Text, x8 y56  h20 +0x200, .секс - /warn Секс. аним. без отыгровок
-    Gui, Punish: Add, Text, x8 y72  h20 +0x200, .нрд - /ajail 15 nonRP Drive
-    Gui, Punish: Add, Text, x8 y88  h20 +0x200, .нрд25 - /ajail 25 nonRP Drive
-    Gui, Punish: Add, Text, x8 y104  h20 +0x200, .нрд45 - /ajail 45 nonRP Drive
-    Gui, Punish: Add, Text, x8 y120  h20 +0x200, .нрд70 - /ajail 70 nonRP Drive
-    Gui, Punish: Add, Text, x8 y136  h20 +0x200, .нрд90 - /ajail 90 nonRP Drive
-    Gui, Punish: Add, Text, x8 y152  h20 +0x200, .нрп - /ajail 15 nonRP Поведение
-    Gui, Punish: Add, Text, x8 y168  h20 +0x200, .нрп25 - /ajail 25 nonRP Поведение
-    Gui, Punish: Add, Text, x8 y184  h20 +0x200, .нрп45 - /ajail 45 nonRP Поведение
-    Gui, Punish: Add, Text, x8 y200  h20 +0x200, .нрп70 - /ajail 70 nonRP Поведение
-    Gui, Punish: Add, Text, x8 y216  h20 +0x200, .нрп90 - /ajail 90 nonRP Поведение
-    Gui, Punish: Add, Text, x8 y232  h20 +0x200, .дб - /ajail 30 DB
-    Gui, Punish: Add, Text, x8 y248  h20 +0x200, .дб45 - /ajail 45 DB
-    Gui, Punish: Add, Text, x8 y264  h20 +0x200, .дб60 - /ajail 60 DB
-    Gui, Punish: Add, Text, x8 y280  h20 +0x200, .дб75 - /ajail 75 DB
-    Gui, Punish: Add, Text, x8 y296  h20 +0x200, .дб90 - /ajail 90 DB
-    Gui, Punish: Add, Text, x8 y312  h20 +0x200, .дм - /ajail 100 DM
-    Gui, Punish: Add, Text, x8 y328  h20 +0x200, .пг - /ajail 35 PG
-    Gui, Punish: Add, Text, x8 y344  h20 +0x200, .пг55 - /ajail 55 PG
-    Gui, Punish: Add, Text, x8 y360  h20 +0x200, .пг75 - /ajail 75 PG
-	Gui, Punish: Add, Text, x8 y376  h20 +0x200, .пг90 - /ajail 90 PG
-    Gui, Punish: Add, Text, x8 y392  h20 +0x200, .муз - /mute 30 Music in ZZ
-    Gui, Punish: Add, Text, x8 y408  h20 +0x200, .муз60 - /mute 60 Music in ZZ
-    Gui, Punish: Add, Text, x8 y424  h20 +0x200, .смник - /ajail 720 До смены ника
-    Gui, Punish: Add, Text, x8 y440  h20 +0x200, .смвн - /ajail 720 До смены внешности
-    Gui, Punish: Add, Text, x8 y456  h20 +0x200, .оса30 - /hardban 30 Оск. администрации
-    Gui, Punish: Add, Text, x8 y472  h20 +0x200, .оса15 - /hardban 14 Оск. администрации
-    Gui, Punish: Add, Text, x8 y488  h20 +0x200, .оса10 - /hardban 10 Оск. администрации
-    Gui, Punish: Add, Text, x8 y504  h20 +0x200, .оса - /hardban 7 Оск. администрации
-    Gui, Punish: Add, Text, x8 y520  h20 +0x200, .ооск - /ajail 30 OOC оск.
-	Gui, Punish: Add, Text, x8 y536  h20 +0x200, .стр - /ban 3 Стрельба по пешим
+	Gui, Punish: Add, Text, x8 y8  h20 +0x200, .ГµГ Г°Г¤Г® - /hardban 9999 ГЋГЎГµГ®Г¤ ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГЁ
+    Gui, Punish: Add, Text, x8 y24  h20 +0x200, .ГµГ Г°Г¤ - /hardban 8888 Cheats
+    Gui, Punish: Add, Text, x8 y40  h20 +0x200, .ГµГ Г°Г¤9 - /hardban 9999 Cheats
+    Gui, Punish: Add, Text, x8 y56  h20 +0x200, .Г±ГҐГЄГ± - /warn Г‘ГҐГЄГ±. Г Г­ГЁГ¬. ГЎГҐГ§ Г®ГІГ»ГЈГ°Г®ГўГ®ГЄ
+    Gui, Punish: Add, Text, x8 y72  h20 +0x200, .Г­Г°Г¤ - /ajail 15 nonRP Drive
+    Gui, Punish: Add, Text, x8 y88  h20 +0x200, .Г­Г°Г¤25 - /ajail 25 nonRP Drive
+    Gui, Punish: Add, Text, x8 y104  h20 +0x200, .Г­Г°Г¤45 - /ajail 45 nonRP Drive
+    Gui, Punish: Add, Text, x8 y120  h20 +0x200, .Г­Г°Г¤70 - /ajail 70 nonRP Drive
+    Gui, Punish: Add, Text, x8 y136  h20 +0x200, .Г­Г°Г¤90 - /ajail 90 nonRP Drive
+    Gui, Punish: Add, Text, x8 y152  h20 +0x200, .Г­Г°ГЇ - /ajail 15 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x8 y168  h20 +0x200, .Г­Г°ГЇ25 - /ajail 25 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x8 y184  h20 +0x200, .Г­Г°ГЇ45 - /ajail 45 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x8 y200  h20 +0x200, .Г­Г°ГЇ70 - /ajail 70 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x8 y216  h20 +0x200, .Г­Г°ГЇ90 - /ajail 90 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x8 y232  h20 +0x200, .Г¤ГЎ - /ajail 30 DB
+    Gui, Punish: Add, Text, x8 y248  h20 +0x200, .Г¤ГЎ45 - /ajail 45 DB
+    Gui, Punish: Add, Text, x8 y264  h20 +0x200, .Г¤ГЎ60 - /ajail 60 DB
+    Gui, Punish: Add, Text, x8 y280  h20 +0x200, .Г¤ГЎ75 - /ajail 75 DB
+    Gui, Punish: Add, Text, x8 y296  h20 +0x200, .Г¤ГЎ90 - /ajail 90 DB
+    Gui, Punish: Add, Text, x8 y312  h20 +0x200, .Г¤Г¬ - /ajail 100 DM
+    Gui, Punish: Add, Text, x8 y328  h20 +0x200, .ГЇГЈ - /ajail 35 PG
+    Gui, Punish: Add, Text, x8 y344  h20 +0x200, .ГЇГЈ55 - /ajail 55 PG
+    Gui, Punish: Add, Text, x8 y360  h20 +0x200, .ГЇГЈ75 - /ajail 75 PG
+	Gui, Punish: Add, Text, x8 y376  h20 +0x200, .ГЇГЈ90 - /ajail 90 PG
+    Gui, Punish: Add, Text, x8 y392  h20 +0x200, .Г¬ГіГ§ - /mute 30 Music in ZZ
+    Gui, Punish: Add, Text, x8 y408  h20 +0x200, .Г¬ГіГ§60 - /mute 60 Music in ZZ
+    Gui, Punish: Add, Text, x8 y424  h20 +0x200, .Г±Г¬Г­ГЁГЄ - /ajail 720 Г„Г® Г±Г¬ГҐГ­Г» Г­ГЁГЄГ 
+    Gui, Punish: Add, Text, x8 y440  h20 +0x200, .Г±Г¬ГўГ­ - /ajail 720 Г„Г® Г±Г¬ГҐГ­Г» ГўГ­ГҐГёГ­Г®Г±ГІГЁ
+    Gui, Punish: Add, Text, x8 y456  h20 +0x200, .Г®Г±Г 30 - /hardban 30 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x8 y472  h20 +0x200, .Г®Г±Г 15 - /hardban 14 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x8 y488  h20 +0x200, .Г®Г±Г 10 - /hardban 10 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x8 y504  h20 +0x200, .Г®Г±Г  - /hardban 7 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x8 y520  h20 +0x200, .Г®Г®Г±ГЄ - /ajail 30 OOC Г®Г±ГЄ.
+	Gui, Punish: Add, Text, x8 y536  h20 +0x200, .Г±ГІГ° - /ban 3 Г‘ГІГ°ГҐГ«ГјГЎГ  ГЇГ® ГЇГҐГёГЁГ¬
 	
-	Gui, Punish: Add, Text, x240 y8  h20 +0x240, /[fhlj - /hardban 9999 Обход блокировки
+	Gui, Punish: Add, Text, x240 y8  h20 +0x240, /[fhlj - /hardban 9999 ГЋГЎГµГ®Г¤ ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГЁ
     Gui, Punish: Add, Text, x240 y24  h20 +0x240, /[fhl - /hardban 7777 Cheats
     Gui, Punish: Add, Text, x240 y40  h20 +0x240, /[fhl9 - /hardban 9999 Cheats
-    Gui, Punish: Add, Text, x240 y56  h20 +0x240, /ctrc - /warn Секс. аним. без отыгровок
+    Gui, Punish: Add, Text, x240 y56  h20 +0x240, /ctrc - /warn Г‘ГҐГЄГ±. Г Г­ГЁГ¬. ГЎГҐГ§ Г®ГІГ»ГЈГ°Г®ГўГ®ГЄ
     Gui, Punish: Add, Text, x240 y72  h20 +0x240, /yhl - /ajail 15 nonRP Drive
     Gui, Punish: Add, Text, x240 y88  h20 +0x240, /yhll25 - /ajail 25 nonRP Drive
     Gui, Punish: Add, Text, x240 y104  h20 +0x240, /yhl45 - /ajail 45 nonRP Drive
     Gui, Punish: Add, Text, x240 y120  h20 +0x240, /yhl70 - /ajail 70 nonRP Drive
     Gui, Punish: Add, Text, x240 y136  h20 +0x240, /yhl90 - /ajail 90 nonRP Drive
-    Gui, Punish: Add, Text, x240 y152  h20 +0x240, /yhg - /ajail 15 nonRP Поведение
-    Gui, Punish: Add, Text, x240 y168  h20 +0x240, /yhg25 - /ajail 25 nonRP Поведение
-    Gui, Punish: Add, Text, x240 y184  h20 +0x240, /yhg45 - /ajail 45 nonRP Поведение
-    Gui, Punish: Add, Text, x240 y200  h20 +0x240, /yhg70 - /ajail 70 nonRP Поведение
-    Gui, Punish: Add, Text, x240 y216  h20 +0x240, /yhg90 - /ajail 90 nonRP Поведение
+    Gui, Punish: Add, Text, x240 y152  h20 +0x240, /yhg - /ajail 15 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x240 y168  h20 +0x240, /yhg25 - /ajail 25 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x240 y184  h20 +0x240, /yhg45 - /ajail 45 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x240 y200  h20 +0x240, /yhg70 - /ajail 70 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
+    Gui, Punish: Add, Text, x240 y216  h20 +0x240, /yhg90 - /ajail 90 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ
     Gui, Punish: Add, Text, x240 y232  h20 +0x240, /l, - /ajail 30 DB
     Gui, Punish: Add, Text, x240 y248  h20 +0x240, /l,45 - /ajail 45 DB
     Gui, Punish: Add, Text, x240 y264  h20 +0x240, /l,60 - /ajail 60 DB
@@ -1226,47 +1226,47 @@ return
 	Gui, Punish: Add, Text, x240 y376  h20 +0x240, /gu90 - /ajail 90 PG
     Gui, Punish: Add, Text, x240 y392  h20 +0x240, /vep - /mute 30 Music in ZZ
     Gui, Punish: Add, Text, x240 y408  h20 +0x240, /vep60 - /mute 60 Music in ZZ
-    Gui, Punish: Add, Text, x240 y424  h20 +0x240, /cvybr - /ajail 720 Смените смены ника
-    Gui, Punish: Add, Text, x240 y440  h20 +0x240, /cvdy - /ajail 720 До смены внешности
-    Gui, Punish: Add, Text, x240 y456  h20 +0x240, /jcf30 - /hardban 30 Оск. администрации
-    Gui, Punish: Add, Text, x240 y472  h20 +0x240, /jcf15 - /hardban 14 Оск. администрации
-    Gui, Punish: Add, Text, x240 y488  h20 +0x240, /jcf10 - /hardban 10 Оск. администрации
-    Gui, Punish: Add, Text, x240 y504  h20 +0x240, /jcf - /hardban 7 Оск.  администрации
-    Gui, Punish: Add, Text, x240 y520  h20 +0x240, /jjcr - /ajail  30 OOC оск.
-	Gui, Punish: Add, Text, x240 y536  h20 +0x240, /cnh - /ban 3 Стрельба по пешим
-	Gui, Punish: Show, h554 w460, Наказания
+    Gui, Punish: Add, Text, x240 y424  h20 +0x240, /cvybr - /ajail 720 Г‘Г¬ГҐГ­ГЁГІГҐ Г±Г¬ГҐГ­Г» Г­ГЁГЄГ 
+    Gui, Punish: Add, Text, x240 y440  h20 +0x240, /cvdy - /ajail 720 Г„Г® Г±Г¬ГҐГ­Г» ГўГ­ГҐГёГ­Г®Г±ГІГЁ
+    Gui, Punish: Add, Text, x240 y456  h20 +0x240, /jcf30 - /hardban 30 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x240 y472  h20 +0x240, /jcf15 - /hardban 14 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x240 y488  h20 +0x240, /jcf10 - /hardban 10 ГЋГ±ГЄ. Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x240 y504  h20 +0x240, /jcf - /hardban 7 ГЋГ±ГЄ.  Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ
+    Gui, Punish: Add, Text, x240 y520  h20 +0x240, /jjcr - /ajail  30 OOC Г®Г±ГЄ.
+	Gui, Punish: Add, Text, x240 y536  h20 +0x240, /cnh - /ban 3 Г‘ГІГ°ГҐГ«ГјГЎГ  ГЇГ® ГЇГҐГёГЁГ¬
+	Gui, Punish: Show, h554 w460, ГЌГ ГЄГ Г§Г Г­ГЁГї
 	Return
 
 	SkillInfo:
     Gui, SkillInfo: Color, 1e2124
     Gui, SkillInfo: Font, s9, Segoe UI
     Gui, SkillInfo: Font, cwhite
-	Gui, SkillInfo: Add, Text, x8 y8  h20 +0x240, .вынос - Выносливость - навык выносливости повышается от подвижного образа жизни. Чем больше ты 
-    Gui, SkillInfo: Add, Text, x8 y24  h20 +0x240, бегаешь, тем быстрее повышается навык. При низком навыке, персонаж не может прыгнуть 2 раза и падает.
-    Gui, SkillInfo: Add, Text, x8 y40  h20 +0x240, Соответственно повышение навыка влияет на длительность беспрерывного бега и количество прыжков, 
-    Gui, SkillInfo: Add, Text, x8 y56  h20 +0x240, максимум на последнем уровне - 2.
-    Gui, SkillInfo: Add, Text, x8 y72  h20 +0x240, .сила - Сила - навык силы повышается от физических нагрузок. Чем больше ты занимаешься в качалке 
-    Gui, SkillInfo: Add, Text, x8 y88  h20 +0x240, (иконка бегущего человека на карте), тем быстрее повышается навык. От прокачки увеличивается 
-	Gui, SkillInfo: Add, Text, x8 y104  h20 +0x240, сопротивление к урону от падения.
-    Gui, SkillInfo: Add, Text, x8 y120  h20 +0x240, .дых - Дыхание - навык дыхания повышается от длительного нахождения под водой. Чем больше ты 
-    Gui, SkillInfo: Add, Text, x8 y136  h20 +0x240, плаваешь, тем быстрее повышается навык. Соответственно повышение навыка влияет на длительность 
-    Gui, SkillInfo: Add, Text, x8 y152  h20 +0x240, беспрерывного плавания под водой.
-    Gui, SkillInfo: Add, Text, x8 y168  h20 +0x240, .вожден - Вождение - навык вождения повышается от времени, проведенного за рулем автомобиля. Чем 
-    Gui, SkillInfo: Add, Text, x8 y184  h20 +0x240, больше ты водишь транспорт, тем быстрее повышается навык. От прокачки увеличивается управляемость 
-    Gui, SkillInfo: Add, Text, x8 y200  h20 +0x240, транспортным средоством.
-    Gui, SkillInfo: Add, Text, x8 y216  h20 +0x240, .полет - Полет - навык пилотирования повышается от времени, проведенного за воздушным транспортом. 
-    Gui, SkillInfo: Add, Text, x8 y232  h20 +0x240, Чем больше ты летаешь на самолете или вертолете, тем быстрее повышается навык. Также навык можно 
-    Gui, SkillInfo: Add, Text, x8 y248  h20 +0x240, повысить пройдя курсы в летной школе. Пройти их можно 1 раз в 24 часа, увелчение навыка от 1 занятия - 
-    Gui, SkillInfo: Add, Text, x8 y264  h20 +0x240, 10, стоимость одного занятия - 2 000$. От прокачки навыка увеличивается стабильность полета и 
-    Gui, SkillInfo: Add, Text, x8 y280  h20 +0x240, управляемость воздушным транспортом.
-	Gui, SkillInfo: Add, Text, x8 y296  h20 +0x240, .скрытн - Скрытность - навык скрытности повышается от количества успешных уходов от погони 
-    Gui, SkillInfo: Add, Text, x8 y312  h20 +0x240, (понижений уровня розыска). Чем чаще ты скрываешься от полиции, тем быстрее повышается навык. Ни
-    Gui, SkillInfo: Add, Text, x8 y328  h20 +0x240,  на что не влияет.
-    Gui, SkillInfo: Add, Text, x8 y344  h20 +0x240, .стрельба - Стрельба - навык стрельбы повышается от времени, проведенного в перестрелках, либо
-    Gui, SkillInfo: Add, Text, x8 y360  h20 +0x240,  тренировках. Чем лучше ты стреляешь и попадаешь, тем быстрее повышается навык. Рекомендуем 
-    Gui, SkillInfo: Add, Text, x8 y376  h20 +0x240, тренироваться в специально отведенных для того местах, тире в оружейном магазине. От прокачки навыка 
-    Gui, SkillInfo: Add, Text, x8 y392  h20 +0x240, увеличивается скорость перезарядки и перекатов, кучность стрельбы.
-	Gui, SkillInfo: Show, h414 w616, Описание скилов
+	Gui, SkillInfo: Add, Text, x8 y8  h20 +0x240, .ГўГ»Г­Г®Г± - Г‚Г»Г­Г®Г±Г«ГЁГўГ®Г±ГІГј - Г­Г ГўГ»ГЄ ГўГ»Г­Г®Г±Г«ГЁГўГ®Г±ГІГЁ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГЇГ®Г¤ГўГЁГ¦Г­Г®ГЈГ® Г®ГЎГ°Г Г§Г  Г¦ГЁГ§Г­ГЁ. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» 
+    Gui, SkillInfo: Add, Text, x8 y24  h20 +0x240, ГЎГҐГЈГ ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЏГ°ГЁ Г­ГЁГ§ГЄГ®Г¬ Г­Г ГўГ»ГЄГҐ, ГЇГҐГ°Г±Г®Г­Г Г¦ Г­ГҐ Г¬Г®Г¦ГҐГІ ГЇГ°Г»ГЈГ­ГіГІГј 2 Г°Г Г§Г  ГЁ ГЇГ Г¤Г ГҐГІ.
+    Gui, SkillInfo: Add, Text, x8 y40  h20 +0x240, Г‘Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЇГ®ГўГ»ГёГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  ГўГ«ГЁГїГҐГІ Г­Г  Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј ГЎГҐГ±ГЇГ°ГҐГ°Г»ГўГ­Г®ГЈГ® ГЎГҐГЈГ  ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г»Г¦ГЄГ®Гў, 
+    Gui, SkillInfo: Add, Text, x8 y56  h20 +0x240, Г¬Г ГЄГ±ГЁГ¬ГіГ¬ Г­Г  ГЇГ®Г±Г«ГҐГ¤Г­ГҐГ¬ ГіГ°Г®ГўГ­ГҐ - 2.
+    Gui, SkillInfo: Add, Text, x8 y72  h20 +0x240, .Г±ГЁГ«Г  - Г‘ГЁГ«Г  - Г­Г ГўГ»ГЄ Г±ГЁГ«Г» ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГґГЁГ§ГЁГ·ГҐГ±ГЄГЁГµ Г­Г ГЈГ°ГіГ§Г®ГЄ. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» Г§Г Г­ГЁГ¬Г ГҐГёГјГ±Гї Гў ГЄГ Г·Г Г«ГЄГҐ 
+    Gui, SkillInfo: Add, Text, x8 y88  h20 +0x240, (ГЁГЄГ®Г­ГЄГ  ГЎГҐГЈГіГ№ГҐГЈГ® Г·ГҐГ«Г®ГўГҐГЄГ  Г­Г  ГЄГ Г°ГІГҐ), ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї 
+	Gui, SkillInfo: Add, Text, x8 y104  h20 +0x240, Г±Г®ГЇГ°Г®ГІГЁГўГ«ГҐГ­ГЁГҐ ГЄ ГіГ°Г®Г­Гі Г®ГІ ГЇГ Г¤ГҐГ­ГЁГї.
+    Gui, SkillInfo: Add, Text, x8 y120  h20 +0x240, .Г¤Г»Гµ - Г„Г»ГµГ Г­ГЁГҐ - Г­Г ГўГ»ГЄ Г¤Г»ГµГ Г­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ Г¤Г«ГЁГІГҐГ«ГјГ­Г®ГЈГ® Г­Г ГµГ®Г¦Г¤ГҐГ­ГЁГї ГЇГ®Г¤ ГўГ®Г¤Г®Г©. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» 
+    Gui, SkillInfo: Add, Text, x8 y136  h20 +0x240, ГЇГ«Г ГўГ ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. Г‘Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЇГ®ГўГ»ГёГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  ГўГ«ГЁГїГҐГІ Г­Г  Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј 
+    Gui, SkillInfo: Add, Text, x8 y152  h20 +0x240, ГЎГҐГ±ГЇГ°ГҐГ°Г»ГўГ­Г®ГЈГ® ГЇГ«Г ГўГ Г­ГЁГї ГЇГ®Г¤ ГўГ®Г¤Г®Г©.
+    Gui, SkillInfo: Add, Text, x8 y168  h20 +0x240, .ГўГ®Г¦Г¤ГҐГ­ - Г‚Г®Г¦Г¤ГҐГ­ГЁГҐ - Г­Г ГўГ»ГЄ ГўГ®Г¦Г¤ГҐГ­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г§Г  Г°ГіГ«ГҐГ¬ Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї. Г—ГҐГ¬ 
+    Gui, SkillInfo: Add, Text, x8 y184  h20 +0x240, ГЎГ®Г«ГјГёГҐ ГІГ» ГўГ®Г¤ГЁГёГј ГІГ°Г Г­Г±ГЇГ®Г°ГІ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®Г±ГІГј 
+    Gui, SkillInfo: Add, Text, x8 y200  h20 +0x240, ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г»Г¬ Г±Г°ГҐГ¤Г®Г±ГІГўГ®Г¬.
+    Gui, SkillInfo: Add, Text, x8 y216  h20 +0x240, .ГЇГ®Г«ГҐГІ - ГЏГ®Г«ГҐГІ - Г­Г ГўГ»ГЄ ГЇГЁГ«Г®ГІГЁГ°Г®ГўГ Г­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г§Г  ГўГ®Г§Г¤ГіГёГ­Г»Г¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ®Г¬. 
+    Gui, SkillInfo: Add, Text, x8 y232  h20 +0x240, Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» Г«ГҐГІГ ГҐГёГј Г­Г  Г±Г Г¬Г®Г«ГҐГІГҐ ГЁГ«ГЁ ГўГҐГ°ГІГ®Г«ГҐГІГҐ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. Г’Г ГЄГ¦ГҐ Г­Г ГўГ»ГЄ Г¬Г®Г¦Г­Г® 
+    Gui, SkillInfo: Add, Text, x8 y248  h20 +0x240, ГЇГ®ГўГ»Г±ГЁГІГј ГЇГ°Г®Г©Г¤Гї ГЄГіГ°Г±Г» Гў Г«ГҐГІГ­Г®Г© ГёГЄГ®Г«ГҐ. ГЏГ°Г®Г©ГІГЁ ГЁГµ Г¬Г®Г¦Г­Г® 1 Г°Г Г§ Гў 24 Г·Г Г±Г , ГіГўГҐГ«Г·ГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  Г®ГІ 1 Г§Г Г­ГїГІГЁГї - 
+    Gui, SkillInfo: Add, Text, x8 y264  h20 +0x240, 10, Г±ГІГ®ГЁГ¬Г®Г±ГІГј Г®Г¤Г­Г®ГЈГ® Г§Г Г­ГїГІГЁГї - 2 000$. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ Г­Г ГўГ»ГЄГ  ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±ГІГ ГЎГЁГ«ГјГ­Г®Г±ГІГј ГЇГ®Г«ГҐГІГ  ГЁ 
+    Gui, SkillInfo: Add, Text, x8 y280  h20 +0x240, ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®Г±ГІГј ГўГ®Г§Г¤ГіГёГ­Г»Г¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ®Г¬.
+	Gui, SkillInfo: Add, Text, x8 y296  h20 +0x240, .Г±ГЄГ°Г»ГІГ­ - Г‘ГЄГ°Г»ГІГ­Г®Г±ГІГј - Г­Г ГўГ»ГЄ Г±ГЄГ°Г»ГІГ­Г®Г±ГІГЁ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ  ГіГ±ГЇГҐГёГ­Г»Гµ ГіГµГ®Г¤Г®Гў Г®ГІ ГЇГ®ГЈГ®Г­ГЁ 
+    Gui, SkillInfo: Add, Text, x8 y312  h20 +0x240, (ГЇГ®Г­ГЁГ¦ГҐГ­ГЁГ© ГіГ°Г®ГўГ­Гї Г°Г®Г§Г»Г±ГЄГ ). Г—ГҐГ¬ Г·Г Г№ГҐ ГІГ» Г±ГЄГ°Г»ГўГ ГҐГёГјГ±Гї Г®ГІ ГЇГ®Г«ГЁГ¶ГЁГЁ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЌГЁ
+    Gui, SkillInfo: Add, Text, x8 y328  h20 +0x240,  Г­Г  Г·ГІГ® Г­ГҐ ГўГ«ГЁГїГҐГІ.
+    Gui, SkillInfo: Add, Text, x8 y344  h20 +0x240, .Г±ГІГ°ГҐГ«ГјГЎГ  - Г‘ГІГ°ГҐГ«ГјГЎГ  - Г­Г ГўГ»ГЄ Г±ГІГ°ГҐГ«ГјГЎГ» ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Гў ГЇГҐГ°ГҐГ±ГІГ°ГҐГ«ГЄГ Гµ, Г«ГЁГЎГ®
+    Gui, SkillInfo: Add, Text, x8 y360  h20 +0x240,  ГІГ°ГҐГ­ГЁГ°Г®ГўГЄГ Гµ. Г—ГҐГ¬ Г«ГіГ·ГёГҐ ГІГ» Г±ГІГ°ГҐГ«ГїГҐГёГј ГЁ ГЇГ®ГЇГ Г¤Г ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГђГҐГЄГ®Г¬ГҐГ­Г¤ГіГҐГ¬ 
+    Gui, SkillInfo: Add, Text, x8 y376  h20 +0x240, ГІГ°ГҐГ­ГЁГ°Г®ГўГ ГІГјГ±Гї Гў Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г®ГІГўГҐГ¤ГҐГ­Г­Г»Гµ Г¤Г«Гї ГІГ®ГЈГ® Г¬ГҐГ±ГІГ Гµ, ГІГЁГ°ГҐ Гў Г®Г°ГіГ¦ГҐГ©Г­Г®Г¬ Г¬Г ГЈГ Г§ГЁГ­ГҐ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ Г­Г ГўГ»ГЄГ  
+    Gui, SkillInfo: Add, Text, x8 y392  h20 +0x240, ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±ГЄГ®Г°Г®Г±ГІГј ГЇГҐГ°ГҐГ§Г Г°ГїГ¤ГЄГЁ ГЁ ГЇГҐГ°ГҐГЄГ ГІГ®Гў, ГЄГіГ·Г­Г®Г±ГІГј Г±ГІГ°ГҐГ«ГјГЎГ».
+	Gui, SkillInfo: Show, h414 w616, ГЋГЇГЁГ±Г Г­ГЁГҐ Г±ГЄГЁГ«Г®Гў
 	Return
 
 vac:
@@ -1330,14 +1330,14 @@ Input, hId, V, {ctrl} {Enter}
 Sleep 300
 SendInput, {T}
 Sleep 500
-SendInput,/unjail %hId% Амнистия{Enter}
+SendInput,/unjail %hId% ГЂГ¬Г­ГЁГ±ГІГЁГї{Enter}
 Sleep 500
 SendInput, {T}
 Sleep 500
-SendInput,/ajail %hId% 9 Амнистия{Enter}
+SendInput,/ajail %hId% 9 ГЂГ¬Г­ГЁГ±ГІГЁГї{Enter}
 Return
 
-;Выдача
+;Г‚Г»Г¤Г Г·Г 
 
 PunishmentHandler:
 Process, Exist, PlayGTAV.exe
@@ -1365,15 +1365,15 @@ Sleep, 305
 Send, {Enter}
 }
 }
-MsgBox, 64, Выдача наказаний, Наказания выданы.
+MsgBox, 64, Г‚Г»Г¤Г Г·Г  Г­Г ГЄГ Г§Г Г­ГЁГ©, ГЌГ ГЄГ Г§Г Г­ГЁГї ГўГ»Г¤Г Г­Г».
 }
 else
 {
-MsgBox, 16, Выдача наказаний, Запустите игру!
+MsgBox, 16, Г‚Г»Г¤Г Г·Г  Г­Г ГЄГ Г§Г Г­ГЁГ©, Г‡Г ГЇГіГ±ГІГЁГІГҐ ГЁГЈГ°Гі!
 }
 return
 
-; === Функция для рандома ===
+; === Г”ГіГ­ГЄГ¶ГЁГї Г¤Г«Гї Г°Г Г­Г¤Г®Г¬Г  ===
 Random(min, max) {
     Random, out, %min%, %max%
     return out
@@ -1506,70 +1506,70 @@ GoSub, UpdateCounter
 Clipboard :=
 return
 
-;Телепорты
-:?:.клп::/ctp -196.836 6218.708 31.491 
-:?:.клс::/ctp 1728.313 3717.568 34.109
-:?:.клм::/ctp -361.424 -129.636 38.696
-:?:.клг::/ctp -40.529 -1077.648 26.653 
+;Г’ГҐГ«ГҐГЇГ®Г°ГІГ»
+:?:.ГЄГ«ГЇ::/ctp -196.836 6218.708 31.491 
+:?:.ГЄГ«Г±::/ctp 1728.313 3717.568 34.109
+:?:.ГЄГ«Г¬::/ctp -361.424 -129.636 38.696
+:?:.ГЄГ«ГЈ::/ctp -40.529 -1077.648 26.653 
 
-:?:.лспд::/ctp 429 -980 30.50
-:?:.бол::/ctp 287.70 -578.35 50
-:?:.шд::/ctp -434.87 6024.54 31.50
-:?:.шд2::/ctp 1843.770 3666.384 33.760
-:?:.фз::/ctp -2336 3257 32.50
-:?:.мэр::/ctp -534.70 -222.07 37.60
-:?:.визл::/ctp -593 -929 24
-:?:.фиб::/ctp 2527 -377 93
+:?:.Г«Г±ГЇГ¤::/ctp 429 -980 30.50
+:?:.ГЎГ®Г«::/ctp 287.70 -578.35 50
+:?:.ГёГ¤::/ctp -434.87 6024.54 31.50
+:?:.ГёГ¤2::/ctp 1843.770 3666.384 33.760
+:?:.ГґГ§::/ctp -2336 3257 32.50
+:?:.Г¬ГЅГ°::/ctp -534.70 -222.07 37.60
+:?:.ГўГЁГ§Г«::/ctp -593 -929 24
+:?:.ГґГЁГЎ::/ctp 2527 -377 93
 
-:?:.бал::/ctp -70.06 -1824.64 26.94
-:?:.ваг::/ctp 967 -1817 31
-:?:.фэм::/ctp -204.29 -1513.69 31.60
-:?:.бладс::/ctp 496 -1330 29.40
-:?:.мара::/ctp 1437.61 -1509.64 62.40
+:?:.ГЎГ Г«::/ctp -70.06 -1824.64 26.94
+:?:.ГўГ ГЈ::/ctp 967 -1817 31
+:?:.ГґГЅГ¬::/ctp -204.29 -1513.69 31.60
+:?:.ГЎГ«Г Г¤Г±::/ctp 496 -1330 29.40
+:?:.Г¬Г Г°Г ::/ctp 1437.61 -1509.64 62.40
 
-:?:.лкн::/ctp 1385 1154 114.40
-:?:.рм::/ctp -1526 858 181
-:?:.як::/ctp -1556.36 113.07 57
-:?:.мекс::/ctp 381.03 23.12 91.40
-:?:.ам::/ctp -1895.23 2027.19 141
-:?:.ир::/ctp -3028.926 100.118 11.614
+:?:.Г«ГЄГ­::/ctp 1385 1154 114.40
+:?:.Г°Г¬::/ctp -1526 858 181
+:?:.ГїГЄ::/ctp -1556.36 113.07 57
+:?:.Г¬ГҐГЄГ±::/ctp 381.03 23.12 91.40
+:?:.Г Г¬::/ctp -1895.23 2027.19 141
+:?:.ГЁГ°::/ctp -3028.926 100.118 11.614
 
-:?:.лост::/ctp 969.84 -128.40 74.40
-:?:.аод::/ctp 1995.99 3062.44 47.06
+:?:.Г«Г®Г±ГІ::/ctp 969.84 -128.40 74.40
+:?:.Г Г®Г¤::/ctp 1995.99 3062.44 47.06
 
-:?:.груб::/ctp -3022 105 11.30
-:?:.клаб::/ctp 1588.65 6445.38 25
-:?:.рич::/ctp -1302.49 294.52 64.50
-:?:.манор::/ctp -58.20 343.73 111.80
-:?:.конт::/ctp -1865.51 -355.96 57
+:?:.ГЈГ°ГіГЎ::/ctp -3022 105 11.30
+:?:.ГЄГ«Г ГЎ::/ctp 1588.65 6445.38 25
+:?:.Г°ГЁГ·::/ctp -1302.49 294.52 64.50
+:?:.Г¬Г Г­Г®Г°::/ctp -58.20 343.73 111.80
+:?:.ГЄГ®Г­ГІ::/ctp -1865.51 -355.96 57
 
-:?:.хум::/ctp 3569.54 3789.48 30
-:?:.мейз::/ctp -75 -818 326
-:?:.каз::/ctp 916 50 81
-:?:.аш::/ctp -620 -2264 6
-:?:.гг::/ctp -257 -2023 30
-:?:.бургер::/ctp -1171.31 -890.20 13.90
-:?:.багама::/ctp -1391.30 -585.35 30
-:?:.кайо::/ctp 4488.58 -4493.52 4
-:?:.авиа::/ctp 3035.21 -4688.55 15
-:?:.мол::/ctp 61.67 -1751.80 47
-:?:.трас::/ctp 7400 3946 1124
-:?:.трасс::/ctp 7400 -656 1124
-:?:.аук::/ctp -833 -699.50 27
-:?:.бокс::/ctp 8.56 -1658.55 28.71
-:?:.бар::/ctp -305.09 6259.59 30.92
-:?:.бк::/ctp 500.44 109.79 96.49
-:?:.ванила::/ctp 131.33 -1302.93 29.23
-:?:.починка::/ctp -1430.45 -450.5 35.91
-:?:.лск4::/ctp 1175.47 2671.33 37.85
-:?:.порт::/ctp 417 -2501 13.46
-:?:.стр::/ctp 1304 1453 98.87
-:?:.лес::/ctp -321 6093 31.14
-:?:.бмара::/ctp 1302 -1646 51.04
-:?:.самол::/ctp 1473 2730 37.38
-:?:.чил::/ctp 498 5592 795
-:?:.сэнди::/ctp 1843.770 3666.384 33.760
-:?:.палето::/ctp -434.87 6024.54 31.50
+:?:.ГµГіГ¬::/ctp 3569.54 3789.48 30
+:?:.Г¬ГҐГ©Г§::/ctp -75 -818 326
+:?:.ГЄГ Г§::/ctp 916 50 81
+:?:.Г Гё::/ctp -620 -2264 6
+:?:.ГЈГЈ::/ctp -257 -2023 30
+:?:.ГЎГіГ°ГЈГҐГ°::/ctp -1171.31 -890.20 13.90
+:?:.ГЎГ ГЈГ Г¬Г ::/ctp -1391.30 -585.35 30
+:?:.ГЄГ Г©Г®::/ctp 4488.58 -4493.52 4
+:?:.Г ГўГЁГ ::/ctp 3035.21 -4688.55 15
+:?:.Г¬Г®Г«::/ctp 61.67 -1751.80 47
+:?:.ГІГ°Г Г±::/ctp 7400 3946 1124
+:?:.ГІГ°Г Г±Г±::/ctp 7400 -656 1124
+:?:.Г ГіГЄ::/ctp -833 -699.50 27
+:?:.ГЎГ®ГЄГ±::/ctp 8.56 -1658.55 28.71
+:?:.ГЎГ Г°::/ctp -305.09 6259.59 30.92
+:?:.ГЎГЄ::/ctp 500.44 109.79 96.49
+:?:.ГўГ Г­ГЁГ«Г ::/ctp 131.33 -1302.93 29.23
+:?:.ГЇГ®Г·ГЁГ­ГЄГ ::/ctp -1430.45 -450.5 35.91
+:?:.Г«Г±ГЄ4::/ctp 1175.47 2671.33 37.85
+:?:.ГЇГ®Г°ГІ::/ctp 417 -2501 13.46
+:?:.Г±ГІГ°::/ctp 1304 1453 98.87
+:?:.Г«ГҐГ±::/ctp -321 6093 31.14
+:?:.ГЎГ¬Г Г°Г ::/ctp 1302 -1646 51.04
+:?:.Г±Г Г¬Г®Г«::/ctp 1473 2730 37.38
+:?:.Г·ГЁГ«::/ctp 498 5592 795
+:?:.Г±ГЅГ­Г¤ГЁ::/ctp 1843.770 3666.384 33.760
+:?:.ГЇГ Г«ГҐГІГ®::/ctp -434.87 6024.54 31.50
 
 :?:/rkg::/ctp -196.836 6218.708 31.491 
 :?:/rkc::/ctp 1728.313 3717.568 34.109
@@ -1630,11 +1630,11 @@ return
 :?:/c'ylb::/ctp 1843.770 3666.384 33.760
 :?:/gfktnj::/ctp -434.87 6024.54 31.50
 
-:?:.обыч::
+:?:.Г®ГЎГ»Г·::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /setdim %Dinamic% 0
@@ -1644,18 +1644,18 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /setdim %Dinamic% 0
 return
 
-; Капты
-:?:.каптд::
+; ГЉГ ГЇГІГ»
+:?:.ГЄГ ГЇГІГ¤::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /setdim %Dinamic% 9871 
@@ -1665,28 +1665,28 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /setdim %Dinamic% 9871 
 return 
 
-;бизвары
-:?:.бизд::
+;ГЎГЁГ§ГўГ Г°Г»
+:?:.ГЎГЁГ§Г¤::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /setdim %Dinamic% %Dimension%
 return
 
-:?:.лес1::
+:?:.Г«ГҐГ±1::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1696,11 +1696,11 @@ sleep 500
 SendInput, /ctp -595.156 5299.820 70.215{Enter}
 return
 
-:?:.лес2::
+:?:.Г«ГҐГ±2::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1710,11 +1710,11 @@ sleep 500
 SendInput, /ctp -292.054 6068.327 31.332{Enter}
 return
 
-:?:.стройка1::
+:?:.Г±ГІГ°Г®Г©ГЄГ 1::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1724,11 +1724,11 @@ sleep 500
 SendInput, /ctp 1058.867 2358.396 44.685{Enter}
 return
 
-:?:.стройка2::
+:?:.Г±ГІГ°Г®Г©ГЄГ 2::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1738,11 +1738,11 @@ sleep 500
 SendInput, /ctp 1290.761 1480.779 98.775{Enter}
 return
 
-:?:.свалка1::
+:?:.Г±ГўГ Г«ГЄГ 1::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1752,11 +1752,11 @@ sleep 500
 SendInput, /ctp 2395.213 3103.875 48.152{Enter}
 return
 
-:?:.свалка2::
+:?:.Г±ГўГ Г«ГЄГ 2::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1766,11 +1766,11 @@ sleep 500
 SendInput, /ctp 1212.702 2697.979 37.996{Enter}
 return
 
-:?:.порт1::
+:?:.ГЇГ®Г°ГІ1::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1780,11 +1780,11 @@ sleep 500
 SendInput, /ctp 536.451 -3124.175 6.070{Enter}
 return
 
-:?:.порт2::
+:?:.ГЇГ®Г°ГІ2::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1794,11 +1794,11 @@ sleep 500
 SendInput, /ctp 293.276 -2513.677 5.866{Enter}
 return
 
-:?:.мара1::
+:?:.Г¬Г Г°Г 1::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1808,11 +1808,11 @@ sleep 500
 SendInput, /ctp 1715.024 -1656.429 112.469{Enter}
 return
 
-:?:.мара2::
+:?:.Г¬Г Г°Г 2::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1826,7 +1826,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /setdim %Dinamic% %Dimension%
@@ -1836,7 +1836,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1850,7 +1850,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1864,7 +1864,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1878,7 +1878,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput, /ctp 1290.761 1480.779 98.775{Enter}
@@ -1892,7 +1892,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1906,7 +1906,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1920,7 +1920,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1934,7 +1934,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1948,7 +1948,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1962,7 +1962,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/setdim %Dinamic% %Dimension%{Enter}
@@ -1972,48 +1972,48 @@ sleep 500
 SendInput, /ctp 1244.671 -1678.745 42.763{Enter}
 return
 
-;ган
-:?:.миниг::
+;ГЈГ Г­
+:?:.Г¬ГЁГ­ГЁГЈ::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_minigun 9999
 return
-:?:.ревик::
+:?:.Г°ГҐГўГЁГЄ::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_revolver 9999
 return
-:?:.ракет::
+:?:.Г°Г ГЄГҐГІ::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_firework 9999
 return
-:?:.хевик::
+:?:.ГµГҐГўГЁГЄ::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_heavysniper_mk2 9999
 return
-:?:.топор::
+:?:.ГІГ®ГЇГ®Г°::
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_hatchet  9999
@@ -2023,7 +2023,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_minigun 9999
@@ -2032,7 +2032,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_revolver 9999
@@ -2041,7 +2041,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_firework 9999
@@ -2050,7 +2050,7 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_heavysniper_mk2 9999
@@ -2059,15 +2059,15 @@ return
 IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
 if Dinamic = 
 {
-msgbox,16, Ошибка, Динамик не введен!
+msgbox,16, ГЋГёГЁГЎГЄГ , Г„ГЁГ­Г Г¬ГЁГЄ Г­ГҐ ГўГўГҐГ¤ГҐГ­!
 }
 else
 SendInput,/gw %Dinamic% weapon_hatchet  9999
 return
 
-:?:.ку::
+:?:.ГЄГі::
 SendMessage, 0x50,, 0x4190419,, A
-SendInput, Приветствую, сейчас займусь Вашим обращением, ожидайте.
+SendInput, ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ, Г±ГҐГ©Г·Г Г± Г§Г Г©Г¬ГіГ±Гј Г‚Г ГёГЁГ¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐГ¬, Г®Г¦ГЁГ¤Г Г©ГІГҐ.
 SendInput, {Enter}
 {
 counter++
@@ -2077,729 +2077,729 @@ Clipboard :=
 Return
 
 
-; Команды
+; ГЉГ®Г¬Г Г­Г¤Г»
 :?:/bch::/bancheck
-:?:.иср::/bancheck
+:?:.ГЁГ±Г°::/bancheck
 :?:/jch::/ajailcheck 
-:?:.оср::/ajailcheck 
-:?:.ифтсрусл::/bancheck
-:?:.фофшдсрусл::/ajailcheck 
+:?:.Г®Г±Г°::/ajailcheck 
+:?:.ГЁГґГІГ±Г°ГіГ±Г«::/bancheck
+:?:.ГґГ®ГґГёГ¤Г±Г°ГіГ±Г«::/ajailcheck 
 :?:/tf::/tempfamily 
-:?:.еа::/tempfamily 
+:?:.ГҐГ ::/tempfamily 
 :?:/sm::/setmaterials 
-:?:.ыь::/setmaterials 
+:?:.Г»Гј::/setmaterials 
 :?:/tn::/tempname 
-:?:.ет::/tempname 
-:?:.еуьзтфьу::.еуьзтфьу 
-:?:.яяв::/zzdebug 
+:?:.ГҐГІ::/tempname 
+:?:.ГҐГіГјГ§ГІГґГјГі::.ГҐГіГјГ§ГІГґГјГі 
+:?:.ГїГїГў::/zzdebug 
 :?:/zzd::/zzdebug 
 :?:/Usefull::/addUsefullitheater 
-:?:.фьзр::/addUsefullitheater 
+:?:.ГґГјГ§Г°::/addUsefullitheater 
 :?:/rUsefull::/removeUsefullitheater 
-:?:.кфьзр::/removeUsefullitheater 
+:?:.ГЄГґГјГ§Г°::/removeUsefullitheater 
 :?:/gzone::/togglegreenzone 
-:?:.пящту::/togglegreenzone 
+:?:.ГЇГїГ№ГІГі::/togglegreenzone 
 :?:/mcheck::/mutecheck 
-:?:.ьсрусл::/mutecheck 
-:?:.ьгеусрусл::/mutecheck 
-:?:.гтофшд::/unjail 
-:?:.цфкт::/warn 
+:?:.ГјГ±Г°ГіГ±Г«::/mutecheck 
+:?:.ГјГЈГҐГіГ±Г°ГіГ±Г«::/mutecheck 
+:?:.ГЈГІГ®ГґГёГ¤::/unjail 
+:?:.Г¶ГґГЄГІ::/warn 
 :?:/ld::/lastdriver 
-:?:.дв::/lastdriver 
+:?:.Г¤Гў::/lastdriver 
 :?:/af::/ainfect 
-:?:.фа::/ainfect 
+:?:.ГґГ ::/ainfect 
 :?:/sk::/skick 
-:?:.ыл::/skick 
+:?:.Г»Г«::/skick 
 :?:/k::/kick 
-:?:.л::/kick 
+:?:.Г«::/kick 
 :?:/ai::/auninvite 
-:?:.фш::/auninvite 
-:?:.аи::/fb 
+:?:.ГґГё::/auninvite 
+:?:.Г ГЁ::/fb 
 :?:/aif::/ainfect  
-:?:.фша::/ainfect 
-:?:.с::/c  
-:?:.си::/cb 
-:?:.гтьгеу::/unmute 
-:?:.пшв::/gid 
-:?:.фвьшты::/admins 
-:?:.фштаусе::/ainfect 
-:?:.умутещт::/eventon 
-:?:.умутещаа::/eventoff 
-:?:.пц::/gw 
-:?:.мур::/veh 
-:?:.ашчсфк::/fixcar 
-:?:.уьздуфвук::/templeader 
+:?:.ГґГёГ ::/ainfect 
+:?:.Г±::/c  
+:?:.Г±ГЁ::/cb 
+:?:.ГЈГІГјГЈГҐГі::/unmute 
+:?:.ГЇГёГў::/gid 
+:?:.ГґГўГјГёГІГ»::/admins 
+:?:.ГґГёГІГ ГіГ±ГҐ::/ainfect 
+:?:.ГіГ¬ГіГІГҐГ№ГІ::/eventon 
+:?:.ГіГ¬ГіГІГҐГ№Г Г ::/eventoff 
+:?:.ГЇГ¶::/gw 
+:?:.Г¬ГіГ°::/veh 
+:?:.Г ГёГ·Г±ГґГЄ::/fixcar 
+:?:.ГіГјГ§Г¤ГіГґГўГіГЄ::/templeader 
 :?:/tl::/templeader 
-:?:.ед::/templeader
-:?:.ет::/tempname
+:?:.ГҐГ¤::/templeader
+:?:.ГҐГІ::/tempname
 :?:/tn::/tempname 
-:?:.ылшсл::/skick 
-:?:.кузфшк::/repair 
-:?:.фгтшмшеу::/auninvite 
-:?:.учсфк::/excar 
-:?:.агуд::/fuel 
-:?:.згддекгтл::/pulltrunk
-:?:.еуьздуфвук::/templeader
-:?:.акууя::/freez 
-:?:.езсфк::/tpcar 
-:?:.дфыевкшмук::/lastdriver 
-:?:.вудшеуь::/delitem 
+:?:.Г»Г«ГёГ±Г«::/skick 
+:?:.ГЄГіГ§ГґГёГЄ::/repair 
+:?:.ГґГЈГІГёГ¬ГёГҐГі::/auninvite 
+:?:.ГіГ·Г±ГґГЄ::/excar 
+:?:.Г ГЈГіГ¤::/fuel 
+:?:.Г§ГЈГ¤Г¤ГҐГЄГЈГІГ«::/pulltrunk
+:?:.ГҐГіГјГ§Г¤ГіГґГўГіГЄ::/templeader
+:?:.Г ГЄГіГіГї::/freez 
+:?:.ГҐГ§Г±ГґГЄ::/tpcar 
+:?:.Г¤ГґГ»ГҐГўГЄГёГ¬ГіГЄ::/lastdriver 
+:?:.ГўГіГ¤ГёГҐГіГј::/delitem 
 :?:/gc::/getcar 
-:?:.пс::/getcar 
-:?:.фв::/admins 
+:?:.ГЇГ±::/getcar 
+:?:.ГґГў::/admins 
 :?:/ad::/admins 
-:?:.з::/players 
+:?:.Г§::/players 
 :?:/p::/players 
-:?:.здфнукы::/players 
-:?:.рес::/rescue 
+:?:.Г§Г¤ГґГ­ГіГЄГ»::/players 
+:?:.Г°ГҐГ±::/rescue 
 :?:/htc::/rescue 
-:?:.ез::/tp 
-:?:.ызус::/spec 
-:?:.ызусщаа::/specoff {Enter} {F5}
-:?:.фыьы::/asms 
-:?:.ф::/a 
+:?:.ГҐГ§::/tp 
+:?:.Г»Г§ГіГ±::/spec 
+:?:.Г»Г§ГіГ±Г№Г Г ::/specoff {Enter} {F5}
+:?:.ГґГ»ГјГ»::/asms 
+:?:.Гґ::/a 
 :?:/sp::/spec 
-:?:.ыз::/spec 
+:?:.Г»Г§::/spec 
 :?:/so::/specoff {Enter} {F5}
-:?:.ыщ::/specoff {Enter} {F5}
+:?:.Г»Г№::/specoff {Enter} {F5}
 :?:/kill::/hp 0{left 2}
-:?:.лшдд::/hp 0{left 2}
-:?:.штсфк::/incar 
-:?:.пр::/gh 
-:?:.пиздец::<@&713044787514703893>, <@&712998057930784798> и <@&712997692581740597>. Уважаемая администрация, просим зайти вас на сервер, в данный момент нам очень нужна ваша помощь.
-:?:.штм::/inv 
-:?:.шв::/id 
-:?:.рз::/hp 
-:?:.од::/ajail 
-:?:.фофшд::/ajail 
-:?:.лшсл::/kick 
-:?:.ылшсл::/skick 
-:?:.кузфшк::/repair 
-:?:.вд::/dl 
-:?:.уыз::/esp 
-:?:.уыз2::/esp2 
-:?:.пуесфк::/getcar 
-:?:.ифт::/ban 
-:?:.вудмур::/delveh 
-:?:.ьез::/mtp 
-:?:.мур::/veh 
-:?:.фмур::/aveh 
-:?:.рфквифт::/hardban 
-:?:.ьгеу::/mute 
-:?:.пшв::/gid 
-:?:.ср::/chide 
+:?:.Г«ГёГ¤Г¤::/hp 0{left 2}
+:?:.ГёГІГ±ГґГЄ::/incar 
+:?:.ГЇГ°::/gh 
+:?:.ГЇГЁГ§Г¤ГҐГ¶::<@&713044787514703893>, <@&712998057930784798> ГЁ <@&712997692581740597>. Г“ГўГ Г¦Г ГҐГ¬Г Гї Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї, ГЇГ°Г®Г±ГЁГ¬ Г§Г Г©ГІГЁ ГўГ Г± Г­Г  Г±ГҐГ°ГўГҐГ°, Гў Г¤Г Г­Г­Г»Г© Г¬Г®Г¬ГҐГ­ГІ Г­Г Г¬ Г®Г·ГҐГ­Гј Г­ГіГ¦Г­Г  ГўГ ГёГ  ГЇГ®Г¬Г®Г№Гј.
+:?:.ГёГІГ¬::/inv 
+:?:.ГёГў::/id 
+:?:.Г°Г§::/hp 
+:?:.Г®Г¤::/ajail 
+:?:.ГґГ®ГґГёГ¤::/ajail 
+:?:.Г«ГёГ±Г«::/kick 
+:?:.Г»Г«ГёГ±Г«::/skick 
+:?:.ГЄГіГ§ГґГёГЄ::/repair 
+:?:.ГўГ¤::/dl 
+:?:.ГіГ»Г§::/esp 
+:?:.ГіГ»Г§2::/esp2 
+:?:.ГЇГіГҐГ±ГґГЄ::/getcar 
+:?:.ГЁГґГІ::/ban 
+:?:.ГўГіГ¤Г¬ГіГ°::/delveh 
+:?:.ГјГҐГ§::/mtp 
+:?:.Г¬ГіГ°::/veh 
+:?:.ГґГ¬ГіГ°::/aveh 
+:?:.Г°ГґГЄГўГЁГґГІ::/hardban 
+:?:.ГјГЈГҐГі::/mute 
+:?:.ГЇГёГў::/gid 
+:?:.Г±Г°::/chide 
 :?:/ch::/chide 
-:?:.куысгу::/rescue 
-:?:.ыуевшь::/setdim 
+:?:.ГЄГіГ»Г±ГЈГі::/rescue 
+:?:.Г»ГіГҐГўГёГј::/setdim 
 :?:/sd::/setdim 
-:?:.и::/b 
-:?:.ц::/w 
-:?:.ыв::/setdim 
-:?:.сршву::/chide 
-:?:.афк::/a афк мин{left 4}
-:?:/far::/a афк мин{left 4}
-:?:.фгтсгаа::/auncuff 
-:?:.фсгаа::/acuff 
-:?:.акууяу::/freeze
+:?:.ГЁ::/b 
+:?:.Г¶::/w 
+:?:.Г»Гў::/setdim 
+:?:.Г±Г°ГёГўГі::/chide 
+:?:.Г ГґГЄ::/a Г ГґГЄ Г¬ГЁГ­{left 4}
+:?:/far::/a Г ГґГЄ Г¬ГЁГ­{left 4}
+:?:.ГґГЈГІГ±ГЈГ Г ::/auncuff 
+:?:.ГґГ±ГЈГ Г ::/acuff 
+:?:.Г ГЄГіГіГїГі::/freeze
 :?:/scd::/setcardim 
-:?:.ыуесфквшь::/setcardim 
-:?:.ысв::/setcardim 
+:?:.Г»ГіГҐГ±ГґГЄГўГёГј::/setcardim 
+:?:.Г»Г±Гў::/setcardim 
 :?:/rst::/resettempname 
-:?:.кые::/resettempname 
-:?:.куыуееуьзтфьу::/resettempname 
-:?:.ты::/netstat 
+:?:.ГЄГ»ГҐ::/resettempname 
+:?:.ГЄГіГ»ГіГҐГҐГіГјГ§ГІГґГјГі::/resettempname 
+:?:.ГІГ»::/netstat 
 :?:/ns::/netstat 
-:?:.вм::/delveh 
+:?:.ГўГ¬::/delveh 
 :?:/dv::/delveh 
 :?:/hard::/hardban 
-:?:.рфкв::/hardban 
+:?:.Г°ГґГЄГў::/hardban 
 :?:/as::/asms 
-:?:.фы::/asms 
-:?:.пез::/gtp
-:?:.пь::/gm
-:?:.тс::/noclip 
+:?:.ГґГ»::/asms 
+:?:.ГЇГҐГ§::/gtp
+:?:.ГЇГј::/gm
+:?:.ГІГ±::/noclip 
 :?:/nc::/noclip 
 :?:/acf::/acuff 
-:?:.фса::/acuff 
+:?:.ГґГ±Г ::/acuff 
 :?:/auf::/auncuff 
-:?:.фга::/auncuff 
-:?:.а::/f 
-:?:.ылшт::/skin
-:?:.езр::/tph
-:?:.фмур::/aveh
-:?:.фдщсл::/alock
-:?:.гти::/unban 
+:?:.ГґГЈГ ::/auncuff 
+:?:.Г ::/f 
+:?:.Г»Г«ГёГІ::/skin
+:?:.ГҐГ§Г°::/tph
+:?:.ГґГ¬ГіГ°::/aveh
+:?:.ГґГ¤Г№Г±Г«::/alock
+:?:.ГЈГІГЁ::/unban 
 :?:/unb::/unban
-:?:.гто::/unjail
+:?:.ГЈГІГ®::/unjail
 :?:/unj::/unjail
 :?:/dvr::/delvehrange 
-:?:.вмк::/delvehrange 
-:?:.щи::/objdl
+:?:.ГўГ¬ГЄ::/delvehrange 
+:?:.Г№ГЁ::/objdl
 :?:/ob::/objdl
 
-:?:.краш::
+:?:.ГЄГ°Г Гё::
 SendMessage, 0x50,, 0x4090409
-SendInput, Если у Вас есть доказательства краша - предоставьте его мне в личные сообщения дискорда. Я вас выпущу. Мой дискорд: %dis%{#}%tag%.
+SendInput, Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  ГЄГ°Г ГёГ  - ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГҐГЈГ® Г¬Г­ГҐ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г . Гџ ГўГ Г± ГўГ»ГЇГіГ№Гі. ГЊГ®Г© Г¤ГЁГ±ГЄГ®Г°Г¤: %dis%{#}%tag%.
 Return
 
-:?:.дс::
+:?:.Г¤Г±::
 SendMessage, 0x50,, 0x4090409
-SendInput, Предоставьте видеодоказательство мне в личные сообщения дискорда: %dis%{#}%tag%. 
+SendInput, ГЏГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ® Г¬Г­ГҐ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г : %dis%{#}%tag%. 
 Return
 
-:?:.дс2::
+:?:.Г¤Г±2::
 SendMessage, 0x50,, 0x4090409
-SendInput, Предоставьте видеодоказательство любому администратору в личные сообщерния дискорда.
+SendInput, ГЏГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ® Г«ГѕГЎГ®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ°Г­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г .
 Return
 
-:?:.га::
+:?:.ГЈГ ::
 SendMessage, 0x50,, 0x4090409
-SendInput, Обратитесь в личные сообщения дискорда к главному администратору: %gadis%{#}%gatag%.
+SendInput, ГЋГЎГ°Г ГІГЁГІГҐГ±Гј Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г  ГЄ ГЈГ«Г ГўГ­Г®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі: %gadis%{#}%gatag%.
 Return
 
-:?:.зга::
+:?:.Г§ГЈГ ::
 SendMessage, 0x50,, 0x4090409
-SendInput, Обратитесь в личные сообщения дискорда к заместителю главного администратора: %zgadis%{#}%zgatag%.
+SendInput, ГЋГЎГ°Г ГІГЁГІГҐГ±Гј Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г  ГЄ Г§Г Г¬ГҐГ±ГІГЁГІГҐГ«Гѕ ГЈГ«Г ГўГ­Г®ГЈГ® Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Г : %zgadis%{#}%zgatag%.
 Return
 
-:?:.дис::
+:?:.Г¤ГЁГ±::
 SendMessage, 0x50,, 0x4090409
-SendInput, Обратитесь ко мне в личные сообщения дискорда: %dis%{#}%tag%.
+SendInput, ГЋГЎГ°Г ГІГЁГІГҐГ±Гј ГЄГ® Г¬Г­ГҐ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г : %dis%{#}%tag%.
 Return
 
 !e::
 SendMessage, 0x50,, 0x4190419,, A
 Random, Var, 1, 2
 SendInput, % TextArray[Var]
-TextArray := ["Приветствую, сейчас постараюсь вам помочь."
-            , "Приветствую, сейчас займусь вашим обращением."]
+TextArray := ["ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ, Г±ГҐГ©Г·Г Г± ГЇГ®Г±ГІГ Г°Г ГѕГ±Гј ГўГ Г¬ ГЇГ®Г¬Г®Г·Гј."
+            , "ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ, Г±ГҐГ©Г·Г Г± Г§Г Г©Г¬ГіГ±Гј ГўГ ГёГЁГ¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐГ¬."]
 return
 
-:?:.акт::
+:?:.Г ГЄГІ::
 SendMessage, 0x50,, 0x4190419,, A
 Random, Var, 1, 4
 SendInput, % TextArray1[Var]
-TextArray1 := ["Приносим извинения за столь долгое ожидание. Пожалуйста, если проблема еще актуальна, продублируйте её в своем обращении. Спасибо за понимание."
-            , "Продублируйте, если ваша проблема актуальна. Спасибо за понимание."
-            , "Продублируйте свое обращение, если проблема все еще актуальна. Спасибо за ожидание и понимание."
-            , "Если проблема актуальна - продублируйте свое обращение."]
+TextArray1 := ["ГЏГ°ГЁГ­Г®Г±ГЁГ¬ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  Г±ГІГ®Г«Гј Г¤Г®Г«ГЈГ®ГҐ Г®Г¦ГЁГ¤Г Г­ГЁГҐ. ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГҐГ№ГҐ Г ГЄГІГіГ Г«ГјГ­Г , ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ ГҐВё Гў Г±ГўГ®ГҐГ¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГЁ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ."
+            , "ГЏГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ, ГҐГ±Г«ГЁ ГўГ ГёГ  ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г ГЄГІГіГ Г«ГјГ­Г . Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ."
+            , "ГЏГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ Г±ГўГ®ГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ, ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГўГ±ГҐ ГҐГ№ГҐ Г ГЄГІГіГ Г«ГјГ­Г . Г‘ГЇГ Г±ГЁГЎГ® Г§Г  Г®Г¦ГЁГ¤Г Г­ГЁГҐ ГЁ ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ."
+            , "Г…Г±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г ГЄГІГіГ Г«ГјГ­Г  - ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ Г±ГўГ®ГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ."]
 return
 
 :?:/frn::
 SendMessage, 0x50,, 0x4190419,, A
 Random, Var, 1, 4
 SendInput, % TextArray1[Var]
-TextArray1 := ["Приносим извинения за столь долгое ожидание. Пожалуйста, если проблема еще актуальна, продублируйте её в своем обращении. Спасибо за понимание."
-            , "Продублируйте, если ваша проблема актуальна. Спасибо за понимание."
-            , "Продублируйте свое обращение, если проблема все еще актуально. Спасибо за ожидание и понимание."
-            , "Если проблема актуальна - продублируйте свое обращение."]
+TextArray1 := ["ГЏГ°ГЁГ­Г®Г±ГЁГ¬ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  Г±ГІГ®Г«Гј Г¤Г®Г«ГЈГ®ГҐ Г®Г¦ГЁГ¤Г Г­ГЁГҐ. ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГҐГ№ГҐ Г ГЄГІГіГ Г«ГјГ­Г , ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ ГҐВё Гў Г±ГўГ®ГҐГ¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГЁ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ."
+            , "ГЏГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ, ГҐГ±Г«ГЁ ГўГ ГёГ  ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г ГЄГІГіГ Г«ГјГ­Г . Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ."
+            , "ГЏГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ Г±ГўГ®ГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ, ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГўГ±ГҐ ГҐГ№ГҐ Г ГЄГІГіГ Г«ГјГ­Г®. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  Г®Г¦ГЁГ¤Г Г­ГЁГҐ ГЁ ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ."
+            , "Г…Г±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г ГЄГІГіГ Г«ГјГ­Г  - ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ Г±ГўГ®ГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ."]
 return
 
 :?:/rhfi::
 SendMessage, 0x50,, 0x4090409
-SendInput, Если у Вас есть доказательства краша - предоставьте его мне в личные сообщения дискорда. Я вас выпущу. Мой дискорд: %dis%{#}%tag%.
+SendInput, Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  ГЄГ°Г ГёГ  - ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГҐГЈГ® Г¬Г­ГҐ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г . Гџ ГўГ Г± ГўГ»ГЇГіГ№Гі. ГЊГ®Г© Г¤ГЁГ±ГЄГ®Г°Г¤: %dis%{#}%tag%.
 Return
 
 :?:/lc::
 SendMessage, 0x50,, 0x4090409
-SendInput, Предоставьте видеодоказательство мне в личные сообщения дискорда: %dis%{#}%tag%. 
+SendInput, ГЏГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ® Г¬Г­ГҐ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г : %dis%{#}%tag%. 
 Return
 
 :?:/lc2::
 SendMessage, 0x50,, 0x4090409
-SendInput, Предоставьте видеодоказательство любому администратору в личные сообщерния дискорда.
+SendInput, ГЏГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ® Г«ГѕГЎГ®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ°Г­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г .
 Return
 
 :?:/uf::
 SendMessage, 0x50,, 0x4090409
-SendInput, Обратитесь в личные сообщения дискорда к главному администратору: %gadis%{#}%gatag%.
+SendInput, ГЋГЎГ°Г ГІГЁГІГҐГ±Гј Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г  ГЄ ГЈГ«Г ГўГ­Г®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі: %gadis%{#}%gatag%.
 Return
 
 :?:/puf::
 SendMessage, 0x50,, 0x4090409
-SendInput, Обратитесь в личные сообщения дискорда к заместителю главного администратора: %zgadis%{#}%zgatag%.
+SendInput, ГЋГЎГ°Г ГІГЁГІГҐГ±Гј Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г  ГЄ Г§Г Г¬ГҐГ±ГІГЁГІГҐГ«Гѕ ГЈГ«Г ГўГ­Г®ГЈГ® Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Г : %zgadis%{#}%zgatag%.
 Return
 
 :?:/lbc::
 SendMessage, 0x50,, 0x4090409
-SendInput, Обратитесь ко мне в личные сообщения дискорда: %dis%{#}%tag%.
+SendInput, ГЋГЎГ°Г ГІГЁГІГҐГ±Гј ГЄГ® Г¬Г­ГҐ Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г : %dis%{#}%tag%.
 Return
 
-:?:.закр::/asms  Закройте обращение и откройте снова, пожалуйста. {left 51}
-; Ответы
-:?:.взлом::Теперь для взлома зажигания транспорта игроков вместо предмета "Отвёртка" требуется "Программатор ЭБУ".
-:?:.виз::Визуальный баг, перезайдите на сервер.
-:?:.ингалятор::Карманный ингалятор - уникальный предмет из Battle Pass. Действует как green - восстанавливают здоровье в течение определенного времени.
-:?:.крем::Крем-маска - уникальный предмет из Battle Pass. На время действия эффекта не позволяет сверить фоторобот и увидеть ваш никнейм над головой тем, кто поздоровался с вами. Заменяет собой функционал маски. Срок действия - 30 минут.
-:?:.сигналка::Автосигнализация - уникальный предмет из Battle Pass. Устанавливается на ваш личный транспорт. После того, как вашим авто завладеет тот, у кого нет к нему доступа, вам на телефон придет сообщение об этом.
-:?:.кастет::Стальной кастет - уникальный предмет из Battle Pass. Используется как оружие. При использовании удар вызывает контузию у вашего противника.
-:?:.горн::Воздушный горн- уникальный предмет из Battle Pass. Используется из инвентаря и имеет проценты использования. Использование вызывает эффект "глухота" у всех вокруг. У людей совсем близко также проиграется специальная анимация оглушения.
-:?:.дронскан::Дрон Сканер - уникальный предмет из Battle Pass. Имеет функционал обычного гражданского дрона (без тепловизора) но с дополнительной возможностью отмечать всех людей вокруг на миникарте у вас и вашей группы.
-:?:.замокшок::Набор дверных шокеров - уникальный предмет из Battle Pass. Устанавливается на ваш личный автомобиль. При попытки сесть в ваш закрытый автомобиль игрок без доступа получит урон и анимацию удара током. 
-:?:.багвойс::Нажмите F2 - Настройки - блокировка войса - заблокируйте для всех и снова разблокируйте. В случае, если проблема осталась, то перезайдите в игру.
-:?:.ставка::Расчёт ставки обычно происходит в течение 6-ти часов. Администрация не управляет рассчетом.
-:?:.клвл::При достижении 5-го уровня: 500 MC При достижении 10-го уровня: 1000 MC При достижении 15-го уровня: 2000 MC При достижении 20-го уровня: 3000 MC При достижении 25-го уровня: 4000 MC При достижении 30-го уровня: 5000 MC. Каждый следующий уровень после 30-го Вы будете получать 1500 MC. 
-:?:.квест::На сервере доступны Мировые и Личные квесты. Ознакомиться с ними можно на рынке (На карте обозначен как "Красный вопрос"). Квесты доступны всем. Личные квесты вы можете проходить неопределенный срок, но, если Вы захотите участвовать в Мировом квесте и получить дополнительные бонусы, то Вам нужно поторопиться выполнить личный квест. Только 5 лучших игроков смогут попасть в топ 3 и залутать дополнительные бонусы. - Каждую неделю доступно по 3 личных и мировых квеста. - Некоторые квесты по типу инкасатора/мусорщика/почтальона можно выполнять в 2-ем и более, засчитывать будем всем.
-:?:.фед::На первом этаже стоит NPC у которого можно взять задание. Чтобы отбыть срок в федеральной тюрьме, нужно выполнять задачи. Например помыть туалет - В определенное время тюрьма закрывает клетки на 5 минут, соответственно, в это время отбыть срок нельзя: -- Открываются клетки в 00 минут -- Закрываются клетки в 20 минут на 5 минут -- Открываются клетки в 25 минут -- Закрываются клетки в 55 минут на 5 минут.
-:?:.сейф::Закрывать интерфейс сейфа можно только на ESC. В сейф можно класть до 5 миллионов. Деньги идут из налички. Нельзя продать дома в гос, продать игроку, предложить обмен, выставить на аукцион, если в сейфе есть деньги. Сначала требуется их забрать. Если дом слетает по налогам - деньги из сейфа игрок получает в наличку. 
-:?:.рация::Приобрести рацию можно в любом магазине 24/7, в разделе “Электроника”, за всеми фракциями закреплен диапазон частот, который не могут занять. В F2 -> Настройки можно изменить Громкости рации.
-:?:.лесоруб::Устраиваться необходимо все у того же NPC около Палето-Бей. Для начала работы Вам понадобиться “Топор”, купить его можно у NPC на Рынке. Принцип работы схожий с Грибниками, точки для сруба деревьев разбросаны по всей карте, каждый уровень привязан к свой точке сбора. Древесину можно продать на рынке. 
-:?:.рац::Для использвания: Возьмите рацию > Введите чистоту >Нажмите ентер >Зажмите "M" и будет слышно.
-:?:.тайм::Это визуальный баг таймера, часы идут и коины вам начислят по истечению времени. 
-:?:.сид::Укажите static ID нарушителя.
-:?:.мини::Проверьте, включена ли мини-карта в настройках F2. Отключите сверхширокий режим в настройках F2 и полностью перезапустите игру. Когда вы находитесь в игре, вам нужно войти в игровое меню, нажав клавишу "Esc". В игровом меню с помощью стрелок влево и вправо перейдите к пункту «Настройки», затем нажмите клавишу «Ввод». Перейдите в строку «Видео» в настройках и активируйте его, нажав клавишу «Enter». В разделе «Видео» установите значение «Вкл.» для верхнего элемента напротив строки «Радар».
-:?:.тест::Зайдите в интерьер маркетплейса -> нажмите Е -> выберите категорию транспорт ->  выберите любой транспорт ->  тест драйв. 
-:?:.арен::Чтобы отказаться от аренды вам необходимо находится около арендованного авто - навестить на авто - G - отказаться от аренды.
-:?:.пут::Всю информацию (команды/о фракциях, работах и так далее) можно узнать на форуме majestic-rp.ru - раздел "Путеводитель для новичков".
-:?:.увал::К сожалению, ничем не можем помочь, увольняем только в случае, если у фракции нет лидера. Дождитесь своего лидера/заместителей.
-:?:.майки::Для того, чтобы купить майку под верхнюю одежду, вам нужно сначала купить элемент верхней одежды (например, пиджак). После этого вам буду доступны все майки, которые подходят под нее в разделе "Майки".
-:?:.кус::Приветствую. Кусачки нужны для взлома камер. Их можно купить у NPC-механика Yongsheng Li на рынке, а так же они есть в предметах AirDrop. Кусачки можно изъять.
-:?:.рад::Приветствую. Радар-детектор отображает камеры контроля скорости на карте при движении на транспорте. Предмет можно скрафтить в мастерских. Радар-детектор может быть изъят.
-:?:.камера::Приветствую.Камера контроля скорости используется для установки камеры сотрудниками Government. Крафтится за технические материалы государственными структурами. Предмет может быть изъят и выпадает при смерти.
-:?:.кам::Приветствую.Камеры могут быть уничтожены игроками, состоящими в бандах с 14:00 до 01:00. Для старта взлома необходимо найти участок с установленными камерами, имея в инвентаре предмет "Кусачки" и "Отвертка".Как только резервное питание будет отключено, нужно выстрелить в камеру после уведомления. В ином случае питание восстановится и камера перейдет в статус настройки.
-:?:.повкамера::Приветствую.Поврежденная камера падает на землю при успешном взломе и выстреле в камеру. Ее можно продать на рынке у NPC-Эколога Greta Thunberg. Предмет может быть изъят и выпадает при смерти.
-:?:.радар::Приветствую.Радар измерения скорости при прицеливании нажав "ЛКМ" измеряет и отображает скорость и номер транспорта. Может использоваться пешком или из автомобиля на пассажирском сидении только в Зеленой Зоне. Крафтится за технические материалы государственными структурами.
-:?:.автош::Приветствую. Оплатить автоштраф можно у NPC в здании DMV. 
-:?:.сштраф::Приветствую.При значении выше 160 km/h выписывается штраф за превышение скорости.Сумма штрафа зависит от превышения скорости, штраф одному и тому же водителю начисляется не чаще чем 1 раз в 10 минут. Если на транспорте снят номер - штраф не выписывается.
-:?:.водш::Приветствую. Штраф начисляется последнему водителю транспорта.
-:?:.номера::Приветствую. Номера можно у NPC в здании DMV. Стоимость генерации зависит от выбранного числа символов в номере (4-7), каждая новая попытка оплачивается отдельно.Незарегистрированный номер можно продавать/обменивать/выбрасывать.
-:?:.ном::Приветствую. Чтобы установить номера нажмите G - Установка номера.Каждая установка/снятие номера тратит предмет отвёртка.
-:?:.слух::Функция "Я не слышу" предназначена для людей с плохим слухом или его отсутствием. Злоупотребление этой функцией карается баном Вашего персонажа. Отключить ее можно в меню F2 - Настройки. Спасибо за понимание.
-:?:.баг::Знаем о данной проблеме, она уже передана разработчикам. Приносим свои извинения за предоставленные неудобства. 
-:?:.чат::Все настройки чата вы можете найти в F2 - Настройки - Настройки чата.
-:?:.рел::Полностю перезайдите на сервер через F1 - Крестик в правом верхнем углу экрана.
-:?:.необл::Не обладаем данной информацией.
-:?:.рп::Извините, но это РП процесс, мы не вправе вмешиваться в него.
-:?:.урп::Данную информацию вы можете получить при взаимодействии с другими игроками/самостоятельным поиском непосредственно во время игрового процесса, либо другим доступным IC путем. 
-:?:.войс::Чтобы перезагрузить войс, попробуйте нажать F7. Если ничего не помогает - перезайдите в игру.
-:?:.тех::Напишите в технический раздел на форуме.
-:?:.техдс::Напишите в технический раздел официального дискорд сервера "Помощь по игре" - "тех-поддержка".
-:?:.функ::Данный функционал временно недоступен, приносим свои извинения.
-:?:.фун::Данный функционал отсутствует на нашем проекте. Оставьте свое предложение по добавлению на форуме в специальном разделе: Предложение по улучшению сервера - "Напишите ваше предложение тут".
-:?:.изв::Приносим свои извинения за предоставленные неудобства.
-:?:.рептик::Называние видео не соответствует форме подачи жалобы на игрока: Ваш статический ID, статический ID нарушителя, дата и время нарушения.
-:?:.ехп::Каждый час (у каждого игрока своё время) Вам дается EХP. Чтобы узнать, сколько Вам осталось до следующего PayDay, нажмите клавишу F2-Статистика.
-:?:.авто::Чтобы эвакуировать Ваше авто воспользуйтесь маркером Сервиса (Гаечный ключ на карте). 
-:?:.зп::Чтобы начислялся PayDay Вам нужно иметь свою банковскую карту и быть уволеным со всех работ. Оформить её можно в любом банке.
-:?:.ганлиц::Получить лицензию на оружие можно в LSPD или LSCSD. 
-:?:.канистра::Чтобы использовать канистру, возьмите её в руки, нажмите G на авто и заправить. 
-:?:.емс::К сожалению, администрация не поднимает и не лечит игроков, воспользуйтесь услугами ЕМС.
-:?:.подним::К сожалению, не видя всей ситуации мы не в праве лечить,поднимать или добивать игроков. Дождитесь сотрудников EMS либо же окончания таймера смерти. Приносим свои извинения за возможные неудобства. 
-:?:.жб::Администрация не может выдавать наказания и выносить какие-либо вердикты не видя всей ситуации с самого начала. Пожалуйста, если у Вас есть видеофиксация данного нарушения - оформите жалобу на форуме, спасибо большое за понимание.
-:?:.анак::Обратитесь, пожалуйста, в дискорд к администратору, который выдал вам наказание или рассмотрел жалобу.
-:?:.адз::Данный администратор сейчас занят другим делом или отошел от компьютера на короткое время, напишите ему в личные сообщения в дискорде.
-:?:.адс::Данный администратор сейчас отсутствует на сервере, напишите ему в личные сообщения в дискорде.
-:?:.погода::К сожалению, администрация не контролирует данный процесс. Погода меняется автоматически.
-:?:.неп::Не понял суть вашего обращения, опишите Вашу проблему/вопрос подробнее для максимально точного ответа, пожалуйста.
-:?:.донат::Обратитесь по почте - help@majestic-rp.ru.
-:?:.хп::Перезайдите в игру, либо купите таблетку у сотрудников EMS.
-:?:.ремонт::Для начала, Вам нужно купить запчасть для машины на любо АЗС, после чего открыть капот , нажать G > Починить замок/аккумулятор/залить масло. 
-:?:.ферм::На ферме для посадки каждого из растений нужны следующие навыки: Пшеница - 225 опыта. Картофель - 950 опыта. Капуста - 2000 опыта. Кукуруза - 3000 опыта. Тыква - 6200 опыта. Бананы - 10500 опыта.
-:?:.гос::Вы можете сдать авто на свалку. После сдачи вы получите 75% от гос. стоимости авто. Свалка отмечена на карте как перечеркнутый, красный круг.
-:?:.аним::Остановите анимацию. Нажмите X > Остановить анимацию или Backspace.
-:?:.ид::Укажите, пожалуйста, ID нарушителя.
-:?:.сто::Степень износа определенных деталей автомобиля можно узнать на автомастерской (иконка гаечного ключа с отверткой на карте).
-:?:.жба::Вы можете написать жалобу на форум, если не согласны с решением администратора.
-:?:.дон::Задонатить можно на нашем официальном сайте - majestic-rp.ru/donate
-:?:.бинок::Использовать бинокль можно переместив его в активный слот оружия и нажав ПКМ. Иногда он багается и нужно его убрать из активного слота, взять обратно и быстро нажать ПКМ.
-:?:.группа::Чтобы вместе работать на кооперативной работе вам необходимо пригались игроков через приложение "Группа" в телефоне.
-:?:.грибы::Чтобы собирать грибы вам надо приехать на точку "Грибы" 1/6 и взять в руки нож.
-:?:.гриб::Продать грибы можно на рынке.
-:?:.рын::Рынок находится в Лос-Сантосе на пляже рядом с качалкой, в Палето-Бэй и на ферме, иконка палатки. Там вы можете сдавать предметы с фермы, дровосека, грибника и рыбалки.
-:?:.оружрын::Боту на рынке можно сдать оружие только со 100% износом.
-:?:.новость::Придите лично в Weazel News. 
-:?:.ограб::Для старта требуется взять задание у NPC банды. Взлом двери осуществляется с помощью специальных предметов Отмычка — для простых замков (можно купить на рынке или скрафтить в мастерской). Набор опытного взломщика — для сложных замков (крафтится в мастерской). После проникновения можно отключить сигнализацию с помощью «Кусачек» (крафтятся в мастерской). Если сигнализация не отключена — полиция получает вызов.
-:?:.п::Всего доброго.
-:?:.нов::Следите за новостями сервера в официальном дискорде проекта. 
-:?:.ново::Следите за новостями в официальном дискорде проекта. 
-:?:.ник::Сменить ник или внешность Вы можете нажав - F2 > Магазин > Персонажа.
-:?:.банк::У нас на сервере есть 3 вида банковских карт: Standart, Premium, VIP. Standart карта стоит в обслуживании 500$ в месяц, снятия и переводы без комиссии до 500.000$ после превышения месечного лимита комиссия на вывод 5%(Максимум 20.000$), на перевод 4%(Максимум 20.000$), кэшбек в магазинах отсутствует. Premium карта стоит в обслуживании 25.000$ в месяц, снятия и переводы без комиссии до 2.500.000$ после превышения месечного лимита комиссия на вывод 4%(Максимум 15.000$), на перевод 3%(Максимум 15.000$), кэшбек в магазинах 1%, лимит кэшбека на одну операцию до 2.500$, месечный лимит кэшбека 50.000$. VIP карта стоит в обслуживании 75.000$ в месяц, снятия и переводы без комиссии до 20.000.000$ после превышения месечного лимита комиссия на вывод 3%(Максимум 20.000$), на перевод 2.5%(Максимум 20.000$), кэшбек в магазинах 3%, лимит кэшбека на одну операцию до 10.000$, месечный лимит кэшбека 150.000$. Деньги за обслуживание и лимиты снимаются каждое 1 число нового месяца.
-:?:.дублик::Чтобы сделать дубликат ключей от авто необходимо купить заготовку в магазине 24/7, затем нажать G на авто и сделать дубликат.
-:?:.клад::Чтобы сделать дубликат от кладовки, необходимо купить заготовку в магазине 24/7, затем через G передать дубликат нужному человеку.
-:?:.тел::Попробуйте купить телефон еще раз в магазине 24/7, деньги с вас не спишутся.
-:?:.подсел::Чтобы подселить игрока к себе в дом или же квартиру, стоя около дома, наведитесь на игрока и нажмите G, далее нажмите Подселить.
-:?:.краш2::Если у Вас есть доказательства краша - предоставьте его любому администратору в личные сообщения дискорда. Вас выпустят.
-:?:.замок::Вам необходимо купить "Дверной замок" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Починить дверной замок.
-:?:.акум::Вам необходимо купить "Аккумулятор" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Заменить аккумулятор.
-:?:.масло::Вам необходимо купить "Моторное масло" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Заменить масло.
-:?:.модел::Пункт "Прогрузка моделей" отвечает за быстроту прогрузки текстур при приближении к ним.
-:?:.бизограб::Чтобы ограбить бизнес, вам нужно: одеть маску, приобрести оружие и, придя в магазин в составе от 2 до 35 человек, навестись на NPC (продавца) огнестрелом (только один человек должен грабить). 
-:?:.спавн::Спавн новичков находится в Палето-Бей, Чумашах, Аэропорту и на Автовокзале. 
-:?:.кредит::Любые финансовые договоры (займы, кредиты и т.д) не относятся к ООС сделкам. Все подобные сделки игроки совершают на свой страх и риск. Администрация не несет ответственности и не является гарантом сделки.
-:?:.рем::Чтобы починить своё авто купите рем.комплект на любой АЗС. Через меню G почините Ваш автомобиль.
-:?:.сделка::Администрация не следит за сделками игроков, запишите видео на случай обмана, чтобы оставить жалобу на игрока на форуме. 
-:?:.имя::Ваше Имя Фамилия не подходит по правилам нашего сервера. Вам нужно сменить ник и написать в репорт повторно, если Ваш ник будет соблюдать правила сервера, то Вас выпустят.
-:?:.майка::Для того, чтобы купить майку под верхнюю одежду, вам нужно сначала купить элемент верхней одежды (например, пиджак). После этого вам буду доступны все майки, которые подходят под нее в разделе "Майки".
-:?:.унив::Что бы выполнить данное задание, вам нужно прийти в Университет на поле, там будет стоять NPC в голубых шортах и футболке. Нужно подойти к нему и нажать Е , что бы открылось диалоговое окно.
-:?:.вынос::Выносливость - навык выносливости повышается от подвижного образа жизни. Чем больше ты бегаешь, тем быстрее повышается навык. При низком навыке, персонаж не может прыгнуть 2 раза и падает. Соответственно повышение навыка влияет на длительность беспрерывного бега и количество прыжков, максимум на последнем уровне - 2.
-:?:.сила::Сила - навык силы повышается от физических нагрузок. Чем больше ты занимаешься в качалке (иконка бегущего человека на карте), тем быстрее повышается навык. От прокачки увеличивается сопротивление к урону от падения.
-:?:.дых::Дыхание - навык дыхания повышается от длительного нахождения под водой. Чем больше ты плаваешь, тем быстрее повышается навык. Соответственно повышение навыка влияет на длительность беспрерывного плавания под водой.
-:?:.вожден::Вождение - навык вождения повышается от времени, проведенного за рулем автомобиля. Чем больше ты водишь транспорт, тем быстрее повышается навык. От прокачки увеличивается управляемость транспортным средоством.
-:?:.полет::Полет - навык пилотирования повышается от времени, проведенного за воздушным транспортом. Чем больше ты летаешь на самолете или вертолете, тем быстрее повышается навык. Также навык можно повысив пройдя курсы в летной школе. Пройти их можно 1 раз в 24 часа, увелчение навыка от 1 занятия - 10, стоимость одного занятия - 2 000$. От прокачки навыка увеличивается стабильность полета и управляемость воздушным транспортом.
-:?:.скрытн::Скрытность - навык скрытности повышается от количества успешных уходов от погони (понижений уровня розыска). Чем чаще ты скрываешься от полиции, тем быстрее повышается навык. Ни на что на влияет
-:?:.стрельба::Стрельба - навык стрельбы повышается от времени, проведенного в перестрелках, либо тренировках. Чем лучше ты стреляешь и попадаешь, тем быстрее повышается навык. Рекомендуем тренироваться в специально отведенных для того местах, тире в оружейном магазине. От прокачки навыка увеличивается скорость перезарядки и перекатов, кучность стрельбы.
-:?:.лечу::Уже лечу к Вам на помощь.
-:?:.пом::Приветствую,сейчас помогу Вам, ожидайте.
-:?:.багзз::Чтобы восстановить прежнюю скорость, заедьте в зеленую зону и выедьте с нее.
-:?:.госдом::Чтобы продать дом в гос. стоимость, нужно подойти к двери и нажать Е. Вы получите 75% от его гос. цены. Если Вы невовремя оплатите налоги или забудете это сделать, дом слетит автоматически.
-:?:.майки::Для того, чтобы купить майку под верхнюю одежду, вам нужно сначала купить элемент верхней одежды (например, пиджак). После этого вам буду доступны все майки, которые подходят под нее в разделе "Майки".
-:?:.рыблиц::Получить лицензию на рыбалку вы можете в Мэрии. 
-:?:.погода::К сожалению администрация не контролирует данный процесс. Погода меняется автоматически. 
-:?:.реп::Пожалуйста, уточните свой вопрос подробнее. Администрация не летает на репорты по типу "админ тп", "админ можно поговорить", "помогите", "админ есть вопрос". Количество символов неограничено, вы можете полностью расписать Вашу проблему/вопрос.
-:?:.неувид::К сожалению администрация не может увидеть это нарушение. Пожалуйста, если у Вас есть видеофиксация данного нарушения - оформите жалобу на форуме, спасибо большое за понимание.
-:?:.кости::Чтобы играть в кости вам нужно купить их в любом 24/7. После того как вы купили кости, вы можете подойти к игроку.
-:?:.парк::Чтобы припарковать ТС, за рулем нажмите G - Припарковать.
-:?:.новичок::Путеводитель находится на спавнах новичков. Они обозначены на карте значком машущего человечка.
-:?:.да::Да. 
-:?:.нет::Нет. 
-:?:.нетп::Администрация не телепортирует игроков, Вам нужно добраться до места самостоятельно. На проекте достаточно способов, чтобы это сделать: такси, аренда транспорта, автосервисы.
-:?:.инв::Это баг инвентаря, предложите обменяться любому игроку и ваша проблема будет решена. Если по близости никого нет, обратитесь ещё раз в репорт и администрация Вам поможет. 
-:?:.арынок::Для того, чтобы выставить свое авто на продажу, Вам необходимо приехать на территорию авторынка, выбрать место и нажать на клавишу "G" - Авторынок - Выставить на продажу.
-:?:.толкать::Транспорт можно толкать, нажав G-толкать. Если такой функции нет, при наведении на авто, то этот транспорт толкать нельзя.
-:?:.несл::Администрация не может следить полностью за всем РП процессом, в случае нарушений от игроков - напишите репорт.
-:?:.счет::Чтобы узнать номер счета откройте инвентарь и наведитесь мышкой на банковскую карту. 
-:?:.пин::Чтобы восстановить пин-код отправляйтесь в банковское отделение, в меню смены нажмите "Восстановить".
-:?:.аут::Для подключения Google authenticator вам нужно в меню выбора персонажа открыть раздел настроек.
-:?:.х2::Теперь коины выдаются по выходным, по будням прокрутка рулетки за 5 часов игры.
-:?:.огр::Чтобы начать ограбление банка, вам нужно позвонить по номеру: 28121903. Для этого надо быть в крайм организации, и находится рядом с банком (как минимум вас должно быть 4 около банка, иначе не сможете). Для начала ограбления требуется "План ограблений", который выбирается в AirDrops или при ограблении бизнесов.Можно грабить 1 раз в день каждой огранизации.После того, как ограбление началось и банк получил красную иконку, надо прицелиться в бота и заполнить прогресс бар.Дальше будет большая дверь, что бы ее разблокировать, нужно пройти мини-игру со взломом. Для этого используем «Программатор ЭБУ» + «Кабель электронных дверей». Он продается у торговца на рынке. После взлома перед вами будет стоять стойка с деньгами. Далее идет 2-я дверь. Для ее взлома нам необходима «Ключ карта Fleeca» либо «Термитная установка».«Ключ карта Fleeca» выпадает с ботов при ограблении бизнесов, или на аир дропах.«Термитная установка» продается у пиротехника. С ее помощью дверь открывается за 2 минуты. 
-:?:.огр2::Для этого надо взять в руки один из предметов, чтобы открыть дверь. Но в хранилище есть ячейки, для взлома ячеек необходима «Дрель 1500w». Дрель крафтится у криминальных организаций и выпадает при смерти. После успешного прохождения мини-игры по взлому ячейки на пол падает награда.
-:?:.дрон::Дрон крафтится у силовых гос.структур и Weasel News. Пользоваться им могут соответственно эти же гос.структуры. Чтобы подняться-пробел, чтобы опуститься-shift. На E-тепловизор включить/выключить.
-:?:.аукц::На аукцион вы можете выставить авто/бизнес/дом/квартиру. Во время того, как вы выставляете лот, вы можете лишь ездить на авто. При продаже на акционе дома/квартиры-кладовка передаётся покупателю полностью.
-:?:.дрифт::Дрифт счётчик можно включить через F2 > Настройки > Дополнительно. Он появляется во время управляемого заноса и показывает, на сколько хорошо вы прошли поворот.На карте вы можете увидеть зоны, где можно дрифтить и попасть в список топ-дрифтеров. Для этого Вам обязательно дрифтить по отмеченной зоне. В противном случае очки не засчитаются.Покажите, кто здесь настоящий король дрифта!
-:?:.болгарка::Для того, чтобы распилить багажник нужно подойти к багажнику G - Нелегальное для авто - Распилить дверной замок. Открывается багажник и вы можете взять с него как коробки с материалами, так и коробки со снаряжением. Взломать можно не только гос.матовозки, но и крайм. Болгаркой нельзя взломать личный транспорт.
-:?:.неув::Не увидел нарушений, если у вас есть видеодоказательства - оставьте жалобу на форуме. 
-:?:.фор::Данное нарушение не подлежит рассмотрению через обращение, оставьте жалобу на форуме.
-:?:.форум::В связи с нагрузкой на сервер мы не можем рассмотреть вашу жалобу на игрока посредством обращения, пожалуйста, оставьте жалобу на форуме. Спасибо за понимание.
-:?:.фжб::Не могу рассмотреть из-за нарушений правил подачи. Автору репорт-жалобы необходимо указывать в названии видео: свой static, static нарушителя, время и дату. Измените название и продублируйте вашу репорт-жалобу.
-:?:.исч::Все транспортные средства исчезают через 60 минут, если с ними никак не взаимодействовать.
-:?:.фам::/c - IC чат, /cb - OOC чат. 
-:?:.фрак::/f - IC чат, /fb - OOC чат. 
-:?:.марк::/mark ПОХИЩЕНИЕ!!!
-:?:.спб::Если одно отделение ЕМС сильно загружено, чтобы избежать краши вас спавнит в другом, менее загруженном отделении.
-:?:.промо::Промокод можно ввести до 3 уровня командой /promo "промокод", награда за него будет выдана при достижении 3 уровня. Пригласивший получает 7500$. Приглашенный игрок получает: от обычного игрока - 10 000$ + 3 дня Platinum VIP, от медиа - 20 000$ + 7 дней Platinum VIP 
-:?:.перед::Все имущество вы передаете на свой страх и риск.
-:?:.оск::Жалобы в репорт на OOC оскорбление принимаем только тогда, если скриншот сделан в ту же минуту, что и ООС оскорбление в чате + обязательно на скрине должно быть присутствие нарушившего (видно его или статик)
-:?:.руда::Руда с шахты требуется только в семейных контрактах, продать ее нельзя.
-:?:.зак::Это регламентируется IC законами, изучить их можете в разделе Government на форуме: Majestic RolePlay Server Las Vegas - Организации - Государственные организации - Government.
-:?:.пузо::/asms  Вам нужно использовать анимацию в F2 - Анимации - позы - Лежать на животе. Функциональные "ползать" более не считаются за исполнение этого требования.{left 151}
-:?:.багреп::В случае нахождения бага оставьте свой баг-репорт в официальном дискорде проекта: Текстовые каналы - сообщить о баге.
-:?:.мед::За данным медиа партнером наблюдает PR ассистент, по этой причине я не могу выдавать наказание, т.к. вся ответственность за происходящее на этой ситуации автоматически переносится на PR ассистента.
-:?:.низк::У вас включен режим низкого качества в F2 - Настройки.
-:?:.зкайо::На острове имеется несколько точек захвата медицинских, военных, технических материалов. Для захвата Вам необходимо взять с собой маячки(Подберите цвета), если же у Вас маячки зелёного цвета Вы сможете захватить военные материалы, синего Вашей целью станут технически при наличии красных Вам откроется возможность захватить медицинские. Захват можно начать в радиусе 50м от точки погрузки, после активации маячка появится обозримая зона захвата, если выйти за зону захвата или все захватчики умрут, маячок уничтожается, точка переходит в спокойное состояние как до захвата. Не стоит забывать и про сигнализацию, если Вы её не выключите все госструктуры будут в момент оповещены и Вас будет ждать серьёзное сопротивление(Функционально на захват материалов это не повлияет). После захвата блип на карте красится в цвет организации захватчиков. Игроки смогут забирать материалы с точки и грузить их в личную/арендованную лодку - в городе перегружать в матовозку.
-:?:.перико::У всех силовых фракций появилась метка для телепортации, фракции EMS/WN/GOV лишены её. Отделение LSCSD в Сэнди-Шорс тоже не имеет метки. Каждая фракции телепортируется в одну точку на острове, таким путём и обратно. Однако Вы не сможете телепортироваться с точки другой фракции. Пример: Я из FIB и хочу сделать телепорт на территории LSCSD - У меня не выйдет. На острове, вблизи особняка и на его территории, есть машины, вертолёт и квадроциклы с ними может взаимодействовать лишь SANG, возможность заспавнить своё ТС также сохранена, для этого воспользуйтесь меткой. Также SANG стал обладателем ещё одного склада на Кайо-Перико, он аналогичен Вашему на форте. Если на форте будет заполнено 20.000 то и на острове тоже.
-:?:.сирена::Вышку можно взломать, не будет обновляться статус контроля точек(10 минут). Для взлома нужен "Программатор ЭБУ" и "Кабель радио сигналов". Кабель можно получить при ограблении магазина 24/7, выпадает(Шанс редко-средне), он одноразовый и после использования он пропадает. Взлом происходит в мини-игре. После удачного взлома, на мини карте не будет отображаться статус захвата точек для SANG(10 минут). После неудачного взлома, сразу срабатывает сирена. SANG могут восстановить работу вышки нажав "Е" на метке вышки.
-:?:.мусорки::Функциональные мусорки расположены по всему штату. Когда подходите к ней появляется подсказка о том, что с ней можно взаимодействовать нажатием E. Места расположения мусорок вы можете узнать на интерактивной карте - https://wiki.majestic-rp.ru/map/rubbish. 
-:?:.метал::Для поиска кладов нужно иметь металлоискатель и лопату. Их можно купить на рынке. Металлоискатель становится активным как только Вы берете его в руки. Когда он найдет сокровища, то будут происходить визуальные и звуковые оповещения. От зеленого цвета, до красного. Места расположения сокровищ вы можете узнать на интерактивной карте - https://wiki.majestic-rp.ru/map/treasure. 
-:?:.маяк::Маячки могут выпасть с "AirDrop" или же при ограблении 24/7. Шансы выпадения у всех маячков разный.
-:?:.зоо::Система животных. Могут спавниться различные животные, от крыс до оленей по всей карте. Некоторые виды животных можно разделать и получить мясо. Мясо можно жарить и употреблять в пищу. Домашних животных которые гуляют по карте, можно гладить.
-:?:.скин::Оружие появляется в донат инвентаре, его можно будет распылить. Однако при его применении невозможно дальнейшее распыление. Чтобы применить скин на оружие: F2 - Магазин - Cкины - Выбираете оружие и скин к нему - Применить, скин применяется ко всем оружиям выбранного типа. Скин привязывается к игроку, выбить оружие со скином/сбросить/обменять/продать - невозможно.
-:?:.инт::Популярные интерьеры на карте: "Особняк у виноградников" - открытый интерьер не имеющий функционала, расположен левее от центра карты. "Суд" - открытый интерьер не имеющий функционала, расположен неподалёку от LSPD. Зачастую применяется во время заседаний Верховного или же окружного суда. "Университет" - открытый интерьер не имеющий функционала, расположен неподалёку от Японской мафии. "Старый офис FIB" - открытый интерьер не имеющий функционала, расположен неподалёку от EMS.
-:?:.вот::Выборы активны с 10:00 - 10:00 по московскому времени. Проголосовать может каждый от 3-го уровня игрового персонажа, по принцыпу один голос на один аккаунт. голосование проходит в левом крыле Мэрии(На карте флаг USA).
-:?:.одворк:: Теперь при каждом устройстве на работу Вы получаете соответствующий комплект одежды. Он снимется автоматически при увольнении/прекращении работы. Если же у Вас мед комплект то Вам нужно пройти курс лечения.
-:?:.краш::Если у Вас есть доказательства краша - предоставьте их, либо если вы помните статический ID того, кто вас задерживал можете сообщить его. Я вас выпущу и верну в RP процесс.
-:?:.хол::"Холодный старт" - при запуске ТС издаёт характерный звук, другим функционалом не обладает.
-:?:.вак::От вакцины, выданной администрацией квест не будет засчитан, ожидайте появления лидера в ЕМС.
-:?:.бинд::Вы можете настроить бинд клавиш под себя в F2 - Настройки - Бинд клавиш.
-:?:.флаг::Командный режим боя в котором Вы сможете противостоять своим оппонентам в равных условиях. В этом режиме Вы можете поднимать оружие на "F"(По дефолту), а также купить себе оружие на заработанные во время матча деньги, для этого нажмите "B". Матч закончиться как только одна из команд потеряет все очки, скорость их потери/накопления зависит от кол-ва захваченных, Вашей командой, точек.
-:?:.лобби::Это Ваша игра созданная Вами для друзей или же обычных игроков, все правила настраиваете именно Вы. Для того что бы начать нужно: Дать название своему лобби(Графа "Название лобби"), выбрать один из трёх доступных режимов(Гонка вооружений/Бой на смерть/Захват флага), выбрать одну из карт. Далее Вы сможете установить пароль, если же не хотите видеть лишних игроков в своей игре. После всех первичных настроек Вам откроются дополнительные: Требование для победы, оружие, время суток, одежда(Если выбрать "Нет" игрок временно сменит одежду в матче), погодные условия, авто-баланс команд(В случае захвата флага) и др. Только помните за создание лобби нужно будет заплатить от 1.250$ до 2.800$.
-:?:.дрзона::Дрифт зона отмечена на карте как иконка падающей кометы, пример - одна из зон около LS Vagos.
-:?:.заж::Чтобы взломать зажигание сядьте за руль т.с., нажмите G - Взломать зажигание. КД на взлом - 1 час.
-:?:.стрим::Режим стримера заменяет символы на звездочки, для обычных игроков он бесполезен. Выключается в F2 - Настройки.
-:?:.пар::Положите парашют в быстрый слот, затем в полете нажмите на 1, 2 или 3 (зависит от слота), после этого ЛКМ, парашют откроется.
-:?:.вод::Администрация не достает автомобили из воды, а лишь удаляет, чтобы вы могли ее заспавнить. Вам необходимо самостоятельно добраться до автосервиса/аренды т.с или до нужного вам места, например, вы можете вызвать такси.
-:?:.бенз::Администрация не заправялет т.с. игроков. Вы можете вызвать такси и добраться до нужного вам места или приобрести канистру, чтобы в дальнейшем доехать до АЗС.
-:?:.удал::Администрация не удаляет т.с. игроков. Исключение: т.с. утонуло и не исчезло.
-:?:.динв::F2 - Магазин - Предметы.
-:?:.пред::/asms Выключите музыку, вы в зеленой зоне.{left 37}
-:?:.кв::Текущий квест отображается над таймеров Majestic Coins, если его нет - нажмите F6.
-:?:.кмб::Чтобы устроиться в силовую гос. структуру необходимо получить военный билет. Для этого надо устроиться в SANG и пройти КМБ. Иконка зеленого самолета на карте. Подробнее уточните у старшего состава фракции.
-:?:.нарк::Пакетики Blue и White никак не получить, функционал как у Green, только разные эффекты.
-:?:.алис::Чтобы выключить GPS ассистента нажмите F2 - Настройки и выключите GPS Ассистент.
-:?:.верт::Веротолеты продаются в салоне недалеко от аэропорта.
-:?:.поход::Изменить походу и эмоции лица можно в  F2 - Настройки - Главное.
-:?:.багаж::Чтобы вылезти из багажника нажмите на "E".
-:?:.нал::Чтобы оплатить налоги на дом необходимо открыть приложение "Мой дом" в планшете.
+:?:.Г§Г ГЄГ°::/asms  Г‡Г ГЄГ°Г®Г©ГІГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ ГЁ Г®ГІГЄГ°Г®Г©ГІГҐ Г±Г­Г®ГўГ , ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ . {left 51}
+; ГЋГІГўГҐГІГ»
+:?:.ГўГ§Г«Г®Г¬::Г’ГҐГЇГҐГ°Гј Г¤Г«Гї ГўГ§Г«Г®Г¬Г  Г§Г Г¦ГЁГЈГ Г­ГЁГї ГІГ°Г Г­Г±ГЇГ®Г°ГІГ  ГЁГЈГ°Г®ГЄГ®Гў ГўГ¬ГҐГ±ГІГ® ГЇГ°ГҐГ¤Г¬ГҐГІГ  "ГЋГІГўВёГ°ГІГЄГ " ГІГ°ГҐГЎГіГҐГІГ±Гї "ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“".
+:?:.ГўГЁГ§::Г‚ГЁГ§ГіГ Г«ГјГ­Г»Г© ГЎГ ГЈ, ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Г­Г  Г±ГҐГ°ГўГҐГ°.
+:?:.ГЁГ­ГЈГ Г«ГїГІГ®Г°::ГЉГ Г°Г¬Г Г­Г­Г»Г© ГЁГ­ГЈГ Г«ГїГІГ®Г° - ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. Г„ГҐГ©Г±ГІГўГіГҐГІ ГЄГ ГЄ green - ГўГ®Г±Г±ГІГ Г­Г ГўГ«ГЁГўГ ГѕГІ Г§Г¤Г®Г°Г®ГўГјГҐ Гў ГІГҐГ·ГҐГ­ГЁГҐ Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®ГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ.
+:?:.ГЄГ°ГҐГ¬::ГЉГ°ГҐГ¬-Г¬Г Г±ГЄГ  - ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. ГЌГ  ГўГ°ГҐГ¬Гї Г¤ГҐГ©Г±ГІГўГЁГї ГЅГґГґГҐГЄГІГ  Г­ГҐ ГЇГ®Г§ГўГ®Г«ГїГҐГІ Г±ГўГҐГ°ГЁГІГј ГґГ®ГІГ®Г°Г®ГЎГ®ГІ ГЁ ГіГўГЁГ¤ГҐГІГј ГўГ Гё Г­ГЁГЄГ­ГҐГ©Г¬ Г­Г Г¤ ГЈГ®Г«Г®ГўГ®Г© ГІГҐГ¬, ГЄГІГ® ГЇГ®Г§Г¤Г®Г°Г®ГўГ Г«Г±Гї Г± ГўГ Г¬ГЁ. Г‡Г Г¬ГҐГ­ГїГҐГІ Г±Г®ГЎГ®Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« Г¬Г Г±ГЄГЁ. Г‘Г°Г®ГЄ Г¤ГҐГ©Г±ГІГўГЁГї - 30 Г¬ГЁГ­ГіГІ.
+:?:.Г±ГЁГЈГ­Г Г«ГЄГ ::ГЂГўГІГ®Г±ГЁГЈГ­Г Г«ГЁГ§Г Г¶ГЁГї - ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІГ±Гї Г­Г  ГўГ Гё Г«ГЁГ·Г­Г»Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ. ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ®, ГЄГ ГЄ ГўГ ГёГЁГ¬ Г ГўГІГ® Г§Г ГўГ«Г Г¤ГҐГҐГІ ГІГ®ГІ, Гі ГЄГ®ГЈГ® Г­ГҐГІ ГЄ Г­ГҐГ¬Гі Г¤Г®Г±ГІГіГЇГ , ГўГ Г¬ Г­Г  ГІГҐГ«ГҐГґГ®Г­ ГЇГ°ГЁГ¤ГҐГІ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ Г®ГЎ ГЅГІГ®Г¬.
+:?:.ГЄГ Г±ГІГҐГІ::Г‘ГІГ Г«ГјГ­Г®Г© ГЄГ Г±ГІГҐГІ - ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. Г€Г±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї ГЄГ ГЄ Г®Г°ГіГ¦ГЁГҐ. ГЏГ°ГЁ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГЁ ГіГ¤Г Г° ГўГ»Г§Г»ГўГ ГҐГІ ГЄГ®Г­ГІГіГ§ГЁГѕ Гі ГўГ ГёГҐГЈГ® ГЇГ°Г®ГІГЁГўГ­ГЁГЄГ .
+:?:.ГЈГ®Г°Г­::Г‚Г®Г§Г¤ГіГёГ­Г»Г© ГЈГ®Г°Г­- ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. Г€Г±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї ГЁГ§ ГЁГ­ГўГҐГ­ГІГ Г°Гї ГЁ ГЁГ¬ГҐГҐГІ ГЇГ°Г®Г¶ГҐГ­ГІГ» ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї. Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГҐ ГўГ»Г§Г»ГўГ ГҐГІ ГЅГґГґГҐГЄГІ "ГЈГ«ГіГµГ®ГІГ " Гі ГўГ±ГҐГµ ГўГ®ГЄГ°ГіГЈ. Г“ Г«ГѕГ¤ГҐГ© Г±Г®ГўГ±ГҐГ¬ ГЎГ«ГЁГ§ГЄГ® ГІГ ГЄГ¦ГҐ ГЇГ°Г®ГЁГЈГ°Г ГҐГІГ±Гї Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г Гї Г Г­ГЁГ¬Г Г¶ГЁГї Г®ГЈГ«ГіГёГҐГ­ГЁГї.
+:?:.Г¤Г°Г®Г­Г±ГЄГ Г­::Г„Г°Г®Г­ Г‘ГЄГ Г­ГҐГ° - ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. Г€Г¬ГҐГҐГІ ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« Г®ГЎГ»Г·Г­Г®ГЈГ® ГЈГ°Г Г¦Г¤Г Г­Г±ГЄГ®ГЈГ® Г¤Г°Г®Г­Г  (ГЎГҐГ§ ГІГҐГЇГ«Г®ГўГЁГ§Г®Г°Г ) Г­Г® Г± Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г®Г© ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГјГѕ Г®ГІГ¬ГҐГ·Г ГІГј ГўГ±ГҐГµ Г«ГѕГ¤ГҐГ© ГўГ®ГЄГ°ГіГЈ Г­Г  Г¬ГЁГ­ГЁГЄГ Г°ГІГҐ Гі ГўГ Г± ГЁ ГўГ ГёГҐГ© ГЈГ°ГіГЇГЇГ».
+:?:.Г§Г Г¬Г®ГЄГёГ®ГЄ::ГЌГ ГЎГ®Г° Г¤ГўГҐГ°Г­Г»Гµ ГёГ®ГЄГҐГ°Г®Гў - ГіГ­ГЁГЄГ Г«ГјГ­Г»Г© ГЇГ°ГҐГ¤Г¬ГҐГІ ГЁГ§ Battle Pass. Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІГ±Гї Г­Г  ГўГ Гё Г«ГЁГ·Г­Г»Г© Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј. ГЏГ°ГЁ ГЇГ®ГЇГ»ГІГЄГЁ Г±ГҐГ±ГІГј Гў ГўГ Гё Г§Г ГЄГ°Г»ГІГ»Г© Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј ГЁГЈГ°Г®ГЄ ГЎГҐГ§ Г¤Г®Г±ГІГіГЇГ  ГЇГ®Г«ГіГ·ГЁГІ ГіГ°Г®Г­ ГЁ Г Г­ГЁГ¬Г Г¶ГЁГѕ ГіГ¤Г Г°Г  ГІГ®ГЄГ®Г¬. 
+:?:.ГЎГ ГЈГўГ®Г©Г±::ГЌГ Г¦Г¬ГЁГІГҐ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГ  ГўГ®Г©Г±Г  - Г§Г ГЎГ«Г®ГЄГЁГ°ГіГ©ГІГҐ Г¤Г«Гї ГўГ±ГҐГµ ГЁ Г±Г­Г®ГўГ  Г°Г Г§ГЎГ«Г®ГЄГЁГ°ГіГ©ГІГҐ. Г‚ Г±Г«ГіГ·Г ГҐ, ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г®Г±ГІГ Г«Г Г±Гј, ГІГ® ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі.
+:?:.Г±ГІГ ГўГЄГ ::ГђГ Г±Г·ВёГІ Г±ГІГ ГўГЄГЁ Г®ГЎГ»Г·Г­Г® ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІ Гў ГІГҐГ·ГҐГ­ГЁГҐ 6-ГІГЁ Г·Г Г±Г®Гў. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГіГЇГ°Г ГўГ«ГїГҐГІ Г°Г Г±Г±Г·ГҐГІГ®Г¬.
+:?:.ГЄГ«ГўГ«::ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 5-ГЈГ® ГіГ°Г®ГўГ­Гї: 500 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 10-ГЈГ® ГіГ°Г®ГўГ­Гї: 1000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 15-ГЈГ® ГіГ°Г®ГўГ­Гї: 2000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 20-ГЈГ® ГіГ°Г®ГўГ­Гї: 3000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 25-ГЈГ® ГіГ°Г®ГўГ­Гї: 4000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 30-ГЈГ® ГіГ°Г®ГўГ­Гї: 5000 MC. ГЉГ Г¦Г¤Г»Г© Г±Г«ГҐГ¤ГіГѕГ№ГЁГ© ГіГ°Г®ГўГҐГ­Гј ГЇГ®Г±Г«ГҐ 30-ГЈГ® Г‚Г» ГЎГіГ¤ГҐГІГҐ ГЇГ®Г«ГіГ·Г ГІГј 1500 MC. 
+:?:.ГЄГўГҐГ±ГІ::ГЌГ  Г±ГҐГ°ГўГҐГ°ГҐ Г¤Г®Г±ГІГіГЇГ­Г» ГЊГЁГ°Г®ГўГ»ГҐ ГЁ Г‹ГЁГ·Г­Г»ГҐ ГЄГўГҐГ±ГІГ». ГЋГ§Г­Г ГЄГ®Г¬ГЁГІГјГ±Гї Г± Г­ГЁГ¬ГЁ Г¬Г®Г¦Г­Г® Г­Г  Г°Г»Г­ГЄГҐ (ГЌГ  ГЄГ Г°ГІГҐ Г®ГЎГ®Г§Г­Г Г·ГҐГ­ ГЄГ ГЄ "ГЉГ°Г Г±Г­Г»Г© ГўГ®ГЇГ°Г®Г±"). ГЉГўГҐГ±ГІГ» Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐГ¬. Г‹ГЁГ·Г­Г»ГҐ ГЄГўГҐГ±ГІГ» ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ°Г®ГµГ®Г¤ГЁГІГј Г­ГҐГ®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г»Г© Г±Г°Г®ГЄ, Г­Г®, ГҐГ±Г«ГЁ Г‚Г» Г§Г ГµГ®ГІГЁГІГҐ ГіГ·Г Г±ГІГўГ®ГўГ ГІГј Гў ГЊГЁГ°Г®ГўГ®Г¬ ГЄГўГҐГ±ГІГҐ ГЁ ГЇГ®Г«ГіГ·ГЁГІГј Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ ГЎГ®Г­ГіГ±Г», ГІГ® Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЇГ®ГІГ®Г°Г®ГЇГЁГІГјГ±Гї ГўГ»ГЇГ®Г«Г­ГЁГІГј Г«ГЁГ·Г­Г»Г© ГЄГўГҐГ±ГІ. Г’Г®Г«ГјГЄГ® 5 Г«ГіГ·ГёГЁГµ ГЁГЈГ°Г®ГЄГ®Гў Г±Г¬Г®ГЈГіГІ ГЇГ®ГЇГ Г±ГІГј Гў ГІГ®ГЇ 3 ГЁ Г§Г Г«ГіГІГ ГІГј Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ ГЎГ®Г­ГіГ±Г». - ГЉГ Г¦Г¤ГіГѕ Г­ГҐГ¤ГҐГ«Гѕ Г¤Г®Г±ГІГіГЇГ­Г® ГЇГ® 3 Г«ГЁГ·Г­Г»Гµ ГЁ Г¬ГЁГ°Г®ГўГ»Гµ ГЄГўГҐГ±ГІГ . - ГЌГҐГЄГ®ГІГ®Г°Г»ГҐ ГЄГўГҐГ±ГІГ» ГЇГ® ГІГЁГЇГі ГЁГ­ГЄГ Г±Г ГІГ®Г°Г /Г¬ГіГ±Г®Г°Г№ГЁГЄГ /ГЇГ®Г·ГІГ Г«ГјГ®Г­Г  Г¬Г®Г¦Г­Г® ГўГ»ГЇГ®Г«Г­ГїГІГј Гў 2-ГҐГ¬ ГЁ ГЎГ®Г«ГҐГҐ, Г§Г Г±Г·ГЁГІГ»ГўГ ГІГј ГЎГіГ¤ГҐГ¬ ГўГ±ГҐГ¬.
+:?:.ГґГҐГ¤::ГЌГ  ГЇГҐГ°ГўГ®Г¬ ГЅГІГ Г¦ГҐ Г±ГІГ®ГЁГІ NPC Гі ГЄГ®ГІГ®Г°Г®ГЈГ® Г¬Г®Г¦Г­Г® ГўГ§ГїГІГј Г§Г Г¤Г Г­ГЁГҐ. Г—ГІГ®ГЎГ» Г®ГІГЎГ»ГІГј Г±Г°Г®ГЄ Гў ГґГҐГ¤ГҐГ°Г Г«ГјГ­Г®Г© ГІГѕГ°ГјГ¬ГҐ, Г­ГіГ¦Г­Г® ГўГ»ГЇГ®Г«Г­ГїГІГј Г§Г Г¤Г Г·ГЁ. ГЌГ ГЇГ°ГЁГ¬ГҐГ° ГЇГ®Г¬Г»ГІГј ГІГіГ Г«ГҐГІ - Г‚ Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®ГҐ ГўГ°ГҐГ¬Гї ГІГѕГ°ГјГ¬Г  Г§Г ГЄГ°Г»ГўГ ГҐГІ ГЄГ«ГҐГІГЄГЁ Г­Г  5 Г¬ГЁГ­ГіГІ, Г±Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®, Гў ГЅГІГ® ГўГ°ГҐГ¬Гї Г®ГІГЎГ»ГІГј Г±Г°Г®ГЄ Г­ГҐГ«ГјГ§Гї: -- ГЋГІГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 00 Г¬ГЁГ­ГіГІ -- Г‡Г ГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 20 Г¬ГЁГ­ГіГІ Г­Г  5 Г¬ГЁГ­ГіГІ -- ГЋГІГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 25 Г¬ГЁГ­ГіГІ -- Г‡Г ГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 55 Г¬ГЁГ­ГіГІ Г­Г  5 Г¬ГЁГ­ГіГІ.
+:?:.Г±ГҐГ©Гґ::Г‡Г ГЄГ°Г»ГўГ ГІГј ГЁГ­ГІГҐГ°ГґГҐГ©Г± Г±ГҐГ©ГґГ  Г¬Г®Г¦Г­Г® ГІГ®Г«ГјГЄГ® Г­Г  ESC. Г‚ Г±ГҐГ©Гґ Г¬Г®Г¦Г­Г® ГЄГ«Г Г±ГІГј Г¤Г® 5 Г¬ГЁГ«Г«ГЁГ®Г­Г®Гў. Г„ГҐГ­ГјГЈГЁ ГЁГ¤ГіГІ ГЁГ§ Г­Г Г«ГЁГ·ГЄГЁ. ГЌГҐГ«ГјГ§Гї ГЇГ°Г®Г¤Г ГІГј Г¤Г®Г¬Г  Гў ГЈГ®Г±, ГЇГ°Г®Г¤Г ГІГј ГЁГЈГ°Г®ГЄГі, ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГј Г®ГЎГ¬ГҐГ­, ГўГ»Г±ГІГ ГўГЁГІГј Г­Г  Г ГіГЄГ¶ГЁГ®Г­, ГҐГ±Г«ГЁ Гў Г±ГҐГ©ГґГҐ ГҐГ±ГІГј Г¤ГҐГ­ГјГЈГЁ. Г‘Г­Г Г·Г Г«Г  ГІГ°ГҐГЎГіГҐГІГ±Гї ГЁГµ Г§Г ГЎГ°Г ГІГј. Г…Г±Г«ГЁ Г¤Г®Г¬ Г±Г«ГҐГІГ ГҐГІ ГЇГ® Г­Г Г«Г®ГЈГ Г¬ - Г¤ГҐГ­ГјГЈГЁ ГЁГ§ Г±ГҐГ©ГґГ  ГЁГЈГ°Г®ГЄ ГЇГ®Г«ГіГ·Г ГҐГІ Гў Г­Г Г«ГЁГ·ГЄГі. 
+:?:.Г°Г Г¶ГЁГї::ГЏГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ Г°Г Г¶ГЁГѕ Г¬Г®Г¦Г­Г® Гў Г«ГѕГЎГ®Г¬ Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Гў Г°Г Г§Г¤ГҐГ«ГҐ В“ГќГ«ГҐГЄГІГ°Г®Г­ГЁГЄГ В”, Г§Г  ГўГ±ГҐГ¬ГЁ ГґГ°Г ГЄГ¶ГЁГїГ¬ГЁ Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г¤ГЁГ ГЇГ Г§Г®Г­ Г·Г Г±ГІГ®ГІ, ГЄГ®ГІГ®Г°Г»Г© Г­ГҐ Г¬Г®ГЈГіГІ Г§Г Г­ГїГІГј. Г‚ F2 -> ГЌГ Г±ГІГ°Г®Г©ГЄГЁ Г¬Г®Г¦Г­Г® ГЁГ§Г¬ГҐГ­ГЁГІГј ГѓГ°Г®Г¬ГЄГ®Г±ГІГЁ Г°Г Г¶ГЁГЁ.
+:?:.Г«ГҐГ±Г®Г°ГіГЎ::Г“Г±ГІГ°Г ГЁГўГ ГІГјГ±Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ±ГҐ Гі ГІГ®ГЈГ® Г¦ГҐ NPC Г®ГЄГ®Г«Г® ГЏГ Г«ГҐГІГ®-ГЃГҐГ©. Г„Г«Гї Г­Г Г·Г Г«Г  Г°Г ГЎГ®ГІГ» Г‚Г Г¬ ГЇГ®Г­Г Г¤Г®ГЎГЁГІГјГ±Гї В“Г’Г®ГЇГ®Г°В”, ГЄГіГЇГЁГІГј ГҐГЈГ® Г¬Г®Г¦Г­Г® Гі NPC Г­Г  ГђГ»Г­ГЄГҐ. ГЏГ°ГЁГ­Г¶ГЁГЇ Г°Г ГЎГ®ГІГ» Г±ГµГ®Г¦ГЁГ© Г± ГѓГ°ГЁГЎГ­ГЁГЄГ Г¬ГЁ, ГІГ®Г·ГЄГЁ Г¤Г«Гї Г±Г°ГіГЎГ  Г¤ГҐГ°ГҐГўГјГҐГў Г°Г Г§ГЎГ°Г®Г±Г Г­Г» ГЇГ® ГўГ±ГҐГ© ГЄГ Г°ГІГҐ, ГЄГ Г¦Г¤Г»Г© ГіГ°Г®ГўГҐГ­Гј ГЇГ°ГЁГўГїГ§Г Г­ ГЄ Г±ГўГ®Г© ГІГ®Г·ГЄГҐ Г±ГЎГ®Г°Г . Г„Г°ГҐГўГҐГ±ГЁГ­Гі Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г ГІГј Г­Г  Г°Г»Г­ГЄГҐ. 
+:?:.Г°Г Г¶::Г„Г«Гї ГЁГ±ГЇГ®Г«ГјГ§ГўГ Г­ГЁГї: Г‚Г®Г§ГјГ¬ГЁГІГҐ Г°Г Г¶ГЁГѕ > Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±ГІГ®ГІГі >ГЌГ Г¦Г¬ГЁГІГҐ ГҐГ­ГІГҐГ° >Г‡Г Г¦Г¬ГЁГІГҐ "M" ГЁ ГЎГіГ¤ГҐГІ Г±Г«Г»ГёГ­Г®.
+:?:.ГІГ Г©Г¬::ГќГІГ® ГўГЁГ§ГіГ Г«ГјГ­Г»Г© ГЎГ ГЈ ГІГ Г©Г¬ГҐГ°Г , Г·Г Г±Г» ГЁГ¤ГіГІ ГЁ ГЄГ®ГЁГ­Г» ГўГ Г¬ Г­Г Г·ГЁГ±Г«ГїГІ ГЇГ® ГЁГ±ГІГҐГ·ГҐГ­ГЁГѕ ГўГ°ГҐГ¬ГҐГ­ГЁ. 
+:?:.Г±ГЁГ¤::Г“ГЄГ Г¦ГЁГІГҐ static ID Г­Г Г°ГіГёГЁГІГҐГ«Гї.
+:?:.Г¬ГЁГ­ГЁ::ГЏГ°Г®ГўГҐГ°ГјГІГҐ, ГўГЄГ«ГѕГ·ГҐГ­Г  Г«ГЁ Г¬ГЁГ­ГЁ-ГЄГ Г°ГІГ  Гў Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ F2. ГЋГІГЄГ«ГѕГ·ГЁГІГҐ Г±ГўГҐГ°ГµГёГЁГ°Г®ГЄГЁГ© Г°ГҐГ¦ГЁГ¬ Гў Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ F2 ГЁ ГЇГ®Г«Г­Г®Г±ГІГјГѕ ГЇГҐГ°ГҐГ§Г ГЇГіГ±ГІГЁГІГҐ ГЁГЈГ°Гі. ГЉГ®ГЈГ¤Г  ГўГ» Г­Г ГµГ®Г¤ГЁГІГҐГ±Гј Гў ГЁГЈГ°ГҐ, ГўГ Г¬ Г­ГіГ¦Г­Г® ГўГ®Г©ГІГЁ Гў ГЁГЈГ°Г®ГўГ®ГҐ Г¬ГҐГ­Гѕ, Г­Г Г¦Г Гў ГЄГ«Г ГўГЁГёГі "Esc". Г‚ ГЁГЈГ°Г®ГўГ®Г¬ Г¬ГҐГ­Гѕ Г± ГЇГ®Г¬Г®Г№ГјГѕ Г±ГІГ°ГҐГ«Г®ГЄ ГўГ«ГҐГўГ® ГЁ ГўГЇГ°Г ГўГ® ГЇГҐГ°ГҐГ©Г¤ГЁГІГҐ ГЄ ГЇГіГ­ГЄГІГі В«ГЌГ Г±ГІГ°Г®Г©ГЄГЁВ», Г§Г ГІГҐГ¬ Г­Г Г¦Г¬ГЁГІГҐ ГЄГ«Г ГўГЁГёГі В«Г‚ГўГ®Г¤В». ГЏГҐГ°ГҐГ©Г¤ГЁГІГҐ Гў Г±ГІГ°Г®ГЄГі В«Г‚ГЁГ¤ГҐГ®В» Гў Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ ГЁ Г ГЄГІГЁГўГЁГ°ГіГ©ГІГҐ ГҐГЈГ®, Г­Г Г¦Г Гў ГЄГ«Г ГўГЁГёГі В«EnterВ». Г‚ Г°Г Г§Г¤ГҐГ«ГҐ В«Г‚ГЁГ¤ГҐГ®В» ГіГ±ГІГ Г­Г®ГўГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ В«Г‚ГЄГ«.В» Г¤Г«Гї ГўГҐГ°ГµГ­ГҐГЈГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г­Г ГЇГ°Г®ГІГЁГў Г±ГІГ°Г®ГЄГЁ В«ГђГ Г¤Г Г°В».
+:?:.ГІГҐГ±ГІ::Г‡Г Г©Г¤ГЁГІГҐ Гў ГЁГ­ГІГҐГ°ГјГҐГ° Г¬Г Г°ГЄГҐГІГЇГ«ГҐГ©Г±Г  -> Г­Г Г¦Г¬ГЁГІГҐ Г… -> ГўГ»ГЎГҐГ°ГЁГІГҐ ГЄГ ГІГҐГЈГ®Г°ГЁГѕ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ->  ГўГ»ГЎГҐГ°ГЁГІГҐ Г«ГѕГЎГ®Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ ->  ГІГҐГ±ГІ Г¤Г°Г Г©Гў. 
+:?:.Г Г°ГҐГ­::Г—ГІГ®ГЎГ» Г®ГІГЄГ Г§Г ГІГјГ±Гї Г®ГІ Г Г°ГҐГ­Г¤Г» ГўГ Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г­Г ГµГ®Г¤ГЁГІГ±Гї Г®ГЄГ®Г«Г® Г Г°ГҐГ­Г¤Г®ГўГ Г­Г­Г®ГЈГ® Г ГўГІГ® - Г­Г ГўГҐГ±ГІГЁГІГј Г­Г  Г ГўГІГ® - G - Г®ГІГЄГ Г§Г ГІГјГ±Гї Г®ГІ Г Г°ГҐГ­Г¤Г».
+:?:.ГЇГіГІ::Г‚Г±Гѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ (ГЄГ®Г¬Г Г­Г¤Г»/Г® ГґГ°Г ГЄГ¶ГЁГїГµ, Г°Г ГЎГ®ГІГ Гµ ГЁ ГІГ ГЄ Г¤Г Г«ГҐГҐ) Г¬Г®Г¦Г­Г® ГіГ§Г­Г ГІГј Г­Г  ГґГ®Г°ГіГ¬ГҐ majestic-rp.ru - Г°Г Г§Г¤ГҐГ« "ГЏГіГІГҐГўГ®Г¤ГЁГІГҐГ«Гј Г¤Г«Гї Г­Г®ГўГЁГ·ГЄГ®Гў".
+:?:.ГіГўГ Г«::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г­ГЁГ·ГҐГ¬ Г­ГҐ Г¬Г®Г¦ГҐГ¬ ГЇГ®Г¬Г®Г·Гј, ГіГўГ®Г«ГјГ­ГїГҐГ¬ ГІГ®Г«ГјГЄГ® Гў Г±Г«ГіГ·Г ГҐ, ГҐГ±Г«ГЁ Гі ГґГ°Г ГЄГ¶ГЁГЁ Г­ГҐГІ Г«ГЁГ¤ГҐГ°Г . Г„Г®Г¦Г¤ГЁГІГҐГ±Гј Г±ГўГ®ГҐГЈГ® Г«ГЁГ¤ГҐГ°Г /Г§Г Г¬ГҐГ±ГІГЁГІГҐГ«ГҐГ©.
+:?:.Г¬Г Г©ГЄГЁ::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГіГЇГЁГІГј Г¬Г Г©ГЄГі ГЇГ®Г¤ ГўГҐГ°ГµГ­ГѕГѕ Г®Г¤ГҐГ¦Г¤Гі, ГўГ Г¬ Г­ГіГ¦Г­Г® Г±Г­Г Г·Г Г«Г  ГЄГіГЇГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ ГўГҐГ°ГµГ­ГҐГ© Г®Г¤ГҐГ¦Г¤Г» (Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГЇГЁГ¤Г¦Г ГЄ). ГЏГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® ГўГ Г¬ ГЎГіГ¤Гі Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐ Г¬Г Г©ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ ГЇГ®Г¤ Г­ГҐГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ "ГЊГ Г©ГЄГЁ".
+:?:.ГЄГіГ±::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ. ГЉГіГ±Г Г·ГЄГЁ Г­ГіГ¦Г­Г» Г¤Г«Гї ГўГ§Г«Г®Г¬Г  ГЄГ Г¬ГҐГ°. Г€Гµ Г¬Г®Г¦Г­Г® ГЄГіГЇГЁГІГј Гі NPC-Г¬ГҐГµГ Г­ГЁГЄГ  Yongsheng Li Г­Г  Г°Г»Г­ГЄГҐ, Г  ГІГ ГЄ Г¦ГҐ Г®Г­ГЁ ГҐГ±ГІГј Гў ГЇГ°ГҐГ¤Г¬ГҐГІГ Гµ AirDrop. ГЉГіГ±Г Г·ГЄГЁ Г¬Г®Г¦Г­Г® ГЁГ§ГєГїГІГј.
+:?:.Г°Г Г¤::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ. ГђГ Г¤Г Г°-Г¤ГҐГІГҐГЄГІГ®Г° Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІ ГЄГ Г¬ГҐГ°Г» ГЄГ®Г­ГІГ°Г®Г«Гї Г±ГЄГ®Г°Г®Г±ГІГЁ Г­Г  ГЄГ Г°ГІГҐ ГЇГ°ГЁ Г¤ГўГЁГ¦ГҐГ­ГЁГЁ Г­Г  ГІГ°Г Г­Г±ГЇГ®Г°ГІГҐ. ГЏГ°ГҐГ¤Г¬ГҐГІ Г¬Г®Г¦Г­Г® Г±ГЄГ°Г ГґГІГЁГІГј Гў Г¬Г Г±ГІГҐГ°Г±ГЄГЁГµ. ГђГ Г¤Г Г°-Г¤ГҐГІГҐГЄГІГ®Г° Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј ГЁГ§ГєГїГІ.
+:?:.ГЄГ Г¬ГҐГ°Г ::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ.ГЉГ Г¬ГҐГ°Г  ГЄГ®Г­ГІГ°Г®Г«Гї Г±ГЄГ®Г°Г®Г±ГІГЁ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї Г¤Г«Гї ГіГ±ГІГ Г­Г®ГўГЄГЁ ГЄГ Г¬ГҐГ°Г» Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ Г¬ГЁ Government. ГЉГ°Г ГґГІГЁГІГ±Гї Г§Г  ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГҐ Г¬Г ГІГҐГ°ГЁГ Г«Г» ГЈГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»Г¬ГЁ Г±ГІГ°ГіГЄГІГіГ°Г Г¬ГЁ. ГЏГ°ГҐГ¤Г¬ГҐГІ Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј ГЁГ§ГєГїГІ ГЁ ГўГ»ГЇГ Г¤Г ГҐГІ ГЇГ°ГЁ Г±Г¬ГҐГ°ГІГЁ.
+:?:.ГЄГ Г¬::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ.ГЉГ Г¬ГҐГ°Г» Г¬Г®ГЈГіГІ ГЎГ»ГІГј ГіГ­ГЁГ·ГІГ®Г¦ГҐГ­Г» ГЁГЈГ°Г®ГЄГ Г¬ГЁ, Г±Г®Г±ГІГ®ГїГ№ГЁГ¬ГЁ Гў ГЎГ Г­Г¤Г Гµ Г± 14:00 Г¤Г® 01:00. Г„Г«Гї Г±ГІГ Г°ГІГ  ГўГ§Г«Г®Г¬Г  Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г­Г Г©ГІГЁ ГіГ·Г Г±ГІГ®ГЄ Г± ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г­Г»Г¬ГЁ ГЄГ Г¬ГҐГ°Г Г¬ГЁ, ГЁГ¬ГҐГї Гў ГЁГ­ГўГҐГ­ГІГ Г°ГҐ ГЇГ°ГҐГ¤Г¬ГҐГІ "ГЉГіГ±Г Г·ГЄГЁ" ГЁ "ГЋГІГўГҐГ°ГІГЄГ ".ГЉГ ГЄ ГІГ®Г«ГјГЄГ® Г°ГҐГ§ГҐГ°ГўГ­Г®ГҐ ГЇГЁГІГ Г­ГЁГҐ ГЎГіГ¤ГҐГІ Г®ГІГЄГ«ГѕГ·ГҐГ­Г®, Г­ГіГ¦Г­Г® ГўГ»Г±ГІГ°ГҐГ«ГЁГІГј Гў ГЄГ Г¬ГҐГ°Гі ГЇГ®Г±Г«ГҐ ГіГўГҐГ¤Г®Г¬Г«ГҐГ­ГЁГї. Г‚ ГЁГ­Г®Г¬ Г±Г«ГіГ·Г ГҐ ГЇГЁГІГ Г­ГЁГҐ ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГ±Гї ГЁ ГЄГ Г¬ГҐГ°Г  ГЇГҐГ°ГҐГ©Г¤ГҐГІ Гў Г±ГІГ ГІГіГ± Г­Г Г±ГІГ°Г®Г©ГЄГЁ.
+:?:.ГЇГ®ГўГЄГ Г¬ГҐГ°Г ::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ.ГЏГ®ГўГ°ГҐГ¦Г¤ГҐГ­Г­Г Гї ГЄГ Г¬ГҐГ°Г  ГЇГ Г¤Г ГҐГІ Г­Г  Г§ГҐГ¬Г«Гѕ ГЇГ°ГЁ ГіГ±ГЇГҐГёГ­Г®Г¬ ГўГ§Г«Г®Г¬ГҐ ГЁ ГўГ»Г±ГІГ°ГҐГ«ГҐ Гў ГЄГ Г¬ГҐГ°Гі. Г…ГҐ Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г ГІГј Г­Г  Г°Г»Г­ГЄГҐ Гі NPC-ГќГЄГ®Г«Г®ГЈГ  Greta Thunberg. ГЏГ°ГҐГ¤Г¬ГҐГІ Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј ГЁГ§ГєГїГІ ГЁ ГўГ»ГЇГ Г¤Г ГҐГІ ГЇГ°ГЁ Г±Г¬ГҐГ°ГІГЁ.
+:?:.Г°Г Г¤Г Г°::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ.ГђГ Г¤Г Г° ГЁГ§Г¬ГҐГ°ГҐГ­ГЁГї Г±ГЄГ®Г°Г®Г±ГІГЁ ГЇГ°ГЁ ГЇГ°ГЁГ¶ГҐГ«ГЁГўГ Г­ГЁГЁ Г­Г Г¦Г Гў "Г‹ГЉГЊ" ГЁГ§Г¬ГҐГ°ГїГҐГІ ГЁ Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІ Г±ГЄГ®Г°Г®Г±ГІГј ГЁ Г­Г®Г¬ГҐГ° ГІГ°Г Г­Г±ГЇГ®Г°ГІГ . ГЊГ®Г¦ГҐГІ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГјГ±Гї ГЇГҐГёГЄГ®Г¬ ГЁГ«ГЁ ГЁГ§ Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї Г­Г  ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГ®Г¬ Г±ГЁГ¤ГҐГ­ГЁГЁ ГІГ®Г«ГјГЄГ® Гў Г‡ГҐГ«ГҐГ­Г®Г© Г‡Г®Г­ГҐ. ГЉГ°Г ГґГІГЁГІГ±Гї Г§Г  ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГҐ Г¬Г ГІГҐГ°ГЁГ Г«Г» ГЈГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»Г¬ГЁ Г±ГІГ°ГіГЄГІГіГ°Г Г¬ГЁ.
+:?:.Г ГўГІГ®Гё::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ. ГЋГЇГ«Г ГІГЁГІГј Г ГўГІГ®ГёГІГ°Г Гґ Г¬Г®Г¦Г­Г® Гі NPC Гў Г§Г¤Г Г­ГЁГЁ DMV. 
+:?:.Г±ГёГІГ°Г Гґ::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ.ГЏГ°ГЁ Г§Г­Г Г·ГҐГ­ГЁГЁ ГўГ»ГёГҐ 160 km/h ГўГ»ГЇГЁГ±Г»ГўГ ГҐГІГ±Гї ГёГІГ°Г Гґ Г§Г  ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГҐ Г±ГЄГ®Г°Г®Г±ГІГЁ.Г‘ГіГ¬Г¬Г  ГёГІГ°Г ГґГ  Г§Г ГўГЁГ±ГЁГІ Г®ГІ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г±ГЄГ®Г°Г®Г±ГІГЁ, ГёГІГ°Г Гґ Г®Г¤Г­Г®Г¬Гі ГЁ ГІГ®Г¬Гі Г¦ГҐ ГўГ®Г¤ГЁГІГҐГ«Гѕ Г­Г Г·ГЁГ±Г«ГїГҐГІГ±Гї Г­ГҐ Г·Г Г№ГҐ Г·ГҐГ¬ 1 Г°Г Г§ Гў 10 Г¬ГЁГ­ГіГІ. Г…Г±Г«ГЁ Г­Г  ГІГ°Г Г­Г±ГЇГ®Г°ГІГҐ Г±Г­ГїГІ Г­Г®Г¬ГҐГ° - ГёГІГ°Г Гґ Г­ГҐ ГўГ»ГЇГЁГ±Г»ГўГ ГҐГІГ±Гї.
+:?:.ГўГ®Г¤Гё::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ. ГГІГ°Г Гґ Г­Г Г·ГЁГ±Г«ГїГҐГІГ±Гї ГЇГ®Г±Г«ГҐГ¤Г­ГҐГ¬Гі ГўГ®Г¤ГЁГІГҐГ«Гѕ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ .
+:?:.Г­Г®Г¬ГҐГ°Г ::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ. ГЌГ®Г¬ГҐГ°Г  Г¬Г®Г¦Г­Г® Гі NPC Гў Г§Г¤Г Г­ГЁГЁ DMV. Г‘ГІГ®ГЁГ¬Г®Г±ГІГј ГЈГҐГ­ГҐГ°Г Г¶ГЁГЁ Г§Г ГўГЁГ±ГЁГІ Г®ГІ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® Г·ГЁГ±Г«Г  Г±ГЁГ¬ГўГ®Г«Г®Гў Гў Г­Г®Г¬ГҐГ°ГҐ (4-7), ГЄГ Г¦Г¤Г Гї Г­Г®ГўГ Гї ГЇГ®ГЇГ»ГІГЄГ  Г®ГЇГ«Г Г·ГЁГўГ ГҐГІГ±Гї Г®ГІГ¤ГҐГ«ГјГ­Г®.ГЌГҐГ§Г Г°ГҐГЈГЁГ±ГІГ°ГЁГ°Г®ГўГ Г­Г­Г»Г© Г­Г®Г¬ГҐГ° Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г ГўГ ГІГј/Г®ГЎГ¬ГҐГ­ГЁГўГ ГІГј/ГўГ»ГЎГ°Г Г±Г»ГўГ ГІГј.
+:?:.Г­Г®Г¬::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ. Г—ГІГ®ГЎГ» ГіГ±ГІГ Г­Г®ГўГЁГІГј Г­Г®Г¬ГҐГ°Г  Г­Г Г¦Г¬ГЁГІГҐ G - Г“Г±ГІГ Г­Г®ГўГЄГ  Г­Г®Г¬ГҐГ°Г .ГЉГ Г¦Г¤Г Гї ГіГ±ГІГ Г­Г®ГўГЄГ /Г±Г­ГїГІГЁГҐ Г­Г®Г¬ГҐГ°Г  ГІГ°Г ГІГЁГІ ГЇГ°ГҐГ¤Г¬ГҐГІ Г®ГІГўВёГ°ГІГЄГ .
+:?:.Г±Г«ГіГµ::Г”ГіГ­ГЄГ¶ГЁГї "Гџ Г­ГҐ Г±Г«Г»ГёГі" ГЇГ°ГҐГ¤Г­Г Г§Г­Г Г·ГҐГ­Г  Г¤Г«Гї Г«ГѕГ¤ГҐГ© Г± ГЇГ«Г®ГµГЁГ¬ Г±Г«ГіГµГ®Г¬ ГЁГ«ГЁ ГҐГЈГ® Г®ГІГ±ГіГІГ±ГІГўГЁГҐГ¬. Г‡Г«Г®ГіГЇГ®ГІГ°ГҐГЎГ«ГҐГ­ГЁГҐ ГЅГІГ®Г© ГґГіГ­ГЄГ¶ГЁГҐГ© ГЄГ Г°Г ГҐГІГ±Гї ГЎГ Г­Г®Г¬ Г‚Г ГёГҐГЈГ® ГЇГҐГ°Г±Г®Г­Г Г¦Г . ГЋГІГЄГ«ГѕГ·ГЁГІГј ГҐГҐ Г¬Г®Г¦Г­Г® Гў Г¬ГҐГ­Гѕ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:.ГЎГ ГЈ::Г‡Г­Г ГҐГ¬ Г® Г¤Г Г­Г­Г®Г© ГЇГ°Г®ГЎГ«ГҐГ¬ГҐ, Г®Г­Г  ГіГ¦ГҐ ГЇГҐГ°ГҐГ¤Г Г­Г  Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГ Г¬. ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ . 
+:?:.Г·Г ГІ::Г‚Г±ГҐ Г­Г Г±ГІГ°Г®Г©ГЄГЁ Г·Г ГІГ  ГўГ» Г¬Г®Г¦ГҐГІГҐ Г­Г Г©ГІГЁ Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ Г·Г ГІГ .
+:?:.Г°ГҐГ«::ГЏГ®Г«Г­Г®Г±ГІГѕ ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Г­Г  Г±ГҐГ°ГўГҐГ° Г·ГҐГ°ГҐГ§ F1 - ГЉГ°ГҐГ±ГІГЁГЄ Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі ГЅГЄГ°Г Г­Г .
+:?:.Г­ГҐГ®ГЎГ«::ГЌГҐ Г®ГЎГ«Г Г¤Г ГҐГ¬ Г¤Г Г­Г­Г®Г© ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГҐГ©.
+:?:.Г°ГЇ::Г€Г§ГўГЁГ­ГЁГІГҐ, Г­Г® ГЅГІГ® ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±, Г¬Г» Г­ГҐ ГўГЇГ°Г ГўГҐ ГўГ¬ГҐГёГЁГўГ ГІГјГ±Гї Гў Г­ГҐГЈГ®.
+:?:.ГіГ°ГЇ::Г„Г Г­Г­ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ°ГЁ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГЁГЁ Г± Г¤Г°ГіГЈГЁГ¬ГЁ ГЁГЈГ°Г®ГЄГ Г¬ГЁ/Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г»Г¬ ГЇГ®ГЁГ±ГЄГ®Г¬ Г­ГҐГЇГ®Г±Г°ГҐГ¤Г±ГІГўГҐГ­Г­Г® ГўГ® ГўГ°ГҐГ¬Гї ГЁГЈГ°Г®ГўГ®ГЈГ® ГЇГ°Г®Г¶ГҐГ±Г±Г , Г«ГЁГЎГ® Г¤Г°ГіГЈГЁГ¬ Г¤Г®Г±ГІГіГЇГ­Г»Г¬ IC ГЇГіГІГҐГ¬. 
+:?:.ГўГ®Г©Г±::Г—ГІГ®ГЎГ» ГЇГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГј ГўГ®Г©Г±, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ Г­Г Г¦Г ГІГј F7. Г…Г±Г«ГЁ Г­ГЁГ·ГҐГЈГ® Г­ГҐ ГЇГ®Г¬Г®ГЈГ ГҐГІ - ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі.
+:?:.ГІГҐГµ::ГЌГ ГЇГЁГёГЁГІГҐ Гў ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© Г°Г Г§Г¤ГҐГ« Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+:?:.ГІГҐГµГ¤Г±::ГЌГ ГЇГЁГёГЁГІГҐ Гў ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© Г°Г Г§Г¤ГҐГ« Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®ГЈГ® Г¤ГЁГ±ГЄГ®Г°Г¤ Г±ГҐГ°ГўГҐГ°Г  "ГЏГ®Г¬Г®Г№Гј ГЇГ® ГЁГЈГ°ГҐ" - "ГІГҐГµ-ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГ ".
+:?:.ГґГіГ­ГЄ::Г„Г Г­Г­Г»Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГўГ°ГҐГ¬ГҐГ­Г­Г® Г­ГҐГ¤Г®Г±ГІГіГЇГҐГ­, ГЇГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї.
+:?:.ГґГіГ­::Г„Г Г­Г­Г»Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г­Г ГёГҐГ¬ ГЇГ°Г®ГҐГЄГІГҐ. ГЋГ±ГІГ ГўГјГІГҐ Г±ГўГ®ГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГЇГ® Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГѕ Г­Г  ГґГ®Г°ГіГ¬ГҐ Гў Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г®Г¬ Г°Г Г§Г¤ГҐГ«ГҐ: ГЏГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГЇГ® ГіГ«ГіГ·ГёГҐГ­ГЁГѕ Г±ГҐГ°ГўГҐГ°Г  - "ГЌГ ГЇГЁГёГЁГІГҐ ГўГ ГёГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГІГіГІ".
+:?:.ГЁГ§Гў::ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ .
+:?:.Г°ГҐГЇГІГЁГЄ::ГЌГ Г§Г»ГўГ Г­ГЁГҐ ГўГЁГ¤ГҐГ® Г­ГҐ Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГҐГІ ГґГ®Г°Г¬ГҐ ГЇГ®Г¤Г Г·ГЁ Г¦Г Г«Г®ГЎГ» Г­Г  ГЁГЈГ°Г®ГЄГ : Г‚Г Гё Г±ГІГ ГІГЁГ·ГҐГ±ГЄГЁГ© ID, Г±ГІГ ГІГЁГ·ГҐГ±ГЄГЁГ© ID Г­Г Г°ГіГёГЁГІГҐГ«Гї, Г¤Г ГІГ  ГЁ ГўГ°ГҐГ¬Гї Г­Г Г°ГіГёГҐГ­ГЁГї.
+:?:.ГҐГµГЇ::ГЉГ Г¦Г¤Г»Г© Г·Г Г± (Гі ГЄГ Г¦Г¤Г®ГЈГ® ГЁГЈГ°Г®ГЄГ  Г±ГўГ®Вё ГўГ°ГҐГ¬Гї) Г‚Г Г¬ Г¤Г ГҐГІГ±Гї EГ•P. Г—ГІГ®ГЎГ» ГіГ§Г­Г ГІГј, Г±ГЄГ®Г«ГјГЄГ® Г‚Г Г¬ Г®Г±ГІГ Г«Г®Г±Гј Г¤Г® Г±Г«ГҐГ¤ГіГѕГ№ГҐГЈГ® PayDay, Г­Г Г¦Г¬ГЁГІГҐ ГЄГ«Г ГўГЁГёГі F2-Г‘ГІГ ГІГЁГ±ГІГЁГЄГ .
+:?:.Г ГўГІГ®::Г—ГІГ®ГЎГ» ГЅГўГ ГЄГіГЁГ°Г®ГўГ ГІГј Г‚Г ГёГҐ Г ГўГІГ® ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј Г¬Г Г°ГЄГҐГ°Г®Г¬ Г‘ГҐГ°ГўГЁГ±Г  (ГѓГ ГҐГ·Г­Г»Г© ГЄГ«ГѕГ· Г­Г  ГЄГ Г°ГІГҐ). 
+:?:.Г§ГЇ::Г—ГІГ®ГЎГ» Г­Г Г·ГЁГ±Г«ГїГ«Г±Гї PayDay Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЁГ¬ГҐГІГј Г±ГўГ®Гѕ ГЎГ Г­ГЄГ®ГўГ±ГЄГіГѕ ГЄГ Г°ГІГі ГЁ ГЎГ»ГІГј ГіГўГ®Г«ГҐГ­Г»Г¬ Г±Г® ГўГ±ГҐГµ Г°Г ГЎГ®ГІ. ГЋГґГ®Г°Г¬ГЁГІГј ГҐВё Г¬Г®Г¦Г­Г® Гў Г«ГѕГЎГ®Г¬ ГЎГ Г­ГЄГҐ.
+:?:.ГЈГ Г­Г«ГЁГ¶::ГЏГ®Г«ГіГ·ГЁГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГѕ Г­Г  Г®Г°ГіГ¦ГЁГҐ Г¬Г®Г¦Г­Г® Гў LSPD ГЁГ«ГЁ LSCSD. 
+:?:.ГЄГ Г­ГЁГ±ГІГ°Г ::Г—ГІГ®ГЎГ» ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј ГЄГ Г­ГЁГ±ГІГ°Гі, ГўГ®Г§ГјГ¬ГЁГІГҐ ГҐВё Гў Г°ГіГЄГЁ, Г­Г Г¦Г¬ГЁГІГҐ G Г­Г  Г ГўГІГ® ГЁ Г§Г ГЇГ°Г ГўГЁГІГј. 
+:?:.ГҐГ¬Г±::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЇГ®Г¤Г­ГЁГ¬Г ГҐГІ ГЁ Г­ГҐ Г«ГҐГ·ГЁГІ ГЁГЈГ°Г®ГЄГ®Гў, ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј ГіГ±Г«ГіГЈГ Г¬ГЁ Г…ГЊГ‘.
+:?:.ГЇГ®Г¤Г­ГЁГ¬::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г­ГҐ ГўГЁГ¤Гї ГўГ±ГҐГ© Г±ГЁГІГіГ Г¶ГЁГЁ Г¬Г» Г­ГҐ Гў ГЇГ°Г ГўГҐ Г«ГҐГ·ГЁГІГј,ГЇГ®Г¤Г­ГЁГ¬Г ГІГј ГЁГ«ГЁ Г¤Г®ГЎГЁГўГ ГІГј ГЁГЈГ°Г®ГЄГ®Гў. Г„Г®Г¦Г¤ГЁГІГҐГ±Гј Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў EMS Г«ГЁГЎГ® Г¦ГҐ Г®ГЄГ®Г­Г·Г Г­ГЁГї ГІГ Г©Г¬ГҐГ°Г  Г±Г¬ГҐГ°ГІГЁ. ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГўГ®Г§Г¬Г®Г¦Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ . 
+:?:.Г¦ГЎ::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ ГўГ»Г¤Г ГўГ ГІГј Г­Г ГЄГ Г§Г Г­ГЁГї ГЁ ГўГ»Г­Г®Г±ГЁГІГј ГЄГ ГЄГЁГҐ-Г«ГЁГЎГ® ГўГҐГ°Г¤ГЁГЄГІГ» Г­ГҐ ГўГЁГ¤Гї ГўГ±ГҐГ© Г±ГЁГІГіГ Г¶ГЁГЁ Г± Г±Г Г¬Г®ГЈГ® Г­Г Г·Г Г«Г . ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®ГґГЁГЄГ±Г Г¶ГЁГї Г¤Г Г­Г­Г®ГЈГ® Г­Г Г°ГіГёГҐГ­ГЁГї - Г®ГґГ®Г°Г¬ГЁГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ, Г±ГЇГ Г±ГЁГЎГ® ГЎГ®Г«ГјГёГ®ГҐ Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:.Г Г­Г ГЄ::ГЋГЎГ°Г ГІГЁГІГҐГ±Гј, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , Гў Г¤ГЁГ±ГЄГ®Г°Г¤ ГЄ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі, ГЄГ®ГІГ®Г°Г»Г© ГўГ»Г¤Г Г« ГўГ Г¬ Г­Г ГЄГ Г§Г Г­ГЁГҐ ГЁГ«ГЁ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ« Г¦Г Г«Г®ГЎГі.
+:?:.Г Г¤Г§::Г„Г Г­Г­Г»Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г±ГҐГ©Г·Г Г± Г§Г Г­ГїГІ Г¤Г°ГіГЈГЁГ¬ Г¤ГҐГ«Г®Г¬ ГЁГ«ГЁ Г®ГІГ®ГёГҐГ« Г®ГІ ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г  Г­Г  ГЄГ®Г°Г®ГІГЄГ®ГҐ ГўГ°ГҐГ¬Гї, Г­Г ГЇГЁГёГЁГІГҐ ГҐГ¬Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ.
+:?:.Г Г¤Г±::Г„Г Г­Г­Г»Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г±ГҐГ©Г·Г Г± Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ, Г­Г ГЇГЁГёГЁГІГҐ ГҐГ¬Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ.
+:?:.ГЇГ®ГЈГ®Г¤Г ::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЄГ®Г­ГІГ°Г®Г«ГЁГ°ГіГҐГІ Г¤Г Г­Г­Г»Г© ГЇГ°Г®Г¶ГҐГ±Г±. ГЏГ®ГЈГ®Г¤Г  Г¬ГҐГ­ГїГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ.
+:?:.Г­ГҐГЇ::ГЌГҐ ГЇГ®Г­ГїГ« Г±ГіГІГј ГўГ ГёГҐГЈГ® Г®ГЎГ°Г Г№ГҐГ­ГЁГї, Г®ГЇГЁГёГЁГІГҐ Г‚Г ГёГі ГЇГ°Г®ГЎГ«ГҐГ¬Гі/ГўГ®ГЇГ°Г®Г± ГЇГ®Г¤Г°Г®ГЎГ­ГҐГҐ Г¤Г«Гї Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г® ГІГ®Г·Г­Г®ГЈГ® Г®ГІГўГҐГІГ , ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ .
+:?:.Г¤Г®Г­Г ГІ::ГЋГЎГ°Г ГІГЁГІГҐГ±Гј ГЇГ® ГЇГ®Г·ГІГҐ - help@majestic-rp.ru.
+:?:.ГµГЇ::ГЏГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі, Г«ГЁГЎГ® ГЄГіГЇГЁГІГҐ ГІГ ГЎГ«ГҐГІГЄГі Гі Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў EMS.
+:?:.Г°ГҐГ¬Г®Г­ГІ::Г„Г«Гї Г­Г Г·Г Г«Г , Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЄГіГЇГЁГІГј Г§Г ГЇГ·Г Г±ГІГј Г¤Г«Гї Г¬Г ГёГЁГ­Г» Г­Г  Г«ГѕГЎГ® ГЂГ‡Г‘, ГЇГ®Г±Г«ГҐ Г·ГҐГЈГ® Г®ГІГЄГ°Г»ГІГј ГЄГ ГЇГ®ГІ , Г­Г Г¦Г ГІГј G > ГЏГ®Г·ГЁГ­ГЁГІГј Г§Г Г¬Г®ГЄ/Г ГЄГЄГіГ¬ГіГ«ГїГІГ®Г°/Г§Г Г«ГЁГІГј Г¬Г Г±Г«Г®. 
+:?:.ГґГҐГ°Г¬::ГЌГ  ГґГҐГ°Г¬ГҐ Г¤Г«Гї ГЇГ®Г±Г Г¤ГЄГЁ ГЄГ Г¦Г¤Г®ГЈГ® ГЁГ§ Г°Г Г±ГІГҐГ­ГЁГ© Г­ГіГ¦Г­Г» Г±Г«ГҐГ¤ГіГѕГ№ГЁГҐ Г­Г ГўГ»ГЄГЁ: ГЏГёГҐГ­ГЁГ¶Г  - 225 Г®ГЇГ»ГІГ . ГЉГ Г°ГІГ®ГґГҐГ«Гј - 950 Г®ГЇГ»ГІГ . ГЉГ ГЇГіГ±ГІГ  - 2000 Г®ГЇГ»ГІГ . ГЉГіГЄГіГ°ГіГ§Г  - 3000 Г®ГЇГ»ГІГ . Г’Г»ГЄГўГ  - 6200 Г®ГЇГ»ГІГ . ГЃГ Г­Г Г­Г» - 10500 Г®ГЇГ»ГІГ .
+:?:.ГЈГ®Г±::Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г±Г¤Г ГІГј Г ГўГІГ® Г­Г  Г±ГўГ Г«ГЄГі. ГЏГ®Г±Г«ГҐ Г±Г¤Г Г·ГЁ ГўГ» ГЇГ®Г«ГіГ·ГЁГІГҐ 75% Г®ГІ ГЈГ®Г±. Г±ГІГ®ГЁГ¬Г®Г±ГІГЁ Г ГўГІГ®. Г‘ГўГ Г«ГЄГ  Г®ГІГ¬ГҐГ·ГҐГ­Г  Г­Г  ГЄГ Г°ГІГҐ ГЄГ ГЄ ГЇГҐГ°ГҐГ·ГҐГ°ГЄГ­ГіГІГ»Г©, ГЄГ°Г Г±Г­Г»Г© ГЄГ°ГіГЈ.
+:?:.Г Г­ГЁГ¬::ГЋГ±ГІГ Г­Г®ГўГЁГІГҐ Г Г­ГЁГ¬Г Г¶ГЁГѕ. ГЌГ Г¦Г¬ГЁГІГҐ X > ГЋГ±ГІГ Г­Г®ГўГЁГІГј Г Г­ГЁГ¬Г Г¶ГЁГѕ ГЁГ«ГЁ Backspace.
+:?:.ГЁГ¤::Г“ГЄГ Г¦ГЁГІГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , ID Г­Г Г°ГіГёГЁГІГҐГ«Гї.
+:?:.Г±ГІГ®::Г‘ГІГҐГЇГҐГ­Гј ГЁГ§Г­Г®Г±Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г»Гµ Г¤ГҐГІГ Г«ГҐГ© Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї Г¬Г®Г¦Г­Г® ГіГ§Г­Г ГІГј Г­Г  Г ГўГІГ®Г¬Г Г±ГІГҐГ°Г±ГЄГ®Г© (ГЁГЄГ®Г­ГЄГ  ГЈГ ГҐГ·Г­Г®ГЈГ® ГЄГ«ГѕГ·Г  Г± Г®ГІГўГҐГ°ГІГЄГ®Г© Г­Г  ГЄГ Г°ГІГҐ).
+:?:.Г¦ГЎГ ::Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г ГЇГЁГ±Г ГІГј Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬, ГҐГ±Г«ГЁ Г­ГҐ Г±Г®ГЈГ«Г Г±Г­Г» Г± Г°ГҐГёГҐГ­ГЁГҐГ¬ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Г .
+:?:.Г¤Г®Г­::Г‡Г Г¤Г®Г­Г ГІГЁГІГј Г¬Г®Г¦Г­Г® Г­Г  Г­Г ГёГҐГ¬ Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г±Г Г©ГІГҐ - majestic-rp.ru/donate
+:?:.ГЎГЁГ­Г®ГЄ::Г€Г±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј ГЎГЁГ­Г®ГЄГ«Гј Г¬Г®Г¦Г­Г® ГЇГҐГ°ГҐГ¬ГҐГ±ГІГЁГў ГҐГЈГ® Гў Г ГЄГІГЁГўГ­Г»Г© Г±Г«Г®ГІ Г®Г°ГіГ¦ГЁГї ГЁ Г­Г Г¦Г Гў ГЏГЉГЊ. Г€Г­Г®ГЈГ¤Г  Г®Г­ ГЎГ ГЈГ ГҐГІГ±Гї ГЁ Г­ГіГ¦Г­Г® ГҐГЈГ® ГіГЎГ°Г ГІГј ГЁГ§ Г ГЄГІГЁГўГ­Г®ГЈГ® Г±Г«Г®ГІГ , ГўГ§ГїГІГј Г®ГЎГ°Г ГІГ­Г® ГЁ ГЎГ»Г±ГІГ°Г® Г­Г Г¦Г ГІГј ГЏГЉГЊ.
+:?:.ГЈГ°ГіГЇГЇГ ::Г—ГІГ®ГЎГ» ГўГ¬ГҐГ±ГІГҐ Г°Г ГЎГ®ГІГ ГІГј Г­Г  ГЄГ®Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© Г°Г ГЎГ®ГІГҐ ГўГ Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ°ГЁГЈГ Г«ГЁГ±Гј ГЁГЈГ°Г®ГЄГ®Гў Г·ГҐГ°ГҐГ§ ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ "ГѓГ°ГіГЇГЇГ " Гў ГІГҐГ«ГҐГґГ®Г­ГҐ.
+:?:.ГЈГ°ГЁГЎГ»::Г—ГІГ®ГЎГ» Г±Г®ГЎГЁГ°Г ГІГј ГЈГ°ГЁГЎГ» ГўГ Г¬ Г­Г Г¤Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  ГІГ®Г·ГЄГі "ГѓГ°ГЁГЎГ»" 1/6 ГЁ ГўГ§ГїГІГј Гў Г°ГіГЄГЁ Г­Г®Г¦.
+:?:.ГЈГ°ГЁГЎ::ГЏГ°Г®Г¤Г ГІГј ГЈГ°ГЁГЎГ» Г¬Г®Г¦Г­Г® Г­Г  Г°Г»Г­ГЄГҐ.
+:?:.Г°Г»Г­::ГђГ»Г­Г®ГЄ Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў Г‹Г®Г±-Г‘Г Г­ГІГ®Г±ГҐ Г­Г  ГЇГ«ГїГ¦ГҐ Г°ГїГ¤Г®Г¬ Г± ГЄГ Г·Г Г«ГЄГ®Г©, Гў ГЏГ Г«ГҐГІГ®-ГЃГЅГ© ГЁ Г­Г  ГґГҐГ°Г¬ГҐ, ГЁГЄГ®Г­ГЄГ  ГЇГ Г«Г ГІГЄГЁ. Г’Г Г¬ ГўГ» Г¬Г®Г¦ГҐГІГҐ Г±Г¤Г ГўГ ГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г± ГґГҐГ°Г¬Г», Г¤Г°Г®ГўГ®Г±ГҐГЄГ , ГЈГ°ГЁГЎГ­ГЁГЄГ  ГЁ Г°Г»ГЎГ Г«ГЄГЁ.
+:?:.Г®Г°ГіГ¦Г°Г»Г­::ГЃГ®ГІГі Г­Г  Г°Г»Г­ГЄГҐ Г¬Г®Г¦Г­Г® Г±Г¤Г ГІГј Г®Г°ГіГ¦ГЁГҐ ГІГ®Г«ГјГЄГ® Г±Г® 100% ГЁГ§Г­Г®Г±Г®Г¬.
+:?:.Г­Г®ГўГ®Г±ГІГј::ГЏГ°ГЁГ¤ГЁГІГҐ Г«ГЁГ·Г­Г® Гў Weazel News. 
+:?:.Г®ГЈГ°Г ГЎ::Г„Г«Гї Г±ГІГ Г°ГІГ  ГІГ°ГҐГЎГіГҐГІГ±Гї ГўГ§ГїГІГј Г§Г Г¤Г Г­ГЁГҐ Гі NPC ГЎГ Г­Г¤Г». Г‚Г§Г«Г®Г¬ Г¤ГўГҐГ°ГЁ Г®Г±ГіГ№ГҐГ±ГІГўГ«ГїГҐГІГ±Гї Г± ГЇГ®Г¬Г®Г№ГјГѕ Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г»Гµ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў ГЋГІГ¬Г»Г·ГЄГ  В— Г¤Г«Гї ГЇГ°Г®Г±ГІГ»Гµ Г§Г Г¬ГЄГ®Гў (Г¬Г®Г¦Г­Г® ГЄГіГЇГЁГІГј Г­Г  Г°Г»Г­ГЄГҐ ГЁГ«ГЁ Г±ГЄГ°Г ГґГІГЁГІГј Гў Г¬Г Г±ГІГҐГ°Г±ГЄГ®Г©). ГЌГ ГЎГ®Г° Г®ГЇГ»ГІГ­Г®ГЈГ® ГўГ§Г«Г®Г¬Г№ГЁГЄГ  В— Г¤Г«Гї Г±Г«Г®Г¦Г­Г»Гµ Г§Г Г¬ГЄГ®Гў (ГЄГ°Г ГґГІГЁГІГ±Гї Гў Г¬Г Г±ГІГҐГ°Г±ГЄГ®Г©). ГЏГ®Г±Г«ГҐ ГЇГ°Г®Г­ГЁГЄГ­Г®ГўГҐГ­ГЁГї Г¬Г®Г¦Г­Г® Г®ГІГЄГ«ГѕГ·ГЁГІГј Г±ГЁГЈГ­Г Г«ГЁГ§Г Г¶ГЁГѕ Г± ГЇГ®Г¬Г®Г№ГјГѕ В«ГЉГіГ±Г Г·ГҐГЄВ» (ГЄГ°Г ГґГІГїГІГ±Гї Гў Г¬Г Г±ГІГҐГ°Г±ГЄГ®Г©). Г…Г±Г«ГЁ Г±ГЁГЈГ­Г Г«ГЁГ§Г Г¶ГЁГї Г­ГҐ Г®ГІГЄГ«ГѕГ·ГҐГ­Г  В— ГЇГ®Г«ГЁГ¶ГЁГї ГЇГ®Г«ГіГ·Г ГҐГІ ГўГ»Г§Г®Гў.
+:?:.ГЇ::Г‚Г±ГҐГЈГ® Г¤Г®ГЎГ°Г®ГЈГ®.
+:?:.Г­Г®Гў::Г‘Г«ГҐГ¤ГЁГІГҐ Г§Г  Г­Г®ГўГ®Г±ГІГїГ¬ГЁ Г±ГҐГ°ГўГҐГ°Г  Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ . 
+:?:.Г­Г®ГўГ®::Г‘Г«ГҐГ¤ГЁГІГҐ Г§Г  Г­Г®ГўГ®Г±ГІГїГ¬ГЁ Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ . 
+:?:.Г­ГЁГЄ::Г‘Г¬ГҐГ­ГЁГІГј Г­ГЁГЄ ГЁГ«ГЁ ГўГ­ГҐГёГ­Г®Г±ГІГј Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г Г¦Г Гў - F2 > ГЊГ ГЈГ Г§ГЁГ­ > ГЏГҐГ°Г±Г®Г­Г Г¦Г .
+:?:.ГЎГ Г­ГЄ::Г“ Г­Г Г± Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ ГҐГ±ГІГј 3 ГўГЁГ¤Г  ГЎГ Г­ГЄГ®ГўГ±ГЄГЁГµ ГЄГ Г°ГІ: Standart, Premium, VIP. Standart ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 500$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 500.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 5%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 4%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ. Premium ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 25.000$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 2.500.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 4%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 15.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 3%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 15.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ 1%, Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  Г­Г  Г®Г¤Г­Гі Г®ГЇГҐГ°Г Г¶ГЁГѕ Г¤Г® 2.500$, Г¬ГҐГ±ГҐГ·Г­Г»Г© Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  50.000$. VIP ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 75.000$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 20.000.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 3%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 2.5%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ 3%, Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  Г­Г  Г®Г¤Г­Гі Г®ГЇГҐГ°Г Г¶ГЁГѕ Г¤Г® 10.000$, Г¬ГҐГ±ГҐГ·Г­Г»Г© Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  150.000$. Г„ГҐГ­ГјГЈГЁ Г§Г  Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГҐ ГЁ Г«ГЁГ¬ГЁГІГ» Г±Г­ГЁГ¬Г ГѕГІГ±Гї ГЄГ Г¦Г¤Г®ГҐ 1 Г·ГЁГ±Г«Г® Г­Г®ГўГ®ГЈГ® Г¬ГҐГ±ГїГ¶Г .
+:?:.Г¤ГіГЎГ«ГЁГЄ::Г—ГІГ®ГЎГ» Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ ГЄГ«ГѕГ·ГҐГ© Г®ГІ Г ГўГІГ® Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј Г§Г ГЈГ®ГІГ®ГўГЄГі Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г§Г ГІГҐГ¬ Г­Г Г¦Г ГІГј G Г­Г  Г ГўГІГ® ГЁ Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ.
+:?:.ГЄГ«Г Г¤::Г—ГІГ®ГЎГ» Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ Г®ГІ ГЄГ«Г Г¤Г®ГўГЄГЁ, Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј Г§Г ГЈГ®ГІГ®ГўГЄГі Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г§Г ГІГҐГ¬ Г·ГҐГ°ГҐГ§ G ГЇГҐГ°ГҐГ¤Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ Г­ГіГ¦Г­Г®Г¬Гі Г·ГҐГ«Г®ГўГҐГЄГі.
+:?:.ГІГҐГ«::ГЏГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГЄГіГЇГЁГІГј ГІГҐГ«ГҐГґГ®Г­ ГҐГ№ГҐ Г°Г Г§ Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г¤ГҐГ­ГјГЈГЁ Г± ГўГ Г± Г­ГҐ Г±ГЇГЁГёГіГІГ±Гї.
+:?:.ГЇГ®Г¤Г±ГҐГ«::Г—ГІГ®ГЎГ» ГЇГ®Г¤Г±ГҐГ«ГЁГІГј ГЁГЈГ°Г®ГЄГ  ГЄ Г±ГҐГЎГҐ Гў Г¤Г®Г¬ ГЁГ«ГЁ Г¦ГҐ ГЄГўГ Г°ГІГЁГ°Гі, Г±ГІГ®Гї Г®ГЄГ®Г«Г® Г¤Г®Г¬Г , Г­Г ГўГҐГ¤ГЁГІГҐГ±Гј Г­Г  ГЁГЈГ°Г®ГЄГ  ГЁ Г­Г Г¦Г¬ГЁГІГҐ G, Г¤Г Г«ГҐГҐ Г­Г Г¦Г¬ГЁГІГҐ ГЏГ®Г¤Г±ГҐГ«ГЁГІГј.
+:?:.ГЄГ°Г Гё2::Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  ГЄГ°Г ГёГ  - ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГҐГЈГ® Г«ГѕГЎГ®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г . Г‚Г Г± ГўГ»ГЇГіГ±ГІГїГІ.
+:?:.Г§Г Г¬Г®ГЄ::Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "Г„ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> ГЏГ®Г·ГЁГ­ГЁГІГј Г¤ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ.
+:?:.Г ГЄГіГ¬::Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "ГЂГЄГЄГіГ¬ГіГ«ГїГІГ®Г°" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> Г‡Г Г¬ГҐГ­ГЁГІГј Г ГЄГЄГіГ¬ГіГ«ГїГІГ®Г°.
+:?:.Г¬Г Г±Г«Г®::Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "ГЊГ®ГІГ®Г°Г­Г®ГҐ Г¬Г Г±Г«Г®" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> Г‡Г Г¬ГҐГ­ГЁГІГј Г¬Г Г±Г«Г®.
+:?:.Г¬Г®Г¤ГҐГ«::ГЏГіГ­ГЄГІ "ГЏГ°Г®ГЈГ°ГіГ§ГЄГ  Г¬Г®Г¤ГҐГ«ГҐГ©" Г®ГІГўГҐГ·Г ГҐГІ Г§Г  ГЎГ»Г±ГІГ°Г®ГІГі ГЇГ°Г®ГЈГ°ГіГ§ГЄГЁ ГІГҐГЄГ±ГІГіГ° ГЇГ°ГЁ ГЇГ°ГЁГЎГ«ГЁГ¦ГҐГ­ГЁГЁ ГЄ Г­ГЁГ¬.
+:?:.ГЎГЁГ§Г®ГЈГ°Г ГЎ::Г—ГІГ®ГЎГ» Г®ГЈГ°Г ГЎГЁГІГј ГЎГЁГ§Г­ГҐГ±, ГўГ Г¬ Г­ГіГ¦Г­Г®: Г®Г¤ГҐГІГј Г¬Г Г±ГЄГі, ГЇГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ Г®Г°ГіГ¦ГЁГҐ ГЁ, ГЇГ°ГЁГ¤Гї Гў Г¬Г ГЈГ Г§ГЁГ­ Гў Г±Г®Г±ГІГ ГўГҐ Г®ГІ 2 Г¤Г® 35 Г·ГҐГ«Г®ГўГҐГЄ, Г­Г ГўГҐГ±ГІГЁГ±Гј Г­Г  NPC (ГЇГ°Г®Г¤Г ГўГ¶Г ) Г®ГЈГ­ГҐГ±ГІГ°ГҐГ«Г®Г¬ (ГІГ®Г«ГјГЄГ® Г®Г¤ГЁГ­ Г·ГҐГ«Г®ГўГҐГЄ Г¤Г®Г«Г¦ГҐГ­ ГЈГ°Г ГЎГЁГІГј). 
+:?:.Г±ГЇГ ГўГ­::Г‘ГЇГ ГўГ­ Г­Г®ГўГЁГ·ГЄГ®Гў Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў ГЏГ Г«ГҐГІГ®-ГЃГҐГ©, Г—ГіГ¬Г ГёГ Гµ, ГЂГЅГ°Г®ГЇГ®Г°ГІГі ГЁ Г­Г  ГЂГўГІГ®ГўГ®ГЄГ§Г Г«ГҐ. 
+:?:.ГЄГ°ГҐГ¤ГЁГІ::Г‹ГѕГЎГ»ГҐ ГґГЁГ­Г Г­Г±Г®ГўГ»ГҐ Г¤Г®ГЈГ®ГўГ®Г°Г» (Г§Г Г©Г¬Г», ГЄГ°ГҐГ¤ГЁГІГ» ГЁ ГІ.Г¤) Г­ГҐ Г®ГІГ­Г®Г±ГїГІГ±Гї ГЄ ГЋГЋГ‘ Г±Г¤ГҐГ«ГЄГ Г¬. Г‚Г±ГҐ ГЇГ®Г¤Г®ГЎГ­Г»ГҐ Г±Г¤ГҐГ«ГЄГЁ ГЁГЈГ°Г®ГЄГЁ Г±Г®ГўГҐГ°ГёГ ГѕГІ Г­Г  Г±ГўГ®Г© Г±ГІГ°Г Гµ ГЁ Г°ГЁГ±ГЄ. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г­ГҐГ±ГҐГІ Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®Г±ГІГЁ ГЁ Г­ГҐ ГїГўГ«ГїГҐГІГ±Гї ГЈГ Г°Г Г­ГІГ®Г¬ Г±Г¤ГҐГ«ГЄГЁ.
+:?:.Г°ГҐГ¬::Г—ГІГ®ГЎГ» ГЇГ®Г·ГЁГ­ГЁГІГј Г±ГўГ®Вё Г ГўГІГ® ГЄГіГЇГЁГІГҐ Г°ГҐГ¬.ГЄГ®Г¬ГЇГ«ГҐГЄГІ Г­Г  Г«ГѕГЎГ®Г© ГЂГ‡Г‘. Г—ГҐГ°ГҐГ§ Г¬ГҐГ­Гѕ G ГЇГ®Г·ГЁГ­ГЁГІГҐ Г‚Г Гё Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј.
+:?:.Г±Г¤ГҐГ«ГЄГ ::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г±Г«ГҐГ¤ГЁГІ Г§Г  Г±Г¤ГҐГ«ГЄГ Г¬ГЁ ГЁГЈГ°Г®ГЄГ®Гў, Г§Г ГЇГЁГёГЁГІГҐ ГўГЁГ¤ГҐГ® Г­Г  Г±Г«ГіГ·Г Г© Г®ГЎГ¬Г Г­Г , Г·ГІГ®ГЎГ» Г®Г±ГІГ ГўГЁГІГј Г¦Г Г«Г®ГЎГі Г­Г  ГЁГЈГ°Г®ГЄГ  Г­Г  ГґГ®Г°ГіГ¬ГҐ. 
+:?:.ГЁГ¬Гї::Г‚Г ГёГҐ Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї Г­ГҐ ГЇГ®Г¤ГµГ®Г¤ГЁГІ ГЇГ® ГЇГ°Г ГўГЁГ«Г Г¬ Г­Г ГёГҐГЈГ® Г±ГҐГ°ГўГҐГ°Г . Г‚Г Г¬ Г­ГіГ¦Г­Г® Г±Г¬ГҐГ­ГЁГІГј Г­ГЁГЄ ГЁ Г­Г ГЇГЁГ±Г ГІГј Гў Г°ГҐГЇГ®Г°ГІ ГЇГ®ГўГІГ®Г°Г­Г®, ГҐГ±Г«ГЁ Г‚Г Гё Г­ГЁГЄ ГЎГіГ¤ГҐГІ Г±Г®ГЎГ«ГѕГ¤Г ГІГј ГЇГ°Г ГўГЁГ«Г  Г±ГҐГ°ГўГҐГ°Г , ГІГ® Г‚Г Г± ГўГ»ГЇГіГ±ГІГїГІ.
+:?:.Г¬Г Г©ГЄГ ::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГіГЇГЁГІГј Г¬Г Г©ГЄГі ГЇГ®Г¤ ГўГҐГ°ГµГ­ГѕГѕ Г®Г¤ГҐГ¦Г¤Гі, ГўГ Г¬ Г­ГіГ¦Г­Г® Г±Г­Г Г·Г Г«Г  ГЄГіГЇГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ ГўГҐГ°ГµГ­ГҐГ© Г®Г¤ГҐГ¦Г¤Г» (Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГЇГЁГ¤Г¦Г ГЄ). ГЏГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® ГўГ Г¬ ГЎГіГ¤Гі Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐ Г¬Г Г©ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ ГЇГ®Г¤ Г­ГҐГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ "ГЊГ Г©ГЄГЁ".
+:?:.ГіГ­ГЁГў::Г—ГІГ® ГЎГ» ГўГ»ГЇГ®Г«Г­ГЁГІГј Г¤Г Г­Г­Г®ГҐ Г§Г Г¤Г Г­ГЁГҐ, ГўГ Г¬ Г­ГіГ¦Г­Г® ГЇГ°ГЁГ©ГІГЁ Гў Г“Г­ГЁГўГҐГ°Г±ГЁГІГҐГІ Г­Г  ГЇГ®Г«ГҐ, ГІГ Г¬ ГЎГіГ¤ГҐГІ Г±ГІГ®ГїГІГј NPC Гў ГЈГ®Г«ГіГЎГ»Гµ ГёГ®Г°ГІГ Гµ ГЁ ГґГіГІГЎГ®Г«ГЄГҐ. ГЌГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г­ГҐГ¬Гі ГЁ Г­Г Г¦Г ГІГј Г… , Г·ГІГ® ГЎГ» Г®ГІГЄГ°Г»Г«Г®Г±Гј Г¤ГЁГ Г«Г®ГЈГ®ГўГ®ГҐ Г®ГЄГ­Г®.
+:?:.ГўГ»Г­Г®Г±::Г‚Г»Г­Г®Г±Г«ГЁГўГ®Г±ГІГј - Г­Г ГўГ»ГЄ ГўГ»Г­Г®Г±Г«ГЁГўГ®Г±ГІГЁ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГЇГ®Г¤ГўГЁГ¦Г­Г®ГЈГ® Г®ГЎГ°Г Г§Г  Г¦ГЁГ§Г­ГЁ. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» ГЎГҐГЈГ ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЏГ°ГЁ Г­ГЁГ§ГЄГ®Г¬ Г­Г ГўГ»ГЄГҐ, ГЇГҐГ°Г±Г®Г­Г Г¦ Г­ГҐ Г¬Г®Г¦ГҐГІ ГЇГ°Г»ГЈГ­ГіГІГј 2 Г°Г Г§Г  ГЁ ГЇГ Г¤Г ГҐГІ. Г‘Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЇГ®ГўГ»ГёГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  ГўГ«ГЁГїГҐГІ Г­Г  Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј ГЎГҐГ±ГЇГ°ГҐГ°Г»ГўГ­Г®ГЈГ® ГЎГҐГЈГ  ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г»Г¦ГЄГ®Гў, Г¬Г ГЄГ±ГЁГ¬ГіГ¬ Г­Г  ГЇГ®Г±Г«ГҐГ¤Г­ГҐГ¬ ГіГ°Г®ГўГ­ГҐ - 2.
+:?:.Г±ГЁГ«Г ::Г‘ГЁГ«Г  - Г­Г ГўГ»ГЄ Г±ГЁГ«Г» ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГґГЁГ§ГЁГ·ГҐГ±ГЄГЁГµ Г­Г ГЈГ°ГіГ§Г®ГЄ. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» Г§Г Г­ГЁГ¬Г ГҐГёГјГ±Гї Гў ГЄГ Г·Г Г«ГЄГҐ (ГЁГЄГ®Г­ГЄГ  ГЎГҐГЈГіГ№ГҐГЈГ® Г·ГҐГ«Г®ГўГҐГЄГ  Г­Г  ГЄГ Г°ГІГҐ), ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±Г®ГЇГ°Г®ГІГЁГўГ«ГҐГ­ГЁГҐ ГЄ ГіГ°Г®Г­Гі Г®ГІ ГЇГ Г¤ГҐГ­ГЁГї.
+:?:.Г¤Г»Гµ::Г„Г»ГµГ Г­ГЁГҐ - Г­Г ГўГ»ГЄ Г¤Г»ГµГ Г­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ Г¤Г«ГЁГІГҐГ«ГјГ­Г®ГЈГ® Г­Г ГµГ®Г¦Г¤ГҐГ­ГЁГї ГЇГ®Г¤ ГўГ®Г¤Г®Г©. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» ГЇГ«Г ГўГ ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. Г‘Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЇГ®ГўГ»ГёГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  ГўГ«ГЁГїГҐГІ Г­Г  Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј ГЎГҐГ±ГЇГ°ГҐГ°Г»ГўГ­Г®ГЈГ® ГЇГ«Г ГўГ Г­ГЁГї ГЇГ®Г¤ ГўГ®Г¤Г®Г©.
+:?:.ГўГ®Г¦Г¤ГҐГ­::Г‚Г®Г¦Г¤ГҐГ­ГЁГҐ - Г­Г ГўГ»ГЄ ГўГ®Г¦Г¤ГҐГ­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г§Г  Г°ГіГ«ГҐГ¬ Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» ГўГ®Г¤ГЁГёГј ГІГ°Г Г­Г±ГЇГ®Г°ГІ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®Г±ГІГј ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г»Г¬ Г±Г°ГҐГ¤Г®Г±ГІГўГ®Г¬.
+:?:.ГЇГ®Г«ГҐГІ::ГЏГ®Г«ГҐГІ - Г­Г ГўГ»ГЄ ГЇГЁГ«Г®ГІГЁГ°Г®ГўГ Г­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г§Г  ГўГ®Г§Г¤ГіГёГ­Г»Г¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ®Г¬. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» Г«ГҐГІГ ГҐГёГј Г­Г  Г±Г Г¬Г®Г«ГҐГІГҐ ГЁГ«ГЁ ГўГҐГ°ГІГ®Г«ГҐГІГҐ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. Г’Г ГЄГ¦ГҐ Г­Г ГўГ»ГЄ Г¬Г®Г¦Г­Г® ГЇГ®ГўГ»Г±ГЁГў ГЇГ°Г®Г©Г¤Гї ГЄГіГ°Г±Г» Гў Г«ГҐГІГ­Г®Г© ГёГЄГ®Г«ГҐ. ГЏГ°Г®Г©ГІГЁ ГЁГµ Г¬Г®Г¦Г­Г® 1 Г°Г Г§ Гў 24 Г·Г Г±Г , ГіГўГҐГ«Г·ГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  Г®ГІ 1 Г§Г Г­ГїГІГЁГї - 10, Г±ГІГ®ГЁГ¬Г®Г±ГІГј Г®Г¤Г­Г®ГЈГ® Г§Г Г­ГїГІГЁГї - 2 000$. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ Г­Г ГўГ»ГЄГ  ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±ГІГ ГЎГЁГ«ГјГ­Г®Г±ГІГј ГЇГ®Г«ГҐГІГ  ГЁ ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®Г±ГІГј ГўГ®Г§Г¤ГіГёГ­Г»Г¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ®Г¬.
+:?:.Г±ГЄГ°Г»ГІГ­::Г‘ГЄГ°Г»ГІГ­Г®Г±ГІГј - Г­Г ГўГ»ГЄ Г±ГЄГ°Г»ГІГ­Г®Г±ГІГЁ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ  ГіГ±ГЇГҐГёГ­Г»Гµ ГіГµГ®Г¤Г®Гў Г®ГІ ГЇГ®ГЈГ®Г­ГЁ (ГЇГ®Г­ГЁГ¦ГҐГ­ГЁГ© ГіГ°Г®ГўГ­Гї Г°Г®Г§Г»Г±ГЄГ ). Г—ГҐГ¬ Г·Г Г№ГҐ ГІГ» Г±ГЄГ°Г»ГўГ ГҐГёГјГ±Гї Г®ГІ ГЇГ®Г«ГЁГ¶ГЁГЁ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЌГЁ Г­Г  Г·ГІГ® Г­Г  ГўГ«ГЁГїГҐГІ
+:?:.Г±ГІГ°ГҐГ«ГјГЎГ ::Г‘ГІГ°ГҐГ«ГјГЎГ  - Г­Г ГўГ»ГЄ Г±ГІГ°ГҐГ«ГјГЎГ» ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Гў ГЇГҐГ°ГҐГ±ГІГ°ГҐГ«ГЄГ Гµ, Г«ГЁГЎГ® ГІГ°ГҐГ­ГЁГ°Г®ГўГЄГ Гµ. Г—ГҐГ¬ Г«ГіГ·ГёГҐ ГІГ» Г±ГІГ°ГҐГ«ГїГҐГёГј ГЁ ГЇГ®ГЇГ Г¤Г ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГђГҐГЄГ®Г¬ГҐГ­Г¤ГіГҐГ¬ ГІГ°ГҐГ­ГЁГ°Г®ГўГ ГІГјГ±Гї Гў Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г®ГІГўГҐГ¤ГҐГ­Г­Г»Гµ Г¤Г«Гї ГІГ®ГЈГ® Г¬ГҐГ±ГІГ Гµ, ГІГЁГ°ГҐ Гў Г®Г°ГіГ¦ГҐГ©Г­Г®Г¬ Г¬Г ГЈГ Г§ГЁГ­ГҐ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ Г­Г ГўГ»ГЄГ  ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±ГЄГ®Г°Г®Г±ГІГј ГЇГҐГ°ГҐГ§Г Г°ГїГ¤ГЄГЁ ГЁ ГЇГҐГ°ГҐГЄГ ГІГ®Гў, ГЄГіГ·Г­Г®Г±ГІГј Г±ГІГ°ГҐГ«ГјГЎГ».
+:?:.Г«ГҐГ·Гі::Г“Г¦ГҐ Г«ГҐГ·Гі ГЄ Г‚Г Г¬ Г­Г  ГЇГ®Г¬Г®Г№Гј.
+:?:.ГЇГ®Г¬::ГЏГ°ГЁГўГҐГІГ±ГІГўГіГѕ,Г±ГҐГ©Г·Г Г± ГЇГ®Г¬Г®ГЈГі Г‚Г Г¬, Г®Г¦ГЁГ¤Г Г©ГІГҐ.
+:?:.ГЎГ ГЈГ§Г§::Г—ГІГ®ГЎГ» ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј ГЇГ°ГҐГ¦Г­ГѕГѕ Г±ГЄГ®Г°Г®Г±ГІГј, Г§Г ГҐГ¤ГјГІГҐ Гў Г§ГҐГ«ГҐГ­ГіГѕ Г§Г®Г­Гі ГЁ ГўГ»ГҐГ¤ГјГІГҐ Г± Г­ГҐГҐ.
+:?:.ГЈГ®Г±Г¤Г®Г¬::Г—ГІГ®ГЎГ» ГЇГ°Г®Г¤Г ГІГј Г¤Г®Г¬ Гў ГЈГ®Г±. Г±ГІГ®ГЁГ¬Г®Г±ГІГј, Г­ГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г¤ГўГҐГ°ГЁ ГЁ Г­Г Г¦Г ГІГј Г…. Г‚Г» ГЇГ®Г«ГіГ·ГЁГІГҐ 75% Г®ГІ ГҐГЈГ® ГЈГ®Г±. Г¶ГҐГ­Г». Г…Г±Г«ГЁ Г‚Г» Г­ГҐГўГ®ГўГ°ГҐГ¬Гї Г®ГЇГ«Г ГІГЁГІГҐ Г­Г Г«Г®ГЈГЁ ГЁГ«ГЁ Г§Г ГЎГіГ¤ГҐГІГҐ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј, Г¤Г®Г¬ Г±Г«ГҐГІГЁГІ Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ.
+:?:.Г¬Г Г©ГЄГЁ::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГіГЇГЁГІГј Г¬Г Г©ГЄГі ГЇГ®Г¤ ГўГҐГ°ГµГ­ГѕГѕ Г®Г¤ГҐГ¦Г¤Гі, ГўГ Г¬ Г­ГіГ¦Г­Г® Г±Г­Г Г·Г Г«Г  ГЄГіГЇГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ ГўГҐГ°ГµГ­ГҐГ© Г®Г¤ГҐГ¦Г¤Г» (Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГЇГЁГ¤Г¦Г ГЄ). ГЏГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® ГўГ Г¬ ГЎГіГ¤Гі Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐ Г¬Г Г©ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ ГЇГ®Г¤ Г­ГҐГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ "ГЊГ Г©ГЄГЁ".
+:?:.Г°Г»ГЎГ«ГЁГ¶::ГЏГ®Г«ГіГ·ГЁГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГѕ Г­Г  Г°Г»ГЎГ Г«ГЄГі ГўГ» Г¬Г®Г¦ГҐГІГҐ Гў ГЊГЅГ°ГЁГЁ. 
+:?:.ГЇГ®ГЈГ®Г¤Г ::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЄГ®Г­ГІГ°Г®Г«ГЁГ°ГіГҐГІ Г¤Г Г­Г­Г»Г© ГЇГ°Г®Г¶ГҐГ±Г±. ГЏГ®ГЈГ®Г¤Г  Г¬ГҐГ­ГїГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ. 
+:?:.Г°ГҐГЇ::ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГіГІГ®Г·Г­ГЁГІГҐ Г±ГўГ®Г© ГўГ®ГЇГ°Г®Г± ГЇГ®Г¤Г°Г®ГЎГ­ГҐГҐ. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г«ГҐГІГ ГҐГІ Г­Г  Г°ГҐГЇГ®Г°ГІГ» ГЇГ® ГІГЁГЇГі "Г Г¤Г¬ГЁГ­ ГІГЇ", "Г Г¤Г¬ГЁГ­ Г¬Г®Г¦Г­Г® ГЇГ®ГЈГ®ГўГ®Г°ГЁГІГј", "ГЇГ®Г¬Г®ГЈГЁГІГҐ", "Г Г¤Г¬ГЁГ­ ГҐГ±ГІГј ГўГ®ГЇГ°Г®Г±". ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГЁГ¬ГўГ®Г«Г®Гў Г­ГҐГ®ГЈГ°Г Г­ГЁГ·ГҐГ­Г®, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г°Г Г±ГЇГЁГ±Г ГІГј Г‚Г ГёГі ГЇГ°Г®ГЎГ«ГҐГ¬Гі/ГўГ®ГЇГ°Г®Г±.
+:?:.Г­ГҐГіГўГЁГ¤::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ ГіГўГЁГ¤ГҐГІГј ГЅГІГ® Г­Г Г°ГіГёГҐГ­ГЁГҐ. ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®ГґГЁГЄГ±Г Г¶ГЁГї Г¤Г Г­Г­Г®ГЈГ® Г­Г Г°ГіГёГҐГ­ГЁГї - Г®ГґГ®Г°Г¬ГЁГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ, Г±ГЇГ Г±ГЁГЎГ® ГЎГ®Г«ГјГёГ®ГҐ Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:.ГЄГ®Г±ГІГЁ::Г—ГІГ®ГЎГ» ГЁГЈГ°Г ГІГј Гў ГЄГ®Г±ГІГЁ ГўГ Г¬ Г­ГіГ¦Г­Г® ГЄГіГЇГЁГІГј ГЁГµ Гў Г«ГѕГЎГ®Г¬ 24/7. ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ ГўГ» ГЄГіГЇГЁГ«ГЁ ГЄГ®Г±ГІГЁ, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ ГЁГЈГ°Г®ГЄГі.
+:?:.ГЇГ Г°ГЄ::Г—ГІГ®ГЎГ» ГЇГ°ГЁГЇГ Г°ГЄГ®ГўГ ГІГј Г’Г‘, Г§Г  Г°ГіГ«ГҐГ¬ Г­Г Г¦Г¬ГЁГІГҐ G - ГЏГ°ГЁГЇГ Г°ГЄГ®ГўГ ГІГј.
+:?:.Г­Г®ГўГЁГ·Г®ГЄ::ГЏГіГІГҐГўГ®Г¤ГЁГІГҐГ«Гј Г­Г ГµГ®Г¤ГЁГІГ±Гї Г­Г  Г±ГЇГ ГўГ­Г Гµ Г­Г®ГўГЁГ·ГЄГ®Гў. ГЋГ­ГЁ Г®ГЎГ®Г§Г­Г Г·ГҐГ­Г» Г­Г  ГЄГ Г°ГІГҐ Г§Г­Г Г·ГЄГ®Г¬ Г¬Г ГёГіГ№ГҐГЈГ® Г·ГҐГ«Г®ГўГҐГ·ГЄГ .
+:?:.Г¤Г ::Г„Г . 
+:?:.Г­ГҐГІ::ГЌГҐГІ. 
+:?:.Г­ГҐГІГЇ::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІ ГЁГЈГ°Г®ГЄГ®Гў, Г‚Г Г¬ Г­ГіГ¦Г­Г® Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г¬ГҐГ±ГІГ  Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г®. ГЌГ  ГЇГ°Г®ГҐГЄГІГҐ Г¤Г®Г±ГІГ ГІГ®Г·Г­Г® Г±ГЇГ®Г±Г®ГЎГ®Гў, Г·ГІГ®ГЎГ» ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј: ГІГ ГЄГ±ГЁ, Г Г°ГҐГ­Г¤Г  ГІГ°Г Г­Г±ГЇГ®Г°ГІГ , Г ГўГІГ®Г±ГҐГ°ГўГЁГ±Г».
+:?:.ГЁГ­Гў::ГќГІГ® ГЎГ ГЈ ГЁГ­ГўГҐГ­ГІГ Г°Гї, ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГҐ Г®ГЎГ¬ГҐГ­ГїГІГјГ±Гї Г«ГѕГЎГ®Г¬Гі ГЁГЈГ°Г®ГЄГі ГЁ ГўГ ГёГ  ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГЎГіГ¤ГҐГІ Г°ГҐГёГҐГ­Г . Г…Г±Г«ГЁ ГЇГ® ГЎГ«ГЁГ§Г®Г±ГІГЁ Г­ГЁГЄГ®ГЈГ® Г­ГҐГІ, Г®ГЎГ°Г ГІГЁГІГҐГ±Гј ГҐГ№Вё Г°Г Г§ Гў Г°ГҐГЇГ®Г°ГІ ГЁ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г‚Г Г¬ ГЇГ®Г¬Г®Г¦ГҐГІ. 
+:?:.Г Г°Г»Г­Г®ГЄ::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГўГ»Г±ГІГ ГўГЁГІГј Г±ГўГ®ГҐ Г ГўГІГ® Г­Г  ГЇГ°Г®Г¤Г Г¦Гі, Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  ГІГҐГ°Г°ГЁГІГ®Г°ГЁГѕ Г ГўГІГ®Г°Г»Г­ГЄГ , ГўГ»ГЎГ°Г ГІГј Г¬ГҐГ±ГІГ® ГЁ Г­Г Г¦Г ГІГј Г­Г  ГЄГ«Г ГўГЁГёГі "G" - ГЂГўГІГ®Г°Г»Г­Г®ГЄ - Г‚Г»Г±ГІГ ГўГЁГІГј Г­Г  ГЇГ°Г®Г¤Г Г¦Гі.
+:?:.ГІГ®Г«ГЄГ ГІГј::Г’Г°Г Г­Г±ГЇГ®Г°ГІ Г¬Г®Г¦Г­Г® ГІГ®Г«ГЄГ ГІГј, Г­Г Г¦Г Гў G-ГІГ®Г«ГЄГ ГІГј. Г…Г±Г«ГЁ ГІГ ГЄГ®Г© ГґГіГ­ГЄГ¶ГЁГЁ Г­ГҐГІ, ГЇГ°ГЁ Г­Г ГўГҐГ¤ГҐГ­ГЁГЁ Г­Г  Г ГўГІГ®, ГІГ® ГЅГІГ®ГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ГІГ®Г«ГЄГ ГІГј Г­ГҐГ«ГјГ§Гї.
+:?:.Г­ГҐГ±Г«::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ Г±Г«ГҐГ¤ГЁГІГј ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г§Г  ГўГ±ГҐГ¬ ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Г®Г¬, Гў Г±Г«ГіГ·Г ГҐ Г­Г Г°ГіГёГҐГ­ГЁГ© Г®ГІ ГЁГЈГ°Г®ГЄГ®Гў - Г­Г ГЇГЁГёГЁГІГҐ Г°ГҐГЇГ®Г°ГІ.
+:?:.Г±Г·ГҐГІ::Г—ГІГ®ГЎГ» ГіГ§Г­Г ГІГј Г­Г®Г¬ГҐГ° Г±Г·ГҐГІГ  Г®ГІГЄГ°Г®Г©ГІГҐ ГЁГ­ГўГҐГ­ГІГ Г°Гј ГЁ Г­Г ГўГҐГ¤ГЁГІГҐГ±Гј Г¬Г»ГёГЄГ®Г© Г­Г  ГЎГ Г­ГЄГ®ГўГ±ГЄГіГѕ ГЄГ Г°ГІГі. 
+:?:.ГЇГЁГ­::Г—ГІГ®ГЎГ» ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј ГЇГЁГ­-ГЄГ®Г¤ Г®ГІГЇГ°Г ГўГ«ГїГ©ГІГҐГ±Гј Гў ГЎГ Г­ГЄГ®ГўГ±ГЄГ®ГҐ Г®ГІГ¤ГҐГ«ГҐГ­ГЁГҐ, Гў Г¬ГҐГ­Гѕ Г±Г¬ГҐГ­Г» Г­Г Г¦Г¬ГЁГІГҐ "Г‚Г®Г±Г±ГІГ Г­Г®ГўГЁГІГј".
+:?:.Г ГіГІ::Г„Г«Гї ГЇГ®Г¤ГЄГ«ГѕГ·ГҐГ­ГЁГї Google authenticator ГўГ Г¬ Г­ГіГ¦Г­Г® Гў Г¬ГҐГ­Гѕ ГўГ»ГЎГ®Г°Г  ГЇГҐГ°Г±Г®Г­Г Г¦Г  Г®ГІГЄГ°Г»ГІГј Г°Г Г§Г¤ГҐГ« Г­Г Г±ГІГ°Г®ГҐГЄ.
+:?:.Гµ2::Г’ГҐГЇГҐГ°Гј ГЄГ®ГЁГ­Г» ГўГ»Г¤Г ГѕГІГ±Гї ГЇГ® ГўГ»ГµГ®Г¤Г­Г»Г¬, ГЇГ® ГЎГіГ¤Г­ГїГ¬ ГЇГ°Г®ГЄГ°ГіГІГЄГ  Г°ГіГ«ГҐГІГЄГЁ Г§Г  5 Г·Г Г±Г®Гў ГЁГЈГ°Г».
+:?:.Г®ГЈГ°::Г—ГІГ®ГЎГ» Г­Г Г·Г ГІГј Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГҐ ГЎГ Г­ГЄГ , ГўГ Г¬ Г­ГіГ¦Г­Г® ГЇГ®Г§ГўГ®Г­ГЁГІГј ГЇГ® Г­Г®Г¬ГҐГ°Гі: 28121903. Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГЎГ»ГІГј Гў ГЄГ°Г Г©Г¬ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ, ГЁ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г°ГїГ¤Г®Г¬ Г± ГЎГ Г­ГЄГ®Г¬ (ГЄГ ГЄ Г¬ГЁГ­ГЁГ¬ГіГ¬ ГўГ Г± Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј 4 Г®ГЄГ®Г«Г® ГЎГ Г­ГЄГ , ГЁГ­Г Г·ГҐ Г­ГҐ Г±Г¬Г®Г¦ГҐГІГҐ). Г„Г«Гї Г­Г Г·Г Г«Г  Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГї ГІГ°ГҐГЎГіГҐГІГ±Гї "ГЏГ«Г Г­ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГ©", ГЄГ®ГІГ®Г°Г»Г© ГўГ»ГЎГЁГ°Г ГҐГІГ±Гї Гў AirDrops ГЁГ«ГЁ ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ ГЎГЁГ§Г­ГҐГ±Г®Гў.ГЊГ®Г¦Г­Г® ГЈГ°Г ГЎГЁГІГј 1 Г°Г Г§ Гў Г¤ГҐГ­Гј ГЄГ Г¦Г¤Г®Г© Г®ГЈГ°Г Г­ГЁГ§Г Г¶ГЁГЁ.ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ®, ГЄГ ГЄ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГҐ Г­Г Г·Г Г«Г®Г±Гј ГЁ ГЎГ Г­ГЄ ГЇГ®Г«ГіГ·ГЁГ« ГЄГ°Г Г±Г­ГіГѕ ГЁГЄГ®Г­ГЄГі, Г­Г Г¤Г® ГЇГ°ГЁГ¶ГҐГ«ГЁГІГјГ±Гї Гў ГЎГ®ГІГ  ГЁ Г§Г ГЇГ®Г«Г­ГЁГІГј ГЇГ°Г®ГЈГ°ГҐГ±Г± ГЎГ Г°.Г„Г Г«ГјГёГҐ ГЎГіГ¤ГҐГІ ГЎГ®Г«ГјГёГ Гї Г¤ГўГҐГ°Гј, Г·ГІГ® ГЎГ» ГҐГҐ Г°Г Г§ГЎГ«Г®ГЄГЁГ°Г®ГўГ ГІГј, Г­ГіГ¦Г­Г® ГЇГ°Г®Г©ГІГЁ Г¬ГЁГ­ГЁ-ГЁГЈГ°Гі Г±Г® ГўГ§Г«Г®Г¬Г®Г¬. Г„Г«Гї ГЅГІГ®ГЈГ® ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬ В«ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“В» + В«ГЉГ ГЎГҐГ«Гј ГЅГ«ГҐГЄГІГ°Г®Г­Г­Г»Гµ Г¤ГўГҐГ°ГҐГ©В». ГЋГ­ ГЇГ°Г®Г¤Г ГҐГІГ±Гї Гі ГІГ®Г°ГЈГ®ГўГ¶Г  Г­Г  Г°Г»Г­ГЄГҐ. ГЏГ®Г±Г«ГҐ ГўГ§Г«Г®Г¬Г  ГЇГҐГ°ГҐГ¤ ГўГ Г¬ГЁ ГЎГіГ¤ГҐГІ Г±ГІГ®ГїГІГј Г±ГІГ®Г©ГЄГ  Г± Г¤ГҐГ­ГјГЈГ Г¬ГЁ. Г„Г Г«ГҐГҐ ГЁГ¤ГҐГІ 2-Гї Г¤ГўГҐГ°Гј. Г„Г«Гї ГҐГҐ ГўГ§Г«Г®Г¬Г  Г­Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  В«ГЉГ«ГѕГ· ГЄГ Г°ГІГ  FleecaВ» Г«ГЁГЎГ® В«Г’ГҐГ°Г¬ГЁГІГ­Г Гї ГіГ±ГІГ Г­Г®ГўГЄГ В».В«ГЉГ«ГѕГ· ГЄГ Г°ГІГ  FleecaВ» ГўГ»ГЇГ Г¤Г ГҐГІ Г± ГЎГ®ГІГ®Гў ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ ГЎГЁГ§Г­ГҐГ±Г®Гў, ГЁГ«ГЁ Г­Г  Г ГЁГ° Г¤Г°Г®ГЇГ Гµ.В«Г’ГҐГ°Г¬ГЁГІГ­Г Гї ГіГ±ГІГ Г­Г®ГўГЄГ В» ГЇГ°Г®Г¤Г ГҐГІГ±Гї Гі ГЇГЁГ°Г®ГІГҐГµГ­ГЁГЄГ . Г‘ ГҐГҐ ГЇГ®Г¬Г®Г№ГјГѕ Г¤ГўГҐГ°Гј Г®ГІГЄГ°Г»ГўГ ГҐГІГ±Гї Г§Г  2 Г¬ГЁГ­ГіГІГ». 
+:?:.Г®ГЈГ°2::Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГўГ§ГїГІГј Гў Г°ГіГЄГЁ Г®Г¤ГЁГ­ ГЁГ§ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў, Г·ГІГ®ГЎГ» Г®ГІГЄГ°Г»ГІГј Г¤ГўГҐГ°Гј. ГЌГ® Гў ГµГ°Г Г­ГЁГ«ГЁГ№ГҐ ГҐГ±ГІГј ГїГ·ГҐГ©ГЄГЁ, Г¤Г«Гї ГўГ§Г«Г®Г¬Г  ГїГ·ГҐГҐГЄ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  В«Г„Г°ГҐГ«Гј 1500wВ». Г„Г°ГҐГ«Гј ГЄГ°Г ГґГІГЁГІГ±Гї Гі ГЄГ°ГЁГ¬ГЁГ­Г Г«ГјГ­Г»Гµ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГ© ГЁ ГўГ»ГЇГ Г¤Г ГҐГІ ГЇГ°ГЁ Г±Г¬ГҐГ°ГІГЁ. ГЏГ®Г±Г«ГҐ ГіГ±ГЇГҐГёГ­Г®ГЈГ® ГЇГ°Г®ГµГ®Г¦Г¤ГҐГ­ГЁГї Г¬ГЁГ­ГЁ-ГЁГЈГ°Г» ГЇГ® ГўГ§Г«Г®Г¬Гі ГїГ·ГҐГ©ГЄГЁ Г­Г  ГЇГ®Г« ГЇГ Г¤Г ГҐГІ Г­Г ГЈГ°Г Г¤Г .
+:?:.Г¤Г°Г®Г­::Г„Г°Г®Г­ ГЄГ°Г ГґГІГЁГІГ±Гї Гі Г±ГЁГ«Г®ГўГ»Гµ ГЈГ®Г±.Г±ГІГ°ГіГЄГІГіГ° ГЁ Weasel News. ГЏГ®Г«ГјГ§Г®ГўГ ГІГјГ±Гї ГЁГ¬ Г¬Г®ГЈГіГІ Г±Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЅГІГЁ Г¦ГҐ ГЈГ®Г±.Г±ГІГ°ГіГЄГІГіГ°Г». Г—ГІГ®ГЎГ» ГЇГ®Г¤Г­ГїГІГјГ±Гї-ГЇГ°Г®ГЎГҐГ«, Г·ГІГ®ГЎГ» Г®ГЇГіГ±ГІГЁГІГјГ±Гї-shift. ГЌГ  E-ГІГҐГЇГ«Г®ГўГЁГ§Г®Г° ГўГЄГ«ГѕГ·ГЁГІГј/ГўГ»ГЄГ«ГѕГ·ГЁГІГј.
+:?:.Г ГіГЄГ¶::ГЌГ  Г ГіГЄГ¶ГЁГ®Г­ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г±ГІГ ГўГЁГІГј Г ГўГІГ®/ГЎГЁГ§Г­ГҐГ±/Г¤Г®Г¬/ГЄГўГ Г°ГІГЁГ°Гі. Г‚Г® ГўГ°ГҐГ¬Гї ГІГ®ГЈГ®, ГЄГ ГЄ ГўГ» ГўГ»Г±ГІГ ГўГ«ГїГҐГІГҐ Г«Г®ГІ, ГўГ» Г¬Г®Г¦ГҐГІГҐ Г«ГЁГёГј ГҐГ§Г¤ГЁГІГј Г­Г  Г ГўГІГ®. ГЏГ°ГЁ ГЇГ°Г®Г¤Г Г¦ГҐ Г­Г  Г ГЄГ¶ГЁГ®Г­ГҐ Г¤Г®Г¬Г /ГЄГўГ Г°ГІГЁГ°Г»-ГЄГ«Г Г¤Г®ГўГЄГ  ГЇГҐГ°ГҐГ¤Г ВёГІГ±Гї ГЇГ®ГЄГіГЇГ ГІГҐГ«Гѕ ГЇГ®Г«Г­Г®Г±ГІГјГѕ.
+:?:.Г¤Г°ГЁГґГІ::Г„Г°ГЁГґГІ Г±Г·ВёГІГ·ГЁГЄ Г¬Г®Г¦Г­Г® ГўГЄГ«ГѕГ·ГЁГІГј Г·ГҐГ°ГҐГ§ F2 > ГЌГ Г±ГІГ°Г®Г©ГЄГЁ > Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г®. ГЋГ­ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї ГўГ® ГўГ°ГҐГ¬Гї ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®ГЈГ® Г§Г Г­Г®Г±Г  ГЁ ГЇГ®ГЄГ Г§Г»ГўГ ГҐГІ, Г­Г  Г±ГЄГ®Г«ГјГЄГ® ГµГ®Г°Г®ГёГ® ГўГ» ГЇГ°Г®ГёГ«ГЁ ГЇГ®ГўГ®Г°Г®ГІ.ГЌГ  ГЄГ Г°ГІГҐ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГіГўГЁГ¤ГҐГІГј Г§Г®Г­Г», ГЈГ¤ГҐ Г¬Г®Г¦Г­Г® Г¤Г°ГЁГґГІГЁГІГј ГЁ ГЇГ®ГЇГ Г±ГІГј Гў Г±ГЇГЁГ±Г®ГЄ ГІГ®ГЇ-Г¤Г°ГЁГґГІГҐГ°Г®Гў. Г„Г«Гї ГЅГІГ®ГЈГ® Г‚Г Г¬ Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г°ГЁГґГІГЁГІГј ГЇГ® Г®ГІГ¬ГҐГ·ГҐГ­Г­Г®Г© Г§Г®Г­ГҐ. Г‚ ГЇГ°Г®ГІГЁГўГ­Г®Г¬ Г±Г«ГіГ·Г ГҐ Г®Г·ГЄГЁ Г­ГҐ Г§Г Г±Г·ГЁГІГ ГѕГІГ±Гї.ГЏГ®ГЄГ Г¦ГЁГІГҐ, ГЄГІГ® Г§Г¤ГҐГ±Гј Г­Г Г±ГІГ®ГїГ№ГЁГ© ГЄГ®Г°Г®Г«Гј Г¤Г°ГЁГґГІГ !
+:?:.ГЎГ®Г«ГЈГ Г°ГЄГ ::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» Г°Г Г±ГЇГЁГ«ГЁГІГј ГЎГ ГЈГ Г¦Г­ГЁГЄ Г­ГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ ГЎГ ГЈГ Г¦Г­ГЁГЄГі G - ГЌГҐГ«ГҐГЈГ Г«ГјГ­Г®ГҐ Г¤Г«Гї Г ГўГІГ® - ГђГ Г±ГЇГЁГ«ГЁГІГј Г¤ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ. ГЋГІГЄГ°Г»ГўГ ГҐГІГ±Гї ГЎГ ГЈГ Г¦Г­ГЁГЄ ГЁ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ§ГїГІГј Г± Г­ГҐГЈГ® ГЄГ ГЄ ГЄГ®Г°Г®ГЎГЄГЁ Г± Г¬Г ГІГҐГ°ГЁГ Г«Г Г¬ГЁ, ГІГ ГЄ ГЁ ГЄГ®Г°Г®ГЎГЄГЁ Г±Г® Г±Г­Г Г°ГїГ¦ГҐГ­ГЁГҐГ¬. Г‚Г§Г«Г®Г¬Г ГІГј Г¬Г®Г¦Г­Г® Г­ГҐ ГІГ®Г«ГјГЄГ® ГЈГ®Г±.Г¬Г ГІГ®ГўГ®Г§ГЄГЁ, Г­Г® ГЁ ГЄГ°Г Г©Г¬. ГЃГ®Г«ГЈГ Г°ГЄГ®Г© Г­ГҐГ«ГјГ§Гї ГўГ§Г«Г®Г¬Г ГІГј Г«ГЁГ·Г­Г»Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ.
+:?:.Г­ГҐГіГў::ГЌГҐ ГіГўГЁГ¤ГҐГ« Г­Г Г°ГіГёГҐГ­ГЁГ©, ГҐГ±Г«ГЁ Гі ГўГ Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  - Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ. 
+:?:.ГґГ®Г°::Г„Г Г­Г­Г®ГҐ Г­Г Г°ГіГёГҐГ­ГЁГҐ Г­ГҐ ГЇГ®Г¤Г«ГҐГ¦ГЁГІ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ­ГЁГѕ Г·ГҐГ°ГҐГ§ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ, Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+:?:.ГґГ®Г°ГіГ¬::Г‚ Г±ГўГїГ§ГЁ Г± Г­Г ГЈГ°ГіГ§ГЄГ®Г© Г­Г  Г±ГҐГ°ГўГҐГ° Г¬Г» Г­ГҐ Г¬Г®Г¦ГҐГ¬ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГІГј ГўГ ГёГі Г¦Г Г«Г®ГЎГі Г­Г  ГЁГЈГ°Г®ГЄГ  ГЇГ®Г±Г°ГҐГ¤Г±ГІГўГ®Г¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГї, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:.ГґГ¦ГЎ::ГЌГҐ Г¬Г®ГЈГі Г°Г Г±Г±Г¬Г®ГІГ°ГҐГІГј ГЁГ§-Г§Г  Г­Г Г°ГіГёГҐГ­ГЁГ© ГЇГ°Г ГўГЁГ« ГЇГ®Г¤Г Г·ГЁ. ГЂГўГІГ®Г°Гі Г°ГҐГЇГ®Г°ГІ-Г¦Г Г«Г®ГЎГ» Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГіГЄГ Г§Г»ГўГ ГІГј Гў Г­Г Г§ГўГ Г­ГЁГЁ ГўГЁГ¤ГҐГ®: Г±ГўГ®Г© static, static Г­Г Г°ГіГёГЁГІГҐГ«Гї, ГўГ°ГҐГ¬Гї ГЁ Г¤Г ГІГі. Г€Г§Г¬ГҐГ­ГЁГІГҐ Г­Г Г§ГўГ Г­ГЁГҐ ГЁ ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ ГўГ ГёГі Г°ГҐГЇГ®Г°ГІ-Г¦Г Г«Г®ГЎГі.
+:?:.ГЁГ±Г·::Г‚Г±ГҐ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г»ГҐ Г±Г°ГҐГ¤Г±ГІГўГ  ГЁГ±Г·ГҐГ§Г ГѕГІ Г·ГҐГ°ГҐГ§ 60 Г¬ГЁГ­ГіГІ, ГҐГ±Г«ГЁ Г± Г­ГЁГ¬ГЁ Г­ГЁГЄГ ГЄ Г­ГҐ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј.
+:?:.ГґГ Г¬::/c - IC Г·Г ГІ, /cb - OOC Г·Г ГІ. 
+:?:.ГґГ°Г ГЄ::/f - IC Г·Г ГІ, /fb - OOC Г·Г ГІ. 
+:?:.Г¬Г Г°ГЄ::/mark ГЏГЋГ•Г€Г™Г…ГЌГ€Г…!!!
+:?:.Г±ГЇГЎ::Г…Г±Г«ГЁ Г®Г¤Г­Г® Г®ГІГ¤ГҐГ«ГҐГ­ГЁГҐ Г…ГЊГ‘ Г±ГЁГ«ГјГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­Г®, Г·ГІГ®ГЎГ» ГЁГ§ГЎГҐГ¦Г ГІГј ГЄГ°Г ГёГЁ ГўГ Г± Г±ГЇГ ГўГ­ГЁГІ Гў Г¤Г°ГіГЈГ®Г¬, Г¬ГҐГ­ГҐГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г­Г®Г¬ Г®ГІГ¤ГҐГ«ГҐГ­ГЁГЁ.
+:?:.ГЇГ°Г®Г¬Г®::ГЏГ°Г®Г¬Г®ГЄГ®Г¤ Г¬Г®Г¦Г­Г® ГўГўГҐГ±ГІГЁ Г¤Г® 3 ГіГ°Г®ГўГ­Гї ГЄГ®Г¬Г Г­Г¤Г®Г© /promo "ГЇГ°Г®Г¬Г®ГЄГ®Г¤", Г­Г ГЈГ°Г Г¤Г  Г§Г  Г­ГҐГЈГ® ГЎГіГ¤ГҐГІ ГўГ»Г¤Г Г­Г  ГЇГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 3 ГіГ°Г®ГўГ­Гї. ГЏГ°ГЁГЈГ«Г Г±ГЁГўГёГЁГ© ГЇГ®Г«ГіГ·Г ГҐГІ 7500$. ГЏГ°ГЁГЈГ«Г ГёГҐГ­Г­Г»Г© ГЁГЈГ°Г®ГЄ ГЇГ®Г«ГіГ·Г ГҐГІ: Г®ГІ Г®ГЎГ»Г·Г­Г®ГЈГ® ГЁГЈГ°Г®ГЄГ  - 10 000$ + 3 Г¤Г­Гї Platinum VIP, Г®ГІ Г¬ГҐГ¤ГЁГ  - 20 000$ + 7 Г¤Г­ГҐГ© Platinum VIP 
+:?:.ГЇГҐГ°ГҐГ¤::Г‚Г±ГҐ ГЁГ¬ГіГ№ГҐГ±ГІГўГ® ГўГ» ГЇГҐГ°ГҐГ¤Г ГҐГІГҐ Г­Г  Г±ГўГ®Г© Г±ГІГ°Г Гµ ГЁ Г°ГЁГ±ГЄ.
+:?:.Г®Г±ГЄ::Г†Г Г«Г®ГЎГ» Гў Г°ГҐГЇГ®Г°ГІ Г­Г  OOC Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ ГЇГ°ГЁГ­ГЁГ¬Г ГҐГ¬ ГІГ®Г«ГјГЄГ® ГІГ®ГЈГ¤Г , ГҐГ±Г«ГЁ Г±ГЄГ°ГЁГ­ГёГ®ГІ Г±Г¤ГҐГ«Г Г­ Гў ГІГі Г¦ГҐ Г¬ГЁГ­ГіГІГі, Г·ГІГ® ГЁ ГЋГЋГ‘ Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Гў Г·Г ГІГҐ + Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г­Г  Г±ГЄГ°ГЁГ­ГҐ Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј ГЇГ°ГЁГ±ГіГІГ±ГІГўГЁГҐ Г­Г Г°ГіГёГЁГўГёГҐГЈГ® (ГўГЁГ¤Г­Г® ГҐГЈГ® ГЁГ«ГЁ Г±ГІГ ГІГЁГЄ)
+:?:.Г°ГіГ¤Г ::ГђГіГ¤Г  Г± ГёГ ГµГІГ» ГІГ°ГҐГЎГіГҐГІГ±Гї ГІГ®Г«ГјГЄГ® Гў Г±ГҐГ¬ГҐГ©Г­Г»Гµ ГЄГ®Г­ГІГ°Г ГЄГІГ Гµ, ГЇГ°Г®Г¤Г ГІГј ГҐГҐ Г­ГҐГ«ГјГ§Гї.
+:?:.Г§Г ГЄ::ГќГІГ® Г°ГҐГЈГ«Г Г¬ГҐГ­ГІГЁГ°ГіГҐГІГ±Гї IC Г§Г ГЄГ®Г­Г Г¬ГЁ, ГЁГ§ГіГ·ГЁГІГј ГЁГµ Г¬Г®Г¦ГҐГІГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ Government Г­Г  ГґГ®Г°ГіГ¬ГҐ: Majestic RolePlay Server Las Vegas - ГЋГ°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ - ГѓГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»ГҐ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ - Government.
+:?:.ГЇГіГ§Г®::/asms  Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј Г Г­ГЁГ¬Г Г¶ГЁГѕ Гў F2 - ГЂГ­ГЁГ¬Г Г¶ГЁГЁ - ГЇГ®Г§Г» - Г‹ГҐГ¦Г ГІГј Г­Г  Г¦ГЁГўГ®ГІГҐ. Г”ГіГ­ГЄГ¶ГЁГ®Г­Г Г«ГјГ­Г»ГҐ "ГЇГ®Г«Г§Г ГІГј" ГЎГ®Г«ГҐГҐ Г­ГҐ Г±Г·ГЁГІГ ГѕГІГ±Гї Г§Г  ГЁГ±ГЇГ®Г«Г­ГҐГ­ГЁГҐ ГЅГІГ®ГЈГ® ГІГ°ГҐГЎГ®ГўГ Г­ГЁГї.{left 151}
+:?:.ГЎГ ГЈГ°ГҐГЇ::Г‚ Г±Г«ГіГ·Г ГҐ Г­Г ГµГ®Г¦Г¤ГҐГ­ГЁГї ГЎГ ГЈГ  Г®Г±ГІГ ГўГјГІГҐ Г±ГўГ®Г© ГЎГ ГЈ-Г°ГҐГЇГ®Г°ГІ Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ : Г’ГҐГЄГ±ГІГ®ГўГ»ГҐ ГЄГ Г­Г Г«Г» - Г±Г®Г®ГЎГ№ГЁГІГј Г® ГЎГ ГЈГҐ.
+:?:.Г¬ГҐГ¤::Г‡Г  Г¤Г Г­Г­Г»Г¬ Г¬ГҐГ¤ГЁГ  ГЇГ Г°ГІГ­ГҐГ°Г®Г¬ Г­Г ГЎГ«ГѕГ¤Г ГҐГІ PR Г Г±Г±ГЁГ±ГІГҐГ­ГІ, ГЇГ® ГЅГІГ®Г© ГЇГ°ГЁГ·ГЁГ­ГҐ Гї Г­ГҐ Г¬Г®ГЈГі ГўГ»Г¤Г ГўГ ГІГј Г­Г ГЄГ Г§Г Г­ГЁГҐ, ГІ.ГЄ. ГўГ±Гї Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®Г±ГІГј Г§Г  ГЇГ°Г®ГЁГ±ГµГ®Г¤ГїГ№ГҐГҐ Г­Г  ГЅГІГ®Г© Г±ГЁГІГіГ Г¶ГЁГЁ Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ ГЇГҐГ°ГҐГ­Г®Г±ГЁГІГ±Гї Г­Г  PR Г Г±Г±ГЁГ±ГІГҐГ­ГІГ .
+:?:.Г­ГЁГ§ГЄ::Г“ ГўГ Г± ГўГЄГ«ГѕГ·ГҐГ­ Г°ГҐГ¦ГЁГ¬ Г­ГЁГ§ГЄГ®ГЈГ® ГЄГ Г·ГҐГ±ГІГўГ  Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+:?:.Г§ГЄГ Г©Г®::ГЌГ  Г®Г±ГІГ°Г®ГўГҐ ГЁГ¬ГҐГҐГІГ±Гї Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГІГ®Г·ГҐГЄ Г§Г ГµГўГ ГІГ  Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГЁГµ, ГўГ®ГҐГ­Г­Г»Гµ, ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГµ Г¬Г ГІГҐГ°ГЁГ Г«Г®Гў. Г„Г«Гї Г§Г ГµГўГ ГІГ  Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ§ГїГІГј Г± Г±Г®ГЎГ®Г© Г¬Г ГїГ·ГЄГЁ(ГЏГ®Г¤ГЎГҐГ°ГЁГІГҐ Г¶ГўГҐГІГ ), ГҐГ±Г«ГЁ Г¦ГҐ Гі Г‚Г Г± Г¬Г ГїГ·ГЄГЁ Г§ГҐГ«ВёГ­Г®ГЈГ® Г¶ГўГҐГІГ  Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ Г§Г ГµГўГ ГІГЁГІГј ГўГ®ГҐГ­Г­Г»ГҐ Г¬Г ГІГҐГ°ГЁГ Г«Г», Г±ГЁГ­ГҐГЈГ® Г‚Г ГёГҐГ© Г¶ГҐГ«ГјГѕ Г±ГІГ Г­ГіГІ ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁ ГЇГ°ГЁ Г­Г Г«ГЁГ·ГЁГЁ ГЄГ°Г Г±Г­Г»Гµ Г‚Г Г¬ Г®ГІГЄГ°Г®ГҐГІГ±Гї ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г§Г ГµГўГ ГІГЁГІГј Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГЁГҐ. Г‡Г ГµГўГ ГІ Г¬Г®Г¦Г­Г® Г­Г Г·Г ГІГј Гў Г°Г Г¤ГЁГіГ±ГҐ 50Г¬ Г®ГІ ГІГ®Г·ГЄГЁ ГЇГ®ГЈГ°ГіГ§ГЄГЁ, ГЇГ®Г±Г«ГҐ Г ГЄГІГЁГўГ Г¶ГЁГЁ Г¬Г ГїГ·ГЄГ  ГЇГ®ГїГўГЁГІГ±Гї Г®ГЎГ®Г§Г°ГЁГ¬Г Гї Г§Г®Г­Г  Г§Г ГµГўГ ГІГ , ГҐГ±Г«ГЁ ГўГ»Г©ГІГЁ Г§Г  Г§Г®Г­Гі Г§Г ГµГўГ ГІГ  ГЁГ«ГЁ ГўГ±ГҐ Г§Г ГµГўГ ГІГ·ГЁГЄГЁ ГіГ¬Г°ГіГІ, Г¬Г ГїГ·Г®ГЄ ГіГ­ГЁГ·ГІГ®Г¦Г ГҐГІГ±Гї, ГІГ®Г·ГЄГ  ГЇГҐГ°ГҐГµГ®Г¤ГЁГІ Гў Г±ГЇГ®ГЄГ®Г©Г­Г®ГҐ Г±Г®Г±ГІГ®ГїГ­ГЁГҐ ГЄГ ГЄ Г¤Г® Г§Г ГµГўГ ГІГ . ГЌГҐ Г±ГІГ®ГЁГІ Г§Г ГЎГ»ГўГ ГІГј ГЁ ГЇГ°Г® Г±ГЁГЈГ­Г Г«ГЁГ§Г Г¶ГЁГѕ, ГҐГ±Г«ГЁ Г‚Г» ГҐВё Г­ГҐ ГўГ»ГЄГ«ГѕГ·ГЁГІГҐ ГўГ±ГҐ ГЈГ®Г±Г±ГІГ°ГіГЄГІГіГ°Г» ГЎГіГ¤ГіГІ Гў Г¬Г®Г¬ГҐГ­ГІ Г®ГЇГ®ГўГҐГ№ГҐГ­Г» ГЁ Г‚Г Г± ГЎГіГ¤ГҐГІ Г¦Г¤Г ГІГј Г±ГҐГ°ГјВёГ§Г­Г®ГҐ Г±Г®ГЇГ°Г®ГІГЁГўГ«ГҐГ­ГЁГҐ(Г”ГіГ­ГЄГ¶ГЁГ®Г­Г Г«ГјГ­Г® Г­Г  Г§Г ГµГўГ ГІ Г¬Г ГІГҐГ°ГЁГ Г«Г®Гў ГЅГІГ® Г­ГҐ ГЇГ®ГўГ«ГЁГїГҐГІ). ГЏГ®Г±Г«ГҐ Г§Г ГµГўГ ГІГ  ГЎГ«ГЁГЇ Г­Г  ГЄГ Г°ГІГҐ ГЄГ°Г Г±ГЁГІГ±Гї Гў Г¶ГўГҐГІ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ Г§Г ГµГўГ ГІГ·ГЁГЄГ®Гў. Г€ГЈГ°Г®ГЄГЁ Г±Г¬Г®ГЈГіГІ Г§Г ГЎГЁГ°Г ГІГј Г¬Г ГІГҐГ°ГЁГ Г«Г» Г± ГІГ®Г·ГЄГЁ ГЁ ГЈГ°ГіГ§ГЁГІГј ГЁГµ Гў Г«ГЁГ·Г­ГіГѕ/Г Г°ГҐГ­Г¤Г®ГўГ Г­Г­ГіГѕ Г«Г®Г¤ГЄГі - Гў ГЈГ®Г°Г®Г¤ГҐ ГЇГҐГ°ГҐГЈГ°ГіГ¦Г ГІГј Гў Г¬Г ГІГ®ГўГ®Г§ГЄГі.
+:?:.ГЇГҐГ°ГЁГЄГ®::Г“ ГўГ±ГҐГµ Г±ГЁГ«Г®ГўГ»Гµ ГґГ°Г ГЄГ¶ГЁГ© ГЇГ®ГїГўГЁГ«Г Г±Гј Г¬ГҐГІГЄГ  Г¤Г«Гї ГІГҐГ«ГҐГЇГ®Г°ГІГ Г¶ГЁГЁ, ГґГ°Г ГЄГ¶ГЁГЁ EMS/WN/GOV Г«ГЁГёГҐГ­Г» ГҐВё. ГЋГІГ¤ГҐГ«ГҐГ­ГЁГҐ LSCSD Гў Г‘ГЅГ­Г¤ГЁ-ГГ®Г°Г± ГІГ®Г¦ГҐ Г­ГҐ ГЁГ¬ГҐГҐГІ Г¬ГҐГІГЄГЁ. ГЉГ Г¦Г¤Г Гї ГґГ°Г ГЄГ¶ГЁГЁ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІГ±Гї Гў Г®Г¤Г­Гі ГІГ®Г·ГЄГі Г­Г  Г®Г±ГІГ°Г®ГўГҐ, ГІГ ГЄГЁГ¬ ГЇГіГІВёГ¬ ГЁ Г®ГЎГ°Г ГІГ­Г®. ГЋГ¤Г­Г ГЄГ® Г‚Г» Г­ГҐ Г±Г¬Г®Г¦ГҐГІГҐ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°Г®ГўГ ГІГјГ±Гї Г± ГІГ®Г·ГЄГЁ Г¤Г°ГіГЈГ®Г© ГґГ°Г ГЄГ¶ГЁГЁ. ГЏГ°ГЁГ¬ГҐГ°: Гџ ГЁГ§ FIB ГЁ ГµГ®Г·Гі Г±Г¤ГҐГ«Г ГІГј ГІГҐГ«ГҐГЇГ®Г°ГІ Г­Г  ГІГҐГ°Г°ГЁГІГ®Г°ГЁГЁ LSCSD - Г“ Г¬ГҐГ­Гї Г­ГҐ ГўГ»Г©Г¤ГҐГІ. ГЌГ  Г®Г±ГІГ°Г®ГўГҐ, ГўГЎГ«ГЁГ§ГЁ Г®Г±Г®ГЎГ­ГїГЄГ  ГЁ Г­Г  ГҐГЈГ® ГІГҐГ°Г°ГЁГІГ®Г°ГЁГЁ, ГҐГ±ГІГј Г¬Г ГёГЁГ­Г», ГўГҐГ°ГІГ®Г«ВёГІ ГЁ ГЄГўГ Г¤Г°Г®Г¶ГЁГЄГ«Г» Г± Г­ГЁГ¬ГЁ Г¬Г®Г¦ГҐГІ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј Г«ГЁГёГј SANG, ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г§Г Г±ГЇГ ГўГ­ГЁГІГј Г±ГўГ®Вё Г’Г‘ ГІГ ГЄГ¦ГҐ Г±Г®ГµГ°Г Г­ГҐГ­Г , Г¤Г«Гї ГЅГІГ®ГЈГ® ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј Г¬ГҐГІГЄГ®Г©. Г’Г ГЄГ¦ГҐ SANG Г±ГІГ Г« Г®ГЎГ«Г Г¤Г ГІГҐГ«ГҐГ¬ ГҐГ№Вё Г®Г¤Г­Г®ГЈГ® Г±ГЄГ«Г Г¤Г  Г­Г  ГЉГ Г©Г®-ГЏГҐГ°ГЁГЄГ®, Г®Г­ Г Г­Г Г«Г®ГЈГЁГ·ГҐГ­ Г‚Г ГёГҐГ¬Гі Г­Г  ГґГ®Г°ГІГҐ. Г…Г±Г«ГЁ Г­Г  ГґГ®Г°ГІГҐ ГЎГіГ¤ГҐГІ Г§Г ГЇГ®Г«Г­ГҐГ­Г® 20.000 ГІГ® ГЁ Г­Г  Г®Г±ГІГ°Г®ГўГҐ ГІГ®Г¦ГҐ.
+:?:.Г±ГЁГ°ГҐГ­Г ::Г‚Г»ГёГЄГі Г¬Г®Г¦Г­Г® ГўГ§Г«Г®Г¬Г ГІГј, Г­ГҐ ГЎГіГ¤ГҐГІ Г®ГЎГ­Г®ГўГ«ГїГІГјГ±Гї Г±ГІГ ГІГіГ± ГЄГ®Г­ГІГ°Г®Г«Гї ГІГ®Г·ГҐГЄ(10 Г¬ГЁГ­ГіГІ). Г„Г«Гї ГўГ§Г«Г®Г¬Г  Г­ГіГ¦ГҐГ­ "ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“" ГЁ "ГЉГ ГЎГҐГ«Гј Г°Г Г¤ГЁГ® Г±ГЁГЈГ­Г Г«Г®Гў". ГЉГ ГЎГҐГ«Гј Г¬Г®Г¦Г­Г® ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ Г¬Г ГЈГ Г§ГЁГ­Г  24/7, ГўГ»ГЇГ Г¤Г ГҐГІ(ГГ Г­Г± Г°ГҐГ¤ГЄГ®-Г±Г°ГҐГ¤Г­ГҐ), Г®Г­ Г®Г¤Г­Г®Г°Г Г§Г®ГўГ»Г© ГЁ ГЇГ®Г±Г«ГҐ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї Г®Г­ ГЇГ°Г®ГЇГ Г¤Г ГҐГІ. Г‚Г§Г«Г®Г¬ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІ Гў Г¬ГЁГ­ГЁ-ГЁГЈГ°ГҐ. ГЏГ®Г±Г«ГҐ ГіГ¤Г Г·Г­Г®ГЈГ® ГўГ§Г«Г®Г¬Г , Г­Г  Г¬ГЁГ­ГЁ ГЄГ Г°ГІГҐ Г­ГҐ ГЎГіГ¤ГҐГІ Г®ГІГ®ГЎГ°Г Г¦Г ГІГјГ±Гї Г±ГІГ ГІГіГ± Г§Г ГµГўГ ГІГ  ГІГ®Г·ГҐГЄ Г¤Г«Гї SANG(10 Г¬ГЁГ­ГіГІ). ГЏГ®Г±Г«ГҐ Г­ГҐГіГ¤Г Г·Г­Г®ГЈГ® ГўГ§Г«Г®Г¬Г , Г±Г°Г Г§Гі Г±Г°Г ГЎГ ГІГ»ГўГ ГҐГІ Г±ГЁГ°ГҐГ­Г . SANG Г¬Г®ГЈГіГІ ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј Г°Г ГЎГ®ГІГі ГўГ»ГёГЄГЁ Г­Г Г¦Г Гў "Г…" Г­Г  Г¬ГҐГІГЄГҐ ГўГ»ГёГЄГЁ.
+:?:.Г¬ГіГ±Г®Г°ГЄГЁ::Г”ГіГ­ГЄГ¶ГЁГ®Г­Г Г«ГјГ­Г»ГҐ Г¬ГіГ±Г®Г°ГЄГЁ Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­Г» ГЇГ® ГўГ±ГҐГ¬Гі ГёГІГ ГІГі. ГЉГ®ГЈГ¤Г  ГЇГ®Г¤ГµГ®Г¤ГЁГІГҐ ГЄ Г­ГҐГ© ГЇГ®ГїГўГ«ГїГҐГІГ±Гї ГЇГ®Г¤Г±ГЄГ Г§ГЄГ  Г® ГІГ®Г¬, Г·ГІГ® Г± Г­ГҐГ© Г¬Г®Г¦Г­Г® ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј Г­Г Г¦Г ГІГЁГҐГ¬ E. ГЊГҐГ±ГІГ  Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї Г¬ГіГ±Г®Г°Г®ГЄ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГіГ§Г­Г ГІГј Г­Г  ГЁГ­ГІГҐГ°Г ГЄГІГЁГўГ­Г®Г© ГЄГ Г°ГІГҐ - https://wiki.majestic-rp.ru/map/rubbish. 
+:?:.Г¬ГҐГІГ Г«::Г„Г«Гї ГЇГ®ГЁГ±ГЄГ  ГЄГ«Г Г¤Г®Гў Г­ГіГ¦Г­Г® ГЁГ¬ГҐГІГј Г¬ГҐГІГ Г«Г«Г®ГЁГ±ГЄГ ГІГҐГ«Гј ГЁ Г«Г®ГЇГ ГІГі. Г€Гµ Г¬Г®Г¦Г­Г® ГЄГіГЇГЁГІГј Г­Г  Г°Г»Г­ГЄГҐ. ГЊГҐГІГ Г«Г«Г®ГЁГ±ГЄГ ГІГҐГ«Гј Г±ГІГ Г­Г®ГўГЁГІГ±Гї Г ГЄГІГЁГўГ­Г»Г¬ ГЄГ ГЄ ГІГ®Г«ГјГЄГ® Г‚Г» ГЎГҐГ°ГҐГІГҐ ГҐГЈГ® Гў Г°ГіГЄГЁ. ГЉГ®ГЈГ¤Г  Г®Г­ Г­Г Г©Г¤ГҐГІ Г±Г®ГЄГ°Г®ГўГЁГ№Г , ГІГ® ГЎГіГ¤ГіГІ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІГј ГўГЁГ§ГіГ Г«ГјГ­Г»ГҐ ГЁ Г§ГўГіГЄГ®ГўГ»ГҐ Г®ГЇГ®ГўГҐГ№ГҐГ­ГЁГї. ГЋГІ Г§ГҐГ«ГҐГ­Г®ГЈГ® Г¶ГўГҐГІГ , Г¤Г® ГЄГ°Г Г±Г­Г®ГЈГ®. ГЊГҐГ±ГІГ  Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї Г±Г®ГЄГ°Г®ГўГЁГ№ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГіГ§Г­Г ГІГј Г­Г  ГЁГ­ГІГҐГ°Г ГЄГІГЁГўГ­Г®Г© ГЄГ Г°ГІГҐ - https://wiki.majestic-rp.ru/map/treasure. 
+:?:.Г¬Г ГїГЄ::ГЊГ ГїГ·ГЄГЁ Г¬Г®ГЈГіГІ ГўГ»ГЇГ Г±ГІГј Г± "AirDrop" ГЁГ«ГЁ Г¦ГҐ ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ 24/7. ГГ Г­Г±Г» ГўГ»ГЇГ Г¤ГҐГ­ГЁГї Гі ГўГ±ГҐГµ Г¬Г ГїГ·ГЄГ®Гў Г°Г Г§Г­Г»Г©.
+:?:.Г§Г®Г®::Г‘ГЁГ±ГІГҐГ¬Г  Г¦ГЁГўГ®ГІГ­Г»Гµ. ГЊГ®ГЈГіГІ Г±ГЇГ ГўГ­ГЁГІГјГ±Гї Г°Г Г§Г«ГЁГ·Г­Г»ГҐ Г¦ГЁГўГ®ГІГ­Г»ГҐ, Г®ГІ ГЄГ°Г»Г± Г¤Г® Г®Г«ГҐГ­ГҐГ© ГЇГ® ГўГ±ГҐГ© ГЄГ Г°ГІГҐ. ГЌГҐГЄГ®ГІГ®Г°Г»ГҐ ГўГЁГ¤Г» Г¦ГЁГўГ®ГІГ­Г»Гµ Г¬Г®Г¦Г­Г® Г°Г Г§Г¤ГҐГ«Г ГІГј ГЁ ГЇГ®Г«ГіГ·ГЁГІГј Г¬ГїГ±Г®. ГЊГїГ±Г® Г¬Г®Г¦Г­Г® Г¦Г Г°ГЁГІГј ГЁ ГіГЇГ®ГІГ°ГҐГЎГ«ГїГІГј Гў ГЇГЁГ№Гі. Г„Г®Г¬Г ГёГ­ГЁГµ Г¦ГЁГўГ®ГІГ­Г»Гµ ГЄГ®ГІГ®Г°Г»ГҐ ГЈГіГ«ГїГѕГІ ГЇГ® ГЄГ Г°ГІГҐ, Г¬Г®Г¦Г­Г® ГЈГ«Г Г¤ГЁГІГј.
+:?:.Г±ГЄГЁГ­::ГЋГ°ГіГ¦ГЁГҐ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Гў Г¤Г®Г­Г ГІ ГЁГ­ГўГҐГ­ГІГ Г°ГҐ, ГҐГЈГ® Г¬Г®Г¦Г­Г® ГЎГіГ¤ГҐГІ Г°Г Г±ГЇГ»Г«ГЁГІГј. ГЋГ¤Г­Г ГЄГ® ГЇГ°ГЁ ГҐГЈГ® ГЇГ°ГЁГ¬ГҐГ­ГҐГ­ГЁГЁ Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г® Г¤Г Г«ГјГ­ГҐГ©ГёГҐГҐ Г°Г Г±ГЇГ»Г«ГҐГ­ГЁГҐ. Г—ГІГ®ГЎГ» ГЇГ°ГЁГ¬ГҐГ­ГЁГІГј Г±ГЄГЁГ­ Г­Г  Г®Г°ГіГ¦ГЁГҐ: F2 - ГЊГ ГЈГ Г§ГЁГ­ - CГЄГЁГ­Г» - Г‚Г»ГЎГЁГ°Г ГҐГІГҐ Г®Г°ГіГ¦ГЁГҐ ГЁ Г±ГЄГЁГ­ ГЄ Г­ГҐГ¬Гі - ГЏГ°ГЁГ¬ГҐГ­ГЁГІГј, Г±ГЄГЁГ­ ГЇГ°ГЁГ¬ГҐГ­ГїГҐГІГ±Гї ГЄГ® ГўГ±ГҐГ¬ Г®Г°ГіГ¦ГЁГїГ¬ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГЁГЇГ . Г‘ГЄГЁГ­ ГЇГ°ГЁГўГїГ§Г»ГўГ ГҐГІГ±Гї ГЄ ГЁГЈГ°Г®ГЄГі, ГўГ»ГЎГЁГІГј Г®Г°ГіГ¦ГЁГҐ Г±Г® Г±ГЄГЁГ­Г®Г¬/Г±ГЎГ°Г®Г±ГЁГІГј/Г®ГЎГ¬ГҐГ­ГїГІГј/ГЇГ°Г®Г¤Г ГІГј - Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г®.
+:?:.ГЁГ­ГІ::ГЏГ®ГЇГіГ«ГїГ°Г­Г»ГҐ ГЁГ­ГІГҐГ°ГјГҐГ°Г» Г­Г  ГЄГ Г°ГІГҐ: "ГЋГ±Г®ГЎГ­ГїГЄ Гі ГўГЁГ­Г®ГЈГ°Г Г¤Г­ГЁГЄГ®Гў" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г«ГҐГўГҐГҐ Г®ГІ Г¶ГҐГ­ГІГ°Г  ГЄГ Г°ГІГ». "Г‘ГіГ¤" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г­ГҐГЇГ®Г¤Г Г«ВёГЄГі Г®ГІ LSPD. Г‡Г Г·Г Г±ГІГіГѕ ГЇГ°ГЁГ¬ГҐГ­ГїГҐГІГ±Гї ГўГ® ГўГ°ГҐГ¬Гї Г§Г Г±ГҐГ¤Г Г­ГЁГ© Г‚ГҐГ°ГµГ®ГўГ­Г®ГЈГ® ГЁГ«ГЁ Г¦ГҐ Г®ГЄГ°ГіГ¦Г­Г®ГЈГ® Г±ГіГ¤Г . "Г“Г­ГЁГўГҐГ°Г±ГЁГІГҐГІ" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г­ГҐГЇГ®Г¤Г Г«ВёГЄГі Г®ГІ ГџГЇГ®Г­Г±ГЄГ®Г© Г¬Г ГґГЁГЁ. "Г‘ГІГ Г°Г»Г© Г®ГґГЁГ± FIB" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г­ГҐГЇГ®Г¤Г Г«ВёГЄГі Г®ГІ EMS.
+:?:.ГўГ®ГІ::Г‚Г»ГЎГ®Г°Г» Г ГЄГІГЁГўГ­Г» Г± 10:00 - 10:00 ГЇГ® Г¬Г®Г±ГЄГ®ГўГ±ГЄГ®Г¬Гі ГўГ°ГҐГ¬ГҐГ­ГЁ. ГЏГ°Г®ГЈГ®Г«Г®Г±Г®ГўГ ГІГј Г¬Г®Г¦ГҐГІ ГЄГ Г¦Г¤Г»Г© Г®ГІ 3-ГЈГ® ГіГ°Г®ГўГ­Гї ГЁГЈГ°Г®ГўГ®ГЈГ® ГЇГҐГ°Г±Г®Г­Г Г¦Г , ГЇГ® ГЇГ°ГЁГ­Г¶Г»ГЇГі Г®Г¤ГЁГ­ ГЈГ®Г«Г®Г± Г­Г  Г®Г¤ГЁГ­ Г ГЄГЄГ ГіГ­ГІ. ГЈГ®Г«Г®Г±Г®ГўГ Г­ГЁГҐ ГЇГ°Г®ГµГ®Г¤ГЁГІ Гў Г«ГҐГўГ®Г¬ ГЄГ°Г»Г«ГҐ ГЊГЅГ°ГЁГЁ(ГЌГ  ГЄГ Г°ГІГҐ ГґГ«Г ГЈ USA).
+:?:.Г®Г¤ГўГ®Г°ГЄ:: Г’ГҐГЇГҐГ°Гј ГЇГ°ГЁ ГЄГ Г¦Г¤Г®Г¬ ГіГ±ГІГ°Г®Г©Г±ГІГўГҐ Г­Г  Г°Г ГЎГ®ГІГі Г‚Г» ГЇГ®Г«ГіГ·Г ГҐГІГҐ Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГѕГ№ГЁГ© ГЄГ®Г¬ГЇГ«ГҐГЄГІ Г®Г¤ГҐГ¦Г¤Г». ГЋГ­ Г±Г­ГЁГ¬ГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ ГЇГ°ГЁ ГіГўГ®Г«ГјГ­ГҐГ­ГЁГЁ/ГЇГ°ГҐГЄГ°Г Г№ГҐГ­ГЁГЁ Г°Г ГЎГ®ГІГ». Г…Г±Г«ГЁ Г¦ГҐ Гі Г‚Г Г± Г¬ГҐГ¤ ГЄГ®Г¬ГЇГ«ГҐГЄГІ ГІГ® Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЇГ°Г®Г©ГІГЁ ГЄГіГ°Г± Г«ГҐГ·ГҐГ­ГЁГї.
+:?:.ГЄГ°Г Гё::Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  ГЄГ°Г ГёГ  - ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГЁГµ, Г«ГЁГЎГ® ГҐГ±Г«ГЁ ГўГ» ГЇГ®Г¬Г­ГЁГІГҐ Г±ГІГ ГІГЁГ·ГҐГ±ГЄГЁГ© ID ГІГ®ГЈГ®, ГЄГІГ® ГўГ Г± Г§Г Г¤ГҐГ°Г¦ГЁГўГ Г« Г¬Г®Г¦ГҐГІГҐ Г±Г®Г®ГЎГ№ГЁГІГј ГҐГЈГ®. Гџ ГўГ Г± ГўГ»ГЇГіГ№Гі ГЁ ГўГҐГ°Г­Гі Гў RP ГЇГ°Г®Г¶ГҐГ±Г±.
+:?:.ГµГ®Г«::"Г•Г®Г«Г®Г¤Г­Г»Г© Г±ГІГ Г°ГІ" - ГЇГ°ГЁ Г§Г ГЇГіГ±ГЄГҐ Г’Г‘ ГЁГ§Г¤Г ВёГІ ГµГ Г°Г ГЄГІГҐГ°Г­Г»Г© Г§ГўГіГЄ, Г¤Г°ГіГЈГЁГ¬ ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г®Г¬ Г­ГҐ Г®ГЎГ«Г Г¤Г ГҐГІ.
+:?:.ГўГ ГЄ::ГЋГІ ГўГ ГЄГ¶ГЁГ­Г», ГўГ»Г¤Г Г­Г­Г®Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГҐГ© ГЄГўГҐГ±ГІ Г­ГҐ ГЎГіГ¤ГҐГІ Г§Г Г±Г·ГЁГІГ Г­, Г®Г¦ГЁГ¤Г Г©ГІГҐ ГЇГ®ГїГўГ«ГҐГ­ГЁГї Г«ГЁГ¤ГҐГ°Г  Гў Г…ГЊГ‘.
+:?:.ГЎГЁГ­Г¤::Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г Г±ГІГ°Г®ГЁГІГј ГЎГЁГ­Г¤ ГЄГ«Г ГўГЁГё ГЇГ®Г¤ Г±ГҐГЎГї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЃГЁГ­Г¤ ГЄГ«Г ГўГЁГё.
+:?:.ГґГ«Г ГЈ::ГЉГ®Г¬Г Г­Г¤Г­Г»Г© Г°ГҐГ¦ГЁГ¬ ГЎГ®Гї Гў ГЄГ®ГІГ®Г°Г®Г¬ Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ ГЇГ°Г®ГІГЁГўГ®Г±ГІГ®ГїГІГј Г±ГўГ®ГЁГ¬ Г®ГЇГЇГ®Г­ГҐГ­ГІГ Г¬ Гў Г°Г ГўГ­Г»Гµ ГіГ±Г«Г®ГўГЁГїГµ. Г‚ ГЅГІГ®Г¬ Г°ГҐГ¦ГЁГ¬ГҐ Г‚Г» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г¤Г­ГЁГ¬Г ГІГј Г®Г°ГіГ¦ГЁГҐ Г­Г  "F"(ГЏГ® Г¤ГҐГґГ®Г«ГІГі), Г  ГІГ ГЄГ¦ГҐ ГЄГіГЇГЁГІГј Г±ГҐГЎГҐ Г®Г°ГіГ¦ГЁГҐ Г­Г  Г§Г Г°Г ГЎГ®ГІГ Г­Г­Г»ГҐ ГўГ® ГўГ°ГҐГ¬Гї Г¬Г ГІГ·Г  Г¤ГҐГ­ГјГЈГЁ, Г¤Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¦Г¬ГЁГІГҐ "B". ГЊГ ГІГ· Г§Г ГЄГ®Г­Г·ГЁГІГјГ±Гї ГЄГ ГЄ ГІГ®Г«ГјГЄГ® Г®Г¤Г­Г  ГЁГ§ ГЄГ®Г¬Г Г­Г¤ ГЇГ®ГІГҐГ°ГїГҐГІ ГўГ±ГҐ Г®Г·ГЄГЁ, Г±ГЄГ®Г°Г®Г±ГІГј ГЁГµ ГЇГ®ГІГҐГ°ГЁ/Г­Г ГЄГ®ГЇГ«ГҐГ­ГЁГї Г§Г ГўГЁГ±ГЁГІ Г®ГІ ГЄГ®Г«-ГўГ  Г§Г ГµГўГ Г·ГҐГ­Г­Г»Гµ, Г‚Г ГёГҐГ© ГЄГ®Г¬Г Г­Г¤Г®Г©, ГІГ®Г·ГҐГЄ.
+:?:.Г«Г®ГЎГЎГЁ::ГќГІГ® Г‚Г ГёГ  ГЁГЈГ°Г  Г±Г®Г§Г¤Г Г­Г­Г Гї Г‚Г Г¬ГЁ Г¤Г«Гї Г¤Г°ГіГ§ГҐГ© ГЁГ«ГЁ Г¦ГҐ Г®ГЎГ»Г·Г­Г»Гµ ГЁГЈГ°Г®ГЄГ®Гў, ГўГ±ГҐ ГЇГ°Г ГўГЁГ«Г  Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІГҐ ГЁГ¬ГҐГ­Г­Г® Г‚Г». Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ® ГЎГ» Г­Г Г·Г ГІГј Г­ГіГ¦Г­Г®: Г„Г ГІГј Г­Г Г§ГўГ Г­ГЁГҐ Г±ГўГ®ГҐГ¬Гі Г«Г®ГЎГЎГЁ(ГѓГ°Г ГґГ  "ГЌГ Г§ГўГ Г­ГЁГҐ Г«Г®ГЎГЎГЁ"), ГўГ»ГЎГ°Г ГІГј Г®Г¤ГЁГ­ ГЁГ§ ГІГ°ВёГµ Г¤Г®Г±ГІГіГЇГ­Г»Гµ Г°ГҐГ¦ГЁГ¬Г®Гў(ГѓГ®Г­ГЄГ  ГўГ®Г®Г°ГіГ¦ГҐГ­ГЁГ©/ГЃГ®Г© Г­Г  Г±Г¬ГҐГ°ГІГј/Г‡Г ГµГўГ ГІ ГґГ«Г ГЈГ ), ГўГ»ГЎГ°Г ГІГј Г®Г¤Г­Гі ГЁГ§ ГЄГ Г°ГІ. Г„Г Г«ГҐГҐ Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ ГіГ±ГІГ Г­Г®ГўГЁГІГј ГЇГ Г°Г®Г«Гј, ГҐГ±Г«ГЁ Г¦ГҐ Г­ГҐ ГµГ®ГІГЁГІГҐ ГўГЁГ¤ГҐГІГј Г«ГЁГёГ­ГЁГµ ГЁГЈГ°Г®ГЄГ®Гў Гў Г±ГўГ®ГҐГ© ГЁГЈГ°ГҐ. ГЏГ®Г±Г«ГҐ ГўГ±ГҐГµ ГЇГҐГ°ГўГЁГ·Г­Г»Гµ Г­Г Г±ГІГ°Г®ГҐГЄ Г‚Г Г¬ Г®ГІГЄГ°Г®ГѕГІГ±Гї Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ: Г’Г°ГҐГЎГ®ГўГ Г­ГЁГҐ Г¤Г«Гї ГЇГ®ГЎГҐГ¤Г», Г®Г°ГіГ¦ГЁГҐ, ГўГ°ГҐГ¬Гї Г±ГіГІГ®ГЄ, Г®Г¤ГҐГ¦Г¤Г (Г…Г±Г«ГЁ ГўГ»ГЎГ°Г ГІГј "ГЌГҐГІ" ГЁГЈГ°Г®ГЄ ГўГ°ГҐГ¬ГҐГ­Г­Г® Г±Г¬ГҐГ­ГЁГІ Г®Г¤ГҐГ¦Г¤Гі Гў Г¬Г ГІГ·ГҐ), ГЇГ®ГЈГ®Г¤Г­Г»ГҐ ГіГ±Г«Г®ГўГЁГї, Г ГўГІГ®-ГЎГ Г«Г Г­Г± ГЄГ®Г¬Г Г­Г¤(Г‚ Г±Г«ГіГ·Г ГҐ Г§Г ГµГўГ ГІГ  ГґГ«Г ГЈГ ) ГЁ Г¤Г°. Г’Г®Г«ГјГЄГ® ГЇГ®Г¬Г­ГЁГІГҐ Г§Г  Г±Г®Г§Г¤Г Г­ГЁГҐ Г«Г®ГЎГЎГЁ Г­ГіГ¦Г­Г® ГЎГіГ¤ГҐГІ Г§Г ГЇГ«Г ГІГЁГІГј Г®ГІ 1.250$ Г¤Г® 2.800$.
+:?:.Г¤Г°Г§Г®Г­Г ::Г„Г°ГЁГґГІ Г§Г®Г­Г  Г®ГІГ¬ГҐГ·ГҐГ­Г  Г­Г  ГЄГ Г°ГІГҐ ГЄГ ГЄ ГЁГЄГ®Г­ГЄГ  ГЇГ Г¤Г ГѕГ№ГҐГ© ГЄГ®Г¬ГҐГІГ», ГЇГ°ГЁГ¬ГҐГ° - Г®Г¤Г­Г  ГЁГ§ Г§Г®Г­ Г®ГЄГ®Г«Г® LS Vagos.
+:?:.Г§Г Г¦::Г—ГІГ®ГЎГ» ГўГ§Г«Г®Г¬Г ГІГј Г§Г Г¦ГЁГЈГ Г­ГЁГҐ Г±ГїГ¤ГјГІГҐ Г§Г  Г°ГіГ«Гј ГІ.Г±., Г­Г Г¦Г¬ГЁГІГҐ G - Г‚Г§Г«Г®Г¬Г ГІГј Г§Г Г¦ГЁГЈГ Г­ГЁГҐ. ГЉГ„ Г­Г  ГўГ§Г«Г®Г¬ - 1 Г·Г Г±.
+:?:.Г±ГІГ°ГЁГ¬::ГђГҐГ¦ГЁГ¬ Г±ГІГ°ГЁГ¬ГҐГ°Г  Г§Г Г¬ГҐГ­ГїГҐГІ Г±ГЁГ¬ГўГ®Г«Г» Г­Г  Г§ГўГҐГ§Г¤Г®Г·ГЄГЁ, Г¤Г«Гї Г®ГЎГ»Г·Г­Г»Гµ ГЁГЈГ°Г®ГЄГ®Гў Г®Г­ ГЎГҐГ±ГЇГ®Г«ГҐГ§ГҐГ­. Г‚Г»ГЄГ«ГѕГ·Г ГҐГІГ±Гї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+:?:.ГЇГ Г°::ГЏГ®Г«Г®Г¦ГЁГІГҐ ГЇГ Г°Г ГёГѕГІ Гў ГЎГ»Г±ГІГ°Г»Г© Г±Г«Г®ГІ, Г§Г ГІГҐГ¬ Гў ГЇГ®Г«ГҐГІГҐ Г­Г Г¦Г¬ГЁГІГҐ Г­Г  1, 2 ГЁГ«ГЁ 3 (Г§Г ГўГЁГ±ГЁГІ Г®ГІ Г±Г«Г®ГІГ ), ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® Г‹ГЉГЊ, ГЇГ Г°Г ГёГѕГІ Г®ГІГЄГ°Г®ГҐГІГ±Гї.
+:?:.ГўГ®Г¤::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¤Г®Г±ГІГ ГҐГІ Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ ГЁГ§ ГўГ®Г¤Г», Г  Г«ГЁГёГј ГіГ¤Г Г«ГїГҐГІ, Г·ГІГ®ГЎГ» ГўГ» Г¬Г®ГЈГ«ГЁ ГҐГҐ Г§Г Г±ГЇГ ГўГ­ГЁГІГј. Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г ГўГІГ®Г±ГҐГ°ГўГЁГ±Г /Г Г°ГҐГ­Г¤Г» ГІ.Г± ГЁГ«ГЁ Г¤Г® Г­ГіГ¦Г­Г®ГЈГ® ГўГ Г¬ Г¬ГҐГ±ГІГ , Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г§ГўГ ГІГј ГІГ ГЄГ±ГЁ.
+:?:.ГЎГҐГ­Г§::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г§Г ГЇГ°Г ГўГїГ«ГҐГІ ГІ.Г±. ГЁГЈГ°Г®ГЄГ®Гў. Г‚Г» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г§ГўГ ГІГј ГІГ ГЄГ±ГЁ ГЁ Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г­ГіГ¦Г­Г®ГЈГ® ГўГ Г¬ Г¬ГҐГ±ГІГ  ГЁГ«ГЁ ГЇГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ ГЄГ Г­ГЁГ±ГІГ°Гі, Г·ГІГ®ГЎГ» Гў Г¤Г Г«ГјГ­ГҐГ©ГёГҐГ¬ Г¤Г®ГҐГµГ ГІГј Г¤Г® ГЂГ‡Г‘.
+:?:.ГіГ¤Г Г«::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГіГ¤Г Г«ГїГҐГІ ГІ.Г±. ГЁГЈГ°Г®ГЄГ®Гў. Г€Г±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ: ГІ.Г±. ГіГІГ®Г­ГіГ«Г® ГЁ Г­ГҐ ГЁГ±Г·ГҐГ§Г«Г®.
+:?:.Г¤ГЁГ­Гў::F2 - ГЊГ ГЈГ Г§ГЁГ­ - ГЏГ°ГҐГ¤Г¬ГҐГІГ».
+:?:.ГЇГ°ГҐГ¤::/asms Г‚Г»ГЄГ«ГѕГ·ГЁГІГҐ Г¬ГіГ§Г»ГЄГі, ГўГ» Гў Г§ГҐГ«ГҐГ­Г®Г© Г§Г®Г­ГҐ.{left 37}
+:?:.ГЄГў::Г’ГҐГЄГіГ№ГЁГ© ГЄГўГҐГ±ГІ Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІГ±Гї Г­Г Г¤ ГІГ Г©Г¬ГҐГ°Г®Гў Majestic Coins, ГҐГ±Г«ГЁ ГҐГЈГ® Г­ГҐГІ - Г­Г Г¦Г¬ГЁГІГҐ F6.
+:?:.ГЄГ¬ГЎ::Г—ГІГ®ГЎГ» ГіГ±ГІГ°Г®ГЁГІГјГ±Гї Гў Г±ГЁГ«Г®ГўГіГѕ ГЈГ®Г±. Г±ГІГ°ГіГЄГІГіГ°Гі Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ®Г«ГіГ·ГЁГІГј ГўГ®ГҐГ­Г­Г»Г© ГЎГЁГ«ГҐГІ. Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГіГ±ГІГ°Г®ГЁГІГјГ±Гї Гў SANG ГЁ ГЇГ°Г®Г©ГІГЁ ГЉГЊГЃ. Г€ГЄГ®Г­ГЄГ  Г§ГҐГ«ГҐГ­Г®ГЈГ® Г±Г Г¬Г®Г«ГҐГІГ  Г­Г  ГЄГ Г°ГІГҐ. ГЏГ®Г¤Г°Г®ГЎГ­ГҐГҐ ГіГІГ®Г·Г­ГЁГІГҐ Гі Г±ГІГ Г°ГёГҐГЈГ® Г±Г®Г±ГІГ ГўГ  ГґГ°Г ГЄГ¶ГЁГЁ.
+:?:.Г­Г Г°ГЄ::ГЏГ ГЄГҐГІГЁГЄГЁ Blue ГЁ White Г­ГЁГЄГ ГЄ Г­ГҐ ГЇГ®Г«ГіГ·ГЁГІГј, ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГЄГ ГЄ Гі Green, ГІГ®Г«ГјГЄГ® Г°Г Г§Г­Г»ГҐ ГЅГґГґГҐГЄГІГ».
+:?:.Г Г«ГЁГ±::Г—ГІГ®ГЎГ» ГўГ»ГЄГ«ГѕГ·ГЁГІГј GPS Г Г±Г±ГЁГ±ГІГҐГ­ГІГ  Г­Г Г¦Г¬ГЁГІГҐ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГЁ ГўГ»ГЄГ«ГѕГ·ГЁГІГҐ GPS ГЂГ±Г±ГЁГ±ГІГҐГ­ГІ.
+:?:.ГўГҐГ°ГІ::Г‚ГҐГ°Г®ГІГ®Г«ГҐГІГ» ГЇГ°Г®Г¤Г ГѕГІГ±Гї Гў Г±Г Г«Г®Г­ГҐ Г­ГҐГ¤Г Г«ГҐГЄГ® Г®ГІ Г ГЅГ°Г®ГЇГ®Г°ГІГ .
+:?:.ГЇГ®ГµГ®Г¤::Г€Г§Г¬ГҐГ­ГЁГІГј ГЇГ®ГµГ®Г¤Гі ГЁ ГЅГ¬Г®Г¶ГЁГЁ Г«ГЁГ¶Г  Г¬Г®Г¦Г­Г® Гў  F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГѓГ«Г ГўГ­Г®ГҐ.
+:?:.ГЎГ ГЈГ Г¦::Г—ГІГ®ГЎГ» ГўГ»Г«ГҐГ§ГІГЁ ГЁГ§ ГЎГ ГЈГ Г¦Г­ГЁГЄГ  Г­Г Г¦Г¬ГЁГІГҐ Г­Г  "E".
+:?:.Г­Г Г«::Г—ГІГ®ГЎГ» Г®ГЇГ«Г ГІГЁГІГј Г­Г Г«Г®ГЈГЁ Г­Г  Г¤Г®Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г®ГІГЄГ°Г»ГІГј ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ "ГЊГ®Г© Г¤Г®Г¬" Гў ГЇГ«Г Г­ГёГҐГІГҐ.
 
-:?:.нин::Новая система инвентаря, был изменен дизайн, предметы можно вращать нажатием на пробел, если дважды нажать по предметы он используется (берется в активный слот или надевается).
-:?:.роз::Добавлена система преследования. Для того чтобы начать преследование нужно выдать розыск -  зайти в Планшет - Фракция - База данных - Начать преследование, на карте появляется метка местоположения игрока, обновляется раз в 30 секунд, если игрок которого преследуют заходит в другой дименшен/интерьер/выйдет из игры - пропадает с радаров. Если гос. игрок приезжает на метку/подходит к игроку - преследование заканчивается.
-:?:.ар::После окончания срока аренда авто глушится и появляется диалоговое меню, где можно продлить аренду. 
-:?:.комт::Рабочий транспорт можно спавнить только на специально автосервисе для коммерческого транспорта. 
-:?:.гр::Лидер группы может давать код, чтобы массово добавить людей в группу, игроки в радиусе 30 метров смогут зайти. Лидер и помощники могут ставить указывающие метки, настраивается в F2 - Настройки - Бинды. Лидер может передать свой статус другому игроку.
-:?:.тег::Возможность тегать людей в чате для удобного РП процесса, для использования напишите @Динамик. Если игрока тегнуть у него появится уведомление об этом, тегаются только ближайшие игроки.
-:?:.вчат::Система визуализации чата над игроком - над игроком будут дублироваться все сообщения из чата. В настройках - Дополнительно, можно включить.
-:?:.маркет::Маркетплейс используется для размещения различных товаров на продажу, таких как: транспорт, жилая недвижимость, бизнес, банкоматы, билборды. Каждая карточка с объявлением фиксирует количество просмотров карточки и количество лайков (тех кто добавил объявление в избранное). Нажав кнопку «Начать сделку» нам откроется модальное окно, в котором будет дублироваться еще раз вся необходимая информация, сумма к оплате и кнопка совершить покупку.  График который имеется отображает динамику цен и имеет возможность взаимодействия. После покупки предметы отправятся в «Склад хранения». За размещение любого объявления взымается плата в 1.000$ за час (от 5к). Возможность покупать лот как за наличку, так и через карту. Администратор может удалить карточку игрока. Игрок может пожаловаться на объявление, сообщение попадёт в обращение.
-:?:.маркп::Раздел торговой площадки. Это формат биржи, на которой торгуются исключительно предметы инвентаря. Предметы выставляются бесплатно, но удаление стоит 1.000$. Есть возможность продления объявления.  На торговую площадку можно выставить предметы только из "Склада хранения".  Возможность покупать лот как за наличку, так и через карту. В карточке имеется информация о названии предмета, минимальной стоимости обновляемой в режиме реального времени и общее количество продаваемых предметов на бирже. Имеется график «Медиана цен», который визуализирует, как менялась цена за различные периоды времени. 
-:?:.схр::Склад хранения это место, в которое попадают предметы, которые были куплены или предметы, которые были занесены сюда игроком, с целью их продажи на маркет плейсе. На склад можно выгрузить предметы из инвентаря или из багажника. Склад хранения находится сбоку здания аукциона. Склад не ограничен по хранению предметов Предметы могут находится на складе 30 минут, после истечения этого времени они идут на аукцион. Имеется возможность добавить карточку в избранное. После покупки имущество/предметы могут хранится на складе 2 дня. При входе в зону маркетплейса подсвечивается склад и появляется метка на карте.
+:?:.Г­ГЁГ­::ГЌГ®ГўГ Гї Г±ГЁГ±ГІГҐГ¬Г  ГЁГ­ГўГҐГ­ГІГ Г°Гї, ГЎГ»Г« ГЁГ§Г¬ГҐГ­ГҐГ­ Г¤ГЁГ§Г Г©Г­, ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®Г¦Г­Г® ГўГ°Г Г№Г ГІГј Г­Г Г¦Г ГІГЁГҐГ¬ Г­Г  ГЇГ°Г®ГЎГҐГ«, ГҐГ±Г«ГЁ Г¤ГўГ Г¦Г¤Г» Г­Г Г¦Г ГІГј ГЇГ® ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г®Г­ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї (ГЎГҐГ°ГҐГІГ±Гї Гў Г ГЄГІГЁГўГ­Г»Г© Г±Г«Г®ГІ ГЁГ«ГЁ Г­Г Г¤ГҐГўГ ГҐГІГ±Гї).
+:?:.Г°Г®Г§::Г„Г®ГЎГ ГўГ«ГҐГ­Г  Г±ГЁГ±ГІГҐГ¬Г  ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГї. Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ®ГЎГ» Г­Г Г·Г ГІГј ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ Г­ГіГ¦Г­Г® ГўГ»Г¤Г ГІГј Г°Г®Г§Г»Г±ГЄ -  Г§Г Г©ГІГЁ Гў ГЏГ«Г Г­ГёГҐГІ - Г”Г°Г ГЄГ¶ГЁГї - ГЃГ Г§Г  Г¤Г Г­Г­Г»Гµ - ГЌГ Г·Г ГІГј ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ, Г­Г  ГЄГ Г°ГІГҐ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¬ГҐГІГЄГ  Г¬ГҐГ±ГІГ®ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї ГЁГЈГ°Г®ГЄГ , Г®ГЎГ­Г®ГўГ«ГїГҐГІГ±Гї Г°Г Г§ Гў 30 Г±ГҐГЄГіГ­Г¤, ГҐГ±Г«ГЁ ГЁГЈГ°Г®ГЄ ГЄГ®ГІГ®Г°Г®ГЈГ® ГЇГ°ГҐГ±Г«ГҐГ¤ГіГѕГІ Г§Г ГµГ®Г¤ГЁГІ Гў Г¤Г°ГіГЈГ®Г© Г¤ГЁГ¬ГҐГ­ГёГҐГ­/ГЁГ­ГІГҐГ°ГјГҐГ°/ГўГ»Г©Г¤ГҐГІ ГЁГ§ ГЁГЈГ°Г» - ГЇГ°Г®ГЇГ Г¤Г ГҐГІ Г± Г°Г Г¤Г Г°Г®Гў. Г…Г±Г«ГЁ ГЈГ®Г±. ГЁГЈГ°Г®ГЄ ГЇГ°ГЁГҐГ§Г¦Г ГҐГІ Г­Г  Г¬ГҐГІГЄГі/ГЇГ®Г¤ГµГ®Г¤ГЁГІ ГЄ ГЁГЈГ°Г®ГЄГі - ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ Г§Г ГЄГ Г­Г·ГЁГўГ ГҐГІГ±Гї.
+:?:.Г Г°::ГЏГ®Г±Г«ГҐ Г®ГЄГ®Г­Г·Г Г­ГЁГї Г±Г°Г®ГЄГ  Г Г°ГҐГ­Г¤Г  Г ГўГІГ® ГЈГ«ГіГёГЁГІГ±Гї ГЁ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¤ГЁГ Г«Г®ГЈГ®ГўГ®ГҐ Г¬ГҐГ­Гѕ, ГЈГ¤ГҐ Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г«ГЁГІГј Г Г°ГҐГ­Г¤Гі. 
+:?:.ГЄГ®Г¬ГІ::ГђГ ГЎГ®Г·ГЁГ© ГІГ°Г Г­Г±ГЇГ®Г°ГІ Г¬Г®Г¦Г­Г® Г±ГЇГ ГўГ­ГЁГІГј ГІГ®Г«ГјГЄГ® Г­Г  Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г ГўГІГ®Г±ГҐГ°ГўГЁГ±ГҐ Г¤Г«Гї ГЄГ®Г¬Г¬ГҐГ°Г·ГҐГ±ГЄГ®ГЈГ® ГІГ°Г Г­Г±ГЇГ®Г°ГІГ . 
+:?:.ГЈГ°::Г‹ГЁГ¤ГҐГ° ГЈГ°ГіГЇГЇГ» Г¬Г®Г¦ГҐГІ Г¤Г ГўГ ГІГј ГЄГ®Г¤, Г·ГІГ®ГЎГ» Г¬Г Г±Г±Г®ГўГ® Г¤Г®ГЎГ ГўГЁГІГј Г«ГѕГ¤ГҐГ© Гў ГЈГ°ГіГЇГЇГі, ГЁГЈГ°Г®ГЄГЁ Гў Г°Г Г¤ГЁГіГ±ГҐ 30 Г¬ГҐГІГ°Г®Гў Г±Г¬Г®ГЈГіГІ Г§Г Г©ГІГЁ. Г‹ГЁГ¤ГҐГ° ГЁ ГЇГ®Г¬Г®Г№Г­ГЁГЄГЁ Г¬Г®ГЈГіГІ Г±ГІГ ГўГЁГІГј ГіГЄГ Г§Г»ГўГ ГѕГ№ГЁГҐ Г¬ГҐГІГЄГЁ, Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІГ±Гї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЃГЁГ­Г¤Г». Г‹ГЁГ¤ГҐГ° Г¬Г®Г¦ГҐГІ ГЇГҐГ°ГҐГ¤Г ГІГј Г±ГўГ®Г© Г±ГІГ ГІГіГ± Г¤Г°ГіГЈГ®Г¬Гі ГЁГЈГ°Г®ГЄГі.
+:?:.ГІГҐГЈ::Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГІГҐГЈГ ГІГј Г«ГѕГ¤ГҐГ© Гў Г·Г ГІГҐ Г¤Г«Гї ГіГ¤Г®ГЎГ­Г®ГЈГ® ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Г , Г¤Г«Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї Г­Г ГЇГЁГёГЁГІГҐ @Г„ГЁГ­Г Г¬ГЁГЄ. Г…Г±Г«ГЁ ГЁГЈГ°Г®ГЄГ  ГІГҐГЈГ­ГіГІГј Гі Г­ГҐГЈГ® ГЇГ®ГїГўГЁГІГ±Гї ГіГўГҐГ¤Г®Г¬Г«ГҐГ­ГЁГҐ Г®ГЎ ГЅГІГ®Г¬, ГІГҐГЈГ ГѕГІГ±Гї ГІГ®Г«ГјГЄГ® ГЎГ«ГЁГ¦Г Г©ГёГЁГҐ ГЁГЈГ°Г®ГЄГЁ.
+:?:.ГўГ·Г ГІ::Г‘ГЁГ±ГІГҐГ¬Г  ГўГЁГ§ГіГ Г«ГЁГ§Г Г¶ГЁГЁ Г·Г ГІГ  Г­Г Г¤ ГЁГЈГ°Г®ГЄГ®Г¬ - Г­Г Г¤ ГЁГЈГ°Г®ГЄГ®Г¬ ГЎГіГ¤ГіГІ Г¤ГіГЎГ«ГЁГ°Г®ГўГ ГІГјГ±Гї ГўГ±ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї ГЁГ§ Г·Г ГІГ . Г‚ Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ - Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г®, Г¬Г®Г¦Г­Г® ГўГЄГ«ГѕГ·ГЁГІГј.
+:?:.Г¬Г Г°ГЄГҐГІ::ГЊГ Г°ГЄГҐГІГЇГ«ГҐГ©Г± ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї Г¤Г«Гї Г°Г Г§Г¬ГҐГ№ГҐГ­ГЁГї Г°Г Г§Г«ГЁГ·Г­Г»Гµ ГІГ®ГўГ Г°Г®Гў Г­Г  ГЇГ°Г®Г¤Г Г¦Гі, ГІГ ГЄГЁГµ ГЄГ ГЄ: ГІГ°Г Г­Г±ГЇГ®Г°ГІ, Г¦ГЁГ«Г Гї Г­ГҐГ¤ГўГЁГ¦ГЁГ¬Г®Г±ГІГј, ГЎГЁГ§Г­ГҐГ±, ГЎГ Г­ГЄГ®Г¬Г ГІГ», ГЎГЁГ«ГЎГ®Г°Г¤Г». ГЉГ Г¦Г¤Г Гї ГЄГ Г°ГІГ®Г·ГЄГ  Г± Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐГ¬ ГґГЁГЄГ±ГЁГ°ГіГҐГІ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г±Г¬Г®ГІГ°Г®Гў ГЄГ Г°ГІГ®Г·ГЄГЁ ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г«Г Г©ГЄГ®Гў (ГІГҐГµ ГЄГІГ® Г¤Г®ГЎГ ГўГЁГ« Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐ Гў ГЁГ§ГЎГ°Г Г­Г­Г®ГҐ). ГЌГ Г¦Г Гў ГЄГ­Г®ГЇГЄГі В«ГЌГ Г·Г ГІГј Г±Г¤ГҐГ«ГЄГіВ» Г­Г Г¬ Г®ГІГЄГ°Г®ГҐГІГ±Гї Г¬Г®Г¤Г Г«ГјГ­Г®ГҐ Г®ГЄГ­Г®, Гў ГЄГ®ГІГ®Г°Г®Г¬ ГЎГіГ¤ГҐГІ Г¤ГіГЎГ«ГЁГ°Г®ГўГ ГІГјГ±Гї ГҐГ№ГҐ Г°Г Г§ ГўГ±Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї, Г±ГіГ¬Г¬Г  ГЄ Г®ГЇГ«Г ГІГҐ ГЁ ГЄГ­Г®ГЇГЄГ  Г±Г®ГўГҐГ°ГёГЁГІГј ГЇГ®ГЄГіГЇГЄГі.  ГѓГ°Г ГґГЁГЄ ГЄГ®ГІГ®Г°Г»Г© ГЁГ¬ГҐГҐГІГ±Гї Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІ Г¤ГЁГ­Г Г¬ГЁГЄГі Г¶ГҐГ­ ГЁ ГЁГ¬ГҐГҐГІ ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГЁГї. ГЏГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г®ГІГЇГ°Г ГўГїГІГ±Гї Гў В«Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГїВ». Г‡Г  Г°Г Г§Г¬ГҐГ№ГҐГ­ГЁГҐ Г«ГѕГЎГ®ГЈГ® Г®ГЎГєГїГўГ«ГҐГ­ГЁГї ГўГ§Г»Г¬Г ГҐГІГ±Гї ГЇГ«Г ГІГ  Гў 1.000$ Г§Г  Г·Г Г± (Г®ГІ 5ГЄ). Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ®ГЄГіГЇГ ГІГј Г«Г®ГІ ГЄГ ГЄ Г§Г  Г­Г Г«ГЁГ·ГЄГі, ГІГ ГЄ ГЁ Г·ГҐГ°ГҐГ§ ГЄГ Г°ГІГі. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г¬Г®Г¦ГҐГІ ГіГ¤Г Г«ГЁГІГј ГЄГ Г°ГІГ®Г·ГЄГі ГЁГЈГ°Г®ГЄГ . Г€ГЈГ°Г®ГЄ Г¬Г®Г¦ГҐГІ ГЇГ®Г¦Г Г«Г®ГўГ ГІГјГ±Гї Г­Г  Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐ, Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЇГ®ГЇГ Г¤ВёГІ Гў Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ.
+:?:.Г¬Г Г°ГЄГЇ::ГђГ Г§Г¤ГҐГ« ГІГ®Г°ГЈГ®ГўГ®Г© ГЇГ«Г®Г№Г Г¤ГЄГЁ. ГќГІГ® ГґГ®Г°Г¬Г ГІ ГЎГЁГ°Г¦ГЁ, Г­Г  ГЄГ®ГІГ®Г°Г®Г© ГІГ®Г°ГЈГіГѕГІГ±Гї ГЁГ±ГЄГ«ГѕГ·ГЁГІГҐГ«ГјГ­Г® ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГЁГ­ГўГҐГ­ГІГ Г°Гї. ГЏГ°ГҐГ¤Г¬ГҐГІГ» ГўГ»Г±ГІГ ГўГ«ГїГѕГІГ±Гї ГЎГҐГ±ГЇГ«Г ГІГ­Г®, Г­Г® ГіГ¤Г Г«ГҐГ­ГЁГҐ Г±ГІГ®ГЁГІ 1.000$. Г…Г±ГІГј ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ°Г®Г¤Г«ГҐГ­ГЁГї Г®ГЎГєГїГўГ«ГҐГ­ГЁГї.  ГЌГ  ГІГ®Г°ГЈГ®ГўГіГѕ ГЇГ«Г®Г№Г Г¤ГЄГі Г¬Г®Г¦Г­Г® ГўГ»Г±ГІГ ГўГЁГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГІГ®Г«ГјГЄГ® ГЁГ§ "Г‘ГЄГ«Г Г¤Г  ГµГ°Г Г­ГҐГ­ГЁГї".  Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ®ГЄГіГЇГ ГІГј Г«Г®ГІ ГЄГ ГЄ Г§Г  Г­Г Г«ГЁГ·ГЄГі, ГІГ ГЄ ГЁ Г·ГҐГ°ГҐГ§ ГЄГ Г°ГІГі. Г‚ ГЄГ Г°ГІГ®Г·ГЄГҐ ГЁГ¬ГҐГҐГІГ±Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г­Г Г§ГўГ Г­ГЁГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ , Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г®Г© Г±ГІГ®ГЁГ¬Г®Г±ГІГЁ Г®ГЎГ­Г®ГўГ«ГїГҐГ¬Г®Г© Гў Г°ГҐГ¦ГЁГ¬ГҐ Г°ГҐГ Г«ГјГ­Г®ГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ ГЁ Г®ГЎГ№ГҐГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г¤Г ГўГ ГҐГ¬Г»Гµ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў Г­Г  ГЎГЁГ°Г¦ГҐ. Г€Г¬ГҐГҐГІГ±Гї ГЈГ°Г ГґГЁГЄ В«ГЊГҐГ¤ГЁГ Г­Г  Г¶ГҐГ­В», ГЄГ®ГІГ®Г°Г»Г© ГўГЁГ§ГіГ Г«ГЁГ§ГЁГ°ГіГҐГІ, ГЄГ ГЄ Г¬ГҐГ­ГїГ«Г Г±Гј Г¶ГҐГ­Г  Г§Г  Г°Г Г§Г«ГЁГ·Г­Г»ГҐ ГЇГҐГ°ГЁГ®Г¤Г» ГўГ°ГҐГ¬ГҐГ­ГЁ. 
+:?:.Г±ГµГ°::Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГї ГЅГІГ® Г¬ГҐГ±ГІГ®, Гў ГЄГ®ГІГ®Г°Г®ГҐ ГЇГ®ГЇГ Г¤Г ГѕГІ ГЇГ°ГҐГ¤Г¬ГҐГІГ», ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ ГЄГіГЇГ«ГҐГ­Г» ГЁГ«ГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ», ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ Г§Г Г­ГҐГ±ГҐГ­Г» Г±ГѕГ¤Г  ГЁГЈГ°Г®ГЄГ®Г¬, Г± Г¶ГҐГ«ГјГѕ ГЁГµ ГЇГ°Г®Г¤Г Г¦ГЁ Г­Г  Г¬Г Г°ГЄГҐГІ ГЇГ«ГҐГ©Г±ГҐ. ГЌГ  Г±ГЄГ«Г Г¤ Г¬Г®Г¦Г­Г® ГўГ»ГЈГ°ГіГ§ГЁГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГЁГ§ ГЁГ­ГўГҐГ­ГІГ Г°Гї ГЁГ«ГЁ ГЁГ§ ГЎГ ГЈГ Г¦Г­ГЁГЄГ . Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГї Г­Г ГµГ®Г¤ГЁГІГ±Гї Г±ГЎГ®ГЄГі Г§Г¤Г Г­ГЁГї Г ГіГЄГ¶ГЁГ®Г­Г . Г‘ГЄГ«Г Г¤ Г­ГҐ Г®ГЈГ°Г Г­ГЁГ·ГҐГ­ ГЇГ® ГµГ°Г Г­ГҐГ­ГЁГѕ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў ГЏГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®ГЈГіГІ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г­Г  Г±ГЄГ«Г Г¤ГҐ 30 Г¬ГЁГ­ГіГІ, ГЇГ®Г±Г«ГҐ ГЁГ±ГІГҐГ·ГҐГ­ГЁГї ГЅГІГ®ГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Г®Г­ГЁ ГЁГ¤ГіГІ Г­Г  Г ГіГЄГ¶ГЁГ®Г­. Г€Г¬ГҐГҐГІГ±Гї ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г¤Г®ГЎГ ГўГЁГІГј ГЄГ Г°ГІГ®Г·ГЄГі Гў ГЁГ§ГЎГ°Г Г­Г­Г®ГҐ. ГЏГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ ГЁГ¬ГіГ№ГҐГ±ГІГўГ®/ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®ГЈГіГІ ГµГ°Г Г­ГЁГІГ±Гї Г­Г  Г±ГЄГ«Г Г¤ГҐ 2 Г¤Г­Гї. ГЏГ°ГЁ ГўГµГ®Г¤ГҐ Гў Г§Г®Г­Гі Г¬Г Г°ГЄГҐГІГЇГ«ГҐГ©Г±Г  ГЇГ®Г¤Г±ГўГҐГ·ГЁГўГ ГҐГІГ±Гї Г±ГЄГ«Г Г¤ ГЁ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¬ГҐГІГЄГ  Г­Г  ГЄГ Г°ГІГҐ.
 
-:?:.кур::Передам кураторам.
-:?:.пер::Передам.
-:?:.ак::Вижу неактуально. Приятной игры и всего наилучшего.
-:?:.неоф::Не оффтопьте в обращения.
-:?:.непр::Не предоставляем подобную информацию.
+:?:.ГЄГіГ°::ГЏГҐГ°ГҐГ¤Г Г¬ ГЄГіГ°Г ГІГ®Г°Г Г¬.
+:?:.ГЇГҐГ°::ГЏГҐГ°ГҐГ¤Г Г¬.
+:?:.Г ГЄ::Г‚ГЁГ¦Гі Г­ГҐГ ГЄГІГіГ Г«ГјГ­Г®. ГЏГ°ГЁГїГІГ­Г®Г© ГЁГЈГ°Г» ГЁ ГўГ±ГҐГЈГ® Г­Г ГЁГ«ГіГ·ГёГҐГЈГ®.
+:?:.Г­ГҐГ®Гґ::ГЌГҐ Г®ГґГґГІГ®ГЇГјГІГҐ Гў Г®ГЎГ°Г Г№ГҐГ­ГЁГї.
+:?:.Г­ГҐГЇГ°::ГЌГҐ ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГїГҐГ¬ ГЇГ®Г¤Г®ГЎГ­ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ.
 
-:?:.дмк::Дефибриллятор МК2 никакого функционала не даёт, он аналогичен обычному дефибриллятору.
-:?:.адр::Адреналин поднимает игрока в 2 раза быстрее, чем эпинефрин.
-:?:.нагр::Все автомобили и одежда из пропуск являются эксклюзивом, их нельзя передавать другим игрокам.
-:?:.жап::Предмет "Аптечка жёлтая" - восстанавливает 75 хп.
-:?:.обв::Обвесы имеются в призах. Первая установка бесплатная. Обвесы можно будет снять/поставить отдельно. Обвес закрепляется за машиной. 
-:?:.куп::Купоны действуют на все авто из Majestic Motors.
-:?:.случ::В наградах имеются "Случайные наборы". При взятии приза у игрока будет выбор в открытии одной трёх карт с разным содержимым. 
-:?:.оос::ООС зону вы можете включить на F2-Настройки-Бинд. Назначаете клавишу, и при нажатии на эту клавишу, если игрок перед вами вышел из игры, у вас будет информация о дате и времени выхода этого игрока из игры.
-:?:.квр::У бота на работе будет кнопка "Я могу чем-то помочь". Вы на неё жмёте и у вас откроется квест, который выполнить нужно (на Ф6 можно посмотреть). Выполняете этот квест и Вам засчитывает задание.
-:?:.вбп::Бронзовый пропуск открывает доступ к премиум наградам до 35 уровня, серебрянный до 75 уровня, золотой до 110 уровня, платиновый до 150 уровня. Опыт дает только королевский старт.
+:?:.Г¤Г¬ГЄ::Г„ГҐГґГЁГЎГ°ГЁГ«Г«ГїГІГ®Г° ГЊГЉ2 Г­ГЁГЄГ ГЄГ®ГЈГ® ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г  Г­ГҐ Г¤Г ВёГІ, Г®Г­ Г Г­Г Г«Г®ГЈГЁГ·ГҐГ­ Г®ГЎГ»Г·Г­Г®Г¬Гі Г¤ГҐГґГЁГЎГ°ГЁГ«Г«ГїГІГ®Г°Гі.
+:?:.Г Г¤Г°::ГЂГ¤Г°ГҐГ­Г Г«ГЁГ­ ГЇГ®Г¤Г­ГЁГ¬Г ГҐГІ ГЁГЈГ°Г®ГЄГ  Гў 2 Г°Г Г§Г  ГЎГ»Г±ГІГ°ГҐГҐ, Г·ГҐГ¬ ГЅГЇГЁГ­ГҐГґГ°ГЁГ­.
+:?:.Г­Г ГЈГ°::Г‚Г±ГҐ Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ ГЁ Г®Г¤ГҐГ¦Г¤Г  ГЁГ§ ГЇГ°Г®ГЇГіГ±ГЄ ГїГўГ«ГїГѕГІГ±Гї ГЅГЄГ±ГЄГ«ГѕГ§ГЁГўГ®Г¬, ГЁГµ Г­ГҐГ«ГјГ§Гї ГЇГҐГ°ГҐГ¤Г ГўГ ГІГј Г¤Г°ГіГЈГЁГ¬ ГЁГЈГ°Г®ГЄГ Г¬.
+:?:.Г¦Г ГЇ::ГЏГ°ГҐГ¤Г¬ГҐГІ "ГЂГЇГІГҐГ·ГЄГ  Г¦ВёГ«ГІГ Гї" - ГўГ®Г±Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ 75 ГµГЇ.
+:?:.Г®ГЎГў::ГЋГЎГўГҐГ±Г» ГЁГ¬ГҐГѕГІГ±Гї Гў ГЇГ°ГЁГ§Г Гµ. ГЏГҐГ°ГўГ Гї ГіГ±ГІГ Г­Г®ГўГЄГ  ГЎГҐГ±ГЇГ«Г ГІГ­Г Гї. ГЋГЎГўГҐГ±Г» Г¬Г®Г¦Г­Г® ГЎГіГ¤ГҐГІ Г±Г­ГїГІГј/ГЇГ®Г±ГІГ ГўГЁГІГј Г®ГІГ¤ГҐГ«ГјГ­Г®. ГЋГЎГўГҐГ± Г§Г ГЄГ°ГҐГЇГ«ГїГҐГІГ±Гї Г§Г  Г¬Г ГёГЁГ­Г®Г©. 
+:?:.ГЄГіГЇ::ГЉГіГЇГ®Г­Г» Г¤ГҐГ©Г±ГІГўГіГѕГІ Г­Г  ГўГ±ГҐ Г ГўГІГ® ГЁГ§ Majestic Motors.
+:?:.Г±Г«ГіГ·::Г‚ Г­Г ГЈГ°Г Г¤Г Гµ ГЁГ¬ГҐГѕГІГ±Гї "Г‘Г«ГіГ·Г Г©Г­Г»ГҐ Г­Г ГЎГ®Г°Г»". ГЏГ°ГЁ ГўГ§ГїГІГЁГЁ ГЇГ°ГЁГ§Г  Гі ГЁГЈГ°Г®ГЄГ  ГЎГіГ¤ГҐГІ ГўГ»ГЎГ®Г° Гў Г®ГІГЄГ°Г»ГІГЁГЁ Г®Г¤Г­Г®Г© ГІГ°ВёГµ ГЄГ Г°ГІ Г± Г°Г Г§Г­Г»Г¬ Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г»Г¬. 
+:?:.Г®Г®Г±::ГЋГЋГ‘ Г§Г®Г­Гі ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГЄГ«ГѕГ·ГЁГІГј Г­Г  F2-ГЌГ Г±ГІГ°Г®Г©ГЄГЁ-ГЃГЁГ­Г¤. ГЌГ Г§Г­Г Г·Г ГҐГІГҐ ГЄГ«Г ГўГЁГёГі, ГЁ ГЇГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЅГІГі ГЄГ«Г ГўГЁГёГі, ГҐГ±Г«ГЁ ГЁГЈГ°Г®ГЄ ГЇГҐГ°ГҐГ¤ ГўГ Г¬ГЁ ГўГ»ГёГҐГ« ГЁГ§ ГЁГЈГ°Г», Гі ГўГ Г± ГЎГіГ¤ГҐГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г¤Г ГІГҐ ГЁ ГўГ°ГҐГ¬ГҐГ­ГЁ ГўГ»ГµГ®Г¤Г  ГЅГІГ®ГЈГ® ГЁГЈГ°Г®ГЄГ  ГЁГ§ ГЁГЈГ°Г».
+:?:.ГЄГўГ°::Г“ ГЎГ®ГІГ  Г­Г  Г°Г ГЎГ®ГІГҐ ГЎГіГ¤ГҐГІ ГЄГ­Г®ГЇГЄГ  "Гџ Г¬Г®ГЈГі Г·ГҐГ¬-ГІГ® ГЇГ®Г¬Г®Г·Гј". Г‚Г» Г­Г  Г­ГҐВё Г¦Г¬ВёГІГҐ ГЁ Гі ГўГ Г± Г®ГІГЄГ°Г®ГҐГІГ±Гї ГЄГўГҐГ±ГІ, ГЄГ®ГІГ®Г°Г»Г© ГўГ»ГЇГ®Г«Г­ГЁГІГј Г­ГіГ¦Г­Г® (Г­Г  Г”6 Г¬Г®Г¦Г­Г® ГЇГ®Г±Г¬Г®ГІГ°ГҐГІГј). Г‚Г»ГЇГ®Г«Г­ГїГҐГІГҐ ГЅГІГ®ГІ ГЄГўГҐГ±ГІ ГЁ Г‚Г Г¬ Г§Г Г±Г·ГЁГІГ»ГўГ ГҐГІ Г§Г Г¤Г Г­ГЁГҐ.
+:?:.ГўГЎГЇ::ГЃГ°Г®Г­Г§Г®ГўГ»Г© ГЇГ°Г®ГЇГіГ±ГЄ Г®ГІГЄГ°Г»ГўГ ГҐГІ Г¤Г®Г±ГІГіГЇ ГЄ ГЇГ°ГҐГ¬ГЁГіГ¬ Г­Г ГЈГ°Г Г¤Г Г¬ Г¤Г® 35 ГіГ°Г®ГўГ­Гї, Г±ГҐГ°ГҐГЎГ°ГїГ­Г­Г»Г© Г¤Г® 75 ГіГ°Г®ГўГ­Гї, Г§Г®Г«Г®ГІГ®Г© Г¤Г® 110 ГіГ°Г®ГўГ­Гї, ГЇГ«Г ГІГЁГ­Г®ГўГ»Г© Г¤Г® 150 ГіГ°Г®ГўГ­Гї. ГЋГЇГ»ГІ Г¤Г ГҐГІ ГІГ®Г«ГјГЄГ® ГЄГ®Г°Г®Г«ГҐГўГ±ГЄГЁГ© Г±ГІГ Г°ГІ.
 
-:?:/pfrh::/asms  Закройте обращение и откройте снова, пожалуйста. {left 51}
-:?:/dbp::Визуальный баг, перезайдите на сервер.
-:?:/vtnfk::Металлоискатель становится активным как только Вы берете его в руки. Когда он найдет сокровища, то будут происходить визуальные и звуковые оповещения. От зеленого цвета, до красного. Места расположения сокровищ: пляжи и архипелаги.
-:?:/,fudjqc::Нажмите F2 - Настройки - блокировка войса - заблокируйте для всех и снова разблокируйте. В случае, если проблема осталась, то перезайдите в игру.
-:?:/hs,fkrf::Для того чтобы рыбачить, Вам  нужна удочка и наживка - покупается в любом магизине 24/7. Подходите к зоне рыбалки своего уровня и нажимаете клавишу Е. Ждёте клёва, как появится рыба, она будет вилять в стороны влево-вправо. Вам нужно зажимать клавиши A/D противоположной стороны рыбы. После того как рыба утомилась, Вы её подсекаете левой кнопкой мыши. 
-:?:/cnfdrf::Расчёт ставки происходит в течение 6-ти часов. Администрация не управляет рассчетом.
-:?:/cxtn::Чтобы узнать номер счета откройте инвентарь и наведитесь мышкой на банковскую карту.
-:?:/gby::Чтобы восстановить пин-код отправляйтесь в банковское отделение, в меню смены нажмите "Восстановить".
-:?:/rkdk::При достижении 5-го уровня: 500 MC При достижении 10-го уровня: 1000 MC При достижении 15-го уровня: 2000 MC При достижении 20-го уровня: 3000 MC При достижении 25-го уровня: 4000 MC При достижении 30-го уровня: 5000 MC. Каждый следующий уровень после 30-го Вы будете получать 1500 MC. 
-:?:/rdtcn::На сервере доступны Мировые и Личные квесты. Ознакомиться с ними можно на рынке (На карте обозначен как "Красный вопрос"). Квесты доступны всем. Личные квесты вы можете проходить неопределенный срок, но, если Вы захотите участвовать в Мировом квесте и получить дополнительные бонусы, то Вам нужно поторопиться выполнить личный квест. Только 5 лучших игроков смогут попасть в топ 3 и залутать дополнительные бонусы. - Каждую неделю доступно по 3 личных и мировых квеста. - Некоторые квесты по типу инкасатора/мусорщика/почтальона можно выполнять в 2-ем и более, засчитывать будем всем.
-:?:/atl::На первом этаже стоит NPC у которого можно взять задание. Чтобы отбыть срок в федеральной тюрьме, нужно выполнять задачи. Например помыть туалет - В определенное время тюрьма закрывает клетки на 5 минут, соответственно, в это время отбыть срок нельзя: -- Открываются клетки в 00 минут -- Закрываются клетки в 20 минут на 5 минут -- Открываются клетки в 25 минут -- Закрываются клетки в 55 минут на 5 минут.
-:?:/ctqf::Закрывать интерфейс сейфа можно только на ESC. В сейф можно класть до 5 миллионов. Деньги идут из налички. Нельзя продать дома в гос, продать игроку, предложить обмен, выставить на аукцион, если в сейфе есть деньги. Сначала требуется их забрать. Если дом слетает по налогам - деньги из сейфа игрок получает в наличку. 
-:?:/ktcjhe,::Устраиваться необходимо все у того же NPC около Палето-Бей. Для начала работы Вам понадобиться “Топор”, купить его можно у NPC на Рынке. Принцип работы схожий с Грибниками, точки для сруба деревьев разбросаны по всей карте, каждый уровень привязан к свой точке сбора. Древесину можно продать на рынке. 
-:?:/hfwbz::Приобрести рацию можно в любом магазине 24/7, в разделе “Электроника”, за всеми фракциями закреплен диапазон частот, который не могут занять. В F2 -> Настройки можно изменить Громкости рации.
-:?:/hfw::Если кнопка войса была не на "N", то поставьте её на N и перезайдите, после чего рация заработает. Кнопку можно вернуть на свою. Для использвания: Возьмите рацию > Введите чистоту >Нажмите ентер >Зажмите "M" и будет слышно.
-:?:/nfqv::Это визуальный баг таймера, часы идут и коины вам начислят по истечению времени. 
-:?:/cbl::Укажите static ID нарушителя.
-:?:/gen::Всю информацию (команды/о фракциях, работах и так далее) можно узнать на форуме majestic-rp.ru - раздел "Путеводитель для новичков".
-:?:/edfk::К сожалению, ничем не можем помочь, увольняем только в случае, если у фракции нет лидера. Дождитесь своего лидера/заместителей.
-:?:/vfqrb::Для того, чтобы купить майку под верхнюю одежду, вам нужно сначала купить элемент верхней одежды (например, пиджак). После этого вам буду доступны все майки, которые подходят под нее в разделе "Майки".
-:?:/cke[::Функция "Я не слышу" предназначена для людей с плохим слухом или его отсутствием. Злоупотребление этой функцией карается баном Вашего персонажа. Отключить ее можно в меню F2 - Настройки. Спасибо за понимание.
-:?:/,fu::Знаем о данной проблеме, она уже передана разработчикам. Приносим свои извинения за предоставленные неудобства. 
-:?:/xfn::На сервере есть следующие команды для чата: /pagesize - увеличить / уменьшить размер чата; /fontsize - увеличить / уменьшить размер шрифта; /chatalpha - прозрачность чата, /timestamp - время около каждого сообщения.
-:?:/htk::Полностю перезайдите на сервер через F1 - Крестик в правом верхнем углу экрана.
-:?:/ytj,k::Не обладаем данной информацией.
-:?:/hg::Извините, но это РП процесс, мы не вправе вмешиваться в него.
-:?:/ehg::Данную информацию вы можете получить при взаимодействии с другими игроками/самостоятельным поиском непосредственно во время игрового процесса, либо другим доступным IC путем. 
-:?:/djqc::Чтобы перезагрузить войс, попробуйте нажать F7. Если ничего не помогает - перезайдите в игру.
-:?:/nt[::Напишите в технический раздел на форуме.
-:?:/nt[lc::Напишите в технический раздел официального дискорд сервера "Помощь по игре" - "тех-поддержка".
-:?:/aeyr::Данный функционал временно недоступен, приносим свои извинения.
-:?:.фун::Данный функционал отсутствует на нашем проекте. Оставьте свое предложение по добавлению на форуме в специальном разделе: Предложение по улучшению сервера - "Напишите ваше предложение тут".
-:?:/bpd::Приносим свои извинения за предоставленные неудобства.
-:?:/hs,f::Вам нужно нажать F3 > Разное > Продажа рыбы.
-:?:/t[g::Каждый час (у каждого игрока своё время) Вам дается EХP. Чтобы узнать, сколько Вам осталось до следующего PayDay, нажмите клавишу F2-Статистика.
-:?:/fdnj::Чтобы эвакуировать Ваше авто воспользуйтесь маркером Сервиса (Гаечный ключ на карте). 
-:?:/pg::Чтобы начислялся PayDay Вам нужно иметь свою банковскую карту и быть уволеным со всех работ. Оформить её можно в любом банке.
-:?:/ufykbw::Получить лицензию на оружие можно в LSPD или LSCSD. 
-:?:/hs,::Вам надо ловить рыбу в зоне, которая соответствует вашему уровню. 1 уровень - Зоны: 1, 2, 3, 4. Рыба: Форель. Количество опыта для повышения: 196. 2 уровень - Зоны: 5,6. Рыба: Камбала. Количество опыта для повышения: 588. 3 уровень - Зона 7,8. Рыба: Тунец.  Количество опыта для повышения: 1 225. 4 уровень - Зона 9,10. Рыба: Красный солдат. Количество опыта для повышения: 2 205. 5 уровень - Зона 11. Рыба: Карась. Количество опыта для повышения: 3 920. 6 уровень - Зона 12. Рыба: Оранжевый карп. Количество опыта для повышения: 6 125. 7 уровень - Зона 13. Рыба: Аквамарин.  Количество опыта для повышения: 8 820. 8 уровень - Зона 14. Рыба: Золотая рыбка.
-:?:/rfybcnhf::Чтобы использовать канистру, возьмите её в руки, нажмите G на авто и заправить. 
-:?:/tvc::К сожалению, администрация не поднимает и не лечит игроков, воспользуйтесь услугами ЕМС.
-:?:/gjlybv::К сожалению, не видя всей ситуации мы не в праве лечить,поднимать или добивать игроков. Дождитесь сотрудников EMS либо же окончания таймера смерти. Приносим свои извинения за возможные неудобства. 
-:?:/fyfr::Обратитесь, пожалуйста, в дискорд к администратору, который выдал вам наказание или рассмотрел жалобу.
-:?:/flp::Данный администратор сейчас занят другим делом или отошел от компьютера на короткое время, напишите ему в личные сообщения в дискорде.
-:?:/flc::Данный администратор сейчас отсутствует на сервере, напишите ему в личные сообщения в дискорде.
-:?:/gjujlf::К сожалению, администрация не контролирует данный процесс. Погода меняется автоматически.
-:?:/ytg::Не понял суть вашего обращения, опишите Вашу проблему/вопрос подробнее для максимально точного ответа, пожалуйста.
-:?:/ljyfn::Обратитесь по почте - help@majestic-rp.ru.
-:?:/[g::Перезайдите в игру, либо купите таблетку у сотрудников EMS.
-:?:/htvjyn::Для начала, Вам нужно купить запчасть для машины на любо АЗС, после чего открыть капот , нажать G > Починить замок/аккумулятор/залить масло. 
-:?:/athv::На ферме для посадки каждого из растений нужны следующие навыки: Пшеница - 225 опыта. Картофель - 950 опыта. Капуста - 2000 опыта. Кукуруза - 3000 опыта. Тыква - 6200 опыта. Бананы - 10500 опыта.
-:?:/ujc::Вы можете сдать авто на свалку. После сдачи вы получите 75% от гос. стоимости авто. Свалка отмечена на карте как перечеркнутый, красный круг.
-:?:/fybv::Остановите анимацию. Нажмите X > Остановить анимацию или Backspace.
-:?:/bl::Укажите, пожалуйста, ID нарушителя.
-:?:/cnj::Степень износа определенных деталей автомобиля можно узнать на автомастерской (иконка гаечного ключа с отверткой на карте).
-:?:/ljy::Задонатить можно на нашем официальном сайте - majestic-rp.ru/donate
-:?:/byrfc::Чтобы совместно работать Вам необходимо быть устроеным на работу (всем), загрузиться, а затем через G пригласить на работу.
-:?:/uhb,s::Чтобы собирать грибы вам надо приехать на точку "Грибы" 1/6 и взять в руки нож.
-:?:/uhb,::Продать грибы можно на рынке.
-:?:/hsy::Рынок находится в Лос-Сантосе на пляже рядом с качалкой, в Палето-Бэй и на ферме, иконка палатки. Там вы можете сдавать предметы с фермы, дровосека, грибника и рыбалки.
-:?:/yjdjcnm::Придите лично в Weazel News. 
-:?:/g::Приятной игры и хорошего настроения.
-:?:/yjd::Следите за новостями сервера в официальном дискорде проекта. 
-:?:/ybr::Сменить ник или внешность Вы можете нажав - F2 > Магазин > Персонажа.
-:?:/,fyr::У нас на сервере есть 3 вида банковских карт: Standart, Premium, VIP. Standart карта стоит в обслуживании 500$ в месяц, снятия и переводы без комиссии до 500.000$ после превышения месечного лимита комиссия на вывод 5%(Максимум 20.000$), на перевод 4%(Максимум 20.000$), кэшбек в магазинах отсутствует. Premium карта стоит в обслуживании 25.000$ в месяц, снятия и переводы без комиссии до 2.500.000$ после превышения месечного лимита комиссия на вывод 4%(Максимум 15.000$), на перевод 3%(Максимум 15.000$), кэшбек в магазинах 1%, лимит кэшбека на одну операцию до 2.500$, месечный лимит кэшбека 50.000$. VIP карта стоит в обслуживании 75.000$ в месяц, снятия и переводы без комиссии до 20.000.000$ после превышения месечного лимита комиссия на вывод 3%(Максимум 20.000$), на перевод 2.5%(Максимум 20.000$), кэшбек в магазинах 3%, лимит кэшбека на одну операцию до 10.000$, месечный лимит кэшбека 150.000$. Деньги за обслуживание и лимиты снимаются каждое 1 число нового месяца.
-:?:/le,kbr::Чтобы сделать дубликат ключей от авто необходимо купить заготовку в магазине 24/7, затем нажать G на авто и сделать дубликат.
-:?:/rkfl::Чтобы сделать дубликат от кладовки, необходимо купить заготовку в магазине 24/7, затем через G передать дубликат нужному человеку.
-:?:/ntk::Попробуйте купить телефон еще раз в магазине 24/7, деньги с вас не спишутся.
-:?:/gjlctk::Чтобы подселить игрока к себе в дом или же квартиру, стоя около дома, наведитесь на игрока и нажмите G, далее нажмите Подселить.
-:?:/rhfi2::Если у Вас есть доказательства краша - предоставьте его любому администратору в личные сообщения дискорда. Вас выпустят.
-:?:/pfvjr::Вам необходимо купить "Дверной замок" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Починить дверной замок.
-:?:/frev::Вам необходимо купить "Аккумулятор" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Заменить аккумулятор.
-:?:/vfckj::Вам необходимо купить "Моторное масло" и "Набор инструментов" на ближайшей заправке, затем подойти к своему транспорту G -> Капот, после этого G -> Заменить масло.
-:?:/vjltk::Пункт "Прогрузка моделей" отвечает за быстроту прогрузки текстур при приближении к ним.
-:?:/,bpjuhf,::Чтобы ограбить бизнес, вам нужно: одеть маску, приобрести оружие и, придя в магазин в составе от 2 до 35 человек, навестись на NPC (продавца) огнестрелом (только один человек должен грабить). 
-:?:/cgfdy::Спавн новичков находится в Палето-Бей, Чумашах, Аэропорту и на Автовокзале. 
-:?:/rhtlbn::Любые финансовые договоры (займы, кредиты и т.д) не относятся к ООС сделкам. Все подобные сделки игроки совершают на свой страх и риск. Администрация не несет ответственности и не является гарантом сделки.
-:?:/htv::Чтобы починить своё авто купите рем.комплект на любой АЗС. Через меню G почините Ваш автомобиль.
-:?:/cltkrf::Администрация не следит за сделками игроков, запишите видео на случай обмана, чтобы оставить жалобу на игрока на форуме. 
-:?:/bvz::Ваше Имя Фамилия не подходит по правилам нашего сервера. Вам нужно сменить ник и написать в репорт повторно, если Ваш ник будет соблюдать правила сервера, то Вас выпустят.
-:?:/dsyjc::Выносливость - навык выносливости повышается от подвижного образа жизни. Чем больше ты бегаешь, тем быстрее повышается навык. При низком навыке, персонаж не может прыгнуть 2 раза и падает. Соответственно повышение навыка влияет на длительность беспрерывного бега и количество прыжков, максимум на последнем уровне - 2.
-:?:/cbkf::Сила - навык силы повышается от физических нагрузок. Чем больше ты занимаешься в качалке (иконка бегущего человека на карте), тем быстрее повышается навык. От прокачки увеличивается сопротивление к урону от падения.
-:?:/ls[::Дыхание - навык дыхания повышается от длительного нахождения под водой. Чем больше ты плаваешь, тем быстрее повышается навык. Соответственно повышение навыка влияет на длительность беспрерывного плавания под водой.
-:?:/gjktn::Полет - навык пилотирования повышается от времени, проведенного за воздушным транспортом. Чем больше ты летаешь на самолете или вертолете, тем быстрее повышается навык. Также навык можно повысив пройдя курсы в летной школе. Пройти их можно 1 раз в 24 часа, увелчение навыка от 1 занятия - 10, стоимость одного занятия - 2 000$. От прокачки навыка увеличивается стабильность полета и управляемость воздушным транспортом.
-:?:/crhsny::Скрытность - навык скрытности повышается от количества успешных уходов от погони (понижений уровня розыска). Чем чаще ты скрываешься от полиции, тем быстрее повышается навык. Ни на что не влияет.
-:?:/cnhtkm,f::Стрельба - навык стрельбы повышается от времени, проведенного в перестрелках, либо тренировках. Чем лучше ты стреляешь и попадаешь, тем быстрее повышается навык. Рекомендуем тренироваться в специально отведенных для того местах, тире в оружейном магазине. От прокачки навыка увеличивается скорость перезарядки и перекатов, кучность стрельбы.
-:?:/ktxe::Уже лечу к Вам на помощь.
-:?:/gjv::Сейчас помогу Вам, ожидайте.
-:?:/,fupp::Чтобы восстановить прежнюю скорость, заедьте в зеленую зону и выедьте с нее.
-:?:/ujcljv::Чтобы продать дом в гос. стоимость, нужно подойти к двери и нажать Е. Вы получите 75% от его гос. цены. Если Вы невовремя оплатите налоги или забудете это сделать, дом слетит автоматически.
-:?:/vfqrb::Для того, чтобы купить майку под верхнюю одежду, вам нужно сначала купить элемент верхней одежды (например, пиджак). После этого вам буду доступны все майки, которые подходят под нее в разделе "Майки".
-:?:/hs,kbw::Получить лицензию на рыбалку вы можете в Мэрии. 
-:?:/gjujlf::К сожалению администрация не контролирует данный процесс. Погода меняется автоматически. 
-:?:/htg::Пожалуйста, уточните свой вопрос подробнее. Администрация не летает на репорты по типу "админ тп", "админ можно поговорить", "помогите", "админ есть вопрос". Количество символов неограничено, вы можете полностью расписать Вашу проблему/вопрос.
-:?:/ytedbl::К сожалению администрация не может увидеть это нарушение. Пожалуйста, если у Вас есть видеофиксация данного нарушения - оформите жалобу на форуме, спасибо большое за понимание.
-:?:/rjcnb::чтобы играть в кости вам нужно купить их в любом 24/7. После того как вы купили кости, вы можете подойти к игроку.
-:?:/gfhr::Чтобы припарковать ТС, за рулем нажмите G - Припарковать.
-:?:/yjdbxjr::Путеводитель находится на спавнах новичков. Они обозначены на карте значком машущего человечка.
-:?:/lf::Да. 
-:?:/ytn::Нет. 
-:?:/ytng::Администрация не телепортирует игроков, Вам нужно добраться до места самостоятельно. На проекте достаточно способов, чтобы это сделать: такси, аренда транспорта, автосервисы.
-:?:/byd:::?:.инв::Это баг инвентаря, предложите обменяться любому игроку и ваша проблема будет решена. Если по близости никого нет, обратитесь ещё раз в репорт и администрация Вам поможет.
-:?:/fhsyjr::Для того, чтобы выставить свое авто на продажу, Вам необходимо приехать на территорию авторынка, выбрать место и нажать на клавишу "G" - Авторынок - Выставить на продажу.
-:?:/njkrfnm::Транспорт можно толкать, нажав G-толкать. Если такой функции нет, при наведении на авто, то этот транспорт толкать нельзя.
-:?:/ytck::Администрация не может следить полностью за всем РП процессом, в случае нарушений от игроков - напишите репорт.
-:?:/fen::Для подключения Google authenticator вам нужно в меню выбора персонажа открыть раздел настроек.
-:?:/x2::Теперь коины выдаются по выходным, по будням прокрутка рулетки за 5 часов игры.
-:?:/juh::Чтобы начать ограбление бизнеса, вам нужно позвонить по номеру: 28121903. Для этого надо быть в крайм организации, и находится рядом с банком (как минимум вас должно быть 4 около банка, иначе не сможете). Для начала ограбления требуется "План ограблений", который выбирается в AirDrops или при ограблении бизнесов.Можно грабить 1 раз в день каждой огранизации.После того, как ограбление началось и банк получил красную иконку, надо прицелиться в бота и заполнить прогресс бар.Дальше будет большая дверь, что бы ее разблокировать, нужно пройти мини-игру со взломом. Для этого используем «Программатор ЭБУ» + «Кабель электронных дверей». Он продается у торговца на рынке. После взлома перед вами будет стоять стойка с деньгами. Далее идет 2-я дверь. Для ее взлома нам необходима «Ключ карта Fleeca» либо «Термитная установка».«Ключ карта Fleeca» выпадает с ботов при ограблении бизнесов, или на аир дропах.«Термитная установка» продается у пиротехника. С ее помощью дверь открывается за 2 минуты. 
-:?:/juh2::Для этого надо взять в руки один из предметов, чтобы открыть дверь. Но в хранилище есть ячейки, для взлома ячеек необходима «Дрель 1500w». Дрель крафтится у криминальных организаций и выпадает при смерти. После успешного прохождения мини-игры по взлому ячейки на пол падает награда.
-:?:/lhjy::Дрон крафтится у силовых гос.структур и Weasel News. Пользоваться им могут соответственно эти же гос.структуры. Чтобы подняться-пробел, чтобы опуститься-shift. На E-тепловизор включить/выключить.
-:?:/ferw::На аукцион вы можете выставить авто/бизнес/дом/квартиру. Во время того, как вы выставляете лот, вы можете лишь ездить на авто. При продаже на акционе дома/квартиры-кладовка передаётся покупателю полностью.
-:?:/lhban::Дрифт счётчик можно включить через F2 > Настройки. Он появляется во время управляемого заноса и показывает, на сколько хорошо вы прошли поворот.На карте вы можете увидеть зоны, где можно дрифтить и попасть в список топ-дрифтеров. Для этого Вам обязательно дрифтить по отмеченной зоне. В противном случае очки не засчитаются.Покажите, кто здесь настоящий король дрифта!
-:?:/,jkufhrf::Для того, чтобы распилить багажник нужно подойти к багажнику G - Нелегальное для авто - Распилить дверной замок. Открывается багажник и вы можете взять с него как коробки с материалами, так и коробки со снаряжением. Взломать можно не только гос.матовозки, но и крайм. Болгаркой нельзя взломать личный транспорт.
-:?:/yted::Не увидел нарушений, если у вас есть видеодоказательства - оставьте жалобу на форуме. 
-:?:/ajh::Данное нарушение не подлежит рассмотрению через обращение, оставьте жалобу на форуме.
-:?:/a;,::Не могу рассмотреть из-за нарушений правил подачи. Автору репорт-жалобы необходимо указывать в названии видео: свой static, static нарушителя, время и дату. Измените название и продублируйте вашу репорт-жалобу.
-:?:/ajhev::В связи с нагрузкой на сервер мы не можем рассмотреть вашу жалобу на игрока посредством обращения, пожалуйста, оставьте жалобу на форуме. Спасибо за понимание.
-:?:/bcx::Все транспортные средства исчезают через 60 минут, если с ними никак не взаимодействовать.
-:?:/afv::/c - IC чат, /cb - OOC чат.
-:?:/ahfr::/f - IC чат, /fb - OOC чат. 
-:?:/cg,:: Если одно отделение ЕМС сильно загружено, чтобы избежать краши вас спавнит в другом, менее загруженном отделении.
-:?:/ghjvj:: Промокод можно ввести до 3 уровня командой /promo "промокод", награда за него будет выдана при достижении 3 уровня. Пригласивший получает 7500$. Приглашенный игрок получает: от обычного игрока - 10 000$ + 3 дня Platinum VIP, от медиа - 20 000$ + 7 дней Platinum VIP 
-:?:/gthtl::Все имущество вы передаете на свой страх и риск.
-:?:/jcr::Жалобы в репорт на OOC оскорбление принимаем только тогда, если скриншот сделан в ту же минуту, что и ООС оскорбление в чате + обязательно на скрине должно быть присутствие нарушившего (видно его или статик)
-:?:/helf::Руда с шахты требуется только в семейных контрактах, продать ее нельзя.
-:?:/pfr::Это регламентируется IC законами, изучить их можете в разделе Government на форуме: Majestic RolePlay | Server #3 - Организации - Государственные организации - Government.
-:?:/,fuhtg::В случае нахождения бага оставьте свой баг-репорт в официальном дискорде проекта: Текстовые каналы - сообщить о баге.
-:?:/vtl::За данным медиа партнером наблюдает PR ассистент, по этой причине я не могу выдавать наказание, т.к. вся ответственность за происходящее на этой ситуации автоматически переносится на PR ассистента.
-:?:/ybpr::У вас включен режим низкого качества в F2 - Настройки.
-:?:/dfr::От вакцины, выданной администрацией квест не будет засчитан, ожидайте появления лидера в ЕМС.
-:?:/,byl::Вы можете настроить бинд клавиш под себя в F2 - Настройки - Бинд клавиш.
+:?:/pfrh::/asms  Г‡Г ГЄГ°Г®Г©ГІГҐ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ ГЁ Г®ГІГЄГ°Г®Г©ГІГҐ Г±Г­Г®ГўГ , ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ . {left 51}
+:?:/dbp::Г‚ГЁГ§ГіГ Г«ГјГ­Г»Г© ГЎГ ГЈ, ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Г­Г  Г±ГҐГ°ГўГҐГ°.
+:?:/vtnfk::ГЊГҐГІГ Г«Г«Г®ГЁГ±ГЄГ ГІГҐГ«Гј Г±ГІГ Г­Г®ГўГЁГІГ±Гї Г ГЄГІГЁГўГ­Г»Г¬ ГЄГ ГЄ ГІГ®Г«ГјГЄГ® Г‚Г» ГЎГҐГ°ГҐГІГҐ ГҐГЈГ® Гў Г°ГіГЄГЁ. ГЉГ®ГЈГ¤Г  Г®Г­ Г­Г Г©Г¤ГҐГІ Г±Г®ГЄГ°Г®ГўГЁГ№Г , ГІГ® ГЎГіГ¤ГіГІ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІГј ГўГЁГ§ГіГ Г«ГјГ­Г»ГҐ ГЁ Г§ГўГіГЄГ®ГўГ»ГҐ Г®ГЇГ®ГўГҐГ№ГҐГ­ГЁГї. ГЋГІ Г§ГҐГ«ГҐГ­Г®ГЈГ® Г¶ГўГҐГІГ , Г¤Г® ГЄГ°Г Г±Г­Г®ГЈГ®. ГЊГҐГ±ГІГ  Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї Г±Г®ГЄГ°Г®ГўГЁГ№: ГЇГ«ГїГ¦ГЁ ГЁ Г Г°ГµГЁГЇГҐГ«Г ГЈГЁ.
+:?:/,fudjqc::ГЌГ Г¦Г¬ГЁГІГҐ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГ  ГўГ®Г©Г±Г  - Г§Г ГЎГ«Г®ГЄГЁГ°ГіГ©ГІГҐ Г¤Г«Гї ГўГ±ГҐГµ ГЁ Г±Г­Г®ГўГ  Г°Г Г§ГЎГ«Г®ГЄГЁГ°ГіГ©ГІГҐ. Г‚ Г±Г«ГіГ·Г ГҐ, ГҐГ±Г«ГЁ ГЇГ°Г®ГЎГ«ГҐГ¬Г  Г®Г±ГІГ Г«Г Г±Гј, ГІГ® ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі.
+:?:/hs,fkrf::Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ®ГЎГ» Г°Г»ГЎГ Г·ГЁГІГј, Г‚Г Г¬  Г­ГіГ¦Г­Г  ГіГ¤Г®Г·ГЄГ  ГЁ Г­Г Г¦ГЁГўГЄГ  - ГЇГ®ГЄГіГЇГ ГҐГІГ±Гї Гў Г«ГѕГЎГ®Г¬ Г¬Г ГЈГЁГ§ГЁГ­ГҐ 24/7. ГЏГ®Г¤ГµГ®Г¤ГЁГІГҐ ГЄ Г§Г®Г­ГҐ Г°Г»ГЎГ Г«ГЄГЁ Г±ГўГ®ГҐГЈГ® ГіГ°Г®ГўГ­Гї ГЁ Г­Г Г¦ГЁГ¬Г ГҐГІГҐ ГЄГ«Г ГўГЁГёГі Г…. Г†Г¤ВёГІГҐ ГЄГ«ВёГўГ , ГЄГ ГЄ ГЇГ®ГїГўГЁГІГ±Гї Г°Г»ГЎГ , Г®Г­Г  ГЎГіГ¤ГҐГІ ГўГЁГ«ГїГІГј Гў Г±ГІГ®Г°Г®Г­Г» ГўГ«ГҐГўГ®-ГўГЇГ°Г ГўГ®. Г‚Г Г¬ Г­ГіГ¦Г­Г® Г§Г Г¦ГЁГ¬Г ГІГј ГЄГ«Г ГўГЁГёГЁ A/D ГЇГ°Г®ГІГЁГўГ®ГЇГ®Г«Г®Г¦Г­Г®Г© Г±ГІГ®Г°Г®Г­Г» Г°Г»ГЎГ». ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ Г°Г»ГЎГ  ГіГІГ®Г¬ГЁГ«Г Г±Гј, Г‚Г» ГҐВё ГЇГ®Г¤Г±ГҐГЄГ ГҐГІГҐ Г«ГҐГўГ®Г© ГЄГ­Г®ГЇГЄГ®Г© Г¬Г»ГёГЁ. 
+:?:/cnfdrf::ГђГ Г±Г·ВёГІ Г±ГІГ ГўГЄГЁ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІ Гў ГІГҐГ·ГҐГ­ГЁГҐ 6-ГІГЁ Г·Г Г±Г®Гў. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГіГЇГ°Г ГўГ«ГїГҐГІ Г°Г Г±Г±Г·ГҐГІГ®Г¬.
+:?:/cxtn::Г—ГІГ®ГЎГ» ГіГ§Г­Г ГІГј Г­Г®Г¬ГҐГ° Г±Г·ГҐГІГ  Г®ГІГЄГ°Г®Г©ГІГҐ ГЁГ­ГўГҐГ­ГІГ Г°Гј ГЁ Г­Г ГўГҐГ¤ГЁГІГҐГ±Гј Г¬Г»ГёГЄГ®Г© Г­Г  ГЎГ Г­ГЄГ®ГўГ±ГЄГіГѕ ГЄГ Г°ГІГі.
+:?:/gby::Г—ГІГ®ГЎГ» ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј ГЇГЁГ­-ГЄГ®Г¤ Г®ГІГЇГ°Г ГўГ«ГїГ©ГІГҐГ±Гј Гў ГЎГ Г­ГЄГ®ГўГ±ГЄГ®ГҐ Г®ГІГ¤ГҐГ«ГҐГ­ГЁГҐ, Гў Г¬ГҐГ­Гѕ Г±Г¬ГҐГ­Г» Г­Г Г¦Г¬ГЁГІГҐ "Г‚Г®Г±Г±ГІГ Г­Г®ГўГЁГІГј".
+:?:/rkdk::ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 5-ГЈГ® ГіГ°Г®ГўГ­Гї: 500 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 10-ГЈГ® ГіГ°Г®ГўГ­Гї: 1000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 15-ГЈГ® ГіГ°Г®ГўГ­Гї: 2000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 20-ГЈГ® ГіГ°Г®ГўГ­Гї: 3000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 25-ГЈГ® ГіГ°Г®ГўГ­Гї: 4000 MC ГЏГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 30-ГЈГ® ГіГ°Г®ГўГ­Гї: 5000 MC. ГЉГ Г¦Г¤Г»Г© Г±Г«ГҐГ¤ГіГѕГ№ГЁГ© ГіГ°Г®ГўГҐГ­Гј ГЇГ®Г±Г«ГҐ 30-ГЈГ® Г‚Г» ГЎГіГ¤ГҐГІГҐ ГЇГ®Г«ГіГ·Г ГІГј 1500 MC. 
+:?:/rdtcn::ГЌГ  Г±ГҐГ°ГўГҐГ°ГҐ Г¤Г®Г±ГІГіГЇГ­Г» ГЊГЁГ°Г®ГўГ»ГҐ ГЁ Г‹ГЁГ·Г­Г»ГҐ ГЄГўГҐГ±ГІГ». ГЋГ§Г­Г ГЄГ®Г¬ГЁГІГјГ±Гї Г± Г­ГЁГ¬ГЁ Г¬Г®Г¦Г­Г® Г­Г  Г°Г»Г­ГЄГҐ (ГЌГ  ГЄГ Г°ГІГҐ Г®ГЎГ®Г§Г­Г Г·ГҐГ­ ГЄГ ГЄ "ГЉГ°Г Г±Г­Г»Г© ГўГ®ГЇГ°Г®Г±"). ГЉГўГҐГ±ГІГ» Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐГ¬. Г‹ГЁГ·Г­Г»ГҐ ГЄГўГҐГ±ГІГ» ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ°Г®ГµГ®Г¤ГЁГІГј Г­ГҐГ®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г»Г© Г±Г°Г®ГЄ, Г­Г®, ГҐГ±Г«ГЁ Г‚Г» Г§Г ГµГ®ГІГЁГІГҐ ГіГ·Г Г±ГІГўГ®ГўГ ГІГј Гў ГЊГЁГ°Г®ГўГ®Г¬ ГЄГўГҐГ±ГІГҐ ГЁ ГЇГ®Г«ГіГ·ГЁГІГј Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ ГЎГ®Г­ГіГ±Г», ГІГ® Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЇГ®ГІГ®Г°Г®ГЇГЁГІГјГ±Гї ГўГ»ГЇГ®Г«Г­ГЁГІГј Г«ГЁГ·Г­Г»Г© ГЄГўГҐГ±ГІ. Г’Г®Г«ГјГЄГ® 5 Г«ГіГ·ГёГЁГµ ГЁГЈГ°Г®ГЄГ®Гў Г±Г¬Г®ГЈГіГІ ГЇГ®ГЇГ Г±ГІГј Гў ГІГ®ГЇ 3 ГЁ Г§Г Г«ГіГІГ ГІГј Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ ГЎГ®Г­ГіГ±Г». - ГЉГ Г¦Г¤ГіГѕ Г­ГҐГ¤ГҐГ«Гѕ Г¤Г®Г±ГІГіГЇГ­Г® ГЇГ® 3 Г«ГЁГ·Г­Г»Гµ ГЁ Г¬ГЁГ°Г®ГўГ»Гµ ГЄГўГҐГ±ГІГ . - ГЌГҐГЄГ®ГІГ®Г°Г»ГҐ ГЄГўГҐГ±ГІГ» ГЇГ® ГІГЁГЇГі ГЁГ­ГЄГ Г±Г ГІГ®Г°Г /Г¬ГіГ±Г®Г°Г№ГЁГЄГ /ГЇГ®Г·ГІГ Г«ГјГ®Г­Г  Г¬Г®Г¦Г­Г® ГўГ»ГЇГ®Г«Г­ГїГІГј Гў 2-ГҐГ¬ ГЁ ГЎГ®Г«ГҐГҐ, Г§Г Г±Г·ГЁГІГ»ГўГ ГІГј ГЎГіГ¤ГҐГ¬ ГўГ±ГҐГ¬.
+:?:/atl::ГЌГ  ГЇГҐГ°ГўГ®Г¬ ГЅГІГ Г¦ГҐ Г±ГІГ®ГЁГІ NPC Гі ГЄГ®ГІГ®Г°Г®ГЈГ® Г¬Г®Г¦Г­Г® ГўГ§ГїГІГј Г§Г Г¤Г Г­ГЁГҐ. Г—ГІГ®ГЎГ» Г®ГІГЎГ»ГІГј Г±Г°Г®ГЄ Гў ГґГҐГ¤ГҐГ°Г Г«ГјГ­Г®Г© ГІГѕГ°ГјГ¬ГҐ, Г­ГіГ¦Г­Г® ГўГ»ГЇГ®Г«Г­ГїГІГј Г§Г Г¤Г Г·ГЁ. ГЌГ ГЇГ°ГЁГ¬ГҐГ° ГЇГ®Г¬Г»ГІГј ГІГіГ Г«ГҐГІ - Г‚ Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®ГҐ ГўГ°ГҐГ¬Гї ГІГѕГ°ГјГ¬Г  Г§Г ГЄГ°Г»ГўГ ГҐГІ ГЄГ«ГҐГІГЄГЁ Г­Г  5 Г¬ГЁГ­ГіГІ, Г±Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®, Гў ГЅГІГ® ГўГ°ГҐГ¬Гї Г®ГІГЎГ»ГІГј Г±Г°Г®ГЄ Г­ГҐГ«ГјГ§Гї: -- ГЋГІГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 00 Г¬ГЁГ­ГіГІ -- Г‡Г ГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 20 Г¬ГЁГ­ГіГІ Г­Г  5 Г¬ГЁГ­ГіГІ -- ГЋГІГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 25 Г¬ГЁГ­ГіГІ -- Г‡Г ГЄГ°Г»ГўГ ГѕГІГ±Гї ГЄГ«ГҐГІГЄГЁ Гў 55 Г¬ГЁГ­ГіГІ Г­Г  5 Г¬ГЁГ­ГіГІ.
+:?:/ctqf::Г‡Г ГЄГ°Г»ГўГ ГІГј ГЁГ­ГІГҐГ°ГґГҐГ©Г± Г±ГҐГ©ГґГ  Г¬Г®Г¦Г­Г® ГІГ®Г«ГјГЄГ® Г­Г  ESC. Г‚ Г±ГҐГ©Гґ Г¬Г®Г¦Г­Г® ГЄГ«Г Г±ГІГј Г¤Г® 5 Г¬ГЁГ«Г«ГЁГ®Г­Г®Гў. Г„ГҐГ­ГјГЈГЁ ГЁГ¤ГіГІ ГЁГ§ Г­Г Г«ГЁГ·ГЄГЁ. ГЌГҐГ«ГјГ§Гї ГЇГ°Г®Г¤Г ГІГј Г¤Г®Г¬Г  Гў ГЈГ®Г±, ГЇГ°Г®Г¤Г ГІГј ГЁГЈГ°Г®ГЄГі, ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГј Г®ГЎГ¬ГҐГ­, ГўГ»Г±ГІГ ГўГЁГІГј Г­Г  Г ГіГЄГ¶ГЁГ®Г­, ГҐГ±Г«ГЁ Гў Г±ГҐГ©ГґГҐ ГҐГ±ГІГј Г¤ГҐГ­ГјГЈГЁ. Г‘Г­Г Г·Г Г«Г  ГІГ°ГҐГЎГіГҐГІГ±Гї ГЁГµ Г§Г ГЎГ°Г ГІГј. Г…Г±Г«ГЁ Г¤Г®Г¬ Г±Г«ГҐГІГ ГҐГІ ГЇГ® Г­Г Г«Г®ГЈГ Г¬ - Г¤ГҐГ­ГјГЈГЁ ГЁГ§ Г±ГҐГ©ГґГ  ГЁГЈГ°Г®ГЄ ГЇГ®Г«ГіГ·Г ГҐГІ Гў Г­Г Г«ГЁГ·ГЄГі. 
+:?:/ktcjhe,::Г“Г±ГІГ°Г ГЁГўГ ГІГјГ±Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ±ГҐ Гі ГІГ®ГЈГ® Г¦ГҐ NPC Г®ГЄГ®Г«Г® ГЏГ Г«ГҐГІГ®-ГЃГҐГ©. Г„Г«Гї Г­Г Г·Г Г«Г  Г°Г ГЎГ®ГІГ» Г‚Г Г¬ ГЇГ®Г­Г Г¤Г®ГЎГЁГІГјГ±Гї В“Г’Г®ГЇГ®Г°В”, ГЄГіГЇГЁГІГј ГҐГЈГ® Г¬Г®Г¦Г­Г® Гі NPC Г­Г  ГђГ»Г­ГЄГҐ. ГЏГ°ГЁГ­Г¶ГЁГЇ Г°Г ГЎГ®ГІГ» Г±ГµГ®Г¦ГЁГ© Г± ГѓГ°ГЁГЎГ­ГЁГЄГ Г¬ГЁ, ГІГ®Г·ГЄГЁ Г¤Г«Гї Г±Г°ГіГЎГ  Г¤ГҐГ°ГҐГўГјГҐГў Г°Г Г§ГЎГ°Г®Г±Г Г­Г» ГЇГ® ГўГ±ГҐГ© ГЄГ Г°ГІГҐ, ГЄГ Г¦Г¤Г»Г© ГіГ°Г®ГўГҐГ­Гј ГЇГ°ГЁГўГїГ§Г Г­ ГЄ Г±ГўГ®Г© ГІГ®Г·ГЄГҐ Г±ГЎГ®Г°Г . Г„Г°ГҐГўГҐГ±ГЁГ­Гі Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г ГІГј Г­Г  Г°Г»Г­ГЄГҐ. 
+:?:/hfwbz::ГЏГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ Г°Г Г¶ГЁГѕ Г¬Г®Г¦Г­Г® Гў Г«ГѕГЎГ®Г¬ Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Гў Г°Г Г§Г¤ГҐГ«ГҐ В“ГќГ«ГҐГЄГІГ°Г®Г­ГЁГЄГ В”, Г§Г  ГўГ±ГҐГ¬ГЁ ГґГ°Г ГЄГ¶ГЁГїГ¬ГЁ Г§Г ГЄГ°ГҐГЇГ«ГҐГ­ Г¤ГЁГ ГЇГ Г§Г®Г­ Г·Г Г±ГІГ®ГІ, ГЄГ®ГІГ®Г°Г»Г© Г­ГҐ Г¬Г®ГЈГіГІ Г§Г Г­ГїГІГј. Г‚ F2 -> ГЌГ Г±ГІГ°Г®Г©ГЄГЁ Г¬Г®Г¦Г­Г® ГЁГ§Г¬ГҐГ­ГЁГІГј ГѓГ°Г®Г¬ГЄГ®Г±ГІГЁ Г°Г Г¶ГЁГЁ.
+:?:/hfw::Г…Г±Г«ГЁ ГЄГ­Г®ГЇГЄГ  ГўГ®Г©Г±Г  ГЎГ»Г«Г  Г­ГҐ Г­Г  "N", ГІГ® ГЇГ®Г±ГІГ ГўГјГІГҐ ГҐВё Г­Г  N ГЁ ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ, ГЇГ®Г±Г«ГҐ Г·ГҐГЈГ® Г°Г Г¶ГЁГї Г§Г Г°Г ГЎГ®ГІГ ГҐГІ. ГЉГ­Г®ГЇГЄГі Г¬Г®Г¦Г­Г® ГўГҐГ°Г­ГіГІГј Г­Г  Г±ГўГ®Гѕ. Г„Г«Гї ГЁГ±ГЇГ®Г«ГјГ§ГўГ Г­ГЁГї: Г‚Г®Г§ГјГ¬ГЁГІГҐ Г°Г Г¶ГЁГѕ > Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±ГІГ®ГІГі >ГЌГ Г¦Г¬ГЁГІГҐ ГҐГ­ГІГҐГ° >Г‡Г Г¦Г¬ГЁГІГҐ "M" ГЁ ГЎГіГ¤ГҐГІ Г±Г«Г»ГёГ­Г®.
+:?:/nfqv::ГќГІГ® ГўГЁГ§ГіГ Г«ГјГ­Г»Г© ГЎГ ГЈ ГІГ Г©Г¬ГҐГ°Г , Г·Г Г±Г» ГЁГ¤ГіГІ ГЁ ГЄГ®ГЁГ­Г» ГўГ Г¬ Г­Г Г·ГЁГ±Г«ГїГІ ГЇГ® ГЁГ±ГІГҐГ·ГҐГ­ГЁГѕ ГўГ°ГҐГ¬ГҐГ­ГЁ. 
+:?:/cbl::Г“ГЄГ Г¦ГЁГІГҐ static ID Г­Г Г°ГіГёГЁГІГҐГ«Гї.
+:?:/gen::Г‚Г±Гѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ (ГЄГ®Г¬Г Г­Г¤Г»/Г® ГґГ°Г ГЄГ¶ГЁГїГµ, Г°Г ГЎГ®ГІГ Гµ ГЁ ГІГ ГЄ Г¤Г Г«ГҐГҐ) Г¬Г®Г¦Г­Г® ГіГ§Г­Г ГІГј Г­Г  ГґГ®Г°ГіГ¬ГҐ majestic-rp.ru - Г°Г Г§Г¤ГҐГ« "ГЏГіГІГҐГўГ®Г¤ГЁГІГҐГ«Гј Г¤Г«Гї Г­Г®ГўГЁГ·ГЄГ®Гў".
+:?:/edfk::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г­ГЁГ·ГҐГ¬ Г­ГҐ Г¬Г®Г¦ГҐГ¬ ГЇГ®Г¬Г®Г·Гј, ГіГўГ®Г«ГјГ­ГїГҐГ¬ ГІГ®Г«ГјГЄГ® Гў Г±Г«ГіГ·Г ГҐ, ГҐГ±Г«ГЁ Гі ГґГ°Г ГЄГ¶ГЁГЁ Г­ГҐГІ Г«ГЁГ¤ГҐГ°Г . Г„Г®Г¦Г¤ГЁГІГҐГ±Гј Г±ГўГ®ГҐГЈГ® Г«ГЁГ¤ГҐГ°Г /Г§Г Г¬ГҐГ±ГІГЁГІГҐГ«ГҐГ©.
+:?:/vfqrb::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГіГЇГЁГІГј Г¬Г Г©ГЄГі ГЇГ®Г¤ ГўГҐГ°ГµГ­ГѕГѕ Г®Г¤ГҐГ¦Г¤Гі, ГўГ Г¬ Г­ГіГ¦Г­Г® Г±Г­Г Г·Г Г«Г  ГЄГіГЇГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ ГўГҐГ°ГµГ­ГҐГ© Г®Г¤ГҐГ¦Г¤Г» (Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГЇГЁГ¤Г¦Г ГЄ). ГЏГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® ГўГ Г¬ ГЎГіГ¤Гі Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐ Г¬Г Г©ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ ГЇГ®Г¤ Г­ГҐГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ "ГЊГ Г©ГЄГЁ".
+:?:/cke[::Г”ГіГ­ГЄГ¶ГЁГї "Гџ Г­ГҐ Г±Г«Г»ГёГі" ГЇГ°ГҐГ¤Г­Г Г§Г­Г Г·ГҐГ­Г  Г¤Г«Гї Г«ГѕГ¤ГҐГ© Г± ГЇГ«Г®ГµГЁГ¬ Г±Г«ГіГµГ®Г¬ ГЁГ«ГЁ ГҐГЈГ® Г®ГІГ±ГіГІГ±ГІГўГЁГҐГ¬. Г‡Г«Г®ГіГЇГ®ГІГ°ГҐГЎГ«ГҐГ­ГЁГҐ ГЅГІГ®Г© ГґГіГ­ГЄГ¶ГЁГҐГ© ГЄГ Г°Г ГҐГІГ±Гї ГЎГ Г­Г®Г¬ Г‚Г ГёГҐГЈГ® ГЇГҐГ°Г±Г®Г­Г Г¦Г . ГЋГІГЄГ«ГѕГ·ГЁГІГј ГҐГҐ Г¬Г®Г¦Г­Г® Гў Г¬ГҐГ­Гѕ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:/,fu::Г‡Г­Г ГҐГ¬ Г® Г¤Г Г­Г­Г®Г© ГЇГ°Г®ГЎГ«ГҐГ¬ГҐ, Г®Г­Г  ГіГ¦ГҐ ГЇГҐГ°ГҐГ¤Г Г­Г  Г°Г Г§Г°Г ГЎГ®ГІГ·ГЁГЄГ Г¬. ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ . 
+:?:/xfn::ГЌГ  Г±ГҐГ°ГўГҐГ°ГҐ ГҐГ±ГІГј Г±Г«ГҐГ¤ГіГѕГ№ГЁГҐ ГЄГ®Г¬Г Г­Г¤Г» Г¤Г«Гї Г·Г ГІГ : /pagesize - ГіГўГҐГ«ГЁГ·ГЁГІГј / ГіГ¬ГҐГ­ГјГёГЁГІГј Г°Г Г§Г¬ГҐГ° Г·Г ГІГ ; /fontsize - ГіГўГҐГ«ГЁГ·ГЁГІГј / ГіГ¬ГҐГ­ГјГёГЁГІГј Г°Г Г§Г¬ГҐГ° ГёГ°ГЁГґГІГ ; /chatalpha - ГЇГ°Г®Г§Г°Г Г·Г­Г®Г±ГІГј Г·Г ГІГ , /timestamp - ГўГ°ГҐГ¬Гї Г®ГЄГ®Г«Г® ГЄГ Г¦Г¤Г®ГЈГ® Г±Г®Г®ГЎГ№ГҐГ­ГЁГї.
+:?:/htk::ГЏГ®Г«Г­Г®Г±ГІГѕ ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Г­Г  Г±ГҐГ°ГўГҐГ° Г·ГҐГ°ГҐГ§ F1 - ГЉГ°ГҐГ±ГІГЁГЄ Гў ГЇГ°Г ГўГ®Г¬ ГўГҐГ°ГµГ­ГҐГ¬ ГіГЈГ«Гі ГЅГЄГ°Г Г­Г .
+:?:/ytj,k::ГЌГҐ Г®ГЎГ«Г Г¤Г ГҐГ¬ Г¤Г Г­Г­Г®Г© ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГҐГ©.
+:?:/hg::Г€Г§ГўГЁГ­ГЁГІГҐ, Г­Г® ГЅГІГ® ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±, Г¬Г» Г­ГҐ ГўГЇГ°Г ГўГҐ ГўГ¬ГҐГёГЁГўГ ГІГјГ±Гї Гў Г­ГҐГЈГ®.
+:?:/ehg::Г„Г Г­Г­ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ°ГЁ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГЁГЁ Г± Г¤Г°ГіГЈГЁГ¬ГЁ ГЁГЈГ°Г®ГЄГ Г¬ГЁ/Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г»Г¬ ГЇГ®ГЁГ±ГЄГ®Г¬ Г­ГҐГЇГ®Г±Г°ГҐГ¤Г±ГІГўГҐГ­Г­Г® ГўГ® ГўГ°ГҐГ¬Гї ГЁГЈГ°Г®ГўГ®ГЈГ® ГЇГ°Г®Г¶ГҐГ±Г±Г , Г«ГЁГЎГ® Г¤Г°ГіГЈГЁГ¬ Г¤Г®Г±ГІГіГЇГ­Г»Г¬ IC ГЇГіГІГҐГ¬. 
+:?:/djqc::Г—ГІГ®ГЎГ» ГЇГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГј ГўГ®Г©Г±, ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ Г­Г Г¦Г ГІГј F7. Г…Г±Г«ГЁ Г­ГЁГ·ГҐГЈГ® Г­ГҐ ГЇГ®Г¬Г®ГЈГ ГҐГІ - ГЇГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі.
+:?:/nt[::ГЌГ ГЇГЁГёГЁГІГҐ Гў ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© Г°Г Г§Г¤ГҐГ« Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+:?:/nt[lc::ГЌГ ГЇГЁГёГЁГІГҐ Гў ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© Г°Г Г§Г¤ГҐГ« Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®ГЈГ® Г¤ГЁГ±ГЄГ®Г°Г¤ Г±ГҐГ°ГўГҐГ°Г  "ГЏГ®Г¬Г®Г№Гј ГЇГ® ГЁГЈГ°ГҐ" - "ГІГҐГµ-ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГ ".
+:?:/aeyr::Г„Г Г­Г­Г»Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГўГ°ГҐГ¬ГҐГ­Г­Г® Г­ГҐГ¤Г®Г±ГІГіГЇГҐГ­, ГЇГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї.
+:?:.ГґГіГ­::Г„Г Г­Г­Г»Г© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г­Г ГёГҐГ¬ ГЇГ°Г®ГҐГЄГІГҐ. ГЋГ±ГІГ ГўГјГІГҐ Г±ГўГ®ГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГЇГ® Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГѕ Г­Г  ГґГ®Г°ГіГ¬ГҐ Гў Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г®Г¬ Г°Г Г§Г¤ГҐГ«ГҐ: ГЏГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГЇГ® ГіГ«ГіГ·ГёГҐГ­ГЁГѕ Г±ГҐГ°ГўГҐГ°Г  - "ГЌГ ГЇГЁГёГЁГІГҐ ГўГ ГёГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ ГІГіГІ".
+:?:/bpd::ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГҐГ­Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ .
+:?:/hs,f::Г‚Г Г¬ Г­ГіГ¦Г­Г® Г­Г Г¦Г ГІГј F3 > ГђГ Г§Г­Г®ГҐ > ГЏГ°Г®Г¤Г Г¦Г  Г°Г»ГЎГ».
+:?:/t[g::ГЉГ Г¦Г¤Г»Г© Г·Г Г± (Гі ГЄГ Г¦Г¤Г®ГЈГ® ГЁГЈГ°Г®ГЄГ  Г±ГўГ®Вё ГўГ°ГҐГ¬Гї) Г‚Г Г¬ Г¤Г ГҐГІГ±Гї EГ•P. Г—ГІГ®ГЎГ» ГіГ§Г­Г ГІГј, Г±ГЄГ®Г«ГјГЄГ® Г‚Г Г¬ Г®Г±ГІГ Г«Г®Г±Гј Г¤Г® Г±Г«ГҐГ¤ГіГѕГ№ГҐГЈГ® PayDay, Г­Г Г¦Г¬ГЁГІГҐ ГЄГ«Г ГўГЁГёГі F2-Г‘ГІГ ГІГЁГ±ГІГЁГЄГ .
+:?:/fdnj::Г—ГІГ®ГЎГ» ГЅГўГ ГЄГіГЁГ°Г®ГўГ ГІГј Г‚Г ГёГҐ Г ГўГІГ® ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј Г¬Г Г°ГЄГҐГ°Г®Г¬ Г‘ГҐГ°ГўГЁГ±Г  (ГѓГ ГҐГ·Г­Г»Г© ГЄГ«ГѕГ· Г­Г  ГЄГ Г°ГІГҐ). 
+:?:/pg::Г—ГІГ®ГЎГ» Г­Г Г·ГЁГ±Г«ГїГ«Г±Гї PayDay Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЁГ¬ГҐГІГј Г±ГўГ®Гѕ ГЎГ Г­ГЄГ®ГўГ±ГЄГіГѕ ГЄГ Г°ГІГі ГЁ ГЎГ»ГІГј ГіГўГ®Г«ГҐГ­Г»Г¬ Г±Г® ГўГ±ГҐГµ Г°Г ГЎГ®ГІ. ГЋГґГ®Г°Г¬ГЁГІГј ГҐВё Г¬Г®Г¦Г­Г® Гў Г«ГѕГЎГ®Г¬ ГЎГ Г­ГЄГҐ.
+:?:/ufykbw::ГЏГ®Г«ГіГ·ГЁГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГѕ Г­Г  Г®Г°ГіГ¦ГЁГҐ Г¬Г®Г¦Г­Г® Гў LSPD ГЁГ«ГЁ LSCSD. 
+:?:/hs,::Г‚Г Г¬ Г­Г Г¤Г® Г«Г®ГўГЁГІГј Г°Г»ГЎГі Гў Г§Г®Г­ГҐ, ГЄГ®ГІГ®Г°Г Гї Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГҐГІ ГўГ ГёГҐГ¬Гі ГіГ°Г®ГўГ­Гѕ. 1 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г»: 1, 2, 3, 4. ГђГ»ГЎГ : Г”Г®Г°ГҐГ«Гј. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 196. 2 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г»: 5,6. ГђГ»ГЎГ : ГЉГ Г¬ГЎГ Г«Г . ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 588. 3 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  7,8. ГђГ»ГЎГ : Г’ГіГ­ГҐГ¶.  ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 1 225. 4 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  9,10. ГђГ»ГЎГ : ГЉГ°Г Г±Г­Г»Г© Г±Г®Г«Г¤Г ГІ. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 2 205. 5 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  11. ГђГ»ГЎГ : ГЉГ Г°Г Г±Гј. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 3 920. 6 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  12. ГђГ»ГЎГ : ГЋГ°Г Г­Г¦ГҐГўГ»Г© ГЄГ Г°ГЇ. ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 6 125. 7 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  13. ГђГ»ГЎГ : ГЂГЄГўГ Г¬Г Г°ГЁГ­.  ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЇГ»ГІГ  Г¤Г«Гї ГЇГ®ГўГ»ГёГҐГ­ГЁГї: 8 820. 8 ГіГ°Г®ГўГҐГ­Гј - Г‡Г®Г­Г  14. ГђГ»ГЎГ : Г‡Г®Г«Г®ГІГ Гї Г°Г»ГЎГЄГ .
+:?:/rfybcnhf::Г—ГІГ®ГЎГ» ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј ГЄГ Г­ГЁГ±ГІГ°Гі, ГўГ®Г§ГјГ¬ГЁГІГҐ ГҐВё Гў Г°ГіГЄГЁ, Г­Г Г¦Г¬ГЁГІГҐ G Г­Г  Г ГўГІГ® ГЁ Г§Г ГЇГ°Г ГўГЁГІГј. 
+:?:/tvc::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЇГ®Г¤Г­ГЁГ¬Г ГҐГІ ГЁ Г­ГҐ Г«ГҐГ·ГЁГІ ГЁГЈГ°Г®ГЄГ®Гў, ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј ГіГ±Г«ГіГЈГ Г¬ГЁ Г…ГЊГ‘.
+:?:/gjlybv::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г­ГҐ ГўГЁГ¤Гї ГўГ±ГҐГ© Г±ГЁГІГіГ Г¶ГЁГЁ Г¬Г» Г­ГҐ Гў ГЇГ°Г ГўГҐ Г«ГҐГ·ГЁГІГј,ГЇГ®Г¤Г­ГЁГ¬Г ГІГј ГЁГ«ГЁ Г¤Г®ГЎГЁГўГ ГІГј ГЁГЈГ°Г®ГЄГ®Гў. Г„Г®Г¦Г¤ГЁГІГҐГ±Гј Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў EMS Г«ГЁГЎГ® Г¦ГҐ Г®ГЄГ®Г­Г·Г Г­ГЁГї ГІГ Г©Г¬ГҐГ°Г  Г±Г¬ГҐГ°ГІГЁ. ГЏГ°ГЁГ­Г®Г±ГЁГ¬ Г±ГўГ®ГЁ ГЁГ§ГўГЁГ­ГҐГ­ГЁГї Г§Г  ГўГ®Г§Г¬Г®Г¦Г­Г»ГҐ Г­ГҐГіГ¤Г®ГЎГ±ГІГўГ . 
+:?:/fyfr::ГЋГЎГ°Г ГІГЁГІГҐГ±Гј, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , Гў Г¤ГЁГ±ГЄГ®Г°Г¤ ГЄ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі, ГЄГ®ГІГ®Г°Г»Г© ГўГ»Г¤Г Г« ГўГ Г¬ Г­Г ГЄГ Г§Г Г­ГЁГҐ ГЁГ«ГЁ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ« Г¦Г Г«Г®ГЎГі.
+:?:/flp::Г„Г Г­Г­Г»Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г±ГҐГ©Г·Г Г± Г§Г Г­ГїГІ Г¤Г°ГіГЈГЁГ¬ Г¤ГҐГ«Г®Г¬ ГЁГ«ГЁ Г®ГІГ®ГёГҐГ« Г®ГІ ГЄГ®Г¬ГЇГјГѕГІГҐГ°Г  Г­Г  ГЄГ®Г°Г®ГІГЄГ®ГҐ ГўГ°ГҐГ¬Гї, Г­Г ГЇГЁГёГЁГІГҐ ГҐГ¬Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ.
+:?:/flc::Г„Г Г­Г­Г»Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г±ГҐГ©Г·Г Г± Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ, Г­Г ГЇГЁГёГЁГІГҐ ГҐГ¬Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Гў Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ.
+:?:/gjujlf::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ, Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЄГ®Г­ГІГ°Г®Г«ГЁГ°ГіГҐГІ Г¤Г Г­Г­Г»Г© ГЇГ°Г®Г¶ГҐГ±Г±. ГЏГ®ГЈГ®Г¤Г  Г¬ГҐГ­ГїГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ.
+:?:/ytg::ГЌГҐ ГЇГ®Г­ГїГ« Г±ГіГІГј ГўГ ГёГҐГЈГ® Г®ГЎГ°Г Г№ГҐГ­ГЁГї, Г®ГЇГЁГёГЁГІГҐ Г‚Г ГёГі ГЇГ°Г®ГЎГ«ГҐГ¬Гі/ГўГ®ГЇГ°Г®Г± ГЇГ®Г¤Г°Г®ГЎГ­ГҐГҐ Г¤Г«Гї Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г® ГІГ®Г·Г­Г®ГЈГ® Г®ГІГўГҐГІГ , ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ .
+:?:/ljyfn::ГЋГЎГ°Г ГІГЁГІГҐГ±Гј ГЇГ® ГЇГ®Г·ГІГҐ - help@majestic-rp.ru.
+:?:/[g::ГЏГҐГ°ГҐГ§Г Г©Г¤ГЁГІГҐ Гў ГЁГЈГ°Гі, Г«ГЁГЎГ® ГЄГіГЇГЁГІГҐ ГІГ ГЎГ«ГҐГІГЄГі Гі Г±Г®ГІГ°ГіГ¤Г­ГЁГЄГ®Гў EMS.
+:?:/htvjyn::Г„Г«Гї Г­Г Г·Г Г«Г , Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЄГіГЇГЁГІГј Г§Г ГЇГ·Г Г±ГІГј Г¤Г«Гї Г¬Г ГёГЁГ­Г» Г­Г  Г«ГѕГЎГ® ГЂГ‡Г‘, ГЇГ®Г±Г«ГҐ Г·ГҐГЈГ® Г®ГІГЄГ°Г»ГІГј ГЄГ ГЇГ®ГІ , Г­Г Г¦Г ГІГј G > ГЏГ®Г·ГЁГ­ГЁГІГј Г§Г Г¬Г®ГЄ/Г ГЄГЄГіГ¬ГіГ«ГїГІГ®Г°/Г§Г Г«ГЁГІГј Г¬Г Г±Г«Г®. 
+:?:/athv::ГЌГ  ГґГҐГ°Г¬ГҐ Г¤Г«Гї ГЇГ®Г±Г Г¤ГЄГЁ ГЄГ Г¦Г¤Г®ГЈГ® ГЁГ§ Г°Г Г±ГІГҐГ­ГЁГ© Г­ГіГ¦Г­Г» Г±Г«ГҐГ¤ГіГѕГ№ГЁГҐ Г­Г ГўГ»ГЄГЁ: ГЏГёГҐГ­ГЁГ¶Г  - 225 Г®ГЇГ»ГІГ . ГЉГ Г°ГІГ®ГґГҐГ«Гј - 950 Г®ГЇГ»ГІГ . ГЉГ ГЇГіГ±ГІГ  - 2000 Г®ГЇГ»ГІГ . ГЉГіГЄГіГ°ГіГ§Г  - 3000 Г®ГЇГ»ГІГ . Г’Г»ГЄГўГ  - 6200 Г®ГЇГ»ГІГ . ГЃГ Г­Г Г­Г» - 10500 Г®ГЇГ»ГІГ .
+:?:/ujc::Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г±Г¤Г ГІГј Г ГўГІГ® Г­Г  Г±ГўГ Г«ГЄГі. ГЏГ®Г±Г«ГҐ Г±Г¤Г Г·ГЁ ГўГ» ГЇГ®Г«ГіГ·ГЁГІГҐ 75% Г®ГІ ГЈГ®Г±. Г±ГІГ®ГЁГ¬Г®Г±ГІГЁ Г ГўГІГ®. Г‘ГўГ Г«ГЄГ  Г®ГІГ¬ГҐГ·ГҐГ­Г  Г­Г  ГЄГ Г°ГІГҐ ГЄГ ГЄ ГЇГҐГ°ГҐГ·ГҐГ°ГЄГ­ГіГІГ»Г©, ГЄГ°Г Г±Г­Г»Г© ГЄГ°ГіГЈ.
+:?:/fybv::ГЋГ±ГІГ Г­Г®ГўГЁГІГҐ Г Г­ГЁГ¬Г Г¶ГЁГѕ. ГЌГ Г¦Г¬ГЁГІГҐ X > ГЋГ±ГІГ Г­Г®ГўГЁГІГј Г Г­ГЁГ¬Г Г¶ГЁГѕ ГЁГ«ГЁ Backspace.
+:?:/bl::Г“ГЄГ Г¦ГЁГІГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , ID Г­Г Г°ГіГёГЁГІГҐГ«Гї.
+:?:/cnj::Г‘ГІГҐГЇГҐГ­Гј ГЁГ§Г­Г®Г±Г  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г»Гµ Г¤ГҐГІГ Г«ГҐГ© Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї Г¬Г®Г¦Г­Г® ГіГ§Г­Г ГІГј Г­Г  Г ГўГІГ®Г¬Г Г±ГІГҐГ°Г±ГЄГ®Г© (ГЁГЄГ®Г­ГЄГ  ГЈГ ГҐГ·Г­Г®ГЈГ® ГЄГ«ГѕГ·Г  Г± Г®ГІГўГҐГ°ГІГЄГ®Г© Г­Г  ГЄГ Г°ГІГҐ).
+:?:/ljy::Г‡Г Г¤Г®Г­Г ГІГЁГІГј Г¬Г®Г¦Г­Г® Г­Г  Г­Г ГёГҐГ¬ Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г±Г Г©ГІГҐ - majestic-rp.ru/donate
+:?:/byrfc::Г—ГІГ®ГЎГ» Г±Г®ГўГ¬ГҐГ±ГІГ­Г® Г°Г ГЎГ®ГІГ ГІГј Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЎГ»ГІГј ГіГ±ГІГ°Г®ГҐГ­Г»Г¬ Г­Г  Г°Г ГЎГ®ГІГі (ГўГ±ГҐГ¬), Г§Г ГЈГ°ГіГ§ГЁГІГјГ±Гї, Г  Г§Г ГІГҐГ¬ Г·ГҐГ°ГҐГ§ G ГЇГ°ГЁГЈГ«Г Г±ГЁГІГј Г­Г  Г°Г ГЎГ®ГІГі.
+:?:/uhb,s::Г—ГІГ®ГЎГ» Г±Г®ГЎГЁГ°Г ГІГј ГЈГ°ГЁГЎГ» ГўГ Г¬ Г­Г Г¤Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  ГІГ®Г·ГЄГі "ГѓГ°ГЁГЎГ»" 1/6 ГЁ ГўГ§ГїГІГј Гў Г°ГіГЄГЁ Г­Г®Г¦.
+:?:/uhb,::ГЏГ°Г®Г¤Г ГІГј ГЈГ°ГЁГЎГ» Г¬Г®Г¦Г­Г® Г­Г  Г°Г»Г­ГЄГҐ.
+:?:/hsy::ГђГ»Г­Г®ГЄ Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў Г‹Г®Г±-Г‘Г Г­ГІГ®Г±ГҐ Г­Г  ГЇГ«ГїГ¦ГҐ Г°ГїГ¤Г®Г¬ Г± ГЄГ Г·Г Г«ГЄГ®Г©, Гў ГЏГ Г«ГҐГІГ®-ГЃГЅГ© ГЁ Г­Г  ГґГҐГ°Г¬ГҐ, ГЁГЄГ®Г­ГЄГ  ГЇГ Г«Г ГІГЄГЁ. Г’Г Г¬ ГўГ» Г¬Г®Г¦ГҐГІГҐ Г±Г¤Г ГўГ ГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г± ГґГҐГ°Г¬Г», Г¤Г°Г®ГўГ®Г±ГҐГЄГ , ГЈГ°ГЁГЎГ­ГЁГЄГ  ГЁ Г°Г»ГЎГ Г«ГЄГЁ.
+:?:/yjdjcnm::ГЏГ°ГЁГ¤ГЁГІГҐ Г«ГЁГ·Г­Г® Гў Weazel News. 
+:?:/g::ГЏГ°ГЁГїГІГ­Г®Г© ГЁГЈГ°Г» ГЁ ГµГ®Г°Г®ГёГҐГЈГ® Г­Г Г±ГІГ°Г®ГҐГ­ГЁГї.
+:?:/yjd::Г‘Г«ГҐГ¤ГЁГІГҐ Г§Г  Г­Г®ГўГ®Г±ГІГїГ¬ГЁ Г±ГҐГ°ГўГҐГ°Г  Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ . 
+:?:/ybr::Г‘Г¬ГҐГ­ГЁГІГј Г­ГЁГЄ ГЁГ«ГЁ ГўГ­ГҐГёГ­Г®Г±ГІГј Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г Г¦Г Гў - F2 > ГЊГ ГЈГ Г§ГЁГ­ > ГЏГҐГ°Г±Г®Г­Г Г¦Г .
+:?:/,fyr::Г“ Г­Г Г± Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ ГҐГ±ГІГј 3 ГўГЁГ¤Г  ГЎГ Г­ГЄГ®ГўГ±ГЄГЁГµ ГЄГ Г°ГІ: Standart, Premium, VIP. Standart ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 500$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 500.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 5%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 4%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ Г®ГІГ±ГіГІГ±ГІГўГіГҐГІ. Premium ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 25.000$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 2.500.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 4%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 15.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 3%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 15.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ 1%, Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  Г­Г  Г®Г¤Г­Гі Г®ГЇГҐГ°Г Г¶ГЁГѕ Г¤Г® 2.500$, Г¬ГҐГ±ГҐГ·Г­Г»Г© Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  50.000$. VIP ГЄГ Г°ГІГ  Г±ГІГ®ГЁГІ Гў Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГЁ 75.000$ Гў Г¬ГҐГ±ГїГ¶, Г±Г­ГїГІГЁГї ГЁ ГЇГҐГ°ГҐГўГ®Г¤Г» ГЎГҐГ§ ГЄГ®Г¬ГЁГ±Г±ГЁГЁ Г¤Г® 20.000.000$ ГЇГ®Г±Г«ГҐ ГЇГ°ГҐГўГ»ГёГҐГ­ГЁГї Г¬ГҐГ±ГҐГ·Г­Г®ГЈГ® Г«ГЁГ¬ГЁГІГ  ГЄГ®Г¬ГЁГ±Г±ГЁГї Г­Г  ГўГ»ГўГ®Г¤ 3%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), Г­Г  ГЇГҐГ°ГҐГўГ®Г¤ 2.5%(ГЊГ ГЄГ±ГЁГ¬ГіГ¬ 20.000$), ГЄГЅГёГЎГҐГЄ Гў Г¬Г ГЈГ Г§ГЁГ­Г Гµ 3%, Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  Г­Г  Г®Г¤Г­Гі Г®ГЇГҐГ°Г Г¶ГЁГѕ Г¤Г® 10.000$, Г¬ГҐГ±ГҐГ·Г­Г»Г© Г«ГЁГ¬ГЁГІ ГЄГЅГёГЎГҐГЄГ  150.000$. Г„ГҐГ­ГјГЈГЁ Г§Г  Г®ГЎГ±Г«ГіГ¦ГЁГўГ Г­ГЁГҐ ГЁ Г«ГЁГ¬ГЁГІГ» Г±Г­ГЁГ¬Г ГѕГІГ±Гї ГЄГ Г¦Г¤Г®ГҐ 1 Г·ГЁГ±Г«Г® Г­Г®ГўГ®ГЈГ® Г¬ГҐГ±ГїГ¶Г .
+:?:/le,kbr::Г—ГІГ®ГЎГ» Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ ГЄГ«ГѕГ·ГҐГ© Г®ГІ Г ГўГІГ® Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј Г§Г ГЈГ®ГІГ®ГўГЄГі Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г§Г ГІГҐГ¬ Г­Г Г¦Г ГІГј G Г­Г  Г ГўГІГ® ГЁ Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ.
+:?:/rkfl::Г—ГІГ®ГЎГ» Г±Г¤ГҐГ«Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ Г®ГІ ГЄГ«Г Г¤Г®ГўГЄГЁ, Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј Г§Г ГЈГ®ГІГ®ГўГЄГі Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г§Г ГІГҐГ¬ Г·ГҐГ°ГҐГ§ G ГЇГҐГ°ГҐГ¤Г ГІГј Г¤ГіГЎГ«ГЁГЄГ ГІ Г­ГіГ¦Г­Г®Г¬Гі Г·ГҐГ«Г®ГўГҐГЄГі.
+:?:/ntk::ГЏГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГЄГіГЇГЁГІГј ГІГҐГ«ГҐГґГ®Г­ ГҐГ№ГҐ Г°Г Г§ Гў Г¬Г ГЈГ Г§ГЁГ­ГҐ 24/7, Г¤ГҐГ­ГјГЈГЁ Г± ГўГ Г± Г­ГҐ Г±ГЇГЁГёГіГІГ±Гї.
+:?:/gjlctk::Г—ГІГ®ГЎГ» ГЇГ®Г¤Г±ГҐГ«ГЁГІГј ГЁГЈГ°Г®ГЄГ  ГЄ Г±ГҐГЎГҐ Гў Г¤Г®Г¬ ГЁГ«ГЁ Г¦ГҐ ГЄГўГ Г°ГІГЁГ°Гі, Г±ГІГ®Гї Г®ГЄГ®Г«Г® Г¤Г®Г¬Г , Г­Г ГўГҐГ¤ГЁГІГҐГ±Гј Г­Г  ГЁГЈГ°Г®ГЄГ  ГЁ Г­Г Г¦Г¬ГЁГІГҐ G, Г¤Г Г«ГҐГҐ Г­Г Г¦Г¬ГЁГІГҐ ГЏГ®Г¤Г±ГҐГ«ГЁГІГј.
+:?:/rhfi2::Г…Г±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  ГЄГ°Г ГёГ  - ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГјГІГҐ ГҐГЈГ® Г«ГѕГЎГ®Г¬Гі Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г°Гі Гў Г«ГЁГ·Г­Г»ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї Г¤ГЁГ±ГЄГ®Г°Г¤Г . Г‚Г Г± ГўГ»ГЇГіГ±ГІГїГІ.
+:?:/pfvjr::Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "Г„ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> ГЏГ®Г·ГЁГ­ГЁГІГј Г¤ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ.
+:?:/frev::Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "ГЂГЄГЄГіГ¬ГіГ«ГїГІГ®Г°" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> Г‡Г Г¬ГҐГ­ГЁГІГј Г ГЄГЄГіГ¬ГіГ«ГїГІГ®Г°.
+:?:/vfckj::Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЄГіГЇГЁГІГј "ГЊГ®ГІГ®Г°Г­Г®ГҐ Г¬Г Г±Г«Г®" ГЁ "ГЌГ ГЎГ®Г° ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў" Г­Г  ГЎГ«ГЁГ¦Г Г©ГёГҐГ© Г§Г ГЇГ°Г ГўГЄГҐ, Г§Г ГІГҐГ¬ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г±ГўГ®ГҐГ¬Гі ГІГ°Г Г­Г±ГЇГ®Г°ГІГі G -> ГЉГ ГЇГ®ГІ, ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® G -> Г‡Г Г¬ГҐГ­ГЁГІГј Г¬Г Г±Г«Г®.
+:?:/vjltk::ГЏГіГ­ГЄГІ "ГЏГ°Г®ГЈГ°ГіГ§ГЄГ  Г¬Г®Г¤ГҐГ«ГҐГ©" Г®ГІГўГҐГ·Г ГҐГІ Г§Г  ГЎГ»Г±ГІГ°Г®ГІГі ГЇГ°Г®ГЈГ°ГіГ§ГЄГЁ ГІГҐГЄГ±ГІГіГ° ГЇГ°ГЁ ГЇГ°ГЁГЎГ«ГЁГ¦ГҐГ­ГЁГЁ ГЄ Г­ГЁГ¬.
+:?:/,bpjuhf,::Г—ГІГ®ГЎГ» Г®ГЈГ°Г ГЎГЁГІГј ГЎГЁГ§Г­ГҐГ±, ГўГ Г¬ Г­ГіГ¦Г­Г®: Г®Г¤ГҐГІГј Г¬Г Г±ГЄГі, ГЇГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ Г®Г°ГіГ¦ГЁГҐ ГЁ, ГЇГ°ГЁГ¤Гї Гў Г¬Г ГЈГ Г§ГЁГ­ Гў Г±Г®Г±ГІГ ГўГҐ Г®ГІ 2 Г¤Г® 35 Г·ГҐГ«Г®ГўГҐГЄ, Г­Г ГўГҐГ±ГІГЁГ±Гј Г­Г  NPC (ГЇГ°Г®Г¤Г ГўГ¶Г ) Г®ГЈГ­ГҐГ±ГІГ°ГҐГ«Г®Г¬ (ГІГ®Г«ГјГЄГ® Г®Г¤ГЁГ­ Г·ГҐГ«Г®ГўГҐГЄ Г¤Г®Г«Г¦ГҐГ­ ГЈГ°Г ГЎГЁГІГј). 
+:?:/cgfdy::Г‘ГЇГ ГўГ­ Г­Г®ГўГЁГ·ГЄГ®Гў Г­Г ГµГ®Г¤ГЁГІГ±Гї Гў ГЏГ Г«ГҐГІГ®-ГЃГҐГ©, Г—ГіГ¬Г ГёГ Гµ, ГЂГЅГ°Г®ГЇГ®Г°ГІГі ГЁ Г­Г  ГЂГўГІГ®ГўГ®ГЄГ§Г Г«ГҐ. 
+:?:/rhtlbn::Г‹ГѕГЎГ»ГҐ ГґГЁГ­Г Г­Г±Г®ГўГ»ГҐ Г¤Г®ГЈГ®ГўГ®Г°Г» (Г§Г Г©Г¬Г», ГЄГ°ГҐГ¤ГЁГІГ» ГЁ ГІ.Г¤) Г­ГҐ Г®ГІГ­Г®Г±ГїГІГ±Гї ГЄ ГЋГЋГ‘ Г±Г¤ГҐГ«ГЄГ Г¬. Г‚Г±ГҐ ГЇГ®Г¤Г®ГЎГ­Г»ГҐ Г±Г¤ГҐГ«ГЄГЁ ГЁГЈГ°Г®ГЄГЁ Г±Г®ГўГҐГ°ГёГ ГѕГІ Г­Г  Г±ГўГ®Г© Г±ГІГ°Г Гµ ГЁ Г°ГЁГ±ГЄ. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г­ГҐГ±ГҐГІ Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®Г±ГІГЁ ГЁ Г­ГҐ ГїГўГ«ГїГҐГІГ±Гї ГЈГ Г°Г Г­ГІГ®Г¬ Г±Г¤ГҐГ«ГЄГЁ.
+:?:/htv::Г—ГІГ®ГЎГ» ГЇГ®Г·ГЁГ­ГЁГІГј Г±ГўГ®Вё Г ГўГІГ® ГЄГіГЇГЁГІГҐ Г°ГҐГ¬.ГЄГ®Г¬ГЇГ«ГҐГЄГІ Г­Г  Г«ГѕГЎГ®Г© ГЂГ‡Г‘. Г—ГҐГ°ГҐГ§ Г¬ГҐГ­Гѕ G ГЇГ®Г·ГЁГ­ГЁГІГҐ Г‚Г Гё Г ГўГІГ®Г¬Г®ГЎГЁГ«Гј.
+:?:/cltkrf::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г±Г«ГҐГ¤ГЁГІ Г§Г  Г±Г¤ГҐГ«ГЄГ Г¬ГЁ ГЁГЈГ°Г®ГЄГ®Гў, Г§Г ГЇГЁГёГЁГІГҐ ГўГЁГ¤ГҐГ® Г­Г  Г±Г«ГіГ·Г Г© Г®ГЎГ¬Г Г­Г , Г·ГІГ®ГЎГ» Г®Г±ГІГ ГўГЁГІГј Г¦Г Г«Г®ГЎГі Г­Г  ГЁГЈГ°Г®ГЄГ  Г­Г  ГґГ®Г°ГіГ¬ГҐ. 
+:?:/bvz::Г‚Г ГёГҐ Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї Г­ГҐ ГЇГ®Г¤ГµГ®Г¤ГЁГІ ГЇГ® ГЇГ°Г ГўГЁГ«Г Г¬ Г­Г ГёГҐГЈГ® Г±ГҐГ°ГўГҐГ°Г . Г‚Г Г¬ Г­ГіГ¦Г­Г® Г±Г¬ГҐГ­ГЁГІГј Г­ГЁГЄ ГЁ Г­Г ГЇГЁГ±Г ГІГј Гў Г°ГҐГЇГ®Г°ГІ ГЇГ®ГўГІГ®Г°Г­Г®, ГҐГ±Г«ГЁ Г‚Г Гё Г­ГЁГЄ ГЎГіГ¤ГҐГІ Г±Г®ГЎГ«ГѕГ¤Г ГІГј ГЇГ°Г ГўГЁГ«Г  Г±ГҐГ°ГўГҐГ°Г , ГІГ® Г‚Г Г± ГўГ»ГЇГіГ±ГІГїГІ.
+:?:/dsyjc::Г‚Г»Г­Г®Г±Г«ГЁГўГ®Г±ГІГј - Г­Г ГўГ»ГЄ ГўГ»Г­Г®Г±Г«ГЁГўГ®Г±ГІГЁ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГЇГ®Г¤ГўГЁГ¦Г­Г®ГЈГ® Г®ГЎГ°Г Г§Г  Г¦ГЁГ§Г­ГЁ. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» ГЎГҐГЈГ ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЏГ°ГЁ Г­ГЁГ§ГЄГ®Г¬ Г­Г ГўГ»ГЄГҐ, ГЇГҐГ°Г±Г®Г­Г Г¦ Г­ГҐ Г¬Г®Г¦ГҐГІ ГЇГ°Г»ГЈГ­ГіГІГј 2 Г°Г Г§Г  ГЁ ГЇГ Г¤Г ГҐГІ. Г‘Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЇГ®ГўГ»ГёГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  ГўГ«ГЁГїГҐГІ Г­Г  Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј ГЎГҐГ±ГЇГ°ГҐГ°Г»ГўГ­Г®ГЈГ® ГЎГҐГЈГ  ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г»Г¦ГЄГ®Гў, Г¬Г ГЄГ±ГЁГ¬ГіГ¬ Г­Г  ГЇГ®Г±Г«ГҐГ¤Г­ГҐГ¬ ГіГ°Г®ГўГ­ГҐ - 2.
+:?:/cbkf::Г‘ГЁГ«Г  - Г­Г ГўГ»ГЄ Г±ГЁГ«Г» ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГґГЁГ§ГЁГ·ГҐГ±ГЄГЁГµ Г­Г ГЈГ°ГіГ§Г®ГЄ. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» Г§Г Г­ГЁГ¬Г ГҐГёГјГ±Гї Гў ГЄГ Г·Г Г«ГЄГҐ (ГЁГЄГ®Г­ГЄГ  ГЎГҐГЈГіГ№ГҐГЈГ® Г·ГҐГ«Г®ГўГҐГЄГ  Г­Г  ГЄГ Г°ГІГҐ), ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±Г®ГЇГ°Г®ГІГЁГўГ«ГҐГ­ГЁГҐ ГЄ ГіГ°Г®Г­Гі Г®ГІ ГЇГ Г¤ГҐГ­ГЁГї.
+:?:/ls[::Г„Г»ГµГ Г­ГЁГҐ - Г­Г ГўГ»ГЄ Г¤Г»ГµГ Г­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ Г¤Г«ГЁГІГҐГ«ГјГ­Г®ГЈГ® Г­Г ГµГ®Г¦Г¤ГҐГ­ГЁГї ГЇГ®Г¤ ГўГ®Г¤Г®Г©. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» ГЇГ«Г ГўГ ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. Г‘Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЇГ®ГўГ»ГёГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  ГўГ«ГЁГїГҐГІ Г­Г  Г¤Г«ГЁГІГҐГ«ГјГ­Г®Г±ГІГј ГЎГҐГ±ГЇГ°ГҐГ°Г»ГўГ­Г®ГЈГ® ГЇГ«Г ГўГ Г­ГЁГї ГЇГ®Г¤ ГўГ®Г¤Г®Г©.
+:?:/gjktn::ГЏГ®Г«ГҐГІ - Г­Г ГўГ»ГЄ ГЇГЁГ«Г®ГІГЁГ°Г®ГўГ Г­ГЁГї ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г§Г  ГўГ®Г§Г¤ГіГёГ­Г»Г¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ®Г¬. Г—ГҐГ¬ ГЎГ®Г«ГјГёГҐ ГІГ» Г«ГҐГІГ ГҐГёГј Г­Г  Г±Г Г¬Г®Г«ГҐГІГҐ ГЁГ«ГЁ ГўГҐГ°ГІГ®Г«ГҐГІГҐ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. Г’Г ГЄГ¦ГҐ Г­Г ГўГ»ГЄ Г¬Г®Г¦Г­Г® ГЇГ®ГўГ»Г±ГЁГў ГЇГ°Г®Г©Г¤Гї ГЄГіГ°Г±Г» Гў Г«ГҐГІГ­Г®Г© ГёГЄГ®Г«ГҐ. ГЏГ°Г®Г©ГІГЁ ГЁГµ Г¬Г®Г¦Г­Г® 1 Г°Г Г§ Гў 24 Г·Г Г±Г , ГіГўГҐГ«Г·ГҐГ­ГЁГҐ Г­Г ГўГ»ГЄГ  Г®ГІ 1 Г§Г Г­ГїГІГЁГї - 10, Г±ГІГ®ГЁГ¬Г®Г±ГІГј Г®Г¤Г­Г®ГЈГ® Г§Г Г­ГїГІГЁГї - 2 000$. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ Г­Г ГўГ»ГЄГ  ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±ГІГ ГЎГЁГ«ГјГ­Г®Г±ГІГј ГЇГ®Г«ГҐГІГ  ГЁ ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®Г±ГІГј ГўГ®Г§Г¤ГіГёГ­Г»Г¬ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ®Г¬.
+:?:/crhsny::Г‘ГЄГ°Г»ГІГ­Г®Г±ГІГј - Г­Г ГўГ»ГЄ Г±ГЄГ°Г»ГІГ­Г®Г±ГІГЁ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ  ГіГ±ГЇГҐГёГ­Г»Гµ ГіГµГ®Г¤Г®Гў Г®ГІ ГЇГ®ГЈГ®Г­ГЁ (ГЇГ®Г­ГЁГ¦ГҐГ­ГЁГ© ГіГ°Г®ГўГ­Гї Г°Г®Г§Г»Г±ГЄГ ). Г—ГҐГ¬ Г·Г Г№ГҐ ГІГ» Г±ГЄГ°Г»ГўГ ГҐГёГјГ±Гї Г®ГІ ГЇГ®Г«ГЁГ¶ГЁГЁ, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГЌГЁ Г­Г  Г·ГІГ® Г­ГҐ ГўГ«ГЁГїГҐГІ.
+:?:/cnhtkm,f::Г‘ГІГ°ГҐГ«ГјГЎГ  - Г­Г ГўГ»ГЄ Г±ГІГ°ГҐГ«ГјГЎГ» ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г®ГІ ГўГ°ГҐГ¬ГҐГ­ГЁ, ГЇГ°Г®ГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Гў ГЇГҐГ°ГҐГ±ГІГ°ГҐГ«ГЄГ Гµ, Г«ГЁГЎГ® ГІГ°ГҐГ­ГЁГ°Г®ГўГЄГ Гµ. Г—ГҐГ¬ Г«ГіГ·ГёГҐ ГІГ» Г±ГІГ°ГҐГ«ГїГҐГёГј ГЁ ГЇГ®ГЇГ Г¤Г ГҐГёГј, ГІГҐГ¬ ГЎГ»Г±ГІГ°ГҐГҐ ГЇГ®ГўГ»ГёГ ГҐГІГ±Гї Г­Г ГўГ»ГЄ. ГђГҐГЄГ®Г¬ГҐГ­Г¤ГіГҐГ¬ ГІГ°ГҐГ­ГЁГ°Г®ГўГ ГІГјГ±Гї Гў Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г®ГІГўГҐГ¤ГҐГ­Г­Г»Гµ Г¤Г«Гї ГІГ®ГЈГ® Г¬ГҐГ±ГІГ Гµ, ГІГЁГ°ГҐ Гў Г®Г°ГіГ¦ГҐГ©Г­Г®Г¬ Г¬Г ГЈГ Г§ГЁГ­ГҐ. ГЋГІ ГЇГ°Г®ГЄГ Г·ГЄГЁ Г­Г ГўГ»ГЄГ  ГіГўГҐГ«ГЁГ·ГЁГўГ ГҐГІГ±Гї Г±ГЄГ®Г°Г®Г±ГІГј ГЇГҐГ°ГҐГ§Г Г°ГїГ¤ГЄГЁ ГЁ ГЇГҐГ°ГҐГЄГ ГІГ®Гў, ГЄГіГ·Г­Г®Г±ГІГј Г±ГІГ°ГҐГ«ГјГЎГ».
+:?:/ktxe::Г“Г¦ГҐ Г«ГҐГ·Гі ГЄ Г‚Г Г¬ Г­Г  ГЇГ®Г¬Г®Г№Гј.
+:?:/gjv::Г‘ГҐГ©Г·Г Г± ГЇГ®Г¬Г®ГЈГі Г‚Г Г¬, Г®Г¦ГЁГ¤Г Г©ГІГҐ.
+:?:/,fupp::Г—ГІГ®ГЎГ» ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј ГЇГ°ГҐГ¦Г­ГѕГѕ Г±ГЄГ®Г°Г®Г±ГІГј, Г§Г ГҐГ¤ГјГІГҐ Гў Г§ГҐГ«ГҐГ­ГіГѕ Г§Г®Г­Гі ГЁ ГўГ»ГҐГ¤ГјГІГҐ Г± Г­ГҐГҐ.
+:?:/ujcljv::Г—ГІГ®ГЎГ» ГЇГ°Г®Г¤Г ГІГј Г¤Г®Г¬ Гў ГЈГ®Г±. Г±ГІГ®ГЁГ¬Г®Г±ГІГј, Г­ГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ Г¤ГўГҐГ°ГЁ ГЁ Г­Г Г¦Г ГІГј Г…. Г‚Г» ГЇГ®Г«ГіГ·ГЁГІГҐ 75% Г®ГІ ГҐГЈГ® ГЈГ®Г±. Г¶ГҐГ­Г». Г…Г±Г«ГЁ Г‚Г» Г­ГҐГўГ®ГўГ°ГҐГ¬Гї Г®ГЇГ«Г ГІГЁГІГҐ Г­Г Г«Г®ГЈГЁ ГЁГ«ГЁ Г§Г ГЎГіГ¤ГҐГІГҐ ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј, Г¤Г®Г¬ Г±Г«ГҐГІГЁГІ Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ.
+:?:/vfqrb::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГіГЇГЁГІГј Г¬Г Г©ГЄГі ГЇГ®Г¤ ГўГҐГ°ГµГ­ГѕГѕ Г®Г¤ГҐГ¦Г¤Гі, ГўГ Г¬ Г­ГіГ¦Г­Г® Г±Г­Г Г·Г Г«Г  ГЄГіГЇГЁГІГј ГЅГ«ГҐГ¬ГҐГ­ГІ ГўГҐГ°ГµГ­ГҐГ© Г®Г¤ГҐГ¦Г¤Г» (Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГЇГЁГ¤Г¦Г ГЄ). ГЏГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® ГўГ Г¬ ГЎГіГ¤Гі Г¤Г®Г±ГІГіГЇГ­Г» ГўГ±ГҐ Г¬Г Г©ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ ГЇГ®Г¤ГµГ®Г¤ГїГІ ГЇГ®Г¤ Г­ГҐГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ "ГЊГ Г©ГЄГЁ".
+:?:/hs,kbw::ГЏГ®Г«ГіГ·ГЁГІГј Г«ГЁГ¶ГҐГ­Г§ГЁГѕ Г­Г  Г°Г»ГЎГ Г«ГЄГі ГўГ» Г¬Г®Г¦ГҐГІГҐ Гў ГЊГЅГ°ГЁГЁ. 
+:?:/gjujlf::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГЄГ®Г­ГІГ°Г®Г«ГЁГ°ГіГҐГІ Г¤Г Г­Г­Г»Г© ГЇГ°Г®Г¶ГҐГ±Г±. ГЏГ®ГЈГ®Г¤Г  Г¬ГҐГ­ГїГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ. 
+:?:/htg::ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГіГІГ®Г·Г­ГЁГІГҐ Г±ГўГ®Г© ГўГ®ГЇГ°Г®Г± ГЇГ®Г¤Г°Г®ГЎГ­ГҐГҐ. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г«ГҐГІГ ГҐГІ Г­Г  Г°ГҐГЇГ®Г°ГІГ» ГЇГ® ГІГЁГЇГі "Г Г¤Г¬ГЁГ­ ГІГЇ", "Г Г¤Г¬ГЁГ­ Г¬Г®Г¦Г­Г® ГЇГ®ГЈГ®ГўГ®Г°ГЁГІГј", "ГЇГ®Г¬Г®ГЈГЁГІГҐ", "Г Г¤Г¬ГЁГ­ ГҐГ±ГІГј ГўГ®ГЇГ°Г®Г±". ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГЁГ¬ГўГ®Г«Г®Гў Г­ГҐГ®ГЈГ°Г Г­ГЁГ·ГҐГ­Г®, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г°Г Г±ГЇГЁГ±Г ГІГј Г‚Г ГёГі ГЇГ°Г®ГЎГ«ГҐГ¬Гі/ГўГ®ГЇГ°Г®Г±.
+:?:/ytedbl::ГЉ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ ГіГўГЁГ¤ГҐГІГј ГЅГІГ® Г­Г Г°ГіГёГҐГ­ГЁГҐ. ГЏГ®Г¦Г Г«ГіГ©Г±ГІГ , ГҐГ±Г«ГЁ Гі Г‚Г Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®ГґГЁГЄГ±Г Г¶ГЁГї Г¤Г Г­Г­Г®ГЈГ® Г­Г Г°ГіГёГҐГ­ГЁГї - Г®ГґГ®Г°Г¬ГЁГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ, Г±ГЇГ Г±ГЁГЎГ® ГЎГ®Г«ГјГёГ®ГҐ Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:/rjcnb::Г·ГІГ®ГЎГ» ГЁГЈГ°Г ГІГј Гў ГЄГ®Г±ГІГЁ ГўГ Г¬ Г­ГіГ¦Г­Г® ГЄГіГЇГЁГІГј ГЁГµ Гў Г«ГѕГЎГ®Г¬ 24/7. ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ® ГЄГ ГЄ ГўГ» ГЄГіГЇГЁГ«ГЁ ГЄГ®Г±ГІГЁ, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г¤Г®Г©ГІГЁ ГЄ ГЁГЈГ°Г®ГЄГі.
+:?:/gfhr::Г—ГІГ®ГЎГ» ГЇГ°ГЁГЇГ Г°ГЄГ®ГўГ ГІГј Г’Г‘, Г§Г  Г°ГіГ«ГҐГ¬ Г­Г Г¦Г¬ГЁГІГҐ G - ГЏГ°ГЁГЇГ Г°ГЄГ®ГўГ ГІГј.
+:?:/yjdbxjr::ГЏГіГІГҐГўГ®Г¤ГЁГІГҐГ«Гј Г­Г ГµГ®Г¤ГЁГІГ±Гї Г­Г  Г±ГЇГ ГўГ­Г Гµ Г­Г®ГўГЁГ·ГЄГ®Гў. ГЋГ­ГЁ Г®ГЎГ®Г§Г­Г Г·ГҐГ­Г» Г­Г  ГЄГ Г°ГІГҐ Г§Г­Г Г·ГЄГ®Г¬ Г¬Г ГёГіГ№ГҐГЈГ® Г·ГҐГ«Г®ГўГҐГ·ГЄГ .
+:?:/lf::Г„Г . 
+:?:/ytn::ГЌГҐГІ. 
+:?:/ytng::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІ ГЁГЈГ°Г®ГЄГ®Гў, Г‚Г Г¬ Г­ГіГ¦Г­Г® Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г¬ГҐГ±ГІГ  Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г®. ГЌГ  ГЇГ°Г®ГҐГЄГІГҐ Г¤Г®Г±ГІГ ГІГ®Г·Г­Г® Г±ГЇГ®Г±Г®ГЎГ®Гў, Г·ГІГ®ГЎГ» ГЅГІГ® Г±Г¤ГҐГ«Г ГІГј: ГІГ ГЄГ±ГЁ, Г Г°ГҐГ­Г¤Г  ГІГ°Г Г­Г±ГЇГ®Г°ГІГ , Г ГўГІГ®Г±ГҐГ°ГўГЁГ±Г».
+:?:/byd:::?:.ГЁГ­Гў::ГќГІГ® ГЎГ ГЈ ГЁГ­ГўГҐГ­ГІГ Г°Гї, ГЇГ°ГҐГ¤Г«Г®Г¦ГЁГІГҐ Г®ГЎГ¬ГҐГ­ГїГІГјГ±Гї Г«ГѕГЎГ®Г¬Гі ГЁГЈГ°Г®ГЄГі ГЁ ГўГ ГёГ  ГЇГ°Г®ГЎГ«ГҐГ¬Г  ГЎГіГ¤ГҐГІ Г°ГҐГёГҐГ­Г . Г…Г±Г«ГЁ ГЇГ® ГЎГ«ГЁГ§Г®Г±ГІГЁ Г­ГЁГЄГ®ГЈГ® Г­ГҐГІ, Г®ГЎГ°Г ГІГЁГІГҐГ±Гј ГҐГ№Вё Г°Г Г§ Гў Г°ГҐГЇГ®Г°ГІ ГЁ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г‚Г Г¬ ГЇГ®Г¬Г®Г¦ГҐГІ.
+:?:/fhsyjr::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГўГ»Г±ГІГ ГўГЁГІГј Г±ГўГ®ГҐ Г ГўГІГ® Г­Г  ГЇГ°Г®Г¤Г Г¦Гі, Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ°ГЁГҐГµГ ГІГј Г­Г  ГІГҐГ°Г°ГЁГІГ®Г°ГЁГѕ Г ГўГІГ®Г°Г»Г­ГЄГ , ГўГ»ГЎГ°Г ГІГј Г¬ГҐГ±ГІГ® ГЁ Г­Г Г¦Г ГІГј Г­Г  ГЄГ«Г ГўГЁГёГі "G" - ГЂГўГІГ®Г°Г»Г­Г®ГЄ - Г‚Г»Г±ГІГ ГўГЁГІГј Г­Г  ГЇГ°Г®Г¤Г Г¦Гі.
+:?:/njkrfnm::Г’Г°Г Г­Г±ГЇГ®Г°ГІ Г¬Г®Г¦Г­Г® ГІГ®Г«ГЄГ ГІГј, Г­Г Г¦Г Гў G-ГІГ®Г«ГЄГ ГІГј. Г…Г±Г«ГЁ ГІГ ГЄГ®Г© ГґГіГ­ГЄГ¶ГЁГЁ Г­ГҐГІ, ГЇГ°ГЁ Г­Г ГўГҐГ¤ГҐГ­ГЁГЁ Г­Г  Г ГўГІГ®, ГІГ® ГЅГІГ®ГІ ГІГ°Г Г­Г±ГЇГ®Г°ГІ ГІГ®Г«ГЄГ ГІГј Г­ГҐГ«ГјГ§Гї.
+:?:/ytck::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¬Г®Г¦ГҐГІ Г±Г«ГҐГ¤ГЁГІГј ГЇГ®Г«Г­Г®Г±ГІГјГѕ Г§Г  ГўГ±ГҐГ¬ ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Г®Г¬, Гў Г±Г«ГіГ·Г ГҐ Г­Г Г°ГіГёГҐГ­ГЁГ© Г®ГІ ГЁГЈГ°Г®ГЄГ®Гў - Г­Г ГЇГЁГёГЁГІГҐ Г°ГҐГЇГ®Г°ГІ.
+:?:/fen::Г„Г«Гї ГЇГ®Г¤ГЄГ«ГѕГ·ГҐГ­ГЁГї Google authenticator ГўГ Г¬ Г­ГіГ¦Г­Г® Гў Г¬ГҐГ­Гѕ ГўГ»ГЎГ®Г°Г  ГЇГҐГ°Г±Г®Г­Г Г¦Г  Г®ГІГЄГ°Г»ГІГј Г°Г Г§Г¤ГҐГ« Г­Г Г±ГІГ°Г®ГҐГЄ.
+:?:/x2::Г’ГҐГЇГҐГ°Гј ГЄГ®ГЁГ­Г» ГўГ»Г¤Г ГѕГІГ±Гї ГЇГ® ГўГ»ГµГ®Г¤Г­Г»Г¬, ГЇГ® ГЎГіГ¤Г­ГїГ¬ ГЇГ°Г®ГЄГ°ГіГІГЄГ  Г°ГіГ«ГҐГІГЄГЁ Г§Г  5 Г·Г Г±Г®Гў ГЁГЈГ°Г».
+:?:/juh::Г—ГІГ®ГЎГ» Г­Г Г·Г ГІГј Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГҐ ГЎГЁГ§Г­ГҐГ±Г , ГўГ Г¬ Г­ГіГ¦Г­Г® ГЇГ®Г§ГўГ®Г­ГЁГІГј ГЇГ® Г­Г®Г¬ГҐГ°Гі: 28121903. Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГЎГ»ГІГј Гў ГЄГ°Г Г©Г¬ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ, ГЁ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г°ГїГ¤Г®Г¬ Г± ГЎГ Г­ГЄГ®Г¬ (ГЄГ ГЄ Г¬ГЁГ­ГЁГ¬ГіГ¬ ГўГ Г± Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј 4 Г®ГЄГ®Г«Г® ГЎГ Г­ГЄГ , ГЁГ­Г Г·ГҐ Г­ГҐ Г±Г¬Г®Г¦ГҐГІГҐ). Г„Г«Гї Г­Г Г·Г Г«Г  Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГї ГІГ°ГҐГЎГіГҐГІГ±Гї "ГЏГ«Г Г­ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГ©", ГЄГ®ГІГ®Г°Г»Г© ГўГ»ГЎГЁГ°Г ГҐГІГ±Гї Гў AirDrops ГЁГ«ГЁ ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ ГЎГЁГ§Г­ГҐГ±Г®Гў.ГЊГ®Г¦Г­Г® ГЈГ°Г ГЎГЁГІГј 1 Г°Г Г§ Гў Г¤ГҐГ­Гј ГЄГ Г¦Г¤Г®Г© Г®ГЈГ°Г Г­ГЁГ§Г Г¶ГЁГЁ.ГЏГ®Г±Г«ГҐ ГІГ®ГЈГ®, ГЄГ ГЄ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГҐ Г­Г Г·Г Г«Г®Г±Гј ГЁ ГЎГ Г­ГЄ ГЇГ®Г«ГіГ·ГЁГ« ГЄГ°Г Г±Г­ГіГѕ ГЁГЄГ®Г­ГЄГі, Г­Г Г¤Г® ГЇГ°ГЁГ¶ГҐГ«ГЁГІГјГ±Гї Гў ГЎГ®ГІГ  ГЁ Г§Г ГЇГ®Г«Г­ГЁГІГј ГЇГ°Г®ГЈГ°ГҐГ±Г± ГЎГ Г°.Г„Г Г«ГјГёГҐ ГЎГіГ¤ГҐГІ ГЎГ®Г«ГјГёГ Гї Г¤ГўГҐГ°Гј, Г·ГІГ® ГЎГ» ГҐГҐ Г°Г Г§ГЎГ«Г®ГЄГЁГ°Г®ГўГ ГІГј, Г­ГіГ¦Г­Г® ГЇГ°Г®Г©ГІГЁ Г¬ГЁГ­ГЁ-ГЁГЈГ°Гі Г±Г® ГўГ§Г«Г®Г¬Г®Г¬. Г„Г«Гї ГЅГІГ®ГЈГ® ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬ В«ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“В» + В«ГЉГ ГЎГҐГ«Гј ГЅГ«ГҐГЄГІГ°Г®Г­Г­Г»Гµ Г¤ГўГҐГ°ГҐГ©В». ГЋГ­ ГЇГ°Г®Г¤Г ГҐГІГ±Гї Гі ГІГ®Г°ГЈГ®ГўГ¶Г  Г­Г  Г°Г»Г­ГЄГҐ. ГЏГ®Г±Г«ГҐ ГўГ§Г«Г®Г¬Г  ГЇГҐГ°ГҐГ¤ ГўГ Г¬ГЁ ГЎГіГ¤ГҐГІ Г±ГІГ®ГїГІГј Г±ГІГ®Г©ГЄГ  Г± Г¤ГҐГ­ГјГЈГ Г¬ГЁ. Г„Г Г«ГҐГҐ ГЁГ¤ГҐГІ 2-Гї Г¤ГўГҐГ°Гј. Г„Г«Гї ГҐГҐ ГўГ§Г«Г®Г¬Г  Г­Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  В«ГЉГ«ГѕГ· ГЄГ Г°ГІГ  FleecaВ» Г«ГЁГЎГ® В«Г’ГҐГ°Г¬ГЁГІГ­Г Гї ГіГ±ГІГ Г­Г®ГўГЄГ В».В«ГЉГ«ГѕГ· ГЄГ Г°ГІГ  FleecaВ» ГўГ»ГЇГ Г¤Г ГҐГІ Г± ГЎГ®ГІГ®Гў ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ ГЎГЁГ§Г­ГҐГ±Г®Гў, ГЁГ«ГЁ Г­Г  Г ГЁГ° Г¤Г°Г®ГЇГ Гµ.В«Г’ГҐГ°Г¬ГЁГІГ­Г Гї ГіГ±ГІГ Г­Г®ГўГЄГ В» ГЇГ°Г®Г¤Г ГҐГІГ±Гї Гі ГЇГЁГ°Г®ГІГҐГµГ­ГЁГЄГ . Г‘ ГҐГҐ ГЇГ®Г¬Г®Г№ГјГѕ Г¤ГўГҐГ°Гј Г®ГІГЄГ°Г»ГўГ ГҐГІГ±Гї Г§Г  2 Г¬ГЁГ­ГіГІГ». 
+:?:/juh2::Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГўГ§ГїГІГј Гў Г°ГіГЄГЁ Г®Г¤ГЁГ­ ГЁГ§ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў, Г·ГІГ®ГЎГ» Г®ГІГЄГ°Г»ГІГј Г¤ГўГҐГ°Гј. ГЌГ® Гў ГµГ°Г Г­ГЁГ«ГЁГ№ГҐ ГҐГ±ГІГј ГїГ·ГҐГ©ГЄГЁ, Г¤Г«Гї ГўГ§Г«Г®Г¬Г  ГїГ·ГҐГҐГЄ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  В«Г„Г°ГҐГ«Гј 1500wВ». Г„Г°ГҐГ«Гј ГЄГ°Г ГґГІГЁГІГ±Гї Гі ГЄГ°ГЁГ¬ГЁГ­Г Г«ГјГ­Г»Гµ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГ© ГЁ ГўГ»ГЇГ Г¤Г ГҐГІ ГЇГ°ГЁ Г±Г¬ГҐГ°ГІГЁ. ГЏГ®Г±Г«ГҐ ГіГ±ГЇГҐГёГ­Г®ГЈГ® ГЇГ°Г®ГµГ®Г¦Г¤ГҐГ­ГЁГї Г¬ГЁГ­ГЁ-ГЁГЈГ°Г» ГЇГ® ГўГ§Г«Г®Г¬Гі ГїГ·ГҐГ©ГЄГЁ Г­Г  ГЇГ®Г« ГЇГ Г¤Г ГҐГІ Г­Г ГЈГ°Г Г¤Г .
+:?:/lhjy::Г„Г°Г®Г­ ГЄГ°Г ГґГІГЁГІГ±Гї Гі Г±ГЁГ«Г®ГўГ»Гµ ГЈГ®Г±.Г±ГІГ°ГіГЄГІГіГ° ГЁ Weasel News. ГЏГ®Г«ГјГ§Г®ГўГ ГІГјГ±Гї ГЁГ¬ Г¬Г®ГЈГіГІ Г±Г®Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г® ГЅГІГЁ Г¦ГҐ ГЈГ®Г±.Г±ГІГ°ГіГЄГІГіГ°Г». Г—ГІГ®ГЎГ» ГЇГ®Г¤Г­ГїГІГјГ±Гї-ГЇГ°Г®ГЎГҐГ«, Г·ГІГ®ГЎГ» Г®ГЇГіГ±ГІГЁГІГјГ±Гї-shift. ГЌГ  E-ГІГҐГЇГ«Г®ГўГЁГ§Г®Г° ГўГЄГ«ГѕГ·ГЁГІГј/ГўГ»ГЄГ«ГѕГ·ГЁГІГј.
+:?:/ferw::ГЌГ  Г ГіГЄГ¶ГЁГ®Г­ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г±ГІГ ГўГЁГІГј Г ГўГІГ®/ГЎГЁГ§Г­ГҐГ±/Г¤Г®Г¬/ГЄГўГ Г°ГІГЁГ°Гі. Г‚Г® ГўГ°ГҐГ¬Гї ГІГ®ГЈГ®, ГЄГ ГЄ ГўГ» ГўГ»Г±ГІГ ГўГ«ГїГҐГІГҐ Г«Г®ГІ, ГўГ» Г¬Г®Г¦ГҐГІГҐ Г«ГЁГёГј ГҐГ§Г¤ГЁГІГј Г­Г  Г ГўГІГ®. ГЏГ°ГЁ ГЇГ°Г®Г¤Г Г¦ГҐ Г­Г  Г ГЄГ¶ГЁГ®Г­ГҐ Г¤Г®Г¬Г /ГЄГўГ Г°ГІГЁГ°Г»-ГЄГ«Г Г¤Г®ГўГЄГ  ГЇГҐГ°ГҐГ¤Г ВёГІГ±Гї ГЇГ®ГЄГіГЇГ ГІГҐГ«Гѕ ГЇГ®Г«Г­Г®Г±ГІГјГѕ.
+:?:/lhban::Г„Г°ГЁГґГІ Г±Г·ВёГІГ·ГЁГЄ Г¬Г®Г¦Г­Г® ГўГЄГ«ГѕГ·ГЁГІГј Г·ГҐГ°ГҐГ§ F2 > ГЌГ Г±ГІГ°Г®Г©ГЄГЁ. ГЋГ­ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї ГўГ® ГўГ°ГҐГ¬Гї ГіГЇГ°Г ГўГ«ГїГҐГ¬Г®ГЈГ® Г§Г Г­Г®Г±Г  ГЁ ГЇГ®ГЄГ Г§Г»ГўГ ГҐГІ, Г­Г  Г±ГЄГ®Г«ГјГЄГ® ГµГ®Г°Г®ГёГ® ГўГ» ГЇГ°Г®ГёГ«ГЁ ГЇГ®ГўГ®Г°Г®ГІ.ГЌГ  ГЄГ Г°ГІГҐ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГіГўГЁГ¤ГҐГІГј Г§Г®Г­Г», ГЈГ¤ГҐ Г¬Г®Г¦Г­Г® Г¤Г°ГЁГґГІГЁГІГј ГЁ ГЇГ®ГЇГ Г±ГІГј Гў Г±ГЇГЁГ±Г®ГЄ ГІГ®ГЇ-Г¤Г°ГЁГґГІГҐГ°Г®Гў. Г„Г«Гї ГЅГІГ®ГЈГ® Г‚Г Г¬ Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г¤Г°ГЁГґГІГЁГІГј ГЇГ® Г®ГІГ¬ГҐГ·ГҐГ­Г­Г®Г© Г§Г®Г­ГҐ. Г‚ ГЇГ°Г®ГІГЁГўГ­Г®Г¬ Г±Г«ГіГ·Г ГҐ Г®Г·ГЄГЁ Г­ГҐ Г§Г Г±Г·ГЁГІГ ГѕГІГ±Гї.ГЏГ®ГЄГ Г¦ГЁГІГҐ, ГЄГІГ® Г§Г¤ГҐГ±Гј Г­Г Г±ГІГ®ГїГ№ГЁГ© ГЄГ®Г°Г®Г«Гј Г¤Г°ГЁГґГІГ !
+:?:/,jkufhrf::Г„Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» Г°Г Г±ГЇГЁГ«ГЁГІГј ГЎГ ГЈГ Г¦Г­ГЁГЄ Г­ГіГ¦Г­Г® ГЇГ®Г¤Г®Г©ГІГЁ ГЄ ГЎГ ГЈГ Г¦Г­ГЁГЄГі G - ГЌГҐГ«ГҐГЈГ Г«ГјГ­Г®ГҐ Г¤Г«Гї Г ГўГІГ® - ГђГ Г±ГЇГЁГ«ГЁГІГј Г¤ГўГҐГ°Г­Г®Г© Г§Г Г¬Г®ГЄ. ГЋГІГЄГ°Г»ГўГ ГҐГІГ±Гї ГЎГ ГЈГ Г¦Г­ГЁГЄ ГЁ ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ§ГїГІГј Г± Г­ГҐГЈГ® ГЄГ ГЄ ГЄГ®Г°Г®ГЎГЄГЁ Г± Г¬Г ГІГҐГ°ГЁГ Г«Г Г¬ГЁ, ГІГ ГЄ ГЁ ГЄГ®Г°Г®ГЎГЄГЁ Г±Г® Г±Г­Г Г°ГїГ¦ГҐГ­ГЁГҐГ¬. Г‚Г§Г«Г®Г¬Г ГІГј Г¬Г®Г¦Г­Г® Г­ГҐ ГІГ®Г«ГјГЄГ® ГЈГ®Г±.Г¬Г ГІГ®ГўГ®Г§ГЄГЁ, Г­Г® ГЁ ГЄГ°Г Г©Г¬. ГЃГ®Г«ГЈГ Г°ГЄГ®Г© Г­ГҐГ«ГјГ§Гї ГўГ§Г«Г®Г¬Г ГІГј Г«ГЁГ·Г­Г»Г© ГІГ°Г Г­Г±ГЇГ®Г°ГІ.
+:?:/yted::ГЌГҐ ГіГўГЁГ¤ГҐГ« Г­Г Г°ГіГёГҐГ­ГЁГ©, ГҐГ±Г«ГЁ Гі ГўГ Г± ГҐГ±ГІГј ГўГЁГ¤ГҐГ®Г¤Г®ГЄГ Г§Г ГІГҐГ«ГјГ±ГІГўГ  - Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ. 
+:?:/ajh::Г„Г Г­Г­Г®ГҐ Г­Г Г°ГіГёГҐГ­ГЁГҐ Г­ГҐ ГЇГ®Г¤Г«ГҐГ¦ГЁГІ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГ­ГЁГѕ Г·ГҐГ°ГҐГ§ Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ, Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ.
+:?:/a;,::ГЌГҐ Г¬Г®ГЈГі Г°Г Г±Г±Г¬Г®ГІГ°ГҐГІГј ГЁГ§-Г§Г  Г­Г Г°ГіГёГҐГ­ГЁГ© ГЇГ°Г ГўГЁГ« ГЇГ®Г¤Г Г·ГЁ. ГЂГўГІГ®Г°Гі Г°ГҐГЇГ®Г°ГІ-Г¦Г Г«Г®ГЎГ» Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГіГЄГ Г§Г»ГўГ ГІГј Гў Г­Г Г§ГўГ Г­ГЁГЁ ГўГЁГ¤ГҐГ®: Г±ГўГ®Г© static, static Г­Г Г°ГіГёГЁГІГҐГ«Гї, ГўГ°ГҐГ¬Гї ГЁ Г¤Г ГІГі. Г€Г§Г¬ГҐГ­ГЁГІГҐ Г­Г Г§ГўГ Г­ГЁГҐ ГЁ ГЇГ°Г®Г¤ГіГЎГ«ГЁГ°ГіГ©ГІГҐ ГўГ ГёГі Г°ГҐГЇГ®Г°ГІ-Г¦Г Г«Г®ГЎГі.
+:?:/ajhev::Г‚ Г±ГўГїГ§ГЁ Г± Г­Г ГЈГ°ГіГ§ГЄГ®Г© Г­Г  Г±ГҐГ°ГўГҐГ° Г¬Г» Г­ГҐ Г¬Г®Г¦ГҐГ¬ Г°Г Г±Г±Г¬Г®ГІГ°ГҐГІГј ГўГ ГёГі Г¦Г Г«Г®ГЎГі Г­Г  ГЁГЈГ°Г®ГЄГ  ГЇГ®Г±Г°ГҐГ¤Г±ГІГўГ®Г¬ Г®ГЎГ°Г Г№ГҐГ­ГЁГї, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ , Г®Г±ГІГ ГўГјГІГҐ Г¦Г Г«Г®ГЎГі Г­Г  ГґГ®Г°ГіГ¬ГҐ. Г‘ГЇГ Г±ГЁГЎГ® Г§Г  ГЇГ®Г­ГЁГ¬Г Г­ГЁГҐ.
+:?:/bcx::Г‚Г±ГҐ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г»ГҐ Г±Г°ГҐГ¤Г±ГІГўГ  ГЁГ±Г·ГҐГ§Г ГѕГІ Г·ГҐГ°ГҐГ§ 60 Г¬ГЁГ­ГіГІ, ГҐГ±Г«ГЁ Г± Г­ГЁГ¬ГЁ Г­ГЁГЄГ ГЄ Г­ГҐ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј.
+:?:/afv::/c - IC Г·Г ГІ, /cb - OOC Г·Г ГІ.
+:?:/ahfr::/f - IC Г·Г ГІ, /fb - OOC Г·Г ГІ. 
+:?:/cg,:: Г…Г±Г«ГЁ Г®Г¤Г­Г® Г®ГІГ¤ГҐГ«ГҐГ­ГЁГҐ Г…ГЊГ‘ Г±ГЁГ«ГјГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­Г®, Г·ГІГ®ГЎГ» ГЁГ§ГЎГҐГ¦Г ГІГј ГЄГ°Г ГёГЁ ГўГ Г± Г±ГЇГ ГўГ­ГЁГІ Гў Г¤Г°ГіГЈГ®Г¬, Г¬ГҐГ­ГҐГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г­Г®Г¬ Г®ГІГ¤ГҐГ«ГҐГ­ГЁГЁ.
+:?:/ghjvj:: ГЏГ°Г®Г¬Г®ГЄГ®Г¤ Г¬Г®Г¦Г­Г® ГўГўГҐГ±ГІГЁ Г¤Г® 3 ГіГ°Г®ГўГ­Гї ГЄГ®Г¬Г Г­Г¤Г®Г© /promo "ГЇГ°Г®Г¬Г®ГЄГ®Г¤", Г­Г ГЈГ°Г Г¤Г  Г§Г  Г­ГҐГЈГ® ГЎГіГ¤ГҐГІ ГўГ»Г¤Г Г­Г  ГЇГ°ГЁ Г¤Г®Г±ГІГЁГ¦ГҐГ­ГЁГЁ 3 ГіГ°Г®ГўГ­Гї. ГЏГ°ГЁГЈГ«Г Г±ГЁГўГёГЁГ© ГЇГ®Г«ГіГ·Г ГҐГІ 7500$. ГЏГ°ГЁГЈГ«Г ГёГҐГ­Г­Г»Г© ГЁГЈГ°Г®ГЄ ГЇГ®Г«ГіГ·Г ГҐГІ: Г®ГІ Г®ГЎГ»Г·Г­Г®ГЈГ® ГЁГЈГ°Г®ГЄГ  - 10 000$ + 3 Г¤Г­Гї Platinum VIP, Г®ГІ Г¬ГҐГ¤ГЁГ  - 20 000$ + 7 Г¤Г­ГҐГ© Platinum VIP 
+:?:/gthtl::Г‚Г±ГҐ ГЁГ¬ГіГ№ГҐГ±ГІГўГ® ГўГ» ГЇГҐГ°ГҐГ¤Г ГҐГІГҐ Г­Г  Г±ГўГ®Г© Г±ГІГ°Г Гµ ГЁ Г°ГЁГ±ГЄ.
+:?:/jcr::Г†Г Г«Г®ГЎГ» Гў Г°ГҐГЇГ®Г°ГІ Г­Г  OOC Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ ГЇГ°ГЁГ­ГЁГ¬Г ГҐГ¬ ГІГ®Г«ГјГЄГ® ГІГ®ГЈГ¤Г , ГҐГ±Г«ГЁ Г±ГЄГ°ГЁГ­ГёГ®ГІ Г±Г¤ГҐГ«Г Г­ Гў ГІГі Г¦ГҐ Г¬ГЁГ­ГіГІГі, Г·ГІГ® ГЁ ГЋГЋГ‘ Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Гў Г·Г ГІГҐ + Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® Г­Г  Г±ГЄГ°ГЁГ­ГҐ Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј ГЇГ°ГЁГ±ГіГІГ±ГІГўГЁГҐ Г­Г Г°ГіГёГЁГўГёГҐГЈГ® (ГўГЁГ¤Г­Г® ГҐГЈГ® ГЁГ«ГЁ Г±ГІГ ГІГЁГЄ)
+:?:/helf::ГђГіГ¤Г  Г± ГёГ ГµГІГ» ГІГ°ГҐГЎГіГҐГІГ±Гї ГІГ®Г«ГјГЄГ® Гў Г±ГҐГ¬ГҐГ©Г­Г»Гµ ГЄГ®Г­ГІГ°Г ГЄГІГ Гµ, ГЇГ°Г®Г¤Г ГІГј ГҐГҐ Г­ГҐГ«ГјГ§Гї.
+:?:/pfr::ГќГІГ® Г°ГҐГЈГ«Г Г¬ГҐГ­ГІГЁГ°ГіГҐГІГ±Гї IC Г§Г ГЄГ®Г­Г Г¬ГЁ, ГЁГ§ГіГ·ГЁГІГј ГЁГµ Г¬Г®Г¦ГҐГІГҐ Гў Г°Г Г§Г¤ГҐГ«ГҐ Government Г­Г  ГґГ®Г°ГіГ¬ГҐ: Majestic RolePlay | Server #3 - ГЋГ°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ - ГѓГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»ГҐ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ - Government.
+:?:/,fuhtg::Г‚ Г±Г«ГіГ·Г ГҐ Г­Г ГµГ®Г¦Г¤ГҐГ­ГЁГї ГЎГ ГЈГ  Г®Г±ГІГ ГўГјГІГҐ Г±ГўГ®Г© ГЎГ ГЈ-Г°ГҐГЇГ®Г°ГІ Гў Г®ГґГЁГ¶ГЁГ Г«ГјГ­Г®Г¬ Г¤ГЁГ±ГЄГ®Г°Г¤ГҐ ГЇГ°Г®ГҐГЄГІГ : Г’ГҐГЄГ±ГІГ®ГўГ»ГҐ ГЄГ Г­Г Г«Г» - Г±Г®Г®ГЎГ№ГЁГІГј Г® ГЎГ ГЈГҐ.
+:?:/vtl::Г‡Г  Г¤Г Г­Г­Г»Г¬ Г¬ГҐГ¤ГЁГ  ГЇГ Г°ГІГ­ГҐГ°Г®Г¬ Г­Г ГЎГ«ГѕГ¤Г ГҐГІ PR Г Г±Г±ГЁГ±ГІГҐГ­ГІ, ГЇГ® ГЅГІГ®Г© ГЇГ°ГЁГ·ГЁГ­ГҐ Гї Г­ГҐ Г¬Г®ГЈГі ГўГ»Г¤Г ГўГ ГІГј Г­Г ГЄГ Г§Г Г­ГЁГҐ, ГІ.ГЄ. ГўГ±Гї Г®ГІГўГҐГІГ±ГІГўГҐГ­Г­Г®Г±ГІГј Г§Г  ГЇГ°Г®ГЁГ±ГµГ®Г¤ГїГ№ГҐГҐ Г­Г  ГЅГІГ®Г© Г±ГЁГІГіГ Г¶ГЁГЁ Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ ГЇГҐГ°ГҐГ­Г®Г±ГЁГІГ±Гї Г­Г  PR Г Г±Г±ГЁГ±ГІГҐГ­ГІГ .
+:?:/ybpr::Г“ ГўГ Г± ГўГЄГ«ГѕГ·ГҐГ­ Г°ГҐГ¦ГЁГ¬ Г­ГЁГ§ГЄГ®ГЈГ® ГЄГ Г·ГҐГ±ГІГўГ  Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+:?:/dfr::ГЋГІ ГўГ ГЄГ¶ГЁГ­Г», ГўГ»Г¤Г Г­Г­Г®Г© Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГҐГ© ГЄГўГҐГ±ГІ Г­ГҐ ГЎГіГ¤ГҐГІ Г§Г Г±Г·ГЁГІГ Г­, Г®Г¦ГЁГ¤Г Г©ГІГҐ ГЇГ®ГїГўГ«ГҐГ­ГЁГї Г«ГЁГ¤ГҐГ°Г  Гў Г…ГЊГ‘.
+:?:/,byl::Г‚Г» Г¬Г®Г¦ГҐГІГҐ Г­Г Г±ГІГ°Г®ГЁГІГј ГЎГЁГ­Г¤ ГЄГ«Г ГўГЁГё ГЇГ®Г¤ Г±ГҐГЎГї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЃГЁГ­Г¤ ГЄГ«Г ГўГЁГё.
 
-:?:/prfqj::На острове имеется несколько точек захвата медицинских, военных, технических материалов. Для захвата Вам необходимо взять с собой маячки(Подберите цвета), если же у Вас маячки зелёного цвета Вы сможете захватить военные материалы, синего Вашей целью станут технически при наличии красных Вам откроется возможность захватить медицинские. Захват можно начать в радиусе 50м от точки погрузки, после активации маячка появится обозримая зона захвата, если выйти за зону захвата или все захватчики умрут, маячок уничтожается, точка переходит в спокойное состояние как до захвата. Не стоит забывать и про сигнализацию, если Вы её не выключите все госструктуры будут в момент оповещены и Вас будет ждать серьёзное сопротивление(Функционально на захват материалов это не повлияет). После захвата блип на карте красится в цвет организации захватчиков. Игроки смогут забирать материалы с точки и грузить их в личную/арендованную лодку - в городе перегружать в матовозку.
-:?:/gthbrj::У всех силовых фракций появилась метка для телепортации, фракции EMS/WN/GOV лишены её. Отделение LSCSD в Сэнди-Шорс тоже не имеет метки. Каждая фракции телепортируется в одну точку на острове, таким путём и обратно. Однако Вы не сможете телепортироваться с точки другой фракции. Пример: Я из FIB и хочу сделать телепорт на территории LSCSD - У меня не выйдет. На острове, вблизи особняка и на его территории, есть машины, вертолёт и квадроциклы с ними может взаимодействовать лишь SANG, возможность заспавнить своё ТС также сохранена, для этого воспользуйтесь меткой. Также SANG стал обладателем ещё одного склада на Кайо-Перико, он аналогичен Вашему на форте. Если на форте будет заполнено 20.000 то и на острове тоже.
-:?:/cbhtyf::Вышку можно взломать, не будет обновляться статус контроля точек(10 минут). Для взлома нужен "Программатор ЭБУ" и "Кабель радио сигналов". Кабель можно получить при ограблении магазина 24/7, выпадает(Шанс редко-средне), он одноразовый и после использования он пропадает. Взлом происходит в мини-игре. После удачного взлома, на мини карте не будет отображаться статус захвата точек для SANG(10 минут). После неудачного взлома, сразу срабатывает сирена. SANG могут восстановить работу вышки нажав "Е" на метке вышки.
-:?:/vfzr::Маячки могут выпасть с "AirDrop" или же при ограблении 24/7. Шансы выпадения у всех маячков разный.
-:?:/pjj::Система животных. Могут спавниться различные животные, от крыс до оленей по всей карте. Некоторые виды животных можно разделать и получить мясо. Мясо можно жарить и употреблять в пищу. Домашних животных которые гуляют по карте, можно гладить.
-:?:/crby::Оружие появляется в донат инвентаре, его можно будет распылить. Однако при его применении невозможно дальнейшее распыление. Чтобы применить скин на оружие: F2 - Магазин - Cкины - Выбираете оружие и скин к нему - Применить, скин применяется ко всем оружиям выбранного типа. Скин привязывается к игроку, выбить оружие со скином/сбросить/обменять/продать - невозможно.
-:?:/byn::Популярные интерьеры на карте: "Особняк у виноградников" - открытый интерьер не имеющий функционала, расположен левее от центра карты. "Суд" - открытый интерьер не имеющий функционала, расположен неподалёку от LSPD. Зачастую применяется во время заседаний Верховного или же окружного суда. "Университет" - открытый интерьер не имеющий функционала, расположен неподалёку от Японской мафии. "Старый офис FIB" - открытый интерьер не имеющий функционала, расположен неподалёку от EMS.
-:?:/djn::Выборы активны с 10:00 - 10:00 по московскому времени. Проголосовать может каждый от 3-го уровня игрового персонажа, по принцыпу один голос на один аккаунт. голосование проходит в левом крыле Мэрии(На карте флаг USA).
-:?:/jldjhr:: Теперь при каждом устройстве на работу Вы получаете соответствующий комплект одежды. Он снимется автоматически при увольнении/прекращении работы. Если же у Вас мед комплект то Вам нужно пройти курс лечения.
-:?:/[jk::"Холодный старт" - при запуске ТС издаёт характерный звук, другим функционалом не обладает.
-:?:/akfu::Командный режим боя в котором Вы сможете противостоять своим оппонентам в равных условиях. В этом режиме Вы можете поднимать оружие на "F"(По дефолту), а также купить себе оружие на заработанные во время матча деньги, для этого нажмите "B". Матч закончиться как только одна из команд потеряет все очки, скорость их потери/накопления зависит от кол-ва захваченных, Вашей командой, точек.
-:?:/kj,,b::Это Ваша игра созданная Вами для друзей или же обычных игроков, все правила настраиваете именно Вы. Для того что бы начать нужно: Дать название своему лобби(Графа "Название лобби"), выбрать один из трёх доступных режимов(Гонка вооружений/Бой на смерть/Захват флага), выбрать одну из карт. Далее Вы сможете установить пароль, если же не хотите видеть лишних игроков в своей игре. После всех первичных настроек Вам откроются дополнительные: Требование для победы, оружие, время суток, одежда(Если выбрать "Нет" игрок временно сменит одежду в матче), погодные условия, авто-баланс команд(В случае захвата флага) и др. Только помните за создание лобби нужно будет заплатить от 1.250$ до 2.800$.
-:?:/lhpjyf::Дрифт зона отмечена на карте как иконка падающей кометы, пример - одна из зон около LS Vagos.
-:?:/pf;::Чтобы взломать зажигание сядьте за руль т.с., нажмите G - Взломать зажигание. КД на взлом - 1 час.
-:?:/cnhbv::Режим стримера заменяет символы на звездочки, для обычных игроков он бесполезен. Выключается в F2 - Настройки.
-:?:/rd::Текущий квест отображается над таймеров Majestic Coins, если его нет - нажмите F6.
-:?:/rv,::Чтобы устроиться в силовую гос. структуру необходимо получить военный билет. Для этого надо устроиться в SANG и пройти КМБ. Иконка зеленого самолета на карте. Подробнее уточните у старшего состава фракции.
-:?:/yfhr::Пакетики Blue и White никак не получить, функционал как у Green, только разные эффекты.
-:?:/fkbc::Чтобы выключить GPS ассистента нажмите F2 - Настройки и выключите GPS Ассистент.
-:?:/dthn::Веротолеты продаются в салоне недалеко от аэропорта.
-:?:/gj[jl::Изменить походу и эмоции лица можно в  F2 - Настройки - Главное.
-:?:/,fuf;::Чтобы вылезти из багажника нажмите на "E".
-:?:/yfk::Чтобы оплатить налоги на дом необходимо открыть приложение "Мой дом" в планшете.
+:?:/prfqj::ГЌГ  Г®Г±ГІГ°Г®ГўГҐ ГЁГ¬ГҐГҐГІГ±Гї Г­ГҐГ±ГЄГ®Г«ГјГЄГ® ГІГ®Г·ГҐГЄ Г§Г ГµГўГ ГІГ  Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГЁГµ, ГўГ®ГҐГ­Г­Г»Гµ, ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГµ Г¬Г ГІГҐГ°ГЁГ Г«Г®Гў. Г„Г«Гї Г§Г ГµГўГ ГІГ  Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГўГ§ГїГІГј Г± Г±Г®ГЎГ®Г© Г¬Г ГїГ·ГЄГЁ(ГЏГ®Г¤ГЎГҐГ°ГЁГІГҐ Г¶ГўГҐГІГ ), ГҐГ±Г«ГЁ Г¦ГҐ Гі Г‚Г Г± Г¬Г ГїГ·ГЄГЁ Г§ГҐГ«ВёГ­Г®ГЈГ® Г¶ГўГҐГІГ  Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ Г§Г ГµГўГ ГІГЁГІГј ГўГ®ГҐГ­Г­Г»ГҐ Г¬Г ГІГҐГ°ГЁГ Г«Г», Г±ГЁГ­ГҐГЈГ® Г‚Г ГёГҐГ© Г¶ГҐГ«ГјГѕ Г±ГІГ Г­ГіГІ ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁ ГЇГ°ГЁ Г­Г Г«ГЁГ·ГЁГЁ ГЄГ°Г Г±Г­Г»Гµ Г‚Г Г¬ Г®ГІГЄГ°Г®ГҐГІГ±Гї ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г§Г ГµГўГ ГІГЁГІГј Г¬ГҐГ¤ГЁГ¶ГЁГ­Г±ГЄГЁГҐ. Г‡Г ГµГўГ ГІ Г¬Г®Г¦Г­Г® Г­Г Г·Г ГІГј Гў Г°Г Г¤ГЁГіГ±ГҐ 50Г¬ Г®ГІ ГІГ®Г·ГЄГЁ ГЇГ®ГЈГ°ГіГ§ГЄГЁ, ГЇГ®Г±Г«ГҐ Г ГЄГІГЁГўГ Г¶ГЁГЁ Г¬Г ГїГ·ГЄГ  ГЇГ®ГїГўГЁГІГ±Гї Г®ГЎГ®Г§Г°ГЁГ¬Г Гї Г§Г®Г­Г  Г§Г ГµГўГ ГІГ , ГҐГ±Г«ГЁ ГўГ»Г©ГІГЁ Г§Г  Г§Г®Г­Гі Г§Г ГµГўГ ГІГ  ГЁГ«ГЁ ГўГ±ГҐ Г§Г ГµГўГ ГІГ·ГЁГЄГЁ ГіГ¬Г°ГіГІ, Г¬Г ГїГ·Г®ГЄ ГіГ­ГЁГ·ГІГ®Г¦Г ГҐГІГ±Гї, ГІГ®Г·ГЄГ  ГЇГҐГ°ГҐГµГ®Г¤ГЁГІ Гў Г±ГЇГ®ГЄГ®Г©Г­Г®ГҐ Г±Г®Г±ГІГ®ГїГ­ГЁГҐ ГЄГ ГЄ Г¤Г® Г§Г ГµГўГ ГІГ . ГЌГҐ Г±ГІГ®ГЁГІ Г§Г ГЎГ»ГўГ ГІГј ГЁ ГЇГ°Г® Г±ГЁГЈГ­Г Г«ГЁГ§Г Г¶ГЁГѕ, ГҐГ±Г«ГЁ Г‚Г» ГҐВё Г­ГҐ ГўГ»ГЄГ«ГѕГ·ГЁГІГҐ ГўГ±ГҐ ГЈГ®Г±Г±ГІГ°ГіГЄГІГіГ°Г» ГЎГіГ¤ГіГІ Гў Г¬Г®Г¬ГҐГ­ГІ Г®ГЇГ®ГўГҐГ№ГҐГ­Г» ГЁ Г‚Г Г± ГЎГіГ¤ГҐГІ Г¦Г¤Г ГІГј Г±ГҐГ°ГјВёГ§Г­Г®ГҐ Г±Г®ГЇГ°Г®ГІГЁГўГ«ГҐГ­ГЁГҐ(Г”ГіГ­ГЄГ¶ГЁГ®Г­Г Г«ГјГ­Г® Г­Г  Г§Г ГµГўГ ГІ Г¬Г ГІГҐГ°ГЁГ Г«Г®Гў ГЅГІГ® Г­ГҐ ГЇГ®ГўГ«ГЁГїГҐГІ). ГЏГ®Г±Г«ГҐ Г§Г ГµГўГ ГІГ  ГЎГ«ГЁГЇ Г­Г  ГЄГ Г°ГІГҐ ГЄГ°Г Г±ГЁГІГ±Гї Гў Г¶ГўГҐГІ Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ Г§Г ГµГўГ ГІГ·ГЁГЄГ®Гў. Г€ГЈГ°Г®ГЄГЁ Г±Г¬Г®ГЈГіГІ Г§Г ГЎГЁГ°Г ГІГј Г¬Г ГІГҐГ°ГЁГ Г«Г» Г± ГІГ®Г·ГЄГЁ ГЁ ГЈГ°ГіГ§ГЁГІГј ГЁГµ Гў Г«ГЁГ·Г­ГіГѕ/Г Г°ГҐГ­Г¤Г®ГўГ Г­Г­ГіГѕ Г«Г®Г¤ГЄГі - Гў ГЈГ®Г°Г®Г¤ГҐ ГЇГҐГ°ГҐГЈГ°ГіГ¦Г ГІГј Гў Г¬Г ГІГ®ГўГ®Г§ГЄГі.
+:?:/gthbrj::Г“ ГўГ±ГҐГµ Г±ГЁГ«Г®ГўГ»Гµ ГґГ°Г ГЄГ¶ГЁГ© ГЇГ®ГїГўГЁГ«Г Г±Гј Г¬ГҐГІГЄГ  Г¤Г«Гї ГІГҐГ«ГҐГЇГ®Г°ГІГ Г¶ГЁГЁ, ГґГ°Г ГЄГ¶ГЁГЁ EMS/WN/GOV Г«ГЁГёГҐГ­Г» ГҐВё. ГЋГІГ¤ГҐГ«ГҐГ­ГЁГҐ LSCSD Гў Г‘ГЅГ­Г¤ГЁ-ГГ®Г°Г± ГІГ®Г¦ГҐ Г­ГҐ ГЁГ¬ГҐГҐГІ Г¬ГҐГІГЄГЁ. ГЉГ Г¦Г¤Г Гї ГґГ°Г ГЄГ¶ГЁГЁ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІГ±Гї Гў Г®Г¤Г­Гі ГІГ®Г·ГЄГі Г­Г  Г®Г±ГІГ°Г®ГўГҐ, ГІГ ГЄГЁГ¬ ГЇГіГІВёГ¬ ГЁ Г®ГЎГ°Г ГІГ­Г®. ГЋГ¤Г­Г ГЄГ® Г‚Г» Г­ГҐ Г±Г¬Г®Г¦ГҐГІГҐ ГІГҐГ«ГҐГЇГ®Г°ГІГЁГ°Г®ГўГ ГІГјГ±Гї Г± ГІГ®Г·ГЄГЁ Г¤Г°ГіГЈГ®Г© ГґГ°Г ГЄГ¶ГЁГЁ. ГЏГ°ГЁГ¬ГҐГ°: Гџ ГЁГ§ FIB ГЁ ГµГ®Г·Гі Г±Г¤ГҐГ«Г ГІГј ГІГҐГ«ГҐГЇГ®Г°ГІ Г­Г  ГІГҐГ°Г°ГЁГІГ®Г°ГЁГЁ LSCSD - Г“ Г¬ГҐГ­Гї Г­ГҐ ГўГ»Г©Г¤ГҐГІ. ГЌГ  Г®Г±ГІГ°Г®ГўГҐ, ГўГЎГ«ГЁГ§ГЁ Г®Г±Г®ГЎГ­ГїГЄГ  ГЁ Г­Г  ГҐГЈГ® ГІГҐГ°Г°ГЁГІГ®Г°ГЁГЁ, ГҐГ±ГІГј Г¬Г ГёГЁГ­Г», ГўГҐГ°ГІГ®Г«ВёГІ ГЁ ГЄГўГ Г¤Г°Г®Г¶ГЁГЄГ«Г» Г± Г­ГЁГ¬ГЁ Г¬Г®Г¦ГҐГІ ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГ®ГўГ ГІГј Г«ГЁГёГј SANG, ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г§Г Г±ГЇГ ГўГ­ГЁГІГј Г±ГўГ®Вё Г’Г‘ ГІГ ГЄГ¦ГҐ Г±Г®ГµГ°Г Г­ГҐГ­Г , Г¤Г«Гї ГЅГІГ®ГЈГ® ГўГ®Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐГ±Гј Г¬ГҐГІГЄГ®Г©. Г’Г ГЄГ¦ГҐ SANG Г±ГІГ Г« Г®ГЎГ«Г Г¤Г ГІГҐГ«ГҐГ¬ ГҐГ№Вё Г®Г¤Г­Г®ГЈГ® Г±ГЄГ«Г Г¤Г  Г­Г  ГЉГ Г©Г®-ГЏГҐГ°ГЁГЄГ®, Г®Г­ Г Г­Г Г«Г®ГЈГЁГ·ГҐГ­ Г‚Г ГёГҐГ¬Гі Г­Г  ГґГ®Г°ГІГҐ. Г…Г±Г«ГЁ Г­Г  ГґГ®Г°ГІГҐ ГЎГіГ¤ГҐГІ Г§Г ГЇГ®Г«Г­ГҐГ­Г® 20.000 ГІГ® ГЁ Г­Г  Г®Г±ГІГ°Г®ГўГҐ ГІГ®Г¦ГҐ.
+:?:/cbhtyf::Г‚Г»ГёГЄГі Г¬Г®Г¦Г­Г® ГўГ§Г«Г®Г¬Г ГІГј, Г­ГҐ ГЎГіГ¤ГҐГІ Г®ГЎГ­Г®ГўГ«ГїГІГјГ±Гї Г±ГІГ ГІГіГ± ГЄГ®Г­ГІГ°Г®Г«Гї ГІГ®Г·ГҐГЄ(10 Г¬ГЁГ­ГіГІ). Г„Г«Гї ГўГ§Г«Г®Г¬Г  Г­ГіГ¦ГҐГ­ "ГЏГ°Г®ГЈГ°Г Г¬Г¬Г ГІГ®Г° ГќГЃГ“" ГЁ "ГЉГ ГЎГҐГ«Гј Г°Г Г¤ГЁГ® Г±ГЁГЈГ­Г Г«Г®Гў". ГЉГ ГЎГҐГ«Гј Г¬Г®Г¦Г­Г® ГЇГ®Г«ГіГ·ГЁГІГј ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ Г¬Г ГЈГ Г§ГЁГ­Г  24/7, ГўГ»ГЇГ Г¤Г ГҐГІ(ГГ Г­Г± Г°ГҐГ¤ГЄГ®-Г±Г°ГҐГ¤Г­ГҐ), Г®Г­ Г®Г¤Г­Г®Г°Г Г§Г®ГўГ»Г© ГЁ ГЇГ®Г±Г«ГҐ ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї Г®Г­ ГЇГ°Г®ГЇГ Г¤Г ГҐГІ. Г‚Г§Г«Г®Г¬ ГЇГ°Г®ГЁГ±ГµГ®Г¤ГЁГІ Гў Г¬ГЁГ­ГЁ-ГЁГЈГ°ГҐ. ГЏГ®Г±Г«ГҐ ГіГ¤Г Г·Г­Г®ГЈГ® ГўГ§Г«Г®Г¬Г , Г­Г  Г¬ГЁГ­ГЁ ГЄГ Г°ГІГҐ Г­ГҐ ГЎГіГ¤ГҐГІ Г®ГІГ®ГЎГ°Г Г¦Г ГІГјГ±Гї Г±ГІГ ГІГіГ± Г§Г ГµГўГ ГІГ  ГІГ®Г·ГҐГЄ Г¤Г«Гї SANG(10 Г¬ГЁГ­ГіГІ). ГЏГ®Г±Г«ГҐ Г­ГҐГіГ¤Г Г·Г­Г®ГЈГ® ГўГ§Г«Г®Г¬Г , Г±Г°Г Г§Гі Г±Г°Г ГЎГ ГІГ»ГўГ ГҐГІ Г±ГЁГ°ГҐГ­Г . SANG Г¬Г®ГЈГіГІ ГўГ®Г±Г±ГІГ Г­Г®ГўГЁГІГј Г°Г ГЎГ®ГІГі ГўГ»ГёГЄГЁ Г­Г Г¦Г Гў "Г…" Г­Г  Г¬ГҐГІГЄГҐ ГўГ»ГёГЄГЁ.
+:?:/vfzr::ГЊГ ГїГ·ГЄГЁ Г¬Г®ГЈГіГІ ГўГ»ГЇГ Г±ГІГј Г± "AirDrop" ГЁГ«ГЁ Г¦ГҐ ГЇГ°ГЁ Г®ГЈГ°Г ГЎГ«ГҐГ­ГЁГЁ 24/7. ГГ Г­Г±Г» ГўГ»ГЇГ Г¤ГҐГ­ГЁГї Гі ГўГ±ГҐГµ Г¬Г ГїГ·ГЄГ®Гў Г°Г Г§Г­Г»Г©.
+:?:/pjj::Г‘ГЁГ±ГІГҐГ¬Г  Г¦ГЁГўГ®ГІГ­Г»Гµ. ГЊГ®ГЈГіГІ Г±ГЇГ ГўГ­ГЁГІГјГ±Гї Г°Г Г§Г«ГЁГ·Г­Г»ГҐ Г¦ГЁГўГ®ГІГ­Г»ГҐ, Г®ГІ ГЄГ°Г»Г± Г¤Г® Г®Г«ГҐГ­ГҐГ© ГЇГ® ГўГ±ГҐГ© ГЄГ Г°ГІГҐ. ГЌГҐГЄГ®ГІГ®Г°Г»ГҐ ГўГЁГ¤Г» Г¦ГЁГўГ®ГІГ­Г»Гµ Г¬Г®Г¦Г­Г® Г°Г Г§Г¤ГҐГ«Г ГІГј ГЁ ГЇГ®Г«ГіГ·ГЁГІГј Г¬ГїГ±Г®. ГЊГїГ±Г® Г¬Г®Г¦Г­Г® Г¦Г Г°ГЁГІГј ГЁ ГіГЇГ®ГІГ°ГҐГЎГ«ГїГІГј Гў ГЇГЁГ№Гі. Г„Г®Г¬Г ГёГ­ГЁГµ Г¦ГЁГўГ®ГІГ­Г»Гµ ГЄГ®ГІГ®Г°Г»ГҐ ГЈГіГ«ГїГѕГІ ГЇГ® ГЄГ Г°ГІГҐ, Г¬Г®Г¦Г­Г® ГЈГ«Г Г¤ГЁГІГј.
+:?:/crby::ГЋГ°ГіГ¦ГЁГҐ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Гў Г¤Г®Г­Г ГІ ГЁГ­ГўГҐГ­ГІГ Г°ГҐ, ГҐГЈГ® Г¬Г®Г¦Г­Г® ГЎГіГ¤ГҐГІ Г°Г Г±ГЇГ»Г«ГЁГІГј. ГЋГ¤Г­Г ГЄГ® ГЇГ°ГЁ ГҐГЈГ® ГЇГ°ГЁГ¬ГҐГ­ГҐГ­ГЁГЁ Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г® Г¤Г Г«ГјГ­ГҐГ©ГёГҐГҐ Г°Г Г±ГЇГ»Г«ГҐГ­ГЁГҐ. Г—ГІГ®ГЎГ» ГЇГ°ГЁГ¬ГҐГ­ГЁГІГј Г±ГЄГЁГ­ Г­Г  Г®Г°ГіГ¦ГЁГҐ: F2 - ГЊГ ГЈГ Г§ГЁГ­ - CГЄГЁГ­Г» - Г‚Г»ГЎГЁГ°Г ГҐГІГҐ Г®Г°ГіГ¦ГЁГҐ ГЁ Г±ГЄГЁГ­ ГЄ Г­ГҐГ¬Гі - ГЏГ°ГЁГ¬ГҐГ­ГЁГІГј, Г±ГЄГЁГ­ ГЇГ°ГЁГ¬ГҐГ­ГїГҐГІГ±Гї ГЄГ® ГўГ±ГҐГ¬ Г®Г°ГіГ¦ГЁГїГ¬ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГЁГЇГ . Г‘ГЄГЁГ­ ГЇГ°ГЁГўГїГ§Г»ГўГ ГҐГІГ±Гї ГЄ ГЁГЈГ°Г®ГЄГі, ГўГ»ГЎГЁГІГј Г®Г°ГіГ¦ГЁГҐ Г±Г® Г±ГЄГЁГ­Г®Г¬/Г±ГЎГ°Г®Г±ГЁГІГј/Г®ГЎГ¬ГҐГ­ГїГІГј/ГЇГ°Г®Г¤Г ГІГј - Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г®.
+:?:/byn::ГЏГ®ГЇГіГ«ГїГ°Г­Г»ГҐ ГЁГ­ГІГҐГ°ГјГҐГ°Г» Г­Г  ГЄГ Г°ГІГҐ: "ГЋГ±Г®ГЎГ­ГїГЄ Гі ГўГЁГ­Г®ГЈГ°Г Г¤Г­ГЁГЄГ®Гў" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г«ГҐГўГҐГҐ Г®ГІ Г¶ГҐГ­ГІГ°Г  ГЄГ Г°ГІГ». "Г‘ГіГ¤" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г­ГҐГЇГ®Г¤Г Г«ВёГЄГі Г®ГІ LSPD. Г‡Г Г·Г Г±ГІГіГѕ ГЇГ°ГЁГ¬ГҐГ­ГїГҐГІГ±Гї ГўГ® ГўГ°ГҐГ¬Гї Г§Г Г±ГҐГ¤Г Г­ГЁГ© Г‚ГҐГ°ГµГ®ГўГ­Г®ГЈГ® ГЁГ«ГЁ Г¦ГҐ Г®ГЄГ°ГіГ¦Г­Г®ГЈГ® Г±ГіГ¤Г . "Г“Г­ГЁГўГҐГ°Г±ГЁГІГҐГІ" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г­ГҐГЇГ®Г¤Г Г«ВёГЄГі Г®ГІ ГџГЇГ®Г­Г±ГЄГ®Г© Г¬Г ГґГЁГЁ. "Г‘ГІГ Г°Г»Г© Г®ГґГЁГ± FIB" - Г®ГІГЄГ°Г»ГІГ»Г© ГЁГ­ГІГҐГ°ГјГҐГ° Г­ГҐ ГЁГ¬ГҐГѕГ№ГЁГ© ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г , Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ Г­ГҐГЇГ®Г¤Г Г«ВёГЄГі Г®ГІ EMS.
+:?:/djn::Г‚Г»ГЎГ®Г°Г» Г ГЄГІГЁГўГ­Г» Г± 10:00 - 10:00 ГЇГ® Г¬Г®Г±ГЄГ®ГўГ±ГЄГ®Г¬Гі ГўГ°ГҐГ¬ГҐГ­ГЁ. ГЏГ°Г®ГЈГ®Г«Г®Г±Г®ГўГ ГІГј Г¬Г®Г¦ГҐГІ ГЄГ Г¦Г¤Г»Г© Г®ГІ 3-ГЈГ® ГіГ°Г®ГўГ­Гї ГЁГЈГ°Г®ГўГ®ГЈГ® ГЇГҐГ°Г±Г®Г­Г Г¦Г , ГЇГ® ГЇГ°ГЁГ­Г¶Г»ГЇГі Г®Г¤ГЁГ­ ГЈГ®Г«Г®Г± Г­Г  Г®Г¤ГЁГ­ Г ГЄГЄГ ГіГ­ГІ. ГЈГ®Г«Г®Г±Г®ГўГ Г­ГЁГҐ ГЇГ°Г®ГµГ®Г¤ГЁГІ Гў Г«ГҐГўГ®Г¬ ГЄГ°Г»Г«ГҐ ГЊГЅГ°ГЁГЁ(ГЌГ  ГЄГ Г°ГІГҐ ГґГ«Г ГЈ USA).
+:?:/jldjhr:: Г’ГҐГЇГҐГ°Гј ГЇГ°ГЁ ГЄГ Г¦Г¤Г®Г¬ ГіГ±ГІГ°Г®Г©Г±ГІГўГҐ Г­Г  Г°Г ГЎГ®ГІГі Г‚Г» ГЇГ®Г«ГіГ·Г ГҐГІГҐ Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГѕГ№ГЁГ© ГЄГ®Г¬ГЇГ«ГҐГЄГІ Г®Г¤ГҐГ¦Г¤Г». ГЋГ­ Г±Г­ГЁГ¬ГҐГІГ±Гї Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ ГЇГ°ГЁ ГіГўГ®Г«ГјГ­ГҐГ­ГЁГЁ/ГЇГ°ГҐГЄГ°Г Г№ГҐГ­ГЁГЁ Г°Г ГЎГ®ГІГ». Г…Г±Г«ГЁ Г¦ГҐ Гі Г‚Г Г± Г¬ГҐГ¤ ГЄГ®Г¬ГЇГ«ГҐГЄГІ ГІГ® Г‚Г Г¬ Г­ГіГ¦Г­Г® ГЇГ°Г®Г©ГІГЁ ГЄГіГ°Г± Г«ГҐГ·ГҐГ­ГЁГї.
+:?:/[jk::"Г•Г®Г«Г®Г¤Г­Г»Г© Г±ГІГ Г°ГІ" - ГЇГ°ГЁ Г§Г ГЇГіГ±ГЄГҐ Г’Г‘ ГЁГ§Г¤Г ВёГІ ГµГ Г°Г ГЄГІГҐГ°Г­Г»Г© Г§ГўГіГЄ, Г¤Г°ГіГЈГЁГ¬ ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г®Г¬ Г­ГҐ Г®ГЎГ«Г Г¤Г ГҐГІ.
+:?:/akfu::ГЉГ®Г¬Г Г­Г¤Г­Г»Г© Г°ГҐГ¦ГЁГ¬ ГЎГ®Гї Гў ГЄГ®ГІГ®Г°Г®Г¬ Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ ГЇГ°Г®ГІГЁГўГ®Г±ГІГ®ГїГІГј Г±ГўГ®ГЁГ¬ Г®ГЇГЇГ®Г­ГҐГ­ГІГ Г¬ Гў Г°Г ГўГ­Г»Гµ ГіГ±Г«Г®ГўГЁГїГµ. Г‚ ГЅГІГ®Г¬ Г°ГҐГ¦ГЁГ¬ГҐ Г‚Г» Г¬Г®Г¦ГҐГІГҐ ГЇГ®Г¤Г­ГЁГ¬Г ГІГј Г®Г°ГіГ¦ГЁГҐ Г­Г  "F"(ГЏГ® Г¤ГҐГґГ®Г«ГІГі), Г  ГІГ ГЄГ¦ГҐ ГЄГіГЇГЁГІГј Г±ГҐГЎГҐ Г®Г°ГіГ¦ГЁГҐ Г­Г  Г§Г Г°Г ГЎГ®ГІГ Г­Г­Г»ГҐ ГўГ® ГўГ°ГҐГ¬Гї Г¬Г ГІГ·Г  Г¤ГҐГ­ГјГЈГЁ, Г¤Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¦Г¬ГЁГІГҐ "B". ГЊГ ГІГ· Г§Г ГЄГ®Г­Г·ГЁГІГјГ±Гї ГЄГ ГЄ ГІГ®Г«ГјГЄГ® Г®Г¤Г­Г  ГЁГ§ ГЄГ®Г¬Г Г­Г¤ ГЇГ®ГІГҐГ°ГїГҐГІ ГўГ±ГҐ Г®Г·ГЄГЁ, Г±ГЄГ®Г°Г®Г±ГІГј ГЁГµ ГЇГ®ГІГҐГ°ГЁ/Г­Г ГЄГ®ГЇГ«ГҐГ­ГЁГї Г§Г ГўГЁГ±ГЁГІ Г®ГІ ГЄГ®Г«-ГўГ  Г§Г ГµГўГ Г·ГҐГ­Г­Г»Гµ, Г‚Г ГёГҐГ© ГЄГ®Г¬Г Г­Г¤Г®Г©, ГІГ®Г·ГҐГЄ.
+:?:/kj,,b::ГќГІГ® Г‚Г ГёГ  ГЁГЈГ°Г  Г±Г®Г§Г¤Г Г­Г­Г Гї Г‚Г Г¬ГЁ Г¤Г«Гї Г¤Г°ГіГ§ГҐГ© ГЁГ«ГЁ Г¦ГҐ Г®ГЎГ»Г·Г­Г»Гµ ГЁГЈГ°Г®ГЄГ®Гў, ГўГ±ГҐ ГЇГ°Г ГўГЁГ«Г  Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІГҐ ГЁГ¬ГҐГ­Г­Г® Г‚Г». Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ® ГЎГ» Г­Г Г·Г ГІГј Г­ГіГ¦Г­Г®: Г„Г ГІГј Г­Г Г§ГўГ Г­ГЁГҐ Г±ГўГ®ГҐГ¬Гі Г«Г®ГЎГЎГЁ(ГѓГ°Г ГґГ  "ГЌГ Г§ГўГ Г­ГЁГҐ Г«Г®ГЎГЎГЁ"), ГўГ»ГЎГ°Г ГІГј Г®Г¤ГЁГ­ ГЁГ§ ГІГ°ВёГµ Г¤Г®Г±ГІГіГЇГ­Г»Гµ Г°ГҐГ¦ГЁГ¬Г®Гў(ГѓГ®Г­ГЄГ  ГўГ®Г®Г°ГіГ¦ГҐГ­ГЁГ©/ГЃГ®Г© Г­Г  Г±Г¬ГҐГ°ГІГј/Г‡Г ГµГўГ ГІ ГґГ«Г ГЈГ ), ГўГ»ГЎГ°Г ГІГј Г®Г¤Г­Гі ГЁГ§ ГЄГ Г°ГІ. Г„Г Г«ГҐГҐ Г‚Г» Г±Г¬Г®Г¦ГҐГІГҐ ГіГ±ГІГ Г­Г®ГўГЁГІГј ГЇГ Г°Г®Г«Гј, ГҐГ±Г«ГЁ Г¦ГҐ Г­ГҐ ГµГ®ГІГЁГІГҐ ГўГЁГ¤ГҐГІГј Г«ГЁГёГ­ГЁГµ ГЁГЈГ°Г®ГЄГ®Гў Гў Г±ГўГ®ГҐГ© ГЁГЈГ°ГҐ. ГЏГ®Г±Г«ГҐ ГўГ±ГҐГµ ГЇГҐГ°ГўГЁГ·Г­Г»Гµ Г­Г Г±ГІГ°Г®ГҐГЄ Г‚Г Г¬ Г®ГІГЄГ°Г®ГѕГІГ±Гї Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ: Г’Г°ГҐГЎГ®ГўГ Г­ГЁГҐ Г¤Г«Гї ГЇГ®ГЎГҐГ¤Г», Г®Г°ГіГ¦ГЁГҐ, ГўГ°ГҐГ¬Гї Г±ГіГІГ®ГЄ, Г®Г¤ГҐГ¦Г¤Г (Г…Г±Г«ГЁ ГўГ»ГЎГ°Г ГІГј "ГЌГҐГІ" ГЁГЈГ°Г®ГЄ ГўГ°ГҐГ¬ГҐГ­Г­Г® Г±Г¬ГҐГ­ГЁГІ Г®Г¤ГҐГ¦Г¤Гі Гў Г¬Г ГІГ·ГҐ), ГЇГ®ГЈГ®Г¤Г­Г»ГҐ ГіГ±Г«Г®ГўГЁГї, Г ГўГІГ®-ГЎГ Г«Г Г­Г± ГЄГ®Г¬Г Г­Г¤(Г‚ Г±Г«ГіГ·Г ГҐ Г§Г ГµГўГ ГІГ  ГґГ«Г ГЈГ ) ГЁ Г¤Г°. Г’Г®Г«ГјГЄГ® ГЇГ®Г¬Г­ГЁГІГҐ Г§Г  Г±Г®Г§Г¤Г Г­ГЁГҐ Г«Г®ГЎГЎГЁ Г­ГіГ¦Г­Г® ГЎГіГ¤ГҐГІ Г§Г ГЇГ«Г ГІГЁГІГј Г®ГІ 1.250$ Г¤Г® 2.800$.
+:?:/lhpjyf::Г„Г°ГЁГґГІ Г§Г®Г­Г  Г®ГІГ¬ГҐГ·ГҐГ­Г  Г­Г  ГЄГ Г°ГІГҐ ГЄГ ГЄ ГЁГЄГ®Г­ГЄГ  ГЇГ Г¤Г ГѕГ№ГҐГ© ГЄГ®Г¬ГҐГІГ», ГЇГ°ГЁГ¬ГҐГ° - Г®Г¤Г­Г  ГЁГ§ Г§Г®Г­ Г®ГЄГ®Г«Г® LS Vagos.
+:?:/pf;::Г—ГІГ®ГЎГ» ГўГ§Г«Г®Г¬Г ГІГј Г§Г Г¦ГЁГЈГ Г­ГЁГҐ Г±ГїГ¤ГјГІГҐ Г§Г  Г°ГіГ«Гј ГІ.Г±., Г­Г Г¦Г¬ГЁГІГҐ G - Г‚Г§Г«Г®Г¬Г ГІГј Г§Г Г¦ГЁГЈГ Г­ГЁГҐ. ГЉГ„ Г­Г  ГўГ§Г«Г®Г¬ - 1 Г·Г Г±.
+:?:/cnhbv::ГђГҐГ¦ГЁГ¬ Г±ГІГ°ГЁГ¬ГҐГ°Г  Г§Г Г¬ГҐГ­ГїГҐГІ Г±ГЁГ¬ГўГ®Г«Г» Г­Г  Г§ГўГҐГ§Г¤Г®Г·ГЄГЁ, Г¤Г«Гї Г®ГЎГ»Г·Г­Г»Гµ ГЁГЈГ°Г®ГЄГ®Гў Г®Г­ ГЎГҐГ±ГЇГ®Г«ГҐГ§ГҐГ­. Г‚Г»ГЄГ«ГѕГ·Г ГҐГІГ±Гї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ.
+:?:/rd::Г’ГҐГЄГіГ№ГЁГ© ГЄГўГҐГ±ГІ Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІГ±Гї Г­Г Г¤ ГІГ Г©Г¬ГҐГ°Г®Гў Majestic Coins, ГҐГ±Г«ГЁ ГҐГЈГ® Г­ГҐГІ - Г­Г Г¦Г¬ГЁГІГҐ F6.
+:?:/rv,::Г—ГІГ®ГЎГ» ГіГ±ГІГ°Г®ГЁГІГјГ±Гї Гў Г±ГЁГ«Г®ГўГіГѕ ГЈГ®Г±. Г±ГІГ°ГіГЄГІГіГ°Гі Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ®Г«ГіГ·ГЁГІГј ГўГ®ГҐГ­Г­Г»Г© ГЎГЁГ«ГҐГІ. Г„Г«Гї ГЅГІГ®ГЈГ® Г­Г Г¤Г® ГіГ±ГІГ°Г®ГЁГІГјГ±Гї Гў SANG ГЁ ГЇГ°Г®Г©ГІГЁ ГЉГЊГЃ. Г€ГЄГ®Г­ГЄГ  Г§ГҐГ«ГҐГ­Г®ГЈГ® Г±Г Г¬Г®Г«ГҐГІГ  Г­Г  ГЄГ Г°ГІГҐ. ГЏГ®Г¤Г°Г®ГЎГ­ГҐГҐ ГіГІГ®Г·Г­ГЁГІГҐ Гі Г±ГІГ Г°ГёГҐГЈГ® Г±Г®Г±ГІГ ГўГ  ГґГ°Г ГЄГ¶ГЁГЁ.
+:?:/yfhr::ГЏГ ГЄГҐГІГЁГЄГЁ Blue ГЁ White Г­ГЁГЄГ ГЄ Г­ГҐ ГЇГ®Г«ГіГ·ГЁГІГј, ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г« ГЄГ ГЄ Гі Green, ГІГ®Г«ГјГЄГ® Г°Г Г§Г­Г»ГҐ ГЅГґГґГҐГЄГІГ».
+:?:/fkbc::Г—ГІГ®ГЎГ» ГўГ»ГЄГ«ГѕГ·ГЁГІГј GPS Г Г±Г±ГЁГ±ГІГҐГ­ГІГ  Г­Г Г¦Г¬ГЁГІГҐ F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГЁ ГўГ»ГЄГ«ГѕГ·ГЁГІГҐ GPS ГЂГ±Г±ГЁГ±ГІГҐГ­ГІ.
+:?:/dthn::Г‚ГҐГ°Г®ГІГ®Г«ГҐГІГ» ГЇГ°Г®Г¤Г ГѕГІГ±Гї Гў Г±Г Г«Г®Г­ГҐ Г­ГҐГ¤Г Г«ГҐГЄГ® Г®ГІ Г ГЅГ°Г®ГЇГ®Г°ГІГ .
+:?:/gj[jl::Г€Г§Г¬ГҐГ­ГЁГІГј ГЇГ®ГµГ®Г¤Гі ГЁ ГЅГ¬Г®Г¶ГЁГЁ Г«ГЁГ¶Г  Г¬Г®Г¦Г­Г® Гў  F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГѓГ«Г ГўГ­Г®ГҐ.
+:?:/,fuf;::Г—ГІГ®ГЎГ» ГўГ»Г«ГҐГ§ГІГЁ ГЁГ§ ГЎГ ГЈГ Г¦Г­ГЁГЄГ  Г­Г Г¦Г¬ГЁГІГҐ Г­Г  "E".
+:?:/yfk::Г—ГІГ®ГЎГ» Г®ГЇГ«Г ГІГЁГІГј Г­Г Г«Г®ГЈГЁ Г­Г  Г¤Г®Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г®ГІГЄГ°Г»ГІГј ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ "ГЊГ®Г© Г¤Г®Г¬" Гў ГЇГ«Г Г­ГёГҐГІГҐ.
 
 
-:?:/gfh::Положите парашют в быстрый слот, затем в полете нажмите на 1, 2 или 3 (зависит от слота), после этого ЛКМ, парашют откроется.
-:?:/djl::Администрация не достает автомобили из воды, а лишь удаляет, чтобы вы могли ее заспавнить. Вам необходимо самостоятельно добраться до автосервиса/аренды т.с или до нужного вам места, например, вы можете вызвать такси.
-:?:/,typ::Администрация не заправялет т.с. игроков. Вы можете вызвать такси и добраться до нужного вам места или приобрести канистру, чтобы в дальнейшем доехать до АЗС.
-:?:/elfk::Администрация не удаляет т.с. игроков. Исключение: т.с. утонуло и не исчезло.
-:?:/cnfn::В F2 - Персонаж - Статистика.
-:?:/ghtl::/asms Выключите музыку, вы в зеленой зоне.{left 37}
+:?:/gfh::ГЏГ®Г«Г®Г¦ГЁГІГҐ ГЇГ Г°Г ГёГѕГІ Гў ГЎГ»Г±ГІГ°Г»Г© Г±Г«Г®ГІ, Г§Г ГІГҐГ¬ Гў ГЇГ®Г«ГҐГІГҐ Г­Г Г¦Г¬ГЁГІГҐ Г­Г  1, 2 ГЁГ«ГЁ 3 (Г§Г ГўГЁГ±ГЁГІ Г®ГІ Г±Г«Г®ГІГ ), ГЇГ®Г±Г«ГҐ ГЅГІГ®ГЈГ® Г‹ГЉГЊ, ГЇГ Г°Г ГёГѕГІ Г®ГІГЄГ°Г®ГҐГІГ±Гї.
+:?:/djl::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г¤Г®Г±ГІГ ГҐГІ Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ ГЁГ§ ГўГ®Г¤Г», Г  Г«ГЁГёГј ГіГ¤Г Г«ГїГҐГІ, Г·ГІГ®ГЎГ» ГўГ» Г¬Г®ГЈГ«ГЁ ГҐГҐ Г§Г Г±ГЇГ ГўГ­ГЁГІГј. Г‚Г Г¬ Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г±Г Г¬Г®Г±ГІГ®ГїГІГҐГ«ГјГ­Г® Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г ГўГІГ®Г±ГҐГ°ГўГЁГ±Г /Г Г°ГҐГ­Г¤Г» ГІ.Г± ГЁГ«ГЁ Г¤Г® Г­ГіГ¦Г­Г®ГЈГ® ГўГ Г¬ Г¬ГҐГ±ГІГ , Г­Г ГЇГ°ГЁГ¬ГҐГ°, ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г§ГўГ ГІГј ГІГ ГЄГ±ГЁ.
+:?:/,typ::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ Г§Г ГЇГ°Г ГўГїГ«ГҐГІ ГІ.Г±. ГЁГЈГ°Г®ГЄГ®Гў. Г‚Г» Г¬Г®Г¦ГҐГІГҐ ГўГ»Г§ГўГ ГІГј ГІГ ГЄГ±ГЁ ГЁ Г¤Г®ГЎГ°Г ГІГјГ±Гї Г¤Г® Г­ГіГ¦Г­Г®ГЈГ® ГўГ Г¬ Г¬ГҐГ±ГІГ  ГЁГ«ГЁ ГЇГ°ГЁГ®ГЎГ°ГҐГ±ГІГЁ ГЄГ Г­ГЁГ±ГІГ°Гі, Г·ГІГ®ГЎГ» Гў Г¤Г Г«ГјГ­ГҐГ©ГёГҐГ¬ Г¤Г®ГҐГµГ ГІГј Г¤Г® ГЂГ‡Г‘.
+:?:/elfk::ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГї Г­ГҐ ГіГ¤Г Г«ГїГҐГІ ГІ.Г±. ГЁГЈГ°Г®ГЄГ®Гў. Г€Г±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ: ГІ.Г±. ГіГІГ®Г­ГіГ«Г® ГЁ Г­ГҐ ГЁГ±Г·ГҐГ§Г«Г®.
+:?:/cnfn::Г‚ F2 - ГЏГҐГ°Г±Г®Г­Г Г¦ - Г‘ГІГ ГІГЁГ±ГІГЁГЄГ .
+:?:/ghtl::/asms Г‚Г»ГЄГ«ГѕГ·ГЁГІГҐ Г¬ГіГ§Г»ГЄГі, ГўГ» Гў Г§ГҐГ«ГҐГ­Г®Г© Г§Г®Г­ГҐ.{left 37}
 
-:?:/yby::Новая система инвентаря, был изменен дизайн, предметы можно вращать нажатием на пробел, если дважды нажать по предметы он используется (берется в активный слот или надевается).
-:?:/hjp::Добавлена система преследования. Для того чтобы начать преследование нужно выдать розыск -  зайти в Планшет - Фракция - База данных - Начать преследование, на карте появляется метка местоположения игрока, обновляется раз в 30 секунд, если игрок которого преследуют заходит в другой дименшен/интерьер/выйдет из игры - пропадает с радаров. Если гос. игрок приезжает на метку/подходит к игроку - преследование заканчивается.
-:?:/fh::После окончания срока аренда авто глушится и появляется диалоговое меню, где можно продлить аренду. 
-:?:/rjvn::Рабочий транспорт можно спавнить только на специально автосервисе для коммерческого транспорта. 
-:?:/uh::Лидер группы может давать код, чтобы массово добавить людей в группу, игроки в радиусе 30 метров смогут зайти. Лидер и помощники могут ставить указывающие метки, настраивается в F2 - Настройки - Бинды. Лидер может передать свой статус другому игроку.
-:?:/ntu::Возможность тегать людей в чате для удобного РП процесса, для использования напишите @Динамик. Если игрока тегнуть у него появится уведомление об этом, тегаются только ближайшие игроки.
-:?:/dxfn::Система визуализации чата над игроком - над игроком будут дублироваться все сообщения из чата. В настройках - Дополнительно, можно включить.
-:?:/vfhr::Маркетплейс используется для размещения различных товаров на продажу, таких как: транспорт, жилая недвижимость, бизнес, банкоматы, билборды. Каждая карточка с объявлением фиксирует количество просмотров карточки и количество лайков (тех кто добавил объявление в избранное). Нажав кнопку «Начать сделку» нам откроется модальное окно, в котором будет дублироваться еще раз вся необходимая информация, сумма к оплате и кнопка совершить покупку.  График который имеется отображает динамику цен и имеет возможность взаимодействия. После покупки предметы отправятся в «Склад хранения». За размещение любого объявления взымается плата в 1.000$ за час (от 5к). Возможность покупать лот как за наличку, так и через карту. Администратор может удалить карточку игрока. Игрок может пожаловаться на объявление, сообщение попадёт в обращение.
-:?:/vfhrg::Раздел торговой площадки. Это формат биржи, на которой торгуются исключительно предметы инвентаря. Предметы выставляются бесплатно, но удаление стоит 1.000$. Есть возможность продления объявления.  На торговую площадку можно выставить предметы только из "Склада хранения".  Возможность покупать лот как за наличку, так и через карту. В карточке имеется информация о названии предмета, минимальной стоимости обновляемой в режиме реального времени и общее количество продаваемых предметов на бирже. Имеется график «Медиана цен», который визуализирует, как менялась цена за различные периоды времени. 
-:?:/c[h::Склад хранения это место, в которое попадают предметы, которые были куплены или предметы, которые были занесены сюда игроком, с целью их продажи на маркет плейсе. На склад можно выгрузить предметы из инвентаря или из багажника. Склад хранения находится сбоку здания аукциона. Склад не ограничен по хранению предметов Предметы могут находится на складе 30 минут, после истечения этого времени они идут на аукцион. Имеется возможность добавить карточку в избранное. После покупки имущество/предметы могут хранится на складе 2 дня. При входе в зону маркетплейса подсвечивается склад и появляется метка на карте.
+:?:/yby::ГЌГ®ГўГ Гї Г±ГЁГ±ГІГҐГ¬Г  ГЁГ­ГўГҐГ­ГІГ Г°Гї, ГЎГ»Г« ГЁГ§Г¬ГҐГ­ГҐГ­ Г¤ГЁГ§Г Г©Г­, ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®Г¦Г­Г® ГўГ°Г Г№Г ГІГј Г­Г Г¦Г ГІГЁГҐГ¬ Г­Г  ГЇГ°Г®ГЎГҐГ«, ГҐГ±Г«ГЁ Г¤ГўГ Г¦Г¤Г» Г­Г Г¦Г ГІГј ГЇГ® ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г®Г­ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї (ГЎГҐГ°ГҐГІГ±Гї Гў Г ГЄГІГЁГўГ­Г»Г© Г±Г«Г®ГІ ГЁГ«ГЁ Г­Г Г¤ГҐГўГ ГҐГІГ±Гї).
+:?:/hjp::Г„Г®ГЎГ ГўГ«ГҐГ­Г  Г±ГЁГ±ГІГҐГ¬Г  ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГї. Г„Г«Гї ГІГ®ГЈГ® Г·ГІГ®ГЎГ» Г­Г Г·Г ГІГј ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ Г­ГіГ¦Г­Г® ГўГ»Г¤Г ГІГј Г°Г®Г§Г»Г±ГЄ -  Г§Г Г©ГІГЁ Гў ГЏГ«Г Г­ГёГҐГІ - Г”Г°Г ГЄГ¶ГЁГї - ГЃГ Г§Г  Г¤Г Г­Г­Г»Гµ - ГЌГ Г·Г ГІГј ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ, Г­Г  ГЄГ Г°ГІГҐ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¬ГҐГІГЄГ  Г¬ГҐГ±ГІГ®ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї ГЁГЈГ°Г®ГЄГ , Г®ГЎГ­Г®ГўГ«ГїГҐГІГ±Гї Г°Г Г§ Гў 30 Г±ГҐГЄГіГ­Г¤, ГҐГ±Г«ГЁ ГЁГЈГ°Г®ГЄ ГЄГ®ГІГ®Г°Г®ГЈГ® ГЇГ°ГҐГ±Г«ГҐГ¤ГіГѕГІ Г§Г ГµГ®Г¤ГЁГІ Гў Г¤Г°ГіГЈГ®Г© Г¤ГЁГ¬ГҐГ­ГёГҐГ­/ГЁГ­ГІГҐГ°ГјГҐГ°/ГўГ»Г©Г¤ГҐГІ ГЁГ§ ГЁГЈГ°Г» - ГЇГ°Г®ГЇГ Г¤Г ГҐГІ Г± Г°Г Г¤Г Г°Г®Гў. Г…Г±Г«ГЁ ГЈГ®Г±. ГЁГЈГ°Г®ГЄ ГЇГ°ГЁГҐГ§Г¦Г ГҐГІ Г­Г  Г¬ГҐГІГЄГі/ГЇГ®Г¤ГµГ®Г¤ГЁГІ ГЄ ГЁГЈГ°Г®ГЄГі - ГЇГ°ГҐГ±Г«ГҐГ¤Г®ГўГ Г­ГЁГҐ Г§Г ГЄГ Г­Г·ГЁГўГ ГҐГІГ±Гї.
+:?:/fh::ГЏГ®Г±Г«ГҐ Г®ГЄГ®Г­Г·Г Г­ГЁГї Г±Г°Г®ГЄГ  Г Г°ГҐГ­Г¤Г  Г ГўГІГ® ГЈГ«ГіГёГЁГІГ±Гї ГЁ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¤ГЁГ Г«Г®ГЈГ®ГўГ®ГҐ Г¬ГҐГ­Гѕ, ГЈГ¤ГҐ Г¬Г®Г¦Г­Г® ГЇГ°Г®Г¤Г«ГЁГІГј Г Г°ГҐГ­Г¤Гі. 
+:?:/rjvn::ГђГ ГЎГ®Г·ГЁГ© ГІГ°Г Г­Г±ГЇГ®Г°ГІ Г¬Г®Г¦Г­Г® Г±ГЇГ ГўГ­ГЁГІГј ГІГ®Г«ГјГЄГ® Г­Г  Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г® Г ГўГІГ®Г±ГҐГ°ГўГЁГ±ГҐ Г¤Г«Гї ГЄГ®Г¬Г¬ГҐГ°Г·ГҐГ±ГЄГ®ГЈГ® ГІГ°Г Г­Г±ГЇГ®Г°ГІГ . 
+:?:/uh::Г‹ГЁГ¤ГҐГ° ГЈГ°ГіГЇГЇГ» Г¬Г®Г¦ГҐГІ Г¤Г ГўГ ГІГј ГЄГ®Г¤, Г·ГІГ®ГЎГ» Г¬Г Г±Г±Г®ГўГ® Г¤Г®ГЎГ ГўГЁГІГј Г«ГѕГ¤ГҐГ© Гў ГЈГ°ГіГЇГЇГі, ГЁГЈГ°Г®ГЄГЁ Гў Г°Г Г¤ГЁГіГ±ГҐ 30 Г¬ГҐГІГ°Г®Гў Г±Г¬Г®ГЈГіГІ Г§Г Г©ГІГЁ. Г‹ГЁГ¤ГҐГ° ГЁ ГЇГ®Г¬Г®Г№Г­ГЁГЄГЁ Г¬Г®ГЈГіГІ Г±ГІГ ГўГЁГІГј ГіГЄГ Г§Г»ГўГ ГѕГ№ГЁГҐ Г¬ГҐГІГЄГЁ, Г­Г Г±ГІГ°Г ГЁГўГ ГҐГІГ±Гї Гў F2 - ГЌГ Г±ГІГ°Г®Г©ГЄГЁ - ГЃГЁГ­Г¤Г». Г‹ГЁГ¤ГҐГ° Г¬Г®Г¦ГҐГІ ГЇГҐГ°ГҐГ¤Г ГІГј Г±ГўГ®Г© Г±ГІГ ГІГіГ± Г¤Г°ГіГЈГ®Г¬Гі ГЁГЈГ°Г®ГЄГі.
+:?:/ntu::Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГІГҐГЈГ ГІГј Г«ГѕГ¤ГҐГ© Гў Г·Г ГІГҐ Г¤Г«Гї ГіГ¤Г®ГЎГ­Г®ГЈГ® ГђГЏ ГЇГ°Г®Г¶ГҐГ±Г±Г , Г¤Г«Гї ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ Г­ГЁГї Г­Г ГЇГЁГёГЁГІГҐ @Г„ГЁГ­Г Г¬ГЁГЄ. Г…Г±Г«ГЁ ГЁГЈГ°Г®ГЄГ  ГІГҐГЈГ­ГіГІГј Гі Г­ГҐГЈГ® ГЇГ®ГїГўГЁГІГ±Гї ГіГўГҐГ¤Г®Г¬Г«ГҐГ­ГЁГҐ Г®ГЎ ГЅГІГ®Г¬, ГІГҐГЈГ ГѕГІГ±Гї ГІГ®Г«ГјГЄГ® ГЎГ«ГЁГ¦Г Г©ГёГЁГҐ ГЁГЈГ°Г®ГЄГЁ.
+:?:/dxfn::Г‘ГЁГ±ГІГҐГ¬Г  ГўГЁГ§ГіГ Г«ГЁГ§Г Г¶ГЁГЁ Г·Г ГІГ  Г­Г Г¤ ГЁГЈГ°Г®ГЄГ®Г¬ - Г­Г Г¤ ГЁГЈГ°Г®ГЄГ®Г¬ ГЎГіГ¤ГіГІ Г¤ГіГЎГ«ГЁГ°Г®ГўГ ГІГјГ±Гї ГўГ±ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГї ГЁГ§ Г·Г ГІГ . Г‚ Г­Г Г±ГІГ°Г®Г©ГЄГ Гµ - Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г®, Г¬Г®Г¦Г­Г® ГўГЄГ«ГѕГ·ГЁГІГј.
+:?:/vfhr::ГЊГ Г°ГЄГҐГІГЇГ«ГҐГ©Г± ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї Г¤Г«Гї Г°Г Г§Г¬ГҐГ№ГҐГ­ГЁГї Г°Г Г§Г«ГЁГ·Г­Г»Гµ ГІГ®ГўГ Г°Г®Гў Г­Г  ГЇГ°Г®Г¤Г Г¦Гі, ГІГ ГЄГЁГµ ГЄГ ГЄ: ГІГ°Г Г­Г±ГЇГ®Г°ГІ, Г¦ГЁГ«Г Гї Г­ГҐГ¤ГўГЁГ¦ГЁГ¬Г®Г±ГІГј, ГЎГЁГ§Г­ГҐГ±, ГЎГ Г­ГЄГ®Г¬Г ГІГ», ГЎГЁГ«ГЎГ®Г°Г¤Г». ГЉГ Г¦Г¤Г Гї ГЄГ Г°ГІГ®Г·ГЄГ  Г± Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐГ¬ ГґГЁГЄГ±ГЁГ°ГіГҐГІ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г±Г¬Г®ГІГ°Г®Гў ГЄГ Г°ГІГ®Г·ГЄГЁ ГЁ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г«Г Г©ГЄГ®Гў (ГІГҐГµ ГЄГІГ® Г¤Г®ГЎГ ГўГЁГ« Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐ Гў ГЁГ§ГЎГ°Г Г­Г­Г®ГҐ). ГЌГ Г¦Г Гў ГЄГ­Г®ГЇГЄГі В«ГЌГ Г·Г ГІГј Г±Г¤ГҐГ«ГЄГіВ» Г­Г Г¬ Г®ГІГЄГ°Г®ГҐГІГ±Гї Г¬Г®Г¤Г Г«ГјГ­Г®ГҐ Г®ГЄГ­Г®, Гў ГЄГ®ГІГ®Г°Г®Г¬ ГЎГіГ¤ГҐГІ Г¤ГіГЎГ«ГЁГ°Г®ГўГ ГІГјГ±Гї ГҐГ№ГҐ Г°Г Г§ ГўГ±Гї Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї, Г±ГіГ¬Г¬Г  ГЄ Г®ГЇГ«Г ГІГҐ ГЁ ГЄГ­Г®ГЇГЄГ  Г±Г®ГўГҐГ°ГёГЁГІГј ГЇГ®ГЄГіГЇГЄГі.  ГѓГ°Г ГґГЁГЄ ГЄГ®ГІГ®Г°Г»Г© ГЁГ¬ГҐГҐГІГ±Гї Г®ГІГ®ГЎГ°Г Г¦Г ГҐГІ Г¤ГЁГ­Г Г¬ГЁГЄГі Г¶ГҐГ­ ГЁ ГЁГ¬ГҐГҐГІ ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГўГ§Г ГЁГ¬Г®Г¤ГҐГ©Г±ГІГўГЁГї. ГЏГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г®ГІГЇГ°Г ГўГїГІГ±Гї Гў В«Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГїВ». Г‡Г  Г°Г Г§Г¬ГҐГ№ГҐГ­ГЁГҐ Г«ГѕГЎГ®ГЈГ® Г®ГЎГєГїГўГ«ГҐГ­ГЁГї ГўГ§Г»Г¬Г ГҐГІГ±Гї ГЇГ«Г ГІГ  Гў 1.000$ Г§Г  Г·Г Г± (Г®ГІ 5ГЄ). Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ®ГЄГіГЇГ ГІГј Г«Г®ГІ ГЄГ ГЄ Г§Г  Г­Г Г«ГЁГ·ГЄГі, ГІГ ГЄ ГЁ Г·ГҐГ°ГҐГ§ ГЄГ Г°ГІГі. ГЂГ¤Г¬ГЁГ­ГЁГ±ГІГ°Г ГІГ®Г° Г¬Г®Г¦ГҐГІ ГіГ¤Г Г«ГЁГІГј ГЄГ Г°ГІГ®Г·ГЄГі ГЁГЈГ°Г®ГЄГ . Г€ГЈГ°Г®ГЄ Г¬Г®Г¦ГҐГІ ГЇГ®Г¦Г Г«Г®ГўГ ГІГјГ±Гї Г­Г  Г®ГЎГєГїГўГ«ГҐГ­ГЁГҐ, Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЇГ®ГЇГ Г¤ВёГІ Гў Г®ГЎГ°Г Г№ГҐГ­ГЁГҐ.
+:?:/vfhrg::ГђГ Г§Г¤ГҐГ« ГІГ®Г°ГЈГ®ГўГ®Г© ГЇГ«Г®Г№Г Г¤ГЄГЁ. ГќГІГ® ГґГ®Г°Г¬Г ГІ ГЎГЁГ°Г¦ГЁ, Г­Г  ГЄГ®ГІГ®Г°Г®Г© ГІГ®Г°ГЈГіГѕГІГ±Гї ГЁГ±ГЄГ«ГѕГ·ГЁГІГҐГ«ГјГ­Г® ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГЁГ­ГўГҐГ­ГІГ Г°Гї. ГЏГ°ГҐГ¤Г¬ГҐГІГ» ГўГ»Г±ГІГ ГўГ«ГїГѕГІГ±Гї ГЎГҐГ±ГЇГ«Г ГІГ­Г®, Г­Г® ГіГ¤Г Г«ГҐГ­ГЁГҐ Г±ГІГ®ГЁГІ 1.000$. Г…Г±ГІГј ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ°Г®Г¤Г«ГҐГ­ГЁГї Г®ГЎГєГїГўГ«ГҐГ­ГЁГї.  ГЌГ  ГІГ®Г°ГЈГ®ГўГіГѕ ГЇГ«Г®Г№Г Г¤ГЄГі Г¬Г®Г¦Г­Г® ГўГ»Г±ГІГ ГўГЁГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГІГ®Г«ГјГЄГ® ГЁГ§ "Г‘ГЄГ«Г Г¤Г  ГµГ°Г Г­ГҐГ­ГЁГї".  Г‚Г®Г§Г¬Г®Г¦Г­Г®Г±ГІГј ГЇГ®ГЄГіГЇГ ГІГј Г«Г®ГІ ГЄГ ГЄ Г§Г  Г­Г Г«ГЁГ·ГЄГі, ГІГ ГЄ ГЁ Г·ГҐГ°ГҐГ§ ГЄГ Г°ГІГі. Г‚ ГЄГ Г°ГІГ®Г·ГЄГҐ ГЁГ¬ГҐГҐГІГ±Гї ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г­Г Г§ГўГ Г­ГЁГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ , Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г®Г© Г±ГІГ®ГЁГ¬Г®Г±ГІГЁ Г®ГЎГ­Г®ГўГ«ГїГҐГ¬Г®Г© Гў Г°ГҐГ¦ГЁГ¬ГҐ Г°ГҐГ Г«ГјГ­Г®ГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ ГЁ Г®ГЎГ№ГҐГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЇГ°Г®Г¤Г ГўГ ГҐГ¬Г»Гµ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў Г­Г  ГЎГЁГ°Г¦ГҐ. Г€Г¬ГҐГҐГІГ±Гї ГЈГ°Г ГґГЁГЄ В«ГЊГҐГ¤ГЁГ Г­Г  Г¶ГҐГ­В», ГЄГ®ГІГ®Г°Г»Г© ГўГЁГ§ГіГ Г«ГЁГ§ГЁГ°ГіГҐГІ, ГЄГ ГЄ Г¬ГҐГ­ГїГ«Г Г±Гј Г¶ГҐГ­Г  Г§Г  Г°Г Г§Г«ГЁГ·Г­Г»ГҐ ГЇГҐГ°ГЁГ®Г¤Г» ГўГ°ГҐГ¬ГҐГ­ГЁ. 
+:?:/c[h::Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГї ГЅГІГ® Г¬ГҐГ±ГІГ®, Гў ГЄГ®ГІГ®Г°Г®ГҐ ГЇГ®ГЇГ Г¤Г ГѕГІ ГЇГ°ГҐГ¤Г¬ГҐГІГ», ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ ГЄГіГЇГ«ГҐГ­Г» ГЁГ«ГЁ ГЇГ°ГҐГ¤Г¬ГҐГІГ», ГЄГ®ГІГ®Г°Г»ГҐ ГЎГ»Г«ГЁ Г§Г Г­ГҐГ±ГҐГ­Г» Г±ГѕГ¤Г  ГЁГЈГ°Г®ГЄГ®Г¬, Г± Г¶ГҐГ«ГјГѕ ГЁГµ ГЇГ°Г®Г¤Г Г¦ГЁ Г­Г  Г¬Г Г°ГЄГҐГІ ГЇГ«ГҐГ©Г±ГҐ. ГЌГ  Г±ГЄГ«Г Г¤ Г¬Г®Г¦Г­Г® ГўГ»ГЈГ°ГіГ§ГЁГІГј ГЇГ°ГҐГ¤Г¬ГҐГІГ» ГЁГ§ ГЁГ­ГўГҐГ­ГІГ Г°Гї ГЁГ«ГЁ ГЁГ§ ГЎГ ГЈГ Г¦Г­ГЁГЄГ . Г‘ГЄГ«Г Г¤ ГµГ°Г Г­ГҐГ­ГЁГї Г­Г ГµГ®Г¤ГЁГІГ±Гї Г±ГЎГ®ГЄГі Г§Г¤Г Г­ГЁГї Г ГіГЄГ¶ГЁГ®Г­Г . Г‘ГЄГ«Г Г¤ Г­ГҐ Г®ГЈГ°Г Г­ГЁГ·ГҐГ­ ГЇГ® ГµГ°Г Г­ГҐГ­ГЁГѕ ГЇГ°ГҐГ¤Г¬ГҐГІГ®Гў ГЏГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®ГЈГіГІ Г­Г ГµГ®Г¤ГЁГІГ±Гї Г­Г  Г±ГЄГ«Г Г¤ГҐ 30 Г¬ГЁГ­ГіГІ, ГЇГ®Г±Г«ГҐ ГЁГ±ГІГҐГ·ГҐГ­ГЁГї ГЅГІГ®ГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Г®Г­ГЁ ГЁГ¤ГіГІ Г­Г  Г ГіГЄГ¶ГЁГ®Г­. Г€Г¬ГҐГҐГІГ±Гї ГўГ®Г§Г¬Г®Г¦Г­Г®Г±ГІГј Г¤Г®ГЎГ ГўГЁГІГј ГЄГ Г°ГІГ®Г·ГЄГі Гў ГЁГ§ГЎГ°Г Г­Г­Г®ГҐ. ГЏГ®Г±Г«ГҐ ГЇГ®ГЄГіГЇГЄГЁ ГЁГ¬ГіГ№ГҐГ±ГІГўГ®/ГЇГ°ГҐГ¤Г¬ГҐГІГ» Г¬Г®ГЈГіГІ ГµГ°Г Г­ГЁГІГ±Гї Г­Г  Г±ГЄГ«Г Г¤ГҐ 2 Г¤Г­Гї. ГЏГ°ГЁ ГўГµГ®Г¤ГҐ Гў Г§Г®Г­Гі Г¬Г Г°ГЄГҐГІГЇГ«ГҐГ©Г±Г  ГЇГ®Г¤Г±ГўГҐГ·ГЁГўГ ГҐГІГ±Гї Г±ГЄГ«Г Г¤ ГЁ ГЇГ®ГїГўГ«ГїГҐГІГ±Гї Г¬ГҐГІГЄГ  Г­Г  ГЄГ Г°ГІГҐ.
 
-:?:/reh::Передам кураторам.
-:?:/gth::Передам.
-:?:/ytja::Не оффтопьте в обращения.
-:?:/ytgh::Не предоставляем подобную информацию.
+:?:/reh::ГЏГҐГ°ГҐГ¤Г Г¬ ГЄГіГ°Г ГІГ®Г°Г Г¬.
+:?:/gth::ГЏГҐГ°ГҐГ¤Г Г¬.
+:?:/ytja::ГЌГҐ Г®ГґГґГІГ®ГЇГјГІГҐ Гў Г®ГЎГ°Г Г№ГҐГ­ГЁГї.
+:?:/ytgh::ГЌГҐ ГЇГ°ГҐГ¤Г®Г±ГІГ ГўГ«ГїГҐГ¬ ГЇГ®Г¤Г®ГЎГ­ГіГѕ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ.
 
-:?:/lvr::Дефибриллятор МК2 никакого функционала не даёт, он аналогичен обычному дефибриллятору.
-:?:/flh::Адреналин поднимает игрока в 2 раза быстрее, чем эпинефрин.
-:?:/yfuh::Все автомобили и одежда из пропуск являются эксклюзивом, их нельзя передавать другим игрокам.
-:?:/;fg::Предмет "Аптечка жёлтая" - восстанавливает 75 хп.
-:?:/j,d::Обвесы имеются в призах. Первая установка бесплатная. Обвесы можно будет снять/поставить отдельно. Обвес закрепляется за машиной. 
-:?:/reg::Купоны действуют на все авто из Majestic Motors. После взятия они действует 3 дня.
-:?:/ckex::В наградах имеются "Случайные наборы". При взятии приза у игрока будет выбор в открытии одной трёх карт с разным содержимым. 
-:?:/jjc::ООС зону вы можете включить на F2-Настройки-Бинд. Назначаете клавишу, и при нажатии на эту клавишу, если игрок перед вами вышел из игры, у вас будет информация о дате и времени выхода этого игрока из игры.
-:?:/rdh::У бота на работе будет кнопка "Я могу чем-то помочь". Вы на неё жмёте и у вас откроется квест, который выполнить нужно (на Ф6 можно посмотреть). Выполняете этот квест и Вам засчитывает задание.
+:?:/lvr::Г„ГҐГґГЁГЎГ°ГЁГ«Г«ГїГІГ®Г° ГЊГЉ2 Г­ГЁГЄГ ГЄГ®ГЈГ® ГґГіГ­ГЄГ¶ГЁГ®Г­Г Г«Г  Г­ГҐ Г¤Г ВёГІ, Г®Г­ Г Г­Г Г«Г®ГЈГЁГ·ГҐГ­ Г®ГЎГ»Г·Г­Г®Г¬Гі Г¤ГҐГґГЁГЎГ°ГЁГ«Г«ГїГІГ®Г°Гі.
+:?:/flh::ГЂГ¤Г°ГҐГ­Г Г«ГЁГ­ ГЇГ®Г¤Г­ГЁГ¬Г ГҐГІ ГЁГЈГ°Г®ГЄГ  Гў 2 Г°Г Г§Г  ГЎГ»Г±ГІГ°ГҐГҐ, Г·ГҐГ¬ ГЅГЇГЁГ­ГҐГґГ°ГЁГ­.
+:?:/yfuh::Г‚Г±ГҐ Г ГўГІГ®Г¬Г®ГЎГЁГ«ГЁ ГЁ Г®Г¤ГҐГ¦Г¤Г  ГЁГ§ ГЇГ°Г®ГЇГіГ±ГЄ ГїГўГ«ГїГѕГІГ±Гї ГЅГЄГ±ГЄГ«ГѕГ§ГЁГўГ®Г¬, ГЁГµ Г­ГҐГ«ГјГ§Гї ГЇГҐГ°ГҐГ¤Г ГўГ ГІГј Г¤Г°ГіГЈГЁГ¬ ГЁГЈГ°Г®ГЄГ Г¬.
+:?:/;fg::ГЏГ°ГҐГ¤Г¬ГҐГІ "ГЂГЇГІГҐГ·ГЄГ  Г¦ВёГ«ГІГ Гї" - ГўГ®Г±Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ 75 ГµГЇ.
+:?:/j,d::ГЋГЎГўГҐГ±Г» ГЁГ¬ГҐГѕГІГ±Гї Гў ГЇГ°ГЁГ§Г Гµ. ГЏГҐГ°ГўГ Гї ГіГ±ГІГ Г­Г®ГўГЄГ  ГЎГҐГ±ГЇГ«Г ГІГ­Г Гї. ГЋГЎГўГҐГ±Г» Г¬Г®Г¦Г­Г® ГЎГіГ¤ГҐГІ Г±Г­ГїГІГј/ГЇГ®Г±ГІГ ГўГЁГІГј Г®ГІГ¤ГҐГ«ГјГ­Г®. ГЋГЎГўГҐГ± Г§Г ГЄГ°ГҐГЇГ«ГїГҐГІГ±Гї Г§Г  Г¬Г ГёГЁГ­Г®Г©. 
+:?:/reg::ГЉГіГЇГ®Г­Г» Г¤ГҐГ©Г±ГІГўГіГѕГІ Г­Г  ГўГ±ГҐ Г ГўГІГ® ГЁГ§ Majestic Motors. ГЏГ®Г±Г«ГҐ ГўГ§ГїГІГЁГї Г®Г­ГЁ Г¤ГҐГ©Г±ГІГўГіГҐГІ 3 Г¤Г­Гї.
+:?:/ckex::Г‚ Г­Г ГЈГ°Г Г¤Г Гµ ГЁГ¬ГҐГѕГІГ±Гї "Г‘Г«ГіГ·Г Г©Г­Г»ГҐ Г­Г ГЎГ®Г°Г»". ГЏГ°ГЁ ГўГ§ГїГІГЁГЁ ГЇГ°ГЁГ§Г  Гі ГЁГЈГ°Г®ГЄГ  ГЎГіГ¤ГҐГІ ГўГ»ГЎГ®Г° Гў Г®ГІГЄГ°Г»ГІГЁГЁ Г®Г¤Г­Г®Г© ГІГ°ВёГµ ГЄГ Г°ГІ Г± Г°Г Г§Г­Г»Г¬ Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г»Г¬. 
+:?:/jjc::ГЋГЋГ‘ Г§Г®Г­Гі ГўГ» Г¬Г®Г¦ГҐГІГҐ ГўГЄГ«ГѕГ·ГЁГІГј Г­Г  F2-ГЌГ Г±ГІГ°Г®Г©ГЄГЁ-ГЃГЁГ­Г¤. ГЌГ Г§Г­Г Г·Г ГҐГІГҐ ГЄГ«Г ГўГЁГёГі, ГЁ ГЇГ°ГЁ Г­Г Г¦Г ГІГЁГЁ Г­Г  ГЅГІГі ГЄГ«Г ГўГЁГёГі, ГҐГ±Г«ГЁ ГЁГЈГ°Г®ГЄ ГЇГҐГ°ГҐГ¤ ГўГ Г¬ГЁ ГўГ»ГёГҐГ« ГЁГ§ ГЁГЈГ°Г», Гі ГўГ Г± ГЎГіГ¤ГҐГІ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г¤Г ГІГҐ ГЁ ГўГ°ГҐГ¬ГҐГ­ГЁ ГўГ»ГµГ®Г¤Г  ГЅГІГ®ГЈГ® ГЁГЈГ°Г®ГЄГ  ГЁГ§ ГЁГЈГ°Г».
+:?:/rdh::Г“ ГЎГ®ГІГ  Г­Г  Г°Г ГЎГ®ГІГҐ ГЎГіГ¤ГҐГІ ГЄГ­Г®ГЇГЄГ  "Гџ Г¬Г®ГЈГі Г·ГҐГ¬-ГІГ® ГЇГ®Г¬Г®Г·Гј". Г‚Г» Г­Г  Г­ГҐВё Г¦Г¬ВёГІГҐ ГЁ Гі ГўГ Г± Г®ГІГЄГ°Г®ГҐГІГ±Гї ГЄГўГҐГ±ГІ, ГЄГ®ГІГ®Г°Г»Г© ГўГ»ГЇГ®Г«Г­ГЁГІГј Г­ГіГ¦Г­Г® (Г­Г  Г”6 Г¬Г®Г¦Г­Г® ГЇГ®Г±Г¬Г®ГІГ°ГҐГІГј). Г‚Г»ГЇГ®Г«Г­ГїГҐГІГҐ ГЅГІГ®ГІ ГЄГўГҐГ±ГІ ГЁ Г‚Г Г¬ Г§Г Г±Г·ГЁГІГ»ГўГ ГҐГІ Г§Г Г¤Г Г­ГЁГҐ.
 
-; Наказания
+; ГЌГ ГЄГ Г§Г Г­ГЁГї
 
-:?:.гт::/unescort
-:?:.фс::/acuff
-:?:.фг::/auncuff  
-:?:.репдб::/ajail 30 DB (Репорт жалоба){left 22}
-:?:.репдм::/ajail 120 DM (Репорт жалоба ){left 24}
-:?:.репнрд::/ajail 15 nonRP Drive (Репорт жалоба ){left 32}
-:?:.репдмг::/gunban 5 DM (Репорт жалоба ){left 22}
-:?:.репзп::/ban 5 3.5 Основные правила проекта (Репорт жалоба ){left 48}
-:?:.репоск::/ajail 15 ООС оскорбление (Репорт жалоба ){left 36}
-:?:.хардо::/hardban 9999 Обход блокировки{left 21}
-:?:.хард::/hardban 8888 Cheats{left 12}
-:?:.хард9::/hardban 9999 Cheats{left 12}
-:?:.секс::/warn Секс. аним. без отыгровок{Left 26}
-:?:.нрд::/ajail 15 nonRP Drive{Left 15}
-:?:.нрд25::/ajail 25 nonRP Drive{Left 15}
-:?:.нрд45::/ajail 45 nonRP Drive{Left 15}
-:?:.нрд70::/ajail 70 nonRP Drive{Left 15}
-:?:.нрд90::/ajail 90 nonRP Drive{Left 15}
-:?:.нрп::/ajail 15 nonRP Поведение{Left 19}
-:?:.нрп25::/ajail 25 nonRP Поведение{Left 19}
-:?:.нрп45::/ajail 45 nonRP Поведение{Left 19}
-:?:.нрп70::/ajail 70 nonRP Поведение{Left 19}
-:?:.нрп90::/ajail 90 nonRP Поведение{Left 19}
-:?:.дб::/ajail 30 DB{Left 6}
-:?:.дб45::/ajail 45 DB{Left 6}
-:?:.дб60::/ajail 60 DB{Left 6}
-:?:.дб75::/ajail 75 DB{Left 6}
-:?:.дб90::/ajail 90 DB{Left 6}
-:?:.дмг::/gunban 5 DM{Left 5}
-:?:.пг::/ajail 35 PG{Left 6}
-:?:.дм::/ajail 120 DM{Left 7}
-:?:.пг55::/ajail 55 PG{Left 6}
-:?:.пг75::/ajail 75 PG{Left 6}
-:?:.пг90::/ajail 90 PG{Left 6}
-:?:.муз::/mute 30 Music in GZ{Left 15}
-:?:.муз60::/mute 60 Music in ZZ{Left 15}
-:?:.смник::/ajail 720 Смените Имя_Фамилия согласно правилам сервера{Left 50}
-:?:.смвн::/ajail 720 Смените внешность согласно правилам сервера{Left 48}
-:?:.гол::/mute 30 Программа для изменения тоналности голоса{Left 45}
-:?:.оса30::/hardban 30 Оскорбление администрации{left 29}
-:?:.оса15::/hardban 14 Оскорбление администрации{left 29}
-:?:.оса10::/hardban 10 Оскорбление администрации{left 29}
-:?:.оса::/hardban 7 Оскорбление администрации{left 28}
-:?:.ооск::/ajail 30 OOC оскорбление{left 19}
-:?:.стр::/ban 3 Стрельба по пешим{left 20}
+:?:.ГЈГІ::/unescort
+:?:.ГґГ±::/acuff
+:?:.ГґГЈ::/auncuff  
+:?:.Г°ГҐГЇГ¤ГЎ::/ajail 30 DB (ГђГҐГЇГ®Г°ГІ Г¦Г Г«Г®ГЎГ ){left 22}
+:?:.Г°ГҐГЇГ¤Г¬::/ajail 120 DM (ГђГҐГЇГ®Г°ГІ Г¦Г Г«Г®ГЎГ  ){left 24}
+:?:.Г°ГҐГЇГ­Г°Г¤::/ajail 15 nonRP Drive (ГђГҐГЇГ®Г°ГІ Г¦Г Г«Г®ГЎГ  ){left 32}
+:?:.Г°ГҐГЇГ¤Г¬ГЈ::/gunban 5 DM (ГђГҐГЇГ®Г°ГІ Г¦Г Г«Г®ГЎГ  ){left 22}
+:?:.Г°ГҐГЇГ§ГЇ::/ban 5 3.5 ГЋГ±Г­Г®ГўГ­Г»ГҐ ГЇГ°Г ГўГЁГ«Г  ГЇГ°Г®ГҐГЄГІГ  (ГђГҐГЇГ®Г°ГІ Г¦Г Г«Г®ГЎГ  ){left 48}
+:?:.Г°ГҐГЇГ®Г±ГЄ::/ajail 15 ГЋГЋГ‘ Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ (ГђГҐГЇГ®Г°ГІ Г¦Г Г«Г®ГЎГ  ){left 36}
+:?:.ГµГ Г°Г¤Г®::/hardban 9999 ГЋГЎГµГ®Г¤ ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГЁ{left 21}
+:?:.ГµГ Г°Г¤::/hardban 8888 Cheats{left 12}
+:?:.ГµГ Г°Г¤9::/hardban 9999 Cheats{left 12}
+:?:.Г±ГҐГЄГ±::/warn Г‘ГҐГЄГ±. Г Г­ГЁГ¬. ГЎГҐГ§ Г®ГІГ»ГЈГ°Г®ГўГ®ГЄ{Left 26}
+:?:.Г­Г°Г¤::/ajail 15 nonRP Drive{Left 15}
+:?:.Г­Г°Г¤25::/ajail 25 nonRP Drive{Left 15}
+:?:.Г­Г°Г¤45::/ajail 45 nonRP Drive{Left 15}
+:?:.Г­Г°Г¤70::/ajail 70 nonRP Drive{Left 15}
+:?:.Г­Г°Г¤90::/ajail 90 nonRP Drive{Left 15}
+:?:.Г­Г°ГЇ::/ajail 15 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:.Г­Г°ГЇ25::/ajail 25 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:.Г­Г°ГЇ45::/ajail 45 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:.Г­Г°ГЇ70::/ajail 70 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:.Г­Г°ГЇ90::/ajail 90 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:.Г¤ГЎ::/ajail 30 DB{Left 6}
+:?:.Г¤ГЎ45::/ajail 45 DB{Left 6}
+:?:.Г¤ГЎ60::/ajail 60 DB{Left 6}
+:?:.Г¤ГЎ75::/ajail 75 DB{Left 6}
+:?:.Г¤ГЎ90::/ajail 90 DB{Left 6}
+:?:.Г¤Г¬ГЈ::/gunban 5 DM{Left 5}
+:?:.ГЇГЈ::/ajail 35 PG{Left 6}
+:?:.Г¤Г¬::/ajail 120 DM{Left 7}
+:?:.ГЇГЈ55::/ajail 55 PG{Left 6}
+:?:.ГЇГЈ75::/ajail 75 PG{Left 6}
+:?:.ГЇГЈ90::/ajail 90 PG{Left 6}
+:?:.Г¬ГіГ§::/mute 30 Music in GZ{Left 15}
+:?:.Г¬ГіГ§60::/mute 60 Music in ZZ{Left 15}
+:?:.Г±Г¬Г­ГЁГЄ::/ajail 720 Г‘Г¬ГҐГ­ГЁГІГҐ Г€Г¬Гї_Г”Г Г¬ГЁГ«ГЁГї Г±Г®ГЈГ«Г Г±Г­Г® ГЇГ°Г ГўГЁГ«Г Г¬ Г±ГҐГ°ГўГҐГ°Г {Left 50}
+:?:.Г±Г¬ГўГ­::/ajail 720 Г‘Г¬ГҐГ­ГЁГІГҐ ГўГ­ГҐГёГ­Г®Г±ГІГј Г±Г®ГЈГ«Г Г±Г­Г® ГЇГ°Г ГўГЁГ«Г Г¬ Г±ГҐГ°ГўГҐГ°Г {Left 48}
+:?:.ГЈГ®Г«::/mute 30 ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  Г¤Г«Гї ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї ГІГ®Г­Г Г«Г­Г®Г±ГІГЁ ГЈГ®Г«Г®Г±Г {Left 45}
+:?:.Г®Г±Г 30::/hardban 30 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 29}
+:?:.Г®Г±Г 15::/hardban 14 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 29}
+:?:.Г®Г±Г 10::/hardban 10 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 29}
+:?:.Г®Г±Г ::/hardban 7 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 28}
+:?:.Г®Г®Г±ГЄ::/ajail 30 OOC Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ{left 19}
+:?:.Г±ГІГ°::/ban 3 Г‘ГІГ°ГҐГ«ГјГЎГ  ГЇГ® ГЇГҐГёГЁГ¬{left 20}
 
-:?:/[fhlj::/hardban 9999 Обход блокировки{left 21}
+:?:/[fhlj::/hardban 9999 ГЋГЎГµГ®Г¤ ГЎГ«Г®ГЄГЁГ°Г®ГўГЄГЁ{left 21}
 :?:/[fhl::/hardban 7777 Cheats{left 12}
 :?:/[fhl9::/hardban 9999 Cheats{left 12}
-:?:/ctrc::/warn Секс. аним. без отыгровок{Left 26}
+:?:/ctrc::/warn Г‘ГҐГЄГ±. Г Г­ГЁГ¬. ГЎГҐГ§ Г®ГІГ»ГЈГ°Г®ГўГ®ГЄ{Left 26}
 :?:/yhl::/ajail 15 nonRP Drive{Left 15}
 :?:/yhll25::/ajail 25 nonRP Drive{Left 15}
 :?:/yhl45::/ajail 45 nonRP Drive{Left 15}
 :?:/yhl70::/ajail 70 nonRP Drive{Left 15}
 :?:/yhl90::/ajail 90 nonRP Drive{Left 15}
-:?:/yhg::/ajail 15 nonRP Поведение{Left 19}
-:?:/yhg25::/ajail 25 nonRP Поведение{Left 19}
-:?:/yhg45::/ajail 45 nonRP Поведение{Left 19}
-:?:/yhg70::/ajail 70 nonRP Поведение{Left 19}
-:?:/yhg90::/ajail 90 nonRP Поведение{Left 19}
+:?:/yhg::/ajail 15 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:/yhg25::/ajail 25 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:/yhg45::/ajail 45 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:/yhg70::/ajail 70 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
+:?:/yhg90::/ajail 90 nonRP ГЏГ®ГўГҐГ¤ГҐГ­ГЁГҐ{Left 19}
 :?:/l,::/ajail 30 DB{Left 6}
 :?:/l,45::/ajail 45 DB{Left 6}
 :?:/l,60::/ajail 60 DB{Left 6}
@@ -2813,14 +2813,14 @@ Return
 :?:/gu90::/ajail 90 PG{Left 6}
 :?:/vep::/mute 30 Music in ZZ{Left 15}
 :?:/vep60::/mute 60 Music in ZZ{Left 15}
-:?:/cvybr::/ajail 720 Смените Имя_Фамилия согласно правилам сервера{Left 50}
-:?:/cvdy::/ajail 720 Смените внешность согласно правилам сервера{Left 48}
-:?:/jcf30::/hardban 30 Оскорбление администрации{left 29}
-:?:/jcf15::/hardban 14 Оскорбление администрации{left 29}
-:?:/jcf10::/hardban 10 Оскорбление администрации{left 29}
-:?:/jcf::/hardban 7 Оскорбление администрации{left 28}
-:?:/jjcr::/ajail  30 OOC оскорбление{left 19}
-:?:/cnh::/ban 3 Стрельба по пешим{left 20}
+:?:/cvybr::/ajail 720 Г‘Г¬ГҐГ­ГЁГІГҐ Г€Г¬Гї_Г”Г Г¬ГЁГ«ГЁГї Г±Г®ГЈГ«Г Г±Г­Г® ГЇГ°Г ГўГЁГ«Г Г¬ Г±ГҐГ°ГўГҐГ°Г {Left 50}
+:?:/cvdy::/ajail 720 Г‘Г¬ГҐГ­ГЁГІГҐ ГўГ­ГҐГёГ­Г®Г±ГІГј Г±Г®ГЈГ«Г Г±Г­Г® ГЇГ°Г ГўГЁГ«Г Г¬ Г±ГҐГ°ГўГҐГ°Г {Left 48}
+:?:/jcf30::/hardban 30 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 29}
+:?:/jcf15::/hardban 14 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 29}
+:?:/jcf10::/hardban 10 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 29}
+:?:/jcf::/hardban 7 ГЋГ±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ Г Г¤Г¬ГЁГ­ГЁГ±ГІГ°Г Г¶ГЁГЁ{left 28}
+:?:/jjcr::/ajail  30 OOC Г®Г±ГЄГ®Г°ГЎГ«ГҐГ­ГЁГҐ{left 19}
+:?:/cnh::/ban 3 Г‘ГІГ°ГҐГ«ГјГЎГ  ГЇГ® ГЇГҐГёГЁГ¬{left 20}
 
 Reload:
 reload
